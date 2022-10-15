@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="816"
+   height="1056"
+   viewBox="0 0 816 1056"
+   sodipodi:docname="example_task1-b.svg"
+   xml:space="preserve"
+   inkscape:export-filename="example_task1-b.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs6"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16"><path
+         d="M 0,0.028 H 611.971 V 791.999 H 0 Z"
+         clip-rule="evenodd"
+         id="path14" /></clipPath></defs><sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.41098485"
+     inkscape:cx="577.88018"
+     inkscape:cy="732.3871"
+     inkscape:window-width="1449"
+     inkscape:window-height="1080"
+     inkscape:window-x="1937"
+     inkscape:window-y="460"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g8" /><g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="example_task1-b"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1056)"><g
+       id="g10"><g
+         id="g12"
+         clip-path="url(#clipPath16)"><g
+           id="g18"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,180.9,742.4)"
+             style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text22"><tspan
+               x="0 7.4060001 14.91 26.292 33.796001 41.299999 46.186001 53.186001 58.268002 61.362 67.956001 73.835999 77.237999 84.237999 91.741997 97.622002 104.706 107.898 115.304 122.206 129.71001 135.29601 140.18201 147.686 155.19 162.19 165.382 172.284 179.78799 187.29201 190.694 196.686 199.87801 208.362 215.866 223.272 228.256 235.75999 242.354 249.256 252.742 255.93401 262.332 269.836 274.82001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan20">Computer Science Capstone Topic Approval Form</tspan></text></g><g
+           id="g24"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,716.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text28"><tspan
+               x="0 4.8899999 10.09 15.08 17.370001 22.57 27.860001 31.26 36.549999 41.84 45.740002 50.73 52.93 58.220001 61.310001 63.509998 66.809998 72.099998 74.389999 78.290001 80.580002 85.779999 91.07 95.269997 100.56 108.46 113.45 118.74 122.04 124.33 126.62 130.52 132.81 136.11 141.39999 143.60001 148.89 153.88 156.08 161.37 163.66 168.16 173.36 178.64999 180.94 185.14 187.42999 192.42 197.12 200.61 202.89999 207.49001 209.69 214.67999 218.98 224.27 226.56 231.35001 233.55 238.84 241.13 245.63 250.83 256.12 259.60999 261.89999 266.10001 270.79999 276.09 279.98999 283.29001 288.57999 293.87 298.85999 301.06 304.35999 309.64999 314.94 317.23001 321.42999 323.92001 326.20999 331.41 334.89999 340.19 342.57999 347.57001 351.76999 355.07001 357.35999 361.26001 365.45999 370.66 375.95001 380.94 383.42999 385.72 390.42001 395.70999 401 403.20001 408.79001 416.78 421.76999 423.97 426.26001 431.54999 436.54001 439.04001 441.32999 443.73001 449.01999 453.92001 459.20999 464.79999 467.89001 472.39001 474.67999 479.57999 484.37 488.57001 493.85999 496.14999 500.85001 504.34 509.32999 514.12 516.40997 519.71002 525"
+               y="0"
+               sodipodi:role="line"
+               id="tspan26">The purpose of this document is to help you clearly explain your capstone topic, project scope, and tmeline. Identfy each area to </tspan></text></g><g
+           id="g30"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,704.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text34"><tspan
+               x="0 5.29 10.08 14.58 19.57 21.77 26.559999 28.85 33.049999 38.34 46.240002 51.529999 53.82 58.810001 62.110001 67.099998 69.389999 74.089996 79.379997 84.669998 86.870003 90.360001 95.349998 100.14 102.34 104.63 108.53 114.12 118.41 120.61 125.9 130.39999 135.39 138.88 143.38 145.58 150.57001 157.75999 160.05 165.25 168.34 170.53999 175.03999 180.33 185.62 189.11 191.31 196.60001 200 205.28999 207.67999 212.67 216.87 220.17 222.75999 225.05 229.85001 235.14 240.34 243.83 246.12 250.32001 255.61 260.81 264.29999 268.20001 273.19 275.48001 277.67999 282.97 286.87 290.17001 293.66 298.95001 303.14999 306.45001 311.73999 315.23001 317.51999 321.72 326.51001 331.70999 337 342.29001 345.59 347.88 351.78 354.07001 358.76999 364.06 366.26001 371.54999 377.35001 379.64001 384.84 390.13 392.42001 396.92001 402.12 407.41 410.89999 413.19 418.39001 421.88 427.17001 429.47 434.45999 438.66 442.04999 444.34 447.64001 452.84 458.13 460.42001 464.70999 466.91 474.01001 476.29999 479.60001 484.89001 490.17999 495.47 498.76999 501.06 504.35999 509.64999 511.94 515.84003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan32">have a complete and realistc overview of your project. Your course instructor cannot sign of on your project topic without this </tspan></text></g><g
+           id="g36"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,692.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text40"><tspan
+               x="0 2.29 7.4899998 10.58 15.87 19.360001 27.35 32.049999 37.639999 42.93"
+               y="0"
+               sodipodi:role="line"
+               id="tspan38">informaton</tspan></text></g><g
+           id="g42"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,84.4,692.2)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text46"><tspan
+               x="0"
+               y="0"
+               id="tspan44">.</tspan></text></g><g
+           id="g48"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,38.39,670)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text52"><tspan
+               x="0 6.4000001 11.5 14.8 19.59 22.379999 24.58 29.469999 34.57 39.759998 41.959999 49.860001 54.959999 58.849998 62.240002 64.529999 69.82 72.110001 74.400002 76.599998 81.699997 86.800003 90.190002 92.480003 97.580002 102.68 107.87 110.16 114.05 119.15 124.25 132.14999 134.44 137.83 140.12 143.42 148.52 150.81 154.7 156.99001 160.08 165.17999 168.58 176.48 178.98 181.27 185.77 190.87 195.97 200.16 204.95 207.24001 212.34 217.13 222.23 227.02 232.12 235.42 240.71001 242.91 247.7 252.8 256.98999 262.09 264.38 269.48001 274.57999 282.48001 287.57999 292.37 295.85999 298.14999 305.25 307.54001 309.82999 312.12 314.41 319.20001 323.5 328.60001 333.70001 338.79999 343.98999 346.28 351.38 355.26999 357.56 362.66 367.45001 372.23999 377.34 382.13 387.23001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan50">Note: You must fll out and submit this form. Space beneath each number will expand as needed.</tspan></text></g><g
+           id="g54"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,647.8)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text58"><tspan
+               x="0 5.79 10.89 15.38 17.67 21.860001 26.959999 30.85 34.150002 36.439999 41.540001 45.43 49.32 54.419998 58.610001 60.900002 66 69.300003 74.089996 79.279999 81.57 88.669998 90.959999 94.260002 99.449997 101.65 106.75 111.54 116.03 120.82 123.11 128.21001 133.31 135.60001 140.7 145.89 148.17999 151.48 156.58 161.47 163.67 168.77 173.87 178.97 181.25999 183.55 187.74001 192.84 198.42999 203.53 208.82001 211.02 218.12 220.41 222.7 225.09 227.28999 232.39 237.17999 239.47 242.77 247.87 252.75999 254.96001 258.85001 262.14999 267.25 272.35001 277.14001 282.32999 285.63 288.12 292.10999 294.39999 297.79999 302.5 306.39001 311.48999 316.59 321.69 325.57999 327.87 332.97 335.26001 337.54999 339.94 343.23999 347.73001 350.32001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan56">Any cost associated with developing the applicaton will be the student’s responsibility. </tspan></text></g><g
+           id="g60"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,625.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text64"><tspan
+               x="0 2.6900001 9.2799997 13.78 20.57 26.17 34.959999 37.25 39.849998 46.439999 51.139999 56.130001 61.73 68.230003 73.519997 78.510002 85.300003 90.900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan62">INFORM INSTRUCTOR:</tspan></text></g><g
+           id="g66"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,609.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text70"><tspan
+               x="0 5.1900001 10.48 13.78 18.68 23.969999 29.559999 34.349998 36.639999 38.93 44.130001 48.029999 53.02 55.310001 60.509998 63.599998 65.800003 71.089996 74.489998 79.779999 85.07 88.559998 90.760002 95.75 99.050003 103.84 107.33 111.92 114.21 118.41 123.61 131.60001 136.89 141.59 146.88 151.47 153.67 155.96001 161.16 164.25 169.53999 173.03 181.02 185.72 191.31 196.60001 201.8 204.49001 206.78 209.78 214.67 218.47 224.96001 227.96001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan68">Potental use of proprietary company informaton: (Y/N) </tspan></text></g><g
+           id="g72"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,266.7,609.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text76"><tspan
+               x="0"
+               y="0"
+               id="tspan74">N</tspan></text></g><g
+           id="g78"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,570)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text82"><tspan
+               x="0 6.0900002 12.59 18.68 22.879999 28.07 32.77 35.459999 40.16"
+               y="0"
+               sodipodi:role="line"
+               id="tspan80">ANALYSIS:</tspan></text></g><g
+           id="g84"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,546)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text88"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan86">1.</tspan></text></g><g
+           id="g90"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,546)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text94"><tspan
+               x="0 5.3000002 8.8900003 14.19 16.780001 21.780001 25.969999 29.459999 31.75 35.150002 40.540001 45.84 48.330002 52.52 54.810001 60.810001 67.400002 73.699997 75.989998 81.379997 86.379997 90.370003 94.470001 98.059998 100.46 105.85 111.74 117.04 122.43"
+               y="0"
+               sodipodi:role="line"
+               id="tspan92">Project topic AND descripton:</tspan></text></g><g
+           id="g96"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,199.79,546)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text100"><tspan
+               x="0 5.79 11.19 16.49 18.780001 23.370001 25.57 30.860001 35.650002 40.939999 45.139999 47.43 52.220001 54.509998 56.709999 62 66.900002 71.889999 77.18 81.080002 83.370003 88.07 90.360001 93.660004 98.949997 104.24 106.53 108.82 112.12 117.41 119.61 124.4 128.3 132.2 134.49001 138.39 141.78 144.07001 146.27 151.56 153.85001 161.75 166.53999 171.03999 173.33 178.62 183.32001 185.61 189.81 193.3 197.8 203.09 206.39 211.67999 215.88 221.17 224.57001 228.06 233.05 238.34 242.53999 247.03999 249.33 251.53 256.82001 261.32001 266.31 270.20999 273.51001 281.5 286.48999 291.78 295.07999 297.37 302.57001 307.56 311.76001 314.04999 317.95001 320.23999 325.53 330.82001 334.72 337.22 339.51001 344.31 349.60001 351.89001 355.79001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan98">ABC Financial needs a tool to assist in making cryptocurrency investment decisions. This </tspan></text></g><g
+           id="g102"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,532)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text106"><tspan
+               x="0 5.29 8.6899996 13.98 16.370001 21.360001 25.559999 28.950001 31.15 38.25 40.540001 42.830002 45.220001 47.419998 51.619999 55.110001 60.099998 64.889999 68.190002 73.18 75.470001 80.260002 82.459999 87.75 92.540001 95.839996 100.63 102.92 108.12 111.61 116.81 122.1 127.39 131.59 134.98 137.17999 140.27 145.47 148.96001 151.25 155.45 157.74001 162.53 166.42999 170.33 172.53 175.62 180.12 182.41 187.7 192.39999 194.69 197.69 202.98 206.28 211.57001 214.97 219.96001 222.25 227.64999 229.94 233.24001 237.44 242.73 245.02 250.31 252.60001 257.10001 261.89001 264.09 269.38 274.37 278.26999 280.56 285.76001 290.54999 294.45001 299.35001 304.64001 306.92999 312.22 317.42001 319.70999 323.91 329.10999 332.60001 336.09 341.07999 346.37 349.67001 351.95999 357.16 361.95001 365.25 370.04001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan104">project will create a data product for classifying future Bitcoin values based on current data.</tspan></text></g><g
+           id="g108"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,495.5)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text112"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan110">2.</tspan></text></g><g
+           id="g114"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,495.5)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text118"><tspan
+               x="0 5.3000002 8.8900003 14.19 16.780001 21.780001 25.969999 29.459999 31.75 37.049999 42.439999 45.939999 51.330002 56.720001 60.709999 65.709999 70 74.699997 80.089996 84.989998 87.480003 91.470001 94.260002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan116">Project purpose/goals: </tspan></text></g><g
+           id="g120"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,168.8,495.5)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text124"><tspan
+               x="0 5.0999999 8.5900002 13.88 16.27 21.26 25.459999 28.76 31.049999 36.34 41.540001 45.029999 50.23 55.52 59.419998 64.410004 68.300003 72.900002 78.190002 82.980003 85.269997 89.169998 91.860001 94.150002 99.25 102.74 108.03 112.53 114.73 120.02 125.01 127.3 132.09 134.28999 139.69 141.98 145.28 149.48 154.77 157.06 162.45 164.64999 169.44 174.64 179.42999 181.72 186.22 190.12 192.41 196.39999 198.60001 201.89999 207.19 212.48 214.77 217.06 222.85001 228.25 233.55 235.84 240.83 248.73 254.02 256.31 261.60001 266.10001 271.09 276.07999 279.98001 282.17999 286.38 291.17001 296.45999 298.66 303.95001 307.85001 312.84 315.04001 318.34 323.73001 325.92999 330.72 333.01001 338.29999 340.5 345.89999 348.19 351.48999 355.69 360.98001 363.26999 368.56"
+               y="0"
+               sodipodi:role="line"
+               id="tspan122">Project purpose/goals: Provide a Bitcoin analysis tool ABC employees can use to aid Bitcoin </tspan></text></g><g
+           id="g126"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,481.5)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text130"><tspan
+               x="0 2.29 7.5799999 12.08 17.07 20.969999 24.27 32.259998 37.16 42.450001 45.84 48.040001 53.330002 58.32 62.52 64.809998 68.709999 71 76.199997 81.489998 84.580002 92.57 97.360001 101.86 104.06 109.35 114.05"
+               y="0"
+               sodipodi:role="line"
+               id="tspan128">investment decision-making.</tspan></text></g><g
+           id="g132"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,452.1)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text136"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan134">3.</tspan></text></g><g
+           id="g138"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,452.1)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text142"><tspan
+               x="0 6.3000002 11.3 15.29 19.48 23.07 25.469999 30.860001 36.75 41.450001 46.450001 48.740002 56.84 61.84 65.330002 70.720001 76.019997 81.410004 85.400002 88.190002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan140">Descriptve methods: </tspan></text></g><g
+           id="g144"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,164.9,452.1)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text148"><tspan
+               x="0 5.6900001 7.98 11.88 17.08 21.870001 24.16 26.450001 30.440001 35.139999 40.73 46.02 51.310001 55.209999 57.700001 59.900002 63.799999 69.089996 73.290001 78.580002 80.779999 85.57 89.470001 91.760002 95.959999 101.25 104.65 108.14 113.13 115.42 120.21 125.8 131 136.28999 138.58 146.48 151.27 154.57001 158.06 160.35001 164.55 169.53999 173.53 175.73 180.52 185.72 191.00999 193.3 198.5 200.78999 204.69 207.99001 213.28 217.98 221.47 226.25999 234.25 238.14999 240.64 242.92999 250.03 252.32001 254.61 256.89999 259.19 264.39001 269.38 271.67001 276.87 280.76999 285.67001 290.95999 293.25 296.54999 301.84 304.13 306.32999 311.62 316.12 321.10999 325.01001 330.60001 335.29999 340.09 343.39001 348.38 350.67001 353.97 359.26001 364.25 366.45001 371.73999 376.53 379.82999 384.62 387.12 389.41 395.20001 397.48999 401.29001 406.57999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan146">Visualizatons, such as correlaton matrices and histograms, will be used to investgate the data. Also,</tspan></text></g><g
+           id="g150"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,438.1)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text154"><tspan
+               x="0 3.0899999 7.9899998 12.78 16.08 21.370001 24.860001 29.85 32.139999 35.939999 40.93 43.220001 48.209999 52.41 58 63.200001 68.489998 70.779999 74.080002 79.07 83.269997 88.470001 93.760002 96.050003 101.25 106.54 111.53 115.43 117.72 121.52 126.81 131.00999 136.3 138.59 143.38 147.28 149.48 153.98 158.77 162.25999 164.55 169.34 174.63 178.83 183.82001 186.02 189.32001 194.61 198.10001 203.09 206.89 212.17999 217.47 219.67 224.96001 227.25 232.03999 237.24001 242.53 244.82001 250.02 255.31 257.60001 262.10001 266.79999 270.29001 272.57999 277.37 280.67001 285.66 287.95001 291.04001 295.94 300.73001 304.03 309.32001 312.81 317.79999 320 323.89999 328.89001 331.17999 336.17001 340.37 345.95999 351.16 356.45001 358.73999 366.73001 369.01999 373.62 378.91 382.29999 384.5 389.79001 394.69 396.98001 402.26999 406.07001 411.06 416.35001 418.54999 421.64001 426.92999 430.42001 432.62 437.91 440.10999 448.10001 453.09 458.38 462.28 464.48001 469.76999 475.06"
+               y="0"
+               sodipodi:role="line"
+               id="tspan152">feature selecton techniques such as variance threshold and univariate feature selecton might be used for dimension </tspan></text></g><g
+           id="g156"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,424.1)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text160"><tspan
+               x="0 3.49 8.3900003 13.68 18.969999 23.17 28.76 33.959999 39.25 41.75 44.040001 49.830002 52.029999 56.23 61.52 66.720001 69.809998 75.099998 79 81.290001 86.489998 91.779999 94.07 102.06 106.85 110.15 113.64 115.93 120.23 122.52 129.62 131.91 134.2 136.49001 138.78 143.98 148.97 151.17 156.46001 160.36 165.25999 170.55 172.84 176.14 181.42999 183.72 188.22 190.50999 194.31 199.60001 204.39 206.67999 208.97 212.87 217.86 220.14999 228.14 233.34 238.63 243.62 245.91 248.11 253.39999 258.29999 261.79001 264.88 270.07999 273.57001 281.56 286.35001 291.64001 295.84 300.82999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan158">reducton. A confusion matrix will be used to visualize model performance.</tspan></text></g><g
+           id="g162" /><g
+           id="g164"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,394.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text168"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan166">4.</tspan></text></g><g
+           id="g170"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,394.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text174"><tspan
+               x="0 6.5900002 11.98 17.280001 20.370001 25.76 30.76 34.75 38.849998 42.439999 44.93 50.23 56.119999 60.82 65.910004 68.199997 76.300003 81.300003 84.790001 90.089996 95.480003 100.87 103.66"
+               y="0"
+               sodipodi:role="line"
+               id="tspan172">Non-descriptve method: </tspan></text></g><g
+           id="g176" /><g
+           id="g178"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,180.4,394.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text182"><tspan
+               x="0 5.79 7.9899998 15.98 20.77 24.969999 30.26 32.459999 37.75 42.740002 45.029999 47.23 52.220001 57.009998 60.41 65.699997 67.989998 73.279999 77.980003 80.269997 88.169998 93.459999 98.660004 103.65 105.94 108.23 115.33 117.62 119.91 122.2 124.49 129.69 134.67999 136.97 142.17 147.16 151.66 156.64999 158.85001 164.14 169.42999 174.33 179.62 181.91 185.21001 190.5 192.78999 197.99001 201.48 206.38 211.67 213.96001 218.16 221.55 223.75 226.84 232.13 235.33 240.62 244.11 249.10001 251.39 256.79001 259.07999 262.38 266.57999 271.87 274.16 279.45001 281.64999 283.94 289.23001 293.73001 298.72 302.62 305.92001 313.91 318.89999 324.19 327.48999 331.39001 333.67999 338.88 343.67001 347.57001 352.47 357.76001 360.04999 365.34 370.54001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan180">A machine learning model will be developed to predict future Bitcoin investments based on </tspan></text></g><g
+           id="g184"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,380.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text188"><tspan
+               x="0 4.1999998 9.4899998 12.98 16.379999 21.370001 26.66 29.959999 32.25 37.540001 42.330002 45.630001 50.419998 52.919998 55.209999 60.310001 63.799999 68.699997 73.989998 76.279999 80.480003 86.07 91.360001 96.650002 100.55 102.75 109.85 112.14 114.43 116.82 119.02 124.31 129.21001 131.5 136.7 140.19 145.48 147.87 152.86 157.06 160.36 165.35001 170.64 172.84 178.13 183.33 185.62 187.91 192.7 196.19 198.48 202.98 207.77 209.97 215.25999 220.25 222.53999 225.44 230.73 234.63 236.92 242.21001 246.91 249.2 253.89999 256.19 259.67999 264.67001 269.37 272.76999 277.76001 281.66 285.56 287.85001 293.14001 298.42999 300.63 305.42001 307.70999 312.41 317.70001 321.19 323.48001 326.78 332.07001 340.06 342.26001 346.16 351.45001 355.54999 360.84 363.13 367.92001 371.82001 374.10999 376.31 378.60001 383.89001 388.88 393.57999 397.07001 399.35999 404.64999 408.14001 410.34 415.63 420.62 424.82001 427.10999 431.01001 433.20999 438.5 443.79001 445.98999 449.29001 452.78 457.76999 462.76001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan186">current data. Predictons will be projected dollar value (using a regression algorithm such as linear or decision tree </tspan></text></g><g
+           id="g190"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,366.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text194"><tspan
+               x="0 3.49 8.4799995 13.18 16.67 21.66 25.559999 29.459999 31.66 36.950001 42.240002 45.240002 47.73 50.02 55.220001 58.709999 61 64.300003 69.589996 74.580002 76.779999 84.769997 89.970001 95.260002 100.25 102.54 104.83 111.93 114.22 116.51 118.8 121 126.29 129.78 134.67999 139.97 142.25999 146.46001 149.85001 152.05 159.14999 164.44 169.42999 172.73 178.02 183.00999 186.5 188.7 193.49001 198.78 200.98 203.27 208.56 213.06 218.05 221.95 225.25 233.24001 238.14 243.42999 246.82001 249.02 256.12 258.41 260.70001 263.09 265.29001 270.57999 275.48001 277.76999 283.06 286.45999 291.75 297.04001 300.34 305.13 310.42001 312.70999 317.70001 319.89999 322.89999 328.19 332.09 334.38 339.67001 344.37 346.57001 351.35999 353.64999 357.85001 360.14001 364.92999 368.82999 372.73001 375.01999 380.31 384.51001 389.29999 394.79999 400.09 405.38 407.67001 412.37 414.66 419.35999 424.64999 428.14001 430.42999 433.73001 439.01999 447.01001 449.20999 453.10999 458.39999 462.60001 467.89001 470.09 474.88 478.78 481.07001 486.26999 491.06 493.35001 497.85001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan192">regression), or the model will predict whether an investment will be proftable (using a classifcaton algorithm such as naive</tspan></text></g><g
+           id="g196"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,352.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0e101a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text200"><tspan
+               x="0 5.4000001 10.19 14.69 19.68 23.67 25.870001 31.16 34.650002 36.849998 39.139999 44.43 49.130001 51.419998 55.32 60.91 65.110001 67.400002 70.800003 75.790001 80.489998 83.980003 88.970001 92.870003 96.769997 99.059998 104.26 109.55 112.55"
+               y="0"
+               sodipodi:role="line"
+               id="tspan198">Bayes or logistc regression).</tspan></text></g><g
+           id="g202"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,314.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text206"><tspan
+               x="0 6.3000002 11.19 15.89 18.58 24.969999 31.559999 33.759998 38.66 44.049999 49.439999 51.639999 57.939999 62.830002 68.730003 73.620003 77.82 84.610001 89.910004 98.610001 103.5 110.09 114.99"
+               y="0"
+               sodipodi:role="line"
+               id="tspan204">DESIGN and DEVELOPMENT:</tspan></text></g><g
+           id="g208"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,289.6)"
+             style="font-variant:normal;font-weight:bold;font-size:11px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text212"><tspan
+               x="0 5.5879998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan210">1.</tspan></text></g><g
+           id="g214"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,289.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text218"><tspan
+               x="0 5.29 10.68 18.780001 24.17 29.469999 32.959999 37.959999 41.549999 43.84 47.830002 51.93 54.419998 59.419998 64.809998 69 74 76.290001 81.190002 86.580002 91.879997 94.370003 96.860001 101.05 105.85 111.74 117.13 122.52 124.72 128.21001 132.91 138.3 143.3 145.59 148.69 152.67999 157.67999 160.17 165.17 169.36 172.85001 175.05 180.44 185.83 190.83 193.92999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan216">Computer science applicaton type (select one):</tspan></text></g><g
+           id="g220"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,275.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:OpenSymbol;-inkscape-font-specification:OpenSymbol;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text224"><tspan
+               x="0"
+               y="0"
+               id="tspan222">•</tspan></text></g><g
+           id="g226"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,275.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text230"><tspan
+               x="0 4.5900002 7.8899999 12.68 17.969999 23.17 26.26 32.049999 34.34 39.540001 44.830002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan228">Stand-Alone</tspan></text></g><g
+           id="g232"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,246.2)"
+             style="font-variant:normal;font-weight:bold;font-size:11px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text236"><tspan
+               x="0 5.5879998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan234">2.</tspan></text></g><g
+           id="g238"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,246.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text242"><tspan
+               x="0 5.3000002 8.8900003 14.28 18.98 22.57 27.469999 35.57 43.669998 46.16 51.549999 56.25 60.540001 65.93 70.93 75.629997 80.629997 83.120003 88.510002 93.900002 102 107 112.39 115.88 118.17 120.66 125.46 130.85001 135.55 140.94 145.84 150.53999 155.53999 158.64 162.63 165.92 168.12 172.82001 178.21001 183.60001 185.89 193.28999 195.78 198.17999 200.67 202.96001 208.25999 212.25 217.25"
+               y="0"
+               sodipodi:role="line"
+               id="tspan240">Programming/development language(s) you will use:</tspan></text></g><g
+           id="g244"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,231.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:OpenSymbol;-inkscape-font-specification:OpenSymbol;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text248"><tspan
+               x="0"
+               y="0"
+               id="tspan246">•</tspan></text></g><g
+           id="g250"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,231.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text254"><tspan
+               x="0 5.1900001 9.6899996 12.99 18.280001 23.48"
+               y="0"
+               sodipodi:role="line"
+               id="tspan252">Python</tspan></text></g><g
+           id="g256"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,201.3)"
+             style="font-variant:normal;font-weight:bold;font-size:11px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text260"><tspan
+               x="0 5.5879998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan258">3.</tspan></text></g><g
+           id="g262"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,201.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text266"><tspan
+               x="0 6.79 12.18 17.18 20.77 25.57 31.459999 36.849998 41.639999 43.84 48.540001 53.240002 57.23 60.720001 65.720001 73.82 76.919998 80.910004 84.010002 88.300003 93.599998 96.089996 100.99 107.29 112.68 116.27 124.37 127.47 131.46001 134.75 136.95 141.64999 147.03999 152.42999 154.63 162.12 164.52 167.00999 169.5 171.7 177.09 181.08 186.08"
+               y="0"
+               sodipodi:role="line"
+               id="tspan264">Operatng System(s)/Platorm(s) you will use:</tspan></text></g><g
+           id="g268"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,186.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:OpenSymbol;-inkscape-font-specification:OpenSymbol;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text272"><tspan
+               x="0"
+               y="0"
+               id="tspan270">•</tspan></text></g><g
+           id="g274"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,186.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text278"><tspan
+               x="0 8.8900003 11.18 16.379999 21.67 26.959999 34.060001 38.049999 40.25 45.34 50.34 52.630001 55.630001 60.830002 66.120003 69.510002 71.709999 75.010002 80.300003 85.290001 87.580002 92.279999 97.57 102.86 105.06 112.16 114.45 116.74 119.13 121.33 124.82 130.02 135.31 137.60001 142.8 148.09 150.28999 155.08 160.37 164.87 167.16 172.35001 176.85001 180.14999 185.35001 190.64 195.84 198.92999 203.13 208.42 216.41 221.7 226.39999 231.99001 237.28 239.57001 244.56 246.75999 253.36 257.95001 260.23999 263.23999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan276">Windows 10 (but the app will run on any Python-compatble OS ).</tspan></text></g><g
+           id="g280"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,156.2)"
+             style="font-variant:normal;font-weight:bold;font-size:11px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text284"><tspan
+               x="0 5.5879998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan282">4.</tspan></text></g><g
+           id="g286"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,156.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text290"><tspan
+               x="0 6.3000002 11.2 14.69 19.59 24.98 29.879999 33.869999 38.959999 41.16 49.860001 54.759998 60.150002 65.050003 69.75 74.839996 82.940002 87.940002 93.330002 96.919998 99.209999 103.91 108.61 112.6 116.09 121.09 129.19 131.48 136.17999 141.57001 146.96001 149.16 156.64999 159.05 161.53999 164.03 166.23 171.62 175.61 180.61 182.89999 185.89999 188.39 191.58 193.87 198.77 204.07001 209.46001 211.86 214.35001 218.53999 223.44 228.83 231.32001 236.32001 239.42"
+               y="0"
+               sodipodi:role="line"
+               id="tspan288">Database Management System you will use (if applicable):</tspan></text></g><g
+           id="g292"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,141.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:OpenSymbol;-inkscape-font-specification:OpenSymbol;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text296"><tspan
+               x="0"
+               y="0"
+               id="tspan294">•</tspan></text></g><g
+           id="g298"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,141.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text302"><tspan
+               x="0 6.4899998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan300">NA</tspan></text></g><g
+           id="g304"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,111.1)"
+             style="font-variant:normal;font-weight:bold;font-size:11px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text308"><tspan
+               x="0 5.5879998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan306">5.</tspan></text></g><g
+           id="g310"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,111.1)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text314"><tspan
+               x="0 4.8899999 8.8800001 14.77 22.870001 27.77 31.26 36.259998 41.650002 43.849998 49.240002 54.630001 62.73 68.120003 73.120003 76.709999 78.910004 84.300003 87.489998 89.690002 95.080002 100.38 105.77 109.36 113.35 115.55 118.74 124.04 127.63 129.92 133.41 138.8 143.8 146 149.19 154.49001 156.98 159.47 164.77 172.25999 174.66 180.05 184.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan312">Estmated number of hours for the following:</tspan></text></g><g
+           id="g316"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,85.3,96.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text320"><tspan
+               x="0 2.29"
+               y="0"
+               sodipodi:role="line"
+               id="tspan318">i.</tspan></text></g><g
+           id="g322"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,96.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text326"><tspan
+               x="0 5.0999999 7.3899999 12.18 17.379999 22.67 24.959999 30.25 34.950001 37.150002 41.939999 47.139999 52.43 54.720001 60.82 65.809998 69.709999 72 76.699997 81.900002 84.589996 86.879997 91.970001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan324">Planning and Design: 20</tspan></text></g><g
+           id="g328"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,83,82.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text332"><tspan
+               x="0 2.29 4.5799999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan330">ii.</tspan></text></g><g
+           id="g334"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,82.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text338"><tspan
+               x="0 6.0999999 11.09 15.59 20.58 22.870001 28.07 33.360001 41.349998 46.25 51.540001 54.84 57.630001 59.830002 64.919998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan336">Development: 25</tspan></text></g><g
+           id="g340"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.7,68.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text344"><tspan
+               x="0 2.29 4.5799999 6.8699999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan342">iii.</tspan></text></g><g
+           id="g346"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,68.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text350"><tspan
+               x="0 6.0999999 11.39 15.59 20.879999 28.780001 33.77 39.060001 42.360001 47.150002 52.740002 57.939999 63.23 65.919998 68.209999 73.209999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan348">Documentaton: 10</tspan></text></g><g
+           id="g352"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.8,54.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text356"><tspan
+               x="0 2.29 6.79"
+               y="0"
+               sodipodi:role="line"
+               id="tspan354">iv.</tspan></text></g><g
+           id="g358"><text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,54.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text362"><tspan
+               x="0 4.8000002 10.09 13.39 18.18 20.469999 23.16 25.450001 30.450001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan360">Total: 55</tspan></text></g></g></g><image
+       width="550.78784"
+       height="327.05991"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+t/f/d59pBDovd4EAAAAASUVORK5CYII=
+"
+       id="image476"
+       x="32.361866"
+       y="-565.00464"
+       transform="scale(1,-1)" /></g></svg>

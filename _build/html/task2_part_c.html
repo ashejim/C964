@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2: Part C -the application &#8212; IT Capstone</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Task 2: The Documentation" href="task2_doc.html" />
+    <link rel="prev" title="Task 1: Topic Approval" href="task1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/GT_Headlogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">IT Capstone</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Task 2: Part C -the application
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="task2_doc.html">
+   Task 2: The Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resources.html">
+   C964 Resources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ci_page.html">
+   Course Faculty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ML_page.html">
+   Machince
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="github_webpage.html">
+   Creating Your Own GitHub Webpage!
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftask2_part_c.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/task2_part_c.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-does-the-application-need-to-do">
+   What does the application need to do?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#faq">
+   FAQ
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Task 2: Part C -the application</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-does-the-application-need-to-do">
+   What does the application need to do?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#faq">
+   FAQ
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
+<div class="tex2jax_ignore mathjax_ignore section" id="task-2-part-c-the-application">
+<h1>Task 2: Part C -the application<a class="headerlink" href="#task-2-part-c-the-application" title="Permalink to this headline">#</a></h1>
+<p>Your software application (the “app”) is the entirety of part C of task 2. However, the Computer Science capstone is <em>not</em> a software project. Other than requiring an application of machine learning to data, they will assess <em>what</em> your application does -not how.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"><strong>What is an <em>application</em>?</strong></p>
+<p>An application (app) is simply software that performs specific tasks.</p>
+</div>
+<p>(task2c:appreqs)</p>
+<div class="section" id="what-does-the-application-need-to-do">
+<h2>What does the application need to do?<a class="headerlink" href="#what-does-the-application-need-to-do" title="Permalink to this headline">#</a></h2>
+<p>Your app must help the user solve the organizational problem from <a class="reference internal" href="task1.html#task1"><span class="std std-ref">task 1</span></a> by doing the following:</p>
+<ol class="simple">
+<li><p>Use data to develop a machine learning model.</p></li>
+<li><p>Apply the ML model to user-provided data.</p></li>
+<li><p>Provide visualizations (pictures).</p></li>
+<li><p>Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.</p></li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="c28f0b6d-57c3-4121-bdd4-9dcac9f00a3c" name="7c3fc0c8-fb0e-40cd-a36c-ca0d565e0b07" type="radio">
+</input><label class="sd-tab-label" for="c28f0b6d-57c3-4121-bdd4-9dcac9f00a3c">
+Example 1</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>The App:</strong> A standalone Python project which can predict Iris types.</p>
+<p><strong>Data → ML model:</strong> Labeled <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris petal dimensions</a> train an SVN classification model.</p>
+<p><strong>New data → ML model → prediction:</strong> Using new flower dimensions, the model can predict the Iris type.</p>
+<p><strong>Visualizations:</strong> Histograms showing distributions of different flower features and a confusion matrix illustrating the accuracy of the classification model.</p>
+<p><strong>User interface:</strong> Following detailed instructions, via console the user can input flower dimensions and the app returns a prediciton.</p>
+</div></blockquote>
+</div>
+<input id="d6ae094b-ccb3-4821-9e0d-9ef5c9574200" name="7c3fc0c8-fb0e-40cd-a36c-ca0d565e0b07" type="radio">
+</input><label class="sd-tab-label" for="d6ae094b-ccb3-4821-9e0d-9ef5c9574200">
+Example 2</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) predicting house prices.</p>
+<p><strong>Data → ML model:</strong> Labeled housing data trains a multi-linear regression model to predict house prices.</p>
+<p><strong>New data → ML model → prediction:</strong> Using unseen house data, the model predicts the house’s price.</p>
+<p><strong>Visualizations:</strong> Histograms showing distributions of data features and scatterplots demonstrating data correlations.</p>
+<p><strong>User interface:</strong> Following detailed instructions, via the Jupyter notebook file, the user can adjust widget sliders to get a price prediciton.</p>
+</div></blockquote>
+</div>
+<input id="534e0436-31cd-4d1f-aaa4-fd54548a77e2" name="7c3fc0c8-fb0e-40cd-a36c-ca0d565e0b07" type="radio">
+</input><label class="sd-tab-label" for="534e0436-31cd-4d1f-aaa4-fd54548a77e2">
+Example 3</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>The App:</strong> A web app providing movie recommendations.</p>
+<p><strong>Data → ML model:</strong> Cosine similarity provides a similarity score between any two movies.</p>
+<p><strong>User data → ML model → recommendation:</strong> Using a user provided movie, the five most similiar movies are returned.</p>
+<p><strong>Visualizations:</strong> Histograms showing distributions of movie features and samples of Cosine Similarity matrices.</p>
+<p><strong>User interface:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> returns five recommendations for a user typed movie.</p>
+</div></blockquote>
+</div>
+<input id="ad5ce760-0c2a-4b89-9794-ccf3f765705e" name="7c3fc0c8-fb0e-40cd-a36c-ca0d565e0b07" type="radio">
+</input><label class="sd-tab-label" for="ad5ce760-0c2a-4b89-9794-ccf3f765705e">
+Example 4</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
+<p><strong>Data → ML model:</strong> Labeled images are used to <a class="reference external" href="https://www.tensorflow.org/tutorials/images/classification">train a neural network model to classify images</a> of dogs and cats.</p>
+<p><strong>New data → ML model → prediction:</strong> Loading an image from a hosted folder, the model classifies it as a dog or cat.</p>
+<p><strong>Visualizations:</strong> Graphs of training and validation accuracy and loss, a confusion matrix showing model accuracy, and image examples.</p>
+<p><strong>User interface:</strong> Follwoing detailed instructions, the user can upload an image to Jupyter notebook deployed on <a class="reference external" href="https://datalore.jetbrains.com">Datalore</a>, and the app classifies the image as cat or dog.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="faq">
+<span id="task2c-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">#</a></h2>
+<p><strong>What are the most common reasons for the task 2 code being returned?</strong></p>
+<ol class="simple">
+<li><p>Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect <span class="xref myst">user guide</span> or because evaluators don’t have access to shared cloud links.</p></li>
+<li><p>Evaluators are not certain how the code is meant to be used by the “user.” Again, an incomplete or incorrect <span class="xref myst">part D user guide</span> is usually the culprit. Adding an explicit example (and including example user files when appropriate) also helps avoid this issue.</p></li>
+</ol>
+<p><strong>I’ve completed the coding for task 2. Should I send it to my course instructor for review?</strong></p>
+<p>If you have specific questions or concerns -yes. However, if the code runs and meets the <span class="xref myst">minimum app requirements</span> it’s usually best to move on to the <a class="reference internal" href="task2_doc.html#task2doc"><span class="std std-ref">documentation</span></a>. As you can continue to tweak and improve the app, but can be comfortable knowing that what you have can pass.</p>
+<p><strong>I need help with part C. Who do I contact?</strong></p>
+<p>That depends on what you need help with. For questions about the capstone, how to meet the requirements, and how to best approach the project to meet your individual goals, contact your <span class="xref myst">assigned course instructor</span> or <a class="reference external" href="mailto:ugcapstoneit&#37;&#52;&#48;wgu&#46;edu?cc=your%20assigned%20CI&amp;subject=C964%20capstone%20question">capstone team inbox</a>. However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the expertise to answer technical questions related to computer science or coding. Particularly debugging code, given the wide range of approaches, languages, and libraries available for use.</p>
+<p>For technical questions related to code or math, see the <span class="xref myst">CS and software subject matter expert list</span>. Keep in mind, that while these faculty may be subject matter experts in their field, they do <em>not</em> necessarily support the capstone, and so may not know your capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the <span class="xref myst">CS and software subject matter expert list</span>, always follow the <span class="xref myst">guidelines</span>.</p>
+<p>Remember, our job (as educators) is to help <em>you</em> fix your problem -not just fix it for you.</p>
+<p>ALSO IN TASK1
+<strong>What if I start working on task 2 and want to change things? Do I need to resubmit task 1?</strong></p>
+<p>No, not unless it’s an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed <em>without updating the approval form</em>. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes at most, you’ll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.</p>
+<p><strong>How many attempts are allowed for each task?</strong></p>
+<p>You have unlimited submissions (as with all WGU performance assessments). Furthermore, a project requiring multiple submissions is not precluded from being given an excellence award. However, do attempt to fully meet <em>each</em> requirement as submissions falling significantly short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Moreover, such submissions do not receive meaningful evaluator comments.</p>
+<p><strong>What is a descriptive method?</strong>
+Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)</p>
+<p><strong>What is a non-descriptive method?</strong></p>
+<p>Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.</p>
+<p><strong>What is machine learning?</strong></p>
+<p>That depends on who you ask! But for this project, it is an algorithm applied to data.</p>
+<p>For computer science, Machine learning is a subfield of artificial intelligence (which is a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as the practice of using algorithms to identify patterns, make predictions, etc. from data. That is, machine learning is a goal, not a technique. So for example, a data scientist (and the evaluators) consider linear regression machine learning -when it’s used as a prediction model, but a mathematician would politely (or not so politely) disagree.</p>
+<p><strong>Can I use libraries outside the standard (Python, Java, etc.) installation?</strong></p>
+<p>Yes. Unlike C950 (Data Structures &amp; Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about the application of these tools -not their development.</p>
+<p>TODO ADD PICTURES</p>
+<p><strong>What sort of user interface do I need? Do I need a GUI?</strong></p>
+<p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” towards solving the proposed problem. If the evaluators can get run your app as intended playing the role of the “client” following your <a class="reference internal" href="task2_doc.html#task2-doc-userguide"><span class="std std-ref">user guide</span></a>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets but using the command line or reading user data from a local directory will also suffice.</p>
+<p>TODO DOC FAQ
+<strong>Are there length requirements for the documentation?</strong></p>
+<p>No. What you see in the examples (ADD LINKS) are just guidelines. The individual evaluator determines what qualifies as “sufficient detail” which further varies depending on the project and writing style. If you feel you’ve met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details.</p>
+<p><strong>I’ve completed the task 2 documentation. Should I send it to my course instructor for review?</strong></p>
+<p>If you have specific questions or concerns -yes. However, in most cases, it’s best just to submit. What suffices as “sufficient detail” is highly subjective. We can always tell you to add more, but if you’ve done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need to be rewritten. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator’s comments is generally easier than overworking the entire project.</p>
+<p>You have <em>unlimited</em> submissions but limited time. And, typically this is the best and most efficient approach.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="task1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Task 1: Topic Approval</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="task2_doc.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Task 2: The Documentation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Jim Ashe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

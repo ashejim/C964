@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: task1
+- file: task2_part_c
+- file: task2_doc
+- file: resources
+- file: ci_page
+- file: ML_page
+- file: github_webpage

@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg3740"
+   width="816"
+   height="1056"
+   viewBox="0 0 816 1056"
+   sodipodi:docname="template_task1.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3744">
+    <rect
+       x="-163.02304"
+       y="534.08295"
+       width="82.728111"
+       height="187.35484"
+       id="rect4752" />
+    <rect
+       x="-49.880184"
+       y="659.39171"
+       width="110.70968"
+       height="91.24424"
+       id="rect4746" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3756">
+      <path
+         d="M 0,0.028 H 611.971 V 791.999 H 0 Z"
+         clip-rule="evenodd"
+         id="path3754" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4136">
+      <path
+         d="M 0,0.028 H 611.971 V 791.999 H 0 Z"
+         clip-rule="evenodd"
+         id="path4134" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview3742"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="0.8219697"
+     inkscape:cx="419.11521"
+     inkscape:cy="544.42396"
+     inkscape:window-width="1849"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="438"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4128">
+    <inkscape:page
+       x="0"
+       y="0"
+       id="page3746"
+       width="816"
+       height="1056"
+       inkscape:export-filename="tamplate_task1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <inkscape:page
+       x="836"
+       y="0"
+       id="page4126"
+       width="816"
+       height="1056" />
+    <sodipodi:guide
+       position="374.70968,557.19816"
+       orientation="0,-1"
+       id="guide7410"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="406.34101,750.63594"
+       orientation="1,0"
+       id="guide7412"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <g
+     id="g3748"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1056)">
+    <g
+       id="g3750">
+      <g
+         id="g3752"
+         clip-path="url(#clipPath3756)">
+        <g
+           id="g3758">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,180.9,742.4)"
+             style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3762"><tspan
+               x="0 7.4060001 14.91 26.292 33.796001 41.299999 46.186001 53.186001 58.169998 61.362 67.956001 73.835999 77.237999 84.237999 91.741997 97.622002 104.706 107.8 115.206 122.108 129.612 135.198 140.084 147.588 155.092 162.17599 165.368 172.27 179.774 187.278 190.67999 196.56 199.752 208.23599 215.74001 223.244 228.228 235.73199 242.326 249.228 252.714 255.90601 262.30399 269.80801 274.79199"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3760">Computer Science Capstone Topic Approval Form</tspan></text>
+        </g>
+        <g
+           id="g3764">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,716.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3768"><tspan
+               x="0 4.8000002 10.09 15.08 17.280001 22.57 27.77 31.26 36.459999 41.75 45.650002 50.639999 52.93 58.130001 61.220001 63.509998 66.809998 72.099998 74.389999 78.290001 80.489998 85.779999 91.07 95.169998 100.46 108.45 113.35 118.64 122.03 124.32 126.61 130.50999 132.71001 136.00999 141.3 143.59 148.78999 153.78 156.07001 161.36 163.56 168.06 173.35001 178.64 180.84 185.03999 187.33 192.32001 197.11 200.60001 202.89 207.39 209.67999 214.67 218.87 224.16 226.45 231.24001 233.53 238.82001 241.02 245.52 250.81 256.01001 259.5 261.79001 265.98999 270.78 276.07001 279.97 283.26999 288.56 293.76001 298.75 301.04001 304.34 309.63 314.92001 317.20999 321.41 323.89999 326.10001 331.39001 334.79001 340.07999 342.47 347.45999 351.66 355.04999 357.25 361.14999 365.35001 370.64001 375.92999 380.92001 383.41 385.60999 390.39999 395.60001 400.89001 403.17999 408.67999 416.67001 421.66 423.95001 426.14999 431.44 436.42999 438.92999 441.22 443.72 448.92001 453.91 459.20001 464.70001 467.79001 472.29001 474.57999 479.57001 484.35999 488.45999 493.75 496.04001 500.82999 504.32001 509.22 514.01001 516.29999 519.59998 524.89001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3766">The purpose of this document is to help you clearly explain your capstone topic, project scope, and tmeline. Identfy each area to </tspan></text>
+        </g>
+        <g
+           id="g3770">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,704.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3774"><tspan
+               x="0 5.1999998 9.9899998 14.49 19.48 21.77 26.559999 28.76 32.959999 38.25 46.240002 51.529999 53.73 58.720001 62.02 67.110001 69.309998 74.099998 79.300003 84.589996 86.879997 90.279999 95.269997 100.06 102.35 104.64 108.54 114.13 118.33 120.62 125.91 130.31 135.3 138.78999 143.28999 145.58 150.57001 157.67 159.96001 165.25 168.25 170.53999 175.03999 180.24001 185.53 189.02 191.31 196.50999 200 205.28999 207.67999 212.67 216.87 220.17 222.75999 224.96001 229.85001 235.05 240.34 243.83 246.12 250.32001 255.52 260.81 264.29999 268.20001 273.19 275.39001 277.67999 282.97 286.87 290.17001 293.66 298.95001 303.14999 306.45001 311.73999 315.23001 317.51999 321.72 326.42001 331.70999 336.91 342.20001 345.59 347.88 351.78 354.07001 358.67001 363.95999 366.25 371.54001 377.34 379.54001 384.82999 390.12 392.32001 396.82001 402.10999 407.39999 410.89001 413.09 418.38 421.78 427.07001 429.45999 434.45001 438.64999 442.04001 444.23999 447.54001 452.82999 458.12 460.41 464.60999 466.89999 474 476.29001 479.59 484.88 490.07999 495.37 498.76001 500.95999 504.26001 509.54999 511.84 515.73999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3772">have a complete and realistc overview of your project. Your course instructor cannot sign of on your project topic without this </tspan></text>
+        </g>
+        <g
+           id="g3776">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,692.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3780"><tspan
+               x="0 2.2 7.4899998 10.49 15.78 19.27 27.26 32.049999 37.639999 42.84"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3778">informaton</tspan></text>
+        </g>
+        <g
+           id="g3782">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,84.4,692.2)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3786"><tspan
+               x="0"
+               y="0"
+               id="tspan3784">.</tspan></text>
+        </g>
+        <g
+           id="g3788">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,38.3,670)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3792"><tspan
+               x="0 6.4000001 11.5 14.8 19.59 22.379999 24.67 29.559999 34.66 39.759998 42.049999 49.950001 55.049999 58.939999 62.330002 64.529999 69.82 72.110001 74.400002 76.690002 81.790001 86.889999 90.279999 92.480003 97.580002 102.68 107.97 110.17 114.06 119.16 124.26 132.16 134.45 137.94 140.14 143.44 148.53999 150.83 154.82001 157.02 160.11 165.21001 168.61 176.50999 179.10001 181.3 185.8 190.89999 196 200.19 205.08 207.28 212.38 217.17 222.27 227.06 232.16 235.55 240.74001 243.03 247.82001 252.82001 257.01001 262.20001 264.39999 269.5 274.60001 282.5 287.60001 292.39001 295.98001 298.17999 305.28 307.57001 309.85999 312.25 314.45001 319.23999 323.54001 328.64001 333.73999 338.84 344.13 346.42001 351.51999 355.41 357.60999 362.70999 367.5 372.29001 377.39001 382.17999 387.28"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3790">Note: You must fll out and submit this form. Space beneath each number will expand as needed.</tspan></text>
+        </g>
+        <g
+           id="g3794">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,647.8)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3798"><tspan
+               x="0 5.79 10.89 15.38 17.58 21.77 26.870001 30.76 34.150002 36.349998 41.450001 45.34 49.23 54.330002 58.52 60.810001 65.910004 69.209999 74 79.190002 81.480003 88.580002 90.870003 94.169998 99.360001 101.65 106.75 111.54 115.94 120.73 123.02 128.12 133.22 135.50999 140.61 145.89999 148.10001 151.39999 156.5 161.39 163.67999 168.78 173.88 178.98 181.27 183.56 187.75 192.85001 198.44 203.53999 208.73 211.02 218.12 220.41 222.7 224.99001 227.28 232.38 237.17 239.37 242.67 247.77 252.66 254.95 258.84 262.14001 267.23999 272.34 277.13 282.23001 285.53 288.01999 292.01001 294.29999 297.70001 302.48999 306.38 311.48001 316.57999 321.67999 325.57001 327.85999 332.95999 335.25 337.54001 339.82999 343.13 347.62 350.31"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3796">Any cost associated with developing the applicaton will be the student’s responsibility. </tspan></text>
+        </g>
+        <path
+           d="M 36,623.15 H 518.95 V 635.3 H 36 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3800" />
+        <g
+           id="g3802">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,625.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3806"><tspan
+               x="0 4.8000002 10.09 15.08 17.280001 22.57 27.77 31.26 36.459999 41.75 45.650002 50.639999 52.93 58.130001 61.220001 63.509998 68.309998 73.099998 77 81.589996 83.879997 88.879997 91.169998 93.459999 97.360001 99.559998 102.86 108.25 110.45 115.44 120.73 124.53 129.82001 133.31 138.3 140.5 144.39999 147.7 152.99001 158.28 163.17999 168.47 171.77 175.75999 177.96001 183.25 188.24001 192.84 195.13 200.42 202.71001 209.81 215.10001 218.59 223.09 225.38 230.67 235.37 237.57001 242.86 248.06 250.35001 255.14 257.42999 262.63 266.12 271.41 273.70999 278.70001 282.89999 286.29001 288.57999 291.88 297.17001 301.95999 305.26001 307.54999 311.75 316.45001 321.73999 324.03 329.23001 334.01999 337.92001 341.82001 344.41 346.60999 351.5 356.70001 361.69 365.17999 370.07999 373.17001 378.45999 381.95001 386.94 389.42999 391.63 398.73001 403.72 406.01001 411.29999 416.5 418.79001 423.29001 425.57999 430.87 435.76999 440.76001 446.04999 448.25 451.54999 456.84 459.13 463.03 468.01999 473.01001 475.20999 480"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3804">The purpose of Task 1 is to ensure students begin working on a project that can pass. Therefore, we only need to see a </tspan></text>
+        </g>
+        <path
+           d="m 519,623.15 h 54.25 V 635.3 H 519 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3808" />
+        <g
+           id="g3810">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,519.1,625.6)"
+             style="font-style:italic;font-variant:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Italic;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3814"><tspan
+               x="0 3.4000001 8.5 13.6 18.700001 23.99 26.190001 31.290001 36.389999 39.689999 41.98 44.27 49.369999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3812">rough outline</tspan></text>
+        </g>
+        <path
+           d="M 36,610.95 H 516.25 V 623.1 H 36 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3816" />
+        <g
+           id="g3818">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,613.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3822"><tspan
+               x="0 5.1999998 8.29 10.58 15.37 17.57 22.860001 26.26 31.549999 33.939999 38.93 43.130001 46.52 48.720001 52.02 57.310001 62.099998 65.489998 67.690002 71.889999 76.68 81.970001 84.169998 92.160004 97.150002 102.14 105.44 107.73 111.03 116.32 121.31 123.51 131.5 133.78999 139.08 141.28 149.27 154.56 162.55 164.75 168.24001 173.44 178.73 182.22 184.50999 188.71001 191 194.39999 199.39 204.59 209.88 212.17 215.66 220.64999 228.64 233.53999 238.83 242.13 246.03 248.62 250.91 256.10999 261.39999 266.19 271.48001 276.17999 281.17001 285.07001 287.26999 290.35999 293.76001 299.04999 307.04001 309.32999 312.63 317.42001 321.32001 325.91 328.10999 333.20001 335.48999 338.79001 344.07999 346.37 349.67001 354.45999 358.35999 362.95001 365.14999 370.23999 372.44 377.23001 380.72 385.70999 387.91 392.70001 394.98999 397.28 402.57001 409.67001 414.66 419.95001 422.14999 426.94 432.14001 437.42999 439.72 444.70999 448.91 454.20001 459.19 463.39001 466.69 471.67999 476.97"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3820">of a project that can meet the minimum rubric requirements. Changes from task 1 to task 2 are allowed and expected.</tspan></text>
+        </g>
+        <path
+           d="m 516.3,610.95 h 2.15 v 12.15 h -2.15 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3824" />
+        <g
+           id="g3826" />
+        <path
+           d="m 518.5,610.95 h 44.55 V 623.1 H 518.5 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3828" />
+        <g
+           id="g3830">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,518.6,613.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3834"><tspan
+               x="0 6.5999999 9.8999996 15.19 20.18 23.67 25.870001 29.17 34.459999 39.25 44.540001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3832">Other than </tspan></text>
+        </g>
+        <path
+           d="M 36,598.75 H 339.35 V 610.9 H 36 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path3836" />
+        <g
+           id="g3838">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,601.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3842"><tspan
+               x="0 4.1999998 9.3999996 14.39 18.59 23.09 25.379999 30.67 35.459999 37.66 40.959999 46.25 51.240002 53.439999 58.23 63.43 68.720001 72.209999 77.5 82 86.900002 92.190002 94.480003 97.779999 103.07 108.36 110.65 114.85 117.34 119.54 124.53 129.03 133.82001 136.11 141.39999 146.19 149.49001 154.78 158.27 162.17 164.37 171.47 173.75999 176.05 178.44 180.64 185.92999 191.22 194.52 196.72 200.92 206.21001 214.2 219.49001 224.28 227.67999 232.67 234.96001 238.25999 243.05 246.95 251.53999 253.83 258.82999 261.12 264.42001 269.70999 272 275.29999 280.09 283.98999 288.57999 290.78 295.87 298.37"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3840">checking the approved topic, evaluators will not compare task 1 to task 2. </tspan></text>
+        </g>
+        <g
+           id="g3844">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,339.5,601.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3848"><tspan
+               x="0 5.5999999 10.49 19.190001 25.98 31.879999 36.77 39.060001 45.150002 49.349998 53.549999 55.84 60.740002 65.629997 71.029999 76.019997 78.309998 81 87.589996 89.790001 95.389999 100.28 106.58"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3846">REMOVE ALL TEXT IN RED </tspan></text>
+        </g>
+        <g
+           id="g3850">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,448.4,601.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3854"><tspan
+               x="0 5.1999998 10.19 13.19 18.48 21.969999 26.959999 29.16 34.150002 42.139999 46.93 49.220001 51.509998 53.709999 59 63.700001 65.989998 69.290001 74.580002 76.870003 80.769997 83.059998 86.059998 91.349998 94.839996 102.83 105.03 108.33 113.62"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3852">before emailing this form to </tspan></text>
+        </g>
+        <g
+           id="g3856">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,589)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3860"><tspan
+               x="0 4.5 9.6999998 14.99 18.48 20.77 25.559999 29.459999 33.360001 35.650002 40.25 45.540001 50.529999 55.82 58.02 62.220001 67.510002 72.709999 76.199997 80.099998 85.089996 87.379997 89.580002 94.870003 98.769997 102.07 105.56 110.85 115.05 118.35 123.64 127.23 129.42999 132.52 137.72 141.21001 143.5 148.2 153.49001 158.78 162.17999 167.47 171.97 176.75999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3858">your assigned course instructor for approval</tspan></text>
+        </g>
+        <g
+           id="g3862">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,215.5,589)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3866"><tspan
+               x="0"
+               y="0"
+               id="tspan3864">.</tspan></text>
+        </g>
+        <g
+           id="g3868">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,550.8)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3872"><tspan
+               x="0 2.5999999 9.1899996 13.78 20.57 26.17 34.959999 37.16 39.849998 46.439999 51.040001 56.029999 61.630001 68.129997 73.419998 78.410004 85.199997 90.800003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3870">INFORM INSTRUCTOR:</tspan></text>
+        </g>
+        <g
+           id="g3874">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,534.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3878"><tspan
+               x="0 5.0999999 10.39 13.69 18.68 23.969999 29.559999 34.349998 36.639999 38.84 44.130001 47.93 52.919998 55.209999 60.5 63.5 65.790001 70.989998 74.480003 79.68 84.970001 88.459999 90.75 95.739998 99.040001 103.83 107.32 111.82 114.11 118.31 123.6 131.5 136.78999 141.58 146.87 151.37 153.66 155.86 161.14999 164.14999 169.44 172.92999 180.92 185.71001 191.3 196.5 201.78999 204.48 206.67999 209.67999 214.57001 218.46001 224.95"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3876">Potental use of proprietary company informaton: (Y/N)</tspan></text>
+        </g>
+        <g
+           id="g3880">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,495.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3884"><tspan
+               x="0 6 12.59 18.68 22.879999 28.07 32.77 35.459999 40.16"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3882">ANALYSIS:</tspan></text>
+        </g>
+        <g
+           id="g3886">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,471.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3890"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3888">1.</tspan></text>
+        </g>
+        <g
+           id="g3892">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,471.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3896"><tspan
+               x="0 5.0999999 8.5900002 13.88 16.27 21.26 25.459999 28.76 31.049999 34.349998 39.639999 44.93 47.220001 51.419998 53.709999 59.41 65.900002 72 74.290001 79.580002 84.480003 88.379997 92.580002 96.07 98.360001 103.65 109.15 114.44 119.73"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3894">Project topic AND descripton:</tspan></text>
+        </g>
+        <g
+           id="g3898">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,457.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3902"><tspan
+               x="0 5.4000001 8.8900003 11.18 16.17 21.459999 25.959999 28.16 33.450001 38.439999 42.34 46.540001 50.029999 52.23 57.52 62.509998 64.800003 69.300003 74.5 79.790001 83.279999 85.57 88.870003 94.07 99.360001 101.65 105.85 108.44"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3900">Briefy describe your topic. </tspan></text>
+        </g>
+        <g
+           id="g3904">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,443.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3908"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3906">2.</tspan></text>
+        </g>
+        <g
+           id="g3910">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,443.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3914"><tspan
+               x="0 5.0999999 8.5900002 13.88 16.27 21.26 25.459999 28.76 31.049999 36.34 41.540001 45.029999 50.23 55.52 59.419998 64.410004 68.300003 72.900002 78.190002 82.980003 85.269997 89.169998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3912">Project purpose/goals:</tspan></text>
+        </g>
+        <g
+           id="g3916">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,429.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3920"><tspan
+               x="0 5.4000001 8.8900003 11.18 16.17 21.459999 25.959999 28.16 33.450001 38.439999 42.34 46.540001 50.029999 52.23 57.52 62.509998 64.800003 71.900002 77.190002 81.980003 85.279999 87.57 92.07 97.269997 102.56 106.05 108.34 113.04 118.33 123.53 125.82 128.11 132.31 137.10001 142.69 147.89 153.17999 155.47 162.57001 164.86 167.14999 169.44 171.73 176.52 180.72 184.92 190.21001 198.11 203.39999 205.69 207.98 211.88 217.17 219.67"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3918">Briefy describe what your applicaton will accomplish. </tspan></text>
+        </g>
+        <g
+           id="g3922">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,415.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3926"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3924">3.</tspan></text>
+        </g>
+        <g
+           id="g3928">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,415.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3932"><tspan
+               x="0 6.0999999 11.09 14.99 19.190001 22.68 24.969999 30.17 35.759998 40.259998 45.25 47.540001 55.529999 60.52 63.82 69.019997 74.309998 79.599998 83.5"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3930">Descriptve methods:</tspan></text>
+        </g>
+        <g
+           id="g3934">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,401.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3938"><tspan
+               x="0 4.8000002 10.09 15.08 18.98 23.969999 26.17 34.16 39.150002 42.450001 47.740002 52.939999 58.23 62.130001 64.419998 69.620003 74.610001 78.510002 82.709999 86.199997 88.489998 93.690002 98.68 100.97 105.67 110.96 116.25 118.45 123.74 128.73 130.92999 136.22 138.50999 143.71001 149 154.2 159.19 162.67999 166.58 169.88 174.67 179.87 185.16 187.45 190.75 196.03999 201.03 203.23 208.52 213.31 216.61 221.39999 223.89 226.17999 231.17 233.67 238.37 240.87 243.36 245.56 253.55 258.54001 263.23999 268.53 271.01999 273.31 281.29999 286.20001 291.48999 293.78 298.48001 303.76999 306.26001 308.54999 313.75 318.54001 322.03 324.32001 329.51999 331.81 337.10001 340.39999 342.89001 345.17999 349.07999 353.28 358.07001 364.37 369.35999 372.85001 378.14001 380.34 385.63 388.92999 391.51999 393.72 398.22 401.31 409.29999 414.29001 419.07999 424.37 428.26999 430.47 434.67001 436.95999 442.25 446.14999 449.45001 454.44 457.92999 460.13 465.42001 470.12 472.60999 474.89999 479.89001 483.19 487.39001 489.98001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3936">These methods describe and help understand the data, e.g., mean, median, bar plot, scaterplot, k-means clustering, etc. </tspan></text>
+        </g>
+        <g
+           id="g3940">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,387.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3944"><tspan
+               x="0 4.8000002 10.09 13.58 18.48 23.469999 25.76 30.26 32.549999 36.450001 41.740002 46.439999 48.73 51.02 55.009998 59.799999 65.300003 70.589996 75.879997 79.779999 81.980003 86.769997 90.260002 95.25 97.540001 100.94 105.93 111.13 116.42 118.71 122.2 127.1 132.39 134.89 137.17999 141.98 147.27 152.25999 154.55 157.85001 163.05 166.53999 171.53 176.52 178.72 182.21001 187.2 192.39999 197.69 199.98 203.47 208.37 213.66 215.95 220.45 222.74001 226.53999 231.83 236.62 238.91 241.2 245.10001 249.89 255.48 260.67999 265.97 269.95999 272.16 276.95001 280.44 285.42999 287.63 290.92999 295.42999 300.72 303.01001 307.20999 312 314.29001 316.57999 321.17001 323.37 328.66 333.64999 337.54999 341.75 345.23999 347.44 352.73001 358.32001 362.82001 367.81 370.01001 374.79999 380 385.29001 387.57999 391.78 396.48001 401.76999 404.06 408.26001 413.54999 418.75 424.04001 427.42999 429.63 434.42001 438.32001 440.60999 445.10999 450.31 455.60001 459.09"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3942">Three visualizatons are required. The three required visualizatons are typically descriptve and can count as your </tspan></text>
+        </g>
+        <g
+           id="g3946">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,373.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3950"><tspan
+               x="0 5.1999998 10.19 14.09 18.290001 21.780001 24.07 29.27 34.860001 39.360001 44.349998 46.639999 54.630001 59.619999 62.919998 68.120003 73.410004 78.699997 82.599998 85.099998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3948">descriptve methods. </tspan></text>
+        </g>
+        <g
+           id="g3952">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,359.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3956"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3954">4.</tspan></text>
+        </g>
+        <g
+           id="g3958">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,359.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3962"><tspan
+               x="0 6.4000001 11.69 16.889999 19.98 25.27 30.26 34.16 38.360001 41.849998 44.049999 49.34 54.93 59.43 64.419998 66.620003 74.610001 79.599998 82.900002 88.190002 93.389999 98.68 101.37"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3960">Non-descriptve method: </tspan></text>
+        </g>
+        <g
+           id="g3964">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,345.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3968"><tspan
+               x="0 4.8000002 10.09 15.08 18.98 23.969999 26.17 30.959999 34.450001 39.439999 41.639999 49.630001 54.619999 57.919998 63.209999 68.410004 73.699997 77.599998 79.889999 83.190002 88.480003 93.269997 96.57 98.860001 101.06 106.35 109.44 114.34 117.83 120.12 123.12 126.61 131.89999 139.89 142.17999 145.48 150.67999 155.67 157.96001 163.16 167.95 171.25 176.03999 178.63 180.83 183.12 185.62 190.61 193.11 195.60001 197.89 205.88 210.67 215.17 220.16 222.45 227.64999 231.14 236.03999 241.33 243.62 247.82001 253.41 258.60999 263.89999 267.79999 270.09 275.38 278.87 281.07001 286.35999 289.76001 294.75 298.64999 302.85001 306.34 308.63 313.92001 319.42001 324.70999 330 333.89999 336.39999 338.69 343.57999 347.88 352.67001 360.57001 365.85999 368.14999 373.14001 377.04001 379.32999 381.53 386.82001 391.01999 393.31 398.51001 403.79999 408.79001 410.98999 415.19 417.48001 422.26999 426.17001 430.07001 432.35999 437.64999 441.85001 446.64001 452.23001 457.51999 462.81 465.01001 473 478.20001 483.48999 488.48001 490.76999 494.67001 497.16"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3966">These are methods that infer from the data, i.e., make predictons or prescriptons. Examples include classifcaton models, </tspan></text>
+        </g>
+        <g
+           id="g3970">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,331.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3974"><tspan
+               x="0 3.4000001 8.3900003 13.09 16.58 21.57 25.469999 29.370001 31.66 36.860001 42.150002 44.639999 46.93 49.220001 57.209999 62 66.599998 71.589996 73.879997 77.370003 82.360001 86.559998 91.849998 96.449997 101.74 104.03 109.62 114.82 120.11 122.6 124.89 129.88 133.17999 137.38 139.88 142.17 146.97 152.25999 157.25 159.53999 164.74001 168.23 173.52 175.82001 180.81 185.00999 188.39999 190.69 194.09 199.08 204.28 209.57001 211.86 215.35001 220.34 224.24001 226.44 231.23 234.62 236.82001 239.11 244.10001 248.89 252.78999 256.17999 258.38 263.67001 268.87 273.85999 276.14999 280.85001 286.14001 291.42999 293.63 295.92001 300.12 304.91 310.5 315.79001 321.07999 323.28 328.57001 331.57001 333.85999 341.85001 346.64001 350.84 356.13 358.32999 363.62 368.60999 370.81 373.10001 378.09 382.88 386.28 391.57001 393.85999 399.14999 403.85001 406.04999 409.04999 417.04001 421.82999 425.13 430.42001 435.41 443.39999 448.19 453.78 457.98001 462.76999 465.06"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3972">regression, image recogniton, etc. The project requires at least one applicaton of machine learning (mathematcal </tspan></text>
+        </g>
+        <g
+           id="g3976">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,317.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3980"><tspan
+               x="0 4.79 7.0799999 11.68 16.969999 20.459999 22.75 26.049999 31.34 39.330002 43.23 45.52 50.220001 55.509998 60.799999 63.09 65.290001 70.279999 75.57 77.769997 81.07 86.360001 93.459999 98.25 101.74 107.03 109.32 114.52 119.31 122.61 127.4 130.49001 132.78 139.88 145.17 147.46001 151.56 156.85001 159.14 164.42999 168.23 173.52 178.31 180.60001 182.89 187.39 189.67999 194.97 199.17 203.27 208.56 212.05 215.95 218.24001 220.44 225.73 228.02 233.22 238.21001 242.71001 247.7 249.99001 255.19 260.48001 262.76999 268.06 272.76001 274.95999 278.26001 283.54999 288.54001 290.82999 296.03 301.32001 306.51999 309.60999 314.81 319.79999 323.70001 327.89999 331.39001 333.67999 338.97 344.56 348.95999 353.95001 356.23999 364.23001 369.22 372.51999 377.72 383.01001 388.29999 390.79999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3978">algorithms applied toward data) which usually occurs in developing the non-descriptve method. </tspan></text>
+        </g>
+        <g
+           id="g3982">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,279.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3986"><tspan
+               x="0 6.3000002 11.19 15.79 18.48 24.870001 31.459999 33.75 38.650002 43.950001 49.34 51.630001 57.93 62.82 68.720001 73.610001 77.709999 84.5 89.800003 98.5 103.39 109.98 114.97"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3984">DESIGN and DEVELOPMENT:</tspan></text>
+        </g>
+        <g
+           id="g3988">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,255.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3992"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3990">1.</tspan></text>
+        </g>
+        <g
+           id="g3994">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,255.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text3998"><tspan
+               x="0 5.3000002 10.59 18.49 23.780001 29.07 32.369999 37.360001 40.849998 43.049999 46.950001 51.150002 53.439999 58.43 63.720001 67.919998 72.910004 75.199997 79.900002 85.190002 90.389999 92.68 94.970001 99.169998 103.96 109.55 114.75 120.04 122.33 125.63 130.13 135.42 140.41 142.7 145.7 149.60001 154.59 156.78999 161.78 165.98 169.37 171.66 176.86 182.14999 187.14 190.14"
+               y="0"
+               sodipodi:role="line"
+               id="tspan3996">Computer science applicaton type (select one):</tspan></text>
+        </g>
+        <g
+           id="g4000">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,240.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Symbol;-inkscape-font-specification:SymbolMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4004"><tspan
+               x="0"
+               y="0"
+               id="tspan4002"></tspan></text>
+        </g>
+        <g
+           id="g4006">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,240.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4010"><tspan
+               x="0 8.5 13.79 18.99 21.280001 23.57 28.559999 30.85 33.849998 36.049999 41.34 46.630001 48.919998 53.119999 57.91 61.209999 66.199997 68.489998 74.190002 79.480003 84.769997 86.970001 91.959999 94.25 99.540001 103.03 105.23 111.02 116.22 121.51 125 130.2 132.49001 137.78"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4008">Mobile (indicate Apple or Android)</tspan></text>
+        </g>
+        <g
+           id="g4012">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,226.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Symbol;-inkscape-font-specification:SymbolMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4016"><tspan
+               x="0"
+               y="0"
+               id="tspan4014"></tspan></text>
+        </g>
+        <g
+           id="g4018">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,226.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4022"><tspan
+               x="0 8.8900003 13.79"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4020">Web</tspan></text>
+        </g>
+        <g
+           id="g4024">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,90.1,212)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Symbol;-inkscape-font-specification:SymbolMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4028"><tspan
+               x="0"
+               y="0"
+               id="tspan4026"></tspan></text>
+        </g>
+        <g
+           id="g4030">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,212)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4034"><tspan
+               x="0 4.5900002 7.8899999 12.68 17.879999 23.17 26.26 31.959999 34.25 39.540001 44.740002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4032">Stand-Alone</tspan></text>
+        </g>
+        <g
+           id="g4036">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,108.1,198)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4040"><tspan
+               x="0 4.8000002 10.09 15.38 17.58 24.68 26.969999 29.26 31.65 33.849998 39.139999 44.43 47.73 50.02 55.220001 60.209999 62.41 67.699997 72.690002 74.889999 80.18 82.470001 85.769997 91.059998 93.260002 98.550003 100.84 104.74 107.03 111.13 116.42 121.71 124 128.2 133.19 135.48 139.28 144.57001 149.77 155.06 157.35001 162.64 164.84 169.34 174.63 179.92 182.12 187.41 192.39999 196.60001 198.8 204.09 209.08 211.37 216.57001 218.86 224.66 229.64999 233.14 238.03999 243.33 246.63 248.92 253.50999 255.8 258.79999 264.09 267.57999 269.78 273.07999 277.87 281.76999 286.35999 288.64999 293.73999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4038">You will not be held to his choice should you decide diferently for task 2.</tspan></text>
+        </g>
+        <g
+           id="g4042">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,170)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4046"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4044">2.</tspan></text>
+        </g>
+        <g
+           id="g4048">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,170)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4052"><tspan
+               x="0 5.0999999 8.5900002 13.88 18.58 22.07 26.860001 34.849998 42.84 45.040001 50.330002 55.029999 58.830002 64.120003 69.110001 73.610001 78.599998 80.889999 86.089996 91.379997 99.370003 104.27 109.56 112.95 115.15 117.44 122.23 127.52 132.12 137.41 142.2 146.89999 151.89 154.89 158.78999 161.88 164.08 168.58 173.87 179.16 181.36 188.46001 190.75 193.03999 195.42999 197.63 202.92 206.82001 211.72"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4050">Programming/development language(s) you will use:</tspan></text>
+        </g>
+        <g
+           id="g4054">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,140.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4058"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4056">3.</tspan></text>
+        </g>
+        <g
+           id="g4060">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,140.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4064"><tspan
+               x="0 6.5999999 11.8 16.790001 20.280001 25.07 30.57 35.860001 40.560001 42.849998 47.439999 51.939999 55.84 59.139999 64.129997 72.120003 75.120003 79.019997 82.019997 85.910004 91.099998 93.389999 98.18 104.28 109.57 113.06 121.05 124.05 127.95 131.03999 133.24001 137.74001 143.03 148.32001 150.52 157.62 159.91 162.2 164.59 166.78999 172.08 175.98 180.88"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4062">Operatng System(s)/Platorm(s) you will use:</tspan></text>
+        </g>
+        <g
+           id="g4066">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,110.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4070"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4068">4.</tspan></text>
+        </g>
+        <g
+           id="g4072">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,110.7)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4076"><tspan
+               x="0 6.0999999 10.89 14.19 18.98 24.27 29.059999 32.959999 37.950001 40.150002 48.650002 53.439999 58.73 63.52 68.220001 73.209999 81.199997 86.099998 91.389999 94.779999 96.980003 101.57 106.07 109.97 113.27 118.26 126.35 128.55 133.05 138.34 143.63 145.83 152.92999 155.22 157.50999 159.89999 162.10001 167.39 171.28999 176.28 178.48 181.48 183.77 186.86 189.14999 193.85001 199.14 204.34 206.63 208.92 213.12 217.91 223.2 225.49001 230.48 233.48"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4074">Database Management System you will use (if applicable):</tspan></text>
+        </g>
+        <g
+           id="g4078">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,81)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4082"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4080">5.</tspan></text>
+        </g>
+        <g
+           id="g4084">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,81)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4088"><tspan
+               x="0 4.8899999 8.6899996 14.28 22.27 27.059999 30.360001 35.349998 40.639999 42.93 48.130001 53.419998 61.32 66.610001 71.599998 75.089996 77.290001 82.580002 85.580002 87.870003 93.160004 98.360001 103.65 107.14 111.04 113.24 116.33 121.53 125.02 127.31 130.61 135.89999 140.89 143.09 146.17999 151.38 153.67 155.96001 161.25 168.35001 170.64 175.92999 180.63"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4086">Estmated number of hours for the following:</tspan></text>
+        </g>
+        <g
+           id="g4090">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,85.3,67)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4094"><tspan
+               x="0 2.29"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4092">i.</tspan></text>
+        </g>
+        <g
+           id="g4096">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,67)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4100"><tspan
+               x="0 5.1900001 7.48 12.18 17.469999 22.76 24.959999 30.25 34.950001 37.240002 41.939999 47.23 52.52 54.720001 60.91 65.900002 69.800003 72.089996 76.690002 81.980003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4098">Planning and Design:</tspan></text>
+        </g>
+        <g
+           id="g4102">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,83,53)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4106"><tspan
+               x="0 2.29 4.5799999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4104">ii.</tspan></text>
+        </g>
+        <g
+           id="g4108">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,53)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4112"><tspan
+               x="0 6.1900001 11.18 15.58 20.57 22.860001 28.15 33.439999 41.34 46.330002 51.619999 54.919998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4110">Development:</tspan></text>
+        </g>
+        <g
+           id="g4114">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.7,39)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4118"><tspan
+               x="0 2.29 4.5799999 6.8699999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4116">iii.</tspan></text>
+        </g>
+        <g
+           id="g4120">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,39)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4124"><tspan
+               x="0 6.1900001 11.48 15.58 20.870001 28.860001 33.759998 39.049999 42.349998 47.139999 52.73 58.02 63.310001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4122">Documentaton:</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g4128"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 2"
+     transform="matrix(1.3333333,0,0,-1.3333333,836,1056)">
+    <g
+       id="g4130">
+      <g
+         id="g4132"
+         clip-path="url(#clipPath4136)">
+        <g
+           id="g4138">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,80.8,746.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4142"><tspan
+               x="0 2.29 6.79"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4140">iv.</tspan></text>
+        </g>
+        <g
+           id="g4144">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,99.5,746.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4148"><tspan
+               x="0 4.8899999 10.18 13.48 18.27 20.559999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4146">Total:</tspan></text>
+        </g>
+        <g
+           id="g4150">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,718.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4154"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4152">6.</tspan></text>
+        </g>
+        <g
+           id="g4156">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,718.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4160"><tspan
+               x="0 5.0999999 8.5900002 13.88 16.27 21.26 25.459999 28.76 33.75 39.040001 41.240002 45.439999 50.73 58.720001 64.010002 66.209999 71.199997 76.790001 81.989998 87.279999 89.57 94.769997 99.559998 102.86 107.85 110.54"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4158">Projected completon date: </tspan></text>
+        </g>
+        <g
+           id="g4162">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,704.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4166"><tspan
+               x="0 4.5 9.79 17.780001 22.77 25.059999 30.26 35.049999 38.349998 43.34 45.630001 47.830002 53.119999 55.41 58.709999 64 68.989998 71.190002 74.279999 79.57 82.769997 88.059998 91.550003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4164">Some date in the future</tspan></text>
+        </g>
+        <g
+           id="g4168">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,168.8,704.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4172"><tspan
+               x="0"
+               y="0"
+               id="tspan4170">.</tspan></text>
+        </g>
+        <g
+           id="g4174">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,680.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4178"><tspan
+               x="0 2.6900001 11.39 16.690001 20.889999 25.780001 34.48 39.369999 45.959999 50.860001 56.950001 61.849998 64.540001 71.330002 77.919998 80.120003 85.019997 90.410004 95.800003 98.089996 102.98 108.78 114.87 119.07 125.57 131.66 136.56 139.25 146.03999 152.63"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4176">IMPLEMENTATION and EVALUATION:</tspan></text>
+        </g>
+        <g
+           id="g4180">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,656.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4184"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4182">1.</tspan></text>
+        </g>
+        <g
+           id="g4186">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,656.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4190"><tspan
+               x="0 6.0999999 11.09 14.99 19.190001 22.68 24.969999 30.17 35.16 37.450001 42.650002 47.939999 55.130001 57.330002 61.830002 67.120003 72.410004 74.610001 81.709999 84 86.290001 88.68 90.879997 95.669998 100.87 106.16 109.65 114.94 119.73 123.83 129.12 131.41 134.71001 140 144.99001 147.19 152.17999 156.48 161.47 165.67 170.96001 176.46001 181.75 187.03999 189.24001 194.53 197.62 199.82001 204.32001 209.61 214.89999 218.39 220.59 225.88 229.28 234.57001 236.96001 241.95 246.14999 249.45 252.14"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4188">Describe how you will approach the executon of your project: </tspan></text>
+        </g>
+        <g
+           id="g4192">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,628.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Wingdings;-inkscape-font-specification:Wingdings-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.33333;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="text4196"><tspan
+               x="0"
+               y="0"
+               id="tspan4194"></tspan></text>
+        </g>
+        <g
+           id="g4198">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,628.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4202"><tspan
+               x="0 4.9000001 10.29 12.69 16.68 18.969999 24.360001 27.860001 33.25 35.84 40.84 44.939999 48.43 50.720001 56.02 61.41 66.410004 70.5 72.699997 78.089996 83.389999 86.879997 89.169998 91.57 96.959999 101.66 107.05 109.54 114.24 119.24 121.53 126.92 132.31 140.41 145.31 150.7 152.89999 156.89 162.28 167.58 170.17 175.17 179.36 182.85001 186.84 189.03999 192.63 197.63 201.62 206.62 211.52 215.11 219.3 224.69 226.98 231.88 237.17999 242.57001 244.86 247.25999 251.25 253.53999 258.54001 263.13 268.13 276.23001 281.62 285.10999 287.39999 290.5 294.09 299.48001 307.57999 309.87 318.87 325.26001 331.76001 334.04999 336.73999 342.34 347.94 350.23001 353.73001 358.73001 363.42999 365.92001 370.92001 378.41"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4200">This project does not involve human subjects research and is exempt from WGU IRB review.</tspan></text>
+        </g>
+        <g
+           id="g4204">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,614.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4208"><tspan
+               x="0 6.0999999 11.39 13.68 20.08 26.68 31.57 33.860001 37.759998 41.060001 44.549999 46.84 51.34 56.330002 58.619999 63.91 67.400002 69.599998 73.089996 78.080002 85.980003 91.269997 95.769997 100.76 103.05 106.35 111.64 113.93 117.83 120.03 123.93 127.23 132.02 135.32001 140.31 148.3 153.28999 158.58 161.97 164.17 169.46001 174.66 176.95 181.94 185.84 189.74001 192.03 196.53 201.73 207.02 210.50999 212.8 218 221.49001 226.78 229.17 234.16 238.36 241.66 243.95 249.14999 254.14 259.04001 264.32999 268.23001 270.51999 275.31 280.51001 282.79999 285.29999 290.70001 296.19 298.48001 301.88 306.87 311.37 313.66 318.64999 325.75 328.34 330.54001 335.42999 340.63 342.92001 346.91 349.10999 353.01001 356.31 361.10001 364.39999 369.39001 377.38 382.37 387.66 391.04999 393.25 397.14999 402.35001 407.64001 412.92999 415.13 420.42001 422.70999 427.5 429.79001 437.69 442.98001 446.88 450.26999 452.56 457.26001 459.54999 466.64999 471.44 475.94 479.92999 482.22 487.42001 492.41"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4206">Do NOT strike or remove this statement unless your project needs an IRB review. This statement should almost always be </tspan></text>
+        </g>
+        <g
+           id="g4210">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,600.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4214"><tspan
+               x="0 4.1999998 9.3999996 14.39 18.59 23.09 28.08 33.369999 35.959999 38.16 43.950001 49.150002 51.439999 53.939999 59.34 64.830002 67.120003 70.519997 75.510002 80.010002 82.300003 87.290001 94.389999 96.68 98.970001 102.87 105.16 110.36 115.65 117.94 122.44 124.73 129.92999 134.92 139.12 144.11 148.00999 151.91 156.7 160.19 164.69 166.98 169.17999 172.27 174.56 179.06 184.25999 189.55 191.84 197.03999 199.33 204.12 209.41 211.61 214.91 220.2 222.49001 226.69 231.98 234.27 236.56 241.55 245.75 249.05 251.34 256.54001 261.32999 264.63 269.51999 271.72 274.81 278.20999 283.5 291.48999 293.78 298.98001 304.26999 312.26001 316.95999 322.25 324.54001 328.34 333.63 338.92001 341.31 346.29999 350.5 353.79999 357.70001 359.98999 364.48999 369.69 374.98001 378.47 382.37 387.35999 389.64999 392.73999 395.23999 397.44 403.63 408.42001 411.72 416.51001 418.79999 421.79999 425.29001 430.57999 438.57001 440.76999 445.56 450.85001 455.35001 457.64001 462.84 468.13 473.03 478.32001 480.60999 485.10999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4212">checked. An IRB review is only necessary if you plan to collect data from human subjects yourself. Data from any openly </tspan></text>
+        </g>
+        <g
+           id="g4216">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,586.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4220"><tspan
+               x="0 4.79 9.29 14.08 16.370001 18.66 23.360001 28.65 30.940001 35.93 38.130001 42.919998 46.41 50.610001 55.900002 58.189999 62.689999 67.68 69.879997 72.169998 76.07 78.360001 83.559998 88.849998 92.239998 94.440002 98.339996 103.54 108.83 111.22 116.21 120.41 123.8 126 129.3 134.59 136.88 141.67 146.87 149.16 151.66 157.06 162.55 164.84 168.24001 173.23 177.73 180.02 185.00999 192.11"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4218">available archive is not subject to an IRB review.</tspan></text>
+        </g>
+        <g
+           id="g4222">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,562.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4226"><tspan
+               x="0 4.6999998 9.6899996 16.190001 22.49 27.290001 33.880001 38.869999 41.07 45.77 48.459999 54.849998 61.439999 67.440002 72.43 78.93 84.529999 89.419998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4224">STUDENT SIGNATURE </tspan></text>
+        </g>
+        <g
+           id="g4228">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,538.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4232"><tspan
+               x="0 4.9000001 9.8900003 14.88 19.870001 24.860001 29.85 34.75 39.740002 44.73 49.720001 54.709999 59.700001 64.599998 69.589996 74.580002 79.57 84.559998 89.550003 94.449997 99.440002 104.43 109.42 114.41 119.4 124.3 129.28999 134.28 139.27 144.25999 149.25 154.14999 159.14 164.13"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4230">__________________________________</tspan></text>
+        </g>
+        <g
+           id="g4234">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,514.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4238"><tspan
+               x="0 5.5999999 10.3 12.59 16.49 18.98 23.68 29.07 31.559999 36.950001 41.650002 43.939999 48.84 54.139999 59.529999 61.82 65.720001 71.110001 76.5 84.599998 87.089996 95.989998 101.38 106.17 108.37 111.86 117.16 119.65 123.64 125.93 129.03 134.42 138.00999 146.11 148.7 150.89999 155.60001 160.99001 166.38 168.67 173.57001 177.75999 182.46001 187.85001 193.24001 200.64 203.13 208.13 213.52 218.22"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4236">By signing and submitng this form, you acknowledge</tspan></text>
+        </g>
+        <g
+           id="g4240">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,261.9,514.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4244"><tspan
+               x="0 4.79 10.08 14.58 16.870001 21.07 26.360001 30.26 33.560001 35.849998 40.639999 44.540001 48.439999 53.73 57.93 60.220001 65.010002 68.309998 73.209999 78.5 80.790001 87.889999 90.18 93.480003 98.769997 101.06 104.36 109.65 114.64 116.84 122.13 127.12 131.62 136.52 138.81 144.10001 149.39 157.28999 162.28 167.57001 170.87 173.16 177.86 183.14999 188.44 190.64 195.63 199.92999 204.92 209.12 214.41 220 225.2 230.49001 232.78 237.98 241.07001 243.27 246.57001 251.86 256.85001 259.14001 263.84 269.13 274.42001 276.70999 279 283.20001 287.89999 293.48999 298.78 304.07001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4242">any cost associated with the development and executon of the applicaton </tspan></text>
+        </g>
+        <g
+           id="g4246">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,500.3)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4250"><tspan
+               x="0 7.0999999 9.3900003 11.68 13.97 16.26 21.459999 26.450001 28.65 33.150002 38.439999 43.73 47.220001 49.419998 52.419998 55.720001 61.009998 66 68.290001 72.190002 75.489998 80.779999 85.980003 90.970001 96.260002 99.559998 102.65 104.85 108.34 113.33 117.13 122.42 127.71 133 136.89999 139.10001 144.39 146.67999 148.97 151.25999 154.56 159.06 161.64999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4248">will be your (the student) responsibility. </tspan></text>
+        </g>
+        <g
+           id="g4252">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,452.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4256"><tspan
+               x="0 5.1999998 11.99 18.49 24.09 28.790001 33.779999 36.07 38.669998 45.259998 49.959999 54.950001 60.549999 67.050003 72.339996 77.239998 84.029999 89.629997 92.220001 97.010002 99.209999 103.91 106.6 112.99 119.49 125.58 130.57001 137.07001 142.67 147.56 150.35001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4254">COURSE INSTRUCTOR’S SIGNATURE: </tspan></text>
+        </g>
+        <g
+           id="g4258">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,428.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4262"><tspan
+               x="0 4.9000001 9.8900003 14.88 19.870001 24.860001 29.85 34.75 39.740002 44.73 49.720001 54.709999 59.700001 64.599998 69.589996 74.580002 79.57 84.559998 89.550003 94.449997 99.440002 104.43 109.42 114.41 119.4 124.3 129.28999 134.28 139.27 144.25999 149.25 154.14999 159.14 164.13 169.12 174.11 179.10001 184 188.99001 193.98 198.97 203.96001 208.95 213.85001 218.84 223.83 228.82001 233.81 238.8 243.7 248.69 253.67999 258.67001 263.66 268.64999 273.54999 278.54001 283.53 288.51999 293.51001 298.5 303.39999 308.39001 313.38 318.37 323.35999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4260">__________________________________________________________________</tspan></text>
+        </g>
+        <g
+           id="g4264">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,404.3)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4268"><tspan
+               x="0 5.1999998 11.99 18.49 24.09 28.790001 33.779999 36.07 38.669998 45.259998 49.959999 54.950001 60.549999 67.050003 72.339996 77.239998 84.029999 89.720001 91.919998 98.010002 103.31 108.61 114.21 121 126.9 132.99001 137.19 139.48 145.78 151.78 156.77 161.57001 164.36"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4266">COURSE INSTRUCTOR APPROVAL DATE: </tspan></text>
+        </g>
+        <g
+           id="g4270">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,353.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4274"><tspan
+               x="0 6.0999999 11.39 13.68 20.08 26.68 31.57 33.860001 37.66 42.950001 48.240002 56.23 58.52 61.82 64.110001 68.610001 73.809998 79.099998 82.589996 84.879997 89.580002 94.870003 100.07 103.56 108.85 113.35 118.14 120.43 122.72 125.72 131.00999 134.5 142.49001 144.69 147.99001 153.38 155.58 160.37 164.27 168.17 173.16 177.06 180.96001 188.95 193.85001 199.14 202.44 206.42999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4272">Do NOT submit your approval form to assessments </tspan></text>
+        </g>
+        <g
+           id="g4276">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,245.1,353.8)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4280"><tspan
+               x="0 7.4000001 9.8900003 13.29 18.68 24.07 29.370001 32.860001 35.150002 40.049999 42.34 47.540001 52.630001 57.720001 62.810001 65.010002 68.199997 73.099998 77.290001 82.589996 85.080002 88.57 93.269997 95.559998 99.459999 101.95 106.65 112.04 116.94 120.43 125.82 129.41"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4278">without a C964 faculty signature</tspan></text>
+        </g>
+        <g
+           id="g4282">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,379.8,353.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4286"><tspan
+               x="0 2.5899999 4.79 9.3800001 14.58 19.870001 27.860001 30.15 34.049999 37.950001 40.240002 45.439999 50.73 54.630001 56.919998 64.910004 67.199997 71.099998 75 77.199997 82.489998 87.190002 89.480003 94.269997 96.470001 101.77 104.36 106.65 110.55 112.84 117.44 122.73 127.52 130.82001 136.11 139.60001 144.59 146.78999 151.58 155.07001 160.06 162.25999 165.75 170.74001 173.13 178.12 182.32001 185.62 190.61"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4284">. Submissions missing a CI signature are rejected</tspan></text>
+        </g>
+        <g
+           id="g4288">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,339.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4292"><tspan
+               x="0 7.0999999 9.3900003 12.69 17.98 23.18 28.469999 31.860001 34.150002 37.150002 42.439999 45.93 49.130001 54.419998 59.41 62.900002 65.190002 68.589996 73.580002 78.080002 80.370003 85.360001 92.459999 95.050003 99.540001 104.43 112.42 117.12 119.41 121.7 123.99 129.28 133.98 136.17999 139.48 144.77 149.75999 152.05 156.25 161.53999 169.44 174.73 177.02 182.00999 185.31 190.3 195.59 197.78999 200.88 206.08 209.57001 217.56 219.85001 225.05 227.34 230.83 235.82001 240.02 243.32001 245.61 250.2 252.39999 255.7 261.09"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4290">without further review. Emailing the completed form directly to </tspan></text>
+        </g>
+        <g
+           id="g4294">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,299.9,339.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4298"><tspan
+               x="0 4.5 9.79 15.08 18.57 20.77 25.559999 29.459999 33.360001 35.650002 40.349998 45.639999 50.540001 55.830002 58.119999 62.32 67.519997 72.809998 76.300003 80.199997 85.190002 87.389999 89.68 94.970001 98.870003 102.17 105.66 110.95 115.15 118.45 123.74"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4296">your assigned course instructor</tspan></text>
+        </g>
+        <g
+           id="g4300"
+           transform="translate(299.9,339.8)">
+          <path
+             d="M 0,-1 H 127.4"
+             style="fill:none;stroke:#0000ff;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4302" />
+        </g>
+        <g
+           id="g4304">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,429.59,339.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4308"><tspan
+               x="0 3.3 7.8000002 13.09 15.38 19.58 24.370001 26.66 28.950001 33.450001 35.740002 40.439999 45.43 48.73 52.630001 54.919998 58.220001 63.509998 68.5 70.699997 73.790001 78.580002 82.480003 85.779999 90.769997 94.669998 98.059998 100.26 103.75 108.74 112.54 117.83 123.12 128.41 132.21001 137.2 139.78999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4306">typically gets the fastest response. </tspan></text>
+        </g>
+        <g
+           id="g4310">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,325.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4314"><tspan
+               x="0 2.4000001 5.4899998 7.7800002 12.28 17.57 22.77 26.26 28.549999 30.75 36.040001 39.939999 43.240002 46.73 52.02 56.220001 59.52 64.809998 68.400002 70.599998 72.889999 76.790001 79.080002 84.279999 89.57 92.959999 95.160004 100.45 103.45 105.74 109.04 114.33 119.32 121.52 126.81 134.89999 139.10001 144.09 146.58 148.78 153.28 158.57001 163.86 166.06 170.25999 175.05 180.34 182.63 186.42999 191.42 196.62 201.91 204.2 206.49001 209.78999 212.08 215.38 220.67 222.96001 226.25999 231.55 236.53999 238.74001 242.03999 247.03 251.82001 259.81 262.10001 264.29999 269.59 274.88 280.17001 284.47 286.95999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4312">If your instructor is out of the ofce, you can send it to the team inbox, </tspan></text>
+        </g>
+        <g
+           id="g4316">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,325.8,325.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4320"><tspan
+               x="0 5.29 9.9899998 14.19 18.98 24.27 28.17 31.469999 36.669998 41.959999 46.950001 49.240002 52.540001 61.439999 68.540001 73.239998 78.529999 81.029999 86.019997 91.309998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4318">ugcapstoneit@wgu.edu</tspan></text>
+        </g>
+        <g
+           id="g4322"
+           transform="translate(325.8,325.8)">
+          <path
+             d="M 0,-1 H 96.7"
+             style="fill:none;stroke:#0000ff;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4324" />
+        </g>
+        <g
+           id="g4326">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,422.5,325.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4330"><tspan
+               x="0 2.49 4.7800002 9.9799995 15.27 18.57 20.860001 25.059999 29.26 31.549999 36.049999 41.25 46.540001 50.029999 52.32 57.110001 61.009998 64.910004 67.199997 71.800003 77.089996 82.080002 87.370003 89.57 94.870003 97.370003 99.959999 102.25 108.75 114.04 118.24 123.23"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4328">, but cc your assigned CI. Once </tspan></text>
+        </g>
+        <g
+           id="g4332">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,311.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4336"><tspan
+               x="0 4.6999998 9.9899998 15.28 18.68 23.969999 28.469999 33.459999 38.75 41.240002 43.439999 47.939999 53.23 58.52 60.720001 67.82 70.110001 72.400002 74.790001 76.989998 80.480003 85.470001 89.669998 94.660004 96.949997 101.45 106.44 108.64 113.43 115.72 119.62 121.91 126.51 131.8 136.7 141.99001 144.28 149.57001 154.86 158.96001 164.25 172.24001 177.14 182.42999 185.82001 188.02 190.31 195.60001 197.8 202.99001 209.09 213.67999 215.97 218.97 224.25999 227.75 235.74001 240.53 243.83 246.12 249.42 254.71001 259.5 262.79999 265.09 269.59 274.79001 280.07999 282.37 286.57001 291.35999 296.64999 298.85001 304.14001 309.34 311.63 316.92001 321.62 326.91 329.20001 333.98999 337.89001 340.17999 345.38 350.17001 353.66 356.95999 359.25 364.45001 367.54001 369.82999 374.63 379.42001 383.32001 387.91 390.20001 395.20001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4334">approved, you will receive a signed document in PDF format that you can upload as part of Task 1.</tspan></text>
+        </g>
+        <g
+           id="g4338">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,36.1,283.8)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4342"><tspan
+               x="0 4.9899998 9.8900003 13.88 18.67 20.870001 25.959999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4340">Task 2:</tspan></text>
+        </g>
+        <g
+           id="g4344">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,255.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4348"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4346">1.</tspan></text>
+        </g>
+        <g
+           id="g4350">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,255.8)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4354"><tspan
+               x="0 6.5 11.8 17.190001 22.190001 25.780001 29.77 33.259998 38.16 43.549999 48.939999 51.139999 54.630001 60.02 65.019997 67.220001 70.809998 75.809998 81.199997 86.5 88.989998 92.580002 97.580002 105.68 110.68 116.07 119.56"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4352">Understand the requirements</tspan></text>
+        </g>
+        <g
+           id="g4356">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,195.9,255.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4360"><tspan
+               x="0 2.5899999 4.79 10.19 15.18 19.68 21.969999 26.959999 34.150002 36.349998 39.650002 44.939999 49.93"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4358">. Review the </tspan></text>
+        </g>
+        <g
+           id="g4362">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,248.1,255.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4366"><tspan
+               x="0 6.4000001 8.6899996 14.28 22.27 27.059999 30.360001 35.349998 37.639999 42.939999 47.939999 53.029999 58.119999 60.41 65.709999 70.410004 75.699997 79.599998 82.900002 88.190002 93.480003 98.470001 100.76 106.96 112.25 114.54 119.74"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4364">Ultmate C964 Capstone Guide</tspan></text>
+        </g>
+        <g
+           id="g4368"
+           transform="translate(248.1,255.8)">
+          <path
+             d="M 0,-1 H 124.9"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4370" />
+        </g>
+        <g
+           id="g4372">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,375.29,255.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4376"><tspan
+               x="0 4.6999998 9.9899998 15.28"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4374">and </tspan></text>
+        </g>
+        <g
+           id="g4378">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,392.8,255.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4382"><tspan
+               x="0 5.3000002 10.39 15.48 20.57 22.77 28.07 32.66 34.950001 40.25 45.040001 50.330002 54.23 57.529999 62.82 68.019997 73.010002 75.300003 79.889999 82.18 85.480003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4380">C964 CS Capstone Site</tspan></text>
+        </g>
+        <g
+           id="g4384"
+           transform="translate(392.8,255.8)">
+          <path
+             d="M 0,-1 H 90.6"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4386" />
+        </g>
+        <g
+           id="g4388">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,243.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4392"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4390">2.</tspan></text>
+        </g>
+        <g
+           id="g4394">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,243.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4398"><tspan
+               x="0 5.1999998 8.79 13.79 18.690001 22.18 27.27 29.559999 34.259998 39.560001 44.950001 48.540001 50.740002 56.130001 59.630001 65.019997 67.610001 72.610001 76.800003 80.290001 82.489998 87.389999 92.779999 98.169998 100.46 107.86 111.45 113.85 117.34 122.34 124.63 128.03 133.42 138.50999 140.71001 146.10001 151.39999 155.59 160.98 169.08 174.08 179.47 182.96001 185.64999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4396">Create your project and write the document. </tspan></text>
+        </g>
+        <g
+           id="g4400">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,260.3,243.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4404"><tspan
+               x="0 4.8899999 10.09 15.08 20.370001 22.860001 25.059999 28.15 33.349998 35.639999 37.93 43.220001 50.41 52.610001 55.91 61.200001 66.190002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4402">Then, follow the </tspan></text>
+        </g>
+        <g
+           id="g4406">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,328.8,243.6)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4410"><tspan
+               x="0 4.9899998 9.8900003 13.88 18.67 20.870001 25.959999 28.16 33.549999 38.450001 42.040001 45.529999 49.52 51.720001 57.810001 60.310001 62.599998 68.199997 70.790001 72.989998 79.290001 81.580002 85.07 90.07 98.169998 103.56 106.05 110.95 114.44"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4408">Task 2 parts A, B, D template</tspan></text>
+        </g>
+        <g
+           id="g4412"
+           transform="translate(328.8,243.6)">
+          <path
+             d="M 0,-1 H 119.6"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4414" />
+        </g>
+        <g
+           id="g4416">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,448.4,243.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4420"><tspan
+               x="0"
+               y="0"
+               id="tspan4418">,</tspan></text>
+        </g>
+        <g
+           id="g4422" />
+        <g
+           id="g4424">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,453.2,243.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4428"><tspan
+               x="0 6.4000001 8.6899996 14.28 22.27 27.059999 30.360001 35.349998 37.639999 42.939999 47.939999 53.029999 58.119999 60.41 65.709999 70.410004 75.699997 79.599998 82.900002 88.190002 93.480003 98.470001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4426">Ultmate C964 Capstone </tspan></text>
+        </g>
+        <g
+           id="g4430"
+           transform="translate(453.2,243.6)">
+          <path
+             d="M 0,-1 H 100.9"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4432" />
+        </g>
+        <g
+           id="g4434">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,231.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4438"><tspan
+               x="0 6.1999998 11.49 13.78 19.07"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4436">Guide</tspan></text>
+        </g>
+        <g
+           id="g4440"
+           transform="translate(72.1,231.4)">
+          <path
+             d="M 0,-1 H 24.1"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4442" />
+        </g>
+        <g
+           id="g4444">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,96.2,231.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4448"><tspan
+               x="0 2.49 4.6900001 9.4799995 14.68 19.969999 22.26 26.16 31.059999 36.049999 38.34 41.639999 46.93 49.220001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4446">, and see this</tspan></text>
+        </g>
+        <g
+           id="g4450" />
+        <g
+           id="g4452">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,151.7,231.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4456"><tspan
+               x="0 4.8899999 9.6800003 13.58 18.17 20.370001 25.459999 27.66 33.849998 39.139999 43.240002 48.529999 56.52 61.509998 66.800003 70.099998 72.389999 77.279999 81.580002 86.370003 94.269997 99.559998 101.85"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4454">Task 2 Document Example</tspan></text>
+        </g>
+        <g
+           id="g4458"
+           transform="translate(151.7,231.4)">
+          <path
+             d="M 0,-1 H 107"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4460" />
+        </g>
+        <g
+           id="g4462">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,258.6,231.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4466"><tspan
+               x="0"
+               y="0"
+               id="tspan4464">.</tspan></text>
+        </g>
+        <g
+           id="g4468">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,219.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4472"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4470">3.</tspan></text>
+        </g>
+        <g
+           id="g4474">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,219.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4478"><tspan
+               x="0 2.5999999 7.9899998 11.98 17.370001 22.370001 26.559999 30.049999 32.25 36.950001 42.34 47.639999 51.23 53.52 61.009998 66.309998 69.900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4476">Inspect your work</tspan></text>
+        </g>
+        <g
+           id="g4480">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,149.1,219.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4484"><tspan
+               x="0 3.0899999 8.29 11.78 14.07 18.77 22.26 27.049999 35.040001 43.029999 47.73 53.32 57.52 62.310001 64.599998 66.889999 71.879997 75.279999 78.769997 84.059998 87.550003 91.449997 93.739998 98.440002 103.73 109.02 111.22 116.51 119.91 125.2 130.49001 135.39 138.88"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4482">for grammatcal errors and proper </tspan></text>
+        </g>
+        <g
+           id="g4486">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,290.5,219.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4490"><tspan
+               x="0 5.6999998 10.89 16.68 18.969999 21.969999 27.26 30.75 38.740002 43.529999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4488">APA format</tspan></text>
+        </g>
+        <g
+           id="g4492"
+           transform="translate(290.5,219.2)">
+          <path
+             d="M 0,-1 H 46.9"
+             style="fill:none;stroke:#ff0000;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4494" />
+        </g>
+        <g
+           id="g4496">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,337.5,219.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4500"><tspan
+               x="0 2.5899999 4.79 11.19 15.09 20.08"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4498">. Use </tspan></text>
+        </g>
+        <g
+           id="g4502">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,359.8,219.2)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4506"><tspan
+               x="0 6.3000002 9.8900003 14.79 22.889999 30.99 35.889999 39.48 41.970001 46.669998 49.360001 53.549999 58.939999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4504">Grammarly.com</tspan></text>
+        </g>
+        <g
+           id="g4508">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,429.2,219.2)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4512"><tspan
+               x="0 3 5.29 8.5900002 10.79 14.78 17.07 24.17 29.459999 34.25 37.549999 39.84 43.139999 48.43 53.419998 55.619999 60.610001 65.110001 69.900002 72.099998 77.389999 82.18 85.480003 90.769997 94.260002 98.25 100.45 105.74 109.54 114.53 117.53 120.32 122.52 125.82 131.11 136.10001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4510">(it's what the evaluators use); the </tspan></text>
+        </g>
+        <g
+           id="g4514">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,207)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4518"><tspan
+               x="0 3 6.4899998 11.48 16.469999 18.67 23.17 28.16 31.65 35.549999 37.84 43.040001 48.330002 50.619999 57.720001 60.009998 62.299999 64.589996 66.879997 70.68 75.970001 84.059998 88.260002 93.25"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4516">free version will sufce.</tspan></text>
+        </g>
+        <g
+           id="g4520">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,54.1,194.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4524"><tspan
+               x="0 5.0900002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4522">4.</tspan></text>
+        </g>
+        <g
+           id="g4526">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,194.8)"
+             style="font-variant:normal;font-weight:bold;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4530"><tspan
+               x="0 4.6999998 10 15.39 23.49 25.98 29.469999 31.76 36.66 41.560001 45.549999 50.34 52.630001 57.720001 59.919998 63.110001 68.410004 72 74.290001 79.290001 83.989998 88.889999 91.379997 96.769997 101.67 107.56 112.86 118.25"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4528">Submit Task 2 for evaluaton.</tspan></text>
+        </g>
+        <g
+           id="g4532">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,195.59,194.8)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4536"><tspan
+               x="0 5.79 9.6899996 14.19 16.48 24.469999 29.459999 31.66 36.450001 41.740002 46.240002 48.439999 53.73 58.93 63.919998 67.82 73.410004 78.610001 83.900002 87.800003 90.290001 92.580002 97.779999 103.07 106.37 108.66 110.86 113.95 116.24 120.74 125.94 131.23 133.52 136.52 141.50999 146.5 148.78999 150.99001 154.28999 159.58 164.57001 166.86 170.25999 175.25 180.45 185.74001 188.03 191.52 196.50999 204.5 209.39999 214.69 217.99001 221.98 224.17999 228.97 232.46001 237.45 239.64999 242.74001 247.94 250.23 255.52 257.81 260.10001 265 270.29001 272.78 275.07001 278.87 284.16 289.45001 297.44 299.73001 303.03 305.32001 307.60999 310.91 313.39999 315.69 320.39001 325.67999 330.97 333.17001 335.45999 340.45001 343.75 346.04001 349.34 354.63 359.62 367.60999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4534">Ask me any questons, but if you feel the requirements are fulflled, submit it, and let them </tspan></text>
+        </g>
+        <g
+           id="g4538">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,182.6)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4542"><tspan
+               x="0 3.3 8.29 10.58 12.87 15.07 19.57 24.860001 30.15 32.439999 39.540001 44.740002 47.029999 51.23 56.52 58.810001 61.810001 64.099998 67.190002 69.389999 74.18 79.470001 83.970001 86.970001 89.260002 94.459999 99.25 102.74 106.04 110.03 112.23 117.52 122.42 127.41 132.7 134.89999 138.2 143.49001 145.78 151.07001 155.97 158.25999 161.66 166.64999 173.75 177.24001 179.53 185.83 190.82001 196.11 198.7 200.89999 203.39999 206.78999 208.99001 216.09 218.38 220.67 223.06 225.25999 229.96001 234.95 240.14999 245.14 248.63 253.42 255.71001 258 262.5 264.79001 269.98999 274.98001 277.26999 282.17001 286.95999 290.85999 293.14999 298.14001 301.63 303.82999 307.13 312.51999 314.72 317.81 323.10001 327.20001 332.48999 336.39001 338.67999 343.38 348.67001 353.95999 356.16 361.45001 365.84 368.04001 372.82999 375.12 378.12 383.10999 390.29999 392.5 397.29001 400.78 405.76999 410.56 414.45999 416.66 419.95999 425.25 430.04001 435.32999 437.53 439.82001 445.10999 447.31 452.89999 457.69 459.98001 462.26999 466.76999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4540">tell you which (if any) parts need to be rewriten. It will generally be easier to focus and fx a few areas than initally </tspan></text>
+        </g>
+        <g
+           id="g4544">
+          <text
+             xml:space="preserve"
+             transform="matrix(1,0,0,-1,72.1,170.4)"
+             style="font-variant:normal;font-weight:normal;font-size:10px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text4548"><tspan
+               x="0 5.29 9.6899996 14.68 18.17 25.27 30.559999 34.049999 38.549999 40.84 46.130001 50.830002 53.119999 56.419998 61.709999 66.699997 68.900002 73.889999 79.089996 84.68 88.169998 93.160004 95.360001 100.65 104.14 109.34 111.73 116.72 120.92 124.22"
+               y="0"
+               sodipodi:role="line"
+               id="tspan4546">overworking the entre project.</tspan></text>
+        </g>
+        <g
+           id="g4550">
+          <path
+             d="M 575.95,376.1 H 36"
+             style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4552" />
+        </g>
+        <g
+           id="g4554">
+          <path
+             d="M 575.95,376.1 H 36"
+             style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path4556" />
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.75000002,0,0,-0.75000002,-627.00002,792.00002)"
+       id="text4744"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect4746)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.75000002,0,0,-0.75000002,-627.00002,792.00002)"
+       id="text4750"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect4752)" />
+    <g
+       id="g5904"
+       transform="rotate(-23.399846,-6.2971623,364.88686)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:92.1035px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.95941"
+         x="-500.66193"
+         y="-258.93311"
+         id="text4662"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.1035px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Bold';fill:#00b900;fill-opacity:1;stroke-width:0.95941"
+           x="-500.66193"
+           y="-258.93311"
+           id="tspan4664">Template</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#00b800;stroke-width:11.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5485"
+         width="539.25348"
+         height="112.23042"
+         x="-586.8526"
+         y="-342.16586"
+         transform="scale(1,-1)" />
+    </g>
+  </g>
+</svg>

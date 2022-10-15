@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5909"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="template_image.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5911"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.79642256"
+     inkscape:cx="103.58823"
+     inkscape:cy="562.51546"
+     inkscape:window-width="1449"
+     inkscape:window-height="1080"
+     inkscape:window-x="255"
+     inkscape:window-y="446"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5906" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5904"
+       transform="matrix(0.35277777,0,0,-0.35277777,218.21896,239.11365)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:92.1035px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.95941"
+         x="-500.66193"
+         y="-258.93311"
+         id="text4662"
+         transform="scale(1,-1)"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:92.1035px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Bold';fill:#00b900;fill-opacity:1;stroke-width:0.95941"
+           x="-500.66193"
+           y="-258.93311"
+           id="tspan4664">Template</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#00b800;stroke-width:11.25;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5485"
+         width="539.25348"
+         height="112.23042"
+         x="-586.8526"
+         y="-342.16586"
+         transform="scale(1,-1)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:32.4921px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.338459"
+       x="56.079689"
+       y="209.14717"
+       id="text4662-4"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.4921px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,  Bold';fill:#00b900;fill-opacity:1;stroke-width:0.338459"
+         x="56.079689"
+         y="209.14717"
+         id="tspan4664-9">Waiver</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00b800;stroke-width:3.96875;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5485-9"
+       width="190.23663"
+       height="39.5924"
+       x="11.854835"
+       y="178.86824" />
+  </g>
+</svg>
