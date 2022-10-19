@@ -1,5 +1,5 @@
 (ci_other)=
-# C964 Course Faculty
+# BSCS, Software, and other Course Faculty
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
@@ -51,7 +51,7 @@ Dr. James Ashe is a dedicated maths, computer science, and statistics teacher wi
 <table _ngcontent-mdw-c382="" class="margin--bottom--10"><caption _ngcontent-mdw-c382="" class="visually-hidden"> Office hours for Amy Antonucci </caption><tr _ngcontent-mdw-c382="" class="ng-star-inserted"><th _ngcontent-mdw-c382="" class="text--right"><span _ngcontent-mdw-c382="" class="table-row"><b _ngcontent-mdw-c382="">SUN</b></span></th><td _ngcontent-mdw-c382=""><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">6:30 AM</span> to <span _ngcontent-mdw-c382="">12:00 PM </span></div><!----></td></tr><tr _ngcontent-mdw-c382="" class="ng-star-inserted"><th _ngcontent-mdw-c382="" class="text--right"><span _ngcontent-mdw-c382="" class="table-row"><b _ngcontent-mdw-c382="">TUE</b></span></th><td _ngcontent-mdw-c382=""><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">8:30 AM</span> to <span _ngcontent-mdw-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-mdw-c382="" class="ng-star-inserted"><th _ngcontent-mdw-c382="" class="text--right"><span _ngcontent-mdw-c382="" class="table-row"><b _ngcontent-mdw-c382="">WED</b></span></th><td _ngcontent-mdw-c382=""><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">5:00 AM</span> to <span _ngcontent-mdw-c382="">12:00 PM </span></div><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">1:00 PM</span> to <span _ngcontent-mdw-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-mdw-c382="" class="ng-star-inserted"><th _ngcontent-mdw-c382="" class="text--right"><span _ngcontent-mdw-c382="" class="table-row"><b _ngcontent-mdw-c382="">THU</b></span></th><td _ngcontent-mdw-c382=""><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">8:30 AM</span> to <span _ngcontent-mdw-c382="">3:00 PM </span></div><!----></td></tr><tr _ngcontent-mdw-c382="" class="ng-star-inserted"><th _ngcontent-mdw-c382="" class="text--right"><span _ngcontent-mdw-c382="" class="table-row"><b _ngcontent-mdw-c382="">FRI</b></span></th><td _ngcontent-mdw-c382=""><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">8:00 AM</span> to <span _ngcontent-mdw-c382="">12:00 AM </span></div><div _ngcontent-mdw-c382="" class="margin--left ng-star-inserted"><span _ngcontent-mdw-c382="">1:00 AM</span> to <span _ngcontent-mdw-c382="">6:00 PM </span></div><!----></td></tr><!----></table>
 :::
 
-```{image} ./url_images/wonderwoman1.jpg
+```{image} ./url_images/wonderwoman1.png
 :alt: Amy Antonucci
 :height: 200px
 :align: center
