@@ -122,14 +122,14 @@ TODO: THUMB IMAGES SHOULD UPDATE WHEN ADDED TO REP
 (task1:completedexamples)=
 `````{tab-set}
 ````{tab-item} Completed Task 1 Ex. A
-> [![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf?raw=true)
+> [![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
 
-Also see: [task 2 example a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-b.pdf?raw=true#image-thumb)
+Also see: [task 2 example A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
 ````
 ````{tab-item} Completed Task 1 Ex. B
-[![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf?raw=true)
+>[![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf?raw=true)
 
-Also see: [task 2 example a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.pdf?raw=true#image-thumb)
+Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
 ````
 `````
 
@@ -192,7 +192,7 @@ No, not unless it's an entirely different topic. Minor changes from task 1 to ta
 
 **Can I use projects from other WGU courses?**
 
-You can use any of your work or academic projects (at WGU or elsewhere) provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the rubric requirements.
+You can use any of your work or academic projects (at WGU or elsewhere) provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
 **Can I use my C951 task 3? Should I use it?**
 You can use anything you’ve written for C964, including copying verbatim from C951 task 3. If it’s convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.
@@ -207,6 +207,7 @@ Here are some points to consider:
  
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, you might choose to complete C964 first.  
 
+(task1:faq:confusingrubric)
 **The rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D; but the rubric has "Outcomes" 1-6. How do these align?**
 
 *We do not advise following the official rubric for C964.* Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), this template has seemingly become the defacto rubric and is what evaluators come to expect. So while following the template format is not technically required; it is highly recommended. 
@@ -247,7 +248,13 @@ TODO ADD PICTURES
 
 **What language, libraries, and platforms should I use?**
 
-You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. 
+You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having a large collection of ML-specific tools and tutorials, WGU has better faculty support for these. For the app front end, Jupyter notebook is a great place to start. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFx experience in software II, but a GUI is not required and Python is better suited  
+
+A development path might look like the following:
+
+- Python IDE &rarr; Jupyter notebook &rarr; notebook with widgets &rarr; hosted notebook with widgets &rarr; web app. 
+
+Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C. 
 
 **What sort of user interface do I need? Do I need a GUI?**
 

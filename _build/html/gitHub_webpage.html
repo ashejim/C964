@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creating Your Own GitHub Webpage! &#8212; IT Capstone</title>
+    <title>Creating Your Own GitHub Webpage! &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -98,7 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/GT_Headlogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">IT Capstone</h1>
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -125,20 +125,59 @@ const thebe_selector_output = ".output, .cell_output"
    Task 2: Part C -the application
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_d.html">
+     Task 2 part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="resources.html">
    C964 Resources
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_other.html">
+     C964 Course Faculty
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ML_page.html">
@@ -475,15 +514,15 @@ title="Print to PDF"
 <p>Open a windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator.</p>
 <p><strong>Install Jupyter-book</strong> which converts markdown and jupyter-notebook files into html.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="c92f3bf9-34c8-4fbe-83ad-a5c28d4484b8" name="2a696281-6574-404e-8f24-bd3ca35b4d31" type="radio">
-</input><label class="sd-tab-label" for="c92f3bf9-34c8-4fbe-83ad-a5c28d4484b8">
+<input checked="checked" id="450721a7-3e43-4d26-99ba-d405aecfea47" name="a5591a14-531e-4b4a-9955-c11da21c9a60" type="radio">
+</input><label class="sd-tab-label" for="450721a7-3e43-4d26-99ba-d405aecfea47">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyter-book
 </pre></div>
 </div>
 </div>
-<input id="6754cc9a-3d94-4f82-bf2d-75883b77d6c5" name="2a696281-6574-404e-8f24-bd3ca35b4d31" type="radio">
-</input><label class="sd-tab-label" for="6754cc9a-3d94-4f82-bf2d-75883b77d6c5">
+<input id="d27d9ed9-59b3-4afa-a177-80bd11a9fa65" name="a5591a14-531e-4b4a-9955-c11da21c9a60" type="radio">
+</input><label class="sd-tab-label" for="d27d9ed9-59b3-4afa-a177-80bd11a9fa65">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
 </pre></div>
@@ -500,15 +539,15 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install git</strong> (it should already be installed) so you can connect your local files to a GitHub repository.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="dc9c686c-eee3-441a-b045-7a6f9fdaa4a5" name="382bba86-8f74-40f2-b3e0-7032eb60a6c8" type="radio">
-</input><label class="sd-tab-label" for="dc9c686c-eee3-441a-b045-7a6f9fdaa4a5">
+<input checked="checked" id="48dcffdb-a35c-4156-9f14-83adffeee071" name="6b5f3b5b-148a-4263-8c1a-c3ff591a3e5d" type="radio">
+</input><label class="sd-tab-label" for="48dcffdb-a35c-4156-9f14-83adffeee071">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install python-git
 </pre></div>
 </div>
 </div>
-<input id="d958cc99-bd53-4c3c-865f-2230f7ea6a6d" name="382bba86-8f74-40f2-b3e0-7032eb60a6c8" type="radio">
-</input><label class="sd-tab-label" for="d958cc99-bd53-4c3c-865f-2230f7ea6a6d">
+<input id="d507efba-0883-4368-9399-c7992f3573ed" name="6b5f3b5b-148a-4263-8c1a-c3ff591a3e5d" type="radio">
+</input><label class="sd-tab-label" for="d507efba-0883-4368-9399-c7992f3573ed">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda git
 </pre></div>
@@ -517,15 +556,15 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install ghp-import</strong> which will post your HTML files from your GitHub repository to the web.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="cd9f4652-7701-442c-91c1-7412df96982c" name="8f810f54-f692-431a-ab73-8e350e650d58" type="radio">
-</input><label class="sd-tab-label" for="cd9f4652-7701-442c-91c1-7412df96982c">
+<input checked="checked" id="bceeda35-0654-46b8-98d8-7e60f74fadd3" name="f9996e1a-3ba6-416e-8ac3-74c5974d95bb" type="radio">
+</input><label class="sd-tab-label" for="bceeda35-0654-46b8-98d8-7e60f74fadd3">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
 </pre></div>
 </div>
 </div>
-<input id="b0e309cd-f5f8-4eb1-81e5-0ff0ff19fe09" name="8f810f54-f692-431a-ab73-8e350e650d58" type="radio">
-</input><label class="sd-tab-label" for="b0e309cd-f5f8-4eb1-81e5-0ff0ff19fe09">
+<input id="4fce3e30-fa74-4232-9148-57f3fb0d7cf8" name="f9996e1a-3ba6-416e-8ac3-74c5974d95bb" type="radio">
+</input><label class="sd-tab-label" for="4fce3e30-fa74-4232-9148-57f3fb0d7cf8">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge ghp-import
 </pre></div>

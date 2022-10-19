@@ -1,93 +1,73 @@
+(cipage)=
 # Course Faculty
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
 
-This course was designed to include all the resources you need to learn the skills and competencies on which you will be assessed. One of your most important resources is your instructor, who will actively monitor your progress and offer one-on-one instruction. Your instructor can discuss your learning progress, help you find answers to content questions, and give you tools to navigate the capstone successfully. Throughout your engagement with this course, it is expected that you continue communicating with your program mentor. Your program mentor will help you set weekly study goals, recommend specific learning materials, and tell you what to expect in this course and how it aligns to your program’s competencies.
+The capstone was designed to showcase knowledge and skills accumulated throughout the BSCS degree program. Helping you integrate your accumulative expertise into a passing capstone is the primary responsibility of your assigned C964 course instructor. However, the capstone was designed by WGU's product development team with the expectation that the necessary skills have already been mastered. So questions regarding those skills, e.g., coding, debugging, mathematics, and machine learning; may be outside the scope of their expertise. 
 
-If your assigned course instructor is out of office, you should contact
-
-
-## Candice Allen
-
-:::{margin} Contact Info
-📞 <a href="tel:+13854285987">(385) 428-5987</a> </br>
-📧 [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=candice.allen@wgu.edu&subject=C769%20capstone%20question%20for%20Candice%20Allen) (include Candice's name in the subject line) </br>
-📅 [Schedule an Appointment](https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=00530000006rcrYAAQ&locationId=course_mentoring&appointmentTypeGroupId=CM&attendee_person_firstName=Eric&attendee_person_lastName=Miller&attendee_email=emil389@my.wgu.edu&attendee_mobile_phoneNumber=7343184521&attendee_customField0=004099080&questionId__course_code=C769) </br>
-<table _ngcontent-nfu-c382="" class="margin--bottom--10"><caption _ngcontent-nfu-c382="" class="visually-hidden"> Office hours for Candice Allen </caption><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">MON</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">6:00 AM</span> to <span _ngcontent-nfu-c382="">3:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">TUE</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">10:00 AM</span> to <span _ngcontent-nfu-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">WED</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">9:00 AM</span> to <span _ngcontent-nfu-c382="">7:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">THU</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">6:00 AM</span> to <span _ngcontent-nfu-c382="">2:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">FRI</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">7:00 AM</span> to <span _ngcontent-nfu-c382="">3:00 PM </span></div><!----></td></tr><!----></table>
-:::
-```{image} ./url_images/candice_allen-a.jpg
-:alt: Candice Allen
-:height: 200px
-:align: center
+```{margin}  Which courses are these skills covered?
+See the [course map](LINKHERE), but there are major gaps. Noteably, machine learning, data processing, and inferential statistics. Tangential skills such as vector calculus and probability are also missing. BUT the true asset of a computer *science* graduate, is the ability to adapt, learn, and problem solve. Something you've done plenty of and should expect to do your entire career.    
 ```
-Candice Allen has worked for WGU over ten years. Before coming to WGU she taught a mixture of IT fundamental courses and business courses at post secondary colleges in Northwest Indiana and online. She graduated with her bachelor's degree from Purdue University and has two master's degree (IDOL and MSIS). She attended Capella University and AIU to obtain her master's degree. Currently she is a course instructor for the College of IT.
 
-## Jim Ashe
+In cases when that happens, your C964 instructor will work to direct you to the correct resource. But given the broad range of approaches, languages, and libraries available to use, it should not be expected to find a WGU expert on everything. We recommend reviewing available resources before investing time into your project, and be aware that WGU resources might be limited when choosing tools outside the scope of those listed.   
 
-:::{margin} Contact Info
-📞 <a href="tel:+13854284209"> (385) 428-4209</a> </br>
-📧 [jim.ashe@wgu.edu](mailto:jim.ashe@wgu.edu?subject=C769%20capstone%) </br>
-📅 [Schedule an Appointment](https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=005a000000CAi7dAAD&locationId=course_mentoring&appointmentTypeGroupId=CM&attendee_person_firstName=Hee&attendee_person_lastName=Lim&attendee_email=hlim1@my.wgu.edu&attendee_mobile_phoneNumber=3473614886&attendee_customField0=001473346&questionId__course_code=C769) </br>
-<table _ngcontent-stv-c382="" class="margin--bottom--10"><caption _ngcontent-stv-c382="" class="visually-hidden"> Office hours for Jim Ashe </caption><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">MON</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">TUE</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">WED</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">THU</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">FRI</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">SAT</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">9:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><!----></table>
-:::
+## Who to contact?
 
-```{image} ./url_images/jim_ashe-a.jpg
-:alt: Jim Ashe
-:height: 200px
-:align: center
+::::{card-carousel} 2
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: ./ci_c964.html
+
+**C964 Faculty**
+^^^
+```{image} ./url_images/virtual_meeting1.jpg
+:height: 100
 ```
-Dr. James Ashe is a dedicated maths, computer science, and statistics teacher with over 20 years of experience teaching in an online, large university, small college, HBCU, and community college setting. In 2016 he joined WGU to help students in the newly created Math Center. In 2018 Jim joined IT to contribute to the new Computer Science program. Currently, he supports the IT, data analytics, and computer science capstone. Though his research studied abstract objects, experimentation, creating examples, and producing necessitated a lot of coding. It was here that he developed a love for programming and computer science. He has a Ph.D. and MS in mathematics from the University of Tennessee and a BS in history with a minor in art from East Tennessee State University. Jim and his wife reside in Asheville, NC, with their four children, four cats, a dog, and an undetermined number of chickens. In his nonexistent spare time, he enjoys reading and kayaking. 
+Understanding the project
 
-## Joe Barnhart
+Revising returned projects
 
-:::{margin} Contact Info 
-📞 <a href="tel:+13854284889"> (385) 428-4889 </a> </br>
-📧 [joe.barnhart@wgu.edu](mailto:joe.barnhart@wgu.edu?subject=C769%20capstone%) </br>
-📅 [Schedule an Appointment](https://www02a.timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=005a000000CKD2WAAX&locationId=course_mentoring&appointmentTypeGroupId=CM&attendee_person_firstName=Anthony&attendee_person_lastName=Patricca&attendee_email=apatr83@my.wgu.edu&attendee_mobile_phoneNumber=6238759573&attendee_customField0=008019894&questionId__course_code=C769) </br>
-<table _ngcontent-clb-c382="" class="margin--bottom--10"><caption _ngcontent-clb-c382="" class="visually-hidden"> Office hours for Joe Barnhart </caption><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">TUE</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">9:30 AM </span></div><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">2:00 PM</span> to <span _ngcontent-clb-c382="">8:00 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">WED</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">4:30 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">THU</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">9:30 AM </span></div><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">2:00 PM</span> to <span _ngcontent-clb-c382="">8:00 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">FRI</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">4:30 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">SAT</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">8:00 AM</span> to <span _ngcontent-clb-c382="">12:00 PM </span></div><!----></td></tr><!----></table>
+Topic approval
+
+Academic planning
+
+Finding resources
++++
+C964 CI page {fas}`arrow-right`
 :::
 
-```{image} ./url_images/joe_barnhart-a.jpg
-:alt: Joe Barnhart
-:height: 200px
-:align: center
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: ./ci_other.html
+
+**BSCS, Math, & Software Faculty**
+^^^
+```{image} ./url_images/debug1.jpg
+:height: 100
 ```
-How about this:
+Debugging Python and Java
 
-Dr. Joe Barnhart has a Ph.D. from Texas A&M in automated systems. He’s taught in higher education for over 35 years. He was an assistant direction of IT Services at a university for 15 years as well as a technical writer for a software company. He’s apparently a funny guy. Book a call with him and find out if it’s true.
+Data processing
 
+Data Analytics
 
-## Will Dean
+Statistics, Math, & AI
 
-:::{margin}
-📞 <a href="tel:+13854288649">(385) 428-8649 </a> </br>
-📧 [william.dean@wgu.edu](mailto:william.dean@wgu.edu?subject=C769%20capstone%) </br>
-📅 [Schedule an Appointment](https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=0053x00000FXxHCAA1&locationId=course_mentoring&appointmentTypeGroupId=CM&attendee_person_firstName=Eddie&attendee_person_lastName=Cotten&attendee_email=ecotte1@my.wgu.edu&attendee_mobile_phoneNumber=2039030948&attendee_customField0=000924433&questionId__course_code=C769) </br>
-<table _ngcontent-ehm-c382="" class="margin--bottom--10"><caption _ngcontent-ehm-c382="" class="visually-hidden"> Office hours for William Dean </caption><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">MON</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">TUE</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">WED</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">THU</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">FRI</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><!----></table>
++++
+BSCS, Math, & Software CI page {fas}`arrow-right`
 :::
 
-```{image} ./url_images/will_dean-a.png
-:alt: Will Dean
-:height: 200px
-:align: center
-```
-Dr. William Dean is an only child and a native of Louisville, KY. As a child, he was a member of the Boy Scouts of America where he achieved the rank of Eagle Scout. Dr. Dean is an active member of Phi Beta Sigma Fraternity Incorporated, the National Eagle Scout Association (NESA), the National Association for the Advancement of Colored People (NAACP), the Black Doctoral Network, and the National Black MBA Association. Dr. Dean is a veteran of the US Navy Submarine Force and a member of SubVets. Dr. Dean has over 20 years of experience in the defense sector. He has served as chief engineer on several space communications projects and has managed many diverse teams. Dr. Dean holds a Bachelor of Science in Information Technology, a Master of Business Administration with a focus in IT Management, and a Doctor of Philosophy Degree in Information Technology.
+::::
 
-## Charlie Paddock
-
-:::{margin} Contact Info
-📞 <a href="tel:+13854281858">(385) 428-1858 x1858 </a> </br>
-📧 [ugcapstoneit@wgu.edu](mailto:charles.paddock@wgu.edu?subject=C769%20capstone%) </br>
-📅 [Schedule an Appointment](https://www02a.timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/appointment-type?wfsid=bj7b8m44fqcb42340646rjcu2geq5sp7&resourceId=00530000006rd6fAAA&locationId=course_mentoring&appointmentTypeGroupId=CM&attendee_person_firstName=Alestair&attendee_person_lastName=Patterson&attendee_email=apat355%40my.wgu.edu&attendee_mobile_phoneNumber=5162255664&attendee_customField0=009461025&questionId__course_code=C769&fs=1)</br>
-<table _ngcontent-hxq-c382="" class="margin--bottom--10"><caption _ngcontent-hxq-c382="" class="visually-hidden"> Office hours for Charlie Paddock </caption><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">MON</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">TUE</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">WED</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">5:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">THU</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">5:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">FRI</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">3:00 PM </span></div><!----></td></tr><!----></table>
-:::
-
-```{image} ./url_images/charlie_paddock-b.jpg
-:alt: Charlie Paddock
-:height: 200px
-:align: center
-```
-Dr. Charles Paddock received his BS in Business from the University of New Orleans. Following a tour of duty in the Air Force, he returned to school and received his MBA concentrating in Systems and Operations Management and Ph.D. in Management Information Systems, both from the University of Houston. Charles previously taught at Arizona State University and The University of Nevada, Las Vegas and worked in the Research Centers of both Universities as a consultant to their corporate members. Charles joined WGU in February of 2006, and now lives in Salt Lake City, UT.
+Always practice professional communication:
+* Use your WGU email (we may not receive emails from outside WGU).
+* Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
+* Clearly state your questions or requests. When contacting non-C964 faculty, provide context and limit questions to the scope of their expertise.  
 

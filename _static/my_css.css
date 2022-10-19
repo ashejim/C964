@@ -30,12 +30,12 @@ h3 {
 }
 
 img[src$='#image-thumb']{
-    height: 200px;
+    height: 100px;
     border: 1px solid #D5DBDB;
 }
 
 .image-thumb img{
-    height: 125px;
+    height: 100px;
     border: 1px solid #D5DBDB;
 }
 

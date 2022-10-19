@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Faculty &#8212; IT Capstone</title>
+    <title>Course Faculty &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Machince" href="ML_page.html" />
+    <link rel="next" title="C964 Course Faculty" href="ci_c964.html" />
     <link rel="prev" title="C964 Resources" href="resources.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -97,7 +97,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/GT_Headlogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">IT Capstone</h1>
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -124,20 +124,59 @@ const thebe_selector_output = ".output, .cell_output"
    Task 2: Part C -the application
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_d.html">
+     Task 2 part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="resources.html">
    C964 Resources
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Course Faculty
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_other.html">
+     C964 Course Faculty
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ML_page.html">
@@ -327,28 +366,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#candice-allen">
-   Candice Allen
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jim-ashe">
-   Jim Ashe
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#joe-barnhart">
-   Joe Barnhart
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#will-dean">
-   Will Dean
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#charlie-paddock">
-   Charlie Paddock
+  <a class="reference internal nav-link" href="#who-to-contact">
+   Who to contact?
   </a>
  </li>
 </ul>
@@ -371,28 +390,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#candice-allen">
-   Candice Allen
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jim-ashe">
-   Jim Ashe
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#joe-barnhart">
-   Joe Barnhart
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#will-dean">
-   Will Dean
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#charlie-paddock">
-   Charlie Paddock
+  <a class="reference internal nav-link" href="#who-to-contact">
+   Who to contact?
   </a>
  </li>
 </ul>
@@ -406,73 +405,60 @@ title="Print to PDF"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="course-faculty">
-<h1>Course Faculty<a class="headerlink" href="#course-faculty" title="Permalink to this headline">#</a></h1>
+<span id="cipage"></span><h1>Course Faculty<a class="headerlink" href="#course-faculty" title="Permalink to this headline">#</a></h1>
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
-<p>This course was designed to include all the resources you need to learn the skills and competencies on which you will be assessed. One of your most important resources is your instructor, who will actively monitor your progress and offer one-on-one instruction. Your instructor can discuss your learning progress, help you find answers to content questions, and give you tools to navigate the capstone successfully. Throughout your engagement with this course, it is expected that you continue communicating with your program mentor. Your program mentor will help you set weekly study goals, recommend specific learning materials, and tell you what to expect in this course and how it aligns to your program’s competencies.</p>
-<p>If your assigned course instructor is out of office, you should contact</p>
-<div class="section" id="candice-allen">
-<h2>Candice Allen<a class="headerlink" href="#candice-allen" title="Permalink to this headline">#</a></h2>
+<p>The capstone was designed to showcase knowledge and skills accumulated throughout the BSCS degree program. Helping you integrate your accumulative expertise into a passing capstone is the primary responsibility of your assigned C964 course instructor. However, the capstone was designed by WGU’s product development team with the expectation that the necessary skills have already been mastered. So questions regarding those skills, e.g., coding, debugging, mathematics, and machine learning; may be outside the scope of their expertise.</p>
 <div class="margin sidebar">
-<p class="sidebar-title">Contact Info</p>
-<p>📞 <a href="tel:+13854285987">(385) 428-5987</a> </br>
-📧 <a class="reference external" href="mailto:ugcapstoneit&#37;&#52;&#48;wgu&#46;edu?cc=candice&#46;allen&#37;&#52;&#48;wgu&#46;edu&amp;subject=C769%20capstone%20question%20for%20Candice%20Allen">ugcapstoneit<span>&#64;</span>wgu<span>&#46;</span>edu</a> (include Candice’s name in the subject line) </br>
-📅 <a class="reference external" href="https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=00530000006rcrYAAQ&amp;locationId=course_mentoring&amp;appointmentTypeGroupId=CM&amp;attendee_person_firstName=Eric&amp;attendee_person_lastName=Miller&amp;attendee_email=emil389&#64;my.wgu.edu&amp;attendee_mobile_phoneNumber=7343184521&amp;attendee_customField0=004099080&amp;questionId__course_code=C769">Schedule an Appointment</a> </br></p>
-<table _ngcontent-nfu-c382="" class="margin--bottom--10"><caption _ngcontent-nfu-c382="" class="visually-hidden"> Office hours for Candice Allen </caption><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">MON</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">6:00 AM</span> to <span _ngcontent-nfu-c382="">3:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">TUE</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">10:00 AM</span> to <span _ngcontent-nfu-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">WED</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">9:00 AM</span> to <span _ngcontent-nfu-c382="">7:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">THU</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">6:00 AM</span> to <span _ngcontent-nfu-c382="">2:00 PM </span></div><!----></td></tr><tr _ngcontent-nfu-c382="" class="ng-star-inserted"><th _ngcontent-nfu-c382="" class="text--right"><span _ngcontent-nfu-c382="" class="table-row"><b _ngcontent-nfu-c382="">FRI</b></span></th><td _ngcontent-nfu-c382=""><div _ngcontent-nfu-c382="" class="margin--left ng-star-inserted"><span _ngcontent-nfu-c382="">7:00 AM</span> to <span _ngcontent-nfu-c382="">3:00 PM </span></div><!----></td></tr><!----></table>
+<p class="sidebar-title">Which courses are these skills covered?</p>
+<p>See the <span class="xref myst">course map</span>, but there are major gaps. Noteably, machine learning, data processing, and inferential statistics. Tangential skills such as vector calculus and probability are also missing. BUT the true asset of a computer <em>science</em> graduate, is the ability to adapt, learn, and problem solve. Something you’ve done plenty of and should expect to do your entire career.</p>
 </div>
-<a class="reference internal image-reference" href="_images/candice_allen-a.jpg"><img alt="Candice Allen" class="align-center" src="_images/candice_allen-a.jpg" style="height: 200px;" /></a>
-<p>Candice Allen has worked for WGU over ten years. Before coming to WGU she taught a mixture of IT fundamental courses and business courses at post secondary colleges in Northwest Indiana and online. She graduated with her bachelor’s degree from Purdue University and has two master’s degree (IDOL and MSIS). She attended Capella University and AIU to obtain her master’s degree. Currently she is a course instructor for the College of IT.</p>
+<p>In cases when that happens, your C964 instructor will work to direct you to the correct resource. But given the broad range of approaches, languages, and libraries available to use, it should not be expected to find a WGU expert on everything. We recommend reviewing available resources before investing time into your project, and be aware that WGU resources might be limited when choosing tools outside the scope of those listed.</p>
+<div class="section" id="who-to-contact">
+<h2>Who to contact?<a class="headerlink" href="#who-to-contact" title="Permalink to this headline">#</a></h2>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>C964 Faculty</strong></p>
 </div>
-<div class="section" id="jim-ashe">
-<h2>Jim Ashe<a class="headerlink" href="#jim-ashe" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title">Contact Info</p>
-<p>📞 <a href="tel:+13854284209"> (385) 428-4209</a> </br>
-📧 <a class="reference external" href="mailto:jim&#46;ashe&#37;&#52;&#48;wgu&#46;edu?subject=C769%20capstone%">jim<span>&#46;</span>ashe<span>&#64;</span>wgu<span>&#46;</span>edu</a> </br>
-📅 <a class="reference external" href="https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=005a000000CAi7dAAD&amp;locationId=course_mentoring&amp;appointmentTypeGroupId=CM&amp;attendee_person_firstName=Hee&amp;attendee_person_lastName=Lim&amp;attendee_email=hlim1&#64;my.wgu.edu&amp;attendee_mobile_phoneNumber=3473614886&amp;attendee_customField0=001473346&amp;questionId__course_code=C769">Schedule an Appointment</a> </br></p>
-<table _ngcontent-stv-c382="" class="margin--bottom--10"><caption _ngcontent-stv-c382="" class="visually-hidden"> Office hours for Jim Ashe </caption><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">MON</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">TUE</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">WED</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">THU</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">FRI</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">SAT</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">9:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><!----></table>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="_images/virtual_meeting1.jpg"><img alt="_images/virtual_meeting1.jpg" src="_images/virtual_meeting1.jpg" style="height: 100px;" /></a>
+<p class="sd-card-text">Understanding the project</p>
+<p class="sd-card-text">Revising returned projects</p>
+<p class="sd-card-text">Topic approval</p>
+<p class="sd-card-text">Academic planning</p>
+<p class="sd-card-text">Finding resources</p>
 </div>
-<a class="reference internal image-reference" href="_images/jim_ashe-a.jpg"><img alt="Jim Ashe" class="align-center" src="_images/jim_ashe-a.jpg" style="height: 200px;" /></a>
-<p>Dr. James Ashe is a dedicated maths, computer science, and statistics teacher with over 20 years of experience teaching in an online, large university, small college, HBCU, and community college setting. In 2016 he joined WGU to help students in the newly created Math Center. In 2018 Jim joined IT to contribute to the new Computer Science program. Currently, he supports the IT, data analytics, and computer science capstone. Though his research studied abstract objects, experimentation, creating examples, and producing necessitated a lot of coding. It was here that he developed a love for programming and computer science. He has a Ph.D. and MS in mathematics from the University of Tennessee and a BS in history with a minor in art from East Tennessee State University. Jim and his wife reside in Asheville, NC, with their four children, four cats, a dog, and an undetermined number of chickens. In his nonexistent spare time, he enjoys reading and kayaking.</p>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">C964 CI page <span class="fas fa-arrow-right"></span></p>
 </div>
-<div class="section" id="joe-barnhart">
-<h2>Joe Barnhart<a class="headerlink" href="#joe-barnhart" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title">Contact Info </p>
-<p>📞 <a href="tel:+13854284889"> (385) 428-4889 </a> </br>
-📧 <a class="reference external" href="mailto:joe&#46;barnhart&#37;&#52;&#48;wgu&#46;edu?subject=C769%20capstone%">joe<span>&#46;</span>barnhart<span>&#64;</span>wgu<span>&#46;</span>edu</a> </br>
-📅 <a class="reference external" href="https://www02a.timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=005a000000CKD2WAAX&amp;locationId=course_mentoring&amp;appointmentTypeGroupId=CM&amp;attendee_person_firstName=Anthony&amp;attendee_person_lastName=Patricca&amp;attendee_email=apatr83&#64;my.wgu.edu&amp;attendee_mobile_phoneNumber=6238759573&amp;attendee_customField0=008019894&amp;questionId__course_code=C769">Schedule an Appointment</a> </br></p>
-<table _ngcontent-clb-c382="" class="margin--bottom--10"><caption _ngcontent-clb-c382="" class="visually-hidden"> Office hours for Joe Barnhart </caption><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">TUE</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">9:30 AM </span></div><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">2:00 PM</span> to <span _ngcontent-clb-c382="">8:00 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">WED</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">4:30 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">THU</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">9:30 AM </span></div><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">2:00 PM</span> to <span _ngcontent-clb-c382="">8:00 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">FRI</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">7:30 AM</span> to <span _ngcontent-clb-c382="">4:30 PM </span></div><!----></td></tr><tr _ngcontent-clb-c382="" class="ng-star-inserted"><th _ngcontent-clb-c382="" class="text--right"><span _ngcontent-clb-c382="" class="table-row"><b _ngcontent-clb-c382="">SAT</b></span></th><td _ngcontent-clb-c382=""><div _ngcontent-clb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-clb-c382="">8:00 AM</span> to <span _ngcontent-clb-c382="">12:00 PM </span></div><!----></td></tr><!----></table>
+<a class="sd-stretched-link reference external" href="./ci_c964.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>BSCS, Math, &amp; Software Faculty</strong></p>
 </div>
-<a class="reference internal image-reference" href="_images/joe_barnhart-a.jpg"><img alt="Joe Barnhart" class="align-center" src="_images/joe_barnhart-a.jpg" style="height: 200px;" /></a>
-<p>How about this:</p>
-<p>Dr. Joe Barnhart has a Ph.D. from Texas A&amp;M in automated systems. He’s taught in higher education for over 35 years. He was an assistant direction of IT Services at a university for 15 years as well as a technical writer for a software company. He’s apparently a funny guy. Book a call with him and find out if it’s true.</p>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="_images/debug1.jpg"><img alt="_images/debug1.jpg" src="_images/debug1.jpg" style="height: 100px;" /></a>
+<p class="sd-card-text">Debugging Python and Java</p>
+<p class="sd-card-text">Data processing</p>
+<p class="sd-card-text">Data Analytics</p>
+<p class="sd-card-text">Statistics, Math, &amp; AI</p>
 </div>
-<div class="section" id="will-dean">
-<h2>Will Dean<a class="headerlink" href="#will-dean" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<p>📞 <a href="tel:+13854288649">(385) 428-8649 </a> </br>
-📧 <a class="reference external" href="mailto:william&#46;dean&#37;&#52;&#48;wgu&#46;edu?subject=C769%20capstone%">william<span>&#46;</span>dean<span>&#64;</span>wgu<span>&#46;</span>edu</a> </br>
-📅 <a class="reference external" href="https://timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/?resourceId=0053x00000FXxHCAA1&amp;locationId=course_mentoring&amp;appointmentTypeGroupId=CM&amp;attendee_person_firstName=Eddie&amp;attendee_person_lastName=Cotten&amp;attendee_email=ecotte1&#64;my.wgu.edu&amp;attendee_mobile_phoneNumber=2039030948&amp;attendee_customField0=000924433&amp;questionId__course_code=C769">Schedule an Appointment</a> </br></p>
-<table _ngcontent-ehm-c382="" class="margin--bottom--10"><caption _ngcontent-ehm-c382="" class="visually-hidden"> Office hours for William Dean </caption><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">MON</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">TUE</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">WED</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">THU</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-ehm-c382="" class="ng-star-inserted"><th _ngcontent-ehm-c382="" class="text--right"><span _ngcontent-ehm-c382="" class="table-row"><b _ngcontent-ehm-c382="">FRI</b></span></th><td _ngcontent-ehm-c382=""><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">6:30 AM</span> to <span _ngcontent-ehm-c382="">10:30 AM </span></div><div _ngcontent-ehm-c382="" class="margin--left ng-star-inserted"><span _ngcontent-ehm-c382="">2:00 PM</span> to <span _ngcontent-ehm-c382="">6:00 PM </span></div><!----></td></tr><!----></table>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">BSCS, Math, &amp; Software CI page <span class="fas fa-arrow-right"></span></p>
 </div>
-<a class="reference internal image-reference" href="_images/will_dean-a.png"><img alt="Will Dean" class="align-center" src="_images/will_dean-a.png" style="height: 200px;" /></a>
-<p>Dr. William Dean is an only child and a native of Louisville, KY. As a child, he was a member of the Boy Scouts of America where he achieved the rank of Eagle Scout. Dr. Dean is an active member of Phi Beta Sigma Fraternity Incorporated, the National Eagle Scout Association (NESA), the National Association for the Advancement of Colored People (NAACP), the Black Doctoral Network, and the National Black MBA Association. Dr. Dean is a veteran of the US Navy Submarine Force and a member of SubVets. Dr. Dean has over 20 years of experience in the defense sector. He has served as chief engineer on several space communications projects and has managed many diverse teams. Dr. Dean holds a Bachelor of Science in Information Technology, a Master of Business Administration with a focus in IT Management, and a Doctor of Philosophy Degree in Information Technology.</p>
+<a class="sd-stretched-link reference external" href="./ci_other.html"></a></div>
 </div>
-<div class="section" id="charlie-paddock">
-<h2>Charlie Paddock<a class="headerlink" href="#charlie-paddock" title="Permalink to this headline">#</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title">Contact Info</p>
-<p>📞 <a href="tel:+13854281858">(385) 428-1858 x1858 </a> </br>
-📧 <a class="reference external" href="mailto:charles&#46;paddock&#37;&#52;&#48;wgu&#46;edu?subject=C769%20capstone%">ugcapstoneit<span>&#64;</span>wgu<span>&#46;</span>edu</a> </br>
-📅 <a class="reference external" href="https://www02a.timetrade.com/app/wgu-mentoring/workflows/WGU100/schedule/appointment-type?wfsid=bj7b8m44fqcb42340646rjcu2geq5sp7&amp;resourceId=00530000006rd6fAAA&amp;locationId=course_mentoring&amp;appointmentTypeGroupId=CM&amp;attendee_person_firstName=Alestair&amp;attendee_person_lastName=Patterson&amp;attendee_email=apat355%40my.wgu.edu&amp;attendee_mobile_phoneNumber=5162255664&amp;attendee_customField0=009461025&amp;questionId__course_code=C769&amp;fs=1">Schedule an Appointment</a></br></p>
-<table _ngcontent-hxq-c382="" class="margin--bottom--10"><caption _ngcontent-hxq-c382="" class="visually-hidden"> Office hours for Charlie Paddock </caption><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">MON</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">TUE</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">6:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">WED</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">5:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">THU</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">5:00 PM </span></div><!----></td></tr><tr _ngcontent-hxq-c382="" class="ng-star-inserted"><th _ngcontent-hxq-c382="" class="text--right"><span _ngcontent-hxq-c382="" class="table-row"><b _ngcontent-hxq-c382="">FRI</b></span></th><td _ngcontent-hxq-c382=""><div _ngcontent-hxq-c382="" class="margin--left ng-star-inserted"><span _ngcontent-hxq-c382="">9:00 AM</span> to <span _ngcontent-hxq-c382="">3:00 PM </span></div><!----></td></tr><!----></table>
+<p>Always practice professional communication:</p>
+<ul class="simple">
+<li><p>Use your WGU email (we may not receive emails from outside WGU).</p></li>
+<li><p>Provide a subject, your capstone course (we support all IT college capstones), and your program mentor’s name (if not in your signature).</p></li>
+<li><p>Clearly state your questions or requests. When contacting non-C964 faculty, provide context and limit questions to the scope of their expertise.</p></li>
+</ul>
 </div>
-<a class="reference internal image-reference" href="_images/charlie_paddock-b.jpg"><img alt="Charlie Paddock" class="align-center" src="_images/charlie_paddock-b.jpg" style="height: 200px;" /></a>
-<p>Dr. Charles Paddock received his BS in Business from the University of New Orleans. Following a tour of duty in the Air Force, he returned to school and received his MBA concentrating in Systems and Operations Management and Ph.D. in Management Information Systems, both from the University of Houston. Charles previously taught at Arizona State University and The University of Nevada, Las Vegas and worked in the Research Centers of both Universities as a consultant to their corporate members. Charles joined WGU in February of 2006, and now lives in Salt Lake City, UT.</p>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -510,10 +496,10 @@ title="Print to PDF"
             <p class="prev-next-title">C964 Resources</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="ML_page.html" title="next page">
+    <a class='right-next' id="next-link" href="ci_c964.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Machince</p>
+        <p class="prev-next-title">C964 Course Faculty</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to C964! &#8212; IT Capstone</title>
+    <title>Welcome to C964! &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -96,7 +96,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/GT_Headlogo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">IT Capstone</h1>
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -123,20 +123,59 @@ const thebe_selector_output = ".output, .cell_output"
    Task 2: Part C -the application
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_d.html">
+     Task 2 part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="resources.html">
    C964 Resources
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ci_other.html">
+     C964 Course Faculty
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ML_page.html">
@@ -364,14 +403,18 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-c964">
+  <!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
+<div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-c964">
 <h1>Welcome to C964!<a class="headerlink" href="#welcome-to-c964" title="Permalink to this headline">#</a></h1>
 <p>Welcome! The Computer Science capstone project develops and presents a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, that crucial skill set that sets CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine.</p>
 <p>The capstone includes three parts:</p>
 <ol class="simple">
-<li><p><strong>Task One:</strong> Get course instructor topic approval -a preliminary step to ensure you started in the right direction.</p></li>
-<li><p><strong>Task two part C:</strong> Develop a working application of machine learning (ML).</p></li>
-<li><p><strong>Task two parts A, B, &amp; D:</strong> Documentation communicating the value of your product to audiences of varying technical understanding.</p></li>
+<li><p><strong>Task 1:</strong> Get course instructor topic approval -a preliminary step to ensure you started in the right direction.</p></li>
+<li><p><strong>Task 2 part C:</strong> Develop a working application of machine learning (ML).</p></li>
+<li><p><strong>Task 2 parts D, A, &amp; B:</strong> Documentation communicating the value of your product to audiences of varying technical understanding.</p></li>
 </ol>
 <div class="sd-sphinx-override sd-cards-carousel sd-card-cols-3 docutils">
 <div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
@@ -397,10 +440,10 @@ title="Print to PDF"
 <div class="sd-card-footer docutils">
 <p class="sd-card-text">Task 2 part C details <span class="fas fa-arrow-right"></span></p>
 </div>
-<a class="sd-stretched-link reference external" href="./task2.html"></a></div>
+<a class="sd-stretched-link reference external" href="./task2_part_c.html"></a></div>
 <div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-header bg-light text-center docutils">
-<p class="sd-card-text"><strong>Task two parts A, B, &amp; D</strong></p>
+<p class="sd-card-text"><strong>Task 2 parts A, B, &amp; D</strong></p>
 </div>
 <div class="sd-card-body text-center docutils">
 <a class="reference internal image-reference" href="_images/document-a.jpg"><img alt="_images/document-a.jpg" src="_images/document-a.jpg" style="height: 100px;" /></a>
@@ -409,7 +452,7 @@ title="Print to PDF"
 <div class="sd-card-footer docutils">
 <p class="sd-card-text">Task 3 details <span class="fas fa-arrow-right"></span></p>
 </div>
-<a class="sd-stretched-link reference external" href="./task3.html"></a></div>
+<a class="sd-stretched-link reference external" href="./task2_doc.html"></a></div>
 </div>
 <div class="section" id="start-here">
 <h2>Start Here<a class="headerlink" href="#start-here" title="Permalink to this headline">#</a></h2>

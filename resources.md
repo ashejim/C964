@@ -60,7 +60,7 @@ STUFF HERE
 Write your proposal following **Task 2 C964 template**:
 > [![Task 2 C964](https://github.com/ashejim/C964/blob/main/url_images/C964_template?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBePZ37dnxts_r24RTOr26rA?e=1aQEMYespecially)
 
-Follow guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.   
+Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.   
 
 (resources:task2doc:docexample)=  
 ### Task 2 Parts A, B, and D Example

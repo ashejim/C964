@@ -71,7 +71,6 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````
 `````
 
-
 (task2c:faq)=
 ## FAQ
 **What are the most common reasons for the task 2 code being returned?**

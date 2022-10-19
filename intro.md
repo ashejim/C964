@@ -1,11 +1,16 @@
+<!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
+
 # Welcome to C964!
 
 Welcome! The Computer Science capstone project develops and presents a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, that crucial skill set that sets CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine. 
 
 The capstone includes three parts:
-1. **Task One:** Get course instructor topic approval -a preliminary step to ensure you started in the right direction.
-2. **Task two part C:** Develop a working application of machine learning (ML).
-3. **Task two parts A, B, & D:** Documentation communicating the value of your product to audiences of varying technical understanding.      
+1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you started in the right direction.
+2. **Task 2 part C:** Develop a working application of machine learning (ML).
+3. **Task 2 parts D, A, & B:** Documentation communicating the value of your product to audiences of varying technical understanding.      
 
 ::::{card-carousel} 3
 
@@ -29,7 +34,7 @@ Task 1 details {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ./task2.html
+:link: ./task2_part_c.html
 
 **Task 2 part C**
 ^^^
@@ -45,9 +50,9 @@ Task 2 part C details {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ./task3.html
+:link: ./task2_doc.html
 
-**Task two parts A, B, & D**
+**Task 2 parts A, B, & D**
 ^^^
 ```{image} ./url_images/document-a.jpg
 :height: 100

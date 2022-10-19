@@ -9,28 +9,51 @@
 After 
 
 Write your documentation following **Task 2: The Proposal template**:
-> [![Task 2: the Proposal template](https://github.com/ashejim/C769/blob/main/url_images/t2_template_thumb.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EXQpEzeuOBhBnfhO15di-mQBXkj592jBHZ0ceFGcdVdvJA?e=y0cZTs)
+> [![Task 2: the Proposal template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
-To gauge the level of detail evaluators typically expect, review this [task 2 example](https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/Edh7No2A3uhAtlXnmQYuJMIBQO6pJE0xOe8m4J_J0n6wdg?e=p1haS7) - this is a passing albeit not 
-great project. 
+:::{warning}
+*Do not follow the official rubric for C964.* Instead, follow the guidelines found on this webpage and the above [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators come to expect. 
+:::
 
-(task2:completedexamples)=
+To gauge the level of detail evaluators typically expect, review these examples.
+
+(task1:completedexamples)=
 `````{tab-set}
-````{tab-item} Task 2 documentation Example A
-> [![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf?raw=true)
+````{tab-item} Task 2 documentation example A
+> [![Task 2 example-a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
 
-Also see: [task 2 example a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-b.pdf?raw=true#image-thumb)
+Also see: [Task 1 example A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
 ````
-````{tab-item} Completed Task 1 Ex. B
-[![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf?raw=true)
+````{tab-item} Task 2 documentation example B
+>[![Task 2 example-b](https://github.com/ashejim/C964/blob/main/url_images/example_task2-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf?raw=true)
 
-Also see: [task 2 example a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.pdf?raw=true#image-thumb)
+Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
 ````
 `````
 
+TODO LIST IN ORDER
+
+[] Finish task 2 part C
+[] Write part D
+    [] Write *Data Product Code*
+    [] Write *Accuracy Analysis*
+    [] Write *User Guide*
+    [] Write the remaining sections.
+[] Write parts B and A
+[] Check grammar and sources, and then submit!
+ 
+
 :::{tip}
-Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. You can (and sometimes must) reuse content from other areas as needed. It's not about writing something fun to read -it's about demonstrating that the requirements are met. 
+Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. You can reuse content from other areas as needed. It's not about writing something fun to read -it's about demonstrating that the requirements are met. 
 :::
+
+:::{tip}
+1. Follow the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+2. Submit parts A, B, and D as a *single* pdf file.
+3. Part D is what matters -particularly the *Data Product Code*, *Accuracy Analysis*, and *User Guide* sections. Parts A and B need to be completed but have few qualitative requirements.
+:::
+
+Here
 
 (task2_doc:userguide)=
 ## User Guide
