@@ -8,4 +8,10 @@ cd C:\Users\Jim\OneDrive\jupyter-books\github_book_repo\C964
 git add ./*
 SET /P Message=Enter git commit comment: 
 git commit -m "%Message%"
+echo "Commited"
 git push
+echo "Pushed"
+ghp-import -n -p -f _build/html
+echo "Imported to git page"
+start https://ashejim.github.io/C964/intro.html
+cd C:\Users\Jim\OneDrive\jupyter-books
