@@ -28,15 +28,10 @@ In cases when that happens, your C964 instructor will work to direct you to the 
 ```{image} ./url_images/virtual_meeting1.jpg
 :height: 100
 ```
-Understanding the project
-
-Revising returned projects
-
-Topic approval
-
-Academic planning
-
-Finding resources
+Understanding the project<br>
+Revising returned projects<br>
+Topic approval<br>
+Planning & resources
 +++
 C964 CI page {fas}`arrow-right`
 :::
@@ -52,13 +47,10 @@ C964 CI page {fas}`arrow-right`
 ```{image} ./url_images/debug1.jpg
 :height: 100
 ```
-Debugging Python and Java
-
-Data processing
-
-Data Analytics
-
-Statistics, Math, & AI
+Debugging Python and Java <br>
+Data processing <br>
+Data Analytics <br>
+Statistics, Math, & AI 
 
 +++
 BSCS, Math, & Software CI page {fas}`arrow-right`
