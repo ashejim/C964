@@ -9,17 +9,23 @@
 Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student but students assigned to them take first priority.  Follow the guidelines below, understand their assistance is a courtesy, and response times may be delayed (particularly towards the end of the month). 
 :::
 
-**Always practice professional communication:**
-* Use your WGU email (we may not receive emails from outside WGU).
-* Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
-* Clearly state your question, provide context, and do not assume faculty on this page know the requirements of your project. Restrict the scope of your question to their area of expertise. **Technical or 
+## Better questions get better answers.
+
+The fix might require understanding several intertwined layers, of your code structure, the language, libraries, or data. You've already spent hours working on it. Don't expect someone else to quickly diagnose and fix the issue from a quick live code section or a series of screenshots. Remember, asking for help means asking for someone's time. Faculty on this page enjoy helping students (they've volunteered for the additional work), but you need to make it as easy for them to do so.         
 
 **Coding-related questions should be emailed following these guidelines:**
 - Clearly state the problem you are trying to fix. 
 - Describe how to recreate the problem. 
-- Provide everything needed to reproduce the error. Preferably a minimal working example.
-- Describe what you've tried already. 
-- If fixing multiple errors, start with the simplest and repeat the above for each issue. 
+- Provide everything needed to reproduce the error. Preferably a minimal working example. Do *NOT* rely on screenshots. 
+- Describe what you've tried already; some [debugging tips](https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/). 
+- Start with the simplest error. Focus on one problem at a time.
+
+Additionally,
+
+**Always practice professional communication:**
+* Use your WGU email (we may not receive emails from outside WGU).
+* Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
+* Clearly state your question, provide context, and do not assume the faculty on this page knows the requirements of your project. Restrict the scope of your question to their area of expertise. 
 
 (ci_other:cis)=
 ## Jim Ashe, PhD
@@ -59,7 +65,7 @@ Dr. James Ashe is a dedicated maths, computer science, and statistics teacher wi
 - Debugging Java and Python
 - Data Analytics
 
-Amy has been with WGU since January of 2015. Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that. She has a BS from Penn State University in Computer Science, and two Masters Degrees, both in Computer Science. She ~~expects to graduate with~~ has a Ph.D. in Information Systems from Prestigious University, aka PU. Her interests include Norway and its culture and language, playing the cello, and loving on her dog and cats.
+Amy has been with WGU since January of 2015. Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that. She has a BS from Penn State University in Computer Science, and two Masters Degrees, both in Computer Science. She ~~expects to graduate with~~ has a Ph.D. in Information Systems from "Prestigious University", aka, good ole P-U. Her interests include Norway and its culture and language, playing the cello, and loving on her dog and cats.
 
 ## Mark Denchy, PhD
 
