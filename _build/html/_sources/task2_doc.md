@@ -6,13 +6,11 @@
 
 # Task 2: The Documentation
 
-After 
-
 Write your documentation following **Task 2: The Proposal template**:
 > [![Task 2: the Proposal template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
 :::{warning}
-*Do not follow the official rubric for C964.* Instead, follow the guidelines found on this webpage and the above [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators come to expect. 
+*Do not follow the official C964 rubric.* Instead, follow the guidelines found on this webpage and the above [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect. 
 :::
 
 To gauge the level of detail evaluators typically expect, review these examples.
@@ -31,35 +29,40 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 ````
 `````
 
-TODO LIST IN ORDER
+<div class = "tasklist">
 
-[] Finish task 2 part C
-[] Write part D
-    [] Write *Data Product Code*
-    [] Write *Accuracy Analysis*
-    [] Write *User Guide*
-    [] Write the remaining sections.
-[] Write parts B and A
-[] Check grammar and sources, and then submit!
- 
+   <input type="checkbox"> Pass [task 1](task1). 
+   
+   <input type="checkbox"> Finish [task 2 part C](task2c). 
+
+   <div class = "tasklist2">
+
+   <input type="checkbox"> The code runs without errors.
+
+   <input type="checkbox"> Data is used to create an ML model.
+
+   <input type="checkbox"> The user input can provide input and the ML model is applied to that input.
+
+   </div>
+   <input type="checkbox"> Write the [Data Product](task2d:dataproduct). 
+   
+   <input type="checkbox"> Write the [Accuracy Analysis](task2d:accuracy)
+
+   <input type="checkbox"> Write the [User Guide](task2d:userguide). 
+
+   <input type="checkbox"> Write the remaining [part D](task2d) sections, and then all of [part B and part A](task2ab). 
+
+   <input type="checkbox"> Following APA guidelines, [check grammar and sources](task2:sources), export as a pdf, and submit.
+
+</div> 
 
 :::{tip}
-Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. You can reuse content from other areas as needed. It's not about writing something fun to read -it's about demonstrating that the requirements are met. 
-:::
+Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. You can reuse content from other areas or C951 task 3 as needed. It's not about writing something fun to read -it's about demonstrating that the requirements are met. 
 
-:::{tip}
 1. Follow the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 2. Submit parts A, B, and D as a *single* pdf file.
 3. Part D is what matters -particularly the *Data Product Code*, *Accuracy Analysis*, and *User Guide* sections. Parts A and B need to be completed but have few qualitative requirements.
 :::
-
-Here
-
-(task2_doc:userguide)=
-## User Guide
-
-TODO User guide info goes here.
-
 
 (task2:sources)=
 ## Sources and Grammar

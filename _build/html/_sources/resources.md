@@ -10,6 +10,12 @@
 
 > [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
+(resources:task1:excellence)=
+### Excellence Archive
+
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, *above and beyond* the requirements. Therefore, do not use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the TODO ADD LINKS TO EXAMPLES
+examples. 
+
 ### Topic Approval Form Example
 
 > [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_example.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/ESVtyYRIzQhNoLL37S7prkQB9uGuuljjUbCoKaVe0h47Xg?e=dHkn6n)
@@ -25,11 +31,19 @@
 >
 </iframe>
 
-(resources:task1:excellence)=
-### Excellence Archive
+(resources:task1:data)=
+### Data
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, *above and beyond* the requirements. Therefore, do not use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the TODO ADD LINKS TO EXAMPLES
-examples. 
+Any open source data set is freely available for use.
+
+- [Kaggle.com](https://www.kaggle.com/datasets)
+- [Google Dataset Search](https://datasetsearch.research.google.com/)
+- [Data.gov](https://data.gov/)
+- More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
+- Simulated data
+
+
+
 
 (resources:task2examplec)=
 ## Task 2 Part C (the app) Resources

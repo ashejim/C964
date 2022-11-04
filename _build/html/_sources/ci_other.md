@@ -6,7 +6,7 @@
 </head>
 
 :::{warning}
-Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student but students assigned to them take first priority.  Follow the guidelines below, understand their assistance is a courtesy, and response times may be delayed (particularly towards the end of the month). 
+Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take first priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month). 
 :::
 
 ## Better questions get better answers.
@@ -20,9 +20,7 @@ The fix might require understanding several intertwined layers, of your code str
 - Describe what you've tried already; some [debugging tips](https://www.freecodecamp.org/news/what-is-debugging-how-to-debug-code/). 
 - Start with the simplest error. Focus on one problem at a time.
 
-Additionally,
-
-**Always practice professional communication:**
+**Additionally, always practice professional communication:**
 * Use your WGU email (we may not receive emails from outside WGU).
 * Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
 * Clearly state your question, provide context, and do not assume the faculty on this page knows the requirements of your project. Restrict the scope of your question to their area of expertise. 
