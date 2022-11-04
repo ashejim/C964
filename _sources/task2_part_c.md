@@ -6,12 +6,17 @@
 
 # Task 2: Part C -the application
 
-Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring an application of machine learning to data, they will assess *what* your application does -not how. 
+Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring an application of machine learning to data, they will assess *what* your application does -not its presentation. 
 
 ```{margin} **What is an *application*?**
 An application (app) is simply software that performs specific tasks. 
 ```
-(task2c:appreqs)
+
+:::{warning}
+*Do not follow the official C964 rubric.* Instead, follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect. 
+:::
+
+(task2c:appreqs)=
 ## What does the application need to do?
 
 Your app must help the user solve the organizational problem from [task 1](task1) by doing the following:  
@@ -71,6 +76,89 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````
 `````
 
+(task2c:datareqs)=
+### Data requirements 
+
+- Your data must be sufficiently complex and processed for your ML algorithm to function as needed.
+- Evaluators must be able to access your data. 
+
+There are no specific requirements regarding the complexity or nature of your data. Your application must work and fulfill the organizational need you'll outline in the [task 2 documentation](task2doc). When choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these additional steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.    
+
+You do not need special permission to use any open-source dataset. See our [list](
+(resources:task1:data). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used sets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV.  
+
+(task2c:mlreqs)=
+### Machine Learning requirements
+
+- You must apply machine learning to data.
+
+You are encouraged to use ML libraries. Provided the source code is available to evaluators, any language or library of your choosing is allowed. However, we do recommend can provide better support for Python. The [scikit-learn](https://scikit-learn.org/stable/) library is an excellent choice; it is diverse, robust, and has many supplementary resources to help you get started. 
+
+(task2c:visualreqs)=
+### Visualization requirements
+
+- You must have three different images helping describe your project. 
+
+The images are typically presented in the application, but they can also be presented in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc. 
+
+TODO ADD EXAMPLES
+
+(task2c:uireqs)=
+### User interface requirements
+
+- You must provide a user-friendly interface by which the proposed client can use your application to help solve the problem.
+
+Playing the role of the client, the evaluator will follow your [user guide](task2doc:userguide) in the documentation. To meet this requirement they should be able to do the following:
+
+1. **Successfully run your application (user-friendly).** Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions. They can be instructed to download and install necessary dependencies or software.
+   
+2. **Use your application to solve the proposed problem as intended (interface).** Most often the interface requirement is met by having some way for the user to provide input. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.
+
+TODO ADD EXAMPLES
+
+## Coding
+
+Time to get to work. 
+
+````{margin} ...but the requirments won't change.
+```{image} ./url_images/good_code.png
+:width: 200
+```
+````
+
+````{warning} 
+Following tutorials/examples is a great way to learn. But when it comes to writing your own code, don' [copy, paste, and pray](https://www.youtube.com/watch?v=-wtzy1aqS9Q). For each line of code, understand what it's doing and check that it runs as intended. Investing the extra time will make you a better computer scientist and could save many frustatring hours. 
+```{image} ./url_images/code_quality.png
+:height: 150
+:align: center
+```
+````
+
+Start *slow*. Many small but probably new skills must be incorporated into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement, and check your code before onto to the next step. Things will start slow and expect to make mistakes, but after the initial investment things can progress quickly. A suggested path:
+
+1. Import data and convert it to a (pandas) data frame.
+2. Explore the data and create some images. 
+3. Determine which ML algorithm to start with, and choose a supporting library.
+4. Read the library's documentation and understand the expected data format and usage.
+5. Apply the algorithm to the data, e.g., training it, and create a model. 
+6. Apply the model to new data, e.g, a single input.
+7. Create a procedure for the user to apply the model, e.g., provide input.
+
+With three images, the minimal part C requirements are met after step 7. As time allows, you can go back to step 2 improving the performance and presentation of your application until you are satisfied. 
+
+For the app front end, Jupyter notebook is a great place to start. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but can also progressively be developed into a more polished product. A development path might look like the following:
+
+- Python IDE &rarr; Jupyter notebook (.ipynb) &rarr; notebook with widgets &rarr; hosted notebook with widgets &rarr; web app. 
+
+Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) is a great choice. In addition to having a large collection of ML-specific tools and tutorials, WGU has better faculty support for these. 
+
+(task2c:appperformance)
+## Applicaiton Performance
+
+```{tip}
+There is no minimal performance or accuracy metric for the application. 
+```
+
 (task2c:faq)=
 ## FAQ
 **What are the most common reasons for the task 2 code being returned?**
@@ -116,7 +204,7 @@ For computer science, Machine learning is a subfield of artificial intelligence 
 
 **Can I use libraries outside the standard (Python, Java, etc.) installation?**
 
-Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about the application of these tools -not their development.   
+Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and *encouraged* to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about the application of these tools -not their development.   
 
 TODO ADD PICTURES
 
@@ -135,3 +223,7 @@ No. What you see in the examples (ADD LINKS) are just guidelines. The individual
 If you have specific questions or concerns -yes. However, in most cases, it's best just to submit. What suffices as “sufficient detail” is highly subjective. We can always tell you to add more, but if you've done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need to be rewritten. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator's comments is generally easier than overworking the entire project.
 
 You have *unlimited* submissions but limited time. And, typically this is the best and most efficient approach. 
+
+**I only have a Linux (or Mac) machine, will evaluators be able to run my code?"
+
+Technically, (and unfortunately) we are a "Windows" university, and all submitted projects should be able to run in Windows. However, this is not specifically required in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only provided with Window 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. In the [user guide](task2_doc:userguide) of the documentation, you should provide explicit instructions for a Windows 10 user to run your code such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsytem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).

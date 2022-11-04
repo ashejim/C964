@@ -18,23 +18,20 @@ It's a new field, and answers vary depending on who ask. But for the purposes of
 ```
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value; so you need not worry about the profitability or practical impact of your project. Such criteria are *not* assessed. This is a computer science project; neither you nor the evaluators are business majors.  
 
-### Where to Start?
-A machine learning application is the hard requirement of the capstone. So where to start? You can't apply an algorithm to data -without data. Most any dataset provides a question to answer, e.g., predictions, classifications, or recommendations for which an "organizational need" can always be found.   
-
-1. Find some data: 
-2. Find an ML algorithm you can apply to that data.
-3. Formulate an "organizational need" helped by that application.
+ But you can't apply an algorithm to data -without data.
 
 #### Data
+
+A machine learning application is the hard requirement of the capstone, but you can't apply an algorithm to data -without data. Most any dataset provides a question to answer, e.g., predictions, classifications, or recommendations for which an "organizational need" can always be found.   
 
 - [Kaggle.com](https://www.kaggle.com/datasets)
 - [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Data.gov](https://data.gov/)
-- [More](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/)
+- More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - Simulated data
 
 ```{note}
-*No minimal data complexity or processing is required.* Choosing data that needs less processing can make the project technically more accessible.  
+*No minimal data complexity or processing is required.* Choosing data needing less processing can make the project technically more accessible.  
 ```
 #### Machine Learning Algorithms
 
@@ -53,7 +50,7 @@ If the answers for what you are trying to predict (dependent variable) are in th
 -*Classification* algorithms include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.  
 
 ```{margin} Logisitc regression: regression or classification?
-Really both, but most often it's used for classification. Logisitic regression uses input variables to predict the *probability* of an outcome. So logistic regression returns a number between 0.0 and 1.0 -hence its name. However, using this probability to predict whether an outcome occurs (yes/no) is a classification.     
+Really both, but most often it's used for classification. Logisitic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is a classification.     
 ```
 
 **Unsupervised Learning**
@@ -62,12 +59,20 @@ If what you are trying to find is not directly in the data(*tagged* or *labeled*
 **Reinforced Learning**
 Sometimes solutions need to adapt to particular situations. That is the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot's state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more difficult to develop than supervised or unsupervised methods.      
 
-```{margin} Unsure where to start?
-Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
-```
-
 ```{note}
 No idea which algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. *Any ML method* given in task 1 appropiate for your data will be accepted, and task 2 can do something different without needing to revise task 1 (see the [FAQ](task1:faq) below).   
+```
+
+### Where to start? Data or the ML algorithm? 
+
+It's best to consider both. In a "real-world" scenario, you would likely be given data to analyze and a problem to solve. So starting with the data, and then determining the proper ML tools is most natural. However, you get to choose the problem and hence the tools needed to solve it -provided you have data fitting that problem. For example, someone interested in image recognition might restrict their data search to sets of labeled images. To simplify coding steps, they might look at images with standard sizes or take a subset of the images limiting the number of classifications. At any point, the problem or choosen algorithm can be refined to better fit what you want or can do. A suggested approach:
+
+1. Find some data to match your preferred ML method. 
+2. Find an ML algorithm you can apply to that data.
+3. Formulate an "organizational need" helped by that application.
+
+```{margin} Unsure about which ML method to use?
+Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
 ```
 
 (task1:choosing:examples)=
@@ -133,6 +138,18 @@ Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources
 ````
 `````
 
+**Example A:** 
+
+- [task 1 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf) 
+
+- [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
+
+**Example B:** 
+
+- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
+
+- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
+
 **WGU Capstone Excellence Archive**
 
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help in getting ideas, providing inspiration, and understanding the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [tasks 1 and task 2 examples](task1:task1examples) above.
@@ -140,7 +157,7 @@ The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.
 (task1:approval)=
 ## Topic Approval
 
-Once you've decided on a topic, complete the approval form following the template below and email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) for approval.
+Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
 > [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
@@ -248,7 +265,7 @@ TODO ADD PICTURES
 
 **What language, libraries, and platforms should I use?**
 
-You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having a large collection of ML-specific tools and tutorials, WGU has better faculty support for these. For the app front end, Jupyter notebook is a great place to start. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFx experience in software II, but a GUI is not required and Python is better suited  
+You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having a large collection of ML-specific tools and tutorials, WGU has better faculty support for these. For the app front end, Jupyter notebook is a great place to start. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFx experience in software II, but a GUI is not required and Python is better suited.
 
 A development path might look like the following:
 
