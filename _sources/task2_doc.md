@@ -6,8 +6,8 @@
 
 # Task 2: The Documentation
 
-Write your documentation following **Task 2: The Proposal template**:
-> [![Task 2: the Proposal template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+Write your documentation following **C964 Task 2 documentation template**:
+> [![Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
 :::{warning}
 *Do not follow the official C964 rubric.* Instead, follow the guidelines found on this webpage and the above [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect. 

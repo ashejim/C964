@@ -138,18 +138,6 @@ Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources
 ````
 `````
 
-**Example A:** 
-
-- [task 1 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf) 
-
-- [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
-
-**Example B:** 
-
-- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
-
-- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
-
 **WGU Capstone Excellence Archive**
 
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help in getting ideas, providing inspiration, and understanding the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [tasks 1 and task 2 examples](task1:task1examples) above.
