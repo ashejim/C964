@@ -2,6 +2,21 @@
 (resources)=
 # C964 Resources
 
+(resources:examples)
+## Examples
+
+**Example A:** 
+
+- [task 1 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
+
+- [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf) (part C not available)
+
+**Example B:** 
+
+- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
+
+- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
+
 (resources:task1)=
 ## Task 1 Resources
 
@@ -71,8 +86,10 @@ STUFF HERE
 
 (resources:task2doc:doctemplate)= 
 ### Task 2 Parts A, B, and D Template & Part C Guide
-Write your proposal following **Task 2 C964 template**:
-> [![Task 2 C964](https://github.com/ashejim/C964/blob/main/url_images/C964_template?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBePZ37dnxts_r24RTOr26rA?e=1aQEMYespecially)
+Write your proposal following **C964 Task 2 documentation template**:
+
+> [![Task 2: documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+
 
 Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.   
 
