@@ -169,5 +169,5 @@ Congratulations! You have a website!
 
 ## Edit your page
 
-some insignificant demo change
+some change
 Hey, here's a ***misteak.***
