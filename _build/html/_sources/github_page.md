@@ -169,6 +169,8 @@ Congratulations! You have a website!
 
 ## Edit your page
 
+some insignifcant demo change
+
 Hey, here's a ***misteak.***
 
 Here's a list
@@ -199,5 +201,5 @@ Here's an embedded video
 
 
 ```{margin}
-Something in ther margin
+Something in the margin goes here.
 ```
