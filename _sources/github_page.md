@@ -166,3 +166,40 @@ See the [Github Pages Doc](https://docs.github.com/en/pages/getting-started-with
 ```
 
 Congratulations! You have a website!
+
+## Edit your page
+
+some insignifcant demo change
+
+Hey, here's a ***misteak.***
+
+Here's a list
+1. One
+2. 2 
+3. something else
+
+Here's some bullet points
+- one
+- two
+
+Here's a link to something [important on this page](cipage) 
+
+Here's a link to [google](https://www.google.com).
+
+Here's a link to a [video](https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all)
+
+Here's an embedded video
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" 
+    title="C964 Overview" 
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;" 
+    allowfullscreen allow="autoplay"
+>
+</iframe>
+
+
+```{margin}
+Something in the margin goes here.
+```
