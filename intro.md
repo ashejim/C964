@@ -5,12 +5,12 @@
 
 # Welcome to C964!
 
-Welcome! The Computer Science capstone project develops and presents a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, that crucial skill set that sets CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine. 
+Welcome! For the Computer Science capstone project, you'll develop and present a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, that crucial skill that sets CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine. 
 
 The capstone includes three parts:
 1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you started in the right direction.
 2. **Task 2 part C:** Develop a working application of machine learning (ML).
-3. **Task 2 parts D, A, & B:** Documentation communicating the value of your product to audiences of varying technical understanding.      
+3. **Task 2 parts D, A, & B:** Documentation communicating your product's value and development process to audiences of varying technical understanding.     
 
 ::::{card-carousel} 3
 
@@ -77,7 +77,7 @@ First, understand the project's requirements. What they are -and what they aren'
 >
 </iframe>
 
-And review part C of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ).
+And review the [What does the application need to do?](https://ashejim.github.io/C964/task2_part_c.html#what-does-the-application-need-to-do) section and part C of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
 
 ADD NARRATIVE WITH TASK2C and TASK2D LINKS
 

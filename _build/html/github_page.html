@@ -54,7 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Machince" href="ML_page.html" />
     <link rel="prev" title="BSCS, Software, and other Course Faculty" href="ci_other.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -183,11 +182,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ML_page.html">
-   Machince
   </a>
  </li>
 </ul>
@@ -417,6 +411,11 @@ title="Print to PDF"
    Edit your page
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#headings">
+   headings
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -486,6 +485,11 @@ title="Print to PDF"
    Edit your page
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#headings">
+   headings
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -525,15 +529,15 @@ title="Print to PDF"
 <p>Open a windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator.</p>
 <p><strong>Install Jupyter-book</strong> which converts markdown and jupyter-notebook files into html.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="eb3fe18e-33d0-47f3-88a7-2fc54c61fe6e" name="bc3e52d1-04da-4a4c-9b96-9703a7193abb" type="radio">
-</input><label class="sd-tab-label" for="eb3fe18e-33d0-47f3-88a7-2fc54c61fe6e">
+<input checked="checked" id="7a3972a8-7866-46d5-8fa8-2890b51fcd12" name="fec3f1a3-1810-4989-8c47-4ea20dc370ea" type="radio">
+</input><label class="sd-tab-label" for="7a3972a8-7866-46d5-8fa8-2890b51fcd12">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyter-book
 </pre></div>
 </div>
 </div>
-<input id="9efe08b4-3990-4a71-aaad-bac30a9f9325" name="bc3e52d1-04da-4a4c-9b96-9703a7193abb" type="radio">
-</input><label class="sd-tab-label" for="9efe08b4-3990-4a71-aaad-bac30a9f9325">
+<input id="97339ab2-34b4-401a-a684-9881c5e2016f" name="fec3f1a3-1810-4989-8c47-4ea20dc370ea" type="radio">
+</input><label class="sd-tab-label" for="97339ab2-34b4-401a-a684-9881c5e2016f">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
 </pre></div>
@@ -550,15 +554,15 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install git</strong> (it should already be installed) so you can connect your local files to a GitHub repository.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5ae7da57-f007-4605-8a2f-a60dbcc32f78" name="d20112a8-1457-4ce1-83d3-2347c42d028b" type="radio">
-</input><label class="sd-tab-label" for="5ae7da57-f007-4605-8a2f-a60dbcc32f78">
+<input checked="checked" id="25c92c2a-274d-4f49-9c5d-91de09214a5d" name="64c63cbc-689e-4444-9c28-14e871d30149" type="radio">
+</input><label class="sd-tab-label" for="25c92c2a-274d-4f49-9c5d-91de09214a5d">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install python-git
 </pre></div>
 </div>
 </div>
-<input id="766cccbf-45cc-4412-8076-72406a66437a" name="d20112a8-1457-4ce1-83d3-2347c42d028b" type="radio">
-</input><label class="sd-tab-label" for="766cccbf-45cc-4412-8076-72406a66437a">
+<input id="037a0c10-c98e-4ab6-8583-eaee665b7637" name="64c63cbc-689e-4444-9c28-14e871d30149" type="radio">
+</input><label class="sd-tab-label" for="037a0c10-c98e-4ab6-8583-eaee665b7637">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda git
 </pre></div>
@@ -567,15 +571,15 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install ghp-import</strong> which will post your HTML files from your GitHub repository to the web.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="1def651c-9e06-4427-b232-a4c7b6a8a89d" name="55d1cf85-a793-46cf-a43b-b1016e1ed99c" type="radio">
-</input><label class="sd-tab-label" for="1def651c-9e06-4427-b232-a4c7b6a8a89d">
+<input checked="checked" id="8c40514f-8cbb-468c-8535-d12d0df7ef1c" name="13dd84be-677d-4c2a-b163-7fb792c680f9" type="radio">
+</input><label class="sd-tab-label" for="8c40514f-8cbb-468c-8535-d12d0df7ef1c">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
 </pre></div>
 </div>
 </div>
-<input id="f75b9de8-bd53-426b-85bd-406301b55359" name="55d1cf85-a793-46cf-a43b-b1016e1ed99c" type="radio">
-</input><label class="sd-tab-label" for="f75b9de8-bd53-426b-85bd-406301b55359">
+<input id="f739e94a-5116-44e2-92a1-52ffc888eb80" name="13dd84be-677d-4c2a-b163-7fb792c680f9" type="radio">
+</input><label class="sd-tab-label" for="f739e94a-5116-44e2-92a1-52ffc888eb80">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge ghp-import
 </pre></div>
@@ -676,8 +680,33 @@ git push
 <div class="section" id="edit-your-page">
 <h2>Edit your page<a class="headerlink" href="#edit-your-page" title="Permalink to this headline">#</a></h2>
 <p>some change
-Hey, here’s a <em><strong>misteak.</strong></em></p>
+Hey, here’s a <em><strong>mistake.</strong></em></p>
+<p>bullets potins</p>
+<ul class="simple">
+<li><p>ggg</p></li>
+<li><p>fff</p></li>
+</ul>
+<ol class="simple">
+<li><p>223</p></li>
+<li><ol class="simple">
+<li></li>
+</ol>
+</li>
+</ol>
+<p><span class="xref myst">google</span></p>
 </div>
+<div class="section" id="headings">
+<h2>headings<a class="headerlink" href="#headings" title="Permalink to this headline">#</a></h2>
+<p>Here’s a link to a <a class="reference external" href="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=true&amp;captions=true&amp;interactivity=all">video</a></p>
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" 
+    title="C964 Overview" 
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;" 
+    allowfullscreen allow="autoplay"
+>
+</iframe></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -713,13 +742,6 @@ Hey, here’s a <em><strong>misteak.</strong></em></p>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">BSCS, Software, and other Course Faculty</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="ML_page.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Machince</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

@@ -170,4 +170,29 @@ Congratulations! You have a website!
 ## Edit your page
 
 some change
-Hey, here's a ***misteak.***
+Hey, here's a ***mistake.***
+
+
+bullets potins
+- ggg
+- fff
+
+
+1. 223
+2. 3. 
+
+[google](google.com)
+
+## headings
+
+Here's a link to a [video](https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all)
+
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" 
+    title="C964 Overview" 
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;" 
+    allowfullscreen allow="autoplay"
+>
+</iframe>
