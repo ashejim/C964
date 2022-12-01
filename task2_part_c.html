@@ -183,11 +183,6 @@ const thebe_selector_output = ".output, .cell_output"
    Creating Your Own GitHub Webpage!
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ML_page.html">
-   Machince
-  </a>
- </li>
 </ul>
 
     </div>
@@ -398,8 +393,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#applicaiton-performance">
-   Applicaiton Performance
+  <a class="reference internal nav-link" href="#application-performance">
+   Application Performance
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -459,8 +454,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#applicaiton-performance">
-   Applicaiton Performance
+  <a class="reference internal nav-link" href="#application-performance">
+   Application Performance
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -483,7 +478,7 @@ title="Print to PDF"
     <base target="_blank">
 </head>
 <div class="tex2jax_ignore mathjax_ignore section" id="task-2-part-c-the-application">
-<h1>Task 2: Part C -the application<a class="headerlink" href="#task-2-part-c-the-application" title="Permalink to this headline">#</a></h1>
+<span id="task2c"></span><h1>Task 2: Part C -the application<a class="headerlink" href="#task-2-part-c-the-application" title="Permalink to this headline">#</a></h1>
 <p>Your software application (the “app”) is the entirety of part C of task 2. However, the Computer Science capstone is <em>not</em> a software project. Other than requiring an application of machine learning to data, they will assess <em>what</em> your application does -not its presentation.</p>
 <div class="margin sidebar">
 <p class="sidebar-title"><strong>What is an <em>application</em>?</strong></p>
@@ -491,7 +486,7 @@ title="Print to PDF"
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><em>Do not follow the official C964 rubric.</em> Instead, follow the guidelines found on this webpage and the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg">Task 2 template</a>. This template has seemingly become the defacto rubric and is what evaluators expect.</p>
+<p><em>Do not follow the official C964 rubric.</em> Instead, follow the guidelines on this webpage and the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg">Task 2 template</a>. This template has seemingly become the defacto rubric and is what evaluators expect.</p>
 </div>
 <div class="section" id="what-does-the-application-need-to-do">
 <span id="task2c-appreqs"></span><h2>What does the application need to do?<a class="headerlink" href="#what-does-the-application-need-to-do" title="Permalink to this headline">#</a></h2>
@@ -499,52 +494,52 @@ title="Print to PDF"
 <ol class="simple">
 <li><p>Use data to develop a machine learning model.</p></li>
 <li><p>Apply the ML model to user-provided data.</p></li>
-<li><p>Provide visualizations (pictures).</p></li>
+<li><p>Provide visualizations (pictures; they can be presented in the app or document).</p></li>
 <li><p>Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.</p></li>
 </ol>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="7d877bfb-9955-4657-941c-525fef41a68a" name="356bb661-16d4-4a83-b57d-3b584aec79de" type="radio">
-</input><label class="sd-tab-label" for="7d877bfb-9955-4657-941c-525fef41a68a">
+<input checked="checked" id="f0b45eb0-6d73-4157-8794-cbbfb4826b23" name="c55a12aa-31eb-408a-aaac-316cfeb486d0" type="radio">
+</input><label class="sd-tab-label" for="f0b45eb0-6d73-4157-8794-cbbfb4826b23">
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone Python project which can predict Iris types.</p>
 <p><strong>Data → ML model:</strong> Labeled <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris petal dimensions</a> train an SVN classification model.</p>
 <p><strong>New data → ML model → prediction:</strong> Using new flower dimensions, the model can predict the Iris type.</p>
 <p><strong>Visualizations:</strong> Histograms showing distributions of different flower features and a confusion matrix illustrating the accuracy of the classification model.</p>
-<p><strong>User interface:</strong> Following detailed instructions, via console the user can input flower dimensions and the app returns a prediciton.</p>
+<p><strong>User interface:</strong> Following detailed instructions via the console, the user can input flower dimensions, and the app returns a prediction.</p>
 </div></blockquote>
 </div>
-<input id="c9867197-2cde-43a2-a769-45bbf700e1c9" name="356bb661-16d4-4a83-b57d-3b584aec79de" type="radio">
-</input><label class="sd-tab-label" for="c9867197-2cde-43a2-a769-45bbf700e1c9">
+<input id="24e7a0ee-60b5-455c-afd5-6b600417a0eb" name="c55a12aa-31eb-408a-aaac-316cfeb486d0" type="radio">
+</input><label class="sd-tab-label" for="24e7a0ee-60b5-455c-afd5-6b600417a0eb">
 Example 2</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) predicting house prices.</p>
 <p><strong>Data → ML model:</strong> Labeled housing data trains a multi-linear regression model to predict house prices.</p>
 <p><strong>New data → ML model → prediction:</strong> Using unseen house data, the model predicts the house’s price.</p>
 <p><strong>Visualizations:</strong> Histograms showing distributions of data features and scatterplots demonstrating data correlations.</p>
-<p><strong>User interface:</strong> Following detailed instructions, via the Jupyter notebook file, the user can adjust widget sliders to get a price prediciton.</p>
+<p><strong>User interface:</strong> Following detailed instructions via the Jupyter notebook file, the user can adjust widget sliders to get a price prediction.</p>
 </div></blockquote>
 </div>
-<input id="a569d13c-8fad-42fb-86f0-fe855b7cf955" name="356bb661-16d4-4a83-b57d-3b584aec79de" type="radio">
-</input><label class="sd-tab-label" for="a569d13c-8fad-42fb-86f0-fe855b7cf955">
+<input id="320b9dd8-bb2e-41a5-8223-43a83d84e03e" name="c55a12aa-31eb-408a-aaac-316cfeb486d0" type="radio">
+</input><label class="sd-tab-label" for="320b9dd8-bb2e-41a5-8223-43a83d84e03e">
 Example 3</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A web app providing movie recommendations.</p>
 <p><strong>Data → ML model:</strong> Cosine similarity provides a similarity score between any two movies.</p>
-<p><strong>User data → ML model → recommendation:</strong> Using a user provided movie, the five most similiar movies are returned.</p>
+<p><strong>User data → ML model → recommendation:</strong> Using a user-provided movie, the five most similar movies are returned.</p>
 <p><strong>Visualizations:</strong> Histograms showing distributions of movie features and samples of Cosine Similarity matrices.</p>
 <p><strong>User interface:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> returns five recommendations for a user typed movie.</p>
 </div></blockquote>
 </div>
-<input id="b1b6ee69-5f0a-4064-b929-6becce1920c8" name="356bb661-16d4-4a83-b57d-3b584aec79de" type="radio">
-</input><label class="sd-tab-label" for="b1b6ee69-5f0a-4064-b929-6becce1920c8">
+<input id="7f8eef27-37ec-48f0-89e7-1716820b5982" name="c55a12aa-31eb-408a-aaac-316cfeb486d0" type="radio">
+</input><label class="sd-tab-label" for="7f8eef27-37ec-48f0-89e7-1716820b5982">
 Example 4</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
 <p><strong>Data → ML model:</strong> Labeled images are used to <a class="reference external" href="https://www.tensorflow.org/tutorials/images/classification">train a neural network model to classify images</a> of dogs and cats.</p>
 <p><strong>New data → ML model → prediction:</strong> Loading an image from a hosted folder, the model classifies it as a dog or cat.</p>
 <p><strong>Visualizations:</strong> Graphs of training and validation accuracy and loss, a confusion matrix showing model accuracy, and image examples.</p>
-<p><strong>User interface:</strong> Follwoing detailed instructions, the user can upload an image to Jupyter notebook deployed on <a class="reference external" href="https://datalore.jetbrains.com">Datalore</a>, and the app classifies the image as cat or dog.</p>
+<p><strong>User interface:</strong> Following detailed instructions, the user can upload an image to Jupyter notebook deployed on <a class="reference external" href="https://datalore.jetbrains.com">Datalore</a>, and the app classifies the image as cat or dog.</p>
 </div></blockquote>
 </div>
 </div>
@@ -554,24 +549,108 @@ Example 4</label><div class="sd-tab-content docutils">
 <li><p>Your data must be sufficiently complex and processed for your ML algorithm to function as needed.</p></li>
 <li><p>Evaluators must be able to access your data.</p></li>
 </ul>
-<p>There are no specific requirements regarding the complexity or nature of your data. Your application must work and fulfill the organizational need you’ll outline in the <a class="reference internal" href="task2_doc.html#task2doc"><span class="std std-ref">task 2 documentation</span></a>. When choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these additional steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.</p>
-<p>You do not need special permission to use any open-source dataset. See our [list](
-(resources:task1:data). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used sets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV.</p>
+<p>There are no specific requirements regarding the complexity or nature of your data. However, your application must work and fulfill the organizational need you’ll outline in the <a class="reference internal" href="task2_doc.html#task2doc"><span class="std std-ref">task 2 documentation</span></a>. Therefore, when choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these extra steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.</p>
+<p>You do not need special permission to use any open-source dataset. See our <a class="reference internal" href="resources.html#resources-task1-data"><span class="std std-ref">list</span></a>. Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV.</p>
 </div>
 <div class="section" id="machine-learning-requirements">
 <span id="task2c-mlreqs"></span><h3>Machine Learning requirements<a class="headerlink" href="#machine-learning-requirements" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>You must apply machine learning to data.</p></li>
 </ul>
-<p>You are encouraged to use ML libraries. Provided the source code is available to evaluators, any language or library of your choosing is allowed. However, we do recommend can provide better support for Python. The <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> library is an excellent choice; it is diverse, robust, and has many supplementary resources to help you get started.</p>
+<p>You are encouraged to use ML libraries. Provided the source code is available to evaluators, any language or library of your choosing is allowed. However, we do recommend and can give better support for Python. The <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> library is an excellent choice; it is diverse, robust, and has many supplementary resources to help you get started.</p>
 </div>
 <div class="section" id="visualization-requirements">
 <span id="task2c-visualreqs"></span><h3>Visualization requirements<a class="headerlink" href="#visualization-requirements" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>You must have three different images helping describe your project.</p></li>
 </ul>
-<p>The images are typically presented in the application, but they can also be presented in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.</p>
-<p>TODO ADD EXAMPLES</p>
+<p>The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.</p>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-4 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Scatterplot</p>
+<a class="reference internal image-reference" href="_images/visual12.png"><img alt="_images/visual12.png" src="_images/visual12.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Regression Line</p>
+<a class="reference internal image-reference" href="_images/visual0.png"><img alt="_images/visual0.png" src="_images/visual0.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Confusion Matrix</p>
+<a class="reference internal image-reference" href="_images/visual1.jpg"><img alt="_images/visual1.jpg" src="_images/visual1.jpg" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Histogram</p>
+<a class="reference internal image-reference" href="_images/visual11.png"><img alt="_images/visual11.png" src="_images/visual11.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Histograms</p>
+<a class="reference internal image-reference" href="_images/visual5.png"><img alt="_images/visual5.png" src="_images/visual5.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Pie-chart</p>
+<a class="reference internal image-reference" href="_images/visual6.png"><img alt="_images/visual6.png" src="_images/visual6.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Scatterplot Matrix</p>
+<a class="reference internal image-reference" href="_images/visual7.png"><img alt="_images/visual7.png" src="_images/visual7.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Correlation Matrix</p>
+<a class="reference internal image-reference" href="_images/visual13.png"><img alt="_images/visual13.png" src="_images/visual13.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Barplot</p>
+<a class="reference internal image-reference" href="_images/visual9.png"><img alt="_images/visual9.png" src="_images/visual9.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Barplot</p>
+<a class="reference internal image-reference" href="_images/visual8.png"><img alt="_images/visual8.png" src="_images/visual8.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Line plots</p>
+<a class="reference internal image-reference" href="_images/visual10.png"><img alt="_images/visual10.png" src="_images/visual10.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Model Explanation</p>
+<a class="reference internal image-reference" href="_images/visual4.png"><img alt="_images/visual4.png" src="_images/visual4.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Regression</p>
+<a class="reference internal image-reference" href="_images/visual2.png"><img alt="_images/visual2.png" src="_images/visual2.png" style="height: 100px;" /></a>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body text-center docutils">
+<p class="sd-card-text">Clustering</p>
+<a class="reference internal image-reference" href="_images/visual3.png"><img alt="_images/visual3.png" src="_images/visual3.png" style="height: 100px;" /></a>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="user-interface-requirements">
 <span id="task2c-uireqs"></span><h3>User interface requirements<a class="headerlink" href="#user-interface-requirements" title="Permalink to this headline">#</a></h3>
@@ -583,7 +662,21 @@ Example 4</label><div class="sd-tab-content docutils">
 <li><p><strong>Successfully run your application (user-friendly).</strong> Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions. They can be instructed to download and install necessary dependencies or software.</p></li>
 <li><p><strong>Use your application to solve the proposed problem as intended (interface).</strong> Most often the interface requirement is met by having some way for the user to provide input. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.</p></li>
 </ol>
-<p>TODO ADD EXAMPLES</p>
+<p>At a minimum, the user interface must provide a means to apply user-input. Any method by which you can provide instructions is acceptable. For example,</p>
+<blockquote>
+<div><p><em><strong>…</strong></em>
+<em><strong>Step 10:</strong></em> <em>Next, the user should type the following command into line 57:</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mymodel</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="n">temperature</span><span class="p">,</span> <span class="n">humidity</span><span class="p">]])</span>
+</pre></div>
+</div>
+<p>*in place of ‘temperature’ and ‘humidity’, the user should type the temperature in Fahrenheit and humidity as a percentage for which they’d like a prediction, e.g., *</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mymodel</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">75</span><span class="p">,</span> <span class="mf">24.5</span><span class="p">]])</span>
+</pre></div>
+</div>
+<p>*for a temperature of 75 degrees and humidity of 24.5%. *</p>
+<p><em><strong>Step 11</strong></em> <em>Run the code by pressing the ‘Run’ button in the Jupyter Notebook menu or pressing ‘Crtl+Enter’ to the left of line 57.</em>
+<em><strong>…</strong></em></p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="coding">
@@ -595,72 +688,80 @@ Example 4</label><div class="sd-tab-content docutils">
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Following tutorials/examples is a great way to learn. But when it comes to writing your own code, don’ <a class="reference external" href="https://www.youtube.com/watch?v=-wtzy1aqS9Q">copy, paste, and pray</a>. For each line of code, understand what it’s doing and check that it runs as intended. Investing the extra time will make you a better computer scientist and could save many frustatring hours.</p>
+<p>Following tutorials/examples is a great way to learn. But when it comes to writing your own code, <em>don’t <a class="reference external" href="https://www.youtube.com/watch?v=-wtzy1aqS9Q">copy, paste, and <strong>pray</strong></a></em>. Instead, understand what it’s doing for each line of code and check that it runs as intended. Investing in the extra time will make you a better computer scientist and could save many frustrating hours.</p>
 <a class="reference internal image-reference" href="_images/code_quality.png"><img alt="_images/code_quality.png" class="align-center" src="_images/code_quality.png" style="height: 150px;" /></a>
 </div>
-<p>Start <em>slow</em>. Many small but probably new skills must be incorporated into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement, and check your code before onto to the next step. Things will start slow and expect to make mistakes, but after the initial investment things can progress quickly. A suggested path:</p>
+<p>Start <em>slow</em>. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.</p>
+<p><strong>Start small and build up</strong>
+A suggested path:</p>
 <ol class="simple">
 <li><p>Import data and convert it to a (pandas) data frame.</p></li>
 <li><p>Explore the data and create some images.</p></li>
-<li><p>Determine which ML algorithm to start with, and choose a supporting library.</p></li>
+<li><p>Determine which ML algorithm to start with and choose a supporting library.</p></li>
 <li><p>Read the library’s documentation and understand the expected data format and usage.</p></li>
-<li><p>Apply the algorithm to the data, e.g., training it, and create a model.</p></li>
-<li><p>Apply the model to new data, e.g, a single input.</p></li>
+<li><p>Apply the algorithm to the data, e.g., train it, and create a model.</p></li>
+<li><p>Apply the model to new data, e.g., a single input.</p></li>
 <li><p>Create a procedure for the user to apply the model, e.g., provide input.</p></li>
 </ol>
-<p>With three images, the minimal part C requirements are met after step 7. As time allows, you can go back to step 2 improving the performance and presentation of your application until you are satisfied.</p>
-<p>For the app front end, Jupyter notebook is a great place to start. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but can also progressively be developed into a more polished product. A development path might look like the following:</p>
+<p>Add <a class="reference internal" href="#task2c-visualreqs"><span class="std std-ref">three images</span></a>, and you have a passing part C after step 7. Then, as time allows, you can go back to step 2, improving the performance and presentation of your application until you are satisfied.</p>
+<p>Jupyter notebook is a great place to start for the application’s front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but you can also progressively develop them into a more polished product. For example, a development path might look like the following:</p>
 <ul class="simple">
 <li><p>Python IDE → Jupyter notebook (.ipynb) → notebook with widgets → hosted notebook with widgets → web app.</p></li>
 </ul>
-<p>Provided the <a class="reference internal" href="#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> (aka sklearn) is a great choice. In addition to having a large collection of ML-specific tools and tutorials, WGU has better faculty support for these.</p>
-<p>(task2c:appperformance)</p>
+<p>Provided the <a class="reference internal" href="#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> (aka sklearn) is a great choice. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these.</p>
 </div>
-<div class="section" id="applicaiton-performance">
-<h2>Applicaiton Performance<a class="headerlink" href="#applicaiton-performance" title="Permalink to this headline">#</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>There is no minimal performance or accuracy metric for the application.</p>
+<div class="section" id="application-performance">
+<span id="task2c-app-performance"></span><h2>Application Performance<a class="headerlink" href="#application-performance" title="Permalink to this headline">#</a></h2>
+<p>For supervised methods, you should use a metric to measure accuracy and help improve the model. Knowing which algorithm will perform best requires a deep understanding of the data and algorithms. However, using a metric, you can quickly compare and experiment with different approaches -usually by changing a few lines of code. Such experimentation can then lead to understanding. Depending on the method, metrics might similarly be used for unsupervised models. Alternatively (and typically), a development plan for measuring accuracy in the future can be used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is <strong>no</strong> minimal accuracy requirement. Evaluators only assess the appropriateness of the metric (or planned metric).</p>
 </div>
+<div class="margin sidebar">
+<p class="sidebar-title">What is good accuracy?</p>
+<p>A good question. The answer is subjective depending on data and project needs. A 5% accuracy in predicting stoplights is not so good. However, it is <em>very</em> good if prediction lottery numbers.</p>
+</div>
+<p>Measuring accuracy (or a plan to do so) will be discussed in detail in the <a class="reference internal" href="task2_doc_d.html#task2d-accuracy"><span class="std std-ref">Accuracy Analysis</span></a> section of part D of the documentation.</p>
 </div>
 <div class="section" id="faq">
 <span id="task2c-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">#</a></h2>
 <p><strong>What are the most common reasons for the task 2 code being returned?</strong></p>
 <ol class="simple">
-<li><p>Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect <span class="xref myst">user guide</span> or because evaluators don’t have access to shared cloud links.</p></li>
-<li><p>Evaluators are not certain how the code is meant to be used by the “user.” Again, an incomplete or incorrect <span class="xref myst">part D user guide</span> is usually the culprit. Adding an explicit example (and including example user files when appropriate) also helps avoid this issue.</p></li>
+<li><p>Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect <span class="xref myst">user guide</span> or because evaluators can’t access shared links (check the permissions!).</p></li>
+<li><p>Evaluators are not sure how the code is meant to be used by the “user.” Again, an incomplete or incorrect <span class="xref myst">part D user guide</span> is usually the culprit. Adding an explicit example (including example user files when appropriate) helps avoid this issue.</p></li>
 </ol>
 <p><strong>I’ve completed the coding for task 2. Should I send it to my course instructor for review?</strong></p>
-<p>If you have specific questions or concerns -yes. However, if the code runs and meets the <a class="reference internal" href="#task2c-appreqs"><span class="std std-ref">minimum app requirements</span></a> it’s usually best to move on to the <a class="reference internal" href="task2_doc.html#task2doc"><span class="std std-ref">documentation</span></a>. As you can continue to tweak and improve the app, but can be comfortable knowing that what you have can pass.</p>
+<p>Suppose you have specific questions or concerns -yes. However, if the code runs and meets the <a class="reference internal" href="#task2c-appreqs"><span class="std std-ref">minimum app requirements</span></a> it’s usually best to move on to the <a class="reference internal" href="task2_doc.html#task2doc"><span class="std std-ref">documentation</span></a>. You can continue to tweak and improve the app but can be comfortable knowing that what you have can pass.</p>
+<p>For questions about whether your application satisfies the requirements, contact a <a class="reference internal" href="ci_c964.html#ci-c964"><span class="std std-ref">C964 faculty</span></a>.</p>
+<p>For technical coding questions, see the <a class="reference internal" href="ci_other.html#ci-other"><span class="std std-ref">BSCS, Software, and other Course Faculty</span></a> page, and follow these <span class="xref myst">guidelines</span> (more info below).</p>
 <p><strong>I need help with part C. Who do I contact?</strong></p>
-<p>That depends on what you need help with. For questions about the capstone, how to meet the requirements, and how to best approach the project to meet your individual goals, contact your <span class="xref myst">assigned course instructor</span> or <a class="reference external" href="mailto:ugcapstoneit&#37;&#52;&#48;wgu&#46;edu?cc=your%20assigned%20CI&amp;subject=C964%20capstone%20question">capstone team inbox</a>. However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the expertise to answer technical questions related to computer science or coding. Particularly debugging code, given the wide range of approaches, languages, and libraries available for use.</p>
-<p>For technical questions related to code or math, see the <span class="xref myst">CS and software subject matter expert list</span>. Keep in mind, that while these faculty may be subject matter experts in their field, they do <em>not</em> necessarily support the capstone, and so may not know your capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the <span class="xref myst">CS and software subject matter expert list</span>, always follow the <span class="xref myst">guidelines</span>.</p>
+<p>That depends on what you need help with. For questions about the capstone, how to meet the requirements, and how to best approach the project to meet your individual goals, contact your <a class="reference internal" href="ci_c964.html#ci-c964-cis"><span class="std std-ref">assigned course instructor</span></a> or the <a class="reference external" href="mailto:ugcapstoneit&#37;&#52;&#48;wgu&#46;edu?cc=your%20assigned%20CI&amp;subject=C964%20capstone%20question">capstone team inbox</a>. However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the expertise to answer technical questions related to computer science or coding. Particularly with debugging code, given the wide range of approaches, languages, and libraries available for use.</p>
+<p>For technical questions related to code or math, see the <a class="reference internal" href="ci_other.html#ci-other"><span class="std std-ref">BSCS, Software, and other Course Faculty</span></a> page, and follow these <span class="xref myst">guidelines</span>. Keep in mind, that while these faculty may be subject matter experts in their field, they do <em>not</em> necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the<a class="reference internal" href="ci_other.html#ci-other"><span class="std std-ref">BSCS, Software, and other Course Faculty</span></a> page, follow these <span class="xref myst">guidelines</span>.</p>
 <p>Remember, our job (as educators) is to help <em>you</em> fix your problem -not just fix it for you.</p>
-<p>ALSO IN TASK1
-<strong>What if I start working on task 2 and want to change things? Do I need to resubmit task 1?</strong></p>
+<p><strong>What if I start working on task 2 and want to change things? Do I need to resubmit task 1?</strong></p>
 <p>No, not unless it’s an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed <em>without updating the approval form</em>. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes at most, you’ll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.</p>
 <p><strong>How many attempts are allowed for each task?</strong></p>
-<p>You have unlimited submissions (as with all WGU performance assessments). Furthermore, a project requiring multiple submissions is not precluded from being given an excellence award. However, do attempt to fully meet <em>each</em> requirement as submissions falling significantly short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Moreover, such submissions do not receive meaningful evaluator comments.</p>
-<p><strong>What is a descriptive method?</strong>
-Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)</p>
+<p>You have <em>unlimited</em> attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.</p>
+<p><strong>What is a descriptive method?</strong></p>
+<p>Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)</p>
 <p><strong>What is a non-descriptive method?</strong></p>
 <p>Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.</p>
-<p><strong>What is machine learning?</strong></p>
+<p id="task1-faq-whatisml"><strong>What is machine learning?</strong></p>
 <p>That depends on who you ask! But for this project, it is an algorithm applied to data.</p>
-<p>For computer science, Machine learning is a subfield of artificial intelligence (which is a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as the practice of using algorithms to identify patterns, make predictions, etc. from data. That is, machine learning is a goal, not a technique. So for example, a data scientist (and the evaluators) consider linear regression machine learning -when it’s used as a prediction model, but a mathematician would politely (or not so politely) disagree.</p>
+<p>For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it’s used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.</p>
 <p><strong>Can I use libraries outside the standard (Python, Java, etc.) installation?</strong></p>
-<p>Yes. Unlike C950 (Data Structures &amp; Algorithms II), you are allowed and <em>encouraged</em> to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about the application of these tools -not their development.</p>
-<p>TODO ADD PICTURES</p>
+<p>Yes. Unlike C950 (Data Structures &amp; Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.</p>
+<p><strong>What language, libraries, and platforms should I use?</strong></p>
+<p>You can use whatever you like. However, we recommend using Python and the <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter notebook is a great place to start for the app front end. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.</p>
+<p>A development path might look like the following:</p>
+<ul class="simple">
+<li><p>Python IDE → Jupyter notebook → notebook with widgets → hosted notebook with widgets → web app.</p></li>
+</ul>
+<p>Provided the <a class="reference internal" href="#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C.</p>
 <p><strong>What sort of user interface do I need? Do I need a GUI?</strong></p>
-<p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” towards solving the proposed problem. If the evaluators can get run your app as intended playing the role of the “client” following your <span class="xref myst">user guide</span>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets but using the command line or reading user data from a local directory will also suffice.</p>
-<p>TODO DOC FAQ
-<strong>Are there length requirements for the documentation?</strong></p>
-<p>No. What you see in the examples (ADD LINKS) are just guidelines. The individual evaluator determines what qualifies as “sufficient detail” which further varies depending on the project and writing style. If you feel you’ve met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details.</p>
-<p><strong>I’ve completed the task 2 documentation. Should I send it to my course instructor for review?</strong></p>
-<p>If you have specific questions or concerns -yes. However, in most cases, it’s best just to submit. What suffices as “sufficient detail” is highly subjective. We can always tell you to add more, but if you’ve done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need to be rewritten. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator’s comments is generally easier than overworking the entire project.</p>
-<p>You have <em>unlimited</em> submissions but limited time. And, typically this is the best and most efficient approach.</p>
-<p>**I only have a Linux (or Mac) machine, will evaluators be able to run my code?”</p>
-<p>Technically, (and unfortunately) we are a “Windows” university, and all submitted projects should be able to run in Windows. However, this is not specifically required in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only provided with Window 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. In the <span class="xref myst">user guide</span> of the documentation, you should provide explicit instructions for a Windows 10 user to run your code such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsytem</a>.</p>
+<p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the “client,” following your <span class="xref myst">user guide</span>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.</p>
+<p id="task2c-faq-linux"><strong>I only have a Linux (or Mac) machine. Will evaluators be able to run my code?”</strong></p>
+<p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsytem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor.</p>
 </div>
 </div>
 

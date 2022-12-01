@@ -1,6 +1,10 @@
 
 (resources)=
 # C964 Resources
+<!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
 
 (resources:examples)
 ## Examples
@@ -112,7 +116,7 @@ Follow the guidelines found in this template and webpage -*do **not** follow the
 (resources:gen:grammarly)=
 ### Grammarly.com
 
-Check your grammar using [Grammarly.com](https://www.grammarly.com/)![](c:/Users/Jim/Downloads/grammarly.png=25x25) 📝 (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
+Check your grammar using [Grammarly.com](https://www.grammarly.com/) ![](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
 
 :::{warning}
 Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version and checking grammar in MS Word. 
