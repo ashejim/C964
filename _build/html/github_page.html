@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Creating Your Own GitHub Webpage! &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example: Supervised Classification App" href="sup_class_ex.html" />
     <link rel="prev" title="BSCS, Software, and other Course Faculty" href="ci_other.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -182,6 +184,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Creating Your Own GitHub Webpage!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sup_class_ex.html">
+   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -500,9 +507,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="creating-your-own-github-webpage">
+  <section class="tex2jax_ignore mathjax_ignore" id="creating-your-own-github-webpage">
 <h1>Creating Your Own GitHub Webpage!<a class="headerlink" href="#creating-your-own-github-webpage" title="Permalink to this headline">#</a></h1>
-<div class="section" id="what-you-need-to-get-started">
+<section id="what-you-need-to-get-started">
 <h2>What you need to get started…<a class="headerlink" href="#what-you-need-to-get-started" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>Python 3 (<span class="math notranslate nohighlight">\(\geq 3.9\)</span> recommended)</p></li>
@@ -510,8 +517,8 @@ title="Print to PDF"
 <li><p>A <a class="reference external" href="https://www.markdownguide.org/">Markdown</a> editor.</p></li>
 <li><p>A GitHub account and repository.</p></li>
 </ol>
-</div>
-<div class="section" id="step-1-getting-python">
+</section>
+<section id="step-1-getting-python">
 <h2>Step 1. Getting Python.<a class="headerlink" href="#step-1-getting-python" title="Permalink to this headline">#</a></h2>
 <p>Choose your flavor.</p>
 <ul class="simple">
@@ -519,50 +526,50 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda</a></p></li>
 </ul>
 <p>For a demonstration on this page, I’ll use Anaconda because environments can be managed through a GUI; see <a class="reference external" href="https://medium.com/cluj-school-of-ai/python-environments-management-in-anaconda-navigator-ad2f0741eba7">Python Environments Management in Anaconda Navigator</a>. Creating a specialized Python environment is not required, but it is good practice. But if you’re going to use Python for nothing else, you can probably skip this step.</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">What is a virtual environment? </p>
 <p>It’s a tool that keeps dependencies required for different projects separate by creating isolated python virtual environments for them. This is one of the most important tools Python developers use. (TODO add GeekforGeek reference) See <a class="reference external" href="https://www.geeksforgeeks.org/python-virtual-environment/">Python Virtual Environment</a> for more detals.</p>
-</div>
-</div>
-<div class="section" id="step-2-install-the-required-packages">
+</aside>
+</section>
+<section id="step-2-install-the-required-packages">
 <h2>Step 2. Install the Required Packages<a class="headerlink" href="#step-2-install-the-required-packages" title="Permalink to this headline">#</a></h2>
 <p>Open a windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator.</p>
 <p><strong>Install Jupyter-book</strong> which converts markdown and jupyter-notebook files into html.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="32f6d11b-ee2b-439c-99dc-37741bc47342" name="1d6fe72a-0c14-48f5-b472-6f7b58198f7c" type="radio">
-</input><label class="sd-tab-label" for="32f6d11b-ee2b-439c-99dc-37741bc47342">
+<input checked="checked" id="5b2295f1-8eab-4992-8754-15f11ddb8cf3" name="fbe984c8-7c63-496f-bf76-aabf3b198d1b" type="radio">
+</input><label class="sd-tab-label" for="5b2295f1-8eab-4992-8754-15f11ddb8cf3">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyter-book
 </pre></div>
 </div>
 </div>
-<input id="0e133d53-1406-4615-97ac-e2c9b5ae80a8" name="1d6fe72a-0c14-48f5-b472-6f7b58198f7c" type="radio">
-</input><label class="sd-tab-label" for="0e133d53-1406-4615-97ac-e2c9b5ae80a8">
+<input id="e347946b-1c1b-4e40-8262-efbe2dbb650c" name="fbe984c8-7c63-496f-bf76-aabf3b198d1b" type="radio">
+</input><label class="sd-tab-label" for="e347946b-1c1b-4e40-8262-efbe2dbb650c">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
 </pre></div>
 </div>
 </div>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Pip in Conda</p>
 <p>Want to use pip and Anaconda?</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda pip
 </pre></div>
 </div>
 <p>Now you can ‘pip’ in conda.</p>
-</div>
+</aside>
 <p><strong>Install git</strong> (it should already be installed) so you can connect your local files to a GitHub repository.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="d55696e9-ae1d-4052-a7c3-64ef4377f291" name="c5fd0b51-a9bc-4986-b40d-1966f728547a" type="radio">
-</input><label class="sd-tab-label" for="d55696e9-ae1d-4052-a7c3-64ef4377f291">
+<input checked="checked" id="16a1d773-98cf-4bd1-8d8f-2fd5f85ede82" name="1ab289cb-bb4e-4eb9-913d-1fd70ee91dd4" type="radio">
+</input><label class="sd-tab-label" for="16a1d773-98cf-4bd1-8d8f-2fd5f85ede82">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install python-git
 </pre></div>
 </div>
 </div>
-<input id="8002be5a-acc1-4a2e-b85d-2b84e0d432dd" name="c5fd0b51-a9bc-4986-b40d-1966f728547a" type="radio">
-</input><label class="sd-tab-label" for="8002be5a-acc1-4a2e-b85d-2b84e0d432dd">
+<input id="31188483-a25b-4e15-8142-730780216f05" name="1ab289cb-bb4e-4eb9-913d-1fd70ee91dd4" type="radio">
+</input><label class="sd-tab-label" for="31188483-a25b-4e15-8142-730780216f05">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda git
 </pre></div>
@@ -571,35 +578,35 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install ghp-import</strong> which will post your HTML files from your GitHub repository to the web.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="bf5a9304-2b8c-4b96-906e-aa7a081f6ce8" name="77a7abd4-a327-4626-9468-658568729d24" type="radio">
-</input><label class="sd-tab-label" for="bf5a9304-2b8c-4b96-906e-aa7a081f6ce8">
+<input checked="checked" id="fb7b144e-7ee9-4a76-9ab6-6bd757d5aed7" name="e41e9394-6291-4e7f-942b-45e90160af46" type="radio">
+</input><label class="sd-tab-label" for="fb7b144e-7ee9-4a76-9ab6-6bd757d5aed7">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
 </pre></div>
 </div>
 </div>
-<input id="9af98e1a-9641-4ea6-acf4-95cf8a9c4284" name="77a7abd4-a327-4626-9468-658568729d24" type="radio">
-</input><label class="sd-tab-label" for="9af98e1a-9641-4ea6-acf4-95cf8a9c4284">
+<input id="35ee2049-1c61-4bed-bc7d-c17ef48eafb0" name="e41e9394-6291-4e7f-942b-45e90160af46" type="radio">
+</input><label class="sd-tab-label" for="35ee2049-1c61-4bed-bc7d-c17ef48eafb0">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge ghp-import
 </pre></div>
 </div>
 </div>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Adding cool stuff</p>
 <p>Check out all the cool UI stuff you can do: <a class="reference external" href="https://jupyterbook.org/en/stable/content/components.html#components-tabs">JupyterBook UI elements</a>.</p>
-</div>
-</div>
-<div class="section" id="step-3-create-a-jupyter-book">
+</aside>
+</section>
+<section id="step-3-create-a-jupyter-book">
 <h2>Step 3. Create a Jupyter-Book<a class="headerlink" href="#step-3-create-a-jupyter-book" title="Permalink to this headline">#</a></h2>
 <p>Create a sample book by going to the directory and running the following command:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book create mynewbook/
 </pre></div>
 </div>
 <p>Where ‘mynewbook/’ is the name of the folder you want your jupyter-book and all its source files to live (it will create the folder).</p>
-</div>
-<div class="section" id="step-4-add-some-content">
+</section>
+<section id="step-4-add-some-content">
 <h2>Step 4. Add some content!<a class="headerlink" href="#step-4-add-some-content" title="Permalink to this headline">#</a></h2>
 <p>Your two main choices for adding content are  Markdown (.md) and Juptyer Notebook (.ipynb) files. The former is easier and great for most stuff. The latter is less easy but very flexible.</p>
 <div class="admonition note">
@@ -613,16 +620,16 @@ conda</label><div class="sd-tab-content docutils">
 <li><p><a class="reference external" href="https://typora.io/">typora</a></p></li>
 </ul>
 <p>I use Visual Studio.</p>
-</div>
-<div class="section" id="step-5-turn-your-markdown-jupyter-files-into-html">
+</section>
+<section id="step-5-turn-your-markdown-jupyter-files-into-html">
 <h2>Step 5. Turn your Markdown/Jupyter files into HTML.<a class="headerlink" href="#step-5-turn-your-markdown-jupyter-files-into-html" title="Permalink to this headline">#</a></h2>
 <p>This is why we need juptyer-book. Go to folder where your jupyter-book folder lives and type:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build mynewbook
 </pre></div>
 </div>
 <p>And that’s it. You now have the web files. After building, you’ll be provided with a local link. Copy and paste the link into your browser of choice to check it out.</p>
-</div>
-<div class="section" id="step-6-move-your-web-files-to-the-web">
+</section>
+<section id="step-6-move-your-web-files-to-the-web">
 <h2>Step 6. Move Your Web files to the Web!<a class="headerlink" href="#step-6-move-your-web-files-to-the-web" title="Permalink to this headline">#</a></h2>
 <p>You can put your web files wherever you like. I’ll use GitHub.</p>
 <ol class="simple">
@@ -631,10 +638,10 @@ conda</label><div class="sd-tab-content docutils">
 <li><p>Clone the repository to a local directory -this will be the directory linked to github (use a different one than above unless you want to copy over it).</p></li>
 <li><p>Copy your book into the local repo clone.</p></li>
 </ol>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Jupyter Docs</p>
 <p>See the <a class="reference external" href="https://jupyterbook.org/en/stable/start/publish.html">jupyter-book documentation</a> for more details.</p>
-</div>
+</aside>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> directorywhereyouwantittobe
 git clone https://github.com/&lt;my-org&gt;/&lt;my-repository-name&gt;
 </pre></div>
@@ -650,8 +657,8 @@ git clone https://github.com/ashejim/examplebook/
 <p>What! You don’t have a GitHub account? Well getting one is free and easy. As long as its public, your repos and webpages will also be free.</p>
 </div>
 <p>A GitHub repository is a great place to put all kinds of stuff.</p>
-</div>
-<div class="section" id="step-7-sync-your-local-repo-to-the-github-repoistory">
+</section>
+<section id="step-7-sync-your-local-repo-to-the-github-repoistory">
 <h2>Step 7. Sync your local repo to the GitHub repoistory.<a class="headerlink" href="#step-7-sync-your-local-repo-to-the-github-repoistory" title="Permalink to this headline">#</a></h2>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> directorywhereyouwantittobe/mynewbook
 git add ./*
@@ -659,8 +666,8 @@ git commit -m <span class="s2">&quot;a message is optional, but helpful.&quot;</
 git push
 </pre></div>
 </div>
-</div>
-<div class="section" id="step-8-sync-your-book-to-a-gitpage">
+</section>
+<section id="step-8-sync-your-book-to-a-gitpage">
 <h2>Step 8. Sync your book to a GitPage.<a class="headerlink" href="#step-8-sync-your-book-to-a-gitpage" title="Permalink to this headline">#</a></h2>
 <p>In the same folder:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f _build/html
@@ -671,13 +678,13 @@ git push
 </pre></div>
 </div>
 <p>(you can copy and paste the new site name from the terminal output.)</p>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">GitHub Pages Docs</p>
 <p>See the <a class="reference external" href="https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site">Github Pages Doc</a> for more (and better) details.</p>
-</div>
+</aside>
 <p>Congratulations! You have a website!</p>
-</div>
-<div class="section" id="edit-your-page">
+</section>
+<section id="edit-your-page">
 <h2>Edit your page<a class="headerlink" href="#edit-your-page" title="Permalink to this headline">#</a></h2>
 <p>some change
 Hey, here’s a <em><strong>mistake.</strong></em></p>
@@ -694,8 +701,8 @@ Hey, here’s a <em><strong>mistake.</strong></em></p>
 </li>
 </ol>
 <p><span class="xref myst">google</span></p>
-</div>
-<div class="section" id="headings">
+</section>
+<section id="headings">
 <h2>headings<a class="headerlink" href="#headings" title="Permalink to this headline">#</a></h2>
 <p>Here’s a link to a <a class="reference external" href="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=true&amp;captions=true&amp;interactivity=all">video</a></p>
 <iframe 
@@ -706,8 +713,8 @@ Hey, here’s a <em><strong>mistake.</strong></em></p>
     style="border: 1px solid #464646;" 
     allowfullscreen allow="autoplay"
 >
-</iframe></div>
-</div>
+</iframe></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -742,6 +749,13 @@ Hey, here’s a <em><strong>mistake.</strong></em></p>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">BSCS, Software, and other Course Faculty</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="sup_class_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Example: Supervised Classification App</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

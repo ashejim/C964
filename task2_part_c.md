@@ -355,6 +355,11 @@ Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any p
 
 No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc:userguide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.   
 
+<!-- TODO add to task D or polish up? -->
+(task2c:faq:limit)=
+**My project exceeeds the 200mb limit. How can I submit it?**
+
+As you might guess, this is a common issue. But evalutors only need *access* to everything. Access to large files can be provided with a drop box link (say in your Google drive) -don't forget to set the share settings so they can access it!
 
 %%also in doc FAQ
 (task2c:faq:linux)=

@@ -9,6 +9,7 @@
 Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take first priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month). 
 :::
 
+(ci_other:guidelines)=
 ## Better questions get better answers.
 
 The fix might require understanding several intertwined layers, of your code structure, the language, libraries, or data. You've already spent hours working on it. Don't expect someone else to quickly diagnose and fix the issue from a quick live code section or a series of screenshots. Remember, asking for help means asking for someone's time. Faculty on this page enjoy helping students (they've volunteered for the additional work), but you need to make it as easy for them to do so.         
@@ -24,6 +25,16 @@ The fix might require understanding several intertwined layers, of your code str
 * Use your WGU email (we may not receive emails from outside WGU).
 * Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
 * Clearly state your question, provide context, and do not assume the faculty on this page knows the requirements of your project. Restrict the scope of your question to their area of expertise. 
+
+## WGU Programming Center
+
+The [WGU Pogramming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python. 
+
+```{image} ./url_images/WGU_programming_center_python.png
+:alt: WGU programming center
+:height: 200px
+:align: center
+```
 
 (ci_other:cis)=
 ## Jim Ashe, PhD

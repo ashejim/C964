@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Task 1: Topic Approval &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -181,6 +182,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sup_class_ex.html">
+   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -497,27 +503,27 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="task-1-topic-approval">
+  <section class="tex2jax_ignore mathjax_ignore" id="task-1-topic-approval">
 <span id="task1"></span><h1>Task 1: Topic Approval<a class="headerlink" href="#task-1-topic-approval" title="Permalink to this headline">#</a></h1>
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
-<div class="section" id="choosing-a-topic">
+<section id="choosing-a-topic">
 <h2>Choosing a Topic<a class="headerlink" href="#choosing-a-topic" title="Permalink to this headline">#</a></h2>
-<p>The approval form ensures you start in the right direction before investing time and effort into <a class="reference internal" href="task2_part_c.html#task2c"><span class="std std-ref">task 2</span></a>. Evaluators look for our (instructors’) signature, and we look for the following:</p>
+<p>The approval form ensures you start in the right direction before investing time and effort into <a class="reference internal" href="task2_part_c-DESKTOP-4IBEDLS.html#task2c"><span class="std std-ref">task 2</span></a>. Evaluators look for our (instructors’) signature, and we look for the following:</p>
 <ol class="simple">
 <li><p>An application of machine learning (ML).</p></li>
 <li><p>An organizational need for your ML application to help solve.</p></li>
 <li><p>A <em>basic outline</em> of your implementation plan.</p></li>
 </ol>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">What is <em>machine learning</em>?</p>
-<p>It’s a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see <a class="reference internal" href="task2_part_c.html#task1-faq-whatisml"><span class="std std-ref">FAQ: What is ML?</span></a>).</p>
-</div>
+<p>It’s a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see <a class="reference internal" href="task2_part_c-DESKTOP-4IBEDLS.html#task1-faq-whatisml"><span class="std std-ref">FAQ: What is ML?</span></a>).</p>
+</aside>
 <p>The “organizational need” requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project’s profitability or practical impact. Such criteria are <em>not</em> assessed. This is a computer science project; neither you nor the evaluators are business majors.</p>
 <p>But you can’t apply an algorithm to data -without data.</p>
-<div class="section" id="data">
+<section id="data">
 <h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
 <p>A machine learning application is the hard requirement of the capstone, but you can’t apply an algorithm to data -without data. Moreover, most datasets provide a question to answer, e.g., predictions, classifications, or recommendations for which an “organizational need” can always be found.</p>
 <ul class="simple">
@@ -531,15 +537,15 @@ title="Print to PDF"
 <p class="admonition-title">Note</p>
 <p><em>No minimal data complexity or processing is required.</em> Choosing data needing less processing or simplifying a dataset can make the project technically more accessible.</p>
 </div>
-</div>
-<div class="section" id="machine-learning-algorithms">
+</section>
+<section id="machine-learning-algorithms">
 <h3>Machine Learning Algorithms<a class="headerlink" href="#machine-learning-algorithms" title="Permalink to this headline">#</a></h3>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title"><strong>Classification &amp; Regression Overview</strong> </p>
 <iframe 
 src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay"
 > </iframe>
-</div>
+</aside>
 <p><strong>Supervised Learning</strong>
 If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can <em>train</em> a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a <em>regression</em> method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification method should be used.</p>
 <ul class="simple">
@@ -549,10 +555,10 @@ If the answers for what you are trying to predict (dependent variable) are in th
 <ul class="simple">
 <li><p><em>Classification</em> algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.</p></li>
 </ul>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Logisitc regression: regression or classification?</p>
 <p>Really both, but most often, it’s used for classification. Logistic regression uses input variables to predict the <em>probability</em> of an outcome returning a number between 0.0 and 1.0 -hence “regression.” However, using that probability to predict whether an outcome occurs (yes/no) is a classification.</p>
-</div>
+</aside>
 <p><strong>Unsupervised Learning</strong>
 If what you are trying to find is not directly in the data (aka <em>tagged</em> or <em>labeled</em>), then an unsupervised method might be used. Unsupervised algorithms identify patterns not identified in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).</p>
 <p><strong>Reinforced Learning</strong>
@@ -561,8 +567,8 @@ Sometimes solutions need to adapt to particular situations. That is, the algorit
 <p class="admonition-title">Note</p>
 <p>Need help determining which particular algorithm will work best? That’s OK! You won’t know until you’ve spent time investigating and experimenting. But that’s not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. <em>Any ML algorithm</em> given in task 1 appropriate for your data will be accepted, and task 2 can do something different without needing to revise task 1 (see the <a class="reference internal" href="#task1-faq"><span class="std std-ref">FAQ</span></a> below).</p>
 </div>
-</div>
-<div class="section" id="where-to-start-data-or-the-ml-algorithm">
+</section>
+<section id="where-to-start-data-or-the-ml-algorithm">
 <h3>Where to start? Data or the ML algorithm?<a class="headerlink" href="#where-to-start-data-or-the-ml-algorithm" title="Permalink to this headline">#</a></h3>
 <p>It’s best to consider both. In a “real-world” scenario, you would likely be given data to analyze and a problem to solve. So starting with the data, and then determining the proper ML tools is most natural. However, you get to choose the problem and hence the tools needed to solve it -provided you have data fitting that problem. For example, someone interested in image recognition might restrict their data search to sets of labeled images. To simplify coding steps, they might look at images with standard sizes or take a subset of the images limiting the number of classifications. At any point, the problem or choosen algorithm can be refined to better fit what you want or can do. A suggested approach:</p>
 <ol class="simple">
@@ -570,18 +576,18 @@ Sometimes solutions need to adapt to particular situations. That is, the algorit
 <li><p>Find an ML algorithm you can apply to that data.</p></li>
 <li><p>Formulate an “organizational need” helped by that application.</p></li>
 </ol>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title">Unsure about which ML method to use?</p>
 <p>Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements.</p>
-</div>
-</div>
-<div class="section" id="examples">
+</aside>
+</section>
+<section id="examples">
 <span id="task1-choosing-examples"></span><h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h3>
-<div class="section" id="topic-summary-examples">
+<section id="topic-summary-examples">
 <h4>Topic Summary Examples:<a class="headerlink" href="#topic-summary-examples" title="Permalink to this headline">#</a></h4>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="00264087-8931-454d-a605-e0361161c93a" name="63b94e64-ebbc-49c2-9e7c-781ba7608d3d" type="radio">
-</input><label class="sd-tab-label" for="00264087-8931-454d-a605-e0361161c93a">
+<input checked="checked" id="19129834-4787-4978-bed7-2a6e020a2520" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
+</input><label class="sd-tab-label" for="19129834-4787-4978-bed7-2a6e020a2520">
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Petal dimensions and species of fifty <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
@@ -590,8 +596,8 @@ Example 1</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> <em>Grow Fast Ferilizer Inc.</em> needs to help customers identify their flowers.</p>
 </div></blockquote>
 </div>
-<input id="30a25474-1346-40e3-9087-e3635a232366" name="63b94e64-ebbc-49c2-9e7c-781ba7608d3d" type="radio">
-</input><label class="sd-tab-label" for="30a25474-1346-40e3-9087-e3635a232366">
+<input id="5c5e9df2-8ec4-4d49-9668-aa83d2e30197" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
+</input><label class="sd-tab-label" for="5c5e9df2-8ec4-4d49-9668-aa83d2e30197">
 Example 2</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Housing data</p>
@@ -600,8 +606,8 @@ Example 2</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> The realty firm, We Sell em Fast!, needs a tool to estimate housing prices.</p>
 </div></blockquote>
 </div>
-<input id="bbfb1361-4f27-4f00-9fa9-9d13af4a0bde" name="63b94e64-ebbc-49c2-9e7c-781ba7608d3d" type="radio">
-</input><label class="sd-tab-label" for="bbfb1361-4f27-4f00-9fa9-9d13af4a0bde">
+<input id="45167b69-fd85-446b-95c0-a6056ce95b4e" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
+</input><label class="sd-tab-label" for="45167b69-fd85-446b-95c0-a6056ce95b4e">
 Example 3</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Movies, e.g., budget, genre, starring actors, etc.</p>
@@ -610,8 +616,8 @@ Example 3</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> The streaming service, <em>InterWebFlixs</em>, needs to help users pick a movie.</p>
 </div></blockquote>
 </div>
-<input id="d9e686af-e248-4e67-9971-d3ba999a5256" name="63b94e64-ebbc-49c2-9e7c-781ba7608d3d" type="radio">
-</input><label class="sd-tab-label" for="d9e686af-e248-4e67-9971-d3ba999a5256">
+<input id="9f6f9659-5013-44c6-b3bd-f0bea46c8936" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
+</input><label class="sd-tab-label" for="9f6f9659-5013-44c6-b3bd-f0bea46c8936">
 Example 4</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Images of dogs and cats.</p>
@@ -621,21 +627,21 @@ Example 4</label><div class="sd-tab-content docutils">
 </div></blockquote>
 </div>
 </div>
-</div>
-<div class="section" id="completed-examples">
+</section>
+<section id="completed-examples">
 <h4>Completed Examples<a class="headerlink" href="#completed-examples" title="Permalink to this headline">#</a></h4>
 <p>These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.</p>
 <div class="sd-tab-set docutils" id="task1-completedexamples">
-<input checked="checked" id="1ec521e2-6f72-411a-bf6b-f31b080438aa" name="8f8dd165-b018-4224-aa63-cced3c352fc0" type="radio">
-</input><label class="sd-tab-label" for="1ec521e2-6f72-411a-bf6b-f31b080438aa">
+<input checked="checked" id="0d741c49-426f-4a25-b6ba-8ee2ccac09f6" name="ba00b404-e7f3-4aa4-b36b-f5efd5a6d39e" type="radio">
+</input><label class="sd-tab-label" for="0d741c49-426f-4a25-b6ba-8ee2ccac09f6">
 Completed Task 1 Ex. A</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb" /></a></p>
 </div></blockquote>
 <p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf">task 2 example A</a></p>
 </div>
-<input id="1168b252-5f87-4465-9680-3885947c7a61" name="8f8dd165-b018-4224-aa63-cced3c352fc0" type="radio">
-</input><label class="sd-tab-label" for="1168b252-5f87-4465-9680-3885947c7a61">
+<input id="6f73d1a8-3e5e-4aee-bc51-d8ed9a450266" name="ba00b404-e7f3-4aa4-b36b-f5efd5a6d39e" type="radio">
+</input><label class="sd-tab-label" for="6f73d1a8-3e5e-4aee-bc51-d8ed9a450266">
 Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb" /></a></p>
@@ -645,10 +651,10 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>WGU Capstone Excellence Archive</strong></p>
 <p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. Therefore, don’t use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <span class="xref myst">examples</span> above.</p>
-</div>
-</div>
-</div>
-<div class="section" id="topic-approval">
+</section>
+</section>
+</section>
+<section id="topic-approval">
 <span id="task1-approval"></span><h2>Topic Approval<a class="headerlink" href="#topic-approval" title="Permalink to this headline">#</a></h2>
 <p>Once you’ve decided on a topic, complete the approval form following the template below and <em>email it to your <a class="reference external" href="mailto:myC964capstoneinstructor&#37;&#52;&#48;wgu&#46;edu?cc=my%20course%20instructor&amp;subject=C964:%20capstone%20topic%20approval">C964 assigned instructor</a> for approval.</em></p>
 <blockquote>
@@ -675,8 +681,8 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Warning</p>
 <p>The submitted topic approval form must be <em>signed by a <a class="reference internal" href="ci_c964.html#ci-c964"><span class="std std-ref">C964 course instructor</span></a></em>. Forms without a signature are automatically returned without further review.</p>
 </div>
-</div>
-<div class="section" id="waiver-form">
+</section>
+<section id="waiver-form">
 <span id="task1-waiver"></span><h2>Waiver Form<a class="headerlink" href="#waiver-form" title="Permalink to this headline">#</a></h2>
 <p>Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized.</p>
 <blockquote>
@@ -687,8 +693,8 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Note</p>
 <p><img alt="waiver checkbox" src="_images/waiver-check-1box.png" /></p>
 </div>
-</div>
-<div class="section" id="faq">
+</section>
+<section id="faq">
 <span id="task1-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">#</a></h2>
 <p><strong>Do I need to set up an appointment to get approval?</strong></p>
 <p>No. Usually, students email the approval form to their <a class="reference internal" href="ci_c964.html#ci-c964"><span class="std std-ref">assigned instructor</span></a>. We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns.</p>
@@ -736,7 +742,7 @@ You can use anything you’ve written for C964, including copying verbatim from 
 <ul class="simple">
 <li><p>Python IDE → Jupyter notebook → notebook with widgets → hosted notebook with widgets → web app.</p></li>
 </ul>
-<p>Provided the <a class="reference internal" href="task2_part_c.html#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C.</p>
+<p>Provided the <a class="reference internal" href="task2_part_c-DESKTOP-4IBEDLS.html#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C.</p>
 <p id="task1-faq-gui"><strong>What sort of user interface do I need? Do I need a GUI?</strong></p>
 <p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the “client,” following your <span class="xref myst">user guide</span>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.</p>
 <p><strong>Are there length requirements for the documentation?</strong></p>
@@ -746,8 +752,8 @@ You can use anything you’ve written for C964, including copying verbatim from 
 <p>You have <em>unlimited</em> submissions but limited time. And, typically this is the best and most efficient approach.</p>
 <p><strong>I only have a Linux (or Mac) machine. Will evaluators be able to run my code?”</strong></p>
 <p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsytem</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
