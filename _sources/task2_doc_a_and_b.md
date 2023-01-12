@@ -1,5 +1,5 @@
 
-(task2ab)
+(task2ab)=
 # Task 2 parts A and B
 
 The point of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)

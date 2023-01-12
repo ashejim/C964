@@ -61,12 +61,13 @@ Any open source data set is freely available for use.
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - Simulated data
 
-
-
-
 (resources:task2examplec)=
 ## Task 2 Part C (the app) Resources
-STUFF HERE
+
+### Coding
+
+- [CS and C964 faculty](ci_other) availabel for math, data analytics, and coding related questions.
+- [WGU Pogramming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python. 
 
 (resources:task2:videos)=  
 ### Videos
