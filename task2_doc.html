@@ -51,10 +51,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Task 2 part D" href="task2_doc_d.html" />
-    <link rel="prev" title="Task 2: Part C -the application" href="task2_part_c.html" />
+    <link rel="prev" title="User Interface" href="sup_class_ex-ui.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,17 +122,51 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_part_c.html">
    Task 2: Part C -the application
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       Data product Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Task 2: The Documentation
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -161,8 +197,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -182,11 +218,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sup_class_ex.html">
-   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -431,16 +462,16 @@ title="Print to PDF"
 </div>
 <p>To gauge the level of detail evaluators typically expect, review these examples.</p>
 <div class="sd-tab-set docutils" id="task1-completedexamples">
-<input checked="checked" id="fdd9f87a-76ef-4133-b0ee-b59559634618" name="829a9fb6-2728-4371-9afc-ae7fa02576f7" type="radio">
-</input><label class="sd-tab-label" for="fdd9f87a-76ef-4133-b0ee-b59559634618">
+<input checked="checked" id="3a5d95a4-49ab-4ba4-bc75-4f3c7ded814f" name="d3084474-12c2-4079-a5a9-79463a16f32c" type="radio">
+</input><label class="sd-tab-label" for="3a5d95a4-49ab-4ba4-bc75-4f3c7ded814f">
 Task 2 documentation example A</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf"><img alt="Task 2 example-a" src="https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.png?raw=true#image-thumb" /></a></p>
 </div></blockquote>
 <p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf">Task 1 example A</a></p>
 </div>
-<input id="9812c94d-5ac4-4127-9336-b4c5b39a7073" name="829a9fb6-2728-4371-9afc-ae7fa02576f7" type="radio">
-</input><label class="sd-tab-label" for="9812c94d-5ac4-4127-9336-b4c5b39a7073">
+<input id="a64247fd-f021-4fb3-b855-8b415f1bc300" name="d3084474-12c2-4079-a5a9-79463a16f32c" type="radio">
+</input><label class="sd-tab-label" for="a64247fd-f021-4fb3-b855-8b415f1bc300">
 Task 2 documentation example B</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf?raw=true"><img alt="Task 2 example-b" src="https://github.com/ashejim/C964/blob/main/url_images/example_task2-b.png?raw=true#image-thumb" /></a></p>
@@ -549,11 +580,11 @@ You can use anything you’ve written for C964, including copying verbatim from 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="task2_part_c.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="sup_class_ex-ui.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Task 2: Part C -the application</p>
+            <p class="prev-next-title">User Interface</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="task2_doc_d.html" title="next page">

@@ -1,43 +1,78 @@
 Traceback (most recent call last):
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
     executenb(
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\client.py", line 1204, in execute
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 1204, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\util.py", line 84, in wrapped
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\util.py", line 84, in wrapped
     return just_run(coro(*args, **kwargs))
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\util.py", line 62, in just_run
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\util.py", line 62, in just_run
     return loop.run_until_complete(coro)
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\asyncio\base_events.py", line 649, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
     return future.result()
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\client.py", line 663, in async_execute
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 608, in async_setup_kernel
+    yield
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 663, in async_execute
     await self.async_execute_cell(
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "C:\Users\ashej\PythonTools\anaconda3\envs\jupyter-book-env\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-A = df[df['type'] == 'Iris-setosa']['petal-length']
-B = df[df['type'] == 'Iris-versicolor']['petal-length']
-C = df[df['type'] == 'Iris-virginica']['petal-length']
-
-sns.histplot(A, color = 'red', kde=True, bins = 10)
-sns.histplot(B, color ='blue', kde=True, bins = 10)
-sns.histplot(C, color = 'green', kde=True, bins = 10)
-plt.show()
+num_types.plot.bar(color=['red','blue','green'],rot=0);
 ------------------
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [1;32mIn[7], line 2[0m
-[0;32m      1[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
-[1;32m----> 2[0m [38;5;28;01mimport[39;00m [38;5;21;01mseaborn[39;00m [38;5;28;01mas[39;00m [38;5;21;01msns[39;00m
-[0;32m      4[0m A [38;5;241m=[39m df[df[[38;5;124m'[39m[38;5;124mtype[39m[38;5;124m'[39m] [38;5;241m==[39m [38;5;124m'[39m[38;5;124mIris-setosa[39m[38;5;124m'[39m][[38;5;124m'[39m[38;5;124mpetal-length[39m[38;5;124m'[39m]
-[0;32m      5[0m B [38;5;241m=[39m df[df[[38;5;124m'[39m[38;5;124mtype[39m[38;5;124m'[39m] [38;5;241m==[39m [38;5;124m'[39m[38;5;124mIris-versicolor[39m[38;5;124m'[39m][[38;5;124m'[39m[38;5;124mpetal-length[39m[38;5;124m'[39m]
+[1;31mImportError[0m                               Traceback (most recent call last)
+Cell [1;32mIn[4], line 1[0m
+[1;32m----> 1[0m [43mnum_types[49m[38;5;241;43m.[39;49m[43mplot[49m[38;5;241;43m.[39;49m[43mbar[49m[43m([49m[43mcolor[49m[38;5;241;43m=[39;49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43mred[39;49m[38;5;124;43m'[39;49m[43m,[49m[38;5;124;43m'[39;49m[38;5;124;43mblue[39;49m[38;5;124;43m'[39;49m[43m,[49m[38;5;124;43m'[39;49m[38;5;124;43mgreen[39;49m[38;5;124;43m'[39;49m[43m][49m[43m,[49m[43mrot[49m[38;5;241;43m=[39;49m[38;5;241;43m0[39;49m[43m)[49m;
 
-[1;31mModuleNotFoundError[0m: No module named 'seaborn'
-ModuleNotFoundError: No module named 'seaborn'
+File [1;32m~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\plotting\_core.py:1159[0m, in [0;36mPlotAccessor.bar[1;34m(self, x, y, **kwargs)[0m
+[0;32m   1071[0m [38;5;129m@Appender[39m(
+[0;32m   1072[0m [38;5;250m    [39m[38;5;124;03m"""[39;00m
+[0;32m   1073[0m [38;5;124;03m    See Also[39;00m
+[1;32m   (...)[0m
+[0;32m   1148[0m [38;5;129m@Appender[39m(_bar_or_line_doc)
+[0;32m   1149[0m [38;5;28;01mdef[39;00m [38;5;21mbar[39m([38;5;28mself[39m, x[38;5;241m=[39m[38;5;28;01mNone[39;00m, y[38;5;241m=[39m[38;5;28;01mNone[39;00m, [38;5;241m*[39m[38;5;241m*[39mkwargs) [38;5;241m-[39m[38;5;241m>[39m PlotAccessor:
+[0;32m   1150[0m [38;5;250m    [39m[38;5;124;03m"""[39;00m
+[0;32m   1151[0m [38;5;124;03m    Vertical bar plot.[39;00m
+[0;32m   1152[0m 
+[1;32m   (...)[0m
+[0;32m   1157[0m [38;5;124;03m    other axis represents a measured value.[39;00m
+[0;32m   1158[0m [38;5;124;03m    """[39;00m
+[1;32m-> 1159[0m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[43m([49m[43mkind[49m[38;5;241;43m=[39;49m[38;5;124;43m"[39;49m[38;5;124;43mbar[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43mx[49m[38;5;241;43m=[39;49m[43mx[49m[43m,[49m[43m [49m[43my[49m[38;5;241;43m=[39;49m[43my[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [1;32m~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\plotting\_core.py:920[0m, in [0;36mPlotAccessor.__call__[1;34m(self, *args, **kwargs)[0m
+[0;32m    919[0m [38;5;28;01mdef[39;00m [38;5;21m__call__[39m([38;5;28mself[39m, [38;5;241m*[39margs, [38;5;241m*[39m[38;5;241m*[39mkwargs):
+[1;32m--> 920[0m     plot_backend [38;5;241m=[39m [43m_get_plot_backend[49m[43m([49m[43mkwargs[49m[38;5;241;43m.[39;49m[43mpop[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mbackend[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[38;5;28;43;01mNone[39;49;00m[43m)[49m[43m)[49m
+[0;32m    922[0m     x, y, kind, kwargs [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_get_call_args(
+[0;32m    923[0m         plot_backend[38;5;241m.[39m[38;5;18m__name__[39m, [38;5;28mself[39m[38;5;241m.[39m_parent, args, kwargs
+[0;32m    924[0m     )
+[0;32m    926[0m     kind [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_kind_aliases[38;5;241m.[39mget(kind, kind)
+
+File [1;32m~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\plotting\_core.py:1886[0m, in [0;36m_get_plot_backend[1;34m(backend)[0m
+[0;32m   1883[0m [38;5;28;01mif[39;00m backend_str [38;5;129;01min[39;00m _backends:
+[0;32m   1884[0m     [38;5;28;01mreturn[39;00m _backends[backend_str]
+[1;32m-> 1886[0m module [38;5;241m=[39m [43m_load_backend[49m[43m([49m[43mbackend_str[49m[43m)[49m
+[0;32m   1887[0m _backends[backend_str] [38;5;241m=[39m module
+[0;32m   1888[0m [38;5;28;01mreturn[39;00m module
+
+File [1;32m~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\plotting\_core.py:1817[0m, in [0;36m_load_backend[1;34m(backend)[0m
+[0;32m   1815[0m         module [38;5;241m=[39m importlib[38;5;241m.[39mimport_module([38;5;124m"[39m[38;5;124mpandas.plotting._matplotlib[39m[38;5;124m"[39m)
+[0;32m   1816[0m     [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
+[1;32m-> 1817[0m         [38;5;28;01mraise[39;00m [38;5;167;01mImportError[39;00m(
+[0;32m   1818[0m             [38;5;124m"[39m[38;5;124mmatplotlib is required for plotting when the [39m[38;5;124m"[39m
+[0;32m   1819[0m             [38;5;124m'[39m[38;5;124mdefault backend [39m[38;5;124m"[39m[38;5;124mmatplotlib[39m[38;5;124m"[39m[38;5;124m is selected.[39m[38;5;124m'[39m
+[0;32m   1820[0m         ) [38;5;28;01mfrom[39;00m [38;5;28mNone[39m
+[0;32m   1821[0m     [38;5;28;01mreturn[39;00m module
+[0;32m   1823[0m found_backend [38;5;241m=[39m [38;5;28;01mFalse[39;00m
+
+[1;31mImportError[0m: matplotlib is required for plotting when the default backend "matplotlib" is selected.
+ImportError: matplotlib is required for plotting when the default backend "matplotlib" is selected.
 

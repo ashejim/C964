@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Example: Supervised Classification App &#8212; Computer Science Capstone</title>
+    <title>Data Exploring and Processing &#8212; Computer Science Capstone</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,8 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -120,51 +120,17 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="task2_part_c.html">
    Task 2: Part C -the application
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="sup_class_ex.html">
-     Example: Supervised Classification App
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="sup_class_ex-process.html">
-       Data Exploring and Processing
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="sup_class_ex-develop.html">
-       Data product Model Development
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="sup_class_ex-ui.html">
-       User Interface
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -195,8 +161,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -216,6 +182,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sup_class_ex.html">
+   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -277,7 +248,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=tree/docs/C964_usup_class_example-Copy1-checkpoint.ipynb"
+        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=tree/docs/sup_class_ex-descript.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -337,7 +308,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2FC964_usup_class_example-Copy1-checkpoint.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Fsup_class_ex-descript.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -365,7 +336,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/C964_usup_class_example-Copy1-checkpoint.ipynb"
+        <a href="_sources/sup_class_ex-descript.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -402,23 +373,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#descriptive-methods-and-visualizations">
+   Descriptive Methods and Visualizations
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Example: Supervised Classification App</h1>
+                <h1>Data Exploring and Processing</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#descriptive-methods-and-visualizations">
+   Descriptive Methods and Visualizations
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -426,24 +434,25 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="example-supervised-classification-app">
-<h1>Example: Supervised Classification App<a class="headerlink" href="#example-supervised-classification-app" title="Permalink to this headline">#</a></h1>
-<p>This will be a very simple example. Simple data. Simple model. Simple interface. But it also demonstartes what meets the minimum requirements for part C. We’ll also demonstrate how things can progressively be improved. Always building on working code. So simple is a great place to start -scaling up is always easier than going the other direction.</p>
-<p>Supervised classification fits the project requirments well, and is also a good place to start. The nature of your Data and organizational dictate which methods you can use. So what type of data do we need?
-[](TODO ADD LINK)</p>
-<ul class="simple">
-<li><p>One of those features is the category you want to predict (the dependent variable).</p></li>
-<li><p>At least one other features (the independent variable(s)).</p></li>
-</ul>
-<p>Let’s look at some data.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-exploring-and-processing">
+<h1>Data Exploring and Processing<a class="headerlink" href="#data-exploring-and-processing" title="Permalink to this headline">#</a></h1>
+<p>Here we’ll do two essential things.</p>
+<ol class="simple">
+<li><p>Process the data.</p></li>
+<li><p>Analyze the data.</p></li>
+</ol>
+<p>Processing will involve importing, cleaning, and sorting raw data; preparing it to be analyzed. Exploring the data builds an understanding of it and the problem you’re trying to solve, equipping you to choose a machine-learning application.</p>
+<p>Before doing anything with raw data, you must import it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We&#39;ll import libraires as needed, but when submitting, having them all at the top is best practice</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We&#39;ll import libraires as needed, but when submitting, </span>
+<span class="c1"># it&#39;s best having them all at the top.</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="c1"># Load this well worn dataset</span>
+
+<span class="c1"># Load this well worn dataset:</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
-<span class="n">df</span> <span class="c1"># displays the dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a DataFrame</span>
+<span class="n">df</span> <span class="c1"># displays the DataFrame</span>
 </pre></div>
 </div>
 </div>
@@ -567,13 +576,13 @@ title="Print to PDF"
 <p>149 rows × 5 columns</p>
 </div></div></div>
 </div>
-<p>Opps. We’ve got the first row being used as headers. Some data sets have headers already -this one doesn’t. How do I do that? Google <a class="reference external" href="https://www.google.com/search?q=how+to+python+add+headers+to+dataframe&amp;rlz=1C1GCEA_enUS995US997&amp;ei=7TuSY7TmGsyJggfflr3YCg&amp;ved=0ahUKEwj0kK_X4er7AhXMhOAKHV9LD6sQ4dUDCA8&amp;uact=5&amp;oq=how+to+python+add+headers+to+dataframe&amp;gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQgAQQDToICAAQCBAeEA06CAgAEAgQBxAeSgQIQRgASgQIRhgAULgCWMkIYMEfaAFwAXgAgAFPiAH1A5IBATeYAQCgAQHIAQjAAQE&amp;sclient=gws-wiz-serp">how to python add headers to dataframe</a>. You’ll need to learn a lot of micro skills -pick them up when needed.</p>
-<p>We need to research a little to name these properly. Following <a class="reference external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower data set</a> we name the columns:</p>
+<p>Oops. The first row of data has been set as headers. Some data sets have headers already -this one doesn’t. How do we fix that? Google <a class="reference external" href="https://www.google.com/search?q=how+to+python+add+headers+to+dataframe&amp;rlz=1C1GCEA_enUS995US997&amp;ei=7TuSY7TmGsyJggfflr3YCg&amp;ved=0ahUKEwj0kK_X4er7AhXMhOAKHV9LD6sQ4dUDCA8&amp;uact=5&amp;oq=how+to+python+add+headers+to+dataframe&amp;gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQgAQQDToICAAQCBAeEA06CAgAEAgQBxAeSgQIQRgASgQIRhgAULgCWMkIYMEfaAFwAXgAgAFPiAH1A5IBATeYAQCgAQHIAQjAAQE&amp;sclient=gws-wiz-serp">“how to python add headers to dataframe”</a>. You’ll need to learn a lot of micro-skills -pick them up when needed.</p>
+<p>Readin up on the data set, <a class="reference external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower data set</a>, we name the columns:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
-<span class="n">df</span> <span class="c1"># displays the dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a DataFrame</span>
+<span class="n">df</span> <span class="c1"># displays the DataFrame</span>
 </pre></div>
 </div>
 </div>
@@ -697,12 +706,20 @@ title="Print to PDF"
 <p>150 rows × 5 columns</p>
 </div></div></div>
 </div>
-<p>Supervised methods use the answers in the data to supervise the model. Does our data contain the answer? If we want to predict the Iris ‘type’, than yes. It’s the only categorical feature so that’s what we’ll go with. However, a supervised method could also predict any other feature, e.g., ‘sepal-length.’ A supervised method can’t predict what it doesn’t have, say plant height or petal color.</p>
-<p>Enough processing for now. Let’s explore and see what we have. How many different Iris categories do we have?</p>
+<p>Supervised methods use the answers in the data to supervise the model. Does our data contain the answer? If we want to predict the Iris ‘type,’ then yes. It’s the only categorical feature, so we’ll go with it. However, a supervised method could predict <em>any</em> of the features, e.g., ‘sepal-length.’ A supervised method can’t predict what it doesn’t have, say, plant height or petal color.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>What? That’s it for data processing? We did little because the data didn’t need much. Like a lot of data out there, it was ready to go. No minimal processing is required. The project’s needs determine the required data processing, i.e., if it works, you’ve done enough. <span class="xref myst">TODO ADD LINK TO DATA REQS</span></p>
+</aside>
+<p>That’s all the processing needed for now.</p>
+<p>(sup_class_ex: descriptive)=</p>
+<section id="descriptive-methods-and-visualizations">
+<h2>Descriptive Methods and Visualizations<a class="headerlink" href="#descriptive-methods-and-visualizations" title="Permalink to this headline">#</a></h2>
+<p>Let’s explore the data. A good starting question: how many different Iris categories do we have?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_types</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
-<span class="n">num_types</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_types</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">();</span>
+<span class="n">display</span><span class="p">(</span><span class="n">num_types</span><span class="p">);</span> <span class="c1">#another display option.</span>
 </pre></div>
 </div>
 </div>
@@ -724,14 +741,14 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_7_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_7_0.png" />
+<img alt="_images/sup_class_ex-descript_7_0.png" src="_images/sup_class_ex-descript_7_0.png" />
 </div>
 </div>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<p>Want to do something similar but different? Go to the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html">libary’s docs</a>. You’re going to see lots of different libraries and functions with lots of different options. Don’t just copy and paste. Read the docs and understand the parameters.</p>
+<p>Want to do something similar but different? Go to the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html">libary’s docs</a>. You’ll see lots of libraries and functions with lots of options. Don’t just copy, paste, and pray. Read the docs and understand the parameters.</p>
 </aside>
-<p>Three evenly distributed categories. What about the distrubtion of the petal widths? As with most things in nature, we might expect it to be somewhat normal.</p>
+<p>Three evenly distributed categories. What about the distribution of the petal widths? As with most things in nature, we might expect it to be somewhat normal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hist_petal_lengths</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">grid</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -739,10 +756,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_10_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_10_0.png" />
+<img alt="_images/sup_class_ex-descript_9_0.png" src="_images/sup_class_ex-descript_9_0.png" />
 </div>
 </div>
-<p>Not so normal. However, we are looking at all the petal lengths. Let’s look at a single type.</p>
+<p>Not so normal. However, we are looking at the petal lengths of all three types. So let’s look at a single type.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_typeA</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Iris-setosa&#39;</span><span class="p">]</span>
@@ -751,10 +768,11 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_12_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_12_0.png" />
+<img alt="_images/sup_class_ex-descript_11_0.png" src="_images/sup_class_ex-descript_11_0.png" />
 </div>
 </div>
-<p>Aesthetics are not assessed, bub Pandas visualizations are a bit limited compared to matplotlib. Below we get a much better picture of what’s going on, and we can clealry see the three different types.</p>
+<p>They don’t assess aesthetics, but Pandas’ visualizations are limited compared to others. Below we get a much better picture of what’s going on, and we can clearly see the three different types.</p>
+<p>A <strong>bar plot</strong> to visulaize distributions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -772,9 +790,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_14_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_14_0.png" />
+<img alt="_images/sup_class_ex-descript_13_0.png" src="_images/sup_class_ex-descript_13_0.png" />
 </div>
 </div>
+<p>A <strong>scatterplot</strong> to visualize correlations:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">fit_reg</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
@@ -785,9 +804,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_15_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_15_0.png" />
+<img alt="_images/sup_class_ex-descript_15_0.png" src="_images/sup_class_ex-descript_15_0.png" />
 </div>
 </div>
+<p>A <strong>correlogram</strong> to visualize distributions and correlations of and between multiple variables.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#correlogram</span>
@@ -797,10 +817,10 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/C964_usup_class_example-Copy1-checkpoint_16_0.png" src="_images/C964_usup_class_example-Copy1-checkpoint_16_0.png" />
+<img alt="_images/sup_class_ex-descript_17_0.png" src="_images/sup_class_ex-descript_17_0.png" />
 </div>
 </div>
-<p>Each images is a descriptive method, and each is a visualization. And here is a non-visual description if the data</p>
+<p>Each image is a descriptive method <em>and</em> a visualization (<span class="math notranslate nohighlight">\(\geq3\)</span> meets the requirements). And here are some non-visual descriptions of the data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
@@ -927,6 +947,7 @@ dtype: int64
 </div></div></div>
 </div>
 <p>Play around -<em>explore</em>.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

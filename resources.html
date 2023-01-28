@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Course Faculty" href="ci_page.html" />
@@ -120,17 +122,51 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_part_c.html">
    Task 2: Part C -the application
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       Data product Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -161,8 +197,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -182,11 +218,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sup_class_ex.html">
-   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -619,9 +650,8 @@ title="Print to PDF"
 <head>
     <base target="_blank">
 </head>
-<p>(resources:examples)</p>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
+<span id="resources-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
 <p><strong>Example A:</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf">task 1 ex. A</a></p></li>
@@ -632,6 +662,12 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf">task 2 ex. B</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf">task 2 ex. B</a> (part C not available)</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples found here are of actual passing tasks 1 and 2, <em>flaws and all</em>. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.</p>
+</div>
+<p id="resources-examples-archive"><strong>WGU Capstone Excellence Archive</strong></p>
+<p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. Therefore, don’t use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <a class="reference internal" href="#resources-examples"><span class="std std-ref">examples</span></a> above.</p>
 </section>
 <section id="task-1-resources">
 <span id="resources-task1"></span><h2>Task 1 Resources<a class="headerlink" href="#task-1-resources" title="Permalink to this headline">#</a></h2>

@@ -51,11 +51,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Example: Supervised Classification App" href="sup_class_ex.html" />
     <link rel="prev" title="BSCS, Software, and other Course Faculty" href="ci_other.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -122,17 +123,51 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_part_c.html">
    Task 2: Part C -the application
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       Data product Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -163,8 +198,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -184,11 +219,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sup_class_ex.html">
-   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -536,17 +566,17 @@ title="Print to PDF"
 <p>Open a windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator.</p>
 <p><strong>Install Jupyter-book</strong> which converts markdown and jupyter-notebook files into html.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5b2295f1-8eab-4992-8754-15f11ddb8cf3" name="fbe984c8-7c63-496f-bf76-aabf3b198d1b" type="radio">
-</input><label class="sd-tab-label" for="5b2295f1-8eab-4992-8754-15f11ddb8cf3">
+<input checked="checked" id="b0e39cc6-4620-4d5a-b04f-5c9b49541f3a" name="7e478738-01b2-4183-844c-8dfca2c5a5e0" type="radio">
+</input><label class="sd-tab-label" for="b0e39cc6-4620-4d5a-b04f-5c9b49541f3a">
 pip</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyter-book
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
 </div>
-<input id="e347946b-1c1b-4e40-8262-efbe2dbb650c" name="fbe984c8-7c63-496f-bf76-aabf3b198d1b" type="radio">
-</input><label class="sd-tab-label" for="e347946b-1c1b-4e40-8262-efbe2dbb650c">
+<input id="c876af0a-4015-49e9-9ced-6cb99bb6dea9" name="7e478738-01b2-4183-844c-8dfca2c5a5e0" type="radio">
+</input><label class="sd-tab-label" for="c876af0a-4015-49e9-9ced-6cb99bb6dea9">
 conda</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyter-book
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
 </div>
@@ -554,41 +584,41 @@ conda</label><div class="sd-tab-content docutils">
 <aside class="margin sidebar">
 <p class="sidebar-title">Pip in Conda</p>
 <p>Want to use pip and Anaconda?</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda pip
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>anaconda<span class="w"> </span>pip
 </pre></div>
 </div>
 <p>Now you can ‘pip’ in conda.</p>
 </aside>
 <p><strong>Install git</strong> (it should already be installed) so you can connect your local files to a GitHub repository.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="16a1d773-98cf-4bd1-8d8f-2fd5f85ede82" name="1ab289cb-bb4e-4eb9-913d-1fd70ee91dd4" type="radio">
-</input><label class="sd-tab-label" for="16a1d773-98cf-4bd1-8d8f-2fd5f85ede82">
+<input checked="checked" id="c843bcbf-6fbe-4693-b33e-0372a4e19bf1" name="c3c0d2c2-b2f3-4c7f-b020-6f6e863e03d3" type="radio">
+</input><label class="sd-tab-label" for="c843bcbf-6fbe-4693-b33e-0372a4e19bf1">
 pip</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install python-git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>python-git
 </pre></div>
 </div>
 </div>
-<input id="31188483-a25b-4e15-8142-730780216f05" name="1ab289cb-bb4e-4eb9-913d-1fd70ee91dd4" type="radio">
-</input><label class="sd-tab-label" for="31188483-a25b-4e15-8142-730780216f05">
+<input id="d2ac58cb-882f-4b53-ae63-9a1900e8c514" name="c3c0d2c2-b2f3-4c7f-b020-6f6e863e03d3" type="radio">
+</input><label class="sd-tab-label" for="d2ac58cb-882f-4b53-ae63-9a1900e8c514">
 conda</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c anaconda git
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>anaconda<span class="w"> </span>git
 </pre></div>
 </div>
 </div>
 </div>
 <p><strong>Install ghp-import</strong> which will post your HTML files from your GitHub repository to the web.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="fb7b144e-7ee9-4a76-9ab6-6bd757d5aed7" name="e41e9394-6291-4e7f-942b-45e90160af46" type="radio">
-</input><label class="sd-tab-label" for="fb7b144e-7ee9-4a76-9ab6-6bd757d5aed7">
+<input checked="checked" id="5b25fc4c-3122-450d-bb08-6aa622ff0253" name="733a87be-3e6c-4d60-b1f3-cd5d35565e0a" type="radio">
+</input><label class="sd-tab-label" for="5b25fc4c-3122-450d-bb08-6aa622ff0253">
 pip</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ghp-import
 </pre></div>
 </div>
 </div>
-<input id="35ee2049-1c61-4bed-bc7d-c17ef48eafb0" name="e41e9394-6291-4e7f-942b-45e90160af46" type="radio">
-</input><label class="sd-tab-label" for="35ee2049-1c61-4bed-bc7d-c17ef48eafb0">
+<input id="a1d9d3f7-6c38-4139-aa76-686b71a36131" name="733a87be-3e6c-4d60-b1f3-cd5d35565e0a" type="radio">
+</input><label class="sd-tab-label" for="a1d9d3f7-6c38-4139-aa76-686b71a36131">
 conda</label><div class="sd-tab-content docutils">
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge ghp-import
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>ghp-import
 </pre></div>
 </div>
 </div>
@@ -601,7 +631,7 @@ conda</label><div class="sd-tab-content docutils">
 <section id="step-3-create-a-jupyter-book">
 <h2>Step 3. Create a Jupyter-Book<a class="headerlink" href="#step-3-create-a-jupyter-book" title="Permalink to this headline">#</a></h2>
 <p>Create a sample book by going to the directory and running the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book create mynewbook/
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>create<span class="w"> </span>mynewbook/
 </pre></div>
 </div>
 <p>Where ‘mynewbook/’ is the name of the folder you want your jupyter-book and all its source files to live (it will create the folder).</p>
@@ -624,7 +654,7 @@ conda</label><div class="sd-tab-content docutils">
 <section id="step-5-turn-your-markdown-jupyter-files-into-html">
 <h2>Step 5. Turn your Markdown/Jupyter files into HTML.<a class="headerlink" href="#step-5-turn-your-markdown-jupyter-files-into-html" title="Permalink to this headline">#</a></h2>
 <p>This is why we need juptyer-book. Go to folder where your jupyter-book folder lives and type:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build mynewbook
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>mynewbook
 </pre></div>
 </div>
 <p>And that’s it. You now have the web files. After building, you’ll be provided with a local link. Copy and paste the link into your browser of choice to check it out.</p>
@@ -642,13 +672,13 @@ conda</label><div class="sd-tab-content docutils">
 <p class="sidebar-title">Jupyter Docs</p>
 <p>See the <a class="reference external" href="https://jupyterbook.org/en/stable/start/publish.html">jupyter-book documentation</a> for more details.</p>
 </aside>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> directorywhereyouwantittobe
-git clone https://github.com/&lt;my-org&gt;/&lt;my-repository-name&gt;
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>directorywhereyouwantittobe
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;my-org&gt;/&lt;my-repository-name&gt;
 </pre></div>
 </div>
 <p>For example,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> github_book_repo
-git clone https://github.com/ashejim/examplebook/
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>github_book_repo
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashejim/examplebook/
 </pre></div>
 </div>
 <p>Now copy your built Jupyter book files into this new folder.</p>
@@ -660,17 +690,17 @@ git clone https://github.com/ashejim/examplebook/
 </section>
 <section id="step-7-sync-your-local-repo-to-the-github-repoistory">
 <h2>Step 7. Sync your local repo to the GitHub repoistory.<a class="headerlink" href="#step-7-sync-your-local-repo-to-the-github-repoistory" title="Permalink to this headline">#</a></h2>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> directorywhereyouwantittobe/mynewbook
-git add ./*
-git commit -m <span class="s2">&quot;a message is optional, but helpful.&quot;</span>
-git push
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>directorywhereyouwantittobe/mynewbook
+git<span class="w"> </span>add<span class="w"> </span>./*
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;a message is optional, but helpful.&quot;</span>
+git<span class="w"> </span>push
 </pre></div>
 </div>
 </section>
 <section id="step-8-sync-your-book-to-a-gitpage">
 <h2>Step 8. Sync your book to a GitPage.<a class="headerlink" href="#step-8-sync-your-book-to-a-gitpage" title="Permalink to this headline">#</a></h2>
 <p>In the same folder:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f _build/html
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
 </pre></div>
 </div>
 <p>Wait a few minutes and go to:</p>
@@ -749,13 +779,6 @@ Hey, here’s a <em><strong>mistake.</strong></em></p>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">BSCS, Software, and other Course Faculty</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="sup_class_ex.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example: Supervised Classification App</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

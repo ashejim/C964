@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Task 2: Part C -the application" href="task2_part_c.html" />
@@ -120,17 +122,51 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_part_c.html">
    Task 2: Part C -the application
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       Data product Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -161,8 +197,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -182,11 +218,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sup_class_ex.html">
-   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -586,8 +617,8 @@ Sometimes solutions need to adapt to particular situations. That is, the algorit
 <section id="topic-summary-examples">
 <h4>Topic Summary Examples:<a class="headerlink" href="#topic-summary-examples" title="Permalink to this headline">#</a></h4>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="19129834-4787-4978-bed7-2a6e020a2520" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
-</input><label class="sd-tab-label" for="19129834-4787-4978-bed7-2a6e020a2520">
+<input checked="checked" id="0f85489d-1b63-4bdc-bd32-befb3c990c26" name="49d84336-2734-43e4-84fe-0b2c93e2ba6e" type="radio">
+</input><label class="sd-tab-label" for="0f85489d-1b63-4bdc-bd32-befb3c990c26">
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Petal dimensions and species of fifty <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
@@ -596,8 +627,8 @@ Example 1</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> <em>Grow Fast Ferilizer Inc.</em> needs to help customers identify their flowers.</p>
 </div></blockquote>
 </div>
-<input id="5c5e9df2-8ec4-4d49-9668-aa83d2e30197" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
-</input><label class="sd-tab-label" for="5c5e9df2-8ec4-4d49-9668-aa83d2e30197">
+<input id="7dfca9e3-9276-4e16-b271-016af990d5e1" name="49d84336-2734-43e4-84fe-0b2c93e2ba6e" type="radio">
+</input><label class="sd-tab-label" for="7dfca9e3-9276-4e16-b271-016af990d5e1">
 Example 2</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Housing data</p>
@@ -606,8 +637,8 @@ Example 2</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> The realty firm, We Sell em Fast!, needs a tool to estimate housing prices.</p>
 </div></blockquote>
 </div>
-<input id="45167b69-fd85-446b-95c0-a6056ce95b4e" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
-</input><label class="sd-tab-label" for="45167b69-fd85-446b-95c0-a6056ce95b4e">
+<input id="e8463dbb-429f-4c0a-b9cb-17cb2f1c98c9" name="49d84336-2734-43e4-84fe-0b2c93e2ba6e" type="radio">
+</input><label class="sd-tab-label" for="e8463dbb-429f-4c0a-b9cb-17cb2f1c98c9">
 Example 3</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Movies, e.g., budget, genre, starring actors, etc.</p>
@@ -616,8 +647,8 @@ Example 3</label><div class="sd-tab-content docutils">
 <p><strong>Organizational Need:</strong> The streaming service, <em>InterWebFlixs</em>, needs to help users pick a movie.</p>
 </div></blockquote>
 </div>
-<input id="9f6f9659-5013-44c6-b3bd-f0bea46c8936" name="8a25b116-e2c8-4d7f-8606-4f97db600a00" type="radio">
-</input><label class="sd-tab-label" for="9f6f9659-5013-44c6-b3bd-f0bea46c8936">
+<input id="fb4b1e6d-0664-4eb6-b718-be88782c09e2" name="49d84336-2734-43e4-84fe-0b2c93e2ba6e" type="radio">
+</input><label class="sd-tab-label" for="fb4b1e6d-0664-4eb6-b718-be88782c09e2">
 Example 4</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Images of dogs and cats.</p>
@@ -632,16 +663,16 @@ Example 4</label><div class="sd-tab-content docutils">
 <h4>Completed Examples<a class="headerlink" href="#completed-examples" title="Permalink to this headline">#</a></h4>
 <p>These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.</p>
 <div class="sd-tab-set docutils" id="task1-completedexamples">
-<input checked="checked" id="0d741c49-426f-4a25-b6ba-8ee2ccac09f6" name="ba00b404-e7f3-4aa4-b36b-f5efd5a6d39e" type="radio">
-</input><label class="sd-tab-label" for="0d741c49-426f-4a25-b6ba-8ee2ccac09f6">
+<input checked="checked" id="1ab0ec18-e2d7-4a8d-b958-9f4bb9d284fd" name="1b5634a2-9c97-48c4-b398-3b546a1e3ca9" type="radio">
+</input><label class="sd-tab-label" for="1ab0ec18-e2d7-4a8d-b958-9f4bb9d284fd">
 Completed Task 1 Ex. A</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb" /></a></p>
 </div></blockquote>
 <p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf">task 2 example A</a></p>
 </div>
-<input id="6f73d1a8-3e5e-4aee-bc51-d8ed9a450266" name="ba00b404-e7f3-4aa4-b36b-f5efd5a6d39e" type="radio">
-</input><label class="sd-tab-label" for="6f73d1a8-3e5e-4aee-bc51-d8ed9a450266">
+<input id="bf84eebc-9f5f-4f40-97e4-ee3fe19ec4df" name="1b5634a2-9c97-48c4-b398-3b546a1e3ca9" type="radio">
+</input><label class="sd-tab-label" for="bf84eebc-9f5f-4f40-97e4-ee3fe19ec4df">
 Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb" /></a></p>
