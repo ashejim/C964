@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Task 2: The Documentation" href="task2_doc.html" />
+    <link rel="next" title="Example: Supervised Classification App" href="sup_class_ex.html" />
     <link rel="prev" title="Task 1: Topic Approval" href="task1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -120,17 +120,51 @@ const thebe_selector_output = ".output, .cell_output"
    Task 1: Topic Approval
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Task 2: Part C -the application
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       Data product Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="task2_doc.html">
    Task 2: The Documentation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -161,8 +195,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -182,11 +216,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="github_page.html">
    Creating Your Own GitHub Webpage!
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="sup_class_ex.html">
-   Example: Supervised Classification App
   </a>
  </li>
 </ul>
@@ -479,7 +508,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <!-- hack to open links in new tab -->
+    <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
@@ -498,14 +527,14 @@ title="Print to PDF"
 <span id="task2c-appreqs"></span><h2>What does the application need to do?<a class="headerlink" href="#what-does-the-application-need-to-do" title="Permalink to this headline">#</a></h2>
 <p>Your app must help the user solve the organizational problem from <a class="reference internal" href="task1.html#task1"><span class="std std-ref">task 1</span></a> by doing the following:</p>
 <ol class="simple">
-<li><p>Use data to develop a machine learning model.</p></li>
+<li><p>Use data to develop a machine learning model. spelling mistake</p></li>
 <li><p>Apply the ML model to user-provided data.</p></li>
 <li><p>Provide visualizations (pictures; they can be presented in the app or document).</p></li>
 <li><p>Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.</p></li>
 </ol>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="590d4807-cc84-48ce-a951-e82da92b1671" name="9e9727ce-48de-46ed-ac26-0e1cb2157e34" type="radio">
-</input><label class="sd-tab-label" for="590d4807-cc84-48ce-a951-e82da92b1671">
+<input checked="checked" id="4735bd4f-00e0-4377-9f54-d7d470614ef2" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
+</input><label class="sd-tab-label" for="4735bd4f-00e0-4377-9f54-d7d470614ef2">
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone Python project which can predict Iris types.</p>
@@ -515,8 +544,8 @@ Example 1</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> Following detailed instructions via the console, the user can input flower dimensions, and the app returns a prediction.</p>
 </div></blockquote>
 </div>
-<input id="4ce803c0-a52f-4402-ba28-0f2a2dc74fbc" name="9e9727ce-48de-46ed-ac26-0e1cb2157e34" type="radio">
-</input><label class="sd-tab-label" for="4ce803c0-a52f-4402-ba28-0f2a2dc74fbc">
+<input id="1d604448-8e01-4a03-8469-09e58d9c0514" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
+</input><label class="sd-tab-label" for="1d604448-8e01-4a03-8469-09e58d9c0514">
 Example 2</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) predicting house prices.</p>
@@ -526,8 +555,8 @@ Example 2</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> Following detailed instructions via the Jupyter notebook file, the user can adjust widget sliders to get a price prediction.</p>
 </div></blockquote>
 </div>
-<input id="a93266f1-800d-420c-8fd6-f002d4eb5993" name="9e9727ce-48de-46ed-ac26-0e1cb2157e34" type="radio">
-</input><label class="sd-tab-label" for="a93266f1-800d-420c-8fd6-f002d4eb5993">
+<input id="b67bedeb-50fe-4f0c-af66-ceb2b0d2eabc" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
+</input><label class="sd-tab-label" for="b67bedeb-50fe-4f0c-af66-ceb2b0d2eabc">
 Example 3</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A web app providing movie recommendations.</p>
@@ -537,8 +566,8 @@ Example 3</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> returns five recommendations for a user typed movie.</p>
 </div></blockquote>
 </div>
-<input id="fe181936-08de-4bdb-b7a8-2de63b8b8fd3" name="9e9727ce-48de-46ed-ac26-0e1cb2157e34" type="radio">
-</input><label class="sd-tab-label" for="fe181936-08de-4bdb-b7a8-2de63b8b8fd3">
+<input id="5182bab6-1253-4b5d-973a-e53eefe95bc8" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
+</input><label class="sd-tab-label" for="5182bab6-1253-4b5d-973a-e53eefe95bc8">
 Example 4</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
@@ -772,6 +801,8 @@ A suggested path:</p>
 <p id="task2c-faq-linux"><strong>I only have a Linux (or Mac) machine. Will evaluators be able to run my code?”</strong></p>
 <p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsytem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor.</p>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -808,10 +839,10 @@ A suggested path:</p>
             <p class="prev-next-title">Task 1: Topic Approval</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="task2_doc.html" title="next page">
+    <a class='right-next' id="next-link" href="sup_class_ex.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Task 2: The Documentation</p>
+        <p class="prev-next-title">Example: Supervised Classification App</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

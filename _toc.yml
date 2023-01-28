@@ -6,6 +6,14 @@ root: intro
 chapters:
 - file: task1
 - file: task2_part_c
+  # - file: examples? or place links in prev section
+  sections:
+  - file: sup_class_ex
+    sections:
+    - file: sup_class_ex-process
+    - file: sup_class_ex-develop
+    - file: sup_class_ex-accuracy
+    - file: sup_class_ex-ui
 - file: task2_doc
   sections:
   - file: task2_doc_d
@@ -17,5 +25,4 @@ chapters:
   - file: ci_c964
   - file: ci_other
 - file: github_page
-- file: sup_class_ex
 # - file: ML_page

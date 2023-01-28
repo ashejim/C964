@@ -1,4 +1,4 @@
-<!-- hack to open links in new tab -->
+  <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
@@ -21,7 +21,7 @@ An application (app) is simply software that performs specific tasks.
 
 Your app must help the user solve the organizational problem from [task 1](task1) by doing the following:  
 
-1. Use data to develop a machine learning model.
+1. Use data to develop a machine learning model. spelling mistake
 
 2. Apply the ML model to user-provided data.   
 
@@ -33,9 +33,9 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````{tab-item} Example 1
 >**The App:** A standalone Python project which can predict Iris types.
 > 
->**Data &rarr; ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an SVN classification model.
+>**Data → ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an SVN classification model.
 >
-> **New data &rarr; ML model &rarr; prediction:** Using new flower dimensions, the model can predict the Iris type. 
+> **New data → ML model → prediction:** Using new flower dimensions, the model can predict the Iris type. 
 >
 > **Visualizations:** Histograms showing distributions of different flower features and a confusion matrix illustrating the accuracy of the classification model.
 >  
@@ -44,9 +44,9 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````{tab-item} Example 2
 > **The App:** A standalone [Jupyter Notebook](https://jupyter.org) file (.ipynb) predicting house prices.
 >
-> **Data &rarr; ML model:** Labeled housing data trains a multi-linear regression model to predict house prices.
+> **Data → ML model:** Labeled housing data trains a multi-linear regression model to predict house prices.
 >
-> **New data &rarr; ML model &rarr; prediction:** Using unseen house data, the model predicts the house's price. 
+> **New data → ML model → prediction:** Using unseen house data, the model predicts the house's price. 
 >
 > **Visualizations:** Histograms showing distributions of data features and scatterplots demonstrating data correlations.  
 >
@@ -55,9 +55,9 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````{tab-item} Example 3
 > **The App:** A web app providing movie recommendations.
 >
-> **Data &rarr; ML model:** Cosine similarity provides a similarity score between any two movies. 
+> **Data → ML model:** Cosine similarity provides a similarity score between any two movies. 
 >
-> **User data &rarr; ML model &rarr; recommendation:** Using a user-provided movie, the five most similar movies are returned. 
+> **User data → ML model → recommendation:** Using a user-provided movie, the five most similar movies are returned. 
 >
 > **Visualizations:** Histograms showing distributions of movie features and samples of Cosine Similarity matrices.  
 >
@@ -66,9 +66,9 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ````{tab-item} Example 4
 > **The App:** A hosted Jupyter notebook identifies images as a cat or dog.  
 >
-> **Data &rarr; ML model:** Labeled images are used to [train a neural network model to classify images](https://www.tensorflow.org/tutorials/images/classification) of dogs and cats.
+> **Data → ML model:** Labeled images are used to [train a neural network model to classify images](https://www.tensorflow.org/tutorials/images/classification) of dogs and cats.
 >
-> **New data &rarr; ML model &rarr; prediction:** Loading an image from a hosted folder, the model classifies it as a dog or cat. 
+> **New data → ML model → prediction:** Loading an image from a hosted folder, the model classifies it as a dog or cat. 
 >
 > **Visualizations:** Graphs of training and validation accuracy and loss, a confusion matrix showing model accuracy, and image examples.
 >
@@ -269,7 +269,7 @@ Add [three images](task2c:visualreqs), and you have a passing part C after step 
 
 Jupyter notebook is a great place to start for the application's front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but you can also progressively develop them into a more polished product. For example, a development path might look like the following:
 
-- Python IDE &rarr; Jupyter notebook (.ipynb) &rarr; notebook with widgets &rarr; hosted notebook with widgets &rarr; web app. 
+- Python IDE → Jupyter notebook (.ipynb) → notebook with widgets → hosted notebook with widgets → web app. 
 
 Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) is a great choice. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. 
 
@@ -347,7 +347,7 @@ You can use whatever you like. However, we recommend using Python and the [sciki
 
 A development path might look like the following:
 
-- Python IDE &rarr; Jupyter notebook &rarr; notebook with widgets &rarr; hosted notebook with widgets &rarr; web app. 
+- Python IDE → Jupyter notebook → notebook with widgets → hosted notebook with widgets → web app. 
 
 Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C. 
 
@@ -366,3 +366,4 @@ As you might guess, this is a common issue. But evalutors only need *access* to 
 **I only have a Linux (or Mac) machine. Will evaluators be able to run my code?"**
 
 Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsytem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. 
+  

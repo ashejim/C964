@@ -6,7 +6,7 @@
     <base target="_blank">
 </head>
 
-(resources:examples)
+(resources:examples)=
 ## Examples
 
 **Example A:** 
@@ -20,6 +20,15 @@
 - [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
 
 - [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
+
+```{note}
+The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
+```
+
+(resources:examples:archive)=
+**WGU Capstone Excellence Archive**
+
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 (resources:task1)=
 ## Task 1 Resources
