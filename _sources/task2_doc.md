@@ -39,7 +39,7 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 
    <input type="checkbox"> The code runs without errors.
 
-   <input type="checkbox"> Data is used to create an ML model.
+   <input type="checkbox"> Data is used to creating an ML model.
 
    <input type="checkbox"> The user input can provide input and the ML model is applied to that input.
 
@@ -72,7 +72,7 @@ Sections are assessed independently against the rubric requirements, i.e., when 
 Grammar and sources are the *most common* reason for returned submissions! However, even minor grammatical errors can prevent a submission from passing.
 :::
 
-After focusing on the content, check your grammar using [Grammarly.com](https://www.grammarly.com/) ![](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
+After focusing on the content, check your grammar using [Grammarly.com](https://www.grammarly.com/) ![grmmarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
 
 For sources, you should follow [APA guidelines](https://apastyle.apa.org/style-grammar-guidelines). Avoid errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
 
@@ -82,6 +82,7 @@ Students have reported missed mistakes when using the Google doc Grammarly exten
 
 (task2doc:faq)=
 ## FAQ
+
 **Are there length requirements for the documentation?**
 
 No. What you see in the examples and template are just guidelines. The individual evaluator determines what qualifies as "sufficient detail," which further varies depending on the project and writing style. If you feel you've met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details. In the latter case, you can then focus on revising the more narrow scope as directed by the evaluator's comments, which is generally more efficient than overworking the entire project.
@@ -92,12 +93,12 @@ If you have specific questions or concerns -yes. However, in most cases, it's be
 
 You have *unlimited* submissions but limited time. And, typically this is the best and most efficient approach. 
 
-**I only have a Linux (or Mac) machine. Will evaluators be able to run my code?"**
+**I only have a Linux or Mac machine. Will evaluators be able to run my code?"**
 
 Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual [machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).
 
 **How many submission attempts do I have?**
-You have unlimited submissions (as with all WGU performance assessments). Furthermore, a project requiring multiple submissions is not precluded from being given an excellence award. However, do attempt to fully meet *each* requirement as submissions falling significantly short of the minimum requirements may be *locked* from further submissions without instructor approval. Moreover, such submissions do not receive meaningful evaluator comments.   
+You have unlimited submissions (as with all WGU performance assessments). Furthermore, a project requiring multiple submissions is not precluded from being given an excellence award. However, do attempt to fully meet *each* requirement as submissions falling significantly short of the minimum requirements may be *locked* from further submissions without instructor approval. Moreover, such submissions do not receive meaningful evaluator comments.
 
 <!-- **I can't find sources for section B, *Other Works*. What can I do?**
 You are likely overinterpreting what's required. Rarely are submissions sent back because cited works are unsuitable. You can use referenceable work created by a professional which can be *related* to your project -it does not need to align with your project entirely. For example, a cloud migration project might include articles about AWS, security advantages, cost advantages, etc.  -->
@@ -112,13 +113,14 @@ It indicates they could not find a matching in-text citation for every source on
 You can use anything you've written for C964, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.
 
 Here are some points to consider:
+
 - C951.3 is just a written project, typically around five pages (I'm guessing; ask your C951 instructor), and can be completed in a single afternoon. Comparatively, C964 requires a working machine learning application and accompanying documentation, typically around 20 pages. 
 
 - C951.3 only relates to parts A and B of C964.2. These parts are just a framework for communicating the project to a general audience and almost always pass. Furthermore, they'll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
 - Rewriting content C951.3 for a different C964 topic will take little additional work.
 - As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
 - Trying to comprehend two projects at once is just more difficult. 
- 
+
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be a good option.
 
 (task1:faq:confusingrubric)=

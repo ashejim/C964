@@ -23,7 +23,7 @@ Your app must help the user solve the organizational problem from [task 1](task1
 
 1. Use data to develop a machine learning model. spelling mistake
 
-2. Apply the ML model to user-provided data.   
+2. Apply the ML model to user-provided data.
 
 3. Provide visualizations (pictures; they can be presented in the app or document).
 
@@ -209,10 +209,10 @@ Clustering
 Playing the role of the client, the evaluator will follow your [user guide](task2doc:userguide) in the documentation. To meet this requirement they should be able to do the following:
 
 1. **Successfully run your application (user-friendly).** Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions. They can be instructed to download and install necessary dependencies or software.
-   
+
 2. **Use your application to solve the proposed problem as intended (interface).** Most often the interface requirement is met by having some way for the user to provide input. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.
 
-At a minimum, the user interface must provide a means to apply user-input. Any method by which you can provide instructions is acceptable. For example, 
+At a minimum, the interface must provide means to provide user input and receive feedback. Any method by which you can provide instructions is acceptable. For example,`
 
 :::{example}
 example hi
@@ -220,14 +220,18 @@ example hi
 
 > ***...***
 > ***Step 10:*** *Next, the user should type the following command into line 57:*
+>
 >```python
 >mymodel.predict([[temperature, humidity]])
 >```
->*in place of 'temperature' and 'humidity', the user should type the temperature in Fahrenheit and humidity as a percentage for which they'd like a prediction, e.g., *
+>
+>*in place of 'temperature' and 'humidity', the user should type the temperature in Fahrenheit and humidity as a percentage for which they'd like a prediction, e.g.,*
+>
 >```python
 >mymodel.predict([[75, 24.5]])
 >```
->*for a temperature of 75 degrees and humidity of 24.5%. *
+>
+>*for a temperature of 75 degrees and humidity of 24.5%.*
 >
 > ***Step 11*** *Run the code by pressing the 'Run' button in the Jupyter Notebook menu or pressing 'Crtl+Enter' to the left of line 57.*
 > ***...***
@@ -244,7 +248,7 @@ Time to get to work.
 ```
 ````
 
-````{warning} 
+````{warning}
 Following tutorials/examples is a great way to learn. But when it comes to writing your own code, *don't [copy, paste, and **pray**](https://www.youtube.com/watch?v=-wtzy1aqS9Q)*. Instead, understand what it's doing for each line of code and check that it runs as intended. Investing in the extra time will make you a better computer scientist and could save many frustrating hours. 
 ```{image} ./url_images/code_quality.png
 :height: 150
@@ -252,13 +256,13 @@ Following tutorials/examples is a great way to learn. But when it comes to writi
 ```
 ````
 
-Start *slow*. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment. 
+Start *slow*. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.
 
 **Start small and build up**
 A suggested path:
 
 1. Import data and convert it to a (pandas) data frame.
-2. Explore the data and create some images. 
+2. Explore the data and create some images.
 3. Determine which ML algorithm to start with and choose a supporting library.
 4. Read the library's documentation and understand the expected data format and usage.
 5. Apply the algorithm to the data, e.g., train it, and create a model. 
@@ -267,9 +271,9 @@ A suggested path:
 
 Add [three images](task2c:visualreqs), and you have a passing part C after step 7. Then, as time allows, you can go back to step 2, improving the performance and presentation of your application until you are satisfied. 
 
-Jupyter notebook is a great place to start for the application's front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but you can also progressively develop them into a more polished product. For example, a development path might look like the following:
+Jupyter notebook is a great place to start for the application's front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together. Moreover, they also be progressively developed into a more polished product. For example, a development path might look like the following:
 
-- Python IDE → Jupyter notebook (.ipynb) → notebook with widgets → hosted notebook with widgets → web app. 
+- Python IDE → Jupyter notebook (.ipynb) → notebook with widgets → hosted notebook with widgets → web app.
 
 Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) is a great choice. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. 
 
@@ -319,26 +323,26 @@ No, not unless it's an entirely different topic. Minor changes from task 1 to ta
 
 **How many attempts are allowed for each task?**
 
-You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. 
+You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.
 
 **What is a descriptive method?**
 
-Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)   
+Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive).
 
 **What is a non-descriptive method?**
 
-Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above. 
+Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.
 
 (task1:faq:whatisml)=
 **What is machine learning?**
 
-That depends on who you ask! But for this project, it is an algorithm applied to data. 
+That depends on who you ask! But for this project, it is an algorithm applied to data.
 
 For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it's used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.
 
 **Can I use libraries outside the standard (Python, Java, etc.) installation?**
 
-Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.   
+Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.
 
 
 **What language, libraries, and platforms should I use?**
@@ -357,13 +361,12 @@ No, a GUI is *not* required. Your app must be usable by the "client" to solve th
 
 <!-- TODO add to task D or polish up? -->
 (task2c:faq:limit)=
-**My project exceeeds the 200mb limit. How can I submit it?**
+**My project **exceeds** the 200mb limit. How can I submit it?**
 
-As you might guess, this is a common issue. But evalutors only need *access* to everything. Access to large files can be provided with a drop box link (say in your Google drive) -don't forget to set the share settings so they can access it!
+As you might guess, this is a common issue. But evaluators only need *access* to everything. Access to large files can be provided with a dropbox link (say in your Google drive) -don't forget to set the share settings so they can access it!
 
 %%also in doc FAQ
 (task2c:faq:linux)=
 **I only have a Linux (or Mac) machine. Will evaluators be able to run my code?"**
 
-Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsytem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. 
-  
+Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor.

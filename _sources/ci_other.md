@@ -12,7 +12,7 @@ Faculty not assigned to you, in particular non-C964 faculty,  are happy to help 
 (ci_other:guidelines)=
 ## Better questions get better answers.
 
-The fix might require understanding several intertwined layers, of your code structure, the language, libraries, or data. You've already spent hours working on it. Don't expect someone else to quickly diagnose and fix the issue from a quick live code section or a series of screenshots. Remember, asking for help means asking for someone's time. Faculty on this page enjoy helping students (they've volunteered for the additional work), but you need to make it as easy for them to do so.         
+The fix might need an understanding of several intertwined layers, of your code structure, the language, libraries, or data. You've already spent hours working on it. Don't expect someone else to quickly diagnose and fix the issue from a quick live code section or a series of screenshots. Remember, asking for help means asking for someone's time. Faculty on this page enjoy helping students (they've volunteered for the additional work), but you need to make it as easy for them to do so.
 
 **Coding-related questions should be emailed following these guidelines:**
 - Clearly state the problem you are trying to fix. 
@@ -74,7 +74,7 @@ Dr. James Ashe is a dedicated maths, computer science, and statistics teacher wi
 - Debugging Java and Python
 - Data Analytics
 
-Amy has been with WGU since January of 2015.  Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that.  She has a BS from Penn State University in Computer Science, and two Masters Degrees, both in Computer Science. She also has a Ph.D. in Information Systems from Nova Southeastern University. She is currently working on a Masters of Cybersecurity and Information Assurance from WGU. Her interests include Norway and its culture and language, reading fantasy and science fiction, playing board games, and loving on her dog and cats.
+Amy has been with WGU since January of 2015.  Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that.  She has a BS from Penn State University in Computer Science, and two Masters's Degrees, both in Computer Science. She also has a Ph.D. in Information Systems from Nova Southeastern University. She is currently working on an MS in Cybersecurity and Information Assurance from WGU. Her interests include Norway and its culture and language, reading fantasy and science fiction, playing board games, and loving her dog and cats.
 
 ## Mark Denchy, PhD
 
@@ -93,7 +93,7 @@ Amy has been with WGU since January of 2015.  Before joining WGU, she worked as 
 - Debugging Java and Python
 - Data Analytics
 
-Holding bachelor and master’s degrees in Business Administration and Economic Leadership, Mark has enjoyed teaching as an adjunct professor for the past six years, covering Computer Science and Business-related courses at both the undergraduate and graduate levels. Currently, Mark is working on his Ph.D. in Information Systems with a focus on Internet of Things (IoT) device interaction.
+Holding bachelor's and master’s degrees in Business Administration and Economic Leadership, Mark has enjoyed teaching as an adjunct professor for the past six years, covering Computer Science and Business-related courses at both the undergraduate and graduate levels. Currently, Mark is working on his Ph.D. in Information Systems with a focus on Internet of Things (IoT) device interaction.
 
 Mark comes to WGU with a global background spanning thirty years in commercial software engineering and currently leading the Software Modernization efforts for the top Pharmaceutical Automation company worldwide. He is also a certified ScrumMaster.
 

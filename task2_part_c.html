@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Example: Supervised Classification App" href="sup_class_ex.html" />
@@ -533,8 +535,8 @@ title="Print to PDF"
 <li><p>Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.</p></li>
 </ol>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="4735bd4f-00e0-4377-9f54-d7d470614ef2" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
-</input><label class="sd-tab-label" for="4735bd4f-00e0-4377-9f54-d7d470614ef2">
+<input checked="checked" id="ddce8ee0-a7a6-4959-ae65-dea9681e5e02" name="f9482f8a-98e4-42f7-8cdf-db0ec818b2e4" type="radio">
+</input><label class="sd-tab-label" for="ddce8ee0-a7a6-4959-ae65-dea9681e5e02">
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone Python project which can predict Iris types.</p>
@@ -544,8 +546,8 @@ Example 1</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> Following detailed instructions via the console, the user can input flower dimensions, and the app returns a prediction.</p>
 </div></blockquote>
 </div>
-<input id="1d604448-8e01-4a03-8469-09e58d9c0514" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
-</input><label class="sd-tab-label" for="1d604448-8e01-4a03-8469-09e58d9c0514">
+<input id="1188d1f4-1b80-4ce3-bb4b-b2dc6b0f7590" name="f9482f8a-98e4-42f7-8cdf-db0ec818b2e4" type="radio">
+</input><label class="sd-tab-label" for="1188d1f4-1b80-4ce3-bb4b-b2dc6b0f7590">
 Example 2</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) predicting house prices.</p>
@@ -555,8 +557,8 @@ Example 2</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> Following detailed instructions via the Jupyter notebook file, the user can adjust widget sliders to get a price prediction.</p>
 </div></blockquote>
 </div>
-<input id="b67bedeb-50fe-4f0c-af66-ceb2b0d2eabc" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
-</input><label class="sd-tab-label" for="b67bedeb-50fe-4f0c-af66-ceb2b0d2eabc">
+<input id="93dc4d11-b543-437c-82df-c9f7917c7f8a" name="f9482f8a-98e4-42f7-8cdf-db0ec818b2e4" type="radio">
+</input><label class="sd-tab-label" for="93dc4d11-b543-437c-82df-c9f7917c7f8a">
 Example 3</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A web app providing movie recommendations.</p>
@@ -566,8 +568,8 @@ Example 3</label><div class="sd-tab-content docutils">
 <p><strong>User interface:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> returns five recommendations for a user typed movie.</p>
 </div></blockquote>
 </div>
-<input id="5182bab6-1253-4b5d-973a-e53eefe95bc8" name="55c0bfb1-e554-4ca2-bf30-6373ef713315" type="radio">
-</input><label class="sd-tab-label" for="5182bab6-1253-4b5d-973a-e53eefe95bc8">
+<input id="e7be579d-741a-43c2-a96d-0740fce51038" name="f9482f8a-98e4-42f7-8cdf-db0ec818b2e4" type="radio">
+</input><label class="sd-tab-label" for="e7be579d-741a-43c2-a96d-0740fce51038">
 Example 4</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
@@ -697,18 +699,18 @@ Example 4</label><div class="sd-tab-content docutils">
 <li><p><strong>Successfully run your application (user-friendly).</strong> Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions. They can be instructed to download and install necessary dependencies or software.</p></li>
 <li><p><strong>Use your application to solve the proposed problem as intended (interface).</strong> Most often the interface requirement is met by having some way for the user to provide input. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.</p></li>
 </ol>
-<p>At a minimum, the user interface must provide a means to apply user-input. Any method by which you can provide instructions is acceptable. For example,</p>
+<p>At a minimum, the interface must provide means to provide user input and receive feedback. Any method by which you can provide instructions is acceptable. For example,`</p>
 <blockquote>
 <div><p><em><strong>…</strong></em>
 <em><strong>Step 10:</strong></em> <em>Next, the user should type the following command into line 57:</em></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mymodel</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="n">temperature</span><span class="p">,</span> <span class="n">humidity</span><span class="p">]])</span>
 </pre></div>
 </div>
-<p>*in place of ‘temperature’ and ‘humidity’, the user should type the temperature in Fahrenheit and humidity as a percentage for which they’d like a prediction, e.g., *</p>
+<p><em>in place of ‘temperature’ and ‘humidity’, the user should type the temperature in Fahrenheit and humidity as a percentage for which they’d like a prediction, e.g.,</em></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mymodel</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">75</span><span class="p">,</span> <span class="mf">24.5</span><span class="p">]])</span>
 </pre></div>
 </div>
-<p>*for a temperature of 75 degrees and humidity of 24.5%. *</p>
+<p><em>for a temperature of 75 degrees and humidity of 24.5%.</em></p>
 <p><em><strong>Step 11</strong></em> <em>Run the code by pressing the ‘Run’ button in the Jupyter Notebook menu or pressing ‘Crtl+Enter’ to the left of line 57.</em>
 <em><strong>…</strong></em></p>
 </div></blockquote>
@@ -739,7 +741,7 @@ A suggested path:</p>
 <li><p>Create a procedure for the user to apply the model, e.g., provide input.</p></li>
 </ol>
 <p>Add <a class="reference internal" href="task2_part_c-DESKTOP-4IBEDLS.html#task2c-visualreqs"><span class="std std-ref">three images</span></a>, and you have a passing part C after step 7. Then, as time allows, you can go back to step 2, improving the performance and presentation of your application until you are satisfied.</p>
-<p>Jupyter notebook is a great place to start for the application’s front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but you can also progressively develop them into a more polished product. For example, a development path might look like the following:</p>
+<p>Jupyter notebook is a great place to start for the application’s front end. Passing applications often include only the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together. Moreover, they also be progressively developed into a more polished product. For example, a development path might look like the following:</p>
 <ul class="simple">
 <li><p>Python IDE → Jupyter notebook (.ipynb) → notebook with widgets → hosted notebook with widgets → web app.</p></li>
 </ul>
@@ -778,7 +780,7 @@ A suggested path:</p>
 <p><strong>How many attempts are allowed for each task?</strong></p>
 <p>You have <em>unlimited</em> attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.</p>
 <p><strong>What is a descriptive method?</strong></p>
-<p>Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)</p>
+<p>Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive).</p>
 <p><strong>What is a non-descriptive method?</strong></p>
 <p>Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.</p>
 <p id="task1-faq-whatisml"><strong>What is machine learning?</strong></p>
@@ -796,10 +798,10 @@ A suggested path:</p>
 <p><strong>What sort of user interface do I need? Do I need a GUI?</strong></p>
 <p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the “client,” following your <span class="xref myst">user guide</span>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.</p>
 <!-- TODO add to task D or polish up? -->
-<p id="task2c-faq-limit"><strong>My project exceeeds the 200mb limit. How can I submit it?</strong></p>
-<p>As you might guess, this is a common issue. But evalutors only need <em>access</em> to everything. Access to large files can be provided with a drop box link (say in your Google drive) -don’t forget to set the share settings so they can access it!</p>
+<p id="task2c-faq-limit"><strong>My project <strong>exceeds</strong> the 200mb limit. How can I submit it?</strong></p>
+<p>As you might guess, this is a common issue. But evaluators only need <em>access</em> to everything. Access to large files can be provided with a dropbox link (say in your Google drive) -don’t forget to set the share settings so they can access it!</p>
 <p id="task2c-faq-linux"><strong>I only have a Linux (or Mac) machine. Will evaluators be able to run my code?”</strong></p>
-<p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsytem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor.</p>
+<p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, a remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
