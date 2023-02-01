@@ -11,8 +11,8 @@
 # This will be a simple example. Simple data. Simple model. Simple interface. However, it does demonstrate the minimum requirements for [part C](task2c). We'll also show how things can progressively be improved in [part 2], building on the *working* code. Simple is a great place to start -scaling up is typically easier than going in the other direction. 
 # 
 # <p float="center">
-#   <img src="./url_images/iris_dim.png" height="250" />
-#   <img src="./url_images/plot_iris_svc.png" height="250" /> 
+#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/iris_dim.png' height="250" />
+#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/plot_iris_svc.png' height="250" /> 
 # </p>
 # 
 # Let's look at the famous [Fisher's Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set): 
