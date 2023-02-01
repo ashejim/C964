@@ -47,7 +47,7 @@ space = "\xa0" * 10 #space between columns
 display_html(X_train_styler._repr_html_()+ space  + y_train_styler._repr_html_(), raw=True)
 
 
-# Read the [docs](sklearn_link)! By default *train_test_split*, "randomly" splits the sets. Setting the seed (or state) controls the experiments. See [should you use a random seed](https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models).
+# Read the [docs](sklearn_link)! By default *train_test_split*, "randomly" splits the sets. Setting the seed (or state) controls the experiments. See [should you use a random seed?](https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models).
 # 
 # We can now train a model using the independent (usually denoted 'X') and dependent variables (usually denoted 'y') from the training data.
 

@@ -508,13 +508,13 @@ title="Print to PDF"
   <section id="accuracy-analysis-testing">
 <h1>Accuracy Analysis (testing)<a class="headerlink" href="#accuracy-analysis-testing" title="Permalink to this headline">#</a></h1>
 <p>The metric for measuring a classification model’s accuracy is straightforward.</p>
-<p>Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>. Again, we’ll keep things simple and use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">ratio of correct to total predictions</a>:</p>
+<p>Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>. Again, we’ll keep things simple and use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:</p>
 <div class="math notranslate nohighlight">
 \[\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We&#39;ll import libraires as needed, but when submitting, having them all at the top is best practice</span>
-<span class="c1">#Here&#39;s the minimum code needed from previsou sections. </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is best practice</span>
+<span class="c1">#Here&#39;s the minimum code needed from previous sections. </span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -591,7 +591,7 @@ title="Print to PDF"
 <img alt="_images/sup_class-accuracy_6_0.png" src="_images/sup_class-accuracy_6_0.png" />
 </div>
 </div>
-<p>94%, which still seems fairly good ([but what is “good” accuracy?](TODO add link), but if selecting the test data randomly (try ‘random_state=42’), accuracy may actually <em>improve</em> on the test data because the set is relatively small and the model fairly accurate. Using these results, the model can be further refined. However, continually tweaking parameters according to the test data results means we are back to studying from the answers, i.e., reintroducing the risk of overfitting. To deal with this, a <em>third set</em> can be withheld, called a “validation set,” to analyze the final results.</p>
+<p>94%, which still seems fairly good ([but what is “good” accuracy?](TODO add link), but if selecting the test data randomly (try ‘random_state=42’), accuracy may <em>improve</em> on the test data because the set is relatively small and the model fairly accurate. Using these results, the model can be further refined. However, continually tweaking parameters according to the test data results means we are back to studying from the answers, i.e., reintroducing the risk of overfitting. To deal with this, a <em>third set</em> can be withheld, called a “validation set,” to analyze the final results.</p>
 <p>But Partitioning available data into three sets reduces the available data for training the model, making results more dependent on the random selection of training, testing, and validation sets. <a class="reference external" href="https://scikit-learn.org/stable/modules/cross_validation.html">Cross-validation</a> addresses this issue by resampling the data. Again, this is optional but could be very useful, particularly for small data sets.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

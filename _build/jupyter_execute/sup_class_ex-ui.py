@@ -58,9 +58,9 @@ print(svm_model.predict([[5,4,1,.5]]))
 # ### User inputs from Widget text boxes & buttons
 # 
 # Using Jupyter Widgets, a more user-friendly (and less error-prone) interface can be implemented. 
-# <!-- TODO ADD CONDA/PIP install instuctions -->
+# <!-- TODO ADD CONDA/PIP install instructions -->
 # 
-# Recall, the feaure names:
+# Recall, the feature names:
 
 # In[3]:
 
@@ -91,7 +91,7 @@ def on_click_predict(b):
     button_ouput.value='Prediction = '+ str(prediciton[0])
 button_predict.on_click(on_click_predict)
 
-#Displays the text boxes and button inside a VBox 
+#Displays the text boxes and buttons inside a VBox 
 vb=widgets.VBox([sl_widget, sw_widget, pl_widget, pw_widget, button_predict,button_ouput])
 print('\033[1m' + 'Enter values in cm and make a prediction' + '\033[0m')
 display(vb)
@@ -106,11 +106,11 @@ display(vb)
 # 
 # Sliders provide a user-friendly experience that can easily be modified to control input range and increments. While sliders might not be the best choice here (text entry might be easier for selecting precise values), we'll present an example as, in many cases, sliders work great. 
 # 
-# Implementation is almost identical to that of text entry. Reviewing the [data's statistics](sup_calls_ex:descriptive:describe), we set the sliders' ranges to capture approxiamtely 95% of the flower's parameter values:
+# Implementation is almost identical to that of text entry. Reviewing the [data's statistics](sup_calls_ex:descriptive:describe), we set the sliders' ranges to capture approximately 95% of the flower's parameter values:
 # 
 # $\text{range}= \text{mean)\pm 2(\text{standard deviation})$
 # 
-# Assuming it's normally distributed (it's close enough). Capturing 99.7% of the daya using 3 standard deviations might've been better -but you get the idea. 
+# Assuming it's normally distributed (it's close enough). Capturing 99.7% of the data using 3 standard deviations might've been better -but you get the idea. 
 # 
 # For example, 
 # 
@@ -162,7 +162,7 @@ print('\033[1m' + 'Enter parameter values (in cm) and make a prediction:' + '\03
 display(vb)
 
 
-# To automatically update values from a Widget, see [get the current value of a widget](https://discourse.jupyter.org/t/is-it-possible-to-get-the-current-value-of-a-widget-slider-from-a-function-without-using-multithreading/15524) and [automatically run code after altering widget](https://stackoverflow.com/questions/54412449/ipywidgets-automatically-update-variable-and-run-code-after-altering-widget-val#:~:text=import%20ipywidgets%20as%20widgets%20class%20Updated:%20def%20__init__,(v):%20update_class.update%20(v)%20slider.observe%20(on_change,%20names='value')%20display%20(slider)).
+# To automatically update values from a Widget, see [get the current value of a widget](https://discourse.jupyter.org/t/is-it-possible-to-get-the-current-value-of-a-widget-slider-from-a-function-without-using-multithreading/15524) and [automatically run code after altering widgets](https://stackoverflow.com/questions/54412449/ipywidgets-automatically-update-variable-and-run-code-after-altering-widget-val#:~:text=import%20ipywidgets%20as%20widgets%20class%20Updated:%20def%20__init__,(v):%20update_class.update%20(v)%20slider.observe%20(on_change,%20names='value')%20display%20(slider)).
 # 
 # ### Other Input Methods
 # 

@@ -3,13 +3,12 @@
 
 # # Example: Supervised Classification App
 # 
-# Supervised classification fits the project requirments well, and is also a good place to start. The nature of your Data and organizational need dictate which methods you can use. So what type of data do we need? 
+# Supervised classification fits the project requirements well, and is also a good place to start. The nature of your Data and organizational needs dictate which methods you can use. So what type of data do we need? 
 # 
 # - One of those features is the category you want to predict (the dependent variable).
-# - At least one other features (the independent variable(s)).
+# - At least one other feature (the independent variable(s)).
 # 
-# 
-# This will be a simple example. Simple data. Simple model. Simple interface. However, it does demonstrate the minimum requirements for [part C](task2c). We'll also show how things can progressively be improved in a [part 2], building on working code. Simple is a great place to start -scaling up is typically easier than going in the other direction. 
+# This will be a simple example. Simple data. Simple model. Simple interface. However, it does demonstrate the minimum requirements for [part C](task2c). We'll also show how things can progressively be improved in [part 2], building on the *working* code. Simple is a great place to start -scaling up is typically easier than going in the other direction. 
 # 
 # <p float="center">
 #   <img src="./url_images/iris_dim.png" height="250" />
@@ -21,7 +20,7 @@
 # In[1]:
 
 
-#We'll import libraires as needed, but when submitting, 
+#We'll import libraries as needed, but when submitting, 
 # it's best having them all at the top.
 import pandas as pd
 

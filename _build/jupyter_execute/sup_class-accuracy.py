@@ -5,15 +5,15 @@
 # 
 # The metric for measuring a classification model's accuracy is straightforward. 
 # 
-# Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html). Again, we'll keep things simple and use [ratio of correct to total predictions](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score):
+# Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html). Again, we'll keep things simple and use [the ratio of correct to total predictions](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score):
 # 
 # $$\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}$$
 
 # In[1]:
 
 
-#We'll import libraires as needed, but when submitting, having them all at the top is best practice
-#Here's the minimum code needed from previsou sections. 
+#We'll import libraries as needed, but when submitting, having them all at the top is best practice
+#Here's the minimum code needed from previous sections. 
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -74,7 +74,7 @@ disp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=svm_mo
 disp.plot();
 
 
-# 94%, which still seems fairly good ([but what is "good" accuracy?](TODO add link), but if selecting the test data randomly (try 'random_state=42'), accuracy may actually *improve* on the test data because the set is relatively small and the model fairly accurate. Using these results, the model can be further refined. However, continually tweaking parameters according to the test data results means we are back to studying from the answers, i.e., reintroducing the risk of overfitting. To deal with this, a *third set* can be withheld, called a “validation set," to analyze the final results. 
+# 94%, which still seems fairly good ([but what is "good" accuracy?](TODO add link), but if selecting the test data randomly (try 'random_state=42'), accuracy may *improve* on the test data because the set is relatively small and the model fairly accurate. Using these results, the model can be further refined. However, continually tweaking parameters according to the test data results means we are back to studying from the answers, i.e., reintroducing the risk of overfitting. To deal with this, a *third set* can be withheld, called a “validation set," to analyze the final results. 
 # 
 # But Partitioning available data into three sets reduces the available data for training the model, making results more dependent on the random selection of training, testing, and validation sets. [Cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html) addresses this issue by resampling the data. Again, this is optional but could be very useful, particularly for small data sets. 
 
