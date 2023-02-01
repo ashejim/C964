@@ -87,7 +87,7 @@ Where 'mynewbook/' is the name of the folder you want your jupyter-book and all 
 
 ## Step 4. Add some content!
 
-Your two main choices for adding content are  Markdown (.md) and Juptyer Notebook (.ipynb) files. The former is easier and great for most stuff. The latter is less easy but very flexible. 
+Your two main choices for adding content are  Markdown (.md) and Jupyter Notebook (.ipynb) files. The former is easier and great for most stuff. The latter is less easy but very flexible. 
 
 ```{note} 
 The sample book created in step 3 includes both Markdown and Jupyter files. 
@@ -101,7 +101,7 @@ I use Visual Studio.
 
 ## Step 5. Turn your Markdown/Jupyter files into HTML.
 
-This is why we need juptyer-book. Go to folder where your jupyter-book folder lives and type: 
+This is why we need jupyter-book. Go to folder where your jupyter-book folder lives and type: 
 
 ```shell
 jupyter-book build mynewbook
@@ -114,7 +114,7 @@ You can put your web files wherever you like. I'll use GitHub.
 
 1. Go to your GitHub account. 
 2. Create a repository. 
-3. Clone the repository to a local directory -this will be the directory linked to github (use a different one than above unless you want to copy over it).  
+3. Clone the repository to a local directory -this will be the directory linked to GitHub (use a different one than above unless you want to copy over it).  
 4. Copy your book into the local repo clone.
 
 ```{margin} Jupyter Docs
@@ -138,7 +138,7 @@ What! You don't have a GitHub account? Well getting one is free and easy. As lon
 ```
 A GitHub repository is a great place to put all kinds of stuff. 
 
-## Step 7. Sync your local repo to the GitHub repoistory. 
+## Step 7. Sync your local repo to the GitHub repository. 
 
 ```shell
 cd directorywhereyouwantittobe/mynewbook
@@ -173,20 +173,24 @@ some change
 Hey, here's a ***mistake.***
 
 
-bullets potins
+bullets points
 - ggg
 - fff
 
+1. [Google](google.com)
+2. numbering stuff.
 
-1. 223
-2. 3. 
+Add links
+```markdown
+[Google](google.com)
+```
 
-[google](google.com)
-
-## headings
+## Headings
 
 Here's a link to a [video](https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all)
 
+
+Here's an embedded video:
 <iframe 
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" 
     title="C964 Overview" 
@@ -196,3 +200,16 @@ Here's a link to a [video](https://wgu.hosted.panopto.com/Panopto/Pages/Embed.as
     allowfullscreen allow="autoplay"
 >
 </iframe>
+
+The html code can be obtained through Panopto's editing page:
+```html
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" 
+    title="C964 Overview" 
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;" 
+    allowfullscreen allow="autoplay"
+>
+</iframe>
+```

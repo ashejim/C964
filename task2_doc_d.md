@@ -1,6 +1,6 @@
 (task2d)=
 # Task 2 part D 
-Part D of the documentation explains the technical details of your project and should target the computer science subject matter expert, i.e., the evaluators. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [Data Product Code](task2d:dataproduct), [Accuracy Analysis](task2d:accuracy), and [User Guide](task2d:userguide) are most important. As such, we recommend completeing on these sections first.
+Part D of the documentation explains the technical details of your project and should target the computer science subject matter expert, i.e., the evaluators. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [Data Product Code](task2d:dataproduct), [Accuracy Analysis](task2d:accuracy), and [User [Guide](task2d:userguide) are the most important. As such, we recommend completing these sections first.
 
 (task2d:userguide)=
 ## User Guide
@@ -16,7 +16,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 TEST: [Task 2 part C FAQ](task2c)
 
 :::{margin} No Windows machine?
-*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsytem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2c:faq:linux) for more details.
+*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsysem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2c:faq:linux) for more details.
 :::
 
 ::::{card-carousel} 4
@@ -71,7 +71,6 @@ There is **NO**
 (task2d:accuracy:super)=
 ### For Supervised Classification Methods
 
-### For Supervised Regression Mehods
-
+### For Supervised Regression Methods
 
 STUFF GOES HERE
