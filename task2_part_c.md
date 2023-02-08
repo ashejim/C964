@@ -80,18 +80,17 @@ Your app must help the user solve the organizational problem from [task 1](task1
 ### Data requirements 
 
 - Your data must be sufficiently complex and processed for your ML algorithm to function as needed.
-- Evaluators must be able to access your data. 
+- Evaluators must be able to access your data.
 
-There are no specific requirements regarding the complexity or nature of your data. However, your application must work and fulfill the organizational need you'll outline in the [task 2 documentation](task2doc). Therefore, when choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these extra steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.    
-
-You do not need special permission to use any open-source dataset. See our [list](resources:task1:data). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV. 
+There are no specific requirements regarding the complexity or nature of your data. However, your application must work and fulfill the organizational need you'll outline in the [task 2 documentation](task2doc). Therefore, when choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these extra steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.
+You do not need special permission to use any open-source dataset. See our [list](resources:task1:data). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV.
 
 (task2c:mlreqs)=
 ### Machine Learning requirements
 
 - You must apply machine learning to data.
 
-You are encouraged to use ML libraries. Provided the source code is available to evaluators, any language or library of your choosing is allowed. However, we do recommend and can give better support for Python. The [scikit-learn](https://scikit-learn.org/stable/) library is an excellent choice; it is diverse, robust, and has many supplementary resources to help you get started. 
+You are encouraged to use ML libraries. Provided the source code is available to evaluators, any language or library of your choosing is allowed. However, we do recommend and can give better support for Python. The [scikit-learn](https://scikit-learn.org/stable/) library is an excellent choice; it is diverse, robust, and has many supplementary resources to help you get started.
 
 (task2c:visualreqs)=
 ### Visualization requirements
@@ -259,6 +258,12 @@ Following tutorials/examples is a great way to learn. But when it comes to writi
 Start *slow*. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.
 
 **Start small and build up**
+
+:::{sidebar} Simple coding example
+<iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay">
+</iframe>
+:::
+
 A suggested path:
 
 1. Import data and convert it to a (pandas) data frame.
@@ -287,26 +292,27 @@ There is **no** minimal accuracy requirement. Evaluators only assess the appropr
 :::
 
 :::{margin} What is good accuracy?
-A good question. The answer is subjective depending on data and project needs. A 5% accuracy in predicting stoplights is not so good. However, it is *very* good if prediction lottery numbers.
+A good question. The answer is subjective depending on data and project needs. A 5% accuracy in predicting stoplights is not so good. However, it is *very* good if predicting lottery numbers.
 :::
 
 Measuring accuracy (or a plan to do so) will be discussed in detail in the [Accuracy Analysis](task2d:accuracy) section of part D of the documentation. 
 
 (task2c:faq)=
 ## FAQ
+
 **What are the most common reasons for the task 2 code being returned?**
 
-1. Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect [user guide](task2doc:d) or because evaluators can't access shared links (check the permissions!). 
+1. Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect [user guide](task2doc:d) or because evaluators can't access shared links (check the permissions!).
 
 2. Evaluators are not sure how the code is meant to be used by the "user." Again, an incomplete or incorrect [part D user guide](task2doc:d) is usually the culprit. Adding an explicit example (including example user files when appropriate) helps avoid this issue.
 
-**I've completed the coding for task 2. Should I send it to my course instructor for review?** 
+**I've completed the coding for task 2. Should I send it to my course instructor for review?**
 
-Suppose you have specific questions or concerns -yes. However, if the code runs and meets the [minimum app requirements](task2c:appreqs) it's usually best to move on to the [documentation](task2doc). You can continue to tweak and improve the app but can be comfortable knowing that what you have can pass. 
+Suppose you have specific questions or concerns -yes. However, if the code runs and meets the [minimum app requirements](task2c:appreqs) it's usually best to move on to the [documentation](task2doc). You can continue to tweak and improve the app but can be comfortable knowing that what you have can pass.
 
-For questions about whether your application satisfies the requirements, contact a [C964 faculty](ci_c964). 
+For questions about whether your application satisfies the requirements, contact a [C964 faculty](ci_c964).
 
-For technical coding questions, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:guidelines) (more info below). 
+For technical coding questions, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:guidelines) (more info below).
 
 **I need help with part C. Who do I contact?**
 
@@ -314,10 +320,10 @@ That depends on what you need help with. For questions about the capstone, how t
 
 For technical questions related to code or math, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:guidelines). Keep in mind, that while these faculty may be subject matter experts in their field, they do *not* necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the[BSCS, Software, and other Course Faculty](ci_other) page, follow these [guidelines](ci_other:guidelines).
 
-Remember, our job (as educators) is to help *you* fix your problem -not just fix it for you. 
+Remember, our job (as educators) is to help *you* fix your problem -not just fix it for you.
 
 %%ALSO IN TASK1
-**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?** 
+**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
 
 No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.  
 
@@ -357,7 +363,7 @@ Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any p
 
 **What sort of user interface do I need? Do I need a GUI?**
 
-No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc:userguide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.   
+No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc:userguide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.
 
 <!-- TODO add to task D or polish up? -->
 (task2c:faq:limit)=

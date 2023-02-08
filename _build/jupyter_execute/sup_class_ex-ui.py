@@ -32,7 +32,7 @@ svm_model.fit(X_train_array,y_train_array);
 # 
 # We've made an application. Now we need a way for the user to apply it. There are *no specific requirements for how this must be done.* Following the [User Guide](task2d:userguide) in your documentation, the evaluator must be able to quickly get it to work and meet the needs of the problem described in the documentation. We'll present a few options. Remember that simpler interfaces need a more detailed [User Guide](task2d:userguide). 
 # 
-# ### User inputs and runs code:**
+# ### User inputs and runs code
 # 
 # The user can be instructed to input and run code. If you do this, provide explicit instructions and provide an example that can be copied and pasted.
 # 
@@ -59,6 +59,15 @@ print(svm_model.predict([[5,4,1,.5]]))
 # 
 # Using Jupyter Widgets, a more user-friendly (and less error-prone) interface can be implemented. 
 # <!-- TODO ADD CONDA/PIP install instructions -->
+# 
+# ```{warning}
+# Running Python code requires a running Python kernel. Click the {fa}`rocket` --> {guilabel}`Live Code` button above on this page, and run the code below.
+# 
+# 🚧 This site is under construction! As of now, the Python kernel may not run on the page or have very long wait times.👷🏽‍♀️
+# ```
+# 
+# 
+# Click the {fa}`rocket` --> {guilabel}`Live Code` button above on this page, and run the code below.
 # 
 # Recall, the feature names:
 

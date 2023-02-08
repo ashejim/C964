@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# Running Python code requires a running Python kernel. Click the {fa}`rocket` --> {guilabel}`Live Code` button above on this page, and run the code below.
+# 
+# ```{warning}
+# 🚧 This site is under construction! As of now, the Python kernel may not run on the page or have very long wait times. Also, expect typos.👷🏽‍♀️
+# ```
+# 
 # # Example: Supervised Classification App
 # 
 # Supervised classification fits the project requirements well, and is also a good place to start. The nature of your Data and organizational needs dictate which methods you can use. So what type of data do we need? 
@@ -57,4 +63,10 @@ def display_df(dataframe, column_names, prec):
 display_df(df, column_names, 1)
 
 
+# 
+# :::{sidebar} Watch
+# <iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay">
+# </iframe>
+# :::
+# 
 # The highlighted column, 'type,' provides something to predict/classify (dependent variables), and the non-highlighted columns are something by which to make that prediction/classification (independent variables).
