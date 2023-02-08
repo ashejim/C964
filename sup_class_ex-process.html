@@ -281,7 +281,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=tree/docs/sup_class_ex-process.ipynb"
+        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=lab/tree/docs/sup_class_ex-process.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -295,6 +295,24 @@ title="Launch on Binder"
   </span>
 <span class="headerbtn__text-container">Binder</span>
 </a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
 
       </li>
       
@@ -986,7 +1004,7 @@ dtype: int64
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "ashejim/C964",
             ref: "master",
         },
         codeMirrorConfig: {
