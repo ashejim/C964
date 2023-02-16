@@ -40,7 +40,7 @@ html:
 # For launching live code
 launch_buttons:
   thebe: true
-  notebook_interface: "jupyterlab"  # or "classic"
+  notebook_interface: "jupyterlab"  # or "classic" adds live code button
   # binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
 
 use_show_widgets_button: true  # If 'true', display a button to show widgets backed by a Binder kernel
