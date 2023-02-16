@@ -4,7 +4,7 @@
 </head>
 
 :::{warning}
-🚧 This site is under construction! If something makes sense, then it's probably good advice. If not, it's probably unfinished, unreviewed, or just plain non-sense. 👷🏽‍♀️
+🚧 This site is under construction! If something makes sense, then it's probably good advice. If not, it's probably unfinished, unreviewed, or just plain nonsense. 👷🏽‍♀️
 :::
 
 # Welcome to C964!

@@ -9,13 +9,13 @@
 (resources:examples)=
 ## Examples
 
-**Example A:** 
+**Example A:**
 
 - [task 1 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
 
 - [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf) (part C not available)
 
-**Example B:** 
+**Example B:**
 
 - [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
 
@@ -52,7 +52,9 @@ examples.
 
 > [![Waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
-### Video
+### Videos
+
+#### Getting Started on the Capstone
 
 <iframe 
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
@@ -75,22 +77,24 @@ Any open source data set is freely available for use.
 
 ### Coding
 
-- [CS and C964 faculty](ci_other) availabel for math, data analytics, and coding related questions.
-- [WGU Pogramming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python. 
+- [CS and [C964 faculty](ci_other) available for math, data analytics, and coding-related questions.
+- [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.
 
 (resources:task2:videos)=  
 ### Videos
 
 (resources:task2c:videos:ml-sup-reg-class)=  
-**ML Supervised Classification & Regression Overview** 
-<iframe 
+#### ML Supervised Classification & Regression Overview
+
+<iframe
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
 >
 </iframe>
 
 (resources:task2c:videos:ml-sup-class-code)=
-**ML Supervised Learning Basic Coding Example**
-<iframe 
+#### ML Supervised Learning Classification Coding Example
+
+<iframe
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
 >
 </iframe>
@@ -105,7 +109,7 @@ Write your proposal following **C964 Task 2 documentation template**:
 > [![Task 2: documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
 
-Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.   
+Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.  
 
 (resources:task2doc:docexample)=  
 ### Task 2 Parts A, B, and D Example
@@ -126,12 +130,11 @@ Follow the guidelines found in this template and webpage -*do **not** follow the
 (resources:gen:grammarly)=
 ### Grammarly.com
 
-Check your grammar using [Grammarly.com](https://www.grammarly.com/) ![](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
+Check your grammar using [Grammarly.com](https://www.grammarly.com/) ![grammarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.
 
 :::{warning}
 Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version and checking grammar in MS Word. 
 :::
-
 
 (resources:gen:apa)=
 ### APA 
@@ -139,12 +142,13 @@ Your paper should adhere to [APA guidelines](https://apastyle.apa.org/style-gram
 
 (resources:gen:libraries)=
 ### Libraries
+
 - [WGU's library](https://wgu.libguides.com/friendly.php?s=library)
-- [google.scholar.com](https://scholar.google.com/) 
+- [google.scholar.com](https://scholar.google.com/)
 
 :::{tip}
 You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library) and other open-source libraries using [google.scholar.com](https://scholar.google.com/) Go to >'Google.scholar>setting>libraires>' 
 and then add WGU and other libraries.
+
 <img src="https://westerngovernorsuniversity-my.sharepoint.com/personal/jim_ashe_wgu_edu/Documents/jupyter-books/C769/url_images/google_scholar_demo.gif" height="200px" />
 :::
-
