@@ -210,6 +210,7 @@ No, not unless it's an entirely different topic. Minor changes from task 1 to ta
 
 You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
+(task1:faq:usec951)=
 **Can I use my C951 task 3? Should I use it?**
 You can use anything you've written for C964, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.
 

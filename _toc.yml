@@ -24,5 +24,5 @@ chapters:
   sections:
   - file: ci_c964
   - file: ci_other
-- file: github_page
+# - file: github_page
 # - file: ML_page

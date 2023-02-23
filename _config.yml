@@ -45,6 +45,13 @@ launch_buttons:
 
 use_show_widgets_button: true  # If 'true', display a button to show widgets backed by a Binder kernel
 
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  google_analytics_id: G-H4N36TZQ78
+
 #parse:
   #myst_substitutions:
      #sub3: My _global_ value!

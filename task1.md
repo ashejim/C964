@@ -202,14 +202,15 @@ No. Usually, students email the approval form to their [assigned instructor](ci_
 
 It's up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when unsure what to ask. For technical coding questions or if you are unsure who to contact, see the [course faculty page](cipage).
 
-**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?** 
+**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
 
-No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.    
+No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.
 
 **Can I use projects from other WGU courses?**
 
 You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
+(task1:faq:usec951)=
 **Can I use my C951 task 3? Should I use it?**
 You can use anything you've written for C964, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.
 
