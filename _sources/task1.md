@@ -202,9 +202,9 @@ No. Usually, students email the approval form to their [assigned instructor](ci_
 
 It's up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when unsure what to ask. For technical coding questions or if you are unsure who to contact, see the [course faculty page](cipage).
 
-**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?** 
+**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
 
-No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.    
+No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.
 
 **Can I use projects from other WGU courses?**
 
