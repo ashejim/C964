@@ -1,4 +1,5 @@
 @echo off
+SET /P Message=Enter git commit comment: 
 title compile html, save to repo folder, update GitHub repo and website
 jupyter-book build --all "D:\OneDrive - Western Governors University\jupyter-books\C964"
 echo "Compiling local D:\OneDrive - Western Governors University\jupyter-books\C964 ..."
@@ -6,7 +7,6 @@ xcopy /s /e /h /i /y "D:\OneDrive - Western Governors University\jupyter-books\C
 echo "Copied local book to D:\... \jupyter-books\github_book_repo\C964 ..."
 cd "D:\OneDrive - Western Governors University\jupyter-books\github_book_repo\C964" 
 git add ./*
-SET /P Message=Enter git commit comment: 
 git commit -m "%Message%"
 echo "Commited..."
 git push

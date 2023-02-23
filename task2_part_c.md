@@ -31,7 +31,7 @@ Your app must help the user solve the organizational problem from [task 1](task1
 
 `````{tab-set}
 ````{tab-item} Example 1
->**The App:** A standalone Python project which can predict Iris types.
+>**The App:** A standalone Python project which can predict Iris types (see the [example](sup_class_ex)).
 > 
 >**Data → ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an SVN classification model.
 >
