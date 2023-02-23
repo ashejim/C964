@@ -25,7 +25,7 @@ The "organizational need" requirement gives your project a purpose and audience.
 
 A machine learning application is the hard requirement of the capstone, but you can’t apply an algorithm to data -without data. Moreover, most datasets provide a question to answer, e.g., predictions, classifications, or recommendations for which an “organizational need” can always be found.
 
-- [Kaggle.com](https://www.kaggle.com/datasets)
+- [**Kaggle.com**](https://www.kaggle.com/datasets)
 - [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Data.gov](https://data.gov/)
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
@@ -86,7 +86,7 @@ Look for labeled data for which a supervised learning classification method can 
 ````{tab-item} Example 1
 > **Data:** Petal dimensions and species of fifty [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions using a supervised calssification model, say SVN or Logistic regression](resources:task2c:videos:ml-sup-class-code).
+> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions using a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
 >
 > **Descriptive method:** Histograms showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
@@ -146,7 +146,7 @@ The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.
 (task1:approval)=
 ## Topic Approval
 
-Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) for approval.*
+Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
 > [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
@@ -164,7 +164,7 @@ You must identify a machine learning application in either the descriptive or no
 The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
 ```
 
-Directly emailing your [assigned course instructor](ci_c964) (identified on your C964 COS page) is typically the fastest and best way to get a signature. Whether emailing [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) or your CI directly, always practice professional communication:
+Directly emailing your [assigned course instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) (identified on your C964 COS page; or find them [here](ci_c964)) is typically the fastest and best way to get a signature. Whether emailing [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) or your CI directly, always practice professional communication:
 
 - Use your WGU email (non-WGU emails may be categorized as spam).
 - Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
@@ -177,15 +177,19 @@ The submitted topic approval form must be *signed by a [C964 course instructor](
 (task1:waiver)=
 ## Waiver Form
 
-Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized.
+<!-- Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized. -->
+
+```{note}
+the waiver form is **only** required if your project is based upon or included restricted information. If no waiver form is submitted, Task 1 *B: Capstone Release Form*, passes automatically.
+```
+
+In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you will need to obtain documented permissions and submit them along with a waiver form to Assessments.
 
 > [![Waiver Form](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
-For topics based on actual work projects, obtaining authorization can be avoided in most cases by fabricating or masking identifying information.      
-
-:::{note}
+<!-- :::{note}
 ![waiver checkbox](../C769/url_images/waiver-check-1box.png)
-:::
+::: -->
 
 (task1:faq)=
 ## FAQ
@@ -233,7 +237,9 @@ No, you can type in your name, use a "fancy" font, or insert an image of your si
 **What are the common reasons for task 1 being returned?**
 
 1. No instructor signature on the approval form. You need to send it to us and get a signature *before* submitting it to Assessments.
-2. Both or neither box is marked on the waiver form. Mark one and only one box. See the [waiver form instructions](task1:waiver).
+2. Both or neither box is marked on the waiver form. Mark one and only one box. See the [waiver form instructions](task1:waiver)
+
+Note, the waiver form is **only** required if your project is based upon or included restricted information. Task 1 *B: Capstone Release Form*, passes automatically if no waiver form is submitted, i.e., the waiver is only needed if it's needed.
 
 **How many attempts are allowed for each task?**
 
