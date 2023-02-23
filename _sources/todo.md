@@ -15,3 +15,4 @@
     - Add environment tutorial
     - Add github/gitlab tutorial
     - Add brief stats tutorial
+- ~~update waiver form policy~~

@@ -17,7 +17,7 @@
 
 **Example B:**
 
-- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
+- [task 1 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf) 
 
 - [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
 
@@ -77,7 +77,7 @@ Any open source data set is freely available for use.
 
 ### Coding
 
-- [CS and [C964 faculty](ci_other) available for math, data analytics, and coding-related questions.
+- [CS and C964 faculty](ci_other) available for math, data analytics, and coding-related questions.
 - [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.
 
 (resources:task2:videos)=  
@@ -108,13 +108,22 @@ Write your proposal following **C964 Task 2 documentation template**:
 
 > [![Task 2: documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
-
 Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.  
 
 (resources:task2doc:docexample)=  
-### Task 2 Parts A, B, and D Example
+### Task 2 Parts A, B, and D Examples
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t2_example.png?raw=true#image-thumb)](https://drive.google.com/file/d/1XIYuDH4QSW7Kr4SLMT2mpKsL8w8xafVT/view?usp=sharing)
+**Example A:**
+
+- [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf) (part C not available)
+
+**Example B:**
+
+- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
+
+```{note}
+The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
+```
 
 
 #### 
