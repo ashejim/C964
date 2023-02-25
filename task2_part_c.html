@@ -537,54 +537,55 @@ title="Print to PDF"
 <span id="task2c-appreqs"></span><h2>What does the application need to do?<a class="headerlink" href="#what-does-the-application-need-to-do" title="Permalink to this headline">#</a></h2>
 <p>Your app must help the user solve the organizational problem from <a class="reference internal" href="task1.html#task1"><span class="std std-ref">task 1</span></a> by doing the following:</p>
 <ol class="simple">
-<li><p>Use data to develop a machine learning model. spelling mistake</p></li>
-<li><p>Apply the ML model to user-provided data.</p></li>
-<li><p>Provide visualizations (pictures; they can be presented in the app or document).</p></li>
-<li><p>Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.</p></li>
+<li><p><strong>Data → ML model:</strong> Use data to develop a machine learning model.</p></li>
+<li><p><strong>Accuracy Metric:</strong> Provide an appropriate metric or plan for measuring the app’s accuracy.</p></li>
+<li><p><strong>Visualizations:</strong> Present 3 different pictures; can be presented in the app or document.</p></li>
+<li><p><strong>User Application:</strong> Provide a way for the “user” to use the ML model towards solving the problem.</p></li>
 </ol>
+<!--tab-item examples -->
 <div class="sd-tab-set docutils">
-<input checked="checked" id="c4def3e0-d0cd-4935-a3f6-4f7e2bb8e64f" name="eab4cfe6-cb84-4ad0-94a0-7976250eda40" type="radio">
-</input><label class="sd-tab-label" for="c4def3e0-d0cd-4935-a3f6-4f7e2bb8e64f">
+<input checked="checked" id="886622ef-92a6-4880-9cd1-ba7dbc8b2cf2" name="dd3e7248-2d3c-4f4c-ae72-2f374cf5f241" type="radio">
+</input><label class="sd-tab-label" for="886622ef-92a6-4880-9cd1-ba7dbc8b2cf2">
 Example 1</label><div class="sd-tab-content docutils">
+<p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) which can predict Iris types (see the <a class="reference internal" href="sup_class_ex.html#sup-class-ex"><span class="std std-ref">example</span></a>).</p>
 <blockquote>
-<div><p><strong>The App:</strong> A standalone Python project which can predict Iris types (see the <a class="reference internal" href="sup_class_ex.html#sup-class-ex"><span class="std std-ref">example</span></a>).</p>
-<p><strong>Data → ML model:</strong> Labeled <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris petal dimensions</a> train an SVN classification model.</p>
-<p><strong>New data → ML model → prediction:</strong> Using new flower dimensions, the model can predict the Iris type.</p>
-<p><strong>Visualizations:</strong> Histograms showing distributions of different flower features and a confusion matrix illustrating the accuracy of the classification model.</p>
-<p><strong>User interface:</strong> Following detailed instructions via the console, the user can input flower dimensions, and the app returns a prediction.</p>
+<div><p><strong>Data → ML model:</strong> Labeled <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris petal dimensions</a> train an <a class="reference internal" href="sup_class_ex-develop.html#sup-class-ex-develop"><span class="std std-ref">SVM classification model</span></a>.</p>
+<p><strong>Accuracy Metric:</strong> Percent of correct predictions on <a class="reference internal" href="sup_class_ex-accuracy.html#sup-class-ex-accuracy"><span class="std std-ref">testing data</span></a>.</p>
+<p><strong>Visualizations:</strong> <a class="reference internal" href="sup_class_ex-process.html#sup-class-ex-descriptive-visuals-histograms"><span class="std std-ref">Histograms</span></a> showing distributions of different flower features and a <a class="reference internal" href="sup_class_ex-accuracy.html#sup-class-ex-accuracy-confusion-matrix"><span class="std std-ref">confusion matrix</span></a> illustrating the accuracy of the classification model.</p>
+<p><strong>User interface:</strong> (New data → ML model → prediction) Following detailed instructions, the user can <a class="reference internal" href="sup_class_ex-ui.html#sup-class-ex-ui-code"><span class="std std-ref">input flower dimensions</span></a>, run code in the Jupyter notebook, and the app returns a prediction helping customers identify their flowers.</p>
 </div></blockquote>
 </div>
-<input id="5112f48d-004b-4be3-bef2-da54ed25afe9" name="eab4cfe6-cb84-4ad0-94a0-7976250eda40" type="radio">
-</input><label class="sd-tab-label" for="5112f48d-004b-4be3-bef2-da54ed25afe9">
+<input id="ab02d36c-6da0-40af-b034-ae36e0bd5c95" name="dd3e7248-2d3c-4f4c-ae72-2f374cf5f241" type="radio">
+</input><label class="sd-tab-label" for="ab02d36c-6da0-40af-b034-ae36e0bd5c95">
 Example 2</label><div class="sd-tab-content docutils">
+<p><strong>The App:</strong> A standalone Pycharm (Python) project predicting house prices.</p>
 <blockquote>
-<div><p><strong>The App:</strong> A standalone <a class="reference external" href="https://jupyter.org">Jupyter Notebook</a> file (.ipynb) predicting house prices.</p>
-<p><strong>Data → ML model:</strong> Labeled housing data trains a multi-linear regression model to predict house prices.</p>
-<p><strong>New data → ML model → prediction:</strong> Using unseen house data, the model predicts the house’s price.</p>
+<div><p><strong>Data → ML model:</strong> Labeled housing data trains a multi-linear regression model to predict house prices.</p>
+<p><strong>Accuracy Metric:</strong> <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#examples-using-sklearn-metrics-mean-squared-error">Mean squared error</a> of the model on testing data.</p>
 <p><strong>Visualizations:</strong> Histograms showing distributions of data features and scatterplots demonstrating data correlations.</p>
-<p><strong>User interface:</strong> Following detailed instructions via the Jupyter notebook file, the user can adjust widget sliders to get a price prediction.</p>
+<p><strong>User interface:</strong> (New data → ML model → prediction) Via console the user can input unseen house data, and the model predicts a house’s price helping a realty firm make investment decisions.</p>
 </div></blockquote>
 </div>
-<input id="ee5b6719-a9ee-4ec5-8cf8-1426be586605" name="eab4cfe6-cb84-4ad0-94a0-7976250eda40" type="radio">
-</input><label class="sd-tab-label" for="ee5b6719-a9ee-4ec5-8cf8-1426be586605">
+<input id="658fdf08-8f4e-4e99-98b2-8d1bcfb53c2f" name="dd3e7248-2d3c-4f4c-ae72-2f374cf5f241" type="radio">
+</input><label class="sd-tab-label" for="658fdf08-8f4e-4e99-98b2-8d1bcfb53c2f">
 Example 3</label><div class="sd-tab-content docutils">
+<p><strong>The App:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> recommending movies.</p>
 <blockquote>
-<div><p><strong>The App:</strong> A web app providing movie recommendations.</p>
-<p><strong>Data → ML model:</strong> Cosine similarity provides a similarity score between any two movies.</p>
-<p><strong>User data → ML model → recommendation:</strong> Using a user-provided movie, the five most similar movies are returned.</p>
+<div><p><strong>Data → ML model:</strong> Using movie data, data is <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html">vectorized</a> so that <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html">Cosine similarity</a> can provide similarity scores between any two movies.</p>
+<p><strong>Accuracy Metric:</strong> Mean Cosine simliarity scores on test data, or a plan to measure the app’s acccuracy based on future user feedback,</p>
 <p><strong>Visualizations:</strong> Histograms showing distributions of movie features and samples of Cosine Similarity matrices.</p>
-<p><strong>User interface:</strong> A web app (developed with <a class="reference external" href="https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html">Juptyer, voila, and deployed on Heroku</a> returns five recommendations for a user typed movie.</p>
+<p><strong>User interface:</strong> (New data → ML model → prediction) Using a user-provided movie, the web app returns five recommendations for a user typed movie helping customers find movies to watch. See this <a class="reference external" href="https://github.com/Prajwal10031999/Movie-Recommendation-System-Using-Cosine-Similarity">movie recommendation example</a></p>
 </div></blockquote>
 </div>
-<input id="a700dd79-3ad7-4a28-bf52-bf34c6e90af9" name="eab4cfe6-cb84-4ad0-94a0-7976250eda40" type="radio">
-</input><label class="sd-tab-label" for="a700dd79-3ad7-4a28-bf52-bf34c6e90af9">
+<input id="d518b7f6-6310-4b83-8b5e-1e9e45270249" name="dd3e7248-2d3c-4f4c-ae72-2f374cf5f241" type="radio">
+</input><label class="sd-tab-label" for="d518b7f6-6310-4b83-8b5e-1e9e45270249">
 Example 4</label><div class="sd-tab-content docutils">
+<p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
 <blockquote>
-<div><p><strong>The App:</strong> A hosted Jupyter notebook identifies images as a cat or dog.</p>
-<p><strong>Data → ML model:</strong> Labeled images are used to <a class="reference external" href="https://www.tensorflow.org/tutorials/images/classification">train a neural network model to classify images</a> of dogs and cats.</p>
-<p><strong>New data → ML model → prediction:</strong> Loading an image from a hosted folder, the model classifies it as a dog or cat.</p>
+<div><p><strong>Data → ML model:</strong> Labeled images are used to <a class="reference external" href="https://www.tensorflow.org/tutorials/images/classification">train a neural network model to classify images</a> of dogs and cats.</p>
+<p><strong>Accuracy Metric:</strong> Percent of correct predictions on testing data.</p>
 <p><strong>Visualizations:</strong> Graphs of training and validation accuracy and loss, a confusion matrix showing model accuracy, and image examples.</p>
-<p><strong>User interface:</strong> Following detailed instructions, the user can upload an image to Jupyter notebook deployed on <a class="reference external" href="https://datalore.jetbrains.com">Datalore</a>, and the app classifies the image as cat or dog.</p>
+<p><strong>User interface:</strong> (New data → ML model → prediction) Following detailed instructions, the users upload an image to Jupyter notebook folder deployed on <a class="reference external" href="https://datalore.jetbrains.com">Datalore</a>, and run the app classifying the image as cat or dog.</p>
 </div></blockquote>
 </div>
 </div>

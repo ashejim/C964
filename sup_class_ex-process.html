@@ -493,7 +493,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="data-exploring-and-processing">
+  <section id="data-exploring-and-processing">
 <h1>Data Exploring and Processing<a class="headerlink" href="#data-exploring-and-processing" title="Permalink to this headline">#</a></h1>
 <p>Here we’ll do two essential things.</p>
 <ol class="simple">
@@ -770,9 +770,8 @@ title="Print to PDF"
 <p>What? That’s it for data processing? We did little because the data didn’t need much. Like a lot of data out there, it was ready to go. No minimal processing is required. The project’s needs determine the required data processing, i.e., if it works, you’ve done enough. <span class="xref myst">TODO ADD LINK TO DATA REQS</span></p>
 </aside>
 <p>That’s all the processing needed for now.</p>
-<p>(sup_class_ex: descriptive)=</p>
 <section id="descriptive-methods-and-visualizations">
-<h2>Descriptive Methods and Visualizations<a class="headerlink" href="#descriptive-methods-and-visualizations" title="Permalink to this headline">#</a></h2>
+<span id="sup-class-ex-descriptive"></span><h2>Descriptive Methods and Visualizations<a class="headerlink" href="#descriptive-methods-and-visualizations" title="Permalink to this headline">#</a></h2>
 <p>Let’s explore the data. A good starting question: how many different Iris categories do we have?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -791,7 +790,7 @@ dtype: int64
 </div>
 </div>
 </div>
-<p>Let’s <em>visualize</em> that.</p>
+<p id="sup-class-ex-descriptive-visuals">Let’s <em>visualize</em> that.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_types</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">],</span><span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
@@ -807,7 +806,7 @@ dtype: int64
 <p>Want to do something similar but different? Go to the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html">libary’s docs</a>. You’ll see lots of libraries and functions with lots of options. Don’t just copy, paste, and pray. Read the docs and understand the parameters.</p>
 </aside>
 <p>Three evenly distributed categories. What about the distribution of the petal widths? As with most things in nature, we might expect it to be somewhat normal.</p>
-<div class="cell docutils container">
+<div class="cell docutils container" id="sup-class-ex-descriptive-visuals-histograms">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hist_petal_lengths</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">grid</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
