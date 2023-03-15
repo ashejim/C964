@@ -16,4 +16,4 @@
     - Add brief stats tutorial
 - ~~update waiver form policy~~
 - ~~Add Google Analytics to _toc and Google account~~
-- check that [google analytics](https://analytics.google.com/analytics/web/#/p355116886/reports/intelligenthome) is working
+- ~~check that [google analytics](https://analytics.google.com/analytics/web/#/p355116886/reports/intelligenthome) is working~~

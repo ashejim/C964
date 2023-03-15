@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Data Exploring and Processing
+# ## Data Exploring and Processing
 # 
 # Here we'll do two essential things. 
 # 1. Process the data.
@@ -45,8 +45,8 @@ df # displays the DataFrame
 # ```
 # That's all the processing needed for now. 
 # 
-# (sup_class_ex: descriptive)=
-# ## Descriptive Methods and Visualizations
+# (sup_class_ex:descriptive)=
+# ### Descriptive Methods and Visualizations
 # 
 # Let's explore the data. A good starting question: how many different Iris categories do we have?
 
@@ -57,6 +57,7 @@ num_types = df.groupby(by='type').size();
 display(num_types); #another display option.
 
 
+# (sup_class_ex:descriptive:visuals)=
 # Let's *visualize* that.
 
 # In[4]:
@@ -70,6 +71,8 @@ num_types.plot.bar(color=['red','blue','green'],rot=0);
 # ```
 # 
 # Three evenly distributed categories. What about the distribution of the petal widths? As with most things in nature, we might expect it to be somewhat normal.
+# 
+# (sup_class_ex:descriptive:visuals:histograms)=
 
 # In[5]:
 

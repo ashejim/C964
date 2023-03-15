@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# (sup_class_ex:accuracy)=
 # ## Accuracy Analysis (testing)
 # 
 # The metric for measuring a classification model's accuracy is straightforward. 
@@ -60,6 +61,7 @@ score2
 
 # Using the test data we set aside, $94\%$ of the predictions are correct. 
 # 
+# (sup_class_ex:accuracy:confusion_matrix)=
 # A *confusion matrix* further breaks down the predictions by categories, helping develop better models and providing another visualization.
 # 
 # ```{margin} Why is it called a confusion matrix?

@@ -30,7 +30,7 @@
 # it's best having them all at the top.
 import pandas as pd
 
-# Load this well worn dataset:
+# Load this well-worn dataset:
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
 df = pd.read_csv(url) #read CSV into Python as a DataFrame
 df # displays the DataFrame
@@ -39,7 +39,7 @@ column_names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 't
 df = pd.read_csv(url, names = column_names) #read CSV into Python as a DataFrame
 pd.options.display.show_dimensions = False #suppresses dimension output
 display(df)
-#Code hide and toggle managed with Jupyter metacode 'tags.'
+#Code hide and toggle managed with Jupyter meta-code 'tags.'
 
 
 # Though we described everything as "simple," we'll also see that this dataset is quite *rich* with angles to investigate, and we have many options now. However, a classification project must use a categorical feature as its independent variable, and for this, the only immediate choice is 'type.'
@@ -47,20 +47,21 @@ display(df)
 # In[2]:
 
 
-##preserves jupyter preview style after applying .style
-def display_df(dataframe, column_names, prec):
+##preserves Jupyter preview style after applying .style
+##preserves Jupyter preview style (the '...') after applying .style
+def display_df(dataframe, column_names, highlighted_col, precision=2):
     pd.set_option("display.precision", 2)
     columns_dict = {}
     for i in column_names:
         columns_dict[i] ='...'
     df2 = pd.concat([dataframe.iloc[:5,:],
                        pd.DataFrame(index=['...'], data=columns_dict),
-                       dataframe.iloc[-5:,:]]).style.format(precision = prec).set_properties(subset=['type'], **{'background-color': 'yellow'})
+                       dataframe.iloc[-5:,:]]).style.format(precision = precision).set_properties(subset=[highlighted_col], **{'background-color': 'yellow'})
     pd.options.display.show_dimensions = True
     display(df2)
-    # print(f'{dataframe.shape[0]} rows x {dataframe.shape[1]} columns') #prints dimensions
+
 #display df with highlighted column 
-display_df(df, column_names, 1)
+display_df(df, column_names, 'type', 1)
 
 
 # 

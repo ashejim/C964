@@ -5,6 +5,7 @@
     <base target="_blank">
 </head>
 
+(task1:choosing_topic)=
 ## Choosing a Topic
 
 The approval form ensures you start in the right direction before investing time and effort into [task 2](task2c). Evaluators look for our (instructors') signature, and we look for the following:
@@ -51,6 +52,7 @@ If the answers for what you are trying to predict (dependent variable) are in th
 
 - *Classification* algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.  
 
+(task1:choosing_topic:logistic)=
 ```{margin} Logisitc regression: regression or classification?
 Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is a classification.     
 ```

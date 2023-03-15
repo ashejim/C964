@@ -21,58 +21,59 @@ An application (app) is simply software that performs specific tasks.
 
 Your app must help the user solve the organizational problem from [task 1](task1) by doing the following:  
 
-1. Use data to develop a machine learning model. spelling mistake
+1. **Data → ML model:** Use data to develop a machine learning model.
 
-2. Apply the ML model to user-provided data.
+2. **Accuracy Metric:** Provide an appropriate metric or plan for measuring the app's accuracy.
 
-3. Provide visualizations (pictures; they can be presented in the app or document).
+3. **Visualizations:** Present 3 different pictures; can be presented in the app or document.
 
-4. Provide an interactive front-end (interface) so the user can use the application to help solve their organizational problem.  
+4. **User Application:** Provide a way for the "user" to use the ML model towards solving the problem.
 
+<!--tab-item examples -->
 `````{tab-set}
 ````{tab-item} Example 1
->**The App:** A standalone Python project which can predict Iris types (see the [example](sup_class_ex)).
-> 
->**Data → ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an SVN classification model.
+**The App:** A standalone [Jupyter Notebook](https://jupyter.org) file (.ipynb) which can predict Iris types (see the [example](sup_class_ex)).
+>**Data → ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an [SVM classification model](sup_class_ex:develop).
 >
-> **New data → ML model → prediction:** Using new flower dimensions, the model can predict the Iris type. 
+> **Accuracy Metric:** Percent of correct predictions on [testing data](sup_class_ex:accuracy).   
 >
-> **Visualizations:** Histograms showing distributions of different flower features and a confusion matrix illustrating the accuracy of the classification model.
+> **Visualizations:** [Histograms](sup_class_ex:descriptive:visuals:histograms) showing distributions of different flower features and a [confusion matrix](sup_class_ex:accuracy:confusion_matrix) illustrating the accuracy of the classification model.
 >  
-> **User interface:** Following detailed instructions via the console, the user can input flower dimensions, and the app returns a prediction.
+> **User interface:** (New data → ML model → prediction) Following detailed instructions, the user can [input flower dimensions](sup_class_ex:ui:code), run code in the Jupyter notebook, and the app returns a prediction helping customers identify their flowers.
 ````
+
 ````{tab-item} Example 2
-> **The App:** A standalone [Jupyter Notebook](https://jupyter.org) file (.ipynb) predicting house prices.
+**The App:** A standalone Pycharm (Python) project predicting house prices.
 >
 > **Data → ML model:** Labeled housing data trains a multi-linear regression model to predict house prices.
+> 
+> **Accuracy Metric:** [Mean squared error](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#examples-using-sklearn-metrics-mean-squared-error) of the model on testing data.
 >
-> **New data → ML model → prediction:** Using unseen house data, the model predicts the house's price. 
+> **Visualizations:** Histograms showing distributions of data features and scatterplots demonstrating data correlations. 
 >
-> **Visualizations:** Histograms showing distributions of data features and scatterplots demonstrating data correlations.  
->
-> **User interface:** Following detailed instructions via the Jupyter notebook file, the user can adjust widget sliders to get a price prediction.
+> **User interface:** (New data → ML model → prediction) Via console the user can input unseen house data, and the model predicts a house's price helping a realty firm make investment decisions.
 ````
+
 ````{tab-item} Example 3
-> **The App:** A web app providing movie recommendations.
+**The App:** A web app (developed with [Juptyer, voila, and deployed on Heroku](https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html) recommending movies.
+> **Data → ML model:** Using movie data, data is [vectorized](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) so that [Cosine similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) can provide similarity scores between any two movies. 
 >
-> **Data → ML model:** Cosine similarity provides a similarity score between any two movies. 
->
-> **User data → ML model → recommendation:** Using a user-provided movie, the five most similar movies are returned. 
+> **Accuracy Metric:** Mean Cosine simliarity scores on test data, or a plan to measure the app's acccuracy based on future user feedback,
 >
 > **Visualizations:** Histograms showing distributions of movie features and samples of Cosine Similarity matrices.  
->
-> **User interface:** A web app (developed with [Juptyer, voila, and deployed on Heroku](https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html) returns five recommendations for a user typed movie.
+> 
+> **User interface:** (New data → ML model → prediction) Using a user-provided movie, the web app returns five recommendations for a user typed movie helping customers find movies to watch. See this [movie recommendation example](https://github.com/Prajwal10031999/Movie-Recommendation-System-Using-Cosine-Similarity)
 ````
+
 ````{tab-item} Example 4
-> **The App:** A hosted Jupyter notebook identifies images as a cat or dog.  
->
+**The App:** A hosted Jupyter notebook identifies images as a cat or dog.  
 > **Data → ML model:** Labeled images are used to [train a neural network model to classify images](https://www.tensorflow.org/tutorials/images/classification) of dogs and cats.
 >
-> **New data → ML model → prediction:** Loading an image from a hosted folder, the model classifies it as a dog or cat. 
+> **Accuracy Metric:** Percent of correct predictions on testing data.  
 >
 > **Visualizations:** Graphs of training and validation accuracy and loss, a confusion matrix showing model accuracy, and image examples.
 >
-> **User interface:** Following detailed instructions, the user can upload an image to Jupyter notebook deployed on [Datalore](https://datalore.jetbrains.com), and the app classifies the image as cat or dog.
+> **User interface:** (New data → ML model → prediction) Following detailed instructions, the users upload an image to Jupyter notebook folder deployed on [Datalore](https://datalore.jetbrains.com), and run the app classifying the image as cat or dog.
 ````
 `````
 
