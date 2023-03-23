@@ -14,6 +14,9 @@ chapters:
     - file: sup_class_ex-develop
     - file: sup_class_ex-accuracy
     - file: sup_class_ex-ui
+  - file: sup_reg_ex
+    sections:
+    - file: sup_reg_ex_develop
 - file: task2_doc
   sections:
   - file: task2_doc_d
@@ -24,5 +27,6 @@ chapters:
   sections:
   - file: ci_c964
   - file: ci_other
+- file: support_this_page
 # - file: github_page
 # - file: ML_page

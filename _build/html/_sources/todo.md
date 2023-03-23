@@ -14,6 +14,14 @@
     - Add environment tutorial
     - Add github/gitlab tutorial
     - Add brief stats tutorial
+
+- ~~updated task 2 guide and examples~~
 - ~~update waiver form policy~~
 - ~~Add Google Analytics to _toc and Google account~~
 - ~~check that [google analytics](https://analytics.google.com/analytics/web/#/p355116886/reports/intelligenthome) is working~~
+
+- ~~update APA links to WC article, [APA](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524)~~
+
+- check that all APA links are updated.
+
+- add [comment page](https://jupyterbook.org/en/stable/interactive/comments/utterances.html)

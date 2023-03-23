@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # (sup_class_ex:develop)=
-# ## Data product Model Development
+# ## Model Development
 # 
 # Supervised algorithms use inputs (independent variables) and labeled outputs (dependent variable -the "answers") to create a model that can measure its performance and learn over time. Splitting the data into independent and dependent variables, we have the following:
 
@@ -26,7 +26,11 @@ X = df.drop(columns=['type']) #indpendent variables
 y = df[['type']].copy() #dependent variables
 
 
-# 
+# ```{note}
+# The focus of [Task 2 part D *Data Product*] (task2d:dataproduct) will be the what, how, and why of your model's development.
+# ```
+
+# (sup_class_ex:develop:train)=
 # ### Train Model(s)
 # 
 # ```{margin}
@@ -60,7 +64,7 @@ display_html(X_train_styler._repr_html_()+ space  + y_train_styler._repr_html_()
 
 # Read the [docs](sklearn_link)! By default *train_test_split*, "randomly" splits the sets. Setting the seed (or state) controls the experiments. See [should you use a random seed?](https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models).
 # 
-# We can now train a model using the independent (usually denoted 'X') and dependent variables (usually denoted 'y') from the training data. Sklearn had a deep [supervised learning library](https://scikit-learn.org/stable/supervised_learning.html). Note that many of these models (including SVM) have both classification and regression extensions. 
+# We can now train a model using the independent (usually denoted 'X') and dependent variables (usually denoted 'y') from the training data. Sklearn has a deep [supervised learning library](https://scikit-learn.org/stable/supervised_learning.html). Note that many of these models (including SVM) have both classification and regression extensions. 
 
 # In[4]:
 
@@ -68,7 +72,7 @@ display_html(X_train_styler._repr_html_()+ space  + y_train_styler._repr_html_()
 from sklearn import svm
 
 svm_model = svm.SVC(gamma='scale', C=1) #Creates a svm model object. Mote, 'scale' and 1.0 are gamma and C's respective defaults 
-svm_model.fit(X_train,y_train) 
+svm_model.fit(X_train,y_train)
 
 
 # What went wrong? The sklearn '.fit' function expected the 'y' data as a 1d array, but I gave it a DataFrame. Let's fix that. 

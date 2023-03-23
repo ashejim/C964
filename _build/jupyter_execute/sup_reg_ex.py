@@ -12,7 +12,7 @@
 # 
 # To predict a number for a feature contained in the data, use a supervised *regression* method (but not [logistic regression](task1:choosing_topic:logistic)). 
 # 
-# For this example, we'll slightly modify the problem from the [previous [example](sup_class_ex). Instead of the category *type*, we'll predict the number *sepal-length*.  
+# For this example, we'll slightly modify the problem from the [previous example](sup_class_ex). Instead of the category *type*, we'll predict the number *sepal-length*.  
 
 # In[1]:
 
@@ -50,11 +50,11 @@ display_df(df, column_names, 'sepal-length', 1)
 # 
 # - **Data processing** (maybe) if we choose to include *type* as an independent variable, it'll need to be converted from categorical data into numbers the model can use. 
 # - **Model Development** As we'll be predicting a number, a *regression* method will be used instead of a classification method.  
-# - **Accuracy Metric** instead of a simple percentage, we'll need to use a measurement of how close the data fits the model. e.g., mean squared error.  
+# - **Accuracy Metric** instead of a simple percentage, we'll need a measurement of how close the data fits the model. e.g., mean squared error.  
 # 
 # ## Data Exploring and Processing
 # 
-# As the data is identical, this step will be similar to what was done in the [previous example](sup_class_ex:data); please refer to it. Focusing on the *sepal lenght*, we can certainly see a pattern:   
+# As the data is identical, this step will be similar to what was done in the [previous example](sup_class_ex:data); please refer to it. Focusing on the *sepal length*, we can certainly see patterns:      
 
 # In[2]:
 
