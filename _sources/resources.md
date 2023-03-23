@@ -133,6 +133,7 @@ The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To
 (resources:gen:studentresources)=  
 ### Student Resources
 -[Writing Center](https://my.wgu.edu/success-centers/writing-center)
+-[Writing Center Knowledge Base](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb)
 -[Student Resource Hub](https://resource-hub.wgu.edu/)
 
 
@@ -147,7 +148,7 @@ Students have reported missed mistakes when using the Google doc Grammarly exten
 
 (resources:gen:apa)=
 ### APA 
-Your paper should adhere to [APA guidelines](https://apastyle.apa.org/style-grammar-guidelines). Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
+Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524). Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
 
 (resources:gen:libraries)=
 ### Libraries
