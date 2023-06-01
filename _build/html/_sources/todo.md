@@ -2,6 +2,10 @@
 
 - Add Tawyna to CI list, at least as comments
 - Add CM/PM guidance page?
+- Add CS page or create separate site for CS resources which aligns to C964
+- Add T1 info on IRB statement. 
+
+
 - Part C examples:
     - add video to ML sup er class ex.
     - ML regression
@@ -25,3 +29,8 @@
 - check that all APA links are updated.
 
 - add [comment page](https://jupyterbook.org/en/stable/interactive/comments/utterances.html)
+
+- update sup-class example video. update Depreciated code 
+- metrics.ConfusionMatrixDisplay.from_estimator(mysvm_model,x_test,y_test)
+- update video to exclude 'ultimate guide' references
+- check for 'ultimate guide' references.
