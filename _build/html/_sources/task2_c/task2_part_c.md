@@ -104,7 +104,7 @@ The images are typically presented in the application but can also be given in t
 :::{card}
 :class-body: text-center
 Scatterplot
-```{image} ./url_images/visual_demos/visual12.png
+```{image} https://github.com/ashejim/C964/blob/main/url_images/visual_demos/visual12.png
 :height: 100
 ```
 :::
