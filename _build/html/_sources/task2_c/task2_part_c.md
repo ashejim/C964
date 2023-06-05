@@ -13,7 +13,7 @@ An application (app) is simply software that performs specific tasks.
 ```
 
 :::{warning}
-*Do not follow the official C964 rubric.* Instead, follow the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect. 
+*Do not follow the official C964 rubric.* Instead, follow the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect.
 :::
 
 (task2c:appreqs)=
@@ -96,9 +96,9 @@ You are encouraged to use ML libraries. Provided the source code is available to
 (task2c:visualreqs)=
 ### Visualization requirements
 
-- You must have three different images helping describe your project. 
+- You must have three different images helping describe your project.
 
-The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc. 
+The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.
 
 ::::{card-carousel} 4
 :::{card}
