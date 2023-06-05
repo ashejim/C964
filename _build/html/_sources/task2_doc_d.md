@@ -21,6 +21,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ::::{card-carousel} 4
 :::{card}
+Check
 ```{image} ./url_images/user_guide/user_guide1.png
 :height: 100
 ```
