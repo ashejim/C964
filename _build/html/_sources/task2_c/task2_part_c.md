@@ -102,6 +102,35 @@ The images are typically presented in the application but can also be given in t
 
 ::::{card-carousel} 4
 :::{card}
+```{image} ./url_images/user_guide/user_guide1.png
+:height: 100
+```
+:::
+:::{card}
+```{image} ./url_images/user_guide/user_guide2.png
+:height: 100
+```
+:::
+:::{card}
+```{image} ./url_images/user_guide/user_guide3.png
+:height: 100
+```
+:::
+:::{card}
+```{image} ./url_images/user_guide/user_guide4.png
+:height: 100
+```
+:::
+:::{card}
+```{image} ./url_images/user_guide/user_guide5.png
+:height: 100
+```
+:::
+:::{card}
+::::
+
+::::{card-carousel} 4
+:::{card}
 :class-body: text-center
 Scatterplot
 ```{image} ./url_images/visual_demos/visual12.png
