@@ -1,7 +1,7 @@
-  <!-- hack to open links in new tab
+  <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
-</head> -->
+</head>
 
 (task2c)=
 # Task 2: Part C -the application

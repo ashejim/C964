@@ -27,11 +27,14 @@ Check
 ```
 :::
 :::{card}
+:class-body: text-center
 ```{image} ./url_images/user_guide/user_guide2.png
 :height: 100
 ```
 :::
 :::{card}
+:class-body: text-center
+check 2
 ```{image} ./url_images/user_guide/user_guide3.png
 :height: 100
 ```
