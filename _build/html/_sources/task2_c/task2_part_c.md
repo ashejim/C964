@@ -98,36 +98,7 @@ You are encouraged to use ML libraries. Provided the source code is available to
 
 - You must have three different images helping describe your project.
 
-The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc. -->
-
-::::{card-carousel} 4
-:::{card}
-```{image} ./url_images/user_guide/user_guide1.png
-:height: 100
-```
-:::
-:::{card}
-```{image} ./url_images/user_guide/user_guide2.png
-:height: 100
-```
-:::
-:::{card}
-```{image} ./url_images/user_guide/user_guide3.png
-:height: 100
-```
-:::
-:::{card}
-```{image} ./url_images/user_guide/user_guide4.png
-:height: 100
-```
-:::
-:::{card}
-```{image} ./url_images/user_guide/user_guide5.png
-:height: 100
-```
-:::
-:::{card}
-::::
+The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.
 
 ::::{card-carousel} 4
 :::{card}
