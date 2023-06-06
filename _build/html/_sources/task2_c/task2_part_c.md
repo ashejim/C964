@@ -99,98 +99,98 @@ The images are typically presented in the application but can also be given in t
 :::{card}
 :class-body: text-center
 Scatterplot
-```{image} ./url_images/visual_demos/visual12.png
+```{image} ../url_images/visual_demos/visual12.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Regression Line
-```{image} ./url_images/visual_demos/visual0.png
+```{image} ../url_images/visual_demos/visual0.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Confusion Matrix
-```{image} ./url_images/visual_demos/visual1.jpg
+```{image} ../url_images/visual_demos/visual1.jpg
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Histogram
-```{image} ./url_images/visual_demos/visual11.png
+```{image} ../url_images/visual_demos/visual11.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Histograms
-```{image} ./url_images/visual_demos/visual5.png
+```{image} ../url_images/visual_demos/visual5.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Pie-chart
-```{image} ./url_images/visual_demos/visual6.png
+```{image} ../url_images/visual_demos/visual6.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Scatterplot Matrix
-```{image} ./url_images/visual_demos/visual7.png
+```{image} ../url_images/visual_demos/visual7.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Correlation Matrix
-```{image} ./url_images/visual_demos/visual13.png
+```{image} ../url_images/visual_demos/visual13.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Barplot
-```{image} ./url_images/visual_demos/visual9.png
+```{image} ../url_images/visual_demos/visual9.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Barplot
-```{image} ./url_images/visual_demos/visual8.png
+```{image} ../url_images/visual_demos/visual8.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Line plots
-```{image} ./url_images/visual_demos/visual10.png
+```{image} ../url_images/visual_demos/visual10.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Model Explanation
-```{image} ./url_images/visual_demos/visual4.png
+```{image} ../url_images/visual_demos/visual4.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Regression
-```{image} ./url_images/visual_demos/visual2.png
+```{image} ../url_images/visual_demos/visual2.png
 :height: 100
 ```
 :::
 :::{card}
 :class-body: text-center
 Clustering
-```{image} ./url_images/visual_demos/visual3.png
+```{image} ../url_images/visual_demos/visual3.png
 :height: 100
 ```
 :::
@@ -238,14 +238,14 @@ example hi
 Time to get to work. 
 
 ````{margin} ...but the requirments won't change.
-```{image} ./url_images/good_code.png
+```{image} ../url_images/good_code.png
 :width: 200
 ```
 ````
 
 ````{warning}
 Following tutorials/examples is a great way to learn. But when it comes to writing your own code, *don't [copy, paste, and **pray**](https://www.youtube.com/watch?v=-wtzy1aqS9Q)*. Instead, understand what it's doing for each line of code and check that it runs as intended. Investing in the extra time will make you a better computer scientist and could save many frustrating hours. 
-```{image} ./url_images/code_quality.png
+```{image} ../url_images/code_quality.png
 :height: 150
 :align: center
 ```
