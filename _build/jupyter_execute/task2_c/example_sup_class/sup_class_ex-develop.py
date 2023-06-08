@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # (sup_class_ex:develop)=
-# ## Model Development
+# ## <a id='toc1_1_'></a>[Model Development](#toc0_)
 # 
 # Supervised algorithms use inputs (independent variables) and labeled outputs (dependent variable -the "answers") to create a model that can measure its performance and learn over time. Splitting the data into independent and dependent variables, we have the following:
 
@@ -31,7 +31,7 @@ y = df[['type']].copy() #dependent variables
 # ```
 
 # (sup_class_ex:develop:train)=
-# ### Train Model(s)
+# ### <a id='toc1_1_1_'></a>[Train Model(s)](#toc0_)
 # 
 # ```{margin}
 # A model can learn the details and noise particular to the training data so well that it doesn't perform well on new data. This is called [*overfitting*](https://en.wikipedia.org/wiki/Overfitting). Overcomplicated non-linear and nonparametric models are more susceptible to this. The term *overtraining* can be used synonymously or to mean too much training as a cause of overfitting. 

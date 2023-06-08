@@ -19,10 +19,9 @@ For a demonstration on this page, I'll use Anaconda because environments can be 
 It's a tool that keeps dependencies required for different projects separate by creating isolated python virtual environments for them. This is one of the most important tools Python developers use. (TODO add GeekforGeek reference) See [Python Virtual Environment](https://www.geeksforgeeks.org/python-virtual-environment/) for more detals. 
 ```
 
-## Step 2. Install the Required Packages
-Open a windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator. 
+## Step 2. Install the Required PackagesOpen a Windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator. 
 
-**Install Jupyter-book** which converts markdown and jupyter-notebook files into html. 
+**Install Jupyter-book** which converts markdown and Jupyter-notebook files into HTML.
 
 `````{tab-set}
 ````{tab-item} pip
@@ -45,7 +44,8 @@ conda install -c anaconda pip
 Now you can 'pip' in conda. 
 ````
 
-**Install git** (it should already be installed) so you can connect your local files to a GitHub repository. 
+**Install git** (it should already be installed) so you can connect your local files to a GitHub repository.
+
 `````{tab-set}
 ````{tab-item} pip
 ```{code-block} shell
@@ -60,6 +60,7 @@ conda install -c anaconda git
 `````
 
 **Install ghp-import** which will post your HTML files from your GitHub repository to the web. 
+
 `````{tab-set}
 ````{tab-item} pip
 ```{code-block} shell
@@ -80,19 +81,24 @@ Check out all the cool UI stuff you can do: [JupyterBook UI elements](https://ju
 ## Step 3. Create a Jupyter-Book
 
 Create a sample book by going to the directory and running the following command:
+
 ```shell
 jupyter-book create mynewbook/
 ```
-Where 'mynewbook/' is the name of the folder you want your jupyter-book and all its source files to live (it will create the folder). 
+
+Where 'mynewbook/' is the name of the folder you want your Jupyter-book and all its source files to live (it will create the folder). 
 
 ## Step 4. Add some content!
 
-Your two main choices for adding content are  Markdown (.md) and Jupyter Notebook (.ipynb) files. The former is easier and great for most stuff. The latter is less easy but very flexible. 
+Your two main choices for adding content are  Markdown (.md) and Jupyter Notebook (.ipynb) files. The former is easier and great for most stuff. The latter is less easy but very flexible.
 
-```{note} 
-The sample book created in step 3 includes both Markdown and Jupyter files. 
+```{note}
+The sample book created in step 3 includes both Markdown and Jupyter files.
+
 ```
+
 Some Markdown editor options:
+
 - [online editor](https://stackedit.io/app#)
 - [Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
 - [typora](https://typora.io/)

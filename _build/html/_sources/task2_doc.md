@@ -16,6 +16,7 @@ Write your documentation following **C964 Task 2 documentation template**:
 To gauge the level of detail evaluators typically expect, review these examples.
 
 (task1:completedexamples)=
+
 `````{tab-set}
 ````{tab-item} Task 2 documentation example A
 > [![Task 2 example-a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
@@ -33,25 +34,25 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 
    <input type="checkbox"> Pass [task 1](task1). 
    
-   <input type="checkbox"> Finish [task 2 part C](task2c). 
+   <input type="checkbox"> Finish [task 2 part C](task2c).
 
    <div class = "tasklist2">
 
    <input type="checkbox"> The code runs without errors.
 
-   <input type="checkbox"> Data is used to creating an ML model.
+   <input type="checkbox"> Data is used to create an ML model.
 
    <input type="checkbox"> The user input can provide input and the ML model is applied to that input.
 
    </div>
 
-   <input type="checkbox"> Write the [Data Product](task2d:dataproduct). 
+   <input type="checkbox"> Write the [Data Product](task2d:dataproduct).
    
    <input type="checkbox"> Write the [Accuracy Analysis](task2d:accuracy)
 
-   <input type="checkbox"> Write the [User Guide](task2d:userguide). 
+   <input type="checkbox"> Write the [User Guide](task2d:userguide).
 
-   <input type="checkbox"> Write the remaining [part D](task2d) sections, and then all of [part A and part B](task2ab). 
+   <input type="checkbox"> Write the remaining [part D](task2d) sections, and then all of [part A and part B](task2ab).
 
    <input type="checkbox"> Following APA guidelines, [check grammar and sources](task2:sources), export as a pdf, and submit.
 

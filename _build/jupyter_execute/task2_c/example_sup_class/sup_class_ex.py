@@ -7,7 +7,7 @@
 # 🚧 This site is under construction! As of now, the Python kernel may not run on the page or have very long wait times. Also, expect typos.👷🏽‍♀️
 # ```
 # (sup_class_ex)=
-# # Example: Supervised Classification App
+# # <a id='toc1_'></a>[Example: Supervised Classification App](#toc0_)
 # 
 # Supervised classification fits the project requirements well, and is also a good place to start. The nature of your Data and organizational needs dictate which methods you can use. So what type of data do we need? 
 # 

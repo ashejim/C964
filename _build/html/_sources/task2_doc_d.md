@@ -1,3 +1,14 @@
+<!-- TOC -->
+
+- [Task 2 part D](#task-2-part-d)
+    - [User Guide](#user-guide)
+    - [Data Product Code](#data-product-code)
+    - [Accuracy Analysis](#accuracy-analysis)
+        - [For Supervised Classification Methods](#for-supervised-classification-methods)
+        - [For Supervised Regression Methods](#for-supervised-regression-methods)
+
+<!-- /TOC -->
+
 (task2d)=
 # Task 2 part D 
 Part D of the documentation explains the technical details of your project and should target the computer science subject matter expert, i.e., the evaluators. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [Data Product Code](task2d:dataproduct), [Accuracy Analysis](task2d:accuracy), and [User [Guide](task2d:userguide) are the most important. As such, we recommend completing these sections first.
@@ -21,34 +32,45 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ::::{card-carousel} 4
 :::{card}
+
 ```{image} ./url_images/user_guide/user_guide1.png
 :height: 100
 ```
+
 :::
 :::{card}
+
 ```{image} ./url_images/user_guide/user_guide2.png
 :height: 100
 ```
+
 :::
 :::{card}
+
 ```{image} ./url_images/user_guide/user_guide3.png
 :height: 100
 ```
+
 :::
 :::{card}
+
 ```{image} ./url_images/user_guide/user_guide4.png
 :height: 100
 ```
+
 :::
 :::{card}
+
 ```{image} ./url_images/user_guide/user_guide5.png
 :height: 100
 ```
+
 :::
 :::{card}
 ::::
 
 (task2d:dataproduct)=
+
 ## Data Product Code
 
 This section should describe the development of your ML application justifying and explaining decisions made in the process. Explain the *what*, *how*, and *why* of the machine learning model and its application.
@@ -60,15 +82,17 @@ This section should describe the development of your ML application justifying a
 -*Why?* Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.  
 
 (task2d:accuracy)=
+
 ## Accuracy Analysis
 
 In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate *metric* for assessing accuracy OR providing a development plan for obtaining such a metric in the future.
 
 :::{note}
-There is **NO** 
+There is **NO**
 :::
 
 (task2d:accuracy:super)=
+
 ### For Supervised Classification Methods
 
 ### For Supervised Regression Methods

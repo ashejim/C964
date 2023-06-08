@@ -1,4 +1,6 @@
+
 (task2c)=
+
 # Task 2: Part C -the application
 
 Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring an application of machine learning to data, they will assess *what* your application does -not its presentation. 
@@ -10,6 +12,11 @@ An application (app) is simply software that performs specific tasks.
 :::{warning}
 *Do not follow the official C964 rubric.* Instead, follow the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). This template has seemingly become the defacto rubric and is what evaluators expect.
 :::
+
+
+TEST LINK 
+- [Model Development](#model-development)
+- [Topic Approval](#topic-approval)
 
 (task2c:appreqs)=
 ## What does the application need to do?

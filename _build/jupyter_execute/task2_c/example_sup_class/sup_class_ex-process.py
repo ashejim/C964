@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# 
+# 
 # (sup_class_ex:data)=
-# ## Data Exploring and Processing
+# ## <a id='toc1_1_'></a>[Data Exploring and Processing](#toc0_)
 # 
 # Here we'll do two essential things. 
 # 1. Process the data.
@@ -23,6 +25,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
 df = pd.read_csv(url) #read CSV into Python as a DataFrame
 df # displays the DataFrame
+
 
 
 # Oops. The first row of data has been set as headers. Some data sets have headers already -this one doesn't. How do we fix that? Google ["how to python add headers to dataframe"](https://www.google.com/search?q=how+to+python+add+headers+to+dataframe&rlz=1C1GCEA_enUS995US997&ei=7TuSY7TmGsyJggfflr3YCg&ved=0ahUKEwj0kK_X4er7AhXMhOAKHV9LD6sQ4dUDCA8&uact=5&oq=how+to+python+add+headers+to+dataframe&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQgAQQDToICAAQCBAeEA06CAgAEAgQBxAeSgQIQRgASgQIRhgAULgCWMkIYMEfaAFwAXgAgAFPiAH1A5IBATeYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp). You'll need to learn a lot of micro-skills -pick them up when needed. Reading up on the data set, [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set), we name the columns:
@@ -47,7 +50,7 @@ df # displays the DataFrame
 # That's all the processing needed for now. 
 # 
 # (sup_class_ex:descriptive)=
-# ### Descriptive Methods and Visualizations
+# ### <a id='toc1_1_1_'></a>[Descriptive Methods and Visualizations](#toc0_)
 # 
 # Let's explore the data. A good starting question: how many different Iris categories do we have?
 
