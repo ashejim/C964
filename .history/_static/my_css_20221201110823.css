@@ -1,0 +1,131 @@
+/* img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+h1 {
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    color: #003057 !important;
+    /* background-color:  */
+    font-weight: bold;
+    border-bottom: 2px solid #003057 !important; 
+    padding-bottom: 3px;
+}
+
+h2 {
+    display: block;
+    color: #003057 !important;
+    /* background-color:  */
+    font-weight: bold;
+    border-bottom: 1px solid; 
+    padding-bottom: 1px;
+}
+
+h3 {
+    display: block;
+    color: #003057 !important;
+}
+
+img[src$='#image-thumb']{
+    height: 100px;
+    border: 1px solid #D5DBDB;
+}
+
+.image-thumb img{
+    height: 100px;
+    border: 1px solid #D5DBDB;
+}
+
+.image-inline img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[src$='#icon']{
+    height: 20px;
+    width: 20px;
+}
+
+.image-border img{
+    border: 1px solid #D5DBDB;
+}
+
+.caption-hack img {
+    margin-bottom: -28px;
+}
+
+/*.md Enumeration font set to bold  */
+ol > li::marker {
+    font-weight: bold;
+}
+
+/* hack to have links open new tab */
+a {
+    target-name:new;
+    target-new:tab;
+}
+
+iframe.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.markdown-body .task-list-item {
+    list-style-type: none !important;
+}
+  
+.markdown-body .task-list-item input[type="checkbox"] {
+    margin: 0 4px 0.25em -20px;
+    vertical-align: middle;
+}
+
+input.chk {
+    width: 10px;
+    text-indent:-40px;
+    padding-left:20px;
+}
+
+/* input.checkbox {
+    /* text-indent: -20px; */
+    /* margin-left: 40px; */
+/* } */
+
+/* set line height for special sections */
+.tasklist {
+    margin-top: -10px;
+    margin-left: 45px;
+    /* text-indent: -20px; */
+    /* text-indent: -20px; */
+    /* default is 1.6 */
+    line-height: 1.5; 
+    margin-bottom: -5px;
+}
+
+/* adjust paragraphs within tasklist container */
+.tasklist p {
+    margin-top: 0x;
+    margin-bottom: 5px;
+    text-indent: -18px;
+}
+
+.tasklist2 p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-indent: -18px;
+}
+
+/* set line height for special sections */
+.tasklist2 {
+    margin-top: 0px; 
+    margin-bottom: 8px;    
+    margin-left: 18px;
+    /* default is 1.6 */
+    line-height: 1.5; 
+    font-size: 85%;
+    color: rgb(96, 96, 96)
+}

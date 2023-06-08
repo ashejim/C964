@@ -1,11 +1,12 @@
-(task1)=
 # Task 1: Topic Approval
+
+(task1)=
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
 
-(task1:choosing_topic)=
+(task1:choosing-a-topic)=
 ## Choosing a Topic
 
 The approval form ensures you start in the right direction before investing time and effort into [task 2](task2c). Evaluators look for our (instructors') signature, and we look for the following:

@@ -5,6 +5,7 @@
 </head>
 
 # Task 2: The Documentation
+(task2_doc)=
 
 Write your documentation following **C964 Task 2 documentation template**:
 > [![Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)

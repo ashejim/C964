@@ -1,7 +1,6 @@
-
-(task2c)=
-
 # Task 2: Part C -the application
+
+(task2_part_c)=
 
 Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring an application of machine learning to data, they will assess *what* your application does -not its presentation. 
 
