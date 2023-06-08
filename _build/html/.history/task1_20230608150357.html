@@ -1,0 +1,901 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Task 1: Topic Approval &#8212; Computer Science Capstone</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-H4N36TZQ78');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/GT_Headlogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_c/task2_part_c.html">
+   Task 2: Part C -the application
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html">
+     <a id="toc1_">
+     </a>
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-process.html">
+       <a id="toc1_1_">
+       </a>
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-develop.html">
+       <a id="toc1_1_">
+       </a>
+       Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-accuracy.html">
+       Accuracy Analysis (testing)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex.html">
+     Example: Supervised Regression App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop.html">
+       Data product Model Development (part 1)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop-2.html">
+       Data product Model Development (part 2)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_doc.html">
+   Task 2: The Documentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc_d.html">
+     Task 2 part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../resources.html">
+   C964 Resources
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ci_page.html">
+   Course Faculty
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ci_other.html">
+     BSCS, Software, and other Course Faculty
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../support_this_page.html">
+   Help Support this Website
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ashejim/C964"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2F.history/task1_20230608150357.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/.history/task1_20230608150357.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-a-topic">
+   Choosing a Topic
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#machine-learning-algorithms">
+     Machine Learning Algorithms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#where-to-start-data-or-the-ml-algorithm">
+     Where to start? Data or the ML algorithm?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#topic-summary-examples">
+       Topic Summary Examples
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#completed-examples">
+       Completed Examples
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#wgu-capstone-excellence-archive">
+         WGU Capstone Excellence Archive**
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-approval">
+   Topic Approval
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waiver-form">
+   Waiver Form
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#faq">
+   FAQ
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Task 1: Topic Approval</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choosing-a-topic">
+   Choosing a Topic
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#machine-learning-algorithms">
+     Machine Learning Algorithms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#where-to-start-data-or-the-ml-algorithm">
+     Where to start? Data or the ML algorithm?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#topic-summary-examples">
+       Topic Summary Examples
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#completed-examples">
+       Completed Examples
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#wgu-capstone-excellence-archive">
+         WGU Capstone Excellence Archive**
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-approval">
+   Topic Approval
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waiver-form">
+   Waiver Form
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#faq">
+   FAQ
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="task-1-topic-approval">
+<h1>Task 1: Topic Approval<a class="headerlink" href="#task-1-topic-approval" title="Permalink to this headline">#</a></h1>
+<!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
+<section id="choosing-a-topic">
+<h2>Choosing a Topic<a class="headerlink" href="#choosing-a-topic" title="Permalink to this headline">#</a></h2>
+<p id="task1-choosing-a-topic">The approval form ensures you start in the right direction before investing time and effort into <a class="reference internal" href="../task2_c/task2_part_c.html#task2-part-c"><span class="std std-ref">task 2</span></a>. Evaluators look for our (instructors’) signature, and we look for the following:</p>
+<ol class="simple">
+<li><p>An application of machine learning (ML).</p></li>
+<li><p>An organizational need for your ML application to help solve.</p></li>
+<li><p>A <em>basic outline</em> of your implementation plan.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title">What is <em>machine learning</em>?</p>
+<p>It’s a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see <span class="xref myst">FAQ: What is ML?</span>.</p>
+</aside>
+<p>The “organizational need” requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project’s profitability or practical impact. Such criteria are <em>not</em> assessed. This is a computer science project; neither you nor the evaluators are business majors.</p>
+<p>But you can’t apply an algorithm to data -without data. So finding data should be an early step.</p>
+<section id="data">
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
+<p>A machine learning application is the hard requirement of the capstone, but you can’t apply an algorithm to data -without data. Moreover, most datasets provide a question to answer, e.g., predictions, classifications, or recommendations for which an “organizational need” can always be found.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.kaggle.com/datasets"><strong>Kaggle.com</strong></a></p></li>
+<li><p><a class="reference external" href="https://datasetsearch.research.google.com/">Google Dataset Search</a></p></li>
+<li><p><a class="reference external" href="https://data.gov/">Data.gov</a></p></li>
+<li><p>More <a class="reference external" href="https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/">here</a> and <a class="reference external" href="https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d">here</a></p></li>
+<li><p>Simulated data</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>No minimal data complexity or processing is required.</em> Choosing data which needs less processing or simplifying a dataset (you don’t have to use it all) can make the project technically more accessible.</p>
+</div>
+</section>
+<section id="machine-learning-algorithms">
+<h3>Machine Learning Algorithms<a class="headerlink" href="#machine-learning-algorithms" title="Permalink to this headline">#</a></h3>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Classification &amp; Regression Overview</strong></p>
+<iframe 
+src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay"
+> </iframe>
+</aside>
+<p><strong>Supervised Learning</strong>
+If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can <em>train</em> a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a <em>regression</em> method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a <em>classification</em> method should be used.</p>
+<ul class="simple">
+<li><p><em>Regression</em> algorithms predict numbers. Examples include linear regression, polynomial regression, decision tree regression, random forest regression, and many more.</p></li>
+</ul>
+<!--  https://www.kaggle.com/code/duyguay12/regression-examples-for-machine-learning -->
+<ul class="simple">
+<li><p><em>Classification</em> algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.</p></li>
+</ul>
+<aside class="margin sidebar" id="task1-choosing-topic-logistic">
+<p class="sidebar-title">Logisitc regression: regression or classification?</p>
+<p>Really both, but most often, it’s used for classification. Logistic regression uses input variables to predict the <em>probability</em> of an outcome returning a number between 0.0 and 1.0 -hence “regression.” However, using that probability to predict whether an outcome occurs (yes/no) is classification.</p>
+</aside>
+<p><strong>Unsupervised Learning</strong>
+If what you are trying to find is not directly in the data (aka <em>tagged</em> or <em>labeled</em>), then an unsupervised method might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).</p>
+<p><strong>Reinforced Learning</strong>
+Sometimes solutions need to adapt to particular situations. That is, the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot’s state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more challenging to develop than supervised or unsupervised methods.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Need help determining which particular algorithm will work best? That’s OK! You won’t know until you’ve spent time investigating and experimenting. But that’s not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. <em>Any ML algorithm</em> given in task 1 appropriate for your data will be accepted, and you might do something different in task without needing to revise task 1 (see the <a class="reference internal" href="../task1.html#task1-faq-change-task1"><span class="std std-ref">FAQ</span></a> below).</p>
+</div>
+</section>
+<section id="where-to-start-data-or-the-ml-algorithm">
+<h3>Where to start? Data or the ML algorithm?<a class="headerlink" href="#where-to-start-data-or-the-ml-algorithm" title="Permalink to this headline">#</a></h3>
+<p>It’s best to consider both. In a “real-world” scenario, you would likely be given data to analyze and a problem to solve. So starting with the data, and then determining the proper ML tools is most natural. However, you get to choose the problem and hence the tools needed to solve it -provided you have data fitting that problem. For example, someone interested in image recognition might restrict their data search to sets of labeled images. To simplify coding steps, they might look at images with standard sizes or take a subset of the images limiting the number of classifications. At any point, the problem or chosen algorithm can be revised to better fit what you want or can do (even after graduation 😄). A suggested approach:</p>
+<ol class="simple">
+<li><p>Find some data to match your preferred ML method.</p></li>
+<li><p>Find an ML algorithm you can apply to that data.</p></li>
+<li><p>Formulate an “organizational need” helped by that application.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title">Unsure about which ML method to use?</p>
+<p>Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements.</p>
+</aside>
+</section>
+<section id="examples">
+<span id="task1-choosing-examples"></span><h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h3>
+<section id="topic-summary-examples">
+<h4>Topic Summary Examples<a class="headerlink" href="#topic-summary-examples" title="Permalink to this headline">#</a></h4>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="ddb53a16-5171-4806-9d34-cf20ec903ff8" name="5f3f5960-dff6-4509-a739-40d586670f38" type="radio">
+</input><label class="sd-tab-label" for="ddb53a16-5171-4806-9d34-cf20ec903ff8">
+Example 1</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Petal dimensions and species of fifty <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
+<p><strong>ML application (non-descriptive method):</strong> <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html#sup-class-ex"><span class="std std-ref">Classify an Iris’s species using its petal dimensions using a supervised calssification model, say SVN or Logistic regression</span></a>.</p>
+<p><strong>Descriptive method:</strong> Histograms showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.</p>
+<p><strong>Organizational Need:</strong> <em>Grow Fast Ferilizer Inc.</em> needs to help customers identify their flowers.</p>
+</div></blockquote>
+</div>
+<input id="5b988868-a39d-4dd3-ba56-c0e7972b4ac7" name="5f3f5960-dff6-4509-a739-40d586670f38" type="radio">
+</input><label class="sd-tab-label" for="5b988868-a39d-4dd3-ba56-c0e7972b4ac7">
+Example 2</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Housing data</p>
+<p><strong>ML application (non-descriptive method):</strong> Predict the selling price of a house using a supervised regression model, say random forest or linear regression.</p>
+<p><strong>Descriptive method:</strong> Histograms showing distributions of data features and scatterplots exploring possible data correlations.</p>
+<p><strong>Organizational Need:</strong> The realty firm, We Sell em Fast!, needs a tool to estimate housing prices.</p>
+</div></blockquote>
+</div>
+<input id="b6c7e96e-c2da-441f-b26f-8f3b846132d7" name="5f3f5960-dff6-4509-a739-40d586670f38" type="radio">
+</input><label class="sd-tab-label" for="b6c7e96e-c2da-441f-b26f-8f3b846132d7">
+Example 3</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Movies, e.g., budget, genre, starring actors, etc.</p>
+<p><strong>ML application (descriptive method):</strong> Use unsupervised clustering, say K-means, to identify groups of similar movies.</p>
+<p><strong>Non-descriptive method:</strong> Using the clusters and user input, recommend a movie.</p>
+<p><strong>Organizational Need:</strong> The streaming service, <em>InterWebFlixs</em>, needs to help users pick a movie.</p>
+</div></blockquote>
+</div>
+<input id="95288aad-a08d-4870-8b80-2c9dc90cf9c8" name="5f3f5960-dff6-4509-a739-40d586670f38" type="radio">
+</input><label class="sd-tab-label" for="95288aad-a08d-4870-8b80-2c9dc90cf9c8">
+Example 4</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Images of dogs and cats.</p>
+<p><strong>ML application</strong> (non-descriptive): Classify an image as a dog or cat using a supervised neural network (classification model), say CNN.</p>
+<p><strong>Descriptive method:</strong> Histograms showing distributions of image features and a confusion matrix illustrating the accuracy of the classification model.</p>
+<p><strong>Organizational Need:</strong> <em>We Love Pets Inc.</em> wants to use customer-uploaded images to market the correct type of pet food.</p>
+</div></blockquote>
+</div>
+</div>
+</section>
+<section id="completed-examples">
+<h4>Completed Examples<a class="headerlink" href="#completed-examples" title="Permalink to this headline">#</a></h4>
+<p>These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.</p>
+<div class="sd-tab-set docutils" id="task1-completedexamples">
+<input checked="checked" id="8f3d5bbf-f0f1-4e37-b361-e1686d8de2cd" name="5f5e9375-483c-4c9f-a0c5-52bfb5cf4143" type="radio">
+</input><label class="sd-tab-label" for="8f3d5bbf-f0f1-4e37-b361-e1686d8de2cd">
+Completed Task 1 Ex. A</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf">task 2 example A</a></p>
+</div>
+<input id="92331fed-6d23-4e25-92fc-a2c3de2b4752" name="5f5e9375-483c-4c9f-a0c5-52bfb5cf4143" type="radio">
+</input><label class="sd-tab-label" for="92331fed-6d23-4e25-92fc-a2c3de2b4752">
+Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf"><img alt="Task 1 example" src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf">task 2 example B</a></p>
+</div>
+</div>
+<section id="wgu-capstone-excellence-archive">
+<h5>WGU Capstone Excellence Archive**<a class="headerlink" href="#wgu-capstone-excellence-archive" title="Permalink to this headline">#</a></h5>
+<p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. Therefore, don’t use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <span class="xref myst">examples</span> above.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="topic-approval">
+<span id="task1-approval"></span><h2>Topic Approval<a class="headerlink" href="#topic-approval" title="Permalink to this headline">#</a></h2>
+<p>Once you’ve decided on a topic, complete the approval form following the template below and <em>email it to your <a class="reference external" href="mailto:myC964capstoneinstructor&#37;&#52;&#48;wgu&#46;edu?cc=my%20program%20mentor&amp;subject=C964:%20capstone%20topic%20approval">C964 assigned instructor</a> for approval.</em></p>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe"><img alt="Topic Approval Form" src="https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<p><strong>Project topic and purpose:</strong> Describe the problem (the “organizational need”) your project will solve.</p>
+<p><strong>Non-descriptive method(s):</strong>  These methods infer from the data, i.e., make predictions or prescriptions. Examples include classification models, regression, image recognition, etc.</p>
+<p><strong>Descriptive methods:</strong> These methods describe and help understand the data, e.g., mean, median, bar plot, scatterplot, k-means clustering, etc. Three visualizations are required. The visualizations are typically descriptive and can count as your descriptive method.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must identify a machine learning application in either the descriptive or non-descriptive section. Most often, the non-descriptive method uses ML, e.g., a classification model allowing the user to provide input to an app that returns a prediction.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The approval form only needs to be a <em>rough</em> outline of a passing project. <strong>Changes from task 1 to task 2 are allowed and expected.</strong> Determining the finer details of a complex project takes time and effort, which you won’t invest until task 2.</p>
+</div>
+<p>Directly emailing your <a class="reference external" href="mailto:myC964capstoneinstructor&#37;&#52;&#48;wgu&#46;edu?cc=my%20program%20mentor&amp;subject=C964:%20capstone%20topic%20approval">assigned course instructor</a> (identified on your C964 COS page; or find them <a class="reference internal" href="../ci_c964.html#ci-c964"><span class="std std-ref">here</span></a>) is typically the fastest and best way to get a signature. Whether emailing <a class="reference external" href="mailto:ugcapstoneit&#37;&#52;&#48;wgu&#46;edu?cc=my%20course%20instructor&amp;subject=C964:%20capstone%20topic%20approval">ugcapstoneit<span>&#64;</span>wgu<span>&#46;</span>edu</a> or your CI directly, always practice professional communication:</p>
+<ul class="simple">
+<li><p>Use your WGU email (non-WGU emails may be categorized as spam).</p></li>
+<li><p>Provide a subject, your capstone course (we support all IT college capstones), and your program mentor’s name (if not in your signature).</p></li>
+<li><p>Clearly state your questions or requests.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The submitted topic approval form must be <em>signed by a <a class="reference internal" href="../ci_c964.html#ci-c964"><span class="std std-ref">C964 course instructor</span></a></em>. Forms without a signature are automatically returned without further review.</p>
+</div>
+</section>
+<section id="waiver-form">
+<span id="task1-waiver"></span><h2>Waiver Form<a class="headerlink" href="#waiver-form" title="Permalink to this headline">#</a></h2>
+<!-- Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized. -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the waiver form is <strong>only</strong> required if your project is based upon or included restricted information. If no waiver form is submitted, Task 1 <em>B: Capstone Release Form</em>, passes automatically.</p>
+</div>
+<p>In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you will need to obtain documented permissions and submit them along with a waiver form to Assessments.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ"><img alt="Waiver Form" src="https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<!-- :::{note}
+![waiver checkbox](../C769/url_images/waiver-check-1box.png)
+::: -->
+</section>
+<section id="faq">
+<span id="task1-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">#</a></h2>
+<p><strong>Do I need to set up an appointment to get approval?</strong></p>
+<p>No. Usually, students email the approval form to their <a class="reference internal" href="../ci_c964.html#ci-c964"><span class="std std-ref">assigned instructor</span></a>. We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns.</p>
+<p><strong>I have questions. Should I email the question or set up an appointment?</strong></p>
+<p>It’s up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when unsure what to ask. For technical coding questions or if you are unsure who to contact, see the <a class="reference internal" href="../ci_page.html#cipage"><span class="std std-ref">course faculty page</span></a>.</p>
+<p>(task1:faq:change_task1)</p>
+<p><strong>What if I start working on task 2 and want to change things? Do I need to resubmit task 1?</strong></p>
+<p>No, not unless it’s an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed <em>without updating the approval form</em>. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you’ll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.</p>
+<p><strong>Can I use projects from other WGU courses?</strong></p>
+<p>You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don’t worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.</p>
+<p id="task1-faq-usec951"><strong>Can I use my C951 task 3? Should I use it?</strong>
+You can use anything you’ve written for C964, including copying verbatim from C951 task 3. If it’s convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.</p>
+<p>Here are some points to consider:</p>
+<ul class="simple">
+<li><p>C951.3 is just a written project, typically around five pages (I’m guessing; ask your C951 instructor), and can be completed in a single afternoon. Comparatively, C964 requires a working machine learning application and accompanying documentation, typically around 20 pages.</p></li>
+<li><p>C951.3 only relates to parts A and B of C964.2. These parts are just a framework for communicating the project to a general audience and almost always pass. Furthermore, they’ll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.</p></li>
+<li><p>Rewriting content C951.3 for a different C964 topic will take little additional work.</p></li>
+<li><p>As it’s just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.</p></li>
+<li><p>Trying to comprehend two projects at once is just more difficult.</p></li>
+</ul>
+<p>Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be a good option.</p>
+<p id="task1-faq-confusingrubric"><strong>The rubric is confusing! The directions seem to require items outside the scope of the project, e.g., “implementation of interactive queries.” The directions have parts A, B, C, and D, but the rubric has “Outcomes” 1-6. How do these align?</strong></p>
+<p><em>We do not advise following the official rubric for C964.</em> Follow the guidelines found on this webpage and the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ">Task 2 template</a>. Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), this template has seemingly become the defacto rubric and is what evaluators expect to see. So while following the template format is not technically required, it is highly recommended.</p>
+<p>Preserve the template’s section titles, and order, and submit all four parts as a single document. With a long, complicated document, aligning content to competencies presents a challenge. Don’t make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.</p>
+<p><strong>Do I need an “electronic signature” as specified in the official rubric?</strong></p>
+<p>No, you can type in your name, use a “fancy” font, or insert an image of your signature.</p>
+<p><strong>What are the common reasons for task 1 being returned?</strong></p>
+<ol class="simple">
+<li><p>No instructor signature on the approval form. You need to send it to us and get a signature <em>before</em> submitting it to Assessments.</p></li>
+<li><p>Both or neither box is marked on the waiver form. Mark one and only one box. See the <a class="reference internal" href="task1_20230608152149.html#task1-waiver"><span class="std std-ref">waiver form instructions</span></a></p></li>
+</ol>
+<p>Note, the waiver form is <strong>only</strong> required if your project is based upon or included restricted information. Task 1 <em>B: Capstone Release Form</em>, passes automatically if no waiver form is submitted, i.e., the waiver is only needed if it’s needed.</p>
+<p><strong>How many attempts are allowed for each task?</strong></p>
+<p>You have <em>unlimited</em> attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.</p>
+<p><strong>What is a descriptive method?</strong></p>
+<p>Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive)</p>
+<p><strong>What is a non-descriptive method?</strong></p>
+<p>Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.</p>
+<p id="task1-faq-whatisml"><strong>What is machine learning?</strong></p>
+<p>That depends on who you ask! But for this project, it is an algorithm applied to data.</p>
+<p>For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it’s used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.</p>
+<p><strong>Can I use libraries outside the standard (Python, Java, etc.) installation?</strong></p>
+<p>Yes. Unlike C950 (Data Structures &amp; Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.</p>
+<p><strong>What language, libraries, and platforms should I use?</strong></p>
+<p>You can use whatever you like. However, we recommend using Python and the <a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter notebook is a great place to start for the app front end. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.</p>
+<p>A development path might look like the following:</p>
+<ul class="simple">
+<li><p>Python IDE → Jupyter notebook → notebook with widgets → hosted notebook with widgets → web app.</p></li>
+</ul>
+<p>Provided the <a class="reference internal" href="task2_c/task2_part_c_20230608144010.html#task2c-appreqs"><span class="std std-ref">minimal app criteria</span></a> are met, submitting at any point along this path will pass part C.</p>
+<p id="task1-faq-gui"><strong>What sort of user interface do I need? Do I need a GUI?</strong></p>
+<p>No, a GUI is <em>not</em> required. Your app must be usable by the “client” to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the “client,” following your <span class="xref myst">user guide</span>, then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.</p>
+<p><strong>Are there length requirements for the documentation?</strong></p>
+<p>No. What you see in the examples and template are just guidelines. The individual evaluator determines what qualifies as “sufficient detail,” which further varies depending on the project and writing style. If you feel you’ve met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details. In the latter case, you can then focus on revising the more narrow scope as directed by the evaluator’s comments, which is generally more efficient than overworking the entire project.</p>
+<p><strong>I’ve completed the task 2 documentation. Should I send it to my course instructor for review?</strong></p>
+<p>If you have specific questions or concerns -yes. However, in most cases, it’s best just to submit. What suffices as “sufficient detail” is highly subjective. We can always tell you to add more, but if you’ve done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need revision. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator’s comments is generally easier than overworking the entire project.</p>
+<p>You have <em>unlimited</em> submissions but limited time. And, typically this is the best and most efficient approach.</p>
+<p><strong>I only have a Linux (or Mac) machine. Will evaluators be able to run my code?”</strong></p>
+<p>Technically (and unfortunately), we are a “Windows” university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is <em>nowhere specifically required</em> in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, a remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ashejim/C964",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./.history"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Jim Ashe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -5,6 +5,7 @@
 </head>
 
 # Task 2: The Documentation
+
 (task2_doc)=
 
 Write your documentation following **C964 Task 2 documentation template**:
@@ -16,7 +17,9 @@ Write your documentation following **C964 Task 2 documentation template**:
 
 To gauge the level of detail evaluators typically expect, review these examples.
 
-(task1:completedexamples)=
+(task2_doc:examples)=
+
+## Examples
 
 `````{tab-set}
 ````{tab-item} Task 2 documentation example A

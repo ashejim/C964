@@ -6,22 +6,22 @@
     <base target="_blank">
 </head>
 
-(task1:choosing-a-topic)=
 ## Choosing a Topic
 
-The approval form ensures you start in the right direction before investing time and effort into [task 2](task2c). Evaluators look for our (instructors') signature, and we look for the following:
+(task1:choosing-a-topic)=
+The approval form ensures you start in the right direction before investing time and effort into [task 2](task2_part_c). Evaluators look for our (instructors') signature, and we look for the following:
 
-1. An application of machine learning (ML). 
-2. An organizational need for your ML application to help solve. 
+1. An application of machine learning (ML).
+2. An organizational need for your ML application to help solve.
 3. A *basic outline* of your implementation plan.
 
 ```{margin} What is *machine learning*?
-It's a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:whatisml)).
+It's a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
 ```
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project; neither you nor the evaluators are business majors.  
 
- But you can't apply an algorithm to data -without data.
+But you can't apply an algorithm to data -without data. So finding data should be an early step. 
 
 ### Data
 
@@ -34,19 +34,19 @@ A machine learning application is the hard requirement of the capstone, but you 
 - Simulated data
 
 ```{note}
-*No minimal data complexity or processing is required.* Choosing data needing less processing or simplifying a dataset can make the project technically more accessible.  
+*No minimal data complexity or processing is required.* Choosing data which needs less processing or simplifying a dataset (you don't have to use it all) can make the project technically more accessible.  
 ```
 
 ### Machine Learning Algorithms
 
-:::{sidebar} **Classification & Regression Overview** 
+:::{sidebar} **Classification & Regression Overview**
 <iframe 
 src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay"
 > </iframe>
 :::
 
 **Supervised Learning**
-If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can *train* a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a *regression* method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification method should be used.
+If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can *train* a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a *regression* method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification* method should be used.
 
 - *Regression* algorithms predict numbers. Examples include linear regression, polynomial regression, decision tree regression, random forest regression, and many more.
 <!--  https://www.kaggle.com/code/duyguay12/regression-examples-for-machine-learning -->
@@ -55,24 +55,24 @@ If the answers for what you are trying to predict (dependent variable) are in th
 
 (task1:choosing_topic:logistic)=
 ```{margin} Logisitc regression: regression or classification?
-Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is a classification.     
+Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
 **Unsupervised Learning**
-If what you are trying to find is not directly in the data (aka *tagged* or *labeled*), then an unsupervised method might be used. Unsupervised algorithms identify patterns not identified in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
+If what you are trying to find is not directly in the data (aka *tagged* or *labeled*), then an unsupervised method might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
 
 **Reinforced Learning**
 Sometimes solutions need to adapt to particular situations. That is, the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot's state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more challenging to develop than supervised or unsupervised methods.
 
 ```{note}
-Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in task 1 appropriate for your data will be accepted, and task 2 can do something different without needing to revise task 1 (see the [FAQ](task1:faq) below).
+Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in task 1 appropriate for your data will be accepted, and you might do something different in task without needing to revise task 1 (see the [FAQ](task1:faq:change_task1) below).
 ```
 
 ### Where to start? Data or the ML algorithm?
 
-It's best to consider both. In a "real-world" scenario, you would likely be given data to analyze and a problem to solve. So starting with the data, and then determining the proper ML tools is most natural. However, you get to choose the problem and hence the tools needed to solve it -provided you have data fitting that problem. For example, someone interested in image recognition might restrict their data search to sets of labeled images. To simplify coding steps, they might look at images with standard sizes or take a subset of the images limiting the number of classifications. At any point, the problem or chosen algorithm can be revised to better fit what you want or can do. A suggested approach:
+It's best to consider both. In a "real-world" scenario, you would likely be given data to analyze and a problem to solve. So starting with the data, and then determining the proper ML tools is most natural. However, you get to choose the problem and hence the tools needed to solve it -provided you have data fitting that problem. For example, someone interested in image recognition might restrict their data search to sets of labeled images. To simplify coding steps, they might look at images with standard sizes or take a subset of the images limiting the number of classifications. At any point, the problem or chosen algorithm can be revised to better fit what you want or can do (even after graduation 😄). A suggested approach:
 
-1. Find some data to match your preferred ML method. 
+1. Find some data to match your preferred ML method.
 2. Find an ML algorithm you can apply to that data.
 3. Formulate an "organizational need" helped by that application.
 
@@ -80,7 +80,8 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
 ```
 
-(task1:choosing:examples)=
+(task1:examples)=
+
 ### Examples
 
 #### Topic Summary Examples
@@ -89,9 +90,9 @@ Look for labeled data for which a supervised learning classification method can 
 ````{tab-item} Example 1
 > **Data:** Petal dimensions and species of fifty [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions using a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
+> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
 >
-> **Descriptive method:** Histograms showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
+> **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
 > **Organizational Need:** *Grow Fast Ferilizer Inc.* needs to help customers identify their flowers. 
 ````
@@ -102,7 +103,7 @@ Look for labeled data for which a supervised learning classification method can 
 >
 > **Descriptive method:** Histograms showing distributions of data features and scatterplots exploring possible data correlations.  
 >
-> **Organizational Need:** The realty firm, We Sell em Fast!, needs a tool to estimate housing prices.
+> **Organizational Need:** The realty firm, *We Sell em Fast!*, needs a tool to estimate housing prices.
 ````
 ````{tab-item} Example 3
 >**Data:** Movies, e.g., budget, genre, starring actors, etc.
@@ -126,14 +127,15 @@ Look for labeled data for which a supervised learning classification method can 
 
 #### Completed Examples
 
+(task1:examples:completed_examples)=
+
 These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.
 
-(task1:completedexamples)=
 `````{tab-set}
 ````{tab-item} Completed Task 1 Ex. A
 > [![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
 
-Also see: [task 2 example A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
+Also see: [task 2 document examples](task2_doc:examples)
 ````
 ````{tab-item} Completed Task 1 Ex. B
 >[![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
@@ -142,20 +144,21 @@ Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources
 ````
 `````
 
-##### WGU Capstone Excellence Archive**
+##### WGU Capstone Excellence Archive
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](task1:task1examples) above.
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepening understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
 
 (task1:approval)=
+
 ## Topic Approval
 
 Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+> [![Topic Approval Form Template](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
 **Project topic and purpose:** Describe the problem (the "organizational need") your project will solve.   
 
-**Non-descriptive method(s):**  These methods infer from the data, i.e., make predictions or prescriptions. Examples include classification models, regression, image recognition, etc. 
+**Non-descriptive method(s):**  These methods infer from the data, i.e., make predictions or prescriptions. Examples include classification models, regression, image recognition, etc. Typically, but not necessarily, this is where ML is applied.
 
 **Descriptive methods:** These methods describe and help understand the data, e.g., mean, median, bar plot, scatterplot, k-means clustering, etc. Three visualizations are required. The visualizations are typically descriptive and can count as your descriptive method.
 
@@ -177,13 +180,14 @@ Directly emailing your [assigned course instructor](mailto:myC964capstoneinstruc
 The submitted topic approval form must be *signed by a [C964 course instructor](ci_c964)*. Forms without a signature are automatically returned without further review.  
 ```
 
-(task1:waiver)=
+(task1:waiver_form)=
+
 ## Waiver Form
 
 <!-- Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized. -->
 
 ```{note}
-the waiver form is **only** required if your project is based upon or included restricted information. If no waiver form is submitted, Task 1 *B: Capstone Release Form*, passes automatically.
+the waiver form is **only** required if your project is based upon or includes restricted information. If no waiver form is submitted, Task 1 *B: Capstone Release Form*, passes automatically.
 ```
 
 In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you will need to obtain documented permissions and submit them along with a waiver form to Assessments.
@@ -195,15 +199,18 @@ In most cases, obtaining authorization can be avoided by fabricating or masking 
 ::: -->
 
 (task1:faq)=
+
 ## FAQ
 
 **Do I need to set up an appointment to get approval?**
 
-No. Usually, students email the approval form to their [assigned instructor](ci_c964). We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns. 
+No. Usually, students email the approval form to their [assigned instructor](ci_c964). We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns.
 
 **I have questions. Should I email the question or set up an appointment?**
 
-It's up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when unsure what to ask. For technical coding questions or if you are unsure who to contact, see the [course faculty page](cipage).
+It's up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when you're unsure what to ask. For technical coding questions or if you are unsure who to contact, see the [course faculty page](cipage).
+
+(task1:faq:change_task1)=
 
 **What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
 
@@ -213,7 +220,8 @@ No, not unless it's an entirely different topic. Minor changes from task 1 to ta
 
 You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
-(task1:faq:usec951)=
+<!-- resume check here 6/8/2023 15:30 -->
+(task1:faq:use_c951)=
 **Can I use my C951 task 3? Should I use it?**
 You can use anything you've written for C964, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic.
 
@@ -224,7 +232,7 @@ Here are some points to consider:
 - Rewriting content C951.3 for a different C964 topic will take little additional work.
 - As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
 - Trying to comprehend two projects at once is just more difficult.
- 
+
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be a good option.
 
 (task1:faq:confusingrubric)=
@@ -288,7 +296,7 @@ No, a GUI is *not* required. Your app must be usable by the "client" to solve th
 
 No. What you see in the examples and template are just guidelines. The individual evaluator determines what qualifies as "sufficient detail," which further varies depending on the project and writing style. If you feel you've met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details. In the latter case, you can then focus on revising the more narrow scope as directed by the evaluator's comments, which is generally more efficient than overworking the entire project.
 
-**I've completed the task 2 documentation. Should I send it to my course instructor for review?** 
+**I've completed the task 2 documentation. Should I send it to my course instructor for review?**
 
 If you have specific questions or concerns -yes. However, in most cases, it's best just to submit. What suffices as "sufficient detail" is highly subjective. We can always tell you to add more, but if you've done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need revision. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator's comments is generally easier than overworking the entire project.
 

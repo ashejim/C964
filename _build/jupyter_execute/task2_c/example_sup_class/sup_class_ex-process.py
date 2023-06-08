@@ -49,8 +49,9 @@ df # displays the DataFrame
 # ```
 # That's all the processing needed for now. 
 # 
-# (sup_class_ex:descriptive)=
-# ### <a id='toc1_1_1_'></a>[Descriptive Methods and Visualizations](#toc0_)
+# (sup_class_ex:descriptive_methods_and_visualization)=
+# 
+# ### Descriptive Methods and Visualizations
 # 
 # Let's explore the data. A good starting question: how many different Iris categories do we have?
 
