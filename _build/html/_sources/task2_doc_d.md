@@ -1,19 +1,11 @@
-<!-- TOC -->
+# Task 2 Part D
 
-- [Task 2 part D](#task-2-part-d)
-    - [User Guide](#user-guide)
-    - [Data Product Code](#data-product-code)
-    - [Accuracy Analysis](#accuracy-analysis)
-        - [For Supervised Classification Methods](#for-supervised-classification-methods)
-        - [For Supervised Regression Methods](#for-supervised-regression-methods)
+(task2_doc_d)=
 
-<!-- /TOC -->
-
-(task2d)=
-# Task 2 part D 
 Part D of the documentation explains the technical details of your project and should target the computer science subject matter expert, i.e., the evaluators. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [Data Product Code](task2d:dataproduct), [Accuracy Analysis](task2d:accuracy), and [User [Guide](task2d:userguide) are the most important. As such, we recommend completing these sections first.
 
-(task2d:userguide)=
+(task2_doc_d:user_guide)=
+
 ## User Guide
 
 The evaluator might go here first. Following your instructions, they will run your app, simultaneously verifying it runs as intended and gaining context of its purpose through demonstration. 

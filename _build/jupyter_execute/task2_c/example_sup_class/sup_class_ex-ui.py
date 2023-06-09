@@ -28,7 +28,7 @@ svm_model.fit(X_train_array,y_train_array);
 
 
 
-# (sup_class_ex:ui)=
+# (sup_class_ex:user_interface)=
 # ## User Interface
 # 
 # We've made an application. Now we need a way for the user to apply it. There are *no specific requirements for how this must be done.* Following the [User Guide](task2d:userguide) in your documentation, the evaluator must be able to quickly get it to work and meet the needs of the problem described in the documentation. We'll present a few options. Remember that simpler interfaces need a more detailed [User Guide](task2d:userguide). 
