@@ -4,7 +4,8 @@
 # 
 # 
 # (sup_class_ex:data)=
-# ## <a id='toc1_1_'></a>[Data Exploring and Processing](#toc0_)
+# 
+# ## Data Exploring and Processing
 # 
 # Here we'll do two essential things. 
 # 1. Process the data.
@@ -17,11 +18,11 @@
 # In[1]:
 
 
-#We'll import libraires as needed, but when submitting, 
+#We'll import libraries as needed, but when submitting, 
 # it's best having them all at the top.
 import pandas as pd
 
-# Load this well worn dataset:
+# Load this well-worn dataset:
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
 df = pd.read_csv(url) #read CSV into Python as a DataFrame
 df # displays the DataFrame
@@ -49,7 +50,7 @@ df # displays the DataFrame
 # ```
 # That's all the processing needed for now. 
 # 
-# (sup_class_ex:descriptive_methods_and_visualization)=
+# (sup_class_ex:descriptive_methods_and_visualizations)=
 # 
 # ### Descriptive Methods and Visualizations
 # 

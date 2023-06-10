@@ -1,15 +1,17 @@
-(ci_other)=
 # BSCS, Software, and other Course Faculty
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
 
+(ci_other)=
+
 :::{warning}
-Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take first priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month). 
+Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take first priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month).
 :::
 
-(ci_other:guidelines)=
+(ci_other:better_questions_get_better_answers)=
+
 ## Better questions get better answers.
 
 The fix might need an understanding of several intertwined layers, of your code structure, the language, libraries, or data. You've already spent hours working on it. Don't expect someone else to quickly diagnose and fix the issue from a quick live code section or a series of screenshots. Remember, asking for help means asking for someone's time. Faculty on this page enjoy helping students (they've volunteered for the additional work), but you need to make it as easy for them to do so.
