@@ -41,7 +41,7 @@ A machine learning application is the hard requirement of the capstone, but you 
 
 :::{sidebar} **Classification & Regression Overview**
 <iframe 
-src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay"
+src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay" alt ="Intro screen of classification and regression overview video by Dr. Ashe."
 > </iframe>
 :::
 

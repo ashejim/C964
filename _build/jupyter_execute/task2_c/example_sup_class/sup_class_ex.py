@@ -9,16 +9,16 @@
 # (sup_class_ex)=
 # # Example: Supervised Classification App
 # 
-# Supervised classification fits the project requirements well, and is also a good place to start. The nature of your Data and organizational needs dictate which methods you can use. So what type of data do we need? 
+# Supervised classification fits the project requirements well, and is so a good place to start. The nature of your Data and organizational needs dictate which methods you can use. So what type of data do we need? 
 # 
 # - One of those features is the category you want to predict (the dependent variable).
 # - At least one other feature (the independent variable(s)).
 # 
-# This will be a simple example. Simple data. Simple model. Simple interface. However, it does demonstrate the minimum requirements for [part C](task2c). We'll also show how things can progressively be improved in [part 2], building on the *working* code. Simple is a great place to start -scaling up is typically easier than going in the other direction. 
+# This will be a simple example. Simple data. Simple model. Simple interface. However, it does demonstrate the minimum requirements for [part C](task2c). We'll also show how things can progressively be improved, building on the *working* code. Simple is a great place to start -scaling up is typically easier than going in the other direction. 
 # 
 # <p float="center">
-#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/iris_dim.png' height="250" />
-#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/plot_iris_svc.png' height="250" /> 
+#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/iris_dim.png' height="250" alt ="Purple iris with arrows denoting the width and length of the petal and sepal."/>
+#   <img src='https://raw.githubusercontent.com/ashejim/C964/main/url_images/plot_iris_svc.png' height="250" alt="Gird of images showing 2D regions defining iris type classification using independent variables sepal length and width determined by SVC using linear, linearSVC, RBF, and degree 3 polynomial kernels."/> 
 # </p>
 # 
 # Let's look at the famous [Fisher's Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set): 
@@ -42,7 +42,7 @@ display(df)
 #Code hide and toggle managed with Jupyter meta-code 'tags.'
 
 
-# Though we described everything as "simple," we'll also see that this dataset is quite *rich* with angles to investigate, and we have many options now. However, a classification project must use a categorical feature as its dependent variable, and for this, the only immediate choice is 'type.'
+# Though we described everything as "simple," we'll also see that this dataset is quite *rich* with angles to investigate. At this point, we have many options, but sticking with a classification project we need a categorical feature as our dependent variable, and for this, we only have the choice 'type.'
 
 # In[2]:
 
@@ -65,7 +65,7 @@ display_df(df, column_names, 'type', 1)
 
 # 
 # :::{sidebar} Watch
-# <iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay">
+# <iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay" alt= "Simple ML supervised classification coding python example by Dr. Jim Ashe.">
 # </iframe>
 # :::
 # 
