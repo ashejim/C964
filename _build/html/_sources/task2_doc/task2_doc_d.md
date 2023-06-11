@@ -30,6 +30,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ./url_images/user_guide/user_guide1.png
 :height: 100
+:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
 ```
 
 :::
@@ -37,6 +38,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ./url_images/user_guide/user_guide2.png
 :height: 100
+:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
 ```
 
 :::
@@ -44,6 +46,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ./url_images/user_guide/user_guide3.png
 :height: 100
+:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
 ```
 
 :::
@@ -51,6 +54,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ./url_images/user_guide/user_guide4.png
 :height: 100
+:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
 ```
 
 :::
@@ -58,6 +62,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ./url_images/user_guide/user_guide5.png
 :height: 100
+:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
 ```
 
 :::
