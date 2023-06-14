@@ -202,27 +202,28 @@ In most cases, obtaining authorization can be avoided by fabricating or masking 
 
 ## FAQ
 
-**Do I need to set up an appointment to get approval?**
+### Do I need to set up an appointment to get approval?
 
 No. Usually, students email the approval form to their [assigned instructor](ci_c964). We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns.
 
-**I have questions. Should I email the question or set up an appointment?**
+### I have questions. Should I email the question or set up an appointment?
 
 It's up to you. But for specific questions, emails are usually best and almost always faster. Appointments are great for general discussions or when you're unsure what to ask. For technical coding questions or if you are unsure who to contact, see the [course faculty page](cipage).
 
 (task1:faq:change_task1)=
 
-**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
+### What if I start working on task 2 and want to change things? Do I need to resubmit task 1?
 
 No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes, at most, you'll be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.
 
-**Can I use projects from other WGU courses?**
+### Can I use projects from other WGU courses?
 
 You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
 <!-- resume check here 6/8/2023 15:30 -->
-(task1:faq:use_c951)=
-**Can I use my C951 task 3? Should I use it?**
+(task1:faq:can_i_use_my_c951_task_3)=
+
+### Can I use my C951 task 3? Should I use it?
 
 You can reuse anything you've of your own academic or professional work, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic. If you have time, consider completing C964 first, as parts A and B of task 2 can always be used verbatim for task 3 of C951.
 
@@ -236,52 +237,52 @@ Here are some points to consider:
 
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be the best option.
 
-(task1:faq:confusingrubric)=
-**The rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D, but the rubric has "Outcomes" 1-6. How do these align?**
+(task1:faq:the_rubric_is_confusing)=
+
+### The rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D, but the rubric has "Outcomes" 1-6. How do these align?
 
 *We do not advise following the official rubric for C964.* Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), this template has seemingly become the defacto rubric and is what evaluators expect to see. So while following the template format is not technically required, it is highly recommended.
 
 Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
 
-**Do I need an "electronic signature" as specified in the official rubric?**
+### Do I need an "electronic signature" as specified in the official rubric?
 
 No, you can type in your name, use a "fancy" font, or insert an image of your signature.  
 
-**What are the common reasons for task 1 being returned?**
+### What are the common reasons for task 1 being returned?
 
 1. No instructor signature on the approval form. You need to send it to us and get a signature *before* submitting it to Assessments.
 2. Both or neither box is marked on the waiver form. Mark one and only one box. See the [waiver form instructions](task1:waiver_form)
 
 Note, the waiver form is **only** required if your project is based upon or included restricted information. Task 1 *B: Capstone Release Form*, passes automatically if no waiver form is submitted, i.e., the waiver only needs to be submitted if it's needed for permissions.
 
-**How many attempts are allowed for each task?**
+### How many attempts are allowed for each task?
 
 You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. It's in your best interest to the complete minimal requirements to the best of your understanding.
 
-**What is a descriptive method?**
+### What is a descriptive method?
 
 Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive).
 
 Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied.  
 
-**What is a non-descriptive method?**
+### What is a non-descriptive method?
 
 Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.
 
-Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied. 
+Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied.
 
-(task1:faq:whatisml)=
-**What is machine learning?**
+### What is machine learning?
 
 That depends on who you ask! But for this project, it is an algorithm applied to data.
 
 For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it's used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.
 
-**Can I use libraries outside the standard (Python, Java, etc.) installation?**
+### Can I use libraries outside the standard (Python, Java, etc.) installation?
 
 Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.
 
-**What language, libraries, and platforms should I use?**
+### What language, libraries, and platforms should I use?
 
 You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook is a great place to start for the app front end. Passing applications are often submitted as the Notebook file (.ipynb) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Java because of their JavaFX experience in software II (C195), but a GUI is not required, and Python is overall better suited for everything which is required. Furthermore, implementing a GUI with Python or Jupyter Notebooks is not difficult (see these [widget examples](sup_class_ex:user_interface)).
 
@@ -292,20 +293,21 @@ A development path might look like the following:
 Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C.
 
 (task1:faq:gui)=
-**What sort of user interface do I need? Do I need a GUI?**
+
+### What sort of user interface do I need? Do I need a GUI?
 
 No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc:userguide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.  
 
-**Are there length requirements for the documentation?**
+### Are there length requirements for the documentation?
 
 No. What you see in the examples and template are just guidelines. The individual evaluator determines what qualifies as "sufficient detail," which further varies depending on the project and writing style. If you feel you've met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details. In the latter case, you can then focus on revising the more narrow scope as directed by the evaluator's comments, which is generally more efficient than overworking the entire project.
 
-**I've completed the task 2 documentation. Should I send it to my course instructor for review?**
+### I've completed the task 2 documentation. Should I send it to my course instructor for review?
 
 If you have specific questions or concerns -yes. However, in most cases, it's best just to submit. What suffices as "sufficient detail" is highly subjective. We can always tell you to add more, but if you've done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need revision. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator's comments is generally easier than overworking the entire project.
 
 You have *unlimited* submissions but limited time. So typically this is the best and most efficient approach.
 
-**I only have a Linux (or Mac) machine. Will evaluators be able to run my code?"**
+### I only have a Linux (or Mac) machine. Will evaluators be able to run my code?
 
 Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux, Android, or Mac app without special instructions. Therefore for non-Windows apps, we recommend providing explicit instructions in the [user guide](task2_doc_d:user_guide) for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).
