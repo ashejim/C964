@@ -348,7 +348,7 @@ Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_
 
 ## Application Performance
 
-For supervised methods, you should use a metric to measure accuracy and help improve the model. Knowing which algorithm will perform best requires an understanding of the data and algorithms. However, using a metric, you can quickly compare and experiment with different approaches -usually by changing a few lines of code. Such experimentation can then lead to understanding. Depending on the method, metrics might similarly be used for unsupervised models. Alternatively (and typically), a future development plan for measuring accuracy of an unsupervised method can be used.
+For supervised methods, you should use a metric to measure accuracy and help improve the model. Knowing which algorithm will perform best requires an understanding of the data and algorithms. However, using a metric, you can quickly compare and experiment with different approaches -usually by changing a few lines of code. Such experimentation can then lead to understanding. Depending on the method, metrics might similarly be used for unsupervised models, such as Silhouette[ coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.
 
 :::{margin} What is good accuracy?
 A good question. The answer subjectively depends on the data and project needs. A 5% accuracy in predicting stoplights is not so good. However, it is *very* good if predicting lottery numbers.
@@ -364,80 +364,84 @@ Measuring accuracy (or a plan to do so) will be discussed in detail in the [Accu
 
 ## FAQ
 
-**What are the most common reasons for task 2 part C (the app/code) being returned?**
+### What are the most common reasons for task 2 part C (the app/code) being returned?
 
 1. Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect [User Guide](task2_doc_d:user_guide) or because evaluators can't access shared links (check the permissions!).
 
 2. Evaluators are not sure how the code is meant to be used by the "user." Again, an incomplete or incorrect [User Guide](task2_doc_d:user_guide) is usually the culprit. Adding an explicit example (including example user files when appropriate) helps avoid this issue.
 
-**I've completed the coding for task 2. Should I send it to my course instructor for review?**
+### I've completed the coding for task 2. Should I send it to my course instructor for review?
 
 If you have specific questions or concerns -yes. However, if the code runs and meets the [minimum app requirements](task2_part_c:what_does_the_application_need_to_do) it's usually best to move on to the [documentation](task2_doc). You can continue to tweak and improve the app but can be comfortable knowing that what you have can pass. Recall, you have **unlimited** submissions. So for both the code and documentation, it's usually best to submit it as soon as it's ready and restrict revisions according to the evaluator's feedback.  
 
-For questions about whether your application satisfies the requirements, contact a [C964 faculty](ci_c964).
+For getting help with task 2 part C, see the advice [below](task2_part_c:faq:i_need_help_with_part_C_who_do_i_contact).
 
-For technical coding questions, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:guidelines) (more info below).
+(task2_part_c:faq:i_need_help_with_part_C_who_do_i_contact)=
 
-**I need help with part C. Who do I contact?**
+### I need help with part C. Who do I contact?
 
-That depends on what you need help with. For questions about the capstone, how to meet the requirements, evaluator comments, or how to best approach the project to meet your individual goals, contact your [assigned course instructor](ci_c964:cis) or the [capstone team inbox](mailto:ugcapstoneit@wgu.edu?cc=your%20assigned%20CI&subject=C964%20capstone%20question). However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the technical expertise to answer  questions related to computer science or coding. Particularly with debugging code, given the wide range of approaches, languages, and libraries available for use.  
+That depends on what you need help with. For questions about the capstone, how to meet the requirements, evaluator comments, or how to best approach the project to meet your individual goals, contact your [assigned course instructor](ci_c964) or the [capstone team inbox](mailto:ugcapstoneit@wgu.edu?cc=your%20assigned%20CI&subject=C964%20capstone%20question) (this inbox supports all IT capstones). However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the technical expertise to answer questions related to computer science or coding. Particularly with debugging code, given the wide range of approaches, languages, and libraries available for use.  
 
-For technical questions related to code or math, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that while these faculty may be subject matter experts in their field, they do *not* necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the[BSCS, Software, and other Course Faculty](ci_other) page, follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that non-capstone faculty love to help but do so as a generosity. The students struggling in their supporting course are their first priority. 
+For technical questions related to code or math, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that while these faculty may be subject matter experts in their field, they do *not* necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the [BSCS, Software, and other Course Faculty](ci_other) page, follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that non-capstone faculty love to help **but do so as a generosity.** Their  priority is the students struggling in their supporting courses.
 
 Remember, our job (as educators) is to help *you* fix your problem -not fix it for you.
 
+(task2_part_C:faq:what_if_i_start_working_on_task_2 and_want to change things)=
 
-**What if I start working on task 2 and want to change things? Do I need to resubmit task 1?**
+### What if I start working on task 2 and want to change things? Do I need to resubmit task 1?
 
-No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2. Task 2 is where the work is, and even with complete topic changes at most, you'll only be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.  
+No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2 (if at all). Task 2 is where the work is, and even with complete topic changes, at most, you'll only be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.  
 
-**How many attempts are allowed for each task?**
+### How many attempts are allowed for each task?**
 
 You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.
 
-**What is a descriptive method?**
+### What is a descriptive method?
 
 Anything that describes the data. Histograms, scatterplots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive).
 
-**What is a non-descriptive method?**
+For task 2, you do not need to explicitly identify descriptive and non-descriptive methods. In almost all cases, the visualizations will satisfy the former and the user interface the latter.
+
+### What is a non-descriptive method?
 
 Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.
 
 (task1:faq:what_is_machine_learning?)=
-**What is machine learning?**
+
+### What is machine learning?
 
 That depends on who you ask! But for this project, it is an algorithm applied to data.
 
 For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it's used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.
 
-**Can I use libraries outside the standard (Python, Java, etc.) installation?**
+### Can I use libraries outside the standard (Python, Java, etc.) installation?
 
-Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.
+Yes! Unlike C950 (Data Structures & Algorithms II), you are allowed and encouraged to use outside libraries. All the major languages, but particularly Python, have a wide array of highly developed ML tools. The C964 capstone is about applying these tools -not their development.
 
-**What language, libraries, and platforms should I use?**
+### What language, libraries, and platforms should I use?
 
-You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter notebook is a great place to start for the app development and front end. Passing applications are often submitted as the notebook (.ipynb) and data files. Jupyter notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.
+You can use whatever you like. However, we strongly recommend Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook (a browser-based IDE designed for this type of project) is a great place to start for the app's development and front end. Passing applications are often submitted as the Notebook (.ipynb) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.
 
 A development path might look like the following:
 
 - Python IDE → Jupyter Notebook → notebook with widgets → hosted notebook with widgets → web app.
 
-Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting at any point along this path will pass part C. 
+Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting at any point along this path will pass part C.
 
-**What sort of user interface do I need? Do I need a GUI?**
+### What sort of user interface do I need? Do I need a GUI?
 
 No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc_d:user_guide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.
 
 <!-- TODO add to task D or polish up? -->
-(task2c:faq:upload_limit)=
+(task2_part_c:faq:my_project_exceeds_the_200_mb_limit)=
 
-**My project **exceeds** the 200mb limit. How can I submit it?**
+### My project exceeds the 200 MB limit. How can I submit it?
 
 As you might guess, this is a common issue. But evaluators only need *access* to everything necessary to develop and run your project. Access to large files can be provided with a cloud link (say your Google Drive) -don't forget to set the share settings so they can access it!
 
-%%also in doc FAQ
-(task2c:faq:linux)=
+<!-- %%also in doc FAQ -->
+(task2_part_c:faq:i_only_have_a_linux_or_mac_machine)=
 
-**I only have a Linux (or Mac) machine. Will evaluators be able to run my code?"**
+### I only have a Linux (or Mac) machine. Will evaluators be able to run my code?
 
-Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that your [user guide](task2_doc_d:user_guide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alert your course instructor.
+Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that your [user guide](task2_doc_d:user_guide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). Provide a note when submitting to Assessments and alert your course instructor.
