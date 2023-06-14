@@ -45,7 +45,8 @@ src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-40
 > </iframe>
 :::
 
-**Supervised Learning**
+#### Supervised Learning**
+
 If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can *train* a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a *regression* method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification* method should be used.
 
 - *Regression* algorithms predict numbers. Examples include linear regression, polynomial regression, decision tree regression, random forest regression, and many more.
@@ -54,14 +55,17 @@ If the answers for what you are trying to predict (dependent variable) are in th
 - *Classification* algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.  
 
 (task1:choosing_topic:logistic)=
+
 ```{margin} Logisitc regression: regression or classification?
 Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
-**Unsupervised Learning**
+#### Unsupervised Learning
+
 If what you are trying to find is not directly in the data (aka *tagged* or *labeled*), then an unsupervised method might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
 
-**Reinforced Learning**
+#### Reinforced Learning
+
 Sometimes solutions need to adapt to particular situations. That is, the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot's state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more challenging to develop than supervised or unsupervised methods.
 
 ```{note}
@@ -156,7 +160,7 @@ Once you've decided on a topic, complete the approval form following the templat
 
 > [![Topic Approval Form Template](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
-**Project topic and purpose:** Describe the problem (the "organizational need") your project will solve.   
+**Project topic and purpose:** Describe the problem (the "organizational need") your project will solve.
 
 **Non-descriptive method(s):**  These methods infer from the data, i.e., make predictions or prescriptions. Examples include classification models, regression, image recognition, etc. Typically, but not necessarily, this is where ML is applied.
 
