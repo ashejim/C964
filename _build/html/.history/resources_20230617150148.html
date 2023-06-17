@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>C964 Resources &#8212; Computer Science Capstone</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-H4N36TZQ78');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/WGU-logo-crossed-out.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="search this book..." aria-label="search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_c/task2_part_c.html">
+   Task 2: Part C -the application
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-develop.html">
+       <a id="toc1_1_">
+       </a>
+       Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-accuracy.html">
+       Accuracy Analysis (testing)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex.html">
+     Example: Supervised Regression App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop.html">
+       Data product Model Development (part 1)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop-2.html">
+       Data product Model Development (part 2)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_doc/task2_doc.html">
+   Task 2: The Documentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_d.html">
+     Task 2 Part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../resources.html">
+   C964 Resources
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ci_page.html">
+   Course Faculty
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ci_other.html">
+     BSCS, Software, and other Course Faculty
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../support_this_page.html">
+   Help Support this Website
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ashejim/C964"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2F.history/resources_20230617150148.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/.history/resources_20230617150148.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-1-resources">
+   Task 1 Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topic-approval-form-template">
+     Topic Approval Form Template
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excellence-archive">
+     Excellence Archive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topic-approval-form-example">
+     Topic Approval Form Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#waiver-form">
+     Waiver Form
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#videos">
+     Videos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-started-on-the-capstone">
+       Getting Started on the Capstone
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-2-part-c-the-app-resources">
+   Task 2 Part C (the app) Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coding">
+     Coding
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resources-task2-videos">
+     Videos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ml-supervised-classification-regression-overview">
+       ML Supervised Classification &amp; Regression Overview
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ml-supervised-learning-classification-coding-example">
+       ML Supervised Learning Classification Coding Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-2-parts-a-b-c-the-documenation-resources">
+   Task 2 Parts A, B, &amp; C (the documenation) Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-2-parts-a-b-and-d-template-part-c-guide">
+     Task 2 Parts A, B, and D Template &amp; Part C Guide
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-2-parts-a-b-and-d-examples">
+     Task 2 Parts A, B, and D Examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-resources">
+   General Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#student-resources">
+     Student Resources
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grammarly-com">
+     Grammarly.com
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apa">
+     APA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#libraries">
+     Libraries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>C964 Resources</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-1-resources">
+   Task 1 Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topic-approval-form-template">
+     Topic Approval Form Template
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excellence-archive">
+     Excellence Archive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topic-approval-form-example">
+     Topic Approval Form Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#waiver-form">
+     Waiver Form
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#videos">
+     Videos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#getting-started-on-the-capstone">
+       Getting Started on the Capstone
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data">
+     Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-2-part-c-the-app-resources">
+   Task 2 Part C (the app) Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coding">
+     Coding
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resources-task2-videos">
+     Videos
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ml-supervised-classification-regression-overview">
+       ML Supervised Classification &amp; Regression Overview
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ml-supervised-learning-classification-coding-example">
+       ML Supervised Learning Classification Coding Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-2-parts-a-b-c-the-documenation-resources">
+   Task 2 Parts A, B, &amp; C (the documenation) Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-2-parts-a-b-and-d-template-part-c-guide">
+     Task 2 Parts A, B, and D Template &amp; Part C Guide
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-2-parts-a-b-and-d-examples">
+     Task 2 Parts A, B, and D Examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-resources">
+   General Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#student-resources">
+     Student Resources
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grammarly-com">
+     Grammarly.com
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apa">
+     APA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#libraries">
+     Libraries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="c964-resources">
+<span id="resources"></span><h1>C964 Resources<a class="headerlink" href="#c964-resources" title="Permalink to this headline">#</a></h1>
+<!-- hack to open links in new tab -->
+<head>
+    <base target="_blank">
+</head>
+<section id="examples">
+<span id="resources-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
+<p><strong>Example A:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf">task 1 ex. A</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf">task 2 ex. A</a> (part C not available)</p></li>
+</ul>
+<p><strong>Example B:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf">task 1 ex. B</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf">task 2 ex. B</a> (part C not available)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples found here are of actual passing tasks 1 and 2, <em>flaws and all</em>. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.</p>
+</div>
+<p id="resources-examples-archive"><strong>WGU Capstone Excellence Archive</strong></p>
+<p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. Therefore, don’t use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <a class="reference internal" href="../resources.html#resources-examples"><span class="std std-ref">examples</span></a> above.</p>
+</section>
+<section id="task-1-resources">
+<span id="resources-task1"></span><h2>Task 1 Resources<a class="headerlink" href="#task-1-resources" title="Permalink to this headline">#</a></h2>
+<section id="topic-approval-form-template">
+<span id="resources-task1-task1example"></span><h3>Topic Approval Form Template<a class="headerlink" href="#topic-approval-form-template" title="Permalink to this headline">#</a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe"><img alt="Topic Approval Form" src="https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+</section>
+<section id="excellence-archive">
+<span id="resources-task1-excellence"></span><h3>Excellence Archive<a class="headerlink" href="#excellence-archive" title="Permalink to this headline">#</a></h3>
+<p>The Capstone Excellence Archive includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, above and beyond the requirements. Therefore, do not use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <a class="reference internal" href="../resources.html#resources-examples"><span class="std std-ref">examples</span></a> above.</p>
+</section>
+<section id="topic-approval-form-example">
+<h3>Topic Approval Form Example<a class="headerlink" href="#topic-approval-form-example" title="Permalink to this headline">#</a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/ESVtyYRIzQhNoLL37S7prkQB9uGuuljjUbCoKaVe0h47Xg?e=dHkn6n"><img alt="Image of the first page of the topic Approval Form" src="https://github.com/ashejim/C964/blob/main/url_images/C964_t1_example.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+</section>
+<section id="waiver-form">
+<h3>Waiver Form<a class="headerlink" href="#waiver-form" title="Permalink to this headline">#</a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ"><img alt="Image of the first page of the waiver Form" src="https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+</section>
+<section id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Permalink to this headline">#</a></h3>
+<section id="getting-started-on-the-capstone">
+<h4>Getting Started on the Capstone<a class="headerlink" href="#getting-started-on-the-capstone" title="Permalink to this headline">#</a></h4>
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+>
+</iframe>
+</section>
+</section>
+<section id="data">
+<span id="resources-task1-data"></span><h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h3>
+<p>Any open source data set is freely available for use.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.kaggle.com/datasets">Kaggle.com</a></p></li>
+<li><p><a class="reference external" href="https://datasetsearch.research.google.com/">Google Dataset Search</a></p></li>
+<li><p><a class="reference external" href="https://data.gov/">Data.gov</a></p></li>
+<li><p>More <a class="reference external" href="https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/">here</a> and <a class="reference external" href="https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d">here</a></p></li>
+<li><p>Simulated data</p></li>
+</ul>
+</section>
+</section>
+<section id="task-2-part-c-the-app-resources">
+<span id="resources-task2examplec"></span><h2>Task 2 Part C (the app) Resources<a class="headerlink" href="#task-2-part-c-the-app-resources" title="Permalink to this headline">#</a></h2>
+<section id="coding">
+<h3>Coding<a class="headerlink" href="#coding" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="../ci_other.html#ci-other"><span class="std std-ref">CS and C964 faculty</span></a> available for math, data analytics, and coding-related questions.</p></li>
+<li><p><a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter">WGU Programming Center</a> provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.</p></li>
+</ul>
+</section>
+<section id="resources-task2-videos">
+<span id="id1"></span><h3>Videos<a class="headerlink" href="#resources-task2-videos" title="Permalink to this headline">#</a></h3>
+<section id="ml-supervised-classification-regression-overview">
+<span id="resources-task2c-videos-ml-sup-reg-class"></span><h4>ML Supervised Classification &amp; Regression Overview<a class="headerlink" href="#ml-supervised-classification-regression-overview" title="Permalink to this headline">#</a></h4>
+<iframe
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+>
+</iframe>
+</section>
+<section id="ml-supervised-learning-classification-coding-example">
+<span id="resources-task2c-videos-ml-sup-class-code"></span><h4>ML Supervised Learning Classification Coding Example<a class="headerlink" href="#ml-supervised-learning-classification-coding-example" title="Permalink to this headline">#</a></h4>
+<iframe
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+>
+</iframe>
+</section>
+</section>
+</section>
+<section id="task-2-parts-a-b-c-the-documenation-resources">
+<span id="resources-task2doc"></span><h2>Task 2 Parts A, B, &amp; C (the documenation) Resources<a class="headerlink" href="#task-2-parts-a-b-c-the-documenation-resources" title="Permalink to this headline">#</a></h2>
+<section id="task-2-parts-a-b-and-d-template-part-c-guide">
+<span id="resources-task2doc-doctemplate"></span><h3>Task 2 Parts A, B, and D Template &amp; Part C Guide<a class="headerlink" href="#task-2-parts-a-b-and-d-template-part-c-guide" title="Permalink to this headline">#</a></h3>
+<p>Write your proposal following <strong>C964 Task 2 documentation template</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg"><img alt="Task 2: documentation template" src="https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<p>Follow the guidelines found in this template and webpage -<em>do <strong>not</strong> follow the official rubric and task directions found on the C964 COS page</em>. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don’t make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.</p>
+<p>Contrasting the recommended approach to most WGU projects you’ve passed, e.g., C950 and C951, <em>we do not advise completing your application (part C) OR writing your document (parts A) following the specific items listed in the official rubric _or task directions.</em>  Written holistically, many find the rubric difficult to understand. Please refer to the guidelines on this webpage and the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg">Task 2 template</a>.</p>
+<p><em>We do not advise following the official rubric for C964.</em> Follow the guidelines found on this webpage and the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ">Task 2 template</a>. Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.</p>
+<p>Preserve the template’s section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don’t make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.</p>
+</section>
+<section id="task-2-parts-a-b-and-d-examples">
+<span id="resources-task2doc-docexample"></span><h3>Task 2 Parts A, B, and D Examples<a class="headerlink" href="#task-2-parts-a-b-and-d-examples" title="Permalink to this headline">#</a></h3>
+<p><strong>Example A:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf">task 2 ex. A</a> (part C not available)</p></li>
+</ul>
+<p><strong>Example B:</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf">task 2 ex. B</a> (part C not available)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples found here are of actual passing tasks 1 and 2, <em>flaws and all</em>. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.</p>
+</div>
+<section id="id2">
+<h4><a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+</section>
+</section>
+</section>
+<section id="general-resources">
+<h2>General Resources<a class="headerlink" href="#general-resources" title="Permalink to this headline">#</a></h2>
+<section id="student-resources">
+<span id="resources-gen-studentresources"></span><h3>Student Resources<a class="headerlink" href="#student-resources" title="Permalink to this headline">#</a></h3>
+<p>-<a class="reference external" href="https://my.wgu.edu/success-centers/writing-center">Writing Center</a>
+-<a class="reference external" href="https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb">Writing Center Knowledge Base</a>
+-<a class="reference external" href="https://resource-hub.wgu.edu/">Student Resource Hub</a></p>
+</section>
+<section id="grammarly-com">
+<span id="resources-gen-grammarly"></span><h3><a class="reference external" href="http://Grammarly.com">Grammarly.com</a><a class="headerlink" href="#grammarly-com" title="Permalink to this headline">#</a></h3>
+<p>Check your grammar using <a class="reference external" href="https://www.grammarly.com/">Grammarly.com</a> <img alt="grammarly" src="https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon" /> (it’s what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in <em>Professional Communication</em>. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version and checking grammar in MS Word.</p>
+</div>
+</section>
+<section id="apa">
+<span id="resources-gen-apa"></span><h3>APA<a class="headerlink" href="#apa" title="Permalink to this headline">#</a></h3>
+<p>Your paper should adhere to <a class="reference external" href="https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524">APA guidelines</a>. Avoid reference errors by using the <a class="reference external" href="https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5">MS Word Reference Tool</a> to create and manage references.</p>
+</section>
+<section id="libraries">
+<span id="resources-gen-libraries"></span><h3>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wgu.libguides.com/friendly.php?s=library">WGU’s library</a></p></li>
+<li><p><a class="reference external" href="https://scholar.google.com/">google.scholar.com</a></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can search <a class="reference external" href="https://wgu.libguides.com/friendly.php?s=library">WGU’s library</a> and other open-source libraries using <a class="reference external" href="https://scholar.google.com/">google.scholar.com</a> Go to &gt;’Google.scholar&gt;setting&gt;libraires&gt;’
+and then add WGU and other libraries.</p>
+<img src="https://westerngovernorsuniversity-my.sharepoint.com/personal/jim_ashe_wgu_edu/Documents/jupyter-books/C769/url_images/google_scholar_demo.gif" height="200px" />
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ashejim/C964",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./.history"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Jim Ashe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

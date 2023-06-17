@@ -41,16 +41,15 @@ The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.
 (resources:task1:excellence)=
 ### Excellence Archive
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, *above and beyond* the requirements. Therefore, do not use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the TODO ADD LINKS TO EXAMPLES
-examples. 
+The Capstone Excellence Archive includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, above and beyond the requirements. Therefore, do not use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the [examples](resources:examples) above.
 
 ### Topic Approval Form Example
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_example.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/ESVtyYRIzQhNoLL37S7prkQB9uGuuljjUbCoKaVe0h47Xg?e=dHkn6n)
+> [![Image of the first page of the topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_example.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/ESVtyYRIzQhNoLL37S7prkQB9uGuuljjUbCoKaVe0h47Xg?e=dHkn6n)
 
 ### Waiver Form
 
-> [![Waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
+> [![Image of the first page of the waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
 ### Videos
 
@@ -100,17 +99,22 @@ Any open source data set is freely available for use.
 </iframe>
 
 (resources:task2doc)=
-## Task 2 Parts A, B, & C (the documenation) Resources
+## Task 2 Parts A, B, & C (the documetation) Resources
+
+Part C is your submitted application. See all our available resources here: [task 2 part C](task2_part_c)
 
 (resources:task2doc:doctemplate)= 
 ### Task 2 Parts A, B, and D Template & Part C Guide
 Write your proposal following **C964 Task 2 documentation template**:
 
-> [![Task 2: documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+> [![Image of the first page of the Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
 
-Follow the guidelines found in this template and webpage -*do **not** follow the official rubric and task directions found on the C964 COS page*. Because of the ambiguity of the rubric (how does direction A-D align with Outcomes 1-6?), this template has become the defacto rubric. reserve the template section titles and order and submit all four parts as a single document. With a long, complicated document, aligning content to assessed competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.  
+Contrasting the recommended approach to most WGU projects you've passed, e.g., C950 and C951, *we do not advise completing your application (part C) OR writing your document (parts A) following the specific items listed in the official rubric _or task directions.*  Written holistically, many find it difficult to align the task directions (A-D) to the rubric outcomes (1-6). Please refer to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while not technically required, it is highly recommended.
 
-(resources:task2doc:docexample)=  
+Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+
+(resources:task2doc:docexample)= 
+
 ### Task 2 Parts A, B, and D Examples
 
 **Example A:**
@@ -125,19 +129,25 @@ Follow the guidelines found in this template and webpage -*do **not** follow the
 The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
 ```
 
+(resources:examples:excellent_archives)=
 
-#### 
+#### WGU Capstone Excellence Archives
+
+The [Capstone Excellence Archives](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) include a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 ## General Resources
 
-(resources:gen:studentresources)=  
+(resources:gen:student_resources)=  
+
 ### Student Resources
+
 -[Writing Center](https://my.wgu.edu/success-centers/writing-center)
 -[Writing Center Knowledge Base](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb)
 -[Student Resource Hub](https://resource-hub.wgu.edu/)
 
 
 (resources:gen:grammarly)=
+
 ### Grammarly.com
 
 Check your grammar using [Grammarly.com](https://www.grammarly.com/) ![grammarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.
@@ -147,7 +157,9 @@ Students have reported missed mistakes when using the Google doc Grammarly exten
 :::
 
 (resources:gen:apa)=
-### APA 
+
+### APA
+
 Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524). Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
 
 (resources:gen:libraries)=

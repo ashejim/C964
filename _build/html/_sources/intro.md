@@ -5,6 +5,8 @@
 
 :::{warning}
 🚧 This site is under construction! If something makes sense, then it's probably good advice. If not, it's probably unfinished, unreviewed, or just plain nonsense. 👷🏽‍♀️
+
+**Nothing on this website is an official WGU resource developed by the WGU product development.** See their COS page to review the official resources. To make comments or suggestions regarding those resources use your COS page ['Course Feedback'](https://ashejim.github.io/C964/support_this_page.html#help-support-this-website) link.
 :::
 
 # Welcome to C964!
