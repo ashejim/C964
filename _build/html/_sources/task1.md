@@ -150,7 +150,7 @@ Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources
 
 ##### WGU Capstone Excellence Archive
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepening understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepen understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
 
 (task1:approval)=
 
