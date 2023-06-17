@@ -1,0 +1,1407 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Data product Model Development &#8212; Computer Science Capstone</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-H4N36TZQ78');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/WGU-logo-crossed-out.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="search this book..." aria-label="search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_part_c.html">
+   Task 2: Part C -the application
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-develop.html">
+       <a id="toc1_1_">
+       </a>
+       Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-accuracy.html">
+       Accuracy Analysis (testing)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../example_sup_reg/sup_reg_ex.html">
+     Example: Supervised Regression App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop.html">
+       Data product Model Development (part 1)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop-2.html">
+       Data product Model Development (part 2)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../task2_doc/task2_doc.html">
+   Task 2: The Documentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_d.html">
+     Task 2 Part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../resources.html">
+   C964 Resources
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../ci_page.html">
+   Course Faculty
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ci_other.html">
+     BSCS, Software, and other Course Faculty
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../support_this_page.html">
+   Help Support this Website
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=lab/tree/docs/task2_c/example_sup_class/sup_reg_ex_develop.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ashejim/C964"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Ftask2_c/example_sup_class/sup_reg_ex_develop.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/task2_c/example_sup_class/sup_reg_ex_develop.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#train-model">
+   Train Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-categorical-data-option-1">
+     Processing Categorical Data -option 1
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accuracy-analysis">
+   Accuracy Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-squared-error">
+     Mean Squared Error
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mse-explanation-and-example-in-2d">
+     MSE explanation and example in 2D
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data product Model Development</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#train-model">
+   Train Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-categorical-data-option-1">
+     Processing Categorical Data -option 1
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accuracy-analysis">
+   Accuracy Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean-squared-error">
+     Mean Squared Error
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mse-explanation-and-example-in-2d">
+     MSE explanation and example in 2D
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p>(sup_reg_ex: develop)=</p>
+<section id="data-product-model-development">
+<h1>Data product Model Development<a class="headerlink" href="#data-product-model-development" title="Permalink to this headline">#</a></h1>
+<p>Supervised algorithms use inputs (independent variables) and labeled outputs (dependent variable -the “answers”) to create a model that can measure its performance and learn over time. Splitting the data into independent and dependent variables, we have the following (again, this will be very similar to the <a class="reference internal" href="sup_class_ex-develop.html#sup-class-ex-develop"><span class="std std-ref">previous example</span></a>):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Note: we only repeat this step from before, because this is a new .ipyb page.</span>
+<span class="c1">#   it only needs to be executed once per file.</span>
+
+<span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is best practice</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Reloading the dataset</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="c1">#Choosing the variables. </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">])</span> <span class="c1">#indpendent variables</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1">#dependent variables</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>(sup_reg_ex: develop: train)=</p>
+<section id="train-model">
+<h2>Train Model<a class="headerlink" href="#train-model" title="Permalink to this headline">#</a></h2>
+<p>Recall, splitting the data into training and testing sets is not required, but it is good practice. Furthermore, it provides content for part D.</p>
+<p>As with the previous example <a class="reference internal" href="sup_class_ex-develop.html#sup-class-ex-develop"><span class="std std-ref">previous example</span></a>), we’ll use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">scikit-learn aka sklearn</a> built-ins for this.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1">#split the variable sets into training and testing subsets</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Nice displays are nice but not required. </span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span> 
+<span class="n">X_train_styler</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Independents variables&#39;</span><span class="p">)</span>
+<span class="n">y_train_styler</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Dependents variables&#39;</span><span class="p">)</span>
+<span class="n">space</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\xa0</span><span class="s2">&quot;</span> <span class="o">*</span> <span class="mi">10</span> <span class="c1">#space between columns</span>
+<span class="n">display_html</span><span class="p">(</span><span class="n">X_train_styler</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">()</span><span class="o">+</span> <span class="n">space</span>  <span class="o">+</span> <span class="n">y_train_styler</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">(),</span> <span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_a058d" style='display:inline'>
+  <caption>Independents variables</caption>
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_a058d_level0_col0" class="col_heading level0 col0" >sepal-width</th>
+      <th id="T_a058d_level0_col1" class="col_heading level0 col1" >petal-length</th>
+      <th id="T_a058d_level0_col2" class="col_heading level0 col2" >petal-width</th>
+      <th id="T_a058d_level0_col3" class="col_heading level0 col3" >type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_a058d_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_a058d_row0_col0" class="data row0 col0" >2.700000</td>
+      <td id="T_a058d_row0_col1" class="data row0 col1" >5.300000</td>
+      <td id="T_a058d_row0_col2" class="data row0 col2" >1.900000</td>
+      <td id="T_a058d_row0_col3" class="data row0 col3" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_a058d_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_a058d_row1_col0" class="data row1 col0" >2.700000</td>
+      <td id="T_a058d_row1_col1" class="data row1 col1" >3.900000</td>
+      <td id="T_a058d_row1_col2" class="data row1 col2" >1.200000</td>
+      <td id="T_a058d_row1_col3" class="data row1 col3" >Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th id="T_a058d_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_a058d_row2_col0" class="data row2 col0" >2.800000</td>
+      <td id="T_a058d_row2_col1" class="data row2 col1" >6.100000</td>
+      <td id="T_a058d_row2_col2" class="data row2 col2" >1.900000</td>
+      <td id="T_a058d_row2_col3" class="data row2 col3" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_a058d_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_a058d_row3_col0" class="data row3 col0" >3.500000</td>
+      <td id="T_a058d_row3_col1" class="data row3 col1" >1.500000</td>
+      <td id="T_a058d_row3_col2" class="data row3 col2" >0.200000</td>
+      <td id="T_a058d_row3_col3" class="data row3 col3" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_a058d_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_a058d_row4_col0" class="data row4 col0" >4.200000</td>
+      <td id="T_a058d_row4_col1" class="data row4 col1" >1.400000</td>
+      <td id="T_a058d_row4_col2" class="data row4 col2" >0.200000</td>
+      <td id="T_a058d_row4_col3" class="data row4 col3" >Iris-setosa</td>
+    </tr>
+  </tbody>
+</table>
+          <style type="text/css">
+</style>
+<table id="T_b5abb" style='display:inline'>
+  <caption>Dependents variables</caption>
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_b5abb_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_b5abb_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_b5abb_row0_col0" class="data row0 col0" >6.400000</td>
+    </tr>
+    <tr>
+      <th id="T_b5abb_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_b5abb_row1_col0" class="data row1 col0" >5.800000</td>
+    </tr>
+    <tr>
+      <th id="T_b5abb_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_b5abb_row2_col0" class="data row2 col0" >7.400000</td>
+    </tr>
+    <tr>
+      <th id="T_b5abb_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_b5abb_row3_col0" class="data row3 col0" >5.200000</td>
+    </tr>
+    <tr>
+      <th id="T_b5abb_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_b5abb_row4_col0" class="data row4 col0" >5.500000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>We’ll stick with sklearn’s nice <a class="reference external" href="https://scikit-learn.org/stable/supervised_learning.html">supervised learning library</a>. Note that many of these models have both classification and regression extensions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Our data is mostly quantitative and the scatterplots do indicate the variables may be linearly related. So linear regression isn’t a bad place to start. Once we’ve trained and tested a linear regression model, we’ll easily be able to experiment with different algorithms.</p>
+<div class="highlight-{margin}Is notranslate"><div class="highlight"><pre><span></span>It depends who you ask. Google &quot;Is linear regression machine learning?&quot; and you&#39;ll see some interesting (and enterntaining) discussion. For the purposes of the capstone, the answer is -yes.  
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">linear_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">linear_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\linear_model\_base.py:649,</span> in <span class="ni">LinearRegression.fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="g g-Whitespace">    </span><span class="mi">645</span> <span class="n">n_jobs_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span>
+<span class="g g-Whitespace">    </span><span class="mi">647</span> <span class="n">accept_sparse</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">positive</span> <span class="k">else</span> <span class="p">[</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span> <span class="s2">&quot;csc&quot;</span><span class="p">,</span> <span class="s2">&quot;coo&quot;</span><span class="p">]</span>
+<span class="ne">--&gt; </span><span class="mi">649</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_data</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">650</span>     <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="n">accept_sparse</span><span class="p">,</span> <span class="n">y_numeric</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">651</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">653</span> <span class="n">sample_weight</span> <span class="o">=</span> <span class="n">_check_sample_weight</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">654</span>     <span class="n">sample_weight</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">only_non_negative</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">655</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">657</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">X_offset</span><span class="p">,</span> <span class="n">y_offset</span><span class="p">,</span> <span class="n">X_scale</span> <span class="o">=</span> <span class="n">_preprocess_data</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">658</span>     <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">659</span>     <span class="n">y</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">662</span>     <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">663</span> <span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\base.py:554,</span> in <span class="ni">BaseEstimator._validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">552</span>         <span class="n">y</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">check_y_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">553</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">554</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">555</span>     <span class="n">out</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
+<span class="g g-Whitespace">    </span><span class="mi">557</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="n">check_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ensure_2d&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">):</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:1104,</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1099</span>         <span class="n">estimator_name</span> <span class="o">=</span> <span class="n">_check_estimator_name</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1100</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1101</span>         <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">estimator_name</span><span class="si">}</span><span class="s2"> requires y to be passed, but the target y is None&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1102</span>     <span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1104</span> <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1105</span>     <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1106</span>     <span class="n">accept_sparse</span><span class="o">=</span><span class="n">accept_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1107</span>     <span class="n">accept_large_sparse</span><span class="o">=</span><span class="n">accept_large_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1108</span>     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1109</span>     <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1110</span>     <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1111</span>     <span class="n">force_all_finite</span><span class="o">=</span><span class="n">force_all_finite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1112</span>     <span class="n">ensure_2d</span><span class="o">=</span><span class="n">ensure_2d</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1113</span>     <span class="n">allow_nd</span><span class="o">=</span><span class="n">allow_nd</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1114</span>     <span class="n">ensure_min_samples</span><span class="o">=</span><span class="n">ensure_min_samples</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1115</span>     <span class="n">ensure_min_features</span><span class="o">=</span><span class="n">ensure_min_features</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1116</span>     <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1117</span>     <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1118</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1120</span> <span class="n">y</span> <span class="o">=</span> <span class="n">_check_y</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="n">multi_output</span><span class="p">,</span> <span class="n">y_numeric</span><span class="o">=</span><span class="n">y_numeric</span><span class="p">,</span> <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1122</span> <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:877,</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">877</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">_asarray_with_order</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span> <span class="k">except</span> <span class="n">ComplexWarning</span> <span class="k">as</span> <span class="n">complex_warning</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>         <span class="s2">&quot;Complex data not supported</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>     <span class="p">)</span> <span class="kn">from</span> <span class="nn">complex_warning</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\_array_api.py:185,</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>     <span class="n">xp</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_namespace</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="k">if</span> <span class="n">xp</span><span class="o">.</span><span class="vm">__name__</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;numpy&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy.array_api&quot;</span><span class="p">}:</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span>     <span class="c1"># Use NumPy API to support order</span>
+<span class="ne">--&gt; </span><span class="mi">185</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">187</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\core\generic.py:2070,</span> in <span class="ni">NDFrame.__array__</span><span class="nt">(self, dtype)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2069</span> <span class="k">def</span> <span class="nf">__array__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">DTypeLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">2070</span>     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;Iris-virginica&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Wait what happened!?!</em> This error returns a lot of output, but one line makes things clear:</p>
+<blockquote>
+<div><p>ValueError: could not convert string to float: ‘Iris-virginica’</p>
+</div></blockquote>
+<p>The algorithm expected numbers; it does not know what to do with the flower types. So how do we fix this?</p>
+<p>(sup_reg_ex: develop: train: categorical_1)=</p>
+<section id="processing-categorical-data-option-1">
+<h3>Processing Categorical Data -option 1<a class="headerlink" href="#processing-categorical-data-option-1" title="Permalink to this headline">#</a></h3>
+<p>One way to fix a problem is to avoid it. You are not required to use all the data -only some of it. Sometimes choosing the right variables is the real trick. <a class="reference external" href="https://en.wikipedia.org/wiki/Dimensionality_reduction">Dimensionality reduction</a> is an important part of the data sciences. Here, those flower types DO matter, and it would be best to include that data -but goal #1 is to get things working. Improving things is step #2 and step #3 and step #4 and … step <span class="math notranslate nohighlight">\(\# \infty\)</span>.</p>
+<p>Remove the column with categorical data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.333, random_state=41)</span>
+<span class="c1">#https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html</span>
+
+<span class="n">X_train_no_type</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+<span class="n">X_test_no_type</span> <span class="o">=</span>  <span class="n">X_test</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+
+<span class="n">X_test_no_type</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal-width</th>
+      <th>petal-length</th>
+      <th>petal-width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>119</th>
+      <td>2.2</td>
+      <td>5.0</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>2.8</td>
+      <td>5.6</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>3.0</td>
+      <td>6.1</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>3.0</td>
+      <td>4.6</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>3.0</td>
+      <td>5.5</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>2.8</td>
+      <td>4.0</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>2.7</td>
+      <td>4.9</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>3.4</td>
+      <td>4.5</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>3.0</td>
+      <td>5.2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>3.2</td>
+      <td>5.9</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>3.0</td>
+      <td>4.9</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>3.4</td>
+      <td>1.5</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>3.0</td>
+      <td>1.3</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>2.3</td>
+      <td>3.3</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>3.3</td>
+      <td>1.7</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>2.8</td>
+      <td>5.1</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>3.1</td>
+      <td>1.6</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>2.7</td>
+      <td>5.1</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>3.1</td>
+      <td>1.5</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>2.3</td>
+      <td>1.3</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>2.4</td>
+      <td>3.7</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>3.2</td>
+      <td>5.7</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>3.5</td>
+      <td>1.6</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.2</td>
+      <td>1.3</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>2.9</td>
+      <td>3.6</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>2.2</td>
+      <td>4.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>3.3</td>
+      <td>4.7</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>2.7</td>
+      <td>4.1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>3.3</td>
+      <td>1.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>2.9</td>
+      <td>4.7</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>2.6</td>
+      <td>3.5</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>2.8</td>
+      <td>4.6</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>2.5</td>
+      <td>4.5</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>2.6</td>
+      <td>4.4</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>3.0</td>
+      <td>5.2</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>4.0</td>
+      <td>1.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>3.1</td>
+      <td>5.1</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>3.2</td>
+      <td>4.5</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>3.1</td>
+      <td>5.4</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>3.2</td>
+      <td>4.8</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>2.9</td>
+      <td>4.3</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>2.8</td>
+      <td>4.5</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>4.1</td>
+      <td>1.5</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>3.0</td>
+      <td>5.8</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>3.4</td>
+      <td>5.6</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>3.8</td>
+      <td>1.7</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>2.5</td>
+      <td>5.8</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>2.5</td>
+      <td>3.0</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>3.0</td>
+      <td>1.4</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>2.2</td>
+      <td>4.5</td>
+      <td>1.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Now the models will train fine:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_no_type</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div></div></div>
+</div>
+<p>Now the model can make predictions for an entire set:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred_no_type</span> <span class="o">=</span> <span class="n">linear_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_no_type</span><span class="p">)</span>
+<span class="n">y_pred_no_type</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[5.98770812],
+       [6.42220879],
+       [6.81026327],
+       [6.3038615 ],
+       [6.48153317],
+       [5.75587752],
+       [6.02106191],
+       [6.34587216],
+       [6.31716812],
+       [6.788514  ],
+       [6.23165894],
+       [5.01764515],
+       [4.57470184],
+       [5.07393461],
+       [4.87302581],
+       [6.48997581],
+       [4.88812177],
+       [6.34092093],
+       [4.885904  ],
+       [4.00445291],
+       [5.46842817],
+       [6.62636673],
+       [4.85349432],
+       [4.71509986],
+       [5.50178197],
+       [5.57125107],
+       [6.43782043],
+       [6.00331976],
+       [4.86637251],
+       [6.31473613],
+       [5.44667891],
+       [6.08460761],
+       [5.63522521],
+       [6.01862993],
+       [6.08060051],
+       [5.19561829],
+       [6.06972588],
+       [6.28433001],
+       [6.47065854],
+       [6.29098332],
+       [6.06929744],
+       [6.16124571],
+       [5.58789409],
+       [6.64589822],
+       [6.60683523],
+       [5.3817326 ],
+       [6.61032665],
+       [4.89225584],
+       [4.57691961],
+       [5.58233992]])
+</pre></div>
+</div>
+</div>
+</div>
+<p>Or a single input:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The model was trained with a datafram, so you can only predict on dataframes</span>
+<span class="c1"># Recall we removed the petal type, and we are predicting the sepal-length</span>
+<span class="n">column_names_short</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">]</span>
+<span class="n">input_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">.2</span><span class="p">]]),</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">column_names_short</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">linear_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_df</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[4.71509986]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your model can only predict on data simliar to what it was trained with. Since this model was trained with a dataframe, a matching new dataframe, ‘input_df’ needed to be created to predict a single input. Alternatively, we could have converted the original data to an array (see the <a class="reference internal" href="sup_class_ex-develop.html#sup-class-ex-develop-train"><span class="std std-ref">previous example</span></a>.</p>
+</div>
+<p>TRAIN OTHER MODELS</p>
+<p>(sup_reg_ex: develop: accuracy)=</p>
+</section>
+</section>
+<section id="accuracy-analysis">
+<h2>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this headline">#</a></h2>
+<p>As we are trying to predict a continuous number, even the very best model will have errors in almost every prediction. So we need a way to measure how much those predictions deviate from actual values. See sklearn’s list of <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">metrics and scoring</a> for regression. Which metric is best depends on the needs of your project. However, any accuracy metric appropriate to your model will be accepted.</p>
+<p>(sup_reg_ex: develop: accuracy: MSE)=</p>
+<section id="mean-squared-error">
+<h3>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h3>
+<p>The mean square error (MSE) measures the average of the squares of errors (difference between predicted and actual values). See details in the next section [below](sup_reg_ex: develop: accuracy: MSE_example). Applying the MSE to the <em>test</em> data, we have:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_no_type</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.12264182555541722
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using the squares of the errors is standard but ME is sometimes easier for non-technical audiences to understand. But XXXXXX</p>
+<p>TEST OTHER MODELS</p>
+<p>(sup_reg_ex: develop: accuracy: MSE_example)=</p>
+</section>
+<section id="mse-explanation-and-example-in-2d">
+<h3>MSE explanation and example in 2D<a class="headerlink" href="#mse-explanation-and-example-in-2d" title="Permalink to this headline">#</a></h3>
+<p>Using just the <em>petal-length</em> to predict the <em>sepal-length</em> with linear regression on 15 random values, the regression line looks like this:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">]]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">:]</span>
+
+<span class="c1"># Create linear regression object</span>
+<span class="n">regr_ex</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="c1"># Train the model using the training sets</span>
+<span class="n">regr_ex</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">y_pred_ex</span> <span class="o">=</span> <span class="n">regr_ex</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values; blue dots = predicted value&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/sup_reg_ex_develop_23_0.png" src="../../_images/sup_reg_ex_develop_23_0.png" />
+</div>
+</div>
+<p>The error squared looks like:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Rectangle</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y_pred_ex</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y_pred_ex</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Rectangle</span><span class="p">((</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> 
+                           <span class="n">error</span><span class="p">,</span> 
+                           <span class="n">error</span><span class="p">,</span>
+                           <span class="n">fc</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">),</span> <span class="n">ec</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                 <span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values; blue dots = predicted value&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/sup_reg_ex_develop_25_0.png" src="../../_images/sup_reg_ex_develop_25_0.png" />
+</div>
+</div>
+<p>The MSE just takes the average of these squares. The math:</p>
+<div class="math notranslate nohighlight">
+\[\text{MSE} = \frac{1}{n} \sum^{n}_{i=1} (Y_i - \hat{Y}_i)^{2}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(Y_i\)</span> and <span class="math notranslate nohighlight">\(\bar{Y}_i\)</span> are the <span class="math notranslate nohighlight">\(i^{\text{th}}\)</span> actual and predicted values respectively.</p>
+<p>In addition to giving positive values, squaring in the MSE emphasizes larger differences. Which can be good or bad depending on your needs. If your data has many or very large outliers, consider removing outliers or using the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error">mean absolute error</a>. See the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error">sklearn MSE docs</a> for more info and examples.</p>
+<p>Increasing the number of variables uses the same concept only the regression line becomes multi-dimensional. For example, additionally, including ‘sepal-length’ and ‘petal-length’ creates a <em>4-dimensional</em> line. So it’s a little hard to visualize.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ashejim/C964",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./task2_c\example_sup_class"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Jim Ashe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
