@@ -172,5 +172,5 @@ Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Cente
 You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library) and other open-source libraries using [google.scholar.com](https://scholar.google.com/) Go to >'Google.scholar>setting>libraires>' 
 and then add WGU and other libraries.
 
-<img src="https://westerngovernorsuniversity-my.sharepoint.com/personal/jim_ashe_wgu_edu/Documents/jupyter-books/C769/url_images/google_scholar_demo.gif" height="200px" />
+<img src="../url_images/google_scholar_demo.gif" height="200px" />
 :::
