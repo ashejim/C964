@@ -1,5 +1,6 @@
 
 (task2ab)=
+
 # Task 2 parts A and B
 
 The point of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
@@ -13,8 +14,9 @@ Part D, explains the CS-related aspects of your project and (with the exception 
 - [Examples](TODO ADD LINK)
 
 (task2:parta)=
+
 ## Part A
-Throughout part A: 
+Throughout part A:
 
 - Target the non-technical senior leadership of the organization. 
 
@@ -23,6 +25,7 @@ Throughout part A:
 All page-length recommendations are *only suggestions*. There is no minimum page requirement, and the rubric only specifies that provided details be complete and logical. The proper content depth depends on your project. 
 
 (task2:parta:letter)=
+
 ### Letter of Transmittal
 
 Write a single-page cover letter to the organization’s senior leadership. The letter should be concise and target a non-technical audience. In the letter, do the following: 
