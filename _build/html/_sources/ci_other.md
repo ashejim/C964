@@ -7,7 +7,7 @@
 (ci_other)=
 
 :::{warning}
-Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take first priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month).
+Faculty not assigned to you, in particular non-C964 faculty,  are happy to help any WGU student. But students assigned to them take priority.  Follow the guidelines below, and understand their assistance is a courtesy and that response times may be delayed (particularly towards the end of the month).
 :::
 
 (ci_other:better_questions_get_better_answers)=
