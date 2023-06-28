@@ -7,7 +7,7 @@
 4. A [Markdown](https://www.markdownguide.org/) editor. 
 5. A GitHub account and repository.
 
-## Step 1. Getting Python. 
+## Step 1. Getting Python.
 
 Choose your flavor.
 - [python.org](https://www.python.org/downloads/)
@@ -86,7 +86,7 @@ Create a sample book by going to the directory and running the following command
 jupyter-book create mynewbook/
 ```
 
-Where 'mynewbook/' is the name of the folder you want your Jupyter-book and all its source files to live (it will create the folder). 
+Where 'mynewbook/' is the name of the folder you want your Jupyter-book and all its source files to live (it will create the folder).
 
 ## Step 4. Add some content!
 
@@ -103,7 +103,7 @@ Some Markdown editor options:
 - [Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
 - [typora](https://typora.io/)
 
-I use Visual Studio. 
+I use Visual Studio.
 
 ## Step 5. Turn your Markdown/Jupyter files into HTML.
 
