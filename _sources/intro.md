@@ -1,26 +1,99 @@
-# Where's the website?!?
+<!-- hack to open links in new tab -->
+<!-- <head>
+    <base target="_blank">
+</head> -->
 
 :::{warning}
-This website is temporarily unavailable as it undergoes administrative review. We are sorry for the inconvenience. All content and resources should be available again before 6/27 (Tuesday). Thank you for your patience!
+🚧 This site is under construction! If something makes sense, then it's probably good advice. If not, it's probably unfinished, unreviewed, or just plain nonsense. 👷🏽‍♀️
+
+**Nothing on this website is an official WGU resource developed by the WGU product development.** See their COS page to review the official resources. To make comments or suggestions regarding those resources use your COS page ['Course Feedback'](https://ashejim.github.io/C964/support_this_page.html#help-support-this-website) link.
 :::
 
-Some resources can be found in the [GitHub repository](https://github.com/ashejim/C964/tree/main/resources), your C964 COS page, or the links below. If there's anything else you need, contact your [assigned course instructor](ci_page) or the shared team inbox: [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=Your%20course%20instructor&subject=C769:%20capstone&body=Your%20name%20and%20question%20here.%20We%20can%20only%20respond%20to%20messages%20from%20a%20valid%20WGU%20email%20address.%20%0A%0ADegree%20program%3A%20%0AProgram%20Mentor%3A%20%0A).
+# Welcome to C964!
 
-# Start Here
-[C964 Guide](https://github.com/ashejim/C964/blob/main/resources/C964_GUIDE.pdf)
+Welcome! For the Computer Science capstone project, you'll develop and present a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, the crucial skill setting CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine.
 
-# List of Resources
-[C964 Resource Page](resources)
+The capstone includes three parts:
 
-# Questions, comments, or suggestions?
+1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you started in the right direction.
+2. **Task 2 part C:** The "app." Develop a working application of machine learning (ML).
+3. **Task 2 parts D, A, & B:** Documentation communicating your product's value and development process to audiences of varying technical understanding.
 
-<script
-   type="text/javascript"
-   src="https://utteranc.es/client.js"
-   async="async"[label](https://ashejim.github.io/C964/intro.html)
-   repo="ashejim/C769"
-   issue-term="pathname"
-   theme="github-light"
-   label="💬 comment"
-   crossorigin="anonymous"
-/>
+::::{card-carousel} 3
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: ./task1.html
+
+**Task 1**
+^^^
+
+```{image} ./url_images/idea-b.png
+:height: 100
+:alt: Light bulb turning on above a head. 
+```
+
+Choose a topic and get approval.
++++
+Task 1 details {fas}`arrow-right`
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: ./task2_part_c.html
+
+**Task 2 part C**
+^^^
+
+```{image} ./url_images/ml_process_summary.png
+:alt: Developing a machine learning application flowchart.
+:height: 100
+```
+
+Develop a working application of machine learning (ML).
++++
+Task 2 part C details {fas}`arrow-right`
+:::
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: ./task2_doc.html
+
+**Task 2 parts A, B, & D**
+^^^
+
+```{image} ./url_images/document-a.jpg
+:height: 100
+:alt: Student happily working on a document.  
+```
+
+Present your product to audiences of varying technical understanding through documentation and visualizations.
++++
+Task 3 details {fas}`arrow-right`
+:::
+::::
+
+## Start Here
+
+First, understand the project's requirements. What they are -and what they aren't. Watch the following video:
+
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all"
+    title="C964 Overview"
+    alt= "Getting Started on the Capstone by Dr. Jim Ashe."
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;"
+    allowfullscreen allow="autoplay"
+>
+</iframe>
+
+And review the [What does the application need to do?](https://ashejim.github.io/C964/task2_part_c.html#what-does-the-application-need-to-do) section and part C of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
+
+Like the *C950 -Data Structures and Algorithms II* task and *C951 -Intro to AI* tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in right direction, and thus require all topics to be approved by an assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.

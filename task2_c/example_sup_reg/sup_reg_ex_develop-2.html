@@ -1,0 +1,1353 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Data product Model Development (part 2) &#8212; Computer Science Capstone</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Task 2: The Documentation" href="../../task2_doc/task2_doc.html" />
+    <link rel="prev" title="Data product Model Development (part 1)" href="sup_reg_ex_develop.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-H4N36TZQ78');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/WGU-logo-crossed-out.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computer Science Capstone</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="search this book..." aria-label="search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../task2_part_c.html">
+   Task 2: Part C -the application
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../example_sup_class/sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_class/sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_class/sup_class_ex-develop.html">
+       <a id="toc1_1_">
+       </a>
+       Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_class/sup_class_ex-accuracy.html">
+       Accuracy Analysis (testing)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../example_sup_class/sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="sup_reg_ex.html">
+     Example: Supervised Regression App
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="sup_reg_ex_develop.html">
+       Data product Model Development (part 1)
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Data product Model Development (part 2)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../task2_doc/task2_doc.html">
+   Task 2: The Documentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_d.html">
+     Task 2 Part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../task2_doc/task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../resources.html">
+   C964 Resources
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../ci_page.html">
+   Course Faculty
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ci_c964.html">
+     C964 Course Faculty
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ci_other.html">
+     BSCS, Software, and other Course Faculty
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../support_this_page.html">
+   Help Support this Website
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=lab/tree/docs/task2_c/example_sup_reg/sup_reg_ex_develop-2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ashejim/C964"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Ftask2_c/example_sup_reg/sup_reg_ex_develop-2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/task2_c/example_sup_reg/sup_reg_ex_develop-2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data product Model Development (part 2)</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p>(sup_reg_ex: develop-2)=</p>
+<section id="data-product-model-development-part-2">
+<h1>Data product Model Development (part 2)<a class="headerlink" href="#data-product-model-development-part-2" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Note: we only repeat this step from before, because this is a new .ipyb page.</span>
+<span class="c1">#   it only needs to be executed once per file.</span>
+
+<span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is best practice</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Reloading the dataset</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="c1">#Choosing sepal-length as the independent variable. </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">])</span> <span class="c1">#indpendent variables</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1">#dependent variables</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In [LINK GOES HERE] the previous section, we avoided using categorical data removing and ignoring it. While this sped things along, it also dropped potentially valuable insight from our analysis. Now that the code is working, we’ll rebuild our models using that categorical data, the ‘type’ feature.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sample</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">152</span><span class="p">)</span>
+<span class="c1"># df_sample_highlight = pd.concat([df_sample.iloc[:5,:], df_sample.iloc[-5:,:]]).style.format().set_properties(subset=[&#39;type&#39;], **{&#39;background-color&#39;: &#39;yellow&#39;})</span>
+
+<span class="c1"># function definition</span>
+<span class="k">def</span> <span class="nf">highlight_cols</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;null&#39;</span>
+    <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">:</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;limegreen&#39;</span>
+    <span class="k">elif</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">&#39;Iris-setosa&#39;</span><span class="p">:</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span>
+    <span class="k">elif</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">:</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;orange&#39;</span>
+    <span class="c1"># color = &#39;red&#39; if s == &#39;Iris-virginica&#39; or &#39;blue&#39; if s == &#39;Iris-setosa&#39;</span>
+    <span class="k">return</span> <span class="s1">&#39;background-color: </span><span class="si">% s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">color</span>
+  
+<span class="c1"># highlighting the cells</span>
+<span class="n">df_sample</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">applymap</span><span class="p">(</span><span class="n">highlight_cols</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_fcd20_row0_col0, #T_fcd20_row0_col1, #T_fcd20_row0_col2, #T_fcd20_row0_col3, #T_fcd20_row1_col0, #T_fcd20_row1_col1, #T_fcd20_row1_col2, #T_fcd20_row1_col3, #T_fcd20_row2_col0, #T_fcd20_row2_col1, #T_fcd20_row2_col2, #T_fcd20_row2_col3, #T_fcd20_row3_col0, #T_fcd20_row3_col1, #T_fcd20_row3_col2, #T_fcd20_row3_col3, #T_fcd20_row4_col0, #T_fcd20_row4_col1, #T_fcd20_row4_col2, #T_fcd20_row4_col3, #T_fcd20_row5_col0, #T_fcd20_row5_col1, #T_fcd20_row5_col2, #T_fcd20_row5_col3, #T_fcd20_row6_col0, #T_fcd20_row6_col1, #T_fcd20_row6_col2, #T_fcd20_row6_col3, #T_fcd20_row7_col0, #T_fcd20_row7_col1, #T_fcd20_row7_col2, #T_fcd20_row7_col3, #T_fcd20_row8_col0, #T_fcd20_row8_col1, #T_fcd20_row8_col2, #T_fcd20_row8_col3, #T_fcd20_row9_col0, #T_fcd20_row9_col1, #T_fcd20_row9_col2, #T_fcd20_row9_col3 {
+  background-color: null;
+}
+#T_fcd20_row0_col4, #T_fcd20_row2_col4, #T_fcd20_row4_col4, #T_fcd20_row5_col4, #T_fcd20_row7_col4 {
+  background-color: lightblue;
+}
+#T_fcd20_row1_col4, #T_fcd20_row3_col4, #T_fcd20_row9_col4 {
+  background-color: limegreen;
+}
+#T_fcd20_row6_col4, #T_fcd20_row8_col4 {
+  background-color: orange;
+}
+</style>
+<table id="T_fcd20">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_fcd20_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_fcd20_level0_col1" class="col_heading level0 col1" >sepal-width</th>
+      <th id="T_fcd20_level0_col2" class="col_heading level0 col2" >petal-length</th>
+      <th id="T_fcd20_level0_col3" class="col_heading level0 col3" >petal-width</th>
+      <th id="T_fcd20_level0_col4" class="col_heading level0 col4" >type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_fcd20_level0_row0" class="row_heading level0 row0" >38</th>
+      <td id="T_fcd20_row0_col0" class="data row0 col0" >4.400000</td>
+      <td id="T_fcd20_row0_col1" class="data row0 col1" >3.000000</td>
+      <td id="T_fcd20_row0_col2" class="data row0 col2" >1.300000</td>
+      <td id="T_fcd20_row0_col3" class="data row0 col3" >0.200000</td>
+      <td id="T_fcd20_row0_col4" class="data row0 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row1" class="row_heading level0 row1" >115</th>
+      <td id="T_fcd20_row1_col0" class="data row1 col0" >6.400000</td>
+      <td id="T_fcd20_row1_col1" class="data row1 col1" >3.200000</td>
+      <td id="T_fcd20_row1_col2" class="data row1 col2" >5.300000</td>
+      <td id="T_fcd20_row1_col3" class="data row1 col3" >2.300000</td>
+      <td id="T_fcd20_row1_col4" class="data row1 col4" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row2" class="row_heading level0 row2" >36</th>
+      <td id="T_fcd20_row2_col0" class="data row2 col0" >5.500000</td>
+      <td id="T_fcd20_row2_col1" class="data row2 col1" >3.500000</td>
+      <td id="T_fcd20_row2_col2" class="data row2 col2" >1.300000</td>
+      <td id="T_fcd20_row2_col3" class="data row2 col3" >0.200000</td>
+      <td id="T_fcd20_row2_col4" class="data row2 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row3" class="row_heading level0 row3" >122</th>
+      <td id="T_fcd20_row3_col0" class="data row3 col0" >7.700000</td>
+      <td id="T_fcd20_row3_col1" class="data row3 col1" >2.800000</td>
+      <td id="T_fcd20_row3_col2" class="data row3 col2" >6.700000</td>
+      <td id="T_fcd20_row3_col3" class="data row3 col3" >2.000000</td>
+      <td id="T_fcd20_row3_col4" class="data row3 col4" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row4" class="row_heading level0 row4" >21</th>
+      <td id="T_fcd20_row4_col0" class="data row4 col0" >5.100000</td>
+      <td id="T_fcd20_row4_col1" class="data row4 col1" >3.700000</td>
+      <td id="T_fcd20_row4_col2" class="data row4 col2" >1.500000</td>
+      <td id="T_fcd20_row4_col3" class="data row4 col3" >0.400000</td>
+      <td id="T_fcd20_row4_col4" class="data row4 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row5" class="row_heading level0 row5" >7</th>
+      <td id="T_fcd20_row5_col0" class="data row5 col0" >5.000000</td>
+      <td id="T_fcd20_row5_col1" class="data row5 col1" >3.400000</td>
+      <td id="T_fcd20_row5_col2" class="data row5 col2" >1.500000</td>
+      <td id="T_fcd20_row5_col3" class="data row5 col3" >0.200000</td>
+      <td id="T_fcd20_row5_col4" class="data row5 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row6" class="row_heading level0 row6" >89</th>
+      <td id="T_fcd20_row6_col0" class="data row6 col0" >5.500000</td>
+      <td id="T_fcd20_row6_col1" class="data row6 col1" >2.500000</td>
+      <td id="T_fcd20_row6_col2" class="data row6 col2" >4.000000</td>
+      <td id="T_fcd20_row6_col3" class="data row6 col3" >1.300000</td>
+      <td id="T_fcd20_row6_col4" class="data row6 col4" >Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row7" class="row_heading level0 row7" >48</th>
+      <td id="T_fcd20_row7_col0" class="data row7 col0" >5.300000</td>
+      <td id="T_fcd20_row7_col1" class="data row7 col1" >3.700000</td>
+      <td id="T_fcd20_row7_col2" class="data row7 col2" >1.500000</td>
+      <td id="T_fcd20_row7_col3" class="data row7 col3" >0.200000</td>
+      <td id="T_fcd20_row7_col4" class="data row7 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row8" class="row_heading level0 row8" >51</th>
+      <td id="T_fcd20_row8_col0" class="data row8 col0" >6.400000</td>
+      <td id="T_fcd20_row8_col1" class="data row8 col1" >3.200000</td>
+      <td id="T_fcd20_row8_col2" class="data row8 col2" >4.500000</td>
+      <td id="T_fcd20_row8_col3" class="data row8 col3" >1.500000</td>
+      <td id="T_fcd20_row8_col4" class="data row8 col4" >Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th id="T_fcd20_level0_row9" class="row_heading level0 row9" >127</th>
+      <td id="T_fcd20_row9_col0" class="data row9 col0" >6.100000</td>
+      <td id="T_fcd20_row9_col1" class="data row9 col1" >3.000000</td>
+      <td id="T_fcd20_row9_col2" class="data row9 col2" >4.900000</td>
+      <td id="T_fcd20_row9_col3" class="data row9 col3" >1.800000</td>
+      <td id="T_fcd20_row9_col4" class="data row9 col4" >Iris-virginica</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>We have three unique flower types, equally distributed, in this feature:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;pie&#39;</span><span class="p">,</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;limegreen&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/sup_reg_ex_develop-2_5_0.png" src="../../_images/sup_reg_ex_develop-2_5_0.png" />
+</div>
+</div>
+<p>Recall, a coding error [LINK HERE] was returned because the algorithm could not process categorical independent variables. Most machine learning models can only interpret numerical data. Thus <em>feature encoding</em>, processing data into numerical form, is an essential data analytical skill. To do this properly you should understand your data before preceding. For example, we could simply re-label the types as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+  \text{Iris-setosa} \rightarrow 1 \\
+  \text{Iris-versicolor} \rightarrow 2 \\
+  \text{Iris-virginica} \rightarrow 3
+\end{split}\]</div>
+<p>and hand this off to the algorithm. But while this would fix the coding error, any mathematical interpretation of this re-labeling would be meaningless, e.g., ‘Iris-setosa’ is not twice as much as ‘Iris-versicolor,’ nor does ‘setosa’ + ‘versicolor’ = ‘virginica’ -the type is just a name. We call this type of categorical data <em>nominal.</em> Categories with an inherent order, e.g., grades, pay grades, bronze-silver-gold, etc., are called <em>ordinal.</em> But that doesn’t apply here either. A flower either is an ‘Iris-setosa’ OR it isn’t. Each type is similarly binary so we can interpret <em>each unique type as a unique mutually exclusive feature</em>, with a 1 or 0, indicating whether the category applies or not, respectively.</p>
+<p>Most machine learning libraries are well equipped with built-in preprocessing functions; see the available options in the docs: <a class="reference external" href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing">sklearn.preprocessing</a>. For simplicity, we’ll start with Pandas’ built-in <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html">get_dummies</a>. However, it will often be best to use functions written for your model’s library, such as sklearn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder">OneHotEncoder</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">after_pd_dummy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_sample</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#highlight values according to column names and values. </span>
+<span class="k">def</span> <span class="nf">highlight_cols_dummy</span><span class="p">(</span><span class="n">col</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">col</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;type_Iris-setosa&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: lightblue&#39;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col</span><span class="o">.</span><span class="n">values</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">col</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;type_Iris-versicolor&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: orange&#39;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col</span><span class="o">.</span><span class="n">values</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">col</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;type_Iris-virginica&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: lightgreen&#39;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col</span><span class="o">.</span><span class="n">values</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: null&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">col</span><span class="o">.</span><span class="n">values</span><span class="p">]</span>
+
+<span class="c1"># #Nice displays are nice but not required. </span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span> 
+<span class="n">before_styler</span> <span class="o">=</span> <span class="n">df_sample</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Before &lt;em&gt;get_dummy&lt;/em&gt;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">applymap</span><span class="p">(</span><span class="n">highlight_cols</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">after_styler</span> <span class="o">=</span> <span class="n">after_pd_dummy</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;After &lt;em&gt;get_dummy&lt;/em&gt;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">highlight_cols_dummy</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># space = &quot;\xa0&quot; * 10 #space between columns</span>
+<span class="n">arrow</span> <span class="o">=</span> <span class="s2">&quot;&lt;html&gt; &lt;huge&gt;&amp;#x21e8;&lt;/huge&gt; &lt;/html&gt;&quot;</span>
+
+<span class="c1"># displays dataframes side by side</span>
+<span class="n">display_html</span><span class="p">(</span><span class="n">before_styler</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">()</span> <span class="o">+</span> <span class="n">arrow</span> <span class="o">+</span> <span class="n">after_styler</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">(),</span> <span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_ffcd4_row0_col0, #T_ffcd4_row0_col1, #T_ffcd4_row0_col2, #T_ffcd4_row0_col3, #T_ffcd4_row1_col0, #T_ffcd4_row1_col1, #T_ffcd4_row1_col2, #T_ffcd4_row1_col3, #T_ffcd4_row2_col0, #T_ffcd4_row2_col1, #T_ffcd4_row2_col2, #T_ffcd4_row2_col3, #T_ffcd4_row3_col0, #T_ffcd4_row3_col1, #T_ffcd4_row3_col2, #T_ffcd4_row3_col3, #T_ffcd4_row4_col0, #T_ffcd4_row4_col1, #T_ffcd4_row4_col2, #T_ffcd4_row4_col3, #T_ffcd4_row5_col0, #T_ffcd4_row5_col1, #T_ffcd4_row5_col2, #T_ffcd4_row5_col3, #T_ffcd4_row6_col0, #T_ffcd4_row6_col1, #T_ffcd4_row6_col2, #T_ffcd4_row6_col3, #T_ffcd4_row7_col0, #T_ffcd4_row7_col1, #T_ffcd4_row7_col2, #T_ffcd4_row7_col3, #T_ffcd4_row8_col0, #T_ffcd4_row8_col1, #T_ffcd4_row8_col2, #T_ffcd4_row8_col3, #T_ffcd4_row9_col0, #T_ffcd4_row9_col1, #T_ffcd4_row9_col2, #T_ffcd4_row9_col3 {
+  background-color: null;
+}
+#T_ffcd4_row0_col4, #T_ffcd4_row2_col4, #T_ffcd4_row4_col4, #T_ffcd4_row5_col4, #T_ffcd4_row7_col4 {
+  background-color: lightblue;
+}
+#T_ffcd4_row1_col4, #T_ffcd4_row3_col4, #T_ffcd4_row9_col4 {
+  background-color: limegreen;
+}
+#T_ffcd4_row6_col4, #T_ffcd4_row8_col4 {
+  background-color: orange;
+}
+</style>
+<table id="T_ffcd4" style='display:inline'>
+  <caption>Before <em>get_dummy</em></caption>
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_ffcd4_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_ffcd4_level0_col1" class="col_heading level0 col1" >sepal-width</th>
+      <th id="T_ffcd4_level0_col2" class="col_heading level0 col2" >petal-length</th>
+      <th id="T_ffcd4_level0_col3" class="col_heading level0 col3" >petal-width</th>
+      <th id="T_ffcd4_level0_col4" class="col_heading level0 col4" >type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_ffcd4_level0_row0" class="row_heading level0 row0" >38</th>
+      <td id="T_ffcd4_row0_col0" class="data row0 col0" >4.4</td>
+      <td id="T_ffcd4_row0_col1" class="data row0 col1" >3.0</td>
+      <td id="T_ffcd4_row0_col2" class="data row0 col2" >1.3</td>
+      <td id="T_ffcd4_row0_col3" class="data row0 col3" >0.2</td>
+      <td id="T_ffcd4_row0_col4" class="data row0 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row1" class="row_heading level0 row1" >115</th>
+      <td id="T_ffcd4_row1_col0" class="data row1 col0" >6.4</td>
+      <td id="T_ffcd4_row1_col1" class="data row1 col1" >3.2</td>
+      <td id="T_ffcd4_row1_col2" class="data row1 col2" >5.3</td>
+      <td id="T_ffcd4_row1_col3" class="data row1 col3" >2.3</td>
+      <td id="T_ffcd4_row1_col4" class="data row1 col4" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row2" class="row_heading level0 row2" >36</th>
+      <td id="T_ffcd4_row2_col0" class="data row2 col0" >5.5</td>
+      <td id="T_ffcd4_row2_col1" class="data row2 col1" >3.5</td>
+      <td id="T_ffcd4_row2_col2" class="data row2 col2" >1.3</td>
+      <td id="T_ffcd4_row2_col3" class="data row2 col3" >0.2</td>
+      <td id="T_ffcd4_row2_col4" class="data row2 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row3" class="row_heading level0 row3" >122</th>
+      <td id="T_ffcd4_row3_col0" class="data row3 col0" >7.7</td>
+      <td id="T_ffcd4_row3_col1" class="data row3 col1" >2.8</td>
+      <td id="T_ffcd4_row3_col2" class="data row3 col2" >6.7</td>
+      <td id="T_ffcd4_row3_col3" class="data row3 col3" >2.0</td>
+      <td id="T_ffcd4_row3_col4" class="data row3 col4" >Iris-virginica</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row4" class="row_heading level0 row4" >21</th>
+      <td id="T_ffcd4_row4_col0" class="data row4 col0" >5.1</td>
+      <td id="T_ffcd4_row4_col1" class="data row4 col1" >3.7</td>
+      <td id="T_ffcd4_row4_col2" class="data row4 col2" >1.5</td>
+      <td id="T_ffcd4_row4_col3" class="data row4 col3" >0.4</td>
+      <td id="T_ffcd4_row4_col4" class="data row4 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row5" class="row_heading level0 row5" >7</th>
+      <td id="T_ffcd4_row5_col0" class="data row5 col0" >5.0</td>
+      <td id="T_ffcd4_row5_col1" class="data row5 col1" >3.4</td>
+      <td id="T_ffcd4_row5_col2" class="data row5 col2" >1.5</td>
+      <td id="T_ffcd4_row5_col3" class="data row5 col3" >0.2</td>
+      <td id="T_ffcd4_row5_col4" class="data row5 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row6" class="row_heading level0 row6" >89</th>
+      <td id="T_ffcd4_row6_col0" class="data row6 col0" >5.5</td>
+      <td id="T_ffcd4_row6_col1" class="data row6 col1" >2.5</td>
+      <td id="T_ffcd4_row6_col2" class="data row6 col2" >4.0</td>
+      <td id="T_ffcd4_row6_col3" class="data row6 col3" >1.3</td>
+      <td id="T_ffcd4_row6_col4" class="data row6 col4" >Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row7" class="row_heading level0 row7" >48</th>
+      <td id="T_ffcd4_row7_col0" class="data row7 col0" >5.3</td>
+      <td id="T_ffcd4_row7_col1" class="data row7 col1" >3.7</td>
+      <td id="T_ffcd4_row7_col2" class="data row7 col2" >1.5</td>
+      <td id="T_ffcd4_row7_col3" class="data row7 col3" >0.2</td>
+      <td id="T_ffcd4_row7_col4" class="data row7 col4" >Iris-setosa</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row8" class="row_heading level0 row8" >51</th>
+      <td id="T_ffcd4_row8_col0" class="data row8 col0" >6.4</td>
+      <td id="T_ffcd4_row8_col1" class="data row8 col1" >3.2</td>
+      <td id="T_ffcd4_row8_col2" class="data row8 col2" >4.5</td>
+      <td id="T_ffcd4_row8_col3" class="data row8 col3" >1.5</td>
+      <td id="T_ffcd4_row8_col4" class="data row8 col4" >Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th id="T_ffcd4_level0_row9" class="row_heading level0 row9" >127</th>
+      <td id="T_ffcd4_row9_col0" class="data row9 col0" >6.1</td>
+      <td id="T_ffcd4_row9_col1" class="data row9 col1" >3.0</td>
+      <td id="T_ffcd4_row9_col2" class="data row9 col2" >4.9</td>
+      <td id="T_ffcd4_row9_col3" class="data row9 col3" >1.8</td>
+      <td id="T_ffcd4_row9_col4" class="data row9 col4" >Iris-virginica</td>
+    </tr>
+  </tbody>
+</table>
+<html> <huge>&#x21e8;</huge> </html><style type="text/css">
+#T_f8f82_row0_col0, #T_f8f82_row0_col1, #T_f8f82_row0_col2, #T_f8f82_row0_col3, #T_f8f82_row1_col0, #T_f8f82_row1_col1, #T_f8f82_row1_col2, #T_f8f82_row1_col3, #T_f8f82_row2_col0, #T_f8f82_row2_col1, #T_f8f82_row2_col2, #T_f8f82_row2_col3, #T_f8f82_row3_col0, #T_f8f82_row3_col1, #T_f8f82_row3_col2, #T_f8f82_row3_col3, #T_f8f82_row4_col0, #T_f8f82_row4_col1, #T_f8f82_row4_col2, #T_f8f82_row4_col3, #T_f8f82_row5_col0, #T_f8f82_row5_col1, #T_f8f82_row5_col2, #T_f8f82_row5_col3, #T_f8f82_row6_col0, #T_f8f82_row6_col1, #T_f8f82_row6_col2, #T_f8f82_row6_col3, #T_f8f82_row7_col0, #T_f8f82_row7_col1, #T_f8f82_row7_col2, #T_f8f82_row7_col3, #T_f8f82_row8_col0, #T_f8f82_row8_col1, #T_f8f82_row8_col2, #T_f8f82_row8_col3, #T_f8f82_row9_col0, #T_f8f82_row9_col1, #T_f8f82_row9_col2, #T_f8f82_row9_col3 {
+  background-color: null;
+}
+#T_f8f82_row0_col4, #T_f8f82_row2_col4, #T_f8f82_row4_col4, #T_f8f82_row5_col4, #T_f8f82_row7_col4 {
+  background-color: lightblue;
+}
+#T_f8f82_row1_col6, #T_f8f82_row3_col6, #T_f8f82_row9_col6 {
+  background-color: lightgreen;
+}
+#T_f8f82_row6_col5, #T_f8f82_row8_col5 {
+  background-color: orange;
+}
+</style>
+<table id="T_f8f82" style='display:inline'>
+  <caption>After <em>get_dummy</em></caption>
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_f8f82_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_f8f82_level0_col1" class="col_heading level0 col1" >sepal-width</th>
+      <th id="T_f8f82_level0_col2" class="col_heading level0 col2" >petal-length</th>
+      <th id="T_f8f82_level0_col3" class="col_heading level0 col3" >petal-width</th>
+      <th id="T_f8f82_level0_col4" class="col_heading level0 col4" >type_Iris-setosa</th>
+      <th id="T_f8f82_level0_col5" class="col_heading level0 col5" >type_Iris-versicolor</th>
+      <th id="T_f8f82_level0_col6" class="col_heading level0 col6" >type_Iris-virginica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_f8f82_level0_row0" class="row_heading level0 row0" >38</th>
+      <td id="T_f8f82_row0_col0" class="data row0 col0" >4.4</td>
+      <td id="T_f8f82_row0_col1" class="data row0 col1" >3.0</td>
+      <td id="T_f8f82_row0_col2" class="data row0 col2" >1.3</td>
+      <td id="T_f8f82_row0_col3" class="data row0 col3" >0.2</td>
+      <td id="T_f8f82_row0_col4" class="data row0 col4" >1</td>
+      <td id="T_f8f82_row0_col5" class="data row0 col5" >0</td>
+      <td id="T_f8f82_row0_col6" class="data row0 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row1" class="row_heading level0 row1" >115</th>
+      <td id="T_f8f82_row1_col0" class="data row1 col0" >6.4</td>
+      <td id="T_f8f82_row1_col1" class="data row1 col1" >3.2</td>
+      <td id="T_f8f82_row1_col2" class="data row1 col2" >5.3</td>
+      <td id="T_f8f82_row1_col3" class="data row1 col3" >2.3</td>
+      <td id="T_f8f82_row1_col4" class="data row1 col4" >0</td>
+      <td id="T_f8f82_row1_col5" class="data row1 col5" >0</td>
+      <td id="T_f8f82_row1_col6" class="data row1 col6" >1</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row2" class="row_heading level0 row2" >36</th>
+      <td id="T_f8f82_row2_col0" class="data row2 col0" >5.5</td>
+      <td id="T_f8f82_row2_col1" class="data row2 col1" >3.5</td>
+      <td id="T_f8f82_row2_col2" class="data row2 col2" >1.3</td>
+      <td id="T_f8f82_row2_col3" class="data row2 col3" >0.2</td>
+      <td id="T_f8f82_row2_col4" class="data row2 col4" >1</td>
+      <td id="T_f8f82_row2_col5" class="data row2 col5" >0</td>
+      <td id="T_f8f82_row2_col6" class="data row2 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row3" class="row_heading level0 row3" >122</th>
+      <td id="T_f8f82_row3_col0" class="data row3 col0" >7.7</td>
+      <td id="T_f8f82_row3_col1" class="data row3 col1" >2.8</td>
+      <td id="T_f8f82_row3_col2" class="data row3 col2" >6.7</td>
+      <td id="T_f8f82_row3_col3" class="data row3 col3" >2.0</td>
+      <td id="T_f8f82_row3_col4" class="data row3 col4" >0</td>
+      <td id="T_f8f82_row3_col5" class="data row3 col5" >0</td>
+      <td id="T_f8f82_row3_col6" class="data row3 col6" >1</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row4" class="row_heading level0 row4" >21</th>
+      <td id="T_f8f82_row4_col0" class="data row4 col0" >5.1</td>
+      <td id="T_f8f82_row4_col1" class="data row4 col1" >3.7</td>
+      <td id="T_f8f82_row4_col2" class="data row4 col2" >1.5</td>
+      <td id="T_f8f82_row4_col3" class="data row4 col3" >0.4</td>
+      <td id="T_f8f82_row4_col4" class="data row4 col4" >1</td>
+      <td id="T_f8f82_row4_col5" class="data row4 col5" >0</td>
+      <td id="T_f8f82_row4_col6" class="data row4 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row5" class="row_heading level0 row5" >7</th>
+      <td id="T_f8f82_row5_col0" class="data row5 col0" >5.0</td>
+      <td id="T_f8f82_row5_col1" class="data row5 col1" >3.4</td>
+      <td id="T_f8f82_row5_col2" class="data row5 col2" >1.5</td>
+      <td id="T_f8f82_row5_col3" class="data row5 col3" >0.2</td>
+      <td id="T_f8f82_row5_col4" class="data row5 col4" >1</td>
+      <td id="T_f8f82_row5_col5" class="data row5 col5" >0</td>
+      <td id="T_f8f82_row5_col6" class="data row5 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row6" class="row_heading level0 row6" >89</th>
+      <td id="T_f8f82_row6_col0" class="data row6 col0" >5.5</td>
+      <td id="T_f8f82_row6_col1" class="data row6 col1" >2.5</td>
+      <td id="T_f8f82_row6_col2" class="data row6 col2" >4.0</td>
+      <td id="T_f8f82_row6_col3" class="data row6 col3" >1.3</td>
+      <td id="T_f8f82_row6_col4" class="data row6 col4" >0</td>
+      <td id="T_f8f82_row6_col5" class="data row6 col5" >1</td>
+      <td id="T_f8f82_row6_col6" class="data row6 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row7" class="row_heading level0 row7" >48</th>
+      <td id="T_f8f82_row7_col0" class="data row7 col0" >5.3</td>
+      <td id="T_f8f82_row7_col1" class="data row7 col1" >3.7</td>
+      <td id="T_f8f82_row7_col2" class="data row7 col2" >1.5</td>
+      <td id="T_f8f82_row7_col3" class="data row7 col3" >0.2</td>
+      <td id="T_f8f82_row7_col4" class="data row7 col4" >1</td>
+      <td id="T_f8f82_row7_col5" class="data row7 col5" >0</td>
+      <td id="T_f8f82_row7_col6" class="data row7 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row8" class="row_heading level0 row8" >51</th>
+      <td id="T_f8f82_row8_col0" class="data row8 col0" >6.4</td>
+      <td id="T_f8f82_row8_col1" class="data row8 col1" >3.2</td>
+      <td id="T_f8f82_row8_col2" class="data row8 col2" >4.5</td>
+      <td id="T_f8f82_row8_col3" class="data row8 col3" >1.5</td>
+      <td id="T_f8f82_row8_col4" class="data row8 col4" >0</td>
+      <td id="T_f8f82_row8_col5" class="data row8 col5" >1</td>
+      <td id="T_f8f82_row8_col6" class="data row8 col6" >0</td>
+    </tr>
+    <tr>
+      <th id="T_f8f82_level0_row9" class="row_heading level0 row9" >127</th>
+      <td id="T_f8f82_row9_col0" class="data row9 col0" >6.1</td>
+      <td id="T_f8f82_row9_col1" class="data row9 col1" >3.0</td>
+      <td id="T_f8f82_row9_col2" class="data row9 col2" >4.9</td>
+      <td id="T_f8f82_row9_col3" class="data row9 col3" >1.8</td>
+      <td id="T_f8f82_row9_col4" class="data row9 col4" >0</td>
+      <td id="T_f8f82_row9_col5" class="data row9 col5" >0</td>
+      <td id="T_f8f82_row9_col6" class="data row9 col6" >1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="c1"># X = df.drop(columns=[&#39;sepal-length&#39;]) #indpendent variables</span>
+<span class="c1"># y = df[[&#39;sepal-length&#39;]].copy() #dependent variables</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+<span class="n">linear_reg_model_types</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">linear_reg_model_types</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">linear_reg_model_types</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;squared mean error using types is :&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sme</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>squared mean error using types is :0.12921261168601364
+</pre></div>
+</div>
+</div>
+</div>
+<p>Without including the flower types, our linear model has a squared mean error of <code class="docutils literal notranslate"><span class="pre">X.XXXXX.</span></code> Wait what? It go worse, but why? Adding three <code class="docutils literal notranslate"><span class="pre">types</span></code> of features, added three dimensions. Moving from three to a *six-*dimensional space. Consider the change from just two to three dimensions, e.g.,<span class="math notranslate nohighlight">\(2^{2}\)</span> to <span class="math notranslate nohighlight">\(2^{3}=8\)</span>. Adding dimensions can radically increase the volume of space making the available data relatively sparse -what’s known as the <a class="reference external" href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">Curse of Dimensionality</a>. -However, that’s not the full story here. While, both <code class="docutils literal notranslate"><span class="pre">petal-length</span></code> and <code class="docutils literal notranslate"><span class="pre">petal-width</span></code> appear positively correlated with <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code>for <code class="docutils literal notranslate"><span class="pre">versicolor</span></code> and <code class="docutils literal notranslate"><span class="pre">virginica</span></code> it does <em>not</em> for <code class="docutils literal notranslate"><span class="pre">setosa</span></code> (blue below),</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1">#correlogram</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">x_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">,</span><span class="s1">&#39;petal-width&#39;</span><span class="p">],</span> <span class="n">y_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">],</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/sup_reg_ex_develop-2_11_0.png" src="../../_images/sup_reg_ex_develop-2_11_0.png" />
+</div>
+</div>
+<p>The drop in accuracy is in part a limitation of our simple linear model trying to make use of a feature pulling the model in the wrong direction. Making the most out of your data involves a mix of understanding the data and the applied algorithm(s) (which don’t understand anything). Using three different linear models yields better results:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+
+<span class="n">df_dummy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">df_dummy</span>
+<span class="n">df_s</span> <span class="o">=</span> <span class="n">df_dummy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_dummy</span><span class="p">[</span><span class="s1">&#39;type_Iris-setosa&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;type_Iris-versicolor&#39;</span><span class="p">,</span> <span class="s1">&#39;type_Iris-virginica&#39;</span><span class="p">])</span>
+<span class="n">df_v</span> <span class="o">=</span> <span class="n">df_dummy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_dummy</span><span class="p">[</span><span class="s1">&#39;type_Iris-versicolor&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;type_Iris-setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;type_Iris-virginica&#39;</span><span class="p">])</span>
+<span class="n">df_g</span> <span class="o">=</span> <span class="n">df_dummy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_dummy</span><span class="p">[</span><span class="s1">&#39;type_Iris-virginica&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;type_Iris-setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;type_Iris-versicolor&#39;</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">line_regression_pipe</span><span class="p">(</span><span class="n">df_list</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">df_list</span><span class="p">:</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">])</span> <span class="c1">#indpendent variables</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1">#dependent variables</span>
+        <span class="c1">#split the variable sets into training and testing subsets</span>
+        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+        <span class="n">linear_reg_model_a</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+        <span class="n">linear_reg_model_a</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">linear_reg_model_a</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+        <span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sme of &#39;</span> <span class="o">+</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; is :&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sme</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">df_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">df_s</span><span class="p">,</span> <span class="n">df_v</span><span class="p">,</span> <span class="n">df_g</span><span class="p">]</span>
+<span class="n">line_regression_pipe</span><span class="p">(</span><span class="n">df_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sme of type_Iris-setosa is :0.06604867484155268
+sme of type_Iris-versicolor is :0.09862408497975977
+sme of type_Iris-virginica is :0.0802189108860733
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lineartree</span> <span class="kn">import</span> <span class="n">LinearTreeRegressor</span><span class="p">,</span> <span class="n">LinearForestRegressor</span><span class="p">,</span> <span class="n">LinearBoostRegressor</span>
+<span class="c1"># regr = LinearTreeRegressor(base_estimator=LinearRegression())</span>
+<span class="c1"># regr = LinearForestRegressor(base_estimator=LinearRegression())</span>
+<span class="c1"># regr = LinearBoostRegressor(base_estimator=LinearRegression())</span>
+
+<span class="n">regr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">sme</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">lineartree</span> <span class="kn">import</span> <span class="n">LinearTreeRegressor</span><span class="p">,</span> <span class="n">LinearForestRegressor</span><span class="p">,</span> <span class="n">LinearBoostRegressor</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># regr = LinearTreeRegressor(base_estimator=LinearRegression())</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># regr = LinearForestRegressor(base_estimator=LinearRegression())</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># regr = LinearBoostRegressor(base_estimator=LinearRegression())</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">regr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">y_predict</span> <span class="o">=</span> <span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;regr&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDRegressor</span>
+
+<span class="n">sgd_reg</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">max_iter</span> <span class="o">=</span> <span class="mi">10000000</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-20</span><span class="p">)</span>
+<span class="n">sgd_reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">sgd_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">sme</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.14919009503639913
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:1141: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+</pre></div>
+</div>
+</div>
+</div>
+<p>What’ve done is combine the</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+
+<span class="n">tree_regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+<span class="n">tree_regressor</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_predict</span> <span class="o">=</span> <span class="n">tree_regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">sme</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">sme</span><span class="p">))</span>
+
+<span class="c1"># from sklearn.linear_model import LinearRegression</span>
+<span class="c1"># from lineartree import LinearTreeRegressor</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">export_graphviz</span> 
+
+<span class="n">export_graphviz</span><span class="p">(</span><span class="n">tree_regressor</span><span class="p">,</span> <span class="n">out_file</span> <span class="o">=</span><span class="s1">&#39;tree.dot&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">graphviz</span>
+
+<span class="c1"># dot -Tps tree.dot -o outfile.pdf</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;tree.dot&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">dot_graph</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span><span class="n">dot_graph</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.26699999999999996
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\backend\execute.py:79,</span> in <span class="ni">run_check</span><span class="nt">(cmd, input_lines, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">78</span>         <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;stdout&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;stderr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span>
+<span class="ne">---&gt; </span><span class="mi">79</span>     <span class="n">proc</span> <span class="o">=</span> <span class="n">_run_input_lines</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">input_lines</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">80</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\backend\execute.py:99,</span> in <span class="ni">_run_input_lines</span><span class="nt">(cmd, input_lines, kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span> <span class="k">def</span> <span class="nf">_run_input_lines</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">input_lines</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">99</span>     <span class="n">popen</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span>     <span class="n">stdin_write</span> <span class="o">=</span> <span class="n">popen</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\subprocess.py:1024,</span> in <span class="ni">Popen.__init__</span><span class="nt">(self, args, bufsize, executable, stdin, stdout, stderr, preexec_fn, close_fds, shell, cwd, env, universal_newlines, startupinfo, creationflags, restore_signals, start_new_session, pass_fds, user, group, extra_groups, encoding, errors, text, umask, pipesize, process_group)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1021</span>             <span class="bp">self</span><span class="o">.</span><span class="n">stderr</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">TextIOWrapper</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>                     <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1024</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_execute_child</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">executable</span><span class="p">,</span> <span class="n">preexec_fn</span><span class="p">,</span> <span class="n">close_fds</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1025</span>                         <span class="n">pass_fds</span><span class="p">,</span> <span class="n">cwd</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1026</span>                         <span class="n">startupinfo</span><span class="p">,</span> <span class="n">creationflags</span><span class="p">,</span> <span class="n">shell</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1027</span>                         <span class="n">p2cread</span><span class="p">,</span> <span class="n">p2cwrite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1028</span>                         <span class="n">c2pread</span><span class="p">,</span> <span class="n">c2pwrite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1029</span>                         <span class="n">errread</span><span class="p">,</span> <span class="n">errwrite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1030</span>                         <span class="n">restore_signals</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1031</span>                         <span class="n">gid</span><span class="p">,</span> <span class="n">gids</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">umask</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1032</span>                         <span class="n">start_new_session</span><span class="p">,</span> <span class="n">process_group</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1033</span> <span class="k">except</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1034</span>     <span class="c1"># Cleanup if the child failed starting.</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\subprocess.py:1493,</span> in <span class="ni">Popen._execute_child</span><span class="nt">(self, args, executable, preexec_fn, close_fds, pass_fds, cwd, env, startupinfo, creationflags, shell, p2cread, p2cwrite, c2pread, c2pwrite, errread, errwrite, unused_restore_signals, unused_gid, unused_gids, unused_uid, unused_umask, unused_start_new_session, unused_process_group)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1492</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1493</span>     <span class="n">hp</span><span class="p">,</span> <span class="n">ht</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">tid</span> <span class="o">=</span> <span class="n">_winapi</span><span class="o">.</span><span class="n">CreateProcess</span><span class="p">(</span><span class="n">executable</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1494</span>                              <span class="c1"># no special security</span>
+<span class="g g-Whitespace">   </span><span class="mi">1495</span>                              <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1496</span>                              <span class="nb">int</span><span class="p">(</span><span class="ow">not</span> <span class="n">close_fds</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1497</span>                              <span class="n">creationflags</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1498</span>                              <span class="n">env</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1499</span>                              <span class="n">cwd</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1500</span>                              <span class="n">startupinfo</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1501</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1502</span>     <span class="c1"># Child is launched. Close the parent&#39;s copy of those pipe</span>
+<span class="g g-Whitespace">   </span><span class="mi">1503</span>     <span class="c1"># handles that only the child should have open.  You need</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1506</span>     <span class="c1"># pipe will not close when the child process exits and the</span>
+<span class="g g-Whitespace">   </span><span class="mi">1507</span>     <span class="c1"># ReadFile will hang.</span>
+
+<span class="ne">FileNotFoundError</span>: [WinError 2] The system cannot find the file specified
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span><span class="g g-Whitespace">                        </span>Traceback (most recent call last)
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\IPython\core\formatters.py:972,</span> in <span class="ni">MimeBundleFormatter.__call__</span><span class="nt">(self, obj, include, exclude)</span>
+<span class="g g-Whitespace">    </span><span class="mi">969</span>     <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">971</span>     <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">972</span>         <span class="k">return</span> <span class="n">method</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">973</span>     <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">974</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\jupyter_integration.py:98,</span> in <span class="ni">JupyterIntegration._repr_mimebundle_</span><span class="nt">(self, include, exclude, **_)</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span> <span class="n">include</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">include</span><span class="p">)</span> <span class="k">if</span> <span class="n">include</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_jupyter_mimetype</span><span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span> <span class="n">include</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">(</span><span class="n">exclude</span> <span class="ow">or</span> <span class="p">[])</span>
+<span class="ne">---&gt; </span><span class="mi">98</span> <span class="k">return</span> <span class="p">{</span><span class="n">mimetype</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)()</span>
+<span class="nn">     99         for mimetype, method_name</span> in <span class="ni">MIME_TYPES.items</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>         <span class="k">if</span> <span class="n">mimetype</span> <span class="ow">in</span> <span class="n">include</span><span class="p">}</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\jupyter_integration.py:98,</span> in <span class="ni">&lt;dictcomp&gt;</span><span class="nt">(.0)</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span> <span class="n">include</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">include</span><span class="p">)</span> <span class="k">if</span> <span class="n">include</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_jupyter_mimetype</span><span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span> <span class="n">include</span> <span class="o">-=</span> <span class="nb">set</span><span class="p">(</span><span class="n">exclude</span> <span class="ow">or</span> <span class="p">[])</span>
+<span class="ne">---&gt; </span><span class="mi">98</span> <span class="k">return</span> <span class="p">{</span><span class="n">mimetype</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)()</span>
+<span class="nn">     99         for mimetype, method_name</span> in <span class="ni">MIME_TYPES.items</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span>         <span class="k">if</span> <span class="n">mimetype</span> <span class="ow">in</span> <span class="n">include</span><span class="p">}</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\jupyter_integration.py:112,</span> in <span class="ni">JupyterIntegration._repr_image_svg_xml</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span> <span class="k">def</span> <span class="nf">_repr_image_svg_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">111</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return the rendered graph as SVG string.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">112</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">SVG_ENCODING</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\piping.py:104,</span> in <span class="ni">Pipe.pipe</span><span class="nt">(self, format, renderer, formatter, neato_no_op, quiet, engine, encoding)</span>
+<span class="g g-Whitespace">     </span><span class="mi">55</span> <span class="k">def</span> <span class="nf">pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">56</span>          <span class="nb">format</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span>          <span class="n">renderer</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span>          <span class="n">engine</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span>          <span class="n">encoding</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return the source piped through the Graphviz layout command.</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span><span class="sd"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span><span class="sd">     Args:</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span><span class="sd">         &#39;&lt;?xml version=&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">103</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">104</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pipe_legacy</span><span class="p">(</span><span class="nb">format</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>                              <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">106</span>                              <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">107</span>                              <span class="n">neato_no_op</span><span class="o">=</span><span class="n">neato_no_op</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">108</span>                              <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span>                              <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span>                              <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\_tools.py:171,</span> in <span class="ni">deprecate_positional_args.&lt;locals&gt;.decorator.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">162</span>     <span class="n">wanted</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="n">value</span><span class="si">!r}</span><span class="s1">&#39;</span>
+<span class="nn">    163                        for name, value</span> in <span class="ni">deprecated.items</span><span class="nt">())</span>
+<span class="g g-Whitespace">    </span><span class="mi">164</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The signature of </span><span class="si">{</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s1"> will be reduced&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span>                   <span class="sa">f</span><span class="s1">&#39; to </span><span class="si">{</span><span class="n">supported_number</span><span class="si">}</span><span class="s1"> positional args&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span>                   <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">supported</span><span class="p">)</span><span class="si">}</span><span class="s1">: pass </span><span class="si">{</span><span class="n">wanted</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span>                   <span class="s1">&#39; as keyword arg(s)&#39;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span>                   <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>                   <span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">171</span> <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\piping.py:121,</span> in <span class="ni">Pipe._pipe_legacy</span><span class="nt">(self, format, renderer, formatter, neato_no_op, quiet, engine, encoding)</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span> <span class="nd">@_tools</span><span class="o">.</span><span class="n">deprecate_positional_args</span><span class="p">(</span><span class="n">supported_number</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">def</span> <span class="nf">_pipe_legacy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span>                  <span class="nb">format</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">119</span>                  <span class="n">engine</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span>                  <span class="n">encoding</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Union</span><span class="p">[</span><span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="ne">--&gt; </span><span class="mi">121</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pipe_future</span><span class="p">(</span><span class="nb">format</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span>                              <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>                              <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>                              <span class="n">neato_no_op</span><span class="o">=</span><span class="n">neato_no_op</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">125</span>                              <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span>                              <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">127</span>                              <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\piping.py:149,</span> in <span class="ni">Pipe._pipe_future</span><span class="nt">(self, format, renderer, formatter, neato_no_op, quiet, engine, encoding)</span>
+<span class="g g-Whitespace">    </span><span class="mi">146</span> <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">147</span>     <span class="k">if</span> <span class="n">codecs</span><span class="o">.</span><span class="n">lookup</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span> <span class="ow">is</span> <span class="n">codecs</span><span class="o">.</span><span class="n">lookup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">encoding</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">148</span>         <span class="c1"># common case: both stdin and stdout need the same encoding</span>
+<span class="ne">--&gt; </span><span class="mi">149</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pipe_lines_string</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">150</span>     <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">151</span>         <span class="n">raw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pipe_lines</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">input_encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\backend\piping.py:212,</span> in <span class="ni">pipe_lines_string</span><span class="nt">(engine, format, input_lines, encoding, renderer, formatter, neato_no_op, quiet)</span>
+<span class="g g-Whitespace">    </span><span class="mi">206</span> <span class="n">cmd</span> <span class="o">=</span> <span class="n">dot_command</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">engine</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">207</span>                           <span class="n">renderer</span><span class="o">=</span><span class="n">renderer</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">208</span>                           <span class="n">formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>                           <span class="n">neato_no_op</span><span class="o">=</span><span class="n">neato_no_op</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span> <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;input_lines&#39;</span><span class="p">:</span> <span class="n">input_lines</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">:</span> <span class="n">encoding</span><span class="p">}</span>
+<span class="ne">--&gt; </span><span class="mi">212</span> <span class="n">proc</span> <span class="o">=</span> <span class="n">execute</span><span class="o">.</span><span class="n">run_check</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="n">quiet</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span> <span class="k">return</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span>
+
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\graphviz\backend\execute.py:84,</span> in <span class="ni">run_check</span><span class="nt">(cmd, input_lines, encoding, quiet, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">82</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span>     <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">errno</span> <span class="o">==</span> <span class="n">errno</span><span class="o">.</span><span class="n">ENOENT</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">84</span>         <span class="k">raise</span> <span class="n">ExecutableNotFound</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span>     <span class="k">raise</span>
+<span class="g g-Whitespace">     </span><span class="mi">87</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">quiet</span> <span class="ow">and</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="p">:</span>
+
+<span class="ne">ExecutableNotFound</span>: failed to execute WindowsPath(&#39;dot&#39;), make sure the Graphviz executables are on your systems&#39; PATH
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;graphviz.sources.Source at 0x260e78e2c50&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from sklearn.preprocessing import OneHotEncoder</span>
+
+<span class="c1">#Instantiate OneHotEncoder (ohe). </span>
+<span class="c1">#Note Pandas get_dummies can also perform this function, but ohe has some ML application advantages.</span>
+
+<span class="n">ohe</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">39</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># from sklearn.preprocessing import OneHotEncoder</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">#Instantiate OneHotEncoder (ohe). </span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1">#Note Pandas get_dummies can also perform this function, but ohe has some ML application advantages.</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">ohe</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> 
+
+<span class="ne">NameError</span>: name &#39;OneHotEncoder&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ashejim/C964",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jupyter-books-wzpnkdri"
+        },
+        kernelOptions: {
+            kernelName: "jupyter-books-wzpnkdri",
+            path: "./task2_c\example_sup_reg"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jupyter-books-wzpnkdri'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="sup_reg_ex_develop.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Data product Model Development (part 1)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../task2_doc/task2_doc.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Task 2: The Documentation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dr. Jim Ashe<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

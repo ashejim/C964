@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 608, in async_setup_kernel
+    yield
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from lineartree import LinearTreeRegressor, LinearForestRegressor, LinearBoostRegressor
+# regr = LinearTreeRegressor(base_estimator=LinearRegression())
+# regr = LinearForestRegressor(base_estimator=LinearRegression())
+# regr = LinearBoostRegressor(base_estimator=LinearRegression())
+
+regr.fit(X_train, y_train)
+y_predict = regr.predict(X_test)
+sme = mean_squared_error(y_test, y_predict)
+print(str(sme))
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[9], line 6[0m
+[0;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mlineartree[39;00m [38;5;28;01mimport[39;00m LinearTreeRegressor, LinearForestRegressor, LinearBoostRegressor
+[0;32m      2[0m [38;5;66;03m# regr = LinearTreeRegressor(base_estimator=LinearRegression())[39;00m
+[0;32m      3[0m [38;5;66;03m# regr = LinearForestRegressor(base_estimator=LinearRegression())[39;00m
+[0;32m      4[0m [38;5;66;03m# regr = LinearBoostRegressor(base_estimator=LinearRegression())[39;00m
+[1;32m----> 6[0m [43mregr[49m[38;5;241m.[39mfit(X_train, y_train)
+[0;32m      7[0m y_predict [38;5;241m=[39m regr[38;5;241m.[39mpredict(X_test)
+[0;32m      8[0m sme [38;5;241m=[39m mean_squared_error(y_test, y_predict)
+
+[1;31mNameError[0m: name 'regr' is not defined
+NameError: name 'regr' is not defined
+
