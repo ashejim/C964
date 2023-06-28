@@ -3,11 +3,11 @@
 # C964
 
 title: Computer Science Capstone
-author: [Dr. Jim Ashe](jim.ashe@wgu.edu)
-logo: 
-# logo: ./url_images/WGU-logo-crossed-out.png
+author: Dr. Jim Ashe
+# logo: 
+logo: ./url_images/WGU-logo-crossed-out.png
 # logo: ./_static/WGU-logo-crossed-out.png
-logo-alt-text: HELLO
+# logo-alt-text: HELLO
 
 # alt_text: A crossed out WGU logo. Underneath the logo a caption reads this website is NOT an official resource WGU resource! It is developed by course faculty with +20 years of experience supporting C964. 
 #this doesn't work? default alt is logo

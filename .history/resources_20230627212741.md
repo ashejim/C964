@@ -55,10 +55,12 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 
 #### Getting Started on the Capstone
 
-<iframe 
+> This video is temporarily unavailable.
+
+<!-- <iframe 
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
 >
-</iframe>
+</iframe> -->
 
 (resources:task1:data)=
 ### Data
@@ -72,6 +74,7 @@ Any open source data set is freely available for use.
 - Simulated data
 
 (resources:task2examplec)=
+
 ## Task 2 Part C (the app) Resources
 
 ### Coding

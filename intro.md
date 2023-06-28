@@ -7,9 +7,11 @@ This website is temporarily unavailable as it undergoes administrative review. W
 Some resources can be found in the [GitHub repository](https://github.com/ashejim/C964/tree/main/resources), your C964 COS page, or the links below. If there's anything else you need, contact your [assigned course instructor](ci_page) or the shared team inbox: [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=Your%20course%20instructor&subject=C769:%20capstone&body=Your%20name%20and%20question%20here.%20We%20can%20only%20respond%20to%20messages%20from%20a%20valid%20WGU%20email%20address.%20%0A%0ADegree%20program%3A%20%0AProgram%20Mentor%3A%20%0A).
 
 # Start Here
+
 [C964 Guide](https://github.com/ashejim/C964/blob/main/resources/C964_GUIDE.pdf)
 
 # List of Resources
+
 [C964 Resource Page](resources)
 
 # Questions, comments, or suggestions?
