@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -118,11 +120,111 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Where’s the website?!?
+                    Welcome to C964!
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../task1.html">
+   Task 1: Topic Approval
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_c/task2_part_c.html">
+   Task 2: Part C -the application
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html">
+     Example: Supervised Classification App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-process.html">
+       Data Exploring and Processing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-develop.html">
+       <a id="toc1_1_">
+       </a>
+       Model Development
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-accuracy.html">
+       Accuracy Analysis (testing)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-ui.html">
+       User Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex.html">
+     Example: Supervised Regression App
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop.html">
+       Data product Model Development (part 1)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop-2.html">
+       Data product Model Development (part 2)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../task2_doc/task2_doc.html">
+   Task 2: The Documentation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_d.html">
+     Task 2 Part D
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_a_and_b.html">
+     Task 2 parts A and B
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../task2_doc/task2_doc_finish.html">
+     Task 2 final touches
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../resources.html">
    C964 Resources
@@ -132,8 +234,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../ci_page.html">
    Course Faculty
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -499,15 +601,15 @@ title="Print to PDF"
 <h2>Step 2. Install the Required PackagesOpen a Windows terminal (or a terminal by launching CMD.exe from Anaconda Navigator.<a class="headerlink" href="#step-2-install-the-required-packagesopen-a-windows-terminal-or-a-terminal-by-launching-cmd-exe-from-anaconda-navigator" title="Permalink to this headline">#</a></h2>
 <p><strong>Install Jupyter-book</strong> which converts markdown and Jupyter-notebook files into HTML.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="9c99df3c-1502-452a-9b59-59cdce87d33b" name="959e136f-1e55-41da-81cb-395784e2d58f" type="radio">
-</input><label class="sd-tab-label" for="9c99df3c-1502-452a-9b59-59cdce87d33b">
+<input checked="checked" id="68867fed-8d65-422f-9f45-08b14b91e192" name="85a073a8-fc47-4fab-89d1-91754b050bf6" type="radio">
+</input><label class="sd-tab-label" for="68867fed-8d65-422f-9f45-08b14b91e192">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
 </div>
-<input id="5e368213-6b1b-4d82-98ad-46fdb2914f6c" name="959e136f-1e55-41da-81cb-395784e2d58f" type="radio">
-</input><label class="sd-tab-label" for="5e368213-6b1b-4d82-98ad-46fdb2914f6c">
+<input id="621e5094-5674-495c-8771-9f8d0e5f416c" name="85a073a8-fc47-4fab-89d1-91754b050bf6" type="radio">
+</input><label class="sd-tab-label" for="621e5094-5674-495c-8771-9f8d0e5f416c">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>jupyter-book
 </pre></div>
@@ -524,15 +626,15 @@ conda</label><div class="sd-tab-content docutils">
 </aside>
 <p><strong>Install git</strong> (it should already be installed) so you can connect your local files to a GitHub repository.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3b5e83b3-6ae6-479d-9f6a-9a96916b1ef7" name="4817ba80-ba94-4c6b-9fb0-a760029d5585" type="radio">
-</input><label class="sd-tab-label" for="3b5e83b3-6ae6-479d-9f6a-9a96916b1ef7">
+<input checked="checked" id="f996bb7e-84a0-41e0-b43b-ff6a7ed7ad02" name="bc8cd744-98a9-45eb-9290-b6a0c63735c5" type="radio">
+</input><label class="sd-tab-label" for="f996bb7e-84a0-41e0-b43b-ff6a7ed7ad02">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>python-git
 </pre></div>
 </div>
 </div>
-<input id="0fba4ffe-754f-4f15-8186-03e8bb939e6c" name="4817ba80-ba94-4c6b-9fb0-a760029d5585" type="radio">
-</input><label class="sd-tab-label" for="0fba4ffe-754f-4f15-8186-03e8bb939e6c">
+<input id="0a52416b-43e4-42bb-ab75-383ef32951ab" name="bc8cd744-98a9-45eb-9290-b6a0c63735c5" type="radio">
+</input><label class="sd-tab-label" for="0a52416b-43e4-42bb-ab75-383ef32951ab">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>anaconda<span class="w"> </span>git
 </pre></div>
@@ -541,15 +643,15 @@ conda</label><div class="sd-tab-content docutils">
 </div>
 <p><strong>Install ghp-import</strong> which will post your HTML files from your GitHub repository to the web.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="4cd65ae2-9877-4cb6-8c05-ab9576b7d6ca" name="b4db2c61-ec17-40ff-9a8d-392925bdff7b" type="radio">
-</input><label class="sd-tab-label" for="4cd65ae2-9877-4cb6-8c05-ab9576b7d6ca">
+<input checked="checked" id="63de326a-ba9e-409f-9416-b99962e3e0e5" name="a9d3a8d5-03b6-463f-9f51-b01c620232af" type="radio">
+</input><label class="sd-tab-label" for="63de326a-ba9e-409f-9416-b99962e3e0e5">
 pip</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ghp-import
 </pre></div>
 </div>
 </div>
-<input id="7d87bfbb-e2b2-4ecc-afee-b615ea9e69da" name="b4db2c61-ec17-40ff-9a8d-392925bdff7b" type="radio">
-</input><label class="sd-tab-label" for="7d87bfbb-e2b2-4ecc-afee-b615ea9e69da">
+<input id="90b4a751-1d80-4970-a7c8-1745748910fb" name="a9d3a8d5-03b6-463f-9f51-b01c620232af" type="radio">
+</input><label class="sd-tab-label" for="90b4a751-1d80-4970-a7c8-1745748910fb">
 conda</label><div class="sd-tab-content docutils">
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>ghp-import
 </pre></div>

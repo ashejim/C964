@@ -15,7 +15,6 @@ logo: ./url_images/3d_regression.png
 #currently shows as 'alt="logo' which sphinx default when no alt is set for the logo.https://github.com/executablebooks/jupyter-book/blob/master/jupyter_book/config.py
 #also see: 
 
-
 #https://github.com/executablebooks/jupyter-book/issues/1783
 
 #https://jupyterbook.org/en/stable/structure/configure.html#disable-building-files-that-arent-in-the-table-of-contents
