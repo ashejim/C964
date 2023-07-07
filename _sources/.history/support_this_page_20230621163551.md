@@ -1,6 +1,8 @@
 # Help Support this Website
 
-This website is a collaborative work in progress by the C964 course faculty. We are continually trying to improve this page to better help students. How can you help? Feedback! Tell us what we're doing right and what needs improvement. With your help, we can build this into the best possible resource for helping students. Here's how you can contribute:
+This website is a collaborative work in progress by the C964 course faculty. However, we have NO official time or financial incentives for our efforts. Hence everything is developed slowly in our spare time. Thank you for your patience!
+
+How can you help? Feedback! Tell us what we're doing right and what needs improvement. With your help, we can build this into the best possible resource for helping students. Here's how you can contribute:
 
 - Leave a [comment below](support:comments) and/or our [⭐ repo](https://github.com/ashejim/964) (you'll need a GitHub account).
 - Go to your C964 COS page and click 'Course Feedback.' 
