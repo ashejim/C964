@@ -18,8 +18,8 @@
 # In[1]:
 
 
-#We'll import libraries as needed, but when submitting, 
-# it's best having them all at the top.
+# We'll import libraries as needed, but when submitting, 
+# it's best to have them all at the top.
 import pandas as pd
 
 # Load this well-worn dataset:
@@ -43,11 +43,12 @@ df # displays the DataFrame
 # **Your data doesn't look like this?** Different data might need different code. Don't *paste and pray*; adjust what you do according to what you have and need.    
 # ```
 # 
-# Supervised methods use the answers in the data to supervise the model. Does our data contain the answer? If we want to predict the Iris 'type,' then yes. It's the only categorical feature, so we'll go with it. However, a supervised method could predict *any* of the features, e.g., 'sepal-length.' A supervised method can't predict what it doesn't have, say, plant height or petal color. 
+# Supervised methods use "answers" in the data to supervise the model. Does our data contain the "answers"? If we want to predict the Iris 'type,' then yes. It's the only categorical feature, so we'll go with it. However, a supervised method could predict *any* of the features, e.g., 'sepal-length.' A supervised method can't predict what it doesn't have, say, plant height or petal color. 
 # 
 # ```{margin}
-# What? That's it for data processing? We did little because the data didn't need much. Like a lot of data out there, it was ready to go. No minimal processing is required. The project's needs determine the required data processing, i.e., if it works, you've done enough. [TODO ADD LINK TO DATA REQS](brokenLink-ex-class-sup-desc) 
+# What? That's it for data processing? We didn't do much becasue the data didn't need much. Like a lot of data out there, it was (mostly) ready to go. No minimal processing is required. The project's needs determine the required data processing, i.e., if it works, you've done enough. See [Data Requirements](task2c:data_requirements). 
 # ```
+# 
 # That's all the processing needed for now. 
 # 
 # (sup_class_ex:descriptive_methods_and_visualizations)=
@@ -60,11 +61,13 @@ df # displays the DataFrame
 
 
 num_types = df.groupby(by='type').size();
-display(num_types); #another display option.
+display(num_types); 
 
 
 # (sup_class_ex:descriptive:visuals)=
 # Let's *visualize* that.
+# <!-- NOTE: Alt text for Python generated images added using Jupyter notebook cell's "img alt": "A bar plot is displayed. The x-axis are the type categories, and the y-axis is the number in the categories. Three bars Iris-setosa (red), Iris-versicolor (blue), and Iris-virginica (green) are each equal to 50",
+#      "output_type": "display_data"-->
 
 # In[4]:
 

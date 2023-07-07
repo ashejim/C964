@@ -47,7 +47,7 @@ display(df)
 # In[2]:
 
 
-##preserves Jupyter preview style (the '...') after applying .style
+##preserves Jupyter preview style (the '...') after applying .style. This is for presentation only. 
 def display_df(dataframe, column_names, highlighted_col, precision=2):
     pd.set_option("display.precision", 2)
     columns_dict = {}
@@ -59,13 +59,13 @@ def display_df(dataframe, column_names, highlighted_col, precision=2):
     pd.options.display.show_dimensions = True
     display(df2)
 
-#display df with highlighted column 
+#display dataframe with highlighted column 
 display_df(df, column_names, 'type', 1)
 
 
 # 
 # :::{sidebar} Watch
-# <iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay" alt= "Simple ML supervised classification coding python example by Dr. Jim Ashe.">
+# <iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="Simple ML supervised classification example " style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay" alt= "Prevew screenshot for the video: Simple machine learning supervised classification coding python example by Dr. Jim Ashe. You can click on the image to play the video.">
 # </iframe>
 # :::
 # 

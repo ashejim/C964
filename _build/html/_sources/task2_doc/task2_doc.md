@@ -31,7 +31,7 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 
 <div class = "tasklist">
 
-   <input type="checkbox"> Pass [task 1](task1). 
+   <input type="checkbox"> Pass [task 1](task1).
    
    <input type="checkbox"> Finish [task 2 part C](task2c).
 

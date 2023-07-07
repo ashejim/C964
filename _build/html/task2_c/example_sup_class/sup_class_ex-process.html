@@ -159,8 +159,6 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="sup_class_ex-develop.html">
-       <a id="toc1_1_">
-       </a>
        Model Development
       </a>
      </li>
@@ -533,8 +531,8 @@ title="Print to PDF"
 <p>Before doing anything with raw data, you must import it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#We&#39;ll import libraries as needed, but when submitting, </span>
-<span class="c1"># it&#39;s best having them all at the top.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We&#39;ll import libraries as needed, but when submitting, </span>
+<span class="c1"># it&#39;s best to have them all at the top.</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="c1"># Load this well-worn dataset:</span>
@@ -793,10 +791,10 @@ title="Print to PDF"
 <p>150 rows × 5 columns</p>
 </div></div></div>
 </div>
-<p>Supervised methods use the answers in the data to supervise the model. Does our data contain the answer? If we want to predict the Iris ‘type,’ then yes. It’s the only categorical feature, so we’ll go with it. However, a supervised method could predict <em>any</em> of the features, e.g., ‘sepal-length.’ A supervised method can’t predict what it doesn’t have, say, plant height or petal color.</p>
+<p>Supervised methods use “answers” in the data to supervise the model. Does our data contain the “answers”? If we want to predict the Iris ‘type,’ then yes. It’s the only categorical feature, so we’ll go with it. However, a supervised method could predict <em>any</em> of the features, e.g., ‘sepal-length.’ A supervised method can’t predict what it doesn’t have, say, plant height or petal color.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<p>What? That’s it for data processing? We did little because the data didn’t need much. Like a lot of data out there, it was ready to go. No minimal processing is required. The project’s needs determine the required data processing, i.e., if it works, you’ve done enough. <span class="xref myst">TODO ADD LINK TO DATA REQS</span></p>
+<p>What? That’s it for data processing? We didn’t do much becasue the data didn’t need much. Like a lot of data out there, it was (mostly) ready to go. No minimal processing is required. The project’s needs determine the required data processing, i.e., if it works, you’ve done enough. See <a class="reference internal" href="../task2_part_c.html#task2c-data-requirements"><span class="std std-ref">Data Requirements</span></a>.</p>
 </aside>
 <p>That’s all the processing needed for now.</p>
 <section id="descriptive-methods-and-visualizations">
@@ -805,7 +803,7 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_types</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">();</span>
-<span class="n">display</span><span class="p">(</span><span class="n">num_types</span><span class="p">);</span> <span class="c1">#another display option.</span>
+<span class="n">display</span><span class="p">(</span><span class="n">num_types</span><span class="p">);</span> 
 </pre></div>
 </div>
 </div>
@@ -820,7 +818,8 @@ dtype: int64
 </div>
 </div>
 <p id="sup-class-ex-descriptive-visuals">Let’s <em>visualize</em> that.</p>
-<div class="cell docutils container">
+<!-- NOTE: Alt text for Python generated images added using Jupyter notebook cell's "img alt": "A bar plot is displayed. The x-axis are the type categories, and the y-axis is the number in the categories. Three bars Iris-setosa (red), Iris-versicolor (blue), and Iris-virginica (green) are each equal to 50",
+     "output_type": "display_data"--><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_types</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">],</span><span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">);</span>
 </pre></div>
@@ -1073,7 +1072,7 @@ dtype: int64
     <a class='right-next' id="next-link" href="sup_class_ex-develop.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><a id='toc1_1_'></a>Model Development</p>
+        <p class="prev-next-title">Model Development</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
