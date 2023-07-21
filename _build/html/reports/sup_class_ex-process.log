@@ -25,15 +25,31 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-num_types.plot.bar(color=['red','blue','green'],rot=0);
-     "img alt": "A bar plot is displayed. The x-axis are the type categories, and the y-axis is the number in the categories. Three bars Iris-setosa (red), Iris-versicolor (blue), and Iris-virginica (green) are each equal to 50",
-     "output_type": "display_data"
+from numpy import random
+import matplotlib.pyplot as plt
+
+x = random.randint(10, size=(10))
+y = random.randint(10, size=(10))
+
+plt.scatter(x, y)
+img_fn = 'example.png'
+plt.savefig(img_fn)
+
+img2 = Image(filename=img_fn, alt="another image")
+# _repr_html_() returns None
+assert img2._repr_html_() == None
+
 ------------------
 
-[1;36m  Cell [1;32mIn[4], line 2[1;36m[0m
-[1;33m    "img alt": "A bar plot is displayed. The x-axis are the type categories, and the y-axis is the number in the categories. Three bars Iris-setosa (red), Iris-versicolor (blue), and Iris-virginica (green) are each equal to 50",[0m
-[1;37m    ^[0m
-[1;31mIndentationError[0m[1;31m:[0m unexpected indent
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[5], line 11[0m
+[0;32m      8[0m img_fn [38;5;241m=[39m [38;5;124m'[39m[38;5;124mexample.png[39m[38;5;124m'[39m
+[0;32m      9[0m plt[38;5;241m.[39msavefig(img_fn)
+[1;32m---> 11[0m img2 [38;5;241m=[39m [43mImage[49m(filename[38;5;241m=[39mimg_fn, alt[38;5;241m=[39m[38;5;124m"[39m[38;5;124manother image[39m[38;5;124m"[39m)
+[0;32m     12[0m [38;5;66;03m# _repr_html_() returns None[39;00m
+[0;32m     13[0m [38;5;28;01massert[39;00m img2[38;5;241m.[39m_repr_html_() [38;5;241m==[39m [38;5;28;01mNone[39;00m
 
-IndentationError: unexpected indent (1809562440.py, line 2)
+[1;31mNameError[0m: name 'Image' is not defined
+NameError: name 'Image' is not defined
 

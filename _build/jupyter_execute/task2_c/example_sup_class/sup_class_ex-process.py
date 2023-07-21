@@ -75,6 +75,24 @@ display(num_types);
 num_types.plot.bar(color=['red','blue','green'],rot=0);
 
 
+# In[5]:
+
+
+from numpy import random
+import matplotlib.pyplot as plt
+
+x = random.randint(10, size=(10))
+y = random.randint(10, size=(10))
+
+plt.scatter(x, y)
+img_fn = 'example.png'
+plt.savefig(img_fn)
+
+img2 = Image(filename=img_fn, alt="another image")
+# _repr_html_() returns None
+assert img2._repr_html_() == None
+
+
 # ```{margin}
 # Want to do something similar but different? Go to the [libary's docs](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html). You'll see lots of libraries and functions with lots of options. Don't just copy, paste, and pray. Read the docs and understand the parameters.
 # ```
@@ -83,7 +101,7 @@ num_types.plot.bar(color=['red','blue','green'],rot=0);
 # 
 # (sup_class_ex:descriptive:visuals:histograms)=
 
-# In[5]:
+# In[6]:
 
 
 hist_petal_lengths = df['petal-length'].hist(grid = False,bins=10)
@@ -91,7 +109,7 @@ hist_petal_lengths = df['petal-length'].hist(grid = False,bins=10)
 
 # Not so normal. However, we are looking at the petal lengths of all three types. So let's look at a single type.
 
-# In[6]:
+# In[7]:
 
 
 df_typeA = df[df['type'] == 'Iris-setosa']
@@ -102,7 +120,7 @@ df_typeA['petal-length'].hist(grid = False, color = 'red');
 # 
 # A **bar plot** to visualize distributions:
 
-# In[7]:
+# In[8]:
 
 
 import matplotlib.pyplot as plt
@@ -120,7 +138,7 @@ plt.show()
 
 # A **scatterplot** to visualize correlations: 
 
-# In[8]:
+# In[9]:
 
 
 sns.lmplot(x='sepal-length', y='sepal-width', data=df, fit_reg=False, hue='type')
@@ -131,7 +149,7 @@ plt.show()
 
 # A **correlogram** to visualize distributions and correlations of and between multiple variables.
 
-# In[9]:
+# In[10]:
 
 
 #correlogram
@@ -141,7 +159,7 @@ plt.show()
 
 # Each image is a descriptive method *and* a visualization ($\geq3$ meets the requirements). And here are some non-visual descriptions of the data:
 
-# In[10]:
+# In[11]:
 
 
 df.describe(include='all')
