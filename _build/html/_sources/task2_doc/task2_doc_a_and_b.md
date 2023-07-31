@@ -18,9 +18,9 @@ Part D, explains the CS-related aspects of your project and (with the exception 
 ## Part A
 Throughout part A:
 
-- Target the non-technical senior leadership of the organization. 
+- Target the non-technical senior leadership of the organization.
 
-- Write everything in the future tense. 
+- Write everything in the future tense.
 
 All page-length recommendations are *only suggestions*. There is no minimum page requirement, and the rubric only specifies that provided details be complete and logical. The proper content depth depends on your project. 
 
@@ -43,9 +43,14 @@ Write a single-page cover letter to the organization’s senior leadership. The 
 - Include all artifacts typical of a professional (business) letter, e.g., subject line, date, greeting, signature, etc. (see [task 2 examples](resources:examples))
 
 (task2:parta:projectrecommendation)=
+
 ### Project Recommendation
 
 Write a more detailed follow-up to the [transmittal letter](task2:parta:letter) detailing how your project meets the organizational need(s).
+
+:::{note}
+This page is still in development, and that's all I have for this page for now. However, you probably don't need much advice on these sections. There are few qualitative criteria by which these sections can be assessed. If the items in the template are addressed these sections are very rarely sent back.
+:::
 
 ### Problem Summary
 

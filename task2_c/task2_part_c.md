@@ -445,3 +445,29 @@ As you might guess, this is a common issue. But evaluators only need *access* to
 ### I only have a Linux (or Mac) machine. Will evaluators be able to run my code?
 
 Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that your [user guide](task2_doc_d:user_guide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). Provide a note when submitting to Assessments and alert your course instructor.
+
+### How complex does my data, algorithm, or model need to be?
+
+It must be complex enough to meet the needs of your project. There is no explicit minimal complexity for any of these items. However, the model must meet the needs of the "organizational need" and the data must be appropriate for developing the model which could indirectly impose a minimal complexity. For example, a supervised model requires two variables.
+
+### Are there any restrictions on which datasets I can choose?
+
+Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
+
+- You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
+- You *can* use simulated data.
+- You *can* use data used for previous projects (submitted by you or others).
+- You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
+
+## Questions, comments, or suggestions?
+
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="ashejim/C964"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
