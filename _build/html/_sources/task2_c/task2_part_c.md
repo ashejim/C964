@@ -459,6 +459,46 @@ Only that data must be legally available to use and share with evaluators. For e
 - You *can* use data used for previous projects (submitted by you or others).
 - You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
 
+### Can I use my C950 project for C964?
+
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C). Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
+
+1. **Data → ML model:** C950 applies a reinforced learning algorithm to the distance and package data.
+
+2. **Accuracy Metric:** The total miles. The maximum allowed miles for C950 is 120, which WGU Assessment Department has already determined to be "efficient."
+
+3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
+
+4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm towards solving the problem.
+
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+
+<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a travleing salesperson problem." />
+
+<!-- TODO add citation for image:
+Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki/Simulated_annealing
+ -->
+
+### Can I use my C951 task 3? Should I use it?
+
+You can reuse anything you've of your own academic or professional work, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic. If you have time, consider completing C964 first, as parts A and B of task 2 can always be used verbatim for task 3 of C951.
+
+Here are some points to consider:
+
+- C951.3 is just a written project, typically around five pages (I'm guessing; ask your C951 instructor), and can be completed in a single afternoon. Comparatively, C964 requires a working machine learning application and accompanying documentation, typically around 20 pages.
+- C951.3 only relates to parts A and B of C964.2. These parts are just a framework for providing a general audience and purpose for the ML application. If present, these parts almost always pass. Furthermore, they'll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
+- Rewriting C951.3 content for a different C964 topic takes little additional work.
+- As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
+- Trying to comprehend two projects at once is just more difficult. 
+
+Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be the best option.
+
+### Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D, but the rubric has "Outcomes" 1-6. How do these align?
+
+*We do not advise directly following the official rubric for C964* (it is under development). Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.
+
+Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+
 ## Questions, comments, or suggestions?
 
 <script
