@@ -4,6 +4,7 @@
 </head> -->
 
 :::{warning}
+
 🚧 This site is under construction! If something makes sense, then it's probably good advice. If not, it's probably unfinished, unreviewed, or just plain nonsense. 👷🏽‍♀️
 
 **Nothing on this website is an official WGU resource developed by the WGU product development.** See their COS page to review the official resources. To make comments or suggestions regarding those resources use your COS page ['Course Feedback'](https://ashejim.github.io/C964/support_this_page.html#help-support-this-website) link.
@@ -11,7 +12,7 @@
 
 # Welcome to C964!
 
-Welcome! For the Computer Science capstone project, you'll develop and present a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, the crucial skill setting CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine.
+Welcome! For the Computer Science capstone project, you'll develop and present a machine learning application solving a proposed problem. The problem, the solution, and the presentation as a final product are up to you! The capstone allows you to demonstrate the application of skills collected throughout the CS program. Most importantly, that crucial skill setting CS majors apart, learning and applying new things. You are a problem-solver; this is your opportunity to shine.
 
 The capstone includes three parts:
 
@@ -32,7 +33,7 @@ The capstone includes three parts:
 
 ```{image} ./url_images/idea-b.png
 :height: 100
-:alt: Light bulb turning on above a head. 
+:alt: Task 1 logo. A light bulb turning on above a head. 
 ```
 
 Choose a topic and get approval.
@@ -44,7 +45,7 @@ Task 1 details {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ./task2_part_c.html
+:link: ./task2_part_c/task2_part_c.html
 
 **Task 2 part C**
 ^^^
@@ -63,7 +64,7 @@ Task 2 part C details {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: ./task2_doc.html
+:link: ./task2_doc/task2_doc.html
 
 **Task 2 parts A, B, & D**
 ^^^

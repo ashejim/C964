@@ -194,7 +194,7 @@ The submitted topic approval form must be *signed by a [C964 course instructor](
 the waiver form is **only** required if your project is based upon or includes restricted information. If no waiver form is submitted, Task 1 *B: Capstone Release Form*, passes automatically.
 ```
 
-In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you will need to obtain documented permissions and submit them along with a waiver form to Assessments.
+In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with a waiver form to Assessments.
 
 > [![Waiver Form](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
@@ -222,6 +222,25 @@ You can use any of your work or academic projects (at WGU or elsewhere), provide
 
 <!-- resume check here 6/8/2023 15:30 -->
 (task1:faq:can_i_use_my_c951_task_3)=
+
+### Can I use my C950 project for C964?
+
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C). Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
+
+1. **Data → ML model:** C950 applies a reinforced learning algorithm to the distance and package data.
+
+2. **Accuracy Metric:** The total miles. The maximum allowed miles for C950 is 120, which WGU Assessment Department has already determined to be "efficient."
+
+3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
+
+4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm towards solving the problem.
+
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+
+<img src="./url_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a travleing salesperson problem." />
+<!-- TODO add citation for image:
+Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki/Simulated_annealing
+ -->
 
 ### Can I use my C951 task 3? Should I use it?
 
@@ -311,3 +330,29 @@ You have *unlimited* submissions but limited time. So typically this is the best
 ### I only have a Linux (or Mac) machine. Will evaluators be able to run my code?
 
 Technically (and unfortunately), we are a "Windows" university, and all submitted projects should be able to run in Windows. However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux, Android, or Mac app without special instructions. Therefore for non-Windows apps, we recommend providing explicit instructions in the [user guide](task2_doc_d:user_guide) for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).
+
+### How complex does my data, algorithm, or model need to be?
+
+It must be complex enough to meet the needs of your project. There is no explicit minimal complexity for any of these items. However, the model must meet the needs of the "organizational need" and the data must be appropriate for developing the model which could indirectly impose a minimal complexity. For example, a supervised model requires two variables.
+
+### Are there any restrictions on which datasets I can choose?
+
+Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
+
+- You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
+- You *can* use simulated data.
+- You *can* use data used for previous projects (submitted by you or others).
+- You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
+
+## Questions, comments, or suggestions?
+
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="ashejim/C964"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
