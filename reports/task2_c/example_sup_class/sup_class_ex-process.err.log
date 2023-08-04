@@ -25,18 +25,31 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from IPython.display import Image
-plot = num_types.plot.bar(color=['red','blue','green'],rot=0)
-plot.metadata['Title'] = 'Alt Text'
+plot1 = num_types.plot.bar(color=['red','blue','green'],rot=0)
+
+import matplotlib.pyplot as plt
+from IPython.display import display, HTML
+import os 
+
+
+def plot_with_alt_text(plot, alt_text =''):
+     plt.savefig('output_plot.png')
+     plt.close()
+     cwd = os.getcwd() #returns current working directory
+     dir_path = "output_plot.png"
+     display(HTML(f'<img src="{dir_path}" alt="{alt_text}">'))
+
+plot_with_alt_text(plot1, 'test alt')
+cwd
 ------------------
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mAttributeError[0m                            Traceback (most recent call last)
-Cell [1;32mIn[4], line 3[0m
-[0;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mIPython[39;00m[38;5;21;01m.[39;00m[38;5;21;01mdisplay[39;00m [38;5;28;01mimport[39;00m Image
-[0;32m      2[0m plot [38;5;241m=[39m num_types[38;5;241m.[39mplot[38;5;241m.[39mbar(color[38;5;241m=[39m[[38;5;124m'[39m[38;5;124mred[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mblue[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mgreen[39m[38;5;124m'[39m],rot[38;5;241m=[39m[38;5;241m0[39m)
-[1;32m----> 3[0m [43mplot[49m[38;5;241;43m.[39;49m[43mmetadata[49m[[38;5;124m'[39m[38;5;124mTitle[39m[38;5;124m'[39m] [38;5;241m=[39m [38;5;124m'[39m[38;5;124mAlt Text[39m[38;5;124m'[39m
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[5], line 16[0m
+[0;32m     13[0m      display(HTML([38;5;124mf[39m[38;5;124m'[39m[38;5;124m<img src=[39m[38;5;124m"[39m[38;5;132;01m{[39;00mdir_path[38;5;132;01m}[39;00m[38;5;124m"[39m[38;5;124m alt=[39m[38;5;124m"[39m[38;5;132;01m{[39;00malt_text[38;5;132;01m}[39;00m[38;5;124m"[39m[38;5;124m>[39m[38;5;124m'[39m))
+[0;32m     15[0m plot_with_alt_text(plot1, [38;5;124m'[39m[38;5;124mtest alt[39m[38;5;124m'[39m)
+[1;32m---> 16[0m [43mcwd[49m
 
-[1;31mAttributeError[0m: 'AxesSubplot' object has no attribute 'metadata'
-AttributeError: 'AxesSubplot' object has no attribute 'metadata'
+[1;31mNameError[0m: name 'cwd' is not defined
+NameError: name 'cwd' is not defined
 
