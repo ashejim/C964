@@ -147,10 +147,11 @@ The [Capstone Excellence Archives](https://westerngovernorsuniversity.sharepoint
 
 ### Student Resources
 
--[Writing Center](https://my.wgu.edu/success-centers/writing-center)
--[Writing Center Knowledge Base](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb)
--[Student Resource Hub](https://resource-hub.wgu.edu/)
-
+- [Student Resource Hub](https://resource-hub.wgu.edu/)
+- [Writing Center](https://my.wgu.edu/success-centers/writing-center)
+- [Writing Center Knowledge Base](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb)
+- [WGU Math Center](https://my.wgu.edu/success-centers/math-center). The Math Center is [$e^{2\pi i}$](https://www.wolframalpha.com/input/?i=e%5E%282*pi*i%29)!
+- [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter)
 
 (resources:gen:grammarly)=
 

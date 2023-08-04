@@ -5,7 +5,7 @@
     <base target="_blank">
 </head>
 
-The capstone was designed to showcase knowledge and skills accumulated throughout the BSCS degree program. Helping you integrate your accumulative expertise into a passing capstone is the primary responsibility of your assigned C964 course instructor. However, the capstone was designed by WGU  with the expectation that the necessary skills have already been mastered. So questions regarding those skills, e.g., coding, debugging, mathematics, and machine learning; may be outside the scope of your assigned course instructor's expertise.
+The purpose of the capstone is to showcase knowledge and skills accumulated throughout your BSCS degree program. Helping you integrate your accumulative expertise into a passing capstone is the primary responsibility of your assigned C964 course instructor. However, the capstone was designed by WGU  with the expectation that the necessary skills have already been mastered. So questions regarding those skills, e.g., coding, debugging, mathematics, and machine learning; may be outside the scope of your assigned course instructor's expertise (the capstone faculty team supports *all* capstones in the undergraduate IT college).
 
 ```{margin}  Which courses are these skills covered?
 See the [course map](LINKHERE), but there are major gaps. Noteably, machine learning, data processing, and inferential statistics. Tangential skills such as vector calculus and probability are also missing. BUT the true asset of a computer *science* graduate, is the ability to adapt, learn, and problem solve. Something you've done plenty of and should expect to do your entire career.    
@@ -27,6 +27,7 @@ In cases when that happens, your C964 instructor will help direct you to the cor
 ^^^
 ```{image} ./url_images/virtual_meeting1.jpg
 :height: 100
+:alt: A person in a video conference on their laptop with a CI. 
 ```
 Understanding the project<br>
 Revising returned projects<br>
@@ -46,6 +47,7 @@ C964 CI page {fas}`arrow-right`
 ^^^
 ```{image} ./url_images/debug1.jpg
 :height: 100
+:alt: A magnifying glass looking at code sees "error."
 ```
 Debugging Python and Java <br>
 Data processing <br>
