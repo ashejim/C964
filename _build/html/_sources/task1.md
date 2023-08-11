@@ -233,9 +233,9 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
 
-4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm towards solving the problem.
+4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
 
-So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delvivered together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
 <img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 

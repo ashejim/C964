@@ -392,7 +392,7 @@ Remember, our job (as educators) is to help *you* fix your problem -not fix it f
 
 No, not unless it's an entirely different topic. Minor changes from task 1 to task 2 are expected and allowed *without updating the approval form*. Evaluators will not rigorously compare tasks 1 and 2 (if at all). Task 2 is where the work is, and even with complete topic changes, at most, you'll only be asked to revise the approval form (if at all). So never let task 1 dictate what you do in task 2.  
 
-### How many attempts are allowed for each task?**
+### How many attempts are allowed for each task?
 
 You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments.
 
@@ -469,9 +469,9 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
 
-4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm towards solving the problem.
+4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
 
-So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
 <img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
