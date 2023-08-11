@@ -294,20 +294,27 @@ See the individual [example user guides](task2_doc_d:user_guide:examples) and gu
 
 Time to get to work.
 
-````{margin} ...but the requirments won't change.
+<!-- &nbsp; fixes odd spacing issue -->
+````{margin} ...but the requirments won't change. &nbsp;
+
 ```{image} ../url_images/good_code.png
 :width: 200
-:alt: XKCD comic. Flowchart on how to wrtie good code.
+:alt: XKCD comic. Flowchart on how to write good code.
 ```
+{cite}`xkcdCodeFlowChart`
+
 ````
 
 ````{warning}
 Following tutorials/examples is a great way to learn. But when it comes to writing your own code, *don't [copy, paste, and **pray**](https://www.youtube.com/watch?v=-wtzy1aqS9Q)*. Instead, understand what it's doing for each line of code and check that it runs as intended. Investing in the extra time will make you a better computer scientist and could save many frustrating hours. 
+
 ```{image} ../url_images/code_quality.png
 :height: 150
 :align: center
-:alt: XKCD comic. Writing code with poor style and structure.
+:alt: XKCD comic about writing code with poor style and structure.
 ```
+{cite}`xkcdCodeQuality`
+
 ````
 
 Start *slow*. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.
