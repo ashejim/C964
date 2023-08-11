@@ -651,7 +651,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot73.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
+<div class="output text_html"><img src="output_plot79.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
 </div>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -667,7 +667,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot74.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
+<div class="output text_html"><img src="output_plot80.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
 </div>
 <p>Not so normal. However, we are looking at the petal lengths of all three types. So let’s look at a single type.</p>
 <div class="cell tag_remove-output docutils container">
@@ -688,7 +688,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot75.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
+<div class="output text_html"><img src="output_plot81.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
 </div>
 <p>They don’t assess aesthetics, but Pandas’ visualizations are limited compared to others. Below we get a much better picture of what’s going on, and we can clearly see the three different types.</p>
 <p>A <strong>bar plot</strong> to visualize distributions:</p>
@@ -704,7 +704,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot76.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
+<div class="output text_html"><img src="output_plot82.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
 </div>
 <p>A <strong>scatterplot</strong> to visualize popssible correlations:</p>
 <div class="cell tag_remove-output docutils container">
@@ -718,7 +718,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot77.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
+<div class="output text_html"><img src="output_plot83.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
 </div>
 <p>A <strong>correlogram</strong> to visualize distributions and correlations of and between multiple variables.</p>
 <div class="cell tag_remove-output docutils container">
@@ -732,7 +732,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot78.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
+<div class="output text_html"><img src="output_plot84.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
 </div>
 <p>Each image is a descriptive method <em>and</em> a visualization (<span class="math notranslate nohighlight">\(\geq3\)</span> meets the requirements). And here are some non-visual descriptions of the data:</p>
 <div class="cell docutils container">
