@@ -2,7 +2,7 @@
 
 (task2_part_c)=
 
-Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring you to apply machine learning to data, they will only assess *what* your application does -not its presentation.
+Your software application (the "app") is the entirety of part C of task 2. However, the Computer Science capstone is *not* a software project. Other than requiring you to apply machine learning (ML) to data, they will only assess *what* your application does -not its presentation.
 
 ```{margin} **What is an *application*?**
 An application (app) is simply software that performs specific tasks. 
@@ -90,7 +90,12 @@ Your app must help the user solve the organizational problem from [task 1](task1
 
 There are no specific requirements regarding the complexity or nature of your data. However, your application must work and fulfill the organizational need you'll outline in the [task 2 documentation](task2_doc). Therefore, when choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these extra steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.
 
-You do not need special permission to use any open-source dataset. See our [list](resources:task1:data). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). Select data in a format supported by your chosen data analysis library, e.g., the Python library Pandas supports importing CSV.
+You do not need special permission to use any open-source dataset (see our [list](resources:task1:data)). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). It's only required that the data meet the needs of your project and be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
+
+- You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
+- You *can* use simulated data.
+- You *can* use data used for previous projects (submitted by you or others).
+- You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
 
 (task2_part_c:mlreqs)=
 
@@ -106,7 +111,7 @@ You are encouraged to use ML libraries. Provided the source code is available to
 
 - You must have three different images helping describe your project.
 
-The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data subset. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.
+The images are typically presented in the application but can also be given in the documentation. The purpose is to help the reader understand your project, but little is required other than the three images being unique and related to your project. The visualizations can describe the data or ML algorithm. They can be the same type describing different data subsets or of different types describing the same data. Examples include pie charts, histograms, scatterplots, confusion matrices, etc.
 
 <!-- card carousel of example visualizations -->
 ::::{card-carousel} 4
@@ -255,16 +260,16 @@ Clustering
 (task2c:user_interface_requirements)=
 
 ### User interface requirements
-<!-- RESUME CHECK -->
+
 - You must provide a user-friendly interface by which the proposed client can use your application to help solve the problem.
 
-Playing the role of the client, the evaluator will follow your [user guide](task2_doc_d:user_guide) in the documentation. To meet this requirement they should be able to do the following:
+Playing the role of the client, the evaluator will follow your [user guide](task2_doc_d:user_guide) in part D of the documentation. To meet this requirement they should be able to do the following:
 
 1. **Run your application (user-friendly).** Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions. They can be instructed to download and install necessary dependencies or software.
 
-2. **Use your application to solve the proposed problem as intended (interface).** Most often the interface requirement is met by having some way for the user to provide input. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.
+2. **Use your application to solve the proposed problem as intended (interface).** Most often the interface requirement is met by having some way for the user to provide input and receive output. For example, a user provides weather conditions, and the app returns a prediction of popsicle sales. How the interface is implemented, whether it be widgets, uploaded data, or simple console input; is up to you.
 
-At a minimum, the interface must provide means to provide user input and receive feedback. Any method by which you can provide instructions is acceptable. For example:
+At a minimum, the interface must provide means for the user to provide input and receive feedback. Any method by which you can provide instructions is acceptable. For example:
 
 > ***...***
 > ***Step 10:*** *Next, the user should type the following command into line 57:*
@@ -294,30 +299,31 @@ See the individual [example user guides](task2_doc_d:user_guide:examples) and gu
 
 Time to get to work.
 
-<!-- &nbsp; fixes odd spacing issue -->
-````{margin} ...but the requirments won't change. &nbsp;
+<!-- &nbsp; fixes odd spacing issue between title and {image} -->
+````{margin} ...but the requirments won't change. 
 
-```{image} ../url_images/good_code.png
+```{figure} ../url_images/good_code.png
 :width: 200
 :alt: XKCD comic. Flowchart on how to write good code.
-```
-{cite}`xkcdCodeFlowChart`
 
+Goode Code {cite}`xkcdCodeFlowChart`
+```
 ````
 
 ````{warning}
 Following tutorials/examples is a great way to learn. But when it comes to writing your own code, *don't [copy, paste, and **pray**](https://www.youtube.com/watch?v=-wtzy1aqS9Q)*. Instead, understand what it's doing for each line of code and check that it runs as intended. Investing in the extra time will make you a better computer scientist and could save many frustrating hours. 
 
-```{image} ../url_images/code_quality.png
+```{figure} ../url_images/code_quality.png
 :height: 150
 :align: center
 :alt: XKCD comic about writing code with poor style and structure.
+
+**Code Quality** {cite}`xkcdCodeQuality` 
 ```
-{cite}`xkcdCodeQuality`
 
 ````
 
-Start *slow*. You must learn and incorporate many small but probably new skills into a large working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before onto to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.
+Start *slow*. You must learn and incorporate many small but probably new skills into a larger working app -data processing, data analysis, new libraries, and user interface. Learn one new skill, implement it, and check your code before moving on to the next step. Things will start slowly and expect to make mistakes, but things can progress quickly after the initial investment.
 
 ### Start small and build up
 
@@ -349,7 +355,7 @@ Jupyter Notebook is a great choice for the application's development **and** fro
 
 - Python IDE → Jupyter Notebook → notebook with widgets → hosted notebook with widgets → web app.
 
-Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) is a great choice. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support available for it.
+Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting any point along this path will pass part C. You can use whatever language or libraries you like. However, we recommend Python. For ML libraries,  the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) is a great choice. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support available for both Python and sklearn.
 
 (task2_part_c:application_performance)=
 
@@ -379,17 +385,17 @@ Measuring accuracy (or a plan to do so) will be discussed in detail in the [Accu
 
 ### I've completed the coding for task 2. Should I send it to my course instructor for review?
 
-If you have specific questions or concerns -yes. However, if the code runs and meets the [minimum app requirements](task2_part_c:what_does_the_application_need_to_do) it's usually best to move on to the [documentation](task2_doc). You can continue to tweak and improve the app but can be comfortable knowing that what you have can pass. Recall, you have **unlimited** submissions. So for both the code and documentation, it's usually best to submit it as soon as it's ready and restrict revisions according to the evaluator's feedback.  
+If you have specific questions or concerns -yes. However, if the code runs and meets the [minimum app requirements](task2_part_c:what_does_the_application_need_to_do) it's usually best to move on to the [documentation](task2_doc). You can continue to tweak and improve the app while comfortably knowing what you have will pass. Recall, you have **unlimited** submissions. So for both the code and documentation, it's usually best to submit it as soon as it's ready and restrict revisions according to the evaluator's feedback.  
 
-For getting help with task 2 part C, see the advice [below](task2_part_c:faq:i_need_help_with_part_C_who_do_i_contact).
+For getting help with task 2 part C, see the advice below.
 
 (task2_part_c:faq:i_need_help_with_part_C_who_do_i_contact)=
 
 ### I need help with part C. Who do I contact?
 
-That depends on what you need help with. For questions about the capstone, how to meet the requirements, evaluator comments, or how to best approach the project to meet your individual goals, contact your [assigned course instructor](ci_c964) or the [capstone team inbox](mailto:ugcapstoneit@wgu.edu?cc=your%20assigned%20CI&subject=C964%20capstone%20question) (this inbox supports all IT capstones). However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the technical expertise to answer questions related to computer science or coding. Particularly with debugging code, given the wide range of approaches, languages, and libraries available for use.  
+That depends on what you need help with. For questions about the capstone, how to meet the requirements, evaluator comments, or how to best approach the project to meet your individual goals, contact your [assigned course instructor](ci_c964) or the [capstone team inbox](mailto:ugcapstoneit@wgu.edu?cc=your%20assigned%20CI&subject=C964%20capstone%20question) (this inbox supports all IT capstones). However, the capstone team supports all of the IT college capstone projects. As such, your assigned course instructor may not have the technical expertise to answer questions related to computer science or coding. This is particularly so with debugging code, given the wide range of approaches, languages, and libraries available for use.  
 
-For technical questions related to code or math, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that while these faculty may be subject matter experts in their field, they do *not* necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the [BSCS, Software, and other Course Faculty](ci_other) page, follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that non-capstone faculty love to help **but do so as a generosity.** Their  priority is the students struggling in their supporting courses.
+For technical questions related to code or math, see the [BSCS, Software, and other Course Faculty](ci_other) page, and follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that while these faculty may be subject matter experts in their field, they do *not* necessarily support the capstone and so may not know the capstone requirements. Hence it is often best to contact your capstone instructor first, so you can appropriately limit the scope of your question(s). When contacting faculty on the [BSCS, Software, and other Course Faculty](ci_other) page, follow these [guidelines](ci_other:better_questions_get_better_answers). Keep in mind, that non-capstone faculty love to help **but do so as a generosity.** Their priority is the students struggling in their supporting courses.
 
 Remember, our job (as educators) is to help *you* fix your problem -not fix it for you.
 
@@ -419,7 +425,7 @@ Anything that infers from the data, e.g., making predictions, recommendations, i
 
 That depends on who you ask! But for this project, it is an algorithm applied to data.
 
-For computer science, Machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it's used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.
+For computer science, machine learning is a subfield of artificial intelligence (a subfield of mathematics), broadly defined as the development of machines capable of self-adjusting behavior based on data. However, from the data science perspective, machine learning is generally defined as using algorithms to identify patterns, make predictions, etc., from data. That is, machine learning is a goal, not a technique. So, for example, a data scientist (and the evaluators) consider linear regression machine learning -when it's used as a prediction model. However, a mathematician would politely (or not so politely) disagree with a 19<sup>th</sup>-century equation being classified as ML.
 
 ### Can I use libraries outside the standard (Python, Java, etc.) installation?
 
@@ -431,7 +437,7 @@ You can use whatever you like. However, we strongly recommend Python and the [sc
 
 A development path might look like the following:
 
-- Python IDE → Jupyter Notebook → notebook with widgets → hosted notebook with widgets → web app.
+> Python IDE → Jupyter Notebook → notebook with widgets → hosted notebook with widgets → web app.
 
 Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting at any point along this path will pass part C.
 
@@ -468,7 +474,7 @@ Only that data must be legally available to use and share with evaluators. For e
 
 ### Can I use my C950 project for C964?
 
-Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C). Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C) -it only lacks visualizations. Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
 
 1. **Data → ML model:** C950 applies a reinforced learning algorithm to the distance and package data.
 
@@ -476,7 +482,7 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
 
-4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
+4. **User Application:** The console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
 
 So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
