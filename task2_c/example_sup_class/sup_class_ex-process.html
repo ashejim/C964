@@ -56,13 +56,6 @@
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-H4N36TZQ78');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -232,84 +225,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li>
-<button onclick="initThebeSBT()"
-  class="btn btn-sm btn-launch-thebe dropdown-item"
-  title="Launch Thebe"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="btn__text-container">Live Code</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/ashejim/C964" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Ftask2_c/example_sup_class/sup_class_ex-process.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -736,7 +651,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot7.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
+<div class="output text_html"><img src="output_plot55.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
 </div>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -752,7 +667,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot8.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
+<div class="output text_html"><img src="output_plot56.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
 </div>
 <p>Not so normal. However, we are looking at the petal lengths of all three types. So let’s look at a single type.</p>
 <div class="cell tag_remove-output docutils container">
@@ -773,7 +688,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot9.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
+<div class="output text_html"><img src="output_plot57.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
 </div>
 <p>They don’t assess aesthetics, but Pandas’ visualizations are limited compared to others. Below we get a much better picture of what’s going on, and we can clearly see the three different types.</p>
 <p>A <strong>bar plot</strong> to visualize distributions:</p>
@@ -789,7 +704,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot10.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
+<div class="output text_html"><img src="output_plot58.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
 </div>
 <p>A <strong>scatterplot</strong> to visualize popssible correlations:</p>
 <div class="cell tag_remove-output docutils container">
@@ -803,7 +718,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot11.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
+<div class="output text_html"><img src="output_plot59.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
 </div>
 <p>A <strong>correlogram</strong> to visualize distributions and correlations of and between multiple variables.</p>
 <div class="cell tag_remove-output docutils container">
@@ -817,7 +732,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot12.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
+<div class="output text_html"><img src="output_plot60.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
 </div>
 <p>Each image is a descriptive method <em>and</em> a visualization (<span class="math notranslate nohighlight">\(\geq3\)</span> meets the requirements). And here are some non-visual descriptions of the data:</p>
 <div class="cell docutils container">
@@ -953,7 +868,7 @@ dtype: int64
     {
         requestKernel: true,
         binderOptions: {
-            repo: "ashejim/C964",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
