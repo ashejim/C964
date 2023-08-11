@@ -49,7 +49,7 @@ The [Math Center](https://my.wgu.edu/success-centers/math-center) provides a sup
 :alt: WGU programming center logo. The word "Python' is superimposed over a blurry photo of a magnifying glass reviewing code.  
 :height: 200px
 :align: center
-:target: https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter
+:target: https://my.wgu.edu/success-centers/math-center
 ```
 
 (ci_other:cis)=

@@ -56,13 +56,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-H4N36TZQ78');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -235,53 +228,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/ashejim/C964" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Ftask2_c/task2_part_c.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -411,6 +357,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-complex-does-my-data-algorithm-or-model-need-to-be">How complex does my data, algorithm, or model need to be?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-any-restrictions-on-which-datasets-i-can-choose">Are there any restrictions on which datasets I can choose?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c950-project-for-c964">Can I use my C950 project for C964?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c951-task-1-or-2-for-c964">Can I use my C951 task 1 or 2 for C964?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c951-task-3-should-i-use-it">Can I use my C951 task 3? Should I use it?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#help-the-rubric-is-confusing-the-directions-seem-to-require-items-outside-the-scope-of-the-project-e-g-implementation-of-interactive-queries-the-directions-have-parts-a-b-c-and-d-but-the-rubric-has-outcomes-1-6-how-do-these-align">Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., “implementation of interactive queries.” The directions have parts A, B, C, and D, but the rubric has “Outcomes” 1-6. How do these align?</a></li>
 </ul>
@@ -789,10 +736,12 @@ Example 4</label><div class="sd-tab-content docutils">
 <li><p><strong>User Application:</strong> The require console user interface required for C950 allows the user to provide input and apply the algorithm towards solving the problem.</p></li>
 </ol>
 <p>So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a <a class="reference external" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo method</a> such as <a class="reference external" href="https://en.wikipedia.org/wiki/Simulated_annealing">Simulated Annealing</a>.</p>
-<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a travleing salesperson problem." />
-<!-- TODO add citation for image:
-Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki/Simulated_annealing
- -->
+<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
+<p><span id="id2">[<a class="reference internal" href="../resources.html#id4" title="Wikipedia. Travelling salesman problem solved with simulated annealing. 2018. [Online; accessed August 4, 2023]. URL: https://commons.wikimedia.org/wiki/File:Travelling_salesman_problem_solved_with_simulated_annealing.gif.">Wik18</a>]</span></p>
+</section>
+<section id="can-i-use-my-c951-task-1-or-2-for-c964">
+<h3>Can I use my C951 task 1 or 2 for C964?<a class="headerlink" href="#can-i-use-my-c951-task-1-or-2-for-c964" title="Permalink to this heading">#</a></h3>
+<p>Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures &amp; Algorithms II). However, C951 Tasks 1 (chatbot) and 2 (rescue robot) can be passed without applying a mathematically based algorithm which is necessary to pass C964 (no C951 task requires AI). While chatbots are often trained and improved with ML/AI methods, it’s difficult to acquire sufficient user data within students’ typical timeframe. An algorithm is easier to employ in C951 Task 2, but the application would be limited to the <a class="reference external" href="https://www.coppeliarobotics.com/coppeliaSim">CoppeliaSim</a> simulation software which may make meeting the user application requirements of C964 difficult. Furthermore, <a class="reference external" href="https://www.coppeliarobotics.com/coppeliaSim">CoppeliaSim</a>’s dependency on Lua makes the application of ML libraries problematic. For these reasons and others, we do not recommend using either of these projects for C964 -unless the C951 projects far exceed their requirements and meet the C964 requirements as is.</p>
 </section>
 <section id="can-i-use-my-c951-task-3-should-i-use-it">
 <h3>Can I use my C951 task 3? Should I use it?<a class="headerlink" href="#can-i-use-my-c951-task-3-should-i-use-it" title="Permalink to this heading">#</a></h3>
@@ -833,7 +782,7 @@ Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki
     {
         requestKernel: true,
         binderOptions: {
-            repo: "ashejim/C964",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -925,6 +874,7 @@ Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-complex-does-my-data-algorithm-or-model-need-to-be">How complex does my data, algorithm, or model need to be?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-any-restrictions-on-which-datasets-i-can-choose">Are there any restrictions on which datasets I can choose?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c950-project-for-c964">Can I use my C950 project for C964?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c951-task-1-or-2-for-c964">Can I use my C951 task 1 or 2 for C964?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#can-i-use-my-c951-task-3-should-i-use-it">Can I use my C951 task 3? Should I use it?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#help-the-rubric-is-confusing-the-directions-seem-to-require-items-outside-the-scope-of-the-project-e-g-implementation-of-interactive-queries-the-directions-have-parts-a-b-c-and-d-but-the-rubric-has-outcomes-1-6-how-do-these-align">Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., “implementation of interactive queries.” The directions have parts A, B, C, and D, but the rubric has “Outcomes” 1-6. How do these align?</a></li>
 </ul>

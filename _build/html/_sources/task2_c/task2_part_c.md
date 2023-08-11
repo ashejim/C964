@@ -473,11 +473,13 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
-<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a travleing salesperson problem." />
+<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
-<!-- TODO add citation for image:
-Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki/Simulated_annealing
- -->
+{cite}`WikiTSPimage`
+
+### Can I use my C951 task 1 or 2 for C964?
+
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). However, C951 Tasks 1 (chatbot) and 2 (rescue robot) can be passed without applying a mathematically based algorithm which is necessary to pass C964 (no C951 task requires AI). While chatbots are often trained and improved with ML/AI methods, it's difficult to acquire sufficient user data within students' typical timeframe. An algorithm is easier to employ in C951 Task 2, but the application would be limited to the [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim) simulation software which may make meeting the user application requirements of C964 difficult. Furthermore, [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim)'s dependency on Lua makes the application of ML libraries problematic. For these reasons and others, we do not recommend using either of these projects for C964 -unless the C951 projects far exceed their requirements and meet the C964 requirements as is.
 
 ### Can I use my C951 task 3? Should I use it?
 

@@ -19,11 +19,11 @@ The approval form ensures you start in the right direction before investing time
 It's a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
 ```
 
-The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project; neither you nor the evaluators are business majors.  
-
-But you can't apply an algorithm to data -without data. So finding data should be an early step. 
+The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project, not a business or software project.  
 
 ### Data
+
+ML applies an algorithm to data, and you can't apply an algorithm to data -without data. So finding data should be an early step.
 
 A machine learning application is the hard requirement of the capstone, but you can’t apply an algorithm to data -without data. Moreover, most datasets provide a question to answer, e.g., predictions, classifications, or recommendations for which an “organizational need” can always be found.
 
@@ -40,14 +40,14 @@ A machine learning application is the hard requirement of the capstone, but you 
 ### Machine Learning Algorithms
 
 :::{sidebar} **Classification & Regression Overview**
-<iframe 
-src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay" alt ="Intro screen of classification and regression overview video by Dr. Ashe."
+<iframe
+src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay" alt ="Intro screen of classification and regression overview video by Dr. Ashe. A scatterplot with a shaded area distinguishing two groups of blue and red data points is shown overlaying a flowchart of the machine learning development process."
 > </iframe>
 :::
 
-#### Supervised Learning**
+#### Supervised Learning
 
-If the answers for what you are trying to predict (dependent variable) are in the data, then a supervised method is the way to go. Using the other features (independent variables) as input, a supervised algorithm can *train* a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a *regression* method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification* method should be used.
+If the answers for what you are trying to predict (the dependent variable; also called *tagged* or *labeled*) are in the data, then a [supervised method](https://scikit-learn.org/stable/supervised_learning.html) is the way to go. Using the other features (independent variables) as input, a supervised algorithm can *train* a function to predict a dependent variable for new unseen dependent variables. For predicting numbers, e.g., profit, temperature, etc., a *regression* method should be used. For predicting categories, e.g., yes/no, blue/red, spam/ham, etc., a *classification* method should be used.
 
 - *Regression* algorithms predict numbers. Examples include linear regression, polynomial regression, decision tree regression, random forest regression, and many more.
 <!--  https://www.kaggle.com/code/duyguay12/regression-examples-for-machine-learning -->
@@ -57,19 +57,19 @@ If the answers for what you are trying to predict (dependent variable) are in th
 (task1:choosing_topic:logistic)=
 
 ```{margin} Logisitc regression: regression or classification?
-Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
+Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome, a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
 #### Unsupervised Learning
 
-If what you are trying to find is not directly in the data (aka *tagged* or *labeled*), then an unsupervised method might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
+If what you are trying to find is not directly in the data, then an u[nsupervised method](https://scikit-learn.org/stable/unsupervised_learning.html) might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
 
 #### Reinforced Learning
 
 Sometimes solutions need to adapt to particular situations. That is, the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot's state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more challenging to develop than supervised or unsupervised methods.
 
 ```{note}
-Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in task 1 appropriate for your data will be accepted, and you might do something different in task without needing to revise task 1 (see the [FAQ](task1:faq:change_task1) below).
+Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of Task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in Task 1 appropriate for your data will be accepted, and you might do something different in task without needing to revise Task 1 (see the [FAQ](task1:faq:change_task1) below).
 ```
 
 ### Where to start? Data or the ML algorithm?
@@ -92,7 +92,7 @@ Look for labeled data for which a supervised learning classification method can 
 
 `````{tab-set}
 ````{tab-item} Example 1
-> **Data:** Petal dimensions and species of fifty [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
+> **Data:** Petal dimensions and species of [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
 > **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
 >
@@ -137,12 +137,12 @@ These are (slightly modified) examples of approved topics. All of which went on 
 
 `````{tab-set}
 ````{tab-item} Completed Task 1 Ex. A
-> [![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
+> [![Thumbnail of the first page of a topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
 
 Also see: [task 2 document examples](task2_doc:examples)
 ````
 ````{tab-item} Completed Task 1 Ex. B
->[![Task 1 example](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
+>[![Thumbnail of the first page of another topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
 
 Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
 ````
@@ -158,7 +158,11 @@ The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.
 
 Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
-> [![Topic Approval Form Template](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+> [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+
+```{note}
+The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
+```
 
 **Project topic and purpose:** Describe the problem (the "organizational need") your project will solve.
 
@@ -168,10 +172,6 @@ Once you've decided on a topic, complete the approval form following the templat
 
 ```{warning}
 You must identify a machine learning application in either the descriptive or non-descriptive section. Most often, the non-descriptive method uses ML, e.g., a classification model allowing the user to provide input to an app that returns a prediction.
-```
-
-```{note}
-The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
 ```
 
 Directly emailing your [assigned course instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) (identified on your C964 COS page; or find them [here](ci_c964)) is typically the fastest and best way to get a signature. Whether emailing [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) or your CI directly, always practice professional communication:
@@ -196,7 +196,7 @@ the waiver form is **only** required if your project is based upon or includes r
 
 In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with a waiver form to Assessments.
 
-> [![Waiver Form](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
+> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
 (task1:faq)=
 
@@ -237,11 +237,9 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delveired together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
-<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a travleing salesperson problem." />
+<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
-<!-- TODO add citation for image:
-Simulated annealing. (2023, July 9). In Wikipedia. https://en.wikipedia.org/wiki/Simulated_annealing
- -->
+{cite}`WikiTSPimage`
 
 ### Can I use my C951 task 3? Should I use it?
 

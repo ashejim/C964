@@ -87,7 +87,7 @@ First, understand the project's requirements. What they are -and what they aren'
 <iframe 
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all"
     title="C964 Overview"
-    alt= "Getting Started on the Capstone by Dr. Jim Ashe."
+    alt= "Getting Started on the Capstone by Dr. Jim Ashe video title page."
     width="640px"
     height="360px"
     style="border: 1px solid #464646;"
@@ -97,4 +97,4 @@ First, understand the project's requirements. What they are -and what they aren'
 
 And review the [What does the application need to do?](https://ashejim.github.io/C964/task2_part_c.html#what-does-the-application-need-to-do) section and part C of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
 
-Like the *C950 -Data Structures and Algorithms II* task and *C951 -Intro to AI* tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in right direction, and thus require all topics to be approved by an assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
+Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and *C951 -Intro to AI* tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by yout assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.

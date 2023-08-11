@@ -181,3 +181,8 @@ You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library)
 
 <img src="./_images/google_scholar_demo.gif" height="200px" alt = "short moive demonstraiting how to use google.scholar.com." />
 :::
+
+### Bibliography
+
+```{bibliography}
+```
