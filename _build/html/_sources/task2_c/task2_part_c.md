@@ -504,7 +504,7 @@ Here are some points to consider:
 - C951.3 only relates to parts A and B of C964.2. These parts are just a framework for providing a general audience and purpose for the ML application. If present, these parts almost always pass. Furthermore, they'll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
 - Rewriting C951.3 content for a different C964 topic takes little additional work.
 - As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
-- Trying to comprehend two projects at once is just more difficult. 
+- Trying to comprehend two projects at once is just more difficult.
 
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be the best option.
 
