@@ -521,7 +521,7 @@ document.write(`
 <li><p>Process the data.</p></li>
 <li><p>Analyze the data.</p></li>
 </ol>
-<p>Processing will involve importing, cleaning, and sorting raw data; preparing it to be analyzed. Exploring the data builds an understanding of it and the problem you’re trying to solve, equipping you to choose a machine-learning application.</p>
+<p>Processing will involve importing, cleaning, and sorting raw data; preparing it to be analyzed. Exploring the data builds an understanding of it and the problem you’re trying to solve, equipping you to develop a machine-learning application.</p>
 <p>Before doing anything with raw data, you must import it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -656,7 +656,7 @@ document.write(`
 <p>149 rows × 5 columns</p>
 </div></div></div>
 </div>
-<p>Oops. The first row of data has been set as headers. Some data sets have headers already -this one doesn’t. How do we fix that? Google <a class="reference external" href="https://www.google.com/search?q=how+to+python+add+headers+to+dataframe&amp;rlz=1C1GCEA_enUS995US997&amp;ei=7TuSY7TmGsyJggfflr3YCg&amp;ved=0ahUKEwj0kK_X4er7AhXMhOAKHV9LD6sQ4dUDCA8&amp;uact=5&amp;oq=how+to+python+add+headers+to+dataframe&amp;gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQgAQQDToICAAQCBAeEA06CAgAEAgQBxAeSgQIQRgASgQIRhgAULgCWMkIYMEfaAFwAXgAgAFPiAH1A5IBATeYAQCgAQHIAQjAAQE&amp;sclient=gws-wiz-serp">“how to python add headers to dataframe”</a>. You’ll need to learn a lot of micro-skills -pick them up when needed. Reading up on the data set, <a class="reference external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower data set</a>, we name the columns:</p>
+<p><em>Oops.</em>* The first row of data has been set as headers. Some data sets have headers already -this one doesn’t. How do we fix that? Google <a class="reference external" href="https://www.google.com/search?q=how+to+python+add+headers+to+dataframe&amp;rlz=1C1GCEA_enUS995US997&amp;ei=7TuSY7TmGsyJggfflr3YCg&amp;ved=0ahUKEwj0kK_X4er7AhXMhOAKHV9LD6sQ4dUDCA8&amp;uact=5&amp;oq=how+to+python+add+headers+to+dataframe&amp;gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeMgUIABCGAzIFCAAQhgMyBQgAEIYDMgUIABCGAzoKCAAQRxDWBBCwAzoHCAAQgAQQDToICAAQCBAeEA06CAgAEAgQBxAeSgQIQRgASgQIRhgAULgCWMkIYMEfaAFwAXgAgAFPiAH1A5IBATeYAQCgAQHIAQjAAQE&amp;sclient=gws-wiz-serp">“how to python add headers to dataframe”</a>. You’ll need to learn a lot of micro-skills -pick them up when needed. Reading up on the data set, <a class="reference external" href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris flower data set</a>, we name the columns:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
@@ -811,7 +811,7 @@ dtype: int64
 </div>
 </div>
 </div>
-<p id="sup-class-ex-descriptive-visuals">Let’s <em>visualize</em> that.</p>
+<p id="sup-class-ex-descriptive-visuals">Let’s <em>visualize</em> that with a <strong>bar plot</strong>.</p>
 <!-- NOTE: Alt text for Python generated images added using Jupyter notebook cell's "img alt": "A bar plot is displayed. The x-axis are the type categories, and the y-axis is the number in the categories. Three bars Iris-setosa (red), Iris-versicolor (blue), and Iris-virginica (green) are each equal to 50",
      "output_type": "display_data"--><div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
@@ -823,11 +823,11 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot0.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
+<div class="output text_html"><img src="output_plot12.png" alt="A bar plot showing the distribution of the three flower types in the data.Each has a height of 50. Iris-setosa = red, Iris-versicolor = blue, and Iris-virginica = green."></div></div>
 </div>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<p>Want to do something similar but different? Go to the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html">libary’s docs</a>. You’ll see lots of libraries and functions with lots of options. Don’t just copy, paste, and pray. Read the docs and understand the parameters.</p>
+<p>Want to do something similar but different? Go to the <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.bar.html">libary’s docs</a>. You’ll see many libraries and functions each with lots of options. Don’t just copy, paste, and pray. Read the docs and understand the parameters.</p>
 </aside>
 <p>Three evenly distributed categories. What about the distribution of the petal widths? As with most things in nature, we might expect it to be somewhat normal.</p>
 <div class="cell tag_remove-output docutils container" id="sup-class-ex-descriptive-visuals-histograms">
@@ -839,7 +839,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot1.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
+<div class="output text_html"><img src="output_plot13.png" alt="A histogram showing the distribution of petal-length over 10 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-40.Two distinct groupings are shown. One grouping has 2 bins with an x-range of approximately = [1, 2.2] and a y-range approximately = [0, 38].The second grouping appears normally distributed. It has 7 bins with an x-range of approximately = [2.8, 6.8] and a y-range of approximately = [0, 28]."></div></div>
 </div>
 <p>Not so normal. However, we are looking at the petal lengths of all three types. So let’s look at a single type.</p>
 <div class="cell tag_remove-output docutils container">
@@ -860,23 +860,23 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot2.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
+<div class="output text_html"><img src="output_plot14.png" alt="A histogram showing the distribution of petal-length for the Iris-setosa typer. There are 10 bins ranging 1-2 (x-axis).The y-axis is the number in each bin ranging 0-14.There is one grouping appearing normally distributed an x-range of approximately = [1.0, 1.95] and a y-range of approximately = [0, 14]."></div></div>
 </div>
-<p>They don’t assess aesthetics, but Pandas’ visualizations are limited compared to others. Below we get a much better picture of what’s going on, and we can clearly see the three different types.</p>
-<p>A <strong>bar plot</strong> to visualize distributions:</p>
+<p>Evaluators don’t assess aesthetics, but Pandas’ visualizations are limited compared to others. Below we get a much better picture of what’s going on, and we clearly see the three different types.</p>
+<p>A <strong>histogram</strong> to visualize distributions:</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="n">palette</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">],</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span><span class="mi">30</span><span class="p">);</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span><span class="mi">30</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot3.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
+<div class="output text_html"><img src="output_plot15.png" alt="A histogram showing the distribution of petal-length over 30 bins ranging 0-7 (x-axis).The y-axis is the number in each bin ranging 0-30.The bins are color according to their type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, Green = Iris-vriginica.Each type has it's own similarly colored kernel density estimate to smoothly approximate the types distribution.The colors each appear normally distributed as follows:Blue has an approximate median of 1.5 with .95 of data between 1 and 2.Orange has an approximate median of 4.33 with .95 of data between 3 and 5.25Green has an approximate median of 5.5 with .95 of data between 4.5 and 7."></div></div>
 </div>
 <p>A <strong>scatterplot</strong> to visualize popssible correlations:</p>
 <div class="cell tag_remove-output docutils container">
@@ -890,7 +890,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot4.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
+<div class="output text_html"><img src="output_plot16.png" alt="A scatterplot showing the correlation of sepal-length (x-axis ranging 4-8.0) and sepal-width (y-axis ranging from 2-4.5).Points are color according to Iris type as follows:Blue = Iris-setosa, Orange = Iris-versicolor, and Green = Iris-vriginica.Collectively and by type the points trend linearly upwards from the left to right."></div></div>
 </div>
 <p>A <strong>correlogram</strong> to visualize distributions and correlations of and between multiple variables.</p>
 <div class="cell tag_remove-output docutils container">
@@ -904,7 +904,7 @@ dtype: int64
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot5.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
+<div class="output text_html"><img src="output_plot17.png" alt="A correlogram (or pairplot) showing a matrix of scatterplots pairing each numeric parameter in the data set.The paired points within each plot are colored according to type.The diagonal plots from upper left to bottom right have identically paired parameters. Instead of scatterplot, these plots have three univariate distribution plots -one of each type.x-axis = sepal-length, sepal-width, petal-length, and petal-width.y-axis = petal-width, petal-length, sepal-width, and sepal-length.Ranges of individual plots are set to the min and max of the respective parameters.For each scatterplot a generally positive linear relation can be observed except for petal and sepal pairings of Iris-setosaFor all plots, clustering by type can be seen with Iris-versicolor and Iris-virginica being close together and Iris-setosa being most distinct.Except the sepal-width distribution where each type is similarly distributed and the sepal-length and sepal-width scatterplot where Iris-versicolor and virginica largely overlap."></div></div>
 </div>
 <p>Each image is a descriptive method <em>and</em> a visualization (<span class="math notranslate nohighlight">\(\geq3\)</span> meets the requirements). And here are some non-visual descriptions of the data:</p>
 <div class="cell docutils container">
