@@ -62,7 +62,7 @@ Really both, but most often, it's used for classification. Logistic regression u
 
 #### Unsupervised Learning
 
-If what you are trying to find is not directly in the data, then an u[nsupervised method](https://scikit-learn.org/stable/unsupervised_learning.html) might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
+If what you are trying to find is not directly in the data, then an [unsupervised method](https://scikit-learn.org/stable/unsupervised_learning.html) might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
 
 #### Reinforced Learning
 
@@ -81,7 +81,7 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 3. Formulate an "organizational need" helped by that application.
 
 ```{margin} Unsure about which ML method to use?
-Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
+Look for data which has mutualay exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example]((sup_class_ex)), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubirc requirements.  
 ```
 
 (task1:examples)=
