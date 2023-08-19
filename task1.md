@@ -16,7 +16,7 @@ The approval form ensures you start in the right direction before investing time
 3. A *basic outline* of your implementation plan.
 
 ```{margin} What is *machine learning*?
-It's a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
+It's a new field, and answers vary depending on whom you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
 ```
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project; neither you nor the evaluators are business majors.  
@@ -56,7 +56,7 @@ If the answers for what you are trying to predict (dependent variable) are in th
 
 (task1:choosing_topic:logistic)=
 
-```{margin} Logisitc regression: regression or classification?
+```{margin} Logistic regression: regression or classification?
 Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
@@ -81,7 +81,7 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 3. Formulate an "organizational need" helped by that application.
 
 ```{margin} Unsure about which ML method to use?
-Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
+Look for labeled data for which a supervised learning classification method can be applied. This method most easily fits all the rubric requirements. 
 ```
 
 (task1:examples)=
@@ -94,7 +94,7 @@ Look for labeled data for which a supervised learning classification method can 
 ````{tab-item} Example 1
 > **Data:** Petal dimensions and species of fifty [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
+> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
 >
 > **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
