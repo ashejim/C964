@@ -16,7 +16,7 @@ The approval form ensures you start in the right direction before investing time
 3. A *basic outline* of your implementation plan.
 
 ```{margin} What is *machine learning*?
-It's a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
+It's a new field, and answers vary depending on whom you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see [FAQ: What is ML?](task1:faq:what_is_machine_learning?).
 ```
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project; neither you nor the evaluators are business majors.  
@@ -34,7 +34,7 @@ A machine learning application is the hard requirement of the capstone, but you 
 - Simulated data
 
 ```{note}
-*No minimal data complexity or processing is required.* Choosing data which needs less processing or simplifying a dataset (you don't have to use it all) can make the project technically more accessible.  
+*No minimal data complexity or processing is required.* Choosing data that needs less processing or simplifying a dataset (you don't have to use it all) can make the project technically more accessible.  
 ```
 
 ### Machine Learning Algorithms
@@ -52,11 +52,11 @@ If the answers for what you are trying to predict (dependent variable) are in th
 - *Regression* algorithms predict numbers. Examples include linear regression, polynomial regression, decision tree regression, random forest regression, and many more.
 <!--  https://www.kaggle.com/code/duyguay12/regression-examples-for-machine-learning -->
 
-- *Classification* algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.  
+- *Classification* algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, etc.  
 
 (task1:choosing_topic:logistic)=
 
-```{margin} Logisitc regression: regression or classification?
+```{margin} Logistic regression: regression or classification?
 Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome returning a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
@@ -69,7 +69,7 @@ If what you are trying to find is not directly in the data (aka *tagged* or *lab
 Sometimes solutions need to adapt to particular situations. That is, the algorithms need to learn how to make decisions. For example, a robot needs to navigate a never before seen maze. By awarding (or punishing) a robot's state after decisions, an algorithm can be progressively trained to predict decisions maximizing results. Reinforced methods can be more challenging to develop than supervised or unsupervised methods.
 
 ```{note}
-Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in task 1 appropriate for your data will be accepted, and you might do something different in task without needing to revise task 1 (see the [FAQ](task1:faq:change_task1) below).
+Need help determining which particular algorithm will work best? That's OK! You won't know until you've spent time investigating and experimenting. But that's not the point of task 1. For now, you only need to identify the type, i.e., supervised, unsupervised, or reinforced. *Any ML algorithm* given in Task 1 appropriate for your data will be accepted, and you might do something different in Task 2 without needing to revise task 1 (see the [FAQ](task1:faq:change_task1) below).
 ```
 
 ### Where to start? Data or the ML algorithm?
@@ -81,7 +81,7 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 3. Formulate an "organizational need" helped by that application.
 
 ```{margin} Unsure about which ML method to use?
-Look for labeled data for which a supervised learning classification method can be apllied. This method most easily fits all the rubirc requirements. 
+Look for labeled data for which a supervised learning classification method can be applied. This method most easily fits all the rubric requirements. 
 ```
 
 (task1:examples)=
@@ -94,7 +94,7 @@ Look for labeled data for which a supervised learning classification method can 
 ````{tab-item} Example 1
 > **Data:** Petal dimensions and species of fifty [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
+> **ML application (non-descriptive method):** [Classify an iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
 >
 > **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
@@ -150,7 +150,7 @@ Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources
 
 ##### WGU Capstone Excellence Archive
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepening understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepen understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
 
 (task1:approval)=
 
@@ -258,7 +258,7 @@ Note, the waiver form is **only** required if your project is based upon or incl
 
 ### How many attempts are allowed for each task?
 
-You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. It's in your best interest to the complete minimal requirements to the best of your understanding.
+You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. It's in your best interest to complete the minimal requirements to the best of your understanding.
 
 ### What is a descriptive method?
 
