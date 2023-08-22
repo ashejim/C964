@@ -258,7 +258,7 @@ Note, the waiver form is **only** required if your project is based upon or incl
 
 ### How many attempts are allowed for each task?
 
-You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. It's in your best interest to complete minimal requirements to the best of your understanding.
+You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submissions or submissions significantly falling short of the minimum requirements may be *locked* from further submissions without instructor approval. Furthermore, such submissions do not receive meaningful evaluator comments. It's in your best interest to complete the minimal requirements to the best of your understanding.
 
 ### What is a descriptive method?
 
