@@ -130,7 +130,7 @@ input.chk {
     color: rgb(96, 96, 96)
 }
 
-/* vertically and horizontally center element within a container */
+/* vertically and horizontally center element within a container
 .center {
     margin: 0;
     position: absolute;
@@ -138,4 +138,4 @@ input.chk {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+  } */
