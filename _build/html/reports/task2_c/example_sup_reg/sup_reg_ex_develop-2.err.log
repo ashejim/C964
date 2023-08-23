@@ -25,28 +25,56 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from lineartree import LinearTreeRegressor, LinearForestRegressor, LinearBoostRegressor
-# regr = LinearTreeRegressor(base_estimator=LinearRegression())
-# regr = LinearForestRegressor(base_estimator=LinearRegression())
-# regr = LinearBoostRegressor(base_estimator=LinearRegression())
+import matplotlib.pyplot as plt 
+from IPython.display import display, HTML
+import os
 
-regr.fit(X_train, y_train)
-y_predict = regr.predict(X_test)
-sme = mean_squared_error(y_test, y_predict)
-print(str(sme))
+#This code helps support alt text for student accessibility.
+#This section and uses of 'plot_with_alt' are intended only for publishing to the webpage.
+#Including alt text is good practice but not required for Task 2.    
+
+# A function to support adding alt text to Python-generated images.
+# Pandas, matplotlib, and others don't yet natively support alt ext. 
+   
+def plot_with_alt_text(alt_text =''):
+     counter_images = 0 #filename counter
+     outputName = 'output_plot'+str(i)+'.png'
+     match = True
+     while(match == True):
+          if os.path.isfile(outputName):
+               counter_images = counter_images+1
+               outputName = 'output_plot'+str(counter_images)+'.png'
+          else: match = False
+     plt.savefig(outputName)
+     plt.savefig('../../_build/html/task2_c/example_sup_reg/'+outputName)
+     display(HTML(f'<img src="{outputName}" alt="{alt_text}">'))
+     plt.close()
+
+sns.pairplot(df,x_vars = ['petal-length','petal-width'], y_vars=['sepal-length'], hue='type');     
+plot_with_alt_text('Two scatterplots are shown side by side. The y-axis for both is sepal-length. \
+     The x-axis is petal-length and petal-length for the left and right plot, respectively. \
+     Both plots similarly show positive linear correlations for the color-coded Iris-versicolor and Iris virginica data points. \
+     The Iris-setosa data points are grouped in the lower-left quadrant of both plots with little linear correlation.')
+
 ------------------
 
 [1;31m---------------------------------------------------------------------------[0m
 [1;31mNameError[0m                                 Traceback (most recent call last)
-Cell [1;32mIn[9], line 6[0m
-[0;32m      1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mlineartree[39;00m [38;5;28;01mimport[39;00m LinearTreeRegressor, LinearForestRegressor, LinearBoostRegressor
-[0;32m      2[0m [38;5;66;03m# regr = LinearTreeRegressor(base_estimator=LinearRegression())[39;00m
-[0;32m      3[0m [38;5;66;03m# regr = LinearForestRegressor(base_estimator=LinearRegression())[39;00m
-[0;32m      4[0m [38;5;66;03m# regr = LinearBoostRegressor(base_estimator=LinearRegression())[39;00m
-[1;32m----> 6[0m [43mregr[49m[38;5;241m.[39mfit(X_train, y_train)
-[0;32m      7[0m y_predict [38;5;241m=[39m regr[38;5;241m.[39mpredict(X_test)
-[0;32m      8[0m sme [38;5;241m=[39m mean_squared_error(y_test, y_predict)
+Cell [1;32mIn[9], line 27[0m
+[0;32m     24[0m      plt[38;5;241m.[39mclose()
+[0;32m     26[0m sns[38;5;241m.[39mpairplot(df,x_vars [38;5;241m=[39m [[38;5;124m'[39m[38;5;124mpetal-length[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mpetal-width[39m[38;5;124m'[39m], y_vars[38;5;241m=[39m[[38;5;124m'[39m[38;5;124msepal-length[39m[38;5;124m'[39m], hue[38;5;241m=[39m[38;5;124m'[39m[38;5;124mtype[39m[38;5;124m'[39m);     
+[1;32m---> 27[0m [43mplot_with_alt_text[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mTwo scatterplots are shown side by side. The y-axis for both is sepal-length. [39;49m[38;5;130;43;01m\[39;49;00m
+[0;32m     28[0m [38;5;124;43m     The x-axis is petal-length and petal-length for the left and right plot, respectively. [39;49m[38;5;130;43;01m\[39;49;00m
+[0;32m     29[0m [38;5;124;43m     Both plots similarly show positive linear correlations for the color-coded Iris-versicolor and Iris virginica data points. [39;49m[38;5;130;43;01m\[39;49;00m
+[0;32m     30[0m [38;5;124;43m     The Iris-setosa data points are grouped in the lower-left quadrant of both plots with little linear correlation.[39;49m[38;5;124;43m'[39;49m[43m)[49m
 
-[1;31mNameError[0m: name 'regr' is not defined
-NameError: name 'regr' is not defined
+Cell [1;32mIn[9], line 14[0m, in [0;36mplot_with_alt_text[1;34m(alt_text)[0m
+[0;32m     12[0m [38;5;28;01mdef[39;00m [38;5;21mplot_with_alt_text[39m(alt_text [38;5;241m=[39m[38;5;124m'[39m[38;5;124m'[39m):
+[0;32m     13[0m      counter_images [38;5;241m=[39m [38;5;241m0[39m [38;5;66;03m#filename counter[39;00m
+[1;32m---> 14[0m      outputName [38;5;241m=[39m [38;5;124m'[39m[38;5;124moutput_plot[39m[38;5;124m'[39m[38;5;241m+[39m[38;5;28mstr[39m([43mi[49m)[38;5;241m+[39m[38;5;124m'[39m[38;5;124m.png[39m[38;5;124m'[39m
+[0;32m     15[0m      match [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[0;32m     16[0m      [38;5;28;01mwhile[39;00m(match [38;5;241m==[39m [38;5;28;01mTrue[39;00m):
+
+[1;31mNameError[0m: name 'i' is not defined
+NameError: name 'i' is not defined
 

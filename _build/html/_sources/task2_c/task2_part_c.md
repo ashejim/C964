@@ -327,7 +327,7 @@ Start *slow*. You must learn and incorporate many small but probably new skills 
 
 ### Start small and build up
 
-:::{sidebar} Simple coding example
+:::{sidebar} Watch
 <iframe 
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all"
     title="Simple ML supervised classification example "
