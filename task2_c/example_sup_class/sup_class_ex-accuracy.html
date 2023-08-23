@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Accuracy Analysis (testing) &#8212; Computer Science Capstone</title>
+    <title>Accuracy Analysis (for classification) &#8212; Computer Science Capstone</title>
   
   
   
@@ -206,20 +206,26 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_class_ex.html">Example: Supervised Classification App</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-process.html">Data Exploring and Processing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-develop.html">Model Development</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Accuracy Analysis (testing)</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Accuracy Analysis (for classification)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-ui.html">User Interface</a></li>
 </ul>
 </li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_accuracy.html">Accuracy Analysis</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_d.html">Task 2 Part D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_finish.html">Task 2 final touches</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources.html">C964 Resources</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_c964.html">C964 Course Faculty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_other.html">BSCS, Software, and other Course Faculty</a></li>
 </ul>
@@ -492,7 +498,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Accuracy Analysis (testing)</h1>
+    <h1>Accuracy Analysis (for classification)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -515,9 +521,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="accuracy-analysis-testing">
-<span id="sup-class-ex-accuracy"></span><h1>Accuracy Analysis (testing)<a class="headerlink" href="#accuracy-analysis-testing" title="Permalink to this heading">#</a></h1>
-<p>The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:</p>
+  <section id="accuracy-analysis-for-classification">
+<span id="sup-class-ex-accuracy"></span><h1>Accuracy Analysis (for classification)<a class="headerlink" href="#accuracy-analysis-for-classification" title="Permalink to this heading">#</a></h1>
+<p>In the <a class="reference internal" href="../../task2_doc/task2_doc_d.html#task2-doc-d-accuracy-analysis"><span class="std std-ref">Accuracy Analysis section of part D</span></a> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.  The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:</p>
 <div class="math notranslate nohighlight">
 \[\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\]</div>
 <p>Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>.</p>
