@@ -546,6 +546,208 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TimeoutError</span><span class="g g-Whitespace">                              </span>Traceback (most recent call last)
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:1348,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1347</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1348</span>     <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1349</span>               <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1350</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:1282,</span> in <span class="ni">HTTPConnection.request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1281</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Send a complete request to the server.&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1282</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:1328,</span> in <span class="ni">HTTPConnection._send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1327</span>     <span class="n">body</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1328</span> <span class="bp">self</span><span class="o">.</span><span class="n">endheaders</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:1277,</span> in <span class="ni">HTTPConnection.endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1276</span>     <span class="k">raise</span> <span class="n">CannotSendHeader</span><span class="p">()</span>
+<span class="ne">-&gt; </span><span class="mi">1277</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_output</span><span class="p">(</span><span class="n">message_body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:1037,</span> in <span class="ni">HTTPConnection._send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1036</span> <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buffer</span><span class="p">[:]</span>
+<span class="ne">-&gt; </span><span class="mi">1037</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1039</span> <span class="k">if</span> <span class="n">message_body</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1040</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1041</span>     <span class="c1"># create a consistent interface to message_body</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:975,</span> in <span class="ni">HTTPConnection.send</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">974</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_open</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">975</span>     <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">976</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\http\client.py:1454,</span> in <span class="ni">HTTPSConnection.connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1452</span>     <span class="n">server_hostname</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span>
+<span class="ne">-&gt; </span><span class="mi">1454</span> <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="o">.</span><span class="n">wrap_socket</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sock</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1455</span>                                       <span class="n">server_hostname</span><span class="o">=</span><span class="n">server_hostname</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\ssl.py:517,</span> in <span class="ni">SSLContext.wrap_socket</span><span class="nt">(self, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, session)</span>
+<span class="g g-Whitespace">    </span><span class="mi">511</span> <span class="k">def</span> <span class="nf">wrap_socket</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sock</span><span class="p">,</span> <span class="n">server_side</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">512</span>                 <span class="n">do_handshake_on_connect</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">513</span>                 <span class="n">suppress_ragged_eofs</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">514</span>                 <span class="n">server_hostname</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">515</span>     <span class="c1"># SSLSocket class handles server_hostname encoding before it calls</span>
+<span class="g g-Whitespace">    </span><span class="mi">516</span>     <span class="c1"># ctx._wrap_socket()</span>
+<span class="ne">--&gt; </span><span class="mi">517</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sslsocket_class</span><span class="o">.</span><span class="n">_create</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span>         <span class="n">sock</span><span class="o">=</span><span class="n">sock</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">519</span>         <span class="n">server_side</span><span class="o">=</span><span class="n">server_side</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">520</span>         <span class="n">do_handshake_on_connect</span><span class="o">=</span><span class="n">do_handshake_on_connect</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">521</span>         <span class="n">suppress_ragged_eofs</span><span class="o">=</span><span class="n">suppress_ragged_eofs</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">522</span>         <span class="n">server_hostname</span><span class="o">=</span><span class="n">server_hostname</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">523</span>         <span class="n">context</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">524</span>         <span class="n">session</span><span class="o">=</span><span class="n">session</span>
+<span class="g g-Whitespace">    </span><span class="mi">525</span>     <span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\ssl.py:1075,</span> in <span class="ni">SSLSocket._create</span><span class="nt">(cls, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, context, session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1074</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;do_handshake_on_connect should not be specified for non-blocking sockets&quot;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1075</span>         <span class="bp">self</span><span class="o">.</span><span class="n">do_handshake</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1076</span> <span class="k">except</span> <span class="p">(</span><span class="ne">OSError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\ssl.py:1346,</span> in <span class="ni">SSLSocket.do_handshake</span><span class="nt">(self, block)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>         <span class="bp">self</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1346</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_sslobj</span><span class="o">.</span><span class="n">do_handshake</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1347</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">TimeoutError</span>: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">URLError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># Reloading the dataset</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\util\_decorators.py:211,</span> in <span class="ni">deprecate_kwarg.&lt;locals&gt;._deprecate_kwarg.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>         <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
+<span class="ne">--&gt; </span><span class="mi">211</span> <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\util\_decorators.py:331,</span> in <span class="ni">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">num_allow_args</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">326</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">327</span>         <span class="n">msg</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arguments</span><span class="o">=</span><span class="n">_format_argument_list</span><span class="p">(</span><span class="n">allow_args</span><span class="p">)),</span>
+<span class="g g-Whitespace">    </span><span class="mi">328</span>         <span class="ne">FutureWarning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">329</span>         <span class="n">stacklevel</span><span class="o">=</span><span class="n">find_stack_level</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">330</span>     <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">331</span> <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\parsers\readers.py:950,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">935</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">936</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">937</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">946</span>     <span class="n">defaults</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;delimiter&quot;</span><span class="p">:</span> <span class="s2">&quot;,&quot;</span><span class="p">},</span>
+<span class="g g-Whitespace">    </span><span class="mi">947</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">948</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">950</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\parsers\readers.py:605,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">602</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">604</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">605</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">607</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">608</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\parsers\readers.py:1442,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1439</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1441</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1442</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\parsers\readers.py:1735,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1733</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1734</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1735</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1736</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1737</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1738</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1739</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1740</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1741</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1742</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1743</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1744</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1745</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1746</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\common.py:713,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span>     <span class="n">codecs</span><span class="o">.</span><span class="n">lookup_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">712</span> <span class="c1"># open URLs</span>
+<span class="ne">--&gt; </span><span class="mi">713</span> <span class="n">ioargs</span> <span class="o">=</span> <span class="n">_get_filepath_or_buffer</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">714</span>     <span class="n">path_or_buf</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">715</span>     <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">716</span>     <span class="n">compression</span><span class="o">=</span><span class="n">compression</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">717</span>     <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">718</span>     <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">719</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">721</span> <span class="n">handle</span> <span class="o">=</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">filepath_or_buffer</span>
+<span class="g g-Whitespace">    </span><span class="mi">722</span> <span class="n">handles</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">BaseBuffer</span><span class="p">]</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\common.py:363,</span> in <span class="ni">_get_filepath_or_buffer</span><span class="nt">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">361</span> <span class="c1"># assuming storage_options is to be interpreted as headers</span>
+<span class="g g-Whitespace">    </span><span class="mi">362</span> <span class="n">req_info</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">storage_options</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">363</span> <span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">req_info</span><span class="p">)</span> <span class="k">as</span> <span class="n">req</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">364</span>     <span class="n">content_encoding</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Content-Encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">365</span>     <span class="k">if</span> <span class="n">content_encoding</span> <span class="o">==</span> <span class="s2">&quot;gzip&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">366</span>         <span class="c1"># Override compression based on Content-Encoding header</span>
+
+<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\io\common.py:265,</span> in <span class="ni">urlopen</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">259</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">260</span><span class="sd"> Lazy-import wrapper for stdlib urlopen, as that imports a big chunk of</span>
+<span class="g g-Whitespace">    </span><span class="mi">261</span><span class="sd"> the stdlib.</span>
+<span class="g g-Whitespace">    </span><span class="mi">262</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">263</span> <span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="ne">--&gt; </span><span class="mi">265</span> <span class="k">return</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:216,</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>     <span class="n">opener</span> <span class="o">=</span> <span class="n">_opener</span>
+<span class="ne">--&gt; </span><span class="mi">216</span> <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:519,</span> in <span class="ni">OpenerDirector.open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">516</span>     <span class="n">req</span> <span class="o">=</span> <span class="n">meth</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s1">&#39;urllib.Request&#39;</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">full_url</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">())</span>
+<span class="ne">--&gt; </span><span class="mi">519</span> <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">521</span> <span class="c1"># post-process response</span>
+<span class="g g-Whitespace">    </span><span class="mi">522</span> <span class="n">meth_name</span> <span class="o">=</span> <span class="n">protocol</span><span class="o">+</span><span class="s2">&quot;_response&quot;</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:536,</span> in <span class="ni">OpenerDirector._open</span><span class="nt">(self, req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">533</span>     <span class="k">return</span> <span class="n">result</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span> <span class="n">protocol</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">type</span>
+<span class="ne">--&gt; </span><span class="mi">536</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_chain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handle_open</span><span class="p">,</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">protocol</span> <span class="o">+</span>
+<span class="g g-Whitespace">    </span><span class="mi">537</span>                           <span class="s1">&#39;_open&#39;</span><span class="p">,</span> <span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">538</span> <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">539</span>     <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:496,</span> in <span class="ni">OpenerDirector._call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">494</span> <span class="k">for</span> <span class="n">handler</span> <span class="ow">in</span> <span class="n">handlers</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">495</span>     <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">496</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">497</span>     <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">498</span>         <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:1391,</span> in <span class="ni">HTTPSHandler.https_open</span><span class="nt">(self, req)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1390</span> <span class="k">def</span> <span class="nf">https_open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1391</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">do_open</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1392</span>         <span class="n">context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="p">,</span> <span class="n">check_hostname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_check_hostname</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py:1351,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1348</span>         <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1349</span>                   <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1350</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+<span class="ne">-&gt; </span><span class="mi">1351</span>         <span class="k">raise</span> <span class="n">URLError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1352</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1353</span> <span class="k">except</span><span class="p">:</span>
+
+<span class="ne">URLError</span>: &lt;urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond&gt;
+</pre></div>
+</div>
+</div>
 </div>
 <section id="train-model">
 <span id="sup-reg-ex-develop-train"></span><h2>Train Model<a class="headerlink" href="#train-model" title="Permalink to this heading">#</a></h2>
@@ -581,85 +783,85 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
 </style>
-<table id="T_fe8f0" style='display:inline'>
+<table id="T_1d051" style='display:inline'>
   <caption>Independents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_fe8f0_level0_col0" class="col_heading level0 col0" >sepal-width</th>
-      <th id="T_fe8f0_level0_col1" class="col_heading level0 col1" >petal-length</th>
-      <th id="T_fe8f0_level0_col2" class="col_heading level0 col2" >petal-width</th>
-      <th id="T_fe8f0_level0_col3" class="col_heading level0 col3" >type</th>
+      <th id="T_1d051_level0_col0" class="col_heading level0 col0" >sepal-width</th>
+      <th id="T_1d051_level0_col1" class="col_heading level0 col1" >petal-length</th>
+      <th id="T_1d051_level0_col2" class="col_heading level0 col2" >petal-width</th>
+      <th id="T_1d051_level0_col3" class="col_heading level0 col3" >type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_fe8f0_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_fe8f0_row0_col0" class="data row0 col0" >2.700000</td>
-      <td id="T_fe8f0_row0_col1" class="data row0 col1" >5.300000</td>
-      <td id="T_fe8f0_row0_col2" class="data row0 col2" >1.900000</td>
-      <td id="T_fe8f0_row0_col3" class="data row0 col3" >Iris-virginica</td>
+      <th id="T_1d051_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_1d051_row0_col0" class="data row0 col0" >2.700000</td>
+      <td id="T_1d051_row0_col1" class="data row0 col1" >5.300000</td>
+      <td id="T_1d051_row0_col2" class="data row0 col2" >1.900000</td>
+      <td id="T_1d051_row0_col3" class="data row0 col3" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_fe8f0_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_fe8f0_row1_col0" class="data row1 col0" >2.700000</td>
-      <td id="T_fe8f0_row1_col1" class="data row1 col1" >3.900000</td>
-      <td id="T_fe8f0_row1_col2" class="data row1 col2" >1.200000</td>
-      <td id="T_fe8f0_row1_col3" class="data row1 col3" >Iris-versicolor</td>
+      <th id="T_1d051_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_1d051_row1_col0" class="data row1 col0" >2.700000</td>
+      <td id="T_1d051_row1_col1" class="data row1 col1" >3.900000</td>
+      <td id="T_1d051_row1_col2" class="data row1 col2" >1.200000</td>
+      <td id="T_1d051_row1_col3" class="data row1 col3" >Iris-versicolor</td>
     </tr>
     <tr>
-      <th id="T_fe8f0_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_fe8f0_row2_col0" class="data row2 col0" >2.800000</td>
-      <td id="T_fe8f0_row2_col1" class="data row2 col1" >6.100000</td>
-      <td id="T_fe8f0_row2_col2" class="data row2 col2" >1.900000</td>
-      <td id="T_fe8f0_row2_col3" class="data row2 col3" >Iris-virginica</td>
+      <th id="T_1d051_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_1d051_row2_col0" class="data row2 col0" >2.800000</td>
+      <td id="T_1d051_row2_col1" class="data row2 col1" >6.100000</td>
+      <td id="T_1d051_row2_col2" class="data row2 col2" >1.900000</td>
+      <td id="T_1d051_row2_col3" class="data row2 col3" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_fe8f0_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_fe8f0_row3_col0" class="data row3 col0" >3.500000</td>
-      <td id="T_fe8f0_row3_col1" class="data row3 col1" >1.500000</td>
-      <td id="T_fe8f0_row3_col2" class="data row3 col2" >0.200000</td>
-      <td id="T_fe8f0_row3_col3" class="data row3 col3" >Iris-setosa</td>
+      <th id="T_1d051_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_1d051_row3_col0" class="data row3 col0" >3.500000</td>
+      <td id="T_1d051_row3_col1" class="data row3 col1" >1.500000</td>
+      <td id="T_1d051_row3_col2" class="data row3 col2" >0.200000</td>
+      <td id="T_1d051_row3_col3" class="data row3 col3" >Iris-setosa</td>
     </tr>
     <tr>
-      <th id="T_fe8f0_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_fe8f0_row4_col0" class="data row4 col0" >4.200000</td>
-      <td id="T_fe8f0_row4_col1" class="data row4 col1" >1.400000</td>
-      <td id="T_fe8f0_row4_col2" class="data row4 col2" >0.200000</td>
-      <td id="T_fe8f0_row4_col3" class="data row4 col3" >Iris-setosa</td>
+      <th id="T_1d051_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_1d051_row4_col0" class="data row4 col0" >4.200000</td>
+      <td id="T_1d051_row4_col1" class="data row4 col1" >1.400000</td>
+      <td id="T_1d051_row4_col2" class="data row4 col2" >0.200000</td>
+      <td id="T_1d051_row4_col3" class="data row4 col3" >Iris-setosa</td>
     </tr>
   </tbody>
 </table>
           <style type="text/css">
 </style>
-<table id="T_26405" style='display:inline'>
+<table id="T_d1090" style='display:inline'>
   <caption>Dependents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_26405_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_d1090_level0_col0" class="col_heading level0 col0" >sepal-length</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_26405_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_26405_row0_col0" class="data row0 col0" >6.400000</td>
+      <th id="T_d1090_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_d1090_row0_col0" class="data row0 col0" >6.400000</td>
     </tr>
     <tr>
-      <th id="T_26405_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_26405_row1_col0" class="data row1 col0" >5.800000</td>
+      <th id="T_d1090_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_d1090_row1_col0" class="data row1 col0" >5.800000</td>
     </tr>
     <tr>
-      <th id="T_26405_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_26405_row2_col0" class="data row2 col0" >7.400000</td>
+      <th id="T_d1090_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_d1090_row2_col0" class="data row2 col0" >7.400000</td>
     </tr>
     <tr>
-      <th id="T_26405_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_26405_row3_col0" class="data row3 col0" >5.200000</td>
+      <th id="T_d1090_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_d1090_row3_col0" class="data row3 col0" >5.200000</td>
     </tr>
     <tr>
-      <th id="T_26405_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_26405_row4_col0" class="data row4 col0" >5.500000</td>
+      <th id="T_d1090_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_d1090_row4_col0" class="data row4 col0" >5.500000</td>
     </tr>
   </tbody>
 </table>
@@ -688,11 +890,11 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">29</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">linear_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\linear_model\_base.py:649,</span> in <span class="ni">LinearRegression.fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\linear_model\_base.py:649,</span> in <span class="ni">LinearRegression.fit</span><span class="nt">(self, X, y, sample_weight)</span>
 <span class="g g-Whitespace">    </span><span class="mi">645</span> <span class="n">n_jobs_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span>
 <span class="g g-Whitespace">    </span><span class="mi">647</span> <span class="n">accept_sparse</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">positive</span> <span class="k">else</span> <span class="p">[</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span> <span class="s2">&quot;csc&quot;</span><span class="p">,</span> <span class="s2">&quot;coo&quot;</span><span class="p">]</span>
 <span class="ne">--&gt; </span><span class="mi">649</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_data</span><span class="p">(</span>
@@ -708,14 +910,14 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">662</span>     <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
 <span class="g g-Whitespace">    </span><span class="mi">663</span> <span class="p">)</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\base.py:554,</span> in <span class="ni">BaseEstimator._validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\base.py:554,</span> in <span class="ni">BaseEstimator._validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
 <span class="g g-Whitespace">    </span><span class="mi">552</span>         <span class="n">y</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">check_y_params</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">553</span>     <span class="k">else</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">554</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">555</span>     <span class="n">out</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
 <span class="g g-Whitespace">    </span><span class="mi">557</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="n">check_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ensure_2d&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">):</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:1104,</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:1104,</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1099</span>         <span class="n">estimator_name</span> <span class="o">=</span> <span class="n">_check_estimator_name</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1100</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
 <span class="g g-Whitespace">   </span><span class="mi">1101</span>         <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">estimator_name</span><span class="si">}</span><span class="s2"> requires y to be passed, but the target y is None&quot;</span>
@@ -738,7 +940,7 @@ document.write(`
 <span class="g g-Whitespace">   </span><span class="mi">1120</span> <span class="n">y</span> <span class="o">=</span> <span class="n">_check_y</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="n">multi_output</span><span class="p">,</span> <span class="n">y_numeric</span><span class="o">=</span><span class="n">y_numeric</span><span class="p">,</span> <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1122</span> <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:877,</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\validation.py:877,</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
 <span class="g g-Whitespace">    </span><span class="mi">875</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">876</span>     <span class="k">else</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">877</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">_asarray_with_order</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
@@ -747,7 +949,7 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">880</span>         <span class="s2">&quot;Complex data not supported</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">881</span>     <span class="p">)</span> <span class="kn">from</span> <span class="nn">complex_warning</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\_array_api.py:185,</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\sklearn\utils\_array_api.py:185,</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
 <span class="g g-Whitespace">    </span><span class="mi">182</span>     <span class="n">xp</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_namespace</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="k">if</span> <span class="n">xp</span><span class="o">.</span><span class="vm">__name__</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;numpy&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy.array_api&quot;</span><span class="p">}:</span>
 <span class="g g-Whitespace">    </span><span class="mi">184</span>     <span class="c1"># Use NumPy API to support order</span>
@@ -755,7 +957,7 @@ document.write(`
 <span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">187</span> <span class="k">else</span><span class="p">:</span>
 
-<span class="nn">File ~\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\core\generic.py:2070,</span> in <span class="ni">NDFrame.__array__</span><span class="nt">(self, dtype)</span>
+<span class="nn">File c:\Users\ashej\.virtualenvs\jupyter-books-WZpnkDri\Lib\site-packages\pandas\core\generic.py:2070,</span> in <span class="ni">NDFrame.__array__</span><span class="nt">(self, dtype)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2069</span> <span class="k">def</span> <span class="nf">__array__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">DTypeLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
 <span class="ne">-&gt; </span><span class="mi">2070</span>     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
 
