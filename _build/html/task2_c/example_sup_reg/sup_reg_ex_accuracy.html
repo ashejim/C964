@@ -1,0 +1,999 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Accuracy Analysis &#8212; Computer Science Capstone</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "github-org/github-repo");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-H4N36TZQ78');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'task2_c/example_sup_reg/sup_reg_ex_accuracy';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Task 2: The Documentation" href="../../task2_doc/task2_doc.html" />
+    <link rel="prev" title="Regression Model Development (part 2)" href="sup_reg_ex_develop-2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/3d_regression.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to C964!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../task1.html">Task 1: Topic Approval</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../task2_part_c.html">Task 2: Part C -the application</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-process.html">Data Exploring and Processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-develop.html">Model Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-accuracy.html">Accuracy Analysis (for classification)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-ui.html">User Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_reg_ex.html">Example: Supervised Regression App</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Accuracy Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_d.html">Task 2 Part D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_finish.html">Task 2 final touches</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources.html">C964 Resources</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ci_c964.html">C964 Course Faculty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ci_other.html">BSCS, Software, and other Course Faculty</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../support_this_page.html">Help Support this Website</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/ashejim/C964/master?urlpath=tree/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/ashejim/C964/blob/master/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C964" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C964/edit/master/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C964/issues/new?title=Issue%20on%20page%20%2Ftask2_c/example_sup_reg/sup_reg_ex_accuracy.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Accuracy Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-squared-error">Mean Squared Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-explanation-and-example-in-2d">MSE explanation and example in 2D</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-for-multivariable-regression">MSE for Multivariable Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#r-2-r-2-r-and-r"><span class="math notranslate nohighlight">\(R^{2}\)</span>, <span class="math notranslate nohighlight">\(r^{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(r\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#train-and-test-other-models">Train and test other models</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Note: we only repeat this step from before, because this is a new .ipyb page.</span>
+<span class="c1">#it only needs to be executed once per file.</span>
+<span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is the best practice</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+
+<span class="c1"># Reloading the dataset</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;sepal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="s1">&#39;petal-width&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span> <span class="o">=</span> <span class="n">column_names</span><span class="p">)</span> <span class="c1">#read CSV into Python as a dataframe</span>
+
+<span class="c1">#Choosing sepal-length as the independent variable. </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">])</span> <span class="c1">#indpendent variables</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1">#dependent variables</span>
+
+<span class="c1">#split the variable sets into training and testing subsets</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+<span class="n">X_train_no_type</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+<span class="n">X_test_no_type</span> <span class="o">=</span>  <span class="n">X_test</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+
+<span class="c1">#process categorical &#39;type&#39; feature</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="accuracy-analysis">
+<span id="sup-reg-ex-develop-accuracy"></span><h1>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h1>
+<p>In the <a class="reference internal" href="../../task2_doc/task2_doc_d.html#task2-doc-d-accuracy-analysis"><span class="std std-ref">Accuracy Analysis section of part D</span></a> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.</p>
+<p>As we are trying to predict a continuous number, even the very best model will have errors in almost every prediction (if not, it’s almost certainly <a class="reference external" href="https://en.wikipedia.org/wiki/Overfitting">overfitted</a>). Whereas measuring the success of our classification model was a simple ratio, here we need a way to measure how much those predictions deviate from actual values. See sklearn’s list of <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">metrics and scoring</a> for regression. Which metric is best depends on the needs of your project. However, any accuracy metric appropriate to your model will be accepted.</p>
+<p>To get some examples started, we’ll use the data (with <code class="docutils literal notranslate"><span class="pre">type</span></code> and model from the previous sections. Recall, the model predicts a number for <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+
+<span class="n">linear_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">linear_reg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="mean-squared-error">
+<span id="sup-reg-ex-develop-accuracy-mse"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this heading">#</a></h2>
+<p>The mean square error (MSE) measures the average of the squares of errors (difference between predicted and actual values).</p>
+<div class="math notranslate nohighlight">
+\[\text{MSE} = \frac{1}{n} \sum^{n}_{i=1} (Y_i - \hat{Y}_i)^{2}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(Y_i\)</span> and <span class="math notranslate nohighlight">\(\bar{Y}_i\)</span> are the <span class="math notranslate nohighlight">\(i^{\text{th}}\)</span> actual and predicted values respectively.</p>
+<p>In addition to giving positive values, squaring in the MSE emphasizes larger differences. Which can be good or bad depending on your needs. If your data has many or very large outliers, consider removing outliers or using the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html#sklearn.metrics.mean_absolute_error">mean absolute error</a>. See the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error">sklearn MSE docs</a> for more info and examples.</p>
+<p>Applying the MSE to the <em>test</em> data, we have:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.12921261168601364
+</pre></div>
+</div>
+</div>
+</div>
+<section id="mse-explanation-and-example-in-2d">
+<span id="sup-reg-ex-develop-accuracy-mse-example"></span><h3>MSE explanation and example in 2D<a class="headerlink" href="#mse-explanation-and-example-in-2d" title="Permalink to this heading">#</a></h3>
+<p>For illustration purposes, we’ll use just the <em>petal-length</em> to predict the <em>sepal-length</em> with linear regression on 15 random values. For a multi-variable case, see the [example below](sup_reg_ex: develop: accuracy: MSE_2).</p>
+<p>The regression line looks like this:</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">]]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">:]</span>
+
+<span class="c1"># Create linear regression object</span>
+<span class="n">regr_ex</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="c1"># Train the model using the training sets</span>
+<span class="n">regr_ex</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">y_pred_ex</span> <span class="o">=</span> <span class="n">regr_ex</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values; blue dots = predicted value&quot;</span><span class="p">,</span>
+            <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="output_plot0.png" alt="A scatterplot with a regression line is shown.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
+</div>
+<p>The error squared looks like:</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Rectangle</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y_pred_ex</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">y_pred_ex</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Rectangle</span><span class="p">((</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> 
+                           <span class="n">error</span><span class="p">,</span> 
+                           <span class="n">error</span><span class="p">,</span>
+                           <span class="n">fc</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">),</span> <span class="n">ec</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                 <span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;petal-length&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_pred_ex</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values; blue dots = predicted value&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="output_plot1.png" alt="A scatterplot with a regression line and error squares is shown.Red squares showing error measurement between the black and blue dots are shown onThe previous image. Keep reading for the full description.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
+</div>
+<p>Increasing the number of variables uses the same concept only the regression line becomes multi-dimensional. For example, additionally, including ‘sepal-length’ and ‘petal-length’ creates a <em>4-dimensional</em> line. So it’s a little hard to visualize. Using the squares of the errors is standard but ME is sometimes easier for non-technical audiences to understand.</p>
+<section id="mse-for-multivariable-regression">
+<span id="sup-reg-ex-develop-accuracy-mse-2"></span><h4>MSE for Multivariable Regression<a class="headerlink" href="#mse-for-multivariable-regression" title="Permalink to this heading">#</a></h4>
+<p>The case above presents Regression as most people are introduced to the concept -with two variables. Adding more variables does not change how MSE is computed, and the predicted values are still one-dimensional. However, visualizing the regression line can be <a class="reference external" href="https://stats.stackexchange.com/questions/73320/how-to-visualize-a-fitted-multiple-regression-model">interesting</a> when there are more than two independent variables. One approach is to simply plot predicted and true values as paired data points. While some information about the model and relationship is lost, it does clearly show the model’s accuracy.</p>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">4.25</span><span class="p">,</span><span class="mf">7.75</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">4.25</span><span class="p">,</span><span class="mf">7.75</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y_test  = actual values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y_pred = predicted values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values paired with predicted values. </span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">    Green line = when predicted values equal actual values.&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">4.25</span><span class="p">,</span><span class="mf">7.75</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">4.25</span><span class="p">,</span><span class="mf">7.75</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y_test  = actual values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y_pre(d = predicted values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values paired with predicted values. </span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">    green line = when predicted values equal actual values.&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">);</span>
+
+<span class="n">plot_with_alt_text</span><span class="p">(</span><span class="s1">&#39;A scatterplot with a green line is shown.&#39;</span> \
+     <span class="o">+</span> <span class="s1">&#39;The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.&#39;</span> \
+     <span class="o">+</span> <span class="s1">&#39;The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.&#39;</span>\
+     <span class="o">+</span> <span class="s1">&#39;50 black dots are predicted values paired with test values.&#39;</span>\
+     <span class="o">+</span> <span class="s1">&#39;A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.&#39;</span> \
+     <span class="o">+</span> <span class="s1">&#39;The black dots are scattered around the green line indicating a positive correlation.&#39;</span> \
+     <span class="o">+</span> <span class="s1">&#39;A caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values.&#39;</span>
+     <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="output_plot2.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values."></div></div>
+</div>
+</section>
+<section id="r-2-r-2-r-and-r">
+<span id="sup-reg-ex-develop-accuracy-r"></span><h4><span class="math notranslate nohighlight">\(R^{2}\)</span>, <span class="math notranslate nohighlight">\(r^{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(r\)</span><a class="headerlink" href="#r-2-r-2-r-and-r" title="Permalink to this heading">#</a></h4>
+<p>These metrics (as with linear regression) have long been used in statistics before being adopted by the ML field. While ML uses these tools with a focus on results, statistics is a science so uses them differently. The overlap is the cause of some confusion and inconsistencies in the ML jargon. Here we’ll quickly try to clarify some of that. If working on the data as a science, we recommend the <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/main_namespace.html">scipy library</a>.</p>
+<ul class="simple">
+<li><p><em><span class="math notranslate nohighlight">\(r\)</span>:</em> the <em>(sample) correlation coefficient</em> is a statistic metric measuring the strength and direction of a relationship between two variables, e.g., <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>; sometimes denoted <span class="math notranslate nohighlight">\(R\)</span>. There are different types (usually <a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson</a> when not specified) all having values in <span class="math notranslate nohighlight">\([-1,1]\)</span>, with <span class="math notranslate nohighlight">\(\pm 1\)</span> indicating the strongest possible negative/positive relationship and <span class="math notranslate nohighlight">\(0\)</span> no relationship. Confusingly (maybe sloppily), sometimes <span class="math notranslate nohighlight">\(r\)</span> denotes the non-multiple correlation between <span class="math notranslate nohighlight">\(Y\)</span> and <span class="math notranslate nohighlight">\(\hat{Y}\)</span> (values fitted by the model), in which case <span class="math notranslate nohighlight">\(r\geq 0\)</span> (see the [image above](sup_reg_ex: develop: accuracy: MSE_example)).</p></li>
+<li><p><em><span class="math notranslate nohighlight">\(R\)</span></em>: the <em>coefficient of multiple correlation</em> or <em>correlation coefficient</em> measuring the Pearson correlation between observed, <span class="math notranslate nohighlight">\(Y\)</span>, and predicted values, <span class="math notranslate nohighlight">\(\hat{Y}\)</span>. <span class="math notranslate nohighlight">\(R=\sqrt{R^{2}}\)</span> and <span class="math notranslate nohighlight">\(R\geq 0\)</span> (assuming the model has an intercept) with higher values indicating better predictability of a linear model (as shown in the [image above](sup_reg_ex: develop: accuracy: MSE_2)).</p></li>
+<li><p><em><span class="math notranslate nohighlight">\(R^{2}\)</span>:</em> the <em>coefficient of determination</em> measures the proportion of the variation in the dependent variable predictable (by the linear model) from the independent variable(s), i.e., a metric measuring goodness of fit. The most general definition is: <span class="math notranslate nohighlight">\(R^{2}= 1 -\frac{SS_{\text{res}}}{SS_{\text{tot}}}\)</span> where <span class="math notranslate nohighlight">\(SS_{\text{res}}=\sum_{i}(y_i-\hat{y}_i)^2\)</span> (the <a class="reference external" href="https://en.wikipedia.org/wiki/Residual_sum_of_squares">residual sum of squares</a>) and <span class="math notranslate nohighlight">\(SS_{\text{tot}}=\sum_{i}(y_i-\bar{y})^2\)</span> (the <a class="reference external" href="https://en.wikipedia.org/wiki/Total_sum_of_squares">total sum of squares</a>). The former sums squared differences between actual and model output, and the latter sums squared differences between actual outputs and the mean. When <span class="math notranslate nohighlight">\(SS_{\text{tot}}&lt;SS_{\text{res}}\)</span>, i.e., the mean is a better predictor than the linear model, it’s possible for <span class="math notranslate nohighlight">\(R^{2}\)</span> to be negative.</p></li>
+<li><p><em><span class="math notranslate nohighlight">\(r^{2}\)</span>:</em> <span class="math notranslate nohighlight">\(r^{2}\)</span> is not <em>necessarily</em> <span class="math notranslate nohighlight">\(R^{2}\)</span>. For simple linear regression, <a class="reference external" href="https://stats.stackexchange.com/questions/99669/the-equivalence-of-sample-correlation-and-r-statistic-for-simple-linear-regressi"><span class="math notranslate nohighlight">\(R^{2}=r^{2}\)</span></a>, but when the model lacks an intercept <a class="reference external" href="https://stats.stackexchange.com/questions/134167/is-there-any-difference-between-r2-and-r2#:~:text=In%20the%20case%20of%20simple%20linear%20regression%20specifically%2C,this%20means%20that%20R%20%3D%20%7C%20r%20%7C.">things get more complicated</a>, and unfortunately there are some inconsistencies in the notation.</p></li>
+</ul>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>While it can be computed, <span class="math notranslate nohighlight">\(R^{2}\)</span> is not defined for non-linear models and hence not a good metric for comparing linear models to other regression models <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2892436/">nor for measuring goodness of fit in general</a>.</p>
+</aside>
+<p>While the <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> and similar metrics, e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_absolute_error">MAE</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_absolute_percentage_error">MAPE</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">RMSE</a> have arbitrary ranges compared to which <span class="math notranslate nohighlight">\(R^{2}\)</span> and <span class="math notranslate nohighlight">\(r\)</span> have can be more intuitively understood. <span class="math notranslate nohighlight">\(r\)</span> determines if variables are related, but since ML is more often concerned with how well a model predicts, <span class="math notranslate nohighlight">\(R^{2}\)</span> is more frequently used.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+<span class="c1"># https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score</span>
+
+<span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.76202887109925
+</pre></div>
+</div>
+</div>
+</div>
+<p><span class="math notranslate nohighlight">\(76.2\%\)</span>. Is that good? Here, as with most ML models, our goal is predicting the dependent variable. As opposed to explaining the relationship between the independent and dependent variable; a statistical question for which <span class="math notranslate nohighlight">\(R^{2}\)</span> is mostly irrelevant. To demonstrate how well our model predicts, the closer to <span class="math notranslate nohighlight">\(1\)</span> the better. But what’s close enough? That depends on how precise you need to be. Some fields demand a standard as high as <span class="math notranslate nohighlight">\(95\%\)</span>. However, as a percentage of the dependent variable variation explained by the independent variables, <code class="docutils literal notranslate"><span class="pre">0.76202</span></code> is a big chunk. Here’s a rough, totally unofficial guideline:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong><span class="math notranslate nohighlight">\(R^{2}\)</span></strong></p></th>
+<th class="head"><p>Interpetaion</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\geq 0.75\)</span></p></td>
+<td><p>Significant variance explained!</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\((0.75, .5]\)</span></p></td>
+<td><p>Good amount explained.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\((0.5, .25]\)</span></p></td>
+<td><p>Meh, some explained.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\((0.25, 0)\)</span></p></td>
+<td><p>It’s still better than nothing!</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\leq 0\)</span></p></td>
+<td><p>You’d be better off using the mean.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Conveniently, I’ve defined my model’s performance as a great success 😃.</p>
+</section>
+<section id="margin-of-error">
+<h4>Margin of Error<a class="headerlink" href="#margin-of-error" title="Permalink to this heading">#</a></h4>
+<p>The best way to measure your model’s success depends on what you’re trying to do. Say my flower customers want to predict <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code> (I have no idea why), but any prediction within <code class="docutils literal notranslate"><span class="pre">0.5</span></code> of an inch would be acceptable. That is a “good” prediction, would be any falling with the dashed lines:</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span> <span class="o">=</span> <span class="mf">4.25</span><span class="p">,</span> <span class="mf">7.75</span>
+<span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span> <span class="o">=</span> <span class="mf">4.25</span><span class="p">,</span> <span class="mf">7.75</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">.5</span> <span class="c1"># margin of error</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="n">m</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">m</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y_test  = actual values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y_pre(d = predicted values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.06</span><span class="p">,</span> <span class="s2">&quot;Black dots = actual values paired with predicted values. </span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">    green line = when predicted values equal actual values. </span><span class="se">\n</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">    blue area = margin or error of .5&quot;</span><span class="p">,</span> <span class="n">wrap</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span> <span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="output_plot47.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A blue area .5 above and below the green line shows the margin of error. Most black dots are within the blue areaA caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values.blue area = margin or error of .5."></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">percent_within_moe</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">margin</span><span class="p">):</span>
+    <span class="n">total_correct</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">predict</span> <span class="o">=</span> <span class="n">predict</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span> 
+    <span class="n">actual</span> <span class="o">=</span> <span class="n">actual</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">y_actual</span><span class="p">,</span> <span class="n">y_predict</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span><span class="n">predict</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">y_actual</span> <span class="o">-</span> <span class="n">y_predict</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">margin</span><span class="p">:</span>
+            <span class="n">total_correct</span> <span class="o">=</span> <span class="n">total_correct</span><span class="o">+</span><span class="mi">1</span>
+    <span class="n">percent_correct</span> <span class="o">=</span> <span class="n">total_correct</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">actual</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">percent_correct</span>
+
+<span class="n">percent_within_moe</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="mf">.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.84
+</pre></div>
+</div>
+</div>
+</div>
+<p>So <span class="math notranslate nohighlight">\(84\%\)</span> of predicted test values were within <span class="math notranslate nohighlight">\(\pm .5\)</span> of being correct. In addition to being easy to interpret, this approach can be modified to meet the specific needs of your project. A stock exchange prediction model, for example, predicting within a range or not overpredicting (i.e. predicting a profit when a loss occurs) might matter more than the MSE. It also has the added flexibility of being able to define success.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percent_within_moe</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="train-and-test-other-models">
+<h2>Train and test other models<a class="headerlink" href="#train-and-test-other-models" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>See <a class="reference external" href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning">sklearn’s regression library</a></p></li>
+<li><p>See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metrics</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "ashejim/C964",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jupyter-books-wzpnkdri"
+        },
+        kernelOptions: {
+            name: "jupyter-books-wzpnkdri",
+            path: "./task2_c\example_sup_reg"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jupyter-books-wzpnkdri'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="sup_reg_ex_develop-2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Regression Model Development (part 2)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../task2_doc/task2_doc.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Task 2: The Documentation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-squared-error">Mean Squared Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-explanation-and-example-in-2d">MSE explanation and example in 2D</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-for-multivariable-regression">MSE for Multivariable Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#r-2-r-2-r-and-r"><span class="math notranslate nohighlight">\(R^{2}\)</span>, <span class="math notranslate nohighlight">\(r^{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(r\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#train-and-test-other-models">Train and test other models</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Jim Ashe
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -35,16 +35,18 @@ chapters:
 - file: task1
 - file: task2_c/task2_part_c
   sections:
+  # - file: task2_c/example_sup_reg/sup_methods for future development
   - file: task2_c/example_sup_class/sup_class_ex
     sections:
     - file: task2_c/example_sup_class/sup_class_ex-process
     - file: task2_c/example_sup_class/sup_class_ex-develop
     - file: task2_c/example_sup_class/sup_class_ex-accuracy
     - file: task2_c/example_sup_class/sup_class_ex-ui
-  # - file: task2_c/example_sup_reg/sup_reg_ex
-  #   sections:
-  #   - file: task2_c/example_sup_reg/sup_reg_ex_develop
-  #   - file: task2_c/example_sup_reg/sup_reg_ex_develop-2
+  - file: task2_c/example_sup_reg/sup_reg_ex
+    sections:
+    - file: task2_c/example_sup_reg/sup_reg_ex_develop
+    - file: task2_c/example_sup_reg/sup_reg_ex_develop-2
+    - file: task2_c/example_sup_reg/sup_reg_ex_accuracy
 - file: task2_doc/task2_doc
   sections:
   - file: task2_doc/task2_doc_d
