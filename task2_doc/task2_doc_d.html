@@ -103,6 +103,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'task2_doc/task2_doc_d';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -444,6 +446,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-analysis">Accuracy Analysis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
 </ul>
@@ -511,23 +514,29 @@ document.write(`
 <ul class="simple">
 <li><p><em>What?</em> Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.</p></li>
 </ul>
-<p>-<em>How?</em> Outline your applications implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved.</p>
+<p>-<em>How?</em> Outline your application’s implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved.</p>
 <p>-<em>Why?</em> Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.</p>
 </section>
 <section id="accuracy-analysis">
 <span id="task2-doc-d-accuracy-analysis"></span><h2>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h2>
-<p>In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate <em>metric</em> for assessing accuracy OR providing a development plan for obtaining such a metric in the future.</p>
+<p>In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate <em>metric</em> for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There is <strong>no</strong> minimal accuracy requirement. At most, evaluators will assess the appropriateness of the metric (or planned metric).</p>
 </div>
-<p>Though no minimal accuracy is required, your model should perform better</p>
 <section id="for-supervised-classification-methods">
 <span id="task2d-accuracy-super"></span><h3>For Supervised Classification Methods<a class="headerlink" href="#for-supervised-classification-methods" title="Permalink to this heading">#</a></h3>
+<p>The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:
+$<span class="math notranslate nohighlight">\(\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\)</span>$</p>
+<p>Though no minimal accuracy is required, your model should perform better than randomly selecting categories, e.g., the model predicting 1 of 3 flower types should perform better than <span class="math notranslate nohighlight">\(\frac{1}{3} = 33.3\bar{3}\%\)</span>.</p>
 </section>
 <section id="for-supervised-regression-methods">
 <h3>For Supervised Regression Methods<a class="headerlink" href="#for-supervised-regression-methods" title="Permalink to this heading">#</a></h3>
-<p>STUFF GOES HERE</p>
+<p>As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, <span class="math notranslate nohighlight">\(R^{2}\)</span>, can be used. See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metric documentation</a></p>
+</section>
+<section id="for-reinforced-learning-methods">
+<h3>For Reinforced Learning Methods<a class="headerlink" href="#for-reinforced-learning-methods" title="Permalink to this heading">#</a></h3>
+<p>Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.</p>
 </section>
 </section>
 </section>
@@ -604,6 +613,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-analysis">Accuracy Analysis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
 </ul>
