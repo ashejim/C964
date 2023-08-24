@@ -77,7 +77,7 @@ This section should describe the development of your ML application justifying a
 
 - *What?* Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.
 
--*How?* Outline your applications implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved. 
+-*How?* Outline your application's implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved. 
 
 -*Why?* Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.  
 
@@ -85,18 +85,25 @@ This section should describe the development of your ML application justifying a
 
 ## Accuracy Analysis
 
-In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate *metric* for assessing accuracy OR providing a development plan for obtaining such a metric in the future.
+In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate *metric* for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html).
 
 :::{Note}
 There is **no** minimal accuracy requirement. At most, evaluators will assess the appropriateness of the metric (or planned metric).
 :::
 
-Though no minimal accuracy is required, your model should perform better
-
 (task2d:accuracy:super)=
 
 ### For Supervised Classification Methods
 
+The metric for measuring a supervised classification model's accuracy is straightforward. We use [the ratio of correct to total predictions](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score):
+$$\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}$$
+
+Though no minimal accuracy is required, your model should perform better than randomly selecting categories, e.g., the model predicting 1 of 3 flower types should perform better than $\frac{1}{3} = 33.3\bar{3}\%$.
+
 ### For Supervised Regression Methods
 
-STUFF GOES HERE
+As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, $R^{2}$, can be used. See [sklearn's regression metric documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics)
+
+### For Reinforced Learning Methods
+
+Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.
