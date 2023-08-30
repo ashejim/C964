@@ -479,31 +479,27 @@ document.write(`
 <div class="sd-sphinx-override sd-cards-carousel sd-card-cols-4 docutils" id="task2-doc-d-user-guide-examples">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<a class="reference internal image-reference" href="task2_doc/url_images/user_guide/user_guide1.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="task2_doc/url_images/user_guide/user_guide1.png" style="height: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/user_guide1.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="../_images/user_guide1.png" style="height: 100px;" /></a>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<a class="reference internal image-reference" href="task2_doc/url_images/user_guide/user_guide2.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="task2_doc/url_images/user_guide/user_guide2.png" style="height: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/user_guide2.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="../_images/user_guide2.png" style="height: 100px;" /></a>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<a class="reference internal image-reference" href="task2_doc/url_images/user_guide/user_guide3.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="task2_doc/url_images/user_guide/user_guide3.png" style="height: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/user_guide3.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="../_images/user_guide3.png" style="height: 100px;" /></a>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<a class="reference internal image-reference" href="task2_doc/url_images/user_guide/user_guide4.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="task2_doc/url_images/user_guide/user_guide4.png" style="height: 100px;" /></a>
+<a class="reference internal image-reference" href="../_images/user_guide4.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="../_images/user_guide4.png" style="height: 100px;" /></a>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<a class="reference internal image-reference" href="task2_doc/url_images/user_guide/user_guide5.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="task2_doc/url_images/user_guide/user_guide5.png" style="height: 100px;" /></a>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/user_guide5.png"><img alt="Screenshot of a user guide from a sample task 2 dcoumentation." src="../_images/user_guide5.png" style="height: 100px;" /></a>
 </div>
 </div>
 </div>
@@ -513,9 +509,9 @@ document.write(`
 <p>This section should describe the development of your ML application justifying and explaining decisions made in the process. Explain the <em>what</em>, <em>how</em>, and <em>why</em> of the machine learning model and its application.</p>
 <ul class="simple">
 <li><p><em>What?</em> Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.</p></li>
+<li><p><em>How?</em> Outline your application’s implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved.</p></li>
+<li><p><em>Why?</em> Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.</p></li>
 </ul>
-<p>-<em>How?</em> Outline your application’s implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved.</p>
-<p>-<em>Why?</em> Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.</p>
 </section>
 <section id="accuracy-analysis">
 <span id="task2-doc-d-accuracy-analysis"></span><h2>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h2>
@@ -526,8 +522,9 @@ document.write(`
 </div>
 <section id="for-supervised-classification-methods">
 <span id="task2d-accuracy-super"></span><h3>For Supervised Classification Methods<a class="headerlink" href="#for-supervised-classification-methods" title="Permalink to this heading">#</a></h3>
-<p>The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:
-$<span class="math notranslate nohighlight">\(\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\)</span>$</p>
+<p>The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:</p>
+<div class="math notranslate nohighlight">
+\[\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\]</div>
 <p>Though no minimal accuracy is required, your model should perform better than randomly selecting categories, e.g., the model predicting 1 of 3 flower types should perform better than <span class="math notranslate nohighlight">\(\frac{1}{3} = 33.3\bar{3}\%\)</span>.</p>
 </section>
 <section id="for-supervised-regression-methods">
