@@ -60,6 +60,15 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 >
 </iframe>
 
+#### Student Presentaion
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6
+" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+>
+</iframe>
+
+This presentation was intended for a general audience. 
+
 (resources:task1:data)=
 ### Data
 
