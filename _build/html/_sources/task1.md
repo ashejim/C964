@@ -257,9 +257,9 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 (task1:faq:the_rubric_is_confusing)=
 
-### Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D, but the rubric has "Outcomes" 1-6. How do these align?
+### Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries" and "hypotheses of the project." I'm not certain what actually needs to be done.
 
-*We do not advise directly following the official rubric for C964* (it is under development). Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.
+*We do not advise directly following the official rubric for C964* (it is under development). Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Following this template is helpful (almost necessary) in aligning your documentation and project with the rubric requirements. So while following the template format is not technically required, it is highly recommended.
 
 Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
 
