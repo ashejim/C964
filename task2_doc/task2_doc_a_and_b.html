@@ -103,6 +103,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'task2_doc/task2_doc_a_and_b';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -439,32 +441,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-a">Part A</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#letter-of-transmittal">Letter of Transmittal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-recommendation">Project Recommendation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-summary">Problem Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-benefits">Application Benefits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-description">Data Description</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-and-hypothesis">Objectives and Hypothesis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funding-requirements">Funding Requirements</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-precautions">Data Precautions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#developer-s-expertise">Developer’s Expertise</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-b">Part B</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement">Problem Statement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customer-summary">Customer Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#existing-system-analysis">Existing System Analysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-methodology">Project Methodology</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-outcomes">Project Outcomes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-plan">Implementation Plan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-a-letter-of-transmittal">Part A: Letter of Transmittal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-b-project-proposal">Part B: Project Proposal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-summary">Project Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-summary">Data Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline">Timeline</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-plan">Evaluation Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-costs">Resources and Costs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline-and-milestones">Timeline and Milestones</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a></li>
 </ul>
             </nav>
         </div>
@@ -478,101 +464,108 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="task-2-parts-a-and-b">
 <span id="task2ab"></span><h1>Task 2 parts A and B<a class="headerlink" href="#task-2-parts-a-and-b" title="Permalink to this heading">#</a></h1>
-<p>The point of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg">Task 2 documentation template</a></p>
+<p>The purpose of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg">Task 2 Template</a>.</p>
 <ul class="simple">
-<li><p>Part A - convince general leadership</p></li>
-<li><p>Part B - convince IT leadership (but not CS experts) or middle management.</p></li>
+<li><p>Part A - Convince senior leadership to approve your project.</p></li>
+<li><p>Part B - Implementation plan for IT leadership (but not CS experts) or middle management.</p></li>
 </ul>
-<p>Part D, explains the CS-related aspects of your project and (with the exception of the <span class="xref myst">User Guide</span>) should target the computer science subject matter experts -the evaluators. The evaluators are <em>not</em> business majors, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects like budgets, methodology, and planning parts are not assessed rigorously from a business perspective.</p>
+<p>Part D, explains the CS-related aspects of your project and (with the exception of the <span class="xref myst">User Guide</span>) should target the computer science subject matter experts. This is <em>not</em> a business project, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects such as budgets, methodology, and planning parts are not assessed rigorously from a business perspective.</p>
+<section id="part-a-letter-of-transmittal">
+<span id="task2-parta"></span><h2>Part A: Letter of Transmittal<a class="headerlink" href="#part-a-letter-of-transmittal" title="Permalink to this heading">#</a></h2>
+<p>Write a letter convincing senior leadership to approve your project -a brief cover letter (suggested length 1-2 pages) describing the problem, how the application (part C) applies to the problem, the practical benefits to the organization, and a brief implementation plan. Include all artifacts typical of a professional (business) letter, e.g., subject line, date, greeting, signature, etc. <strong>Write everything in the future tense.</strong></p>
+<p>The letter should be concise and target a non-technical audience. Include the following:</p>
 <ul class="simple">
-<li><p>[Using C951 task 3](TODO ADD LINK)</p></li>
-<li><p>[Examples](TODO ADD LINK)</p></li>
-</ul>
-<section id="part-a">
-<span id="task2-parta"></span><h2>Part A<a class="headerlink" href="#part-a" title="Permalink to this heading">#</a></h2>
-<p>Throughout part A:</p>
-<ul class="simple">
-<li><p>Target the non-technical senior leadership of the organization.</p></li>
-<li><p>Write everything in the future tense.</p></li>
-</ul>
-<p>All page-length recommendations are <em>only suggestions</em>. There is no minimum page requirement, and the rubric only specifies that provided details be complete and logical. The proper content depth depends on your project.</p>
-<section id="letter-of-transmittal">
-<span id="task2-parta-letter"></span><h3>Letter of Transmittal<a class="headerlink" href="#letter-of-transmittal" title="Permalink to this heading">#</a></h3>
-<p>Write a single-page cover letter to the organization’s senior leadership. The letter should be concise and target a non-technical audience. In the letter, do the following:</p>
-<ul class="simple">
-<li><p>Summarize the problem.</p></li>
-<li><p>Recommend a solution centered around your application.</p></li>
-<li><p>Describe how the proposed solution benefits the organization.</p></li>
-<li><p>Estimate of the total dollar cost (this should match the value given in <span class="xref myst">Funding Requirements</span> of part A).</p></li>
-<li><p>Describe the expertise and experience which qualify you to develop the solution.</p></li>
-<li><p>Include all artifacts typical of a professional (business) letter, e.g., subject line, date, greeting, signature, etc. (see <a class="reference internal" href="../resources.html#resources-examples"><span class="std std-ref">task 2 examples</span></a>)</p></li>
+<li><p>A summary of the problem.</p></li>
+<li><p>A proposed solution centering around your application.</p></li>
+<li><p>How the proposed solution benefits the organization.</p></li>
+<li><p>A summary of the costs, timeline, data, and any ethical concerns (if relevant).</p></li>
+<li><p>Your relevant expertise.</p></li>
 </ul>
 </section>
-<section id="project-recommendation">
-<span id="task2-parta-projectrecommendation"></span><h3>Project Recommendation<a class="headerlink" href="#project-recommendation" title="Permalink to this heading">#</a></h3>
-<p>Write a more detailed follow-up to the <a class="reference internal" href="#task2-parta-letter"><span class="std std-ref">transmittal letter</span></a> detailing how your project meets the organizational need(s).</p>
+<section id="part-b-project-proposal">
+<h2>Part B: Project Proposal<a class="headerlink" href="#part-b-project-proposal" title="Permalink to this heading">#</a></h2>
+<p>The project proposal should target your client’s IT leadership or middle management. This audience may be IT professionals but have limited computer science expertise. Use appropriate industry jargon and sufficient technical details to describe the proposed project and its application. Remember, you’re establishing the technical context for your project and how it will be implemented for the client. <strong>Write everything in the future tense.</strong></p>
+<section id="project-summary">
+<h3>Project Summary<a class="headerlink" href="#project-summary" title="Permalink to this heading">#</a></h3>
+<p>Include the following:</p>
+<ul class="simple">
+<li><p>A description of the problem.</p></li>
+<li><p>A summary of the client and their needs as related to the problem.</p></li>
+<li><p>Descriptions of all deliverables. For example, the finished application and a user guide.</p></li>
+<li><p>A summary justifying how the application will benefit the client.</p></li>
+</ul>
+</section>
+<section id="data-summary">
+<h3>Data Summary<a class="headerlink" href="#data-summary" title="Permalink to this heading">#</a></h3>
+<p>Include the following:</p>
+<ul class="simple">
+<li><p>The source of the raw data, how the data will be collected, or how it will be simulated.</p></li>
+<li><p>A description of how data will be processed and managed throughout the application development life cycle: design, development, maintenance, or others.</p></li>
+<li><p>A justification of why the data meets the needs of the project. If relevant, describe how data anomalies, e.g., outliers, incomplete data, etc., will be handled.</p></li>
+<li><p>A list of any ethical or legal concerns regarding the data and how these concerns will be addressed. If there are no concerns, explain why.</p></li>
+</ul>
+</section>
+<section id="implementation">
+<h3>Implementation<a class="headerlink" href="#implementation" title="Permalink to this heading">#</a></h3>
+<p>Include the following:</p>
+<ul class="simple">
+<li><p>A description of an industry-standard methodology to be used.</p></li>
+<li><p>An outline of the project’s implementation plan. The outline can focus on the project’s development as a whole; or it may focus on only the implementation of the machine learning solution.</p></li>
+</ul>
+</section>
+<section id="timeline">
+<h3>Timeline<a class="headerlink" href="#timeline" title="Permalink to this heading">#</a></h3>
+<p>Provide a projected timeline, including projected start dates and end dates for each milestone. Though not strictly required, a table is encouraged:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Milestone or Deliverable</p></th>
+<th class="head"><p>Duration</p></th>
+<th class="head"><p>Projected Start Date</p></th>
+<th class="head"><p>Projected End date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Some milestones</p></td>
+<td><p>7 days</p></td>
+<td><p>7/23/2022</p></td>
+<td><p>7/30/2022</p></td>
+</tr>
+<tr class="row-odd"><td><p>Some deliverables</p></td>
+<td><p>14 days</p></td>
+<td><p>7/16/2022</p></td>
+<td><p>7/30/2022</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This page is still in development, and that’s all I have for this page for now. However, you probably don’t need much advice on these sections. There are few qualitative criteria by which these sections can be assessed. If the items in the template are addressed these sections are very rarely sent back.</p>
+<p><em>All</em> dates must be in the future. Part B is a proposal.</p>
 </div>
-</section>
-<section id="problem-summary">
-<h3>Problem Summary<a class="headerlink" href="#problem-summary" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="application-benefits">
-<h3>Application Benefits<a class="headerlink" href="#application-benefits" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="data-description">
-<h3>Data Description<a class="headerlink" href="#data-description" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="objectives-and-hypothesis">
-<h3>Objectives and Hypothesis<a class="headerlink" href="#objectives-and-hypothesis" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="funding-requirements">
-<h3>Funding Requirements<a class="headerlink" href="#funding-requirements" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="data-precautions">
-<h3>Data Precautions<a class="headerlink" href="#data-precautions" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="developer-s-expertise">
-<h3>Developer’s Expertise<a class="headerlink" href="#developer-s-expertise" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
-<section id="part-b">
-<h2>Part B<a class="headerlink" href="#part-b" title="Permalink to this heading">#</a></h2>
-<section id="problem-statement">
-<h3>Problem Statement<a class="headerlink" href="#problem-statement" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="customer-summary">
-<h3>Customer Summary<a class="headerlink" href="#customer-summary" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="existing-system-analysis">
-<h3>Existing System Analysis<a class="headerlink" href="#existing-system-analysis" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="data">
-<h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="project-methodology">
-<h3>Project Methodology<a class="headerlink" href="#project-methodology" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="project-outcomes">
-<h3>Project Outcomes<a class="headerlink" href="#project-outcomes" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="implementation-plan">
-<h3>Implementation Plan<a class="headerlink" href="#implementation-plan" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="evaluation-plan">
 <h3>Evaluation Plan<a class="headerlink" href="#evaluation-plan" title="Permalink to this heading">#</a></h3>
+<p>Include the following:</p>
+<ul class="simple">
+<li><p>A description of the verification method(s) to be used at each stage of development.</p></li>
+<li><p>A description of the validation method to be used upon completion.</p></li>
+</ul>
+<p><strong>Verification</strong> is testing that your product meets its specifications and requirements. This can include tests, inspections, or methods applying to the code or model. For the latter approaches to avoid overfitting could be included. Verification checks that the product is built correctly.</p>
+<p><strong>Validation</strong> is testing how well the machine learning model performs.</p>
 </section>
 <section id="resources-and-costs">
 <h3>Resources and Costs<a class="headerlink" href="#resources-and-costs" title="Permalink to this heading">#</a></h3>
+<p>Include an itemized list of all resources and costs:</p>
+<ul class="simple">
+<li><p>Itemize hardware and software costs.</p></li>
+<li><p>Itemize estimated labor time and costs.</p></li>
+<li><p>Itemize all estimated application costs, e.g., deployment, hosting, maintenance, etc.</p></li>
+</ul>
 </section>
-<section id="timeline-and-milestones">
-<h3>Timeline and Milestones<a class="headerlink" href="#timeline-and-milestones" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
-<section id="faq">
-<h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -643,32 +636,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-a">Part A</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#letter-of-transmittal">Letter of Transmittal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-recommendation">Project Recommendation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-summary">Problem Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-benefits">Application Benefits</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-description">Data Description</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-and-hypothesis">Objectives and Hypothesis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funding-requirements">Funding Requirements</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-precautions">Data Precautions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#developer-s-expertise">Developer’s Expertise</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-b">Part B</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement">Problem Statement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customer-summary">Customer Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#existing-system-analysis">Existing System Analysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-methodology">Project Methodology</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-outcomes">Project Outcomes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-plan">Implementation Plan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-a-letter-of-transmittal">Part A: Letter of Transmittal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-b-project-proposal">Part B: Project Proposal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-summary">Project Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-summary">Data Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline">Timeline</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-plan">Evaluation Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resources-and-costs">Resources and Costs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline-and-milestones">Timeline and Milestones</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a></li>
 </ul>
   </nav></div>
 

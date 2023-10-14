@@ -10,7 +10,7 @@
 :::
 
 :::{warning}
-On 9/25/2023, C964 was updated to a new version. Though the rubirc and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** Over the next month, this website will be revised to better align with the new version, but all the information here is still relevant.
+On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubirc and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** Over the next month, this website will be revised to better align with the new version, but all the information here is still relevant.
 :::
 
 <!-- :::{warning}
@@ -26,7 +26,7 @@ Welcome! For the Computer Science capstone project, you'll develop and present a
 
 The capstone includes three parts:
 
-1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you started in the right direction.
+1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you starts in the right direction.
 2. **Task 2 part C:** The "app." Develop a working application of machine learning (ML).
 3. **Task 2 parts D, A, & B:** Documentation communicating your product's value and development process to audiences of varying technical understanding.
 
@@ -107,4 +107,4 @@ First, understand the project's requirements. What they are -and what they aren'
 
 And review the [What does the application need to do?](https://ashejim.github.io/C964/task2_part_c.html#what-does-the-application-need-to-do) section and part C of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
 
-Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and *C951 -Intro to AI* tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by yout assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
+Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and *C951 -Intro to AI* tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by your assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
