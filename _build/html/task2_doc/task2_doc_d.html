@@ -442,13 +442,16 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-guide">User Guide</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-product-code">Data Product Code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-analysis">Accuracy Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning">Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-summary">Solution Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-summary">Data Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizations">Visualizations</a></li>
 </ul>
             </nav>
         </div>
@@ -462,19 +465,19 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="task-2-part-d">
 <h1>Task 2 Part D<a class="headerlink" href="#task-2-part-d" title="Permalink to this heading">#</a></h1>
-<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter expert, i.e., the evaluators. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <a class="reference internal" href="#task2d-dataproduct"><span class="std std-ref">Data Product Code</span></a>, <span class="xref myst">Accuracy Analysis</span>, and <span class="xref myst">User Guide</span> are the most important. As such, we recommend completing these sections first.</p>
+<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <span class="xref myst">User Guide</span>, <a class="reference internal" href=".history/task2_doc_d_20231012154706.html#task2d-ml"><span class="std std-ref">Machine Learning</span></a>, and <span class="xref myst">Validation</span> sections are the most important. As such, we recommend completing these sections first. Follow the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg">Task 2 Template</a>.</p>
 <section id="user-guide">
 <span id="task2-doc-d-user-guide"></span><h2>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this heading">#</a></h2>
-<p>The evaluator might go here first. Following your instructions, they will run your app, simultaneously verifying it runs as intended and gaining context of its purpose through demonstration.</p>
-<p>Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your application. The evaluator will play the “client” role and follow your instructions as provided. So make them “dummy” proof. You should include instructions for downloading and installing any necessary software or libraries (they’ll have most of these installed anyways). Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions.</p>
+<p>The evaluator might go here first. Following your instructions, they will verify your app functions as intended and simultaneously gain context of its purpose through demonstration.</p>
+<p>Include an enumerated (steps 1, 2, 3, etc.) guide on how to execute and use your application. The evaluator will play the “client” role and follow your instructions as provided. So you should include instructions for downloading and installing any necessary software or libraries (they’ll have most of these installed anyway). Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions.</p>
 <ul class="simple">
 <li><p><strong>Provide examples.</strong> Examples not only make the instructions easier to follow (hence easier to pass) but also demonstrate how the app solves the organizational need. When applicable provide sample input or input which can be copied and pasted.</p></li>
+<li><p><strong>Provide visual aides.</strong> Screenshots or even a Panotpo video would all be great ways in aiding the evaluator’s understanding of your project.</p></li>
 <li><p><strong>Test.</strong> Create a new environment or borrow a friend’s computer, follow your instructions verbatim, and verify that everything works as expected. It’s easy to overlook small details.</p></li>
 </ul>
-<!-- FIX THIS FAQ link: [Task 2 part C FAQ](task2c:FAQ) -->
 <aside class="margin sidebar">
 <p class="sidebar-title">No Windows machine?</p>
-<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">user guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsysem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <span class="xref myst">Task 2 part C FAQ</span> for more details.</p>
+<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">User Guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <span class="xref myst">Task 2 part C FAQ</span> for more details.</p>
 </aside>
 <div class="sd-sphinx-override sd-cards-carousel sd-card-cols-4 docutils" id="task2-doc-d-user-guide-examples">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -504,8 +507,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="data-product-code">
-<span id="task2d-dataproduct"></span><h2>Data Product Code<a class="headerlink" href="#data-product-code" title="Permalink to this heading">#</a></h2>
+<section id="machine-learning">
+<span id="task2-doc-d-ml"></span><h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this heading">#</a></h2>
 <p>This section should describe the development of your ML application justifying and explaining decisions made in the process. Explain the <em>what</em>, <em>how</em>, and <em>why</em> of the machine learning model and its application.</p>
 <ul class="simple">
 <li><p><em>What?</em> Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.</p></li>
@@ -513,8 +516,8 @@ document.write(`
 <li><p><em>Why?</em> Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.</p></li>
 </ul>
 </section>
-<section id="accuracy-analysis">
-<span id="task2-doc-d-accuracy-analysis"></span><h2>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h2>
+<section id="validation">
+<span id="task2-doc-d-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this heading">#</a></h2>
 <p>In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate <em>metric</em> for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -529,12 +532,24 @@ document.write(`
 </section>
 <section id="for-supervised-regression-methods">
 <h3>For Supervised Regression Methods<a class="headerlink" href="#for-supervised-regression-methods" title="Permalink to this heading">#</a></h3>
-<p>As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, <span class="math notranslate nohighlight">\(R^{2}\)</span>, can be used. See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metric documentation</a></p>
+<p>As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, <span class="math notranslate nohighlight">\(R^{2}\)</span>, can be used. See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metric documentation</a>. As above there is no performance benchmark, but the model should at predict at least as well as thaking the mean.</p>
 </section>
 <section id="for-reinforced-learning-methods">
 <h3>For Reinforced Learning Methods<a class="headerlink" href="#for-reinforced-learning-methods" title="Permalink to this heading">#</a></h3>
 <p>Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.</p>
 </section>
+</section>
+<section id="solution-summary">
+<h2>Solution Summary<a class="headerlink" href="#solution-summary" title="Permalink to this heading">#</a></h2>
+<p>Summarize the problem and solution. Describe how the application (Part C) supports a solution to the problem presented in parts A and B.</p>
+</section>
+<section id="data-summary">
+<h2>Data Summary<a class="headerlink" href="#data-summary" title="Permalink to this heading">#</a></h2>
+<p>Provide the source of the rwa data, how the data was collected, or how it was simulated. Include a description of how data was processed and managed throughtout the application development life cycle: design, development, maintenance, or others.</p>
+</section>
+<section id="visualizations">
+<h2>Visualizations<a class="headerlink" href="#visualizations" title="Permalink to this heading">#</a></h2>
+<p>Identify the location of at least three unique imgaes in part C. Part or all of those images can also be included in this section. Tehcnically the visualizations are required to be part of the application. However, often this is not desirable, say when the app is intended to customer facing. So it is allowable to submit the code provindg the visualization separate from the main application code. Recall, images can be generated by the code or inserted as static images.</p>
 </section>
 </section>
 
@@ -606,13 +621,16 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-guide">User Guide</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-product-code">Data Product Code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-analysis">Accuracy Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning">Machine Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution-summary">Solution Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-summary">Data Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizations">Visualizations</a></li>
 </ul>
   </nav></div>
 

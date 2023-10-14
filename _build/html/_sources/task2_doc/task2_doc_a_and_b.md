@@ -3,89 +3,86 @@
 
 # Task 2 parts A and B
 
-The point of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+The purpose of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
 
-- Part A - convince general leadership
-- Part B - convince IT leadership (but not CS experts) or middle management.
+- Part A - Convince senior leadership to approve your project.
+- Part B - Implementation plan for IT leadership (but not CS experts) or middle management.
 
-Part D, explains the CS-related aspects of your project and (with the exception of the [User Guide](task2d:userguide)) should target the computer science subject matter experts -the evaluators. The evaluators are *not* business majors, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects like budgets, methodology, and planning parts are not assessed rigorously from a business perspective. 
+Part D, explains the CS-related aspects of your project and (with the exception of the [User Guide](task2d:userguide)) should target the computer science subject matter experts. This is *not* a business project, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects such as budgets, methodology, and planning parts are not assessed rigorously from a business perspective.
 
-- [Using C951 task 3](TODO ADD LINK)
-- [Examples](TODO ADD LINK)
 
 (task2:parta)=
 
-## Part A
-Throughout part A:
+## Part A: Letter of Transmittal
 
-- Target the non-technical senior leadership of the organization.
+Write a letter convincing senior leadership to approve your project -a brief cover letter (suggested length 1-2 pages) describing the problem, how the application (part C) applies to the problem, the practical benefits to the organization, and a brief implementation plan. Include all artifacts typical of a professional (business) letter, e.g., subject line, date, greeting, signature, etc. **Write everything in the future tense.**
 
-- Write everything in the future tense.
+The letter should be concise and target a non-technical audience. Include the following:
 
-All page-length recommendations are *only suggestions*. There is no minimum page requirement, and the rubric only specifies that provided details be complete and logical. The proper content depth depends on your project. 
+- A summary of the problem.
+- A proposed solution centering around your application.
+- How the proposed solution benefits the organization.
+- A summary of the costs, timeline, data, and any ethical concerns (if relevant).
+- Your relevant expertise.
 
-(task2:parta:letter)=
+## Part B: Project Proposal
 
-### Letter of Transmittal
+The project proposal should target your client’s IT leadership or middle management. This audience may be IT professionals but have limited computer science expertise. Use appropriate industry jargon and sufficient technical details to describe the proposed project and its application. Remember, you’re establishing the technical context for your project and how it will be implemented for the client. **Write everything in the future tense.**
 
-Write a single-page cover letter to the organization’s senior leadership. The letter should be concise and target a non-technical audience. In the letter, do the following: 
+### Project Summary
 
-- Summarize the problem.
+Include the following:
 
-- Recommend a solution centered around your application.
+- A description of the problem.
+- A summary of the client and their needs as related to the problem.
+- Descriptions of all deliverables. For example, the finished application and a user guide.
+- A summary justifying how the application will benefit the client.  
 
-- Describe how the proposed solution benefits the organization.
+### Data Summary
 
-- Estimate of the total dollar cost (this should match the value given in [Funding Requirements](task2:parta:funding) of part A).
+Include the following:
 
-- Describe the expertise and experience which qualify you to develop the solution.  
+- The source of the raw data, how the data will be collected, or how it will be simulated.  
+- A description of how data will be processed and managed throughout the application development life cycle: design, development, maintenance, or others.
+- A justification of why the data meets the needs of the project. If relevant, describe how data anomalies, e.g., outliers, incomplete data, etc., will be handled.
+- A list of any ethical or legal concerns regarding the data and how these concerns will be addressed. If there are no concerns, explain why.  
 
-- Include all artifacts typical of a professional (business) letter, e.g., subject line, date, greeting, signature, etc. (see [task 2 examples](resources:examples))
+### Implementation
 
-(task2:parta:projectrecommendation)=
+Include the following:
 
-### Project Recommendation
+- A description of an industry-standard methodology to be used.
+- An outline of the project’s implementation plan. The outline can focus on the project’s development as a whole; or it may focus on only the implementation of the machine learning solution.
 
-Write a more detailed follow-up to the [transmittal letter](task2:parta:letter) detailing how your project meets the organizational need(s).
+### Timeline
 
-:::{note}
-This page is still in development, and that's all I have for this page for now. However, you probably don't need much advice on these sections. There are few qualitative criteria by which these sections can be assessed. If the items in the template are addressed these sections are very rarely sent back.
-:::
+Provide a projected timeline, including projected start dates and end dates for each milestone. Though not strictly required, a table is encouraged:
 
-### Problem Summary
+|Milestone or Deliverable  |Duration  | Projected Start Date| Projected End date
+--- | --- | ---| ---|
+|Some milestones |7 days|7/23/2022|7/30/2022|
+|Some deliverables |14 days|7/16/2022|7/30/2022|
+|$\vdots$ |$\vdots$ |$\vdots$ |$\vdots$ |
 
-### Application Benefits
-
-### Data Description
-
-### Objectives and Hypothesis
-
-### Funding Requirements
-
-### Data Precautions
-
-### Developer's Expertise
-
-## Part B
-
-### Problem Statement
-
-### Customer Summary
-
-### Existing System Analysis
-
-### Data
-
-### Project Methodology
-
-### Project Outcomes
-
-### Implementation Plan
+```{note}
+*All* dates must be in the future. Part B is a proposal.
+```
 
 ### Evaluation Plan
 
+Include the following:
+
+- A description of the verification method(s) to be used at each stage of development.
+- A description of the validation method to be used upon completion.
+
+**Verification** is testing that your product meets its specifications and requirements. This can include tests, inspections, or methods applying to the code or model. For the latter approaches to avoid overfitting could be included. Verification checks that the product is built correctly.
+
+**Validation** is testing how well the machine learning model performs.
+
 ### Resources and Costs
 
-### Timeline and Milestones
+Include an itemized list of all resources and costs:
 
-## FAQ
+- Itemize hardware and software costs.
+- Itemize estimated labor time and costs.
+- Itemize all estimated application costs, e.g., deployment, hosting, maintenance, etc.

@@ -416,7 +416,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -432,6 +434,28 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-task-2-the-document-parts-a-b-and-d">Submitting Task 2, the document (parts A, B, and D)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-task-2-the-code-part-c">Submitting Task 2, the code (part C)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-all-or-part-of-the-application-is-online">What if all or part of the application is online?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-the-project-files-exceed-200-mb">What if the project files exceed 200 MB?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-large-data-sets">For large data sets</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-large-saved-models">For large saved models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar-and-sources">Grammar and Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar">Grammar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -443,7 +467,83 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="task-2-final-touches">
 <h1>Task 2 final touches<a class="headerlink" href="#task-2-final-touches" title="Permalink to this heading">#</a></h1>
-<p>STUFF GOES HERE</p>
+<section id="submitting-task-2-the-document-parts-a-b-and-d">
+<span id="task2-doc-finish-how-to-submit"></span><h2>Submitting Task 2, the document (parts A, B, and D)<a class="headerlink" href="#submitting-task-2-the-document-parts-a-b-and-d" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Use the <a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg">Task 2 Template</a>.</p></li>
+<li><p>Check Grammar!!</p></li>
+<li><p>Check adherence to APA formatting, particularly citations. Preserve the formatting of the template and use the MS reference tool, and this shouldn’t be a problem.</p></li>
+<li><p>Export parts A, B, and D as a <em>single</em> .pdf file.</p></li>
+<li><p><em>Always upload the document</em> separately from the code. It should be easily, identified.</p></li>
+</ol>
+</section>
+<section id="submitting-task-2-the-code-part-c">
+<span id="task2-doc-finish-grammar"></span><h2>Submitting Task 2, the code (part C)<a class="headerlink" href="#submitting-task-2-the-code-part-c" title="Permalink to this heading">#</a></h2>
+<p>Three things are required:</p>
+<ol class="arabic simple">
+<li><p>Evaluators can access everything needed to recreate your application. This includes access to data, source files, and all software requirements.</p></li>
+<li><p>For any materials modifiable after submission, e.g., webpage links, hosted notebooks, etc., you must upload the sources files.</p></li>
+<li><p>Uploaded files cannot exceed 200 MB in total.</p></li>
+</ol>
+<p>The second requirement is to ensure there is a static record for the Evaluation team and Assessment’s records. But you can still expect evaluators to view links representing the polished finished application. When submitting, consider making it as easy as possible to review your application -webpages and hosted notebooks are a great way to do this and always appreciated by evaluators, and are encouraged -just submit the source files as directed below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may receive a warning when submitting .ipynb (Jupyter), Python, or other source files. Submitting these files is permitted, and the warning can be ignored.</p>
+</div>
+<section id="what-if-all-or-part-of-the-application-is-online">
+<h3>What if all or part of the application is online?<a class="headerlink" href="#what-if-all-or-part-of-the-application-is-online" title="Permalink to this heading">#</a></h3>
+<p>If some or all of your application is online, then you should submit the necessary link(s) AND the minimal source files needed to recreate the project locally. For example,</p>
+<ul class="simple">
+<li><p>If the application is a Jupyter Notebook hosted on Google Colab, submit the Colab link AND the .ipynb and any necessary data files.</p></li>
+<li><p>If the application is a webpage, submit the web link AND the necessary .html files.</p></li>
+<li><p>If the trained model is stored in a cloud drive, provide the link AND the source code needed to train the model.</p></li>
+</ul>
+<p>It is acceptable to have code import data or submit links provide the source can’t be modified, such as links from <a class="reference external" href="http://Kaggle.com">Kaggle.com</a>.</p>
+</section>
+<section id="what-if-the-project-files-exceed-200-mb">
+<h3>What if the project files exceed 200 MB?<a class="headerlink" href="#what-if-the-project-files-exceed-200-mb" title="Permalink to this heading">#</a></h3>
+<p>Projects over 200 MB typically result from large datasets or saved models.</p>
+<section id="for-large-data-sets">
+<h4>For large data sets<a class="headerlink" href="#for-large-data-sets" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>If the data source doesn’t belong to you, your code can import the data directly (preferred) or instruct the evaluator to download the data.</p></li>
+<li><p>You can upload a smaller subset of the data. Your documentation and presentation of the application can still be based on the full dataset.</p></li>
+</ul>
+</section>
+<section id="for-large-saved-models">
+<h4>For large saved models<a class="headerlink" href="#for-large-saved-models" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Check to see if the serialization can be compressed. For example, <a class="reference external" href="https://joblib.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">joblib</span></code></a> has a <code class="docutils literal notranslate"><span class="pre">compress</span></code> argument. However, most serialization methods use a relatively compact method by default.</p></li>
+<li><p>Upload all the source code and provide instructions for the evaluator to train the model locally. If training are very time or resource consuming, provide a link to download the model for the evaluator’s convenience.</p></li>
+</ul>
+<p>If none of the above work, please contact your course instructor so they can help work out a solution.</p>
+</section>
+</section>
+</section>
+<section id="grammar-and-sources">
+<h2>Grammar and Sources<a class="headerlink" href="#grammar-and-sources" title="Permalink to this heading">#</a></h2>
+<section id="grammar">
+<h3>Grammar<a class="headerlink" href="#grammar" title="Permalink to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Grammar and sources are the <em>most common</em> reason for returned submissions! Even minor grammatical errors can prevent a submission from passing.</p>
+</div>
+<p>After focusing on the content, check your grammar using <a class="reference external" href="https://www.grammarly.com/">Grammarly.com</a> <img alt="grmmarly" src="https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon" /> (it’s what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in <em>Professional Communication</em>. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise that you copy and paste it into the online app or purchase the premium version for MS Word.</p>
+</div>
+</section>
+<section id="sources">
+<span id="task2-doc-finish-sources"></span><h3>Sources<a class="headerlink" href="#sources" title="Permalink to this heading">#</a></h3>
+<p>For sources, you should follow <a class="reference external" href="https://apastyle.apa.org/style-grammar-guidelines">APA guidelines</a>. Avoid errors by using the <a class="reference external" href="https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5">MS Word Reference Tool</a> to create and manage references.</p>
+<ul class="simple">
+<li><p>No references are required.</p></li>
+<li><p>All sources on the reference page must have a matching in-text citation, e.g., (Author, year)</p></li>
+<li><p>To cite sources used for code, you should include the referfences as code comments within the source code.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -504,6 +604,34 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-task-2-the-document-parts-a-b-and-d">Submitting Task 2, the document (parts A, B, and D)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-task-2-the-code-part-c">Submitting Task 2, the code (part C)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-all-or-part-of-the-application-is-online">What if all or part of the application is online?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-the-project-files-exceed-200-mb">What if the project files exceed 200 MB?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-large-data-sets">For large data sets</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-large-saved-models">For large saved models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar-and-sources">Grammar and Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar">Grammar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

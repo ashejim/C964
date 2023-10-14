@@ -1,0 +1,1 @@
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QItemize estimated environment costs of the application, e.g., deployment, hosting, maintenance, etc.\\E$"}
