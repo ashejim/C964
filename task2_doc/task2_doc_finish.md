@@ -11,7 +11,7 @@
 4. Export parts A, B, and D as a *single* .pdf file.
 5. *Always upload the document* separately from the code. It should be easily, identified.
 
-(task2_doc_finish:grammar)=
+(task2_doc_finish:how_to_submit_code)=
 
 ## Submitting Task 2, the code (part C)
 
@@ -35,7 +35,7 @@ If some or all of your application is online, then you should submit the necessa
 - If the application is a webpage, submit the web link AND the necessary .html files.
 - If the trained model is stored in a cloud drive, provide the link AND the source code needed to train the model.
 
-It is acceptable to have code import data or submit links provide the source can't be modified, such as links from Kaggle.com.
+It is acceptable to have code import data or submit links provide the source can't be modified, such as links from Kaggle.com. Never use Google Drive, as WGU policy forbids WGU employees from using it. Use of Google Colab is acceptable, but upload the source code as directed above.
 
 ### What if the project files exceed 200 MB?
 
@@ -54,6 +54,8 @@ Projects over 200 MB typically result from large datasets or saved models.
 If none of the above work, please contact your course instructor so they can help work out a solution.
 
 ## Grammar and Sources
+
+(task2_doc_finish:grammar)=
 
 ### Grammar
 
