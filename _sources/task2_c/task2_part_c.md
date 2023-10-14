@@ -452,13 +452,13 @@ No, a GUI is *not* required. Your app must be usable by the "client" to solve th
 
 ### My project exceeds the 200 MB limit. How can I submit it?
 
-As you might guess, this is a common issue. Many models and datasets will exceed the 200 MB upload limit. Evaluators need *access* to everything necessary to develop and run your project, and those files cannot be modifiable after being submitted.
+This is covered in more detail [here](task2_doc_finish:how_to_submit_code). As you might guess, this is a common issue. Many models and datasets will exceed the 200 MB upload limit. Evaluators need *access* to everything necessary to develop and run your project, and those files cannot be modifiable after being submitted.
 
-For webpages or hosted Jupyer notebooks, submit the url link but also submit the html or .ipynb files. For large models, provide instructions and code to locally build the model and how access to the data as described as above. If build times are long, you might provide a link to the completed model as a courtesy to the evaluator. 
+For webpages or hosted Jupyter notebooks, submit the url link but also submit the html or .ipynb files. For large models, provide instructions and code to locally build the model and how access to the data as described as above. If build times are long, you might provide a link to the completed model as a courtesy to the evaluator. 
 
-Always submit the data directly if it is less than 200 MB. For larger data sets not modifiable by the student (e.g., data from Kaggle.com, Data.gov, sklearn, etc.), it is acceptable to submit a link for the data source or import the data directly with your code. For large data sets modifable by the student (say in a GitHub repo), then you should provide a subset of the data not exceeding the 200 MB limit. The project's documnetation and performance assessment should be based on the full data.
+Always submit the data directly if it is less than 200 MB. For larger data sets not modifiable by the student (e.g., data from Kaggle.com, Data.gov, sklearn, etc.), it is acceptable to submit a link for the data source or import the data directly with your code. For large data sets modifiable by the student (say in a GitHub repo), then you should provide a subset of the data not exceeding the 200 MB limit. The project's documentation and performance assessment should be based on the full data.
 
-Never use Google Drive, as WGU policy forbids WGU employess from using it. Use of Google Colab is acceptable, but upload the source code as directed above.
+Never use Google Drive, as WGU policy forbids WGU employees from using it. Use of Google Colab is acceptable, but upload the source code as directed above.
 
 <!-- %%also in doc FAQ -->
 (task2_part_c:faq:i_only_have_a_linux_or_mac_machine)=

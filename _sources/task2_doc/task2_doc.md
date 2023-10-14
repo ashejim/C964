@@ -12,7 +12,7 @@ The content here for parts A, B, and D aligns with the latest version of the Tas
 (task2_doc)=
 
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
-> [![Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
+> [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
 
 :::{warning}
 *The rubric is currently under development.* If you find the rubric difficult to understand, we recommend first referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
