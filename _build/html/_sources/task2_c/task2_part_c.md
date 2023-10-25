@@ -454,7 +454,7 @@ No, a GUI is *not* required. Your app must be usable by the "client" to solve th
 
 This is covered in more detail [here](task2_doc_finish:how_to_submit_code). As you might guess, this is a common issue. Many models and datasets will exceed the 200 MB upload limit. Evaluators need *access* to everything necessary to develop and run your project, and those files cannot be modifiable after being submitted.
 
-For webpages or hosted Jupyter notebooks, submit the url link but also submit the html or .ipynb files. For large models, provide instructions and code to locally build the model and how access to the data as described as above. If build times are long, you might provide a link to the completed model as a courtesy to the evaluator. 
+For webpages or hosted Jupyter notebooks, submit the url link (provide the link and instructions for your app in your user guide of part D) but also submit the html or .ipynb files. For large models, provide instructions and code to locally build the model and how access to the data as described as above. If build times are long, you might provide a link to the completed model as a courtesy to the evaluator.
 
 Always submit the data directly if it is less than 200 MB. For larger data sets not modifiable by the student (e.g., data from Kaggle.com, Data.gov, sklearn, etc.), it is acceptable to submit a link for the data source or import the data directly with your code. For large data sets modifiable by the student (say in a GitHub repo), then you should provide a subset of the data not exceeding the 200 MB limit. The project's documentation and performance assessment should be based on the full data.
 
@@ -494,7 +494,7 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
-<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
 {cite}`WikiTSPimage`
 
@@ -516,11 +516,37 @@ Here are some points to consider:
 
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be the best option.
 
-### Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries." The directions have parts A, B, C, and D, but the rubric has "Outcomes" 1-6. How do these align?
+### The rubric is vague and refers to the task directions which seem to require many redundant or unnecessary items. What do I actually need to do?
 
-*We do not advise directly following the official rubric for C964* (it is under development). Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Because of the ambiguity of the official rubric (how do directions A-D align with Outcomes 1-6?), following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.
+Your C964 course instructor team has collaborated with evaluators (thank you evaluator team!) to ensure the explanations on this webpage align with how the assessment's requirements are interpreted by the evaluators. So if you find the official directions unclear, we advise following the directions on this webpage for both the application (part C) and the documentation (parts A, B, and D). 
 
-Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+The official rubric and directions were written to map the project's elements to specific competencies, and following the official directions will meet all the requirements. However, be aware that many items are redundant or inherently met by other items. For example, in part C:
+
+- The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
+- Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
+- As any ML method is an algorithm, the requirements to implement both is redundant.
+- Etc., etc.
+
+Furthermore, some terminology is open to interpretation and nowhere rigorously defined. The official directions potentially have similar issues. So following the official directions without further guidance could result in overworking some requirements or misinterpreting others. For a more succinct outline of the Task 2 requirements see:
+
+- [**Part C requirements**](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do)
+- [**Parts A, B, and D requirements**](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation)
+
+For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+
+If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
+
+### The official learning resource seems to include documentation items not included on this webpage. Which should I follow?
+
+Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators (thank you evaluator team!) to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
+
+The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
+
+### Help! I've never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?
+
+WGU provides access to a very good [AI textbook which includes a Machine Learning](https://lrps.wgu.edu/provision/386121824) section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU's BSCS curriculum.
+
+If you have time, Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
 
 ## Questions, comments, or suggestions?
 

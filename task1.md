@@ -221,11 +221,11 @@ No, not unless it's an entirely different topic. Minor changes from task 1 to ta
 You can use any of your work or academic projects (at WGU or elsewhere), provided no proprietary information is used without permission. Don't worry about self-plagiarism, as the similarity check will identify and ignore it. Just as in reusing work projects, expect to modify and remold past academic assignments to meet the project requirements.
 
 <!-- resume check here 6/8/2023 15:30 -->
-(task1:faq:can_i_use_my_c951_task_3)=
+(task1:faq:can_i_use_my_c950)=
 
 ### Can I use my C950 project for C964?
 
-Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C). Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). Though the document (Task 2 parts A, B, and D) will need some adjustment, the coding portion of C950 almost meets all the requirements of the C964 application (Task 2 part C) -it only lacks visualizations. Referring to the [Task 2 part C page](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do), the C964 application needs the following:
 
 1. **Data → ML model:** C950 applies a reinforced learning algorithm to the distance and package data.
 
@@ -233,11 +233,11 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 3. **Visualizations:** This will need to be added, but any three pictures will meet the requirements.
 
-4. **User Application:** The require console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
+4. **User Application:** The console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
 
-So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delvivered together, and it will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
-<img src="./_images/simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
 {cite}`WikiTSPimage`
 
@@ -257,11 +257,37 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 (task1:faq:the_rubric_is_confusing)=
 
-### Help, the rubric is confusing! The directions seem to require items outside the scope of the project, e.g., "implementation of interactive queries" and "hypotheses of the project." I'm not certain what actually needs to be done.
+### The rubric is vague and refers to the task directions which seem to require many redundant or unnecessary items. What do I actually need to do?
 
-*We do not advise directly following the official rubric for C964* (it is under development). Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ). Following this template is helpful (almost necessary) in aligning your documentation and project with the rubric requirements. So while following the template format is not technically required, it is highly recommended.
+Your C964 course instructor team has collaborated with evaluators (thank you evaluator team!) to ensure the explanations on this webpage align with how the assessment's requirements are interpreted by the evaluators. So if you find the official directions unclear, we advise following the directions on this webpage for both the application (part C) and the documentation (parts A, B, and D). 
 
-Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+The official rubric and directions were written to map the project's elements to specific competencies, and following the official directions will meet all the requirements. However, be aware that many items are redundant or inherently met by other items. For example, in part C:
+
+- The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
+- Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
+- As any ML method is an algorithm, the requirements to implement both is redundant.
+- Etc., etc.
+
+Furthermore, some terminology is open to interpretation and nowhere rigorously defined. The official directions potentially have similar issues. So following the official directions without further guidance could result in overworking some requirements or misinterpreting others. For a more succinct outline of the Task 2 requirements see:
+
+- [**Part C requirements**](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do)
+- [**Parts A, B, and D requirements**](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation)
+
+For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+
+If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
+
+### The official learning resource seems to include documentation items not included on this webpage. Which should I follow?
+
+Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators (thank you evaluator team!) to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
+
+The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
+
+### Help! I've never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?
+
+WGU provides access to a very good [AI textbook which includes a Machine Learning](https://lrps.wgu.edu/provision/386121824) section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU's BSCS curriculum.
+
+If you have time, Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
 
 ### Do I need an "electronic signature" as specified in the official rubric?
 
@@ -290,7 +316,7 @@ Anything that infers from the data, e.g., making predictions, recommendations, i
 
 Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied.
 
-### What is machine learning?
+### What is machine learning (ML)?
 
 That depends on who you ask! But for this project, it is an algorithm applied to data.
 
