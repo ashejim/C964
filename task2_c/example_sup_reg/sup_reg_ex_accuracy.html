@@ -570,7 +570,7 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="accuracy-analysis">
 <span id="sup-reg-ex-develop-accuracy"></span><h1>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h1>
-<p>In the <a class="reference internal" href="../../task2_doc/.history/task2_doc_d_20231012154636.html#task2-doc-d-accuracy-analysis"><span class="std std-ref">Accuracy Analysis section of part D</span></a> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.</p>
+<p>In the <span class="xref myst">Accuracy Analysis section of part D</span> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.</p>
 <p>As we are trying to predict a continuous number, even the very best model will have errors in almost every prediction (if not, it’s almost certainly <a class="reference external" href="https://en.wikipedia.org/wiki/Overfitting">overfitted</a>). Whereas measuring the success of our classification model was a simple ratio, here we need a way to measure how much those predictions deviate from actual values. See sklearn’s list of <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">metrics and scoring</a> for regression. Which metric is best depends on the needs of your project. However, any accuracy metric appropriate to your model will be accepted.</p>
 <p>To get some examples started, we’ll use the data (with <code class="docutils literal notranslate"><span class="pre">type</span></code> and model from the previous sections. Recall, the model predicts a number for <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code>.</p>
 <div class="cell docutils container">
@@ -645,7 +645,7 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot6.png" alt="A scatterplot with a regression line is shown.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
+<div class="output text_html"><img src="output_plot0.png" alt="A scatterplot with a regression line is shown.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
 </div>
 <p>The error squared looks like:</p>
 <div class="cell tag_hide-input tag_remove-output docutils container">
@@ -685,7 +685,7 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot7.png" alt="A scatterplot with a regression line and error squares is shown.Red squares showing error measurement between the black and blue dots are shown onThe previous image. Keep reading for the full description.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
+<div class="output text_html"><img src="output_plot1.png" alt="A scatterplot with a regression line and error squares is shown.Red squares showing error measurement between the black and blue dots are shown onThe previous image. Keep reading for the full description.The x-axis is labeled sepal-length and has a range of 4.5 to 8.0.The y-axis is labeled petal-length and has a range 1 to 7.15 black points are on the graph group around an upward-sloping blue regression line.Each black point has a matching blue point on the blue regression line.A caption below the image reads: Black dots = actual values; blue dots = predicted value."></div></div>
 </div>
 <p>Increasing the number of variables uses the same concept only the regression line becomes multi-dimensional. For example, additionally, including ‘sepal-length’ and ‘petal-length’ creates a <em>4-dimensional</em> line. So it’s a little hard to visualize. Using the squares of the errors is standard but ME is sometimes easier for non-technical audiences to understand.</p>
 <section id="mse-for-multivariable-regression">
@@ -714,7 +714,7 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot8.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values."></div></div>
+<div class="output text_html"><img src="output_plot2.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values."></div></div>
 </div>
 </section>
 <section id="r-2-r-2-r-and-r">
@@ -807,7 +807,7 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="output_plot9.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A blue area .5 above and below the green line shows the margin of error. Most black dots are within the blue areaA caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values.blue area = margin or error of .5."></div></div>
+<div class="output text_html"><img src="output_plot3.png" alt="A scatterplot with a green line is shown.The x-axis is labeled y_test = actual values and has a range of 4.25 to 7.75.The y-axis is labeled y_pred = predicted values and has a range 4.25 to 7.75.50 black dots are predicted values paired with test values.A green line bisects the graph at a 45-degree angle running from the lower-left to the upper-right corner.The black dots are scattered around the green line indicating a positive correlation.A blue area .5 above and below the green line shows the margin of error. Most black dots are within the blue areaA caption below the image reads: Black dots = actual values paired with predicted values. Green line = when predicted values equal actual values.blue area = margin or error of .5."></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
