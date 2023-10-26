@@ -1,9 +1,8 @@
 @echo off
+cd D:\OneDrive - Western Governors University\jupyter-books\C964
+FOR /d /r . %%d IN (.history) DO @IF EXIST "%%d" rd /s /q "%%d"
+DEL /S /Q "D:\OneDrive - Western Governors University\jupyter-books\C964\output_plot*.png"
 SET /P Message=Enter git C964 commit comment: 
-del /q "D:\OneDrive - Western Governors University\jupyter-books\C964\.history\*"
-FOR /D %%p IN ("D:\OneDrive - Western Governors University\jupyter-books\C964\.history\*.*") DO rmdir "%%p" /s /q
-del /q "D:\OneDrive - Western Governors University\jupyter-books\C964\_build\html\.history\*"
-FOR /D %%p IN ("D:\OneDrive - Western Governors University\jupyter-books\C964\_build\html\.history\*.*") DO rmdir "%%p" /s /q
 title compile html, save to repo folder, update GitHub repo and website
 jupyter-book build --all "D:\OneDrive - Western Governors University\jupyter-books\C964"
 echo "Compiling local D:\OneDrive - Western Governors University\jupyter-books\C964 ..."
