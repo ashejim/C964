@@ -2,14 +2,16 @@
 # Task 2: The Documentation
 
 :::{warning}
-On 9/25/2023, C964 was updated to a from version SIM2 to the new version SIM3. Though the rubirc and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** Over the next month, this website will be revised to better align with the new version, but all the information here is still relevant.
+On 9/25/2023, C964 was updated from version SIM2 to the new version SIM3. Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** So all the information on this website is relevant whether enrolled in SIM2 or SIM3.
 :::
 
 :::{note}
-The content here for parts A, B, and D aligns with the latest version of the Task 2 template. Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w) is still acceptable.  
+The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w) is still acceptable.  
 :::
 
 (task2_doc)=
+
+## Task 2 Documentation Template
 
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
 > [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
@@ -23,6 +25,10 @@ To gauge the level of detail evaluators typically expect, review these examples:
 (task2_doc:examples)=
 
 ## Example Documents
+
+The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the [excellence archives]((resources:examples:archive) to review better projects.
+
+These examples (and most of those in archives) were written using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w). In the coming months, we will add more recent examples following the new template.
 
 `````{tab-set}
 ````{tab-item} Task 2 documentation example A
@@ -94,7 +100,7 @@ Sections are assessed independently against the rubric requirements, i.e., when 
 To see which version you are enrolled, go to the 'Assessments' section of your C964 COS page:
 ![An image showing 'Performance Assessment:Computer Science Capstone (SIM3)' as can be found in the Assessment section on your C964 COS page. 'SIM3' is higlighted.](./../url_images/C964_sim3-1.png)
 
-For both versions, SIM2 and SIM3, we recommend using the most recent verion of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) and following the advice on this webpage.
+For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) and following the advice on this webpage.
 
 ### Are there length requirements for the documentation?
 
@@ -121,7 +127,7 @@ You are likely overinterpreting what's required. Rarely are submissions sent bac
 
 ### My task two was returned for *sources* stating:
 
-> "In-text citations could not be found for portions of the task that have been quoted or paraphrased... "
+> "In-text citations could not be found for portions of the task that have been quoted or paraphrased..."
 
 **What does this comment mean?**
 
@@ -135,7 +141,7 @@ Here are some points to consider:
 
 - C951.3 is just a written project, typically around five pages (I'm guessing; ask your C951 instructor), and can be completed in a single afternoon. Comparatively, C964 requires a working machine learning application and accompanying documentation, typically around 20 pages. 
 
-- C951.3 only relates to parts A and B of C964.2. These parts are just a framework for communicating the project to a general audience and almost always pass. Furthermore, they'll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
+- C951.3 only relates to parts A and B of C964.2. These parts are just a framework for communicating the project to a general audience and almost always pass. Furthermore, they'll have to be at least partially rewritten anyway. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
 - Rewriting content C951.3 for a different C964 topic will take little additional work.
 - As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
 - Trying to comprehend two projects at once is just more difficult. 
@@ -148,7 +154,7 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 *We do not advise directly following the official rubric for C964.* Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Because of the ambiguity of the official rubric, following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.
 
-Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
 
 ## Questions, comments, or suggestions?
 
