@@ -62,7 +62,7 @@ Really both, but most often, it's used for classification. Logistic regression u
 
 #### Unsupervised Learning
 
-If what you are trying to find is not directly in the data, then an [unsupervised method](https://scikit-learn.org/stable/unsupervised_learning.html) might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means clustering, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
+If what you are trying to find is not directly in the data, then an [unsupervised method](https://scikit-learn.org/stable/unsupervised_learning.html) might be used. Unsupervised algorithms identify patterns in the data. Common approaches include clustering (e.g., k-means, expectation-maximization distribution, and agglomerative hierarchical), dimensionality reduction (e.g., PCA and LDA), and anomaly detection (e.g., outlier factor and isolation forest).
 
 #### Reinforced Learning
 
@@ -158,7 +158,10 @@ The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.
 
 Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
-> [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+<!-- old way with thumbnail 
+> [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe) -->
+
+> [Topic Approval Form Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
 ```{note}
 The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
@@ -170,7 +173,7 @@ The approval form only needs to be a *rough* outline of a passing project. **Cha
 
 **Descriptive methods:** These methods describe and help understand the data, e.g., mean, median, bar plot, scatterplot, k-means clustering, etc. Three visualizations are required. The visualizations are typically descriptive and can count as your descriptive method.
 
-```{warning}
+```{note}
 You must identify a machine learning application in either the descriptive or non-descriptive section. Most often, the non-descriptive method uses ML, e.g., a classification model allowing the user to provide input to an app that returns a prediction.
 ```
 
@@ -235,7 +238,7 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 4. **User Application:** The console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.
 
-So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some of the delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
+So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
 
@@ -248,7 +251,7 @@ You can reuse anything you've of your own academic or professional work, includi
 Here are some points to consider:
 
 - C951.3 is just a written project, typically around five pages (I'm guessing; ask your C951 instructor), and can be completed in a single afternoon. Comparatively, C964 requires a working machine learning application and accompanying documentation, typically around 20 pages.
-- C951.3 only relates to parts A and B of C964.2. These parts are just a framework for providing a general audience and purpose for the ML application. If present, these parts almost always pass. Furthermore, they'll have to be at least partially rewritten anyways. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
+- C951.3 only relates to parts A and B of C964.2. These parts are just a framework for providing a general audience and purpose for the ML application. If present, these parts almost always pass. Furthermore, they'll have to be at least partially rewritten anyway. Parts C and D of C964 are what evaluators care about, but C951.3 has no corresponding parts C and D.
 - Rewriting C951.3 content for a different C964 topic takes little additional work.
 - As it's just a written project, students often pick a complex topic for C951.3. But then they feel pressured to use the same complex topic for C964 and struggle with creating the app.
 - Trying to comprehend two projects at once is just more difficult. 
@@ -273,7 +276,7 @@ Furthermore, some terminology is open to interpretation and nowhere rigorously d
 - [**Part C requirements**](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do)
 - [**Parts A, B, and D requirements**](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation)
 
-For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
 
 If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
 
@@ -314,7 +317,7 @@ Descriptive and non-descriptive methods do not need to be explicitly identified 
 
 Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.
 
-Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied.
+Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form, so we can easily identify where and how ML will be applied.
 
 ### What is machine learning (ML)?
 
@@ -328,7 +331,7 @@ Yes. Unlike C950 (Data Structures & Algorithms II), you are allowed and encourag
 
 ### What language, libraries, and platforms should I use?
 
-You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook is a great place to start for the app front end. Passing applications are often submitted as the Notebook file (.ipynb) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Java because of their JavaFX experience in software II (C195), but a GUI is not required, and Python is overall better suited for everything which is required. Furthermore, implementing a GUI with Python or Jupyter Notebooks is not difficult (see these [widget examples](sup_class_ex:user_interface)).
+You can use whatever you like. However, we recommend using Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook is a great place to start for the app front end. Passing applications are often submitted as the Notebook file (`.ipynb`) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Java because of their JavaFX experience in software II (C195), but a GUI is not required, and Python is overall better suited for everything which is required. Furthermore, implementing a GUI with Python or Jupyter Notebooks is not difficult (see these [widget examples](sup_class_ex:user_interface)).
 
 A development path might look like the following:
 

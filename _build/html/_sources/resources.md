@@ -1,13 +1,18 @@
 
-(resources)=
 # C964 Resources
 <!-- hack to open links in new tab -->
 <head>
     <base target="_blank">
 </head>
+(resources)=
 
 (resources:examples)=
+
 ## Examples
+
+The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
+
+These examples (and most of those in archives) were written using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w). In the coming months, we will add more recent examples following the new template.
 
 **Example A:**
 
@@ -21,24 +26,23 @@
 
 - [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
 
-```{note}
-The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
-```
-
 (resources:examples:archive)=
 **WGU Capstone Excellence Archive**
 
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 (resources:task1)=
+
 ## Task 1 Resources
 
 (resources:task1:task1example)=
+
 ### Topic Approval Form Template
 
 > [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
 
 (resources:task1:excellence)=
+
 ### Excellence Archive
 
 The Capstone Excellence Archive includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, above and beyond the requirements. Therefore, do not use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the [examples](resources:examples) above.
