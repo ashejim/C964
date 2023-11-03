@@ -78,7 +78,7 @@ This section should describe the development of your ML application justifying a
 
 - *How?* Outline your application's implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved. 
 
-- *Why?* Throughout justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.  
+- *Why?* Thoroughly justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.  
 
 (task2_doc_d:validation)=
 
