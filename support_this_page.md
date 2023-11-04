@@ -2,7 +2,7 @@
 
 This website is a collaborative work in progress by the C964 course faculty. We are continually trying to improve this page to better help students. How can you help? Feedback! Tell us what we're doing right and what needs improvement. With your help, we can build this into the best possible resource for helping students. Here's how you can contribute:
 
-- Leave a [comment below](support:comments) and/or our [⭐ repo](https://github.com/ashejim/964) (you'll need a GitHub account).
+- Leave a [comment below](support:comments) and/or our [⭐ repo](https://github.com/ashejim/C964) (you'll need a GitHub account).
 - Go to your C964 COS page and click 'Course Feedback.' 
     > <img src="https://github.com/ashejim/C769/blob/main/url_images/course_feedback_link.png?raw=true" height="175px" />
     This creates a ticket for our product development team.
