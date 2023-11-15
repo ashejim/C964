@@ -10,7 +10,7 @@
 :::
 
 :::{warning}
-On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubirc and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** Over the next month, this website will be revised to better align with the new version, but all the information here is still relevant.
+On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** Over the next month, this website will be revised to better align with the new version, but all the information here is still relevant.
 :::
 
 <!-- :::{warning}

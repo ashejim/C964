@@ -81,7 +81,7 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 3. Formulate an "organizational need" helped by that application.
 
 ```{margin} Unsure about which ML method to use?
-Look for data which has mutualay exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example]((sup_class_ex)), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubirc requirements.  
+Look for data which has mutually exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example]((sup_class_ex)), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubric requirements.  
 ```
 
 (task1:examples)=
