@@ -36,7 +36,7 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/ashejim/C964  # Online location of your book
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links (optional)
   # path_to_book: docs  # Optional path to your book, relative to the repository root
 
 #https://jupyterbook.org/en/stable/interactive/launchbuttons.html?highlight=google
