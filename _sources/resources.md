@@ -60,17 +60,27 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 #### Getting Started on the Capstone
 
 <iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
 >
 </iframe>
 
-#### Student Presentaion
+#### Student Presentation
+
 <iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6" title="C769 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
 >
 </iframe>
 
-This presentation was intended for a general audience. 
+This presentation was intended for a general audience.
+
+#### CNN
+
+A great lecture explaining Convolution Neural Networks.  
+
+<iframe 
+    src="https://youtu.be/r5nXYc2wYvI?feature=shared" title="CNNs Convolutional Neural Networks - Deep Learning in Life Sciences" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
+>
+</iframe>
 
 (resources:task1:data)=
 ### Data
