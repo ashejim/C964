@@ -55,34 +55,8 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 
 > [![Image of the first page of the waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
 
-### Videos
-
-#### Getting Started on the Capstone
-
-<iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
->
-</iframe>
-
-#### Student Presentation
-
-<iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
->
-</iframe>
-
-This presentation was intended for a general audience.
-
-#### CNN
-
-A great lecture explaining Convolution Neural Networks.  
-
-<iframe 
-    src="https://youtu.be/r5nXYc2wYvI?feature=shared" title="CNNs Convolutional Neural Networks - Deep Learning in Life Sciences" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
->
-</iframe>
-
 (resources:task1:data)=
+
 ### Data
 
 Any open source data set is freely available for use.
@@ -102,10 +76,18 @@ Any open source data set is freely available for use.
 - [CS and C964 faculty](ci_other) available for math, data analytics, and coding-related questions.
 - [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.
 
-(resources:task2:videos)=  
-### Videos
+(resources:task2:videos)=
+
+### Videos, guides, and Tutorials
 
 (resources:task2c:videos:ml-sup-reg-class)=  
+
+#### Getting Started on the Capstone
+
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
+>
+</iframe>
 
 #### ML Supervised Classification & Regression Overview
 
@@ -122,6 +104,34 @@ Any open source data set is freely available for use.
     src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
 >
 </iframe>
+
+#### Student Presentation
+
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
+>
+</iframe>
+
+This presentation was intended for a general audience.
+
+#### Convolution Neural Networks (CNN)
+
+##### CNN Videos
+
+- [MIT: CNNs Convolutional Neural Networks - Deep Learning in Life Sciences](https://youtu.be/r5nXYc2wYvI?feature=shared). This is a great lecture explaining the concepts and terms of a CNNs. The focus is not coding, but understanding what the code does.
+- [Keras with TensorFlow Course - Python Deep Learning and Neural Networks for Beginners Tutorial](https://www.youtube.com/watch?v=qFJeN9V1ZsI)
+
+##### CNN Tutorials
+
+CNNs Coding Tutorials:
+
+- From the [TensorFlow docs](https://www.tensorflow.org/tutorials/quickstart/beginner)
+  - [TensorFlow Quickstart](https://www.tensorflow.org/tutorials/quickstart/beginner)
+  - [CNN tutorial](https://www.tensorflow.org/tutorials/images/cnn)
+
+- [TensorFlow Tutorial: Get Started in Deep Learning with tf.keras](https://machinelearningmastery.com/tensorflow-tutorial-deep-learning-with-tf-keras/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/convolutional-neural-network-cnn-in-tensorflow/)
+- [DataCamp](https://www.datacamp.com/tutorial/tensorflow-tutorial)
 
 (resources:task2doc)=
 
