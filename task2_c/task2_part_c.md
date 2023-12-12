@@ -363,7 +363,9 @@ Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_
 
 ## Application Performance
 
-For supervised methods, you should use a metric to measure accuracy and help improve the model. Knowing which algorithm will perform best requires an understanding of the data and algorithms. However, using a metric, you can quickly compare and experiment with different approaches -usually by changing a few lines of code. Such experimentation can then lead to understanding. Depending on the method, metrics might similarly be used for unsupervised models, such as Silhouette[ coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.
+For *supervised methods*, you should use a metric to measure accuracy and help improve the model. Knowing which algorithm will perform best requires an understanding of the data and algorithms. However, using a metric, you can quickly compare and experiment with different approaches -usually by changing a few lines of code. Such experimentation can then lead to understanding. 
+
+Depending on the method, metrics might similarly be used for *unsupervised models*, such as [Silhouette coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.
 
 :::{margin} What is good accuracy?
 A good question. The answer subjectively depends on the data and project needs. A 5% accuracy in predicting stoplights is not so good. However, it is *very* good if predicting lottery numbers.

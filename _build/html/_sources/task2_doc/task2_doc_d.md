@@ -104,6 +104,10 @@ Though no minimal accuracy is required, your model should perform better than ra
 
 As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, $R^{2}$, can be used. See [sklearn's regression metric documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics). As above there is no performance benchmark, but the model should at predict at least as well as thaking the mean.
 
+### For Unsupervised Methods
+
+Depending on the method, metrics might similarly be used for *unsupervised models*, such as [Silhouette coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.
+
 ### For Reinforced Learning Methods
 
 Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.
