@@ -446,6 +446,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-unsupervised-methods">For Unsupervised Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
@@ -533,6 +534,10 @@ document.write(`
 <section id="for-supervised-regression-methods">
 <h3>For Supervised Regression Methods<a class="headerlink" href="#for-supervised-regression-methods" title="Permalink to this heading">#</a></h3>
 <p>As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, <span class="math notranslate nohighlight">\(R^{2}\)</span>, can be used. See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metric documentation</a>. As above there is no performance benchmark, but the model should at predict at least as well as thaking the mean.</p>
+</section>
+<section id="for-unsupervised-methods">
+<h3>For Unsupervised Methods<a class="headerlink" href="#for-unsupervised-methods" title="Permalink to this heading">#</a></h3>
+<p>Depending on the method, metrics might similarly be used for <em>unsupervised models</em>, such as <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html">Silhouette coefficients</a> for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.</p>
 </section>
 <section id="for-reinforced-learning-methods">
 <h3>For Reinforced Learning Methods<a class="headerlink" href="#for-reinforced-learning-methods" title="Permalink to this heading">#</a></h3>
@@ -625,6 +630,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-classification-methods">For Supervised Classification Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-supervised-regression-methods">For Supervised Regression Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-unsupervised-methods">For Unsupervised Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-reinforced-learning-methods">For Reinforced Learning Methods</a></li>
 </ul>
 </li>
