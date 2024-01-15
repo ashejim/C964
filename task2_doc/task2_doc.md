@@ -2,11 +2,11 @@
 # Task 2: The Documentation
 
 :::{warning}
-On 9/25/2023, C964 was updated from version SIM2 to the new version SIM3. Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** So all the information on this website is relevant whether enrolled in SIM2 or SIM3.
+On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.**
 :::
 
 :::{note}
-The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w) is still acceptable.  
+The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w) is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
 :::
 
 (task2_doc)=

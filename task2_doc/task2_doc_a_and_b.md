@@ -8,7 +8,7 @@ The purpose of parts A and B is to demonstrate competency in communicating your 
 - Part A - Convince senior leadership to approve your project.
 - Part B - Implementation plan for IT leadership (but not CS experts) or middle management.
 
-Part D, explains the CS-related aspects of your project and (with the exception of the [User Guide](task2d:userguide)) should target the computer science subject matter experts. This is *not* a business project, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects such as budgets, methodology, and planning parts are not assessed rigorously from a business perspective.
+Part D, explains the CS-related aspects of your project. With the exception of the [User Guide](task2d:userguide), all sections should target the computer science subject-matter experts. This is *not* a business project, and neither does the rubric have any qualitative business criteria for parts A and B. As such, parts A and B aspects such as budgets, methodology, and planning parts are not assessed rigorously from a business perspective.
 
 
 (task2:parta)=

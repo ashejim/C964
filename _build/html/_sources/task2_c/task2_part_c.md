@@ -8,8 +8,8 @@ Your software application (the "app") is the entirety of part C of task 2. Howev
 An application (app) is simply software that performs specific tasks. 
 ```
 
-:::{warning}
-*The rubric is currently under development.* Written holistically, many find the rubric difficult to understand. We recommend first referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
+:::{tip}
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
 :::
 
 (task2_part_c:what_does_the_application_need_to_do)=

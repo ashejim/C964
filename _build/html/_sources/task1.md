@@ -260,16 +260,16 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 (task1:faq:the_rubric_is_confusing)=
 
-### The rubric is vague and refers to the task directions which seem to require many redundant or unnecessary items. What do I actually need to do?
+### The rubric refers to the task directions which seem to require redundant or unnecessary items. What do I actually need to do?
 
-Your C964 course instructor team has collaborated with evaluators (thank you evaluator team!) to ensure the explanations on this webpage align with how the assessment's requirements are interpreted by the evaluators. So if you find the official directions unclear, we advise following the directions on this webpage for both the application (part C) and the documentation (parts A, B, and D). 
+Your C964 course instructor team has collaborated with evaluators (thank you evaluator team!) to ensure the explanations on this webpage align with how the assessment's requirements are interpreted by the evaluators. So if you find the official directions unclear, we advise following the directions on this webpage for both the application (part C) and the documentation (parts A, B, and D).
 
-The official rubric and directions were written to map the project's elements to specific competencies, and following the official directions will meet all the requirements. However, be aware that many items are redundant or inherently met by other items. For example, in part C:
+The official rubric and directions were written to map the project's elements to specific competencies, and following the official directions *will* meet all the requirements. However, be aware that some items might not be applicable or be inherently met by other items. For example, in part C:
 
 - The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
 - Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
 - As any ML method is an algorithm, the requirements to implement both is redundant.
-- Etc., etc.
+- Etc.
 
 Furthermore, some terminology is open to interpretation and nowhere rigorously defined. The official directions potentially have similar issues. So following the official directions without further guidance could result in overworking some requirements or misinterpreting others. For a more succinct outline of the Task 2 requirements see:
 
