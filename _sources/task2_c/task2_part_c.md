@@ -92,9 +92,9 @@ There are no specific requirements regarding the complexity or nature of your da
 
 You do not need special permission to use any open-source dataset (see our [list](resources:task1:data)). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). It's only required that the data meet the needs of your project and be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
 
-- You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
+- You *can* use data used for previous projects (submitted by you or others) including any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
+- You do *not* have to use all the data. Removing columns or rows is permissible. 
 - You *can* use simulated data.
-- You *can* use data used for previous projects (submitted by you or others).
 - You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
 
 (task2_part_c:mlreqs)=
