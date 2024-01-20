@@ -1,0 +1,890 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Task 3 &#8212; IT Capstone</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/my_css.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "github-org/github-repo");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KX2MGTZB0G"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-KX2MGTZB0G');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'task3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="C769 Resources" href="resources.html" />
+    <link rel="prev" title="Task 2" href="task2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo2.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo2.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to C769!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="task1.html">Task 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task2.html">Task 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Task 3</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="resources.html">C769 Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ci_page.html">Course Faculty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support_this_page.html">Help Support this Website</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C769" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C769/edit/main/task3.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ashejim/C769/issues/new?title=Issue%20on%20page%20%2Ftask3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/task3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Task 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-task-3">Writing Task 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-a-overview">Section A: Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-b-other-works">Section B: Other Works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-c-changes-to-project-environment">Section C: Changes to Project Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-d-methodology">Section D: Methodology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-e-project-goals-and-objectives">Section E: Project Goals and Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-f-project-timeline">Section F: Project Timeline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-g-unanticipated-requirements">Section G: Unanticipated Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-h-conclusion">Section H: Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendices">Appendices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#section-i-project-deliverables">Section I: Project deliverables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar-sources-and-apa">Grammar, Sources, and APA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-most-common-reasons-task-3-does-not-pass">What are the most common reasons task 3 does not pass?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-long-should-task-3-be">How long should task 3 be?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-capstone-is-not-a-real-project-what-do-i-do-for-the-deliverables">My capstone is not a real project. What do I do for the deliverables?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-task-2-timeline-has-projected-end-dates-of-6-months-since-this-is-what-it-would-take-but-i-just-submitted-task-2-and-need-to-complete-task-3-now-what-should-i-do">My task 2 timeline has projected end dates of 6 months (since this is what it would take), but I just submitted task 2 and need to complete task 3 now. What should I do?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-ve-completed-task-3-but-task-2-is-still-in-the-assessment-queue-should-i-wait-until-task-2-passes-submitting-task-3">I’ve completed task 3, but task 2 is still in the assessment queue. Should I wait until task 2 passes submitting task 3?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-task-was-returned-for-in-text-citations-could-not-be-found">My task was returned for “In-text citations could not be found…”</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-comments-or-suggestions">Questions, comments, or suggestions?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="task-3">
+<span id="task3"></span><h1>Task 3<a class="headerlink" href="#task-3" title="Permalink to this heading">#</a></h1>
+<p><strong>Almost time to graduate!</strong></p>
+<p id="task3-template">Write your conclusion report following the template, <strong>Task 3: The Conclusion</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EW62ZDmF6pdJo3_oD5CUoSUB3iblGUYaZ4qACCEchHueXA?e=JuNZfp"><img alt="Thumbnail imgae of Task 3: the Conclusion template" src="https://github.com/ashejim/C769/blob/main/url_images/t3_template_thumb.png?raw=true#image-thumb" /></a></p>
+</div></blockquote>
+<p>To gauge the level of detail evaluators typically expect, review these <a class="reference internal" href="resources.html#resources-examples"><span class="std std-ref">task 3 examples</span></a>.</p>
+<section id="writing-task-3">
+<h2>Writing Task 3<a class="headerlink" href="#writing-task-3" title="Permalink to this heading">#</a></h2>
+<aside class="sidebar">
+<p class="sidebar-title">Watch</p>
+<iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5286bdf6-43c4-479e-8135-72922ac3f6bf&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="G and H: Timeline & Outcome" frameborder="0" style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay" alt= "Title screen for the video.">
+</iframe>
+</aside>
+<aside class="sidebar">
+<p class="sidebar-title">Listen</p>
+<p>IT Audio Series podcast <a class="reference external" href="https://d2y36twrtb17ty.cloudfront.net/sessions/a96a8bee-7aef-4777-8964-ac9400174e42/0cb7de42-4057-45d6-9282-ac9400174e5b-436eb412-8cec-4cfb-992b-ac9400178e7b.mp4?invocationId=aae81915-bee9-ed11-828e-12b1cb861383">Converting Task 2 to Task 3</a>; view the <a class="reference external" href="https://www.wgu.edu/content/dam/western-governors/documents/it/audio-series/ConvertingTask2toTask3.docx">transcript</a>.</p>
+</aside>
+<p><em>Most</em> of task 3 will update task 2 from the future to the past tense. As such, task 3 should be similar in length and detail to task 2. Review the <a class="reference internal" href="resources.html#resources-examples"><span class="std std-ref">task 3 examples</span></a> to understand what evaluators expect.  Differences between tasks 2 and 3 are highlighted in the <a class="reference internal" href="#task3-template"><span class="std std-ref">task 3 template</span></a> and discussed in the video. You must update task 2 as follows:</p>
+<div class = "tasklist">
+<p><input type="checkbox"> Update the title page, TOC,  headers, and footers.</p>
+<p><input type="checkbox"> Rewrite corresponding sections from task 2 in the past tense adjusting as necessary following the task 3 rubric. All dates should be in the past.</p>
+<p><input type="checkbox"> Section <a class="reference internal" href="#task3-b"><span class="std std-ref">B: Other Works</span></a> must have <strong>three</strong> new sources different from those in section B of task 2.</p>
+<p><input type="checkbox"> Write section <a class="reference internal" href="#task3-g"><span class="std std-ref">G: Unanticipated Requirements</span></a>.</p>
+<p><input type="checkbox"> For section <a class="reference internal" href="#task3-h"><span class="std std-ref">H: Conclusion</span></a>, revise <em>Outcomes</em> from task 2, discussing the results and effectiveness of the completed project.</p>
+<p><input type="checkbox"> For section <a class="reference internal" href="#task3-i"><span class="std std-ref">I:</span></a> Project Deliverables](task3:I), add examples of deliverables to the appendices.</p>
+<p><input type="checkbox"> Following APA guidelines, <span class="xref myst">check grammar and sources</span>, export as a pdf, and submit.</p>
+<p><input type="checkbox"> Submit, pass, and graduate!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Submissions with missing sections are automatically returned. If everything went as planned, explain why. The narrative following the <em>Timeline</em> and an <em>Unanticapted Requirements</em> section is still required.</p>
+</div>
+</section>
+<section id="section-a-overview">
+<span id="task3-a"></span><h2>Section A: Overview<a class="headerlink" href="#section-a-overview" title="Permalink to this heading">#</a></h2>
+<p>Revise <a class="reference internal" href="task2.html#task2-a"><span class="std std-ref">Task 2 section A3</span></a>, adjusting for any variances and providing a summary of the completed project. In addition, you can reuse any content from related task 3 sections <a class="reference internal" href="#task3-c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="#task3-d"><span class="std std-ref">D</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Write this section last or return to it after writing the Conclusion.</p></li>
+<li><p>The required depth of detail is up to the subjectivity of the evaluator. Though summaries are typically short, there is no penalty for <em>too much</em> detail.</p></li>
+</ul>
+</div>
+</section>
+<section id="section-b-other-works">
+<span id="task3-b"></span><h2>Section B: Other Works<a class="headerlink" href="#section-b-other-works" title="Permalink to this heading">#</a></h2>
+<p>The requirements for this section are identical to that of <a class="reference internal" href="task2.html#task2-b"><span class="std std-ref">task 2 section B</span></a> -only you must have <strong>three</strong> works different from those in task 2 cited following <span class="xref myst">APA guidelines</span>, e.g., (Author year).</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wgu.libguides.com/friendly.php?s=library">WGU’s library</a></p></li>
+<li><p><a class="reference external" href="https://scholar.google.com/">google.scholar.com</a></p></li>
+</ul>
+<p>Content from part B of task 2 can be included, but cannot satisfy the task 3 requirements. So cite the task 2 sources if needed elsewhere, but it is recommended to not include the task 2 sources in this section.</p>
+</section>
+<section id="section-c-changes-to-project-environment">
+<span id="task3-c"></span><h2>Section C: Changes to Project Environment<a class="headerlink" href="#section-c-changes-to-project-environment" title="Permalink to this heading">#</a></h2>
+<p>Using task 2 sections <a class="reference internal" href="task2.html#task2-d"><span class="std std-ref">D</span></a> and <a class="reference internal" href="task2.html#task2-e"><span class="std std-ref">E</span></a> from task 2, describe how your project <em>changed</em> the client’s environment.</p>
+<p>As a convenience to the evaluators, you may copy content from your <a class="reference internal" href="task2.html#task2-d"><span class="std std-ref">Task 2 section D</span></a> labeling it as <em>Original Environment</em>, and then add new material (a paragraph typically suffices) describing how the project changed the original environment. For example:</p>
+<blockquote>
+<div><p><strong>Original Environment</strong>:</p>
+<p>Company X currently is using out-of-date Linksys WRT54GL wireless routers as Wi-Fi
+access points. As a result…</p>
+<p>After the project was completed, the outdated Linksys WRT54G was replaced with…</p>
+</div></blockquote>
+</section>
+<section id="section-d-methodology">
+<span id="task3-d"></span><h2>Section D: Methodology<a class="headerlink" href="#section-d-methodology" title="Permalink to this heading">#</a></h2>
+<p>Adding any variations, revise <a class="reference internal" href="task2.html#task2-e"><span class="std std-ref">task 2 section E</span></a> from task 2 from the future to the past tense.</p>
+</section>
+<section id="section-e-project-goals-and-objectives">
+<span id="task3-e"></span><h2>Section E: Project Goals and Objectives<a class="headerlink" href="#section-e-project-goals-and-objectives" title="Permalink to this heading">#</a></h2>
+<p>Discuss how completed goals and objectives from <a class="reference internal" href="task2.html#task2-f"><span class="std std-ref">task 2 section F</span></a> were met. <em>If</em> any goals or objectives were not met, discuss why.</p>
+</section>
+<section id="section-f-project-timeline">
+<span id="task3-f"></span><h2>Section F: Project Timeline<a class="headerlink" href="#section-f-project-timeline" title="Permalink to this heading">#</a></h2>
+<!-- TODO add? Also, do I need planned and actual dates on the milestones?
+For the timeline? Yes. They need a timeline for all items on the table, and they need to compare those dates to what was proposed. However, it doesn’t have actually to match task 2. The point is so they won’t have to open task 2 when assessing the timeline narrative and ‘unanticipated requirements’ of task 3.
+ -->
+<ol class="arabic">
+<li><p>Update the timeline table from <a class="reference internal" href="task2.html#task2-g"><span class="std std-ref">task 2 section G</span></a> with columns for <em>Planned Duration</em>, <em>Actual Duration</em>, <em>Actual Start Date</em>, and <em>Actual End Date</em>.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Milestone or Deliverable</p></th>
+<th class="head"><p>Planned Duration</p></th>
+<th class="head"><p>Actual Duration</p></th>
+<th class="head"><p>Actual Start Date</p></th>
+<th class="head"><p>Actual End date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Some milestones</p></td>
+<td><p>7 days</p></td>
+<td><p>7 days</p></td>
+<td><p>7/23/2022</p></td>
+<td><p>7/30/2022</p></td>
+</tr>
+<tr class="row-odd"><td><p>Some deliverables</p></td>
+<td><p>14 days</p></td>
+<td><p>10 days</p></td>
+<td><p>7/18/2022</p></td>
+<td><p>7/28/2022</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>All</em> dates must be in the past. Task 3 is a conclusion report. Write as if you recently completed the project -even if the dates do not align with the task 2 projected end dates. Evaluators understand this is a written exercise, and academic timelines rarely sync with real-world timelines. See the <a class="reference internal" href="#task3-faq-timeline"><span class="std std-ref">FAQ</span></a> for more details.</p>
+</div>
+</li>
+<li><p>Following the updated timeline, write a narrative explaining any differences from the projected proposal timeline, <a class="reference internal" href="task2.html#task2-g"><span class="std std-ref">task 2 section G</span></a>. If there were no variances, explain why.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do <strong>not</strong> leave this section blank. It is easy to overlook, but submissions with no timeline narrative will not be accepted.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="section-g-unanticipated-requirements">
+<span id="task3-g"></span><h2>Section G: Unanticipated Requirements<a class="headerlink" href="#section-g-unanticipated-requirements" title="Permalink to this heading">#</a></h2>
+<p>Describe any unanticipated requirements and how you dealt with them. You should repeat anything from the narrative section of <a class="reference internal" href="#task3-f"><span class="std std-ref">Task 3 section F</span></a>. If everything went as planned (which is a tad unrealistic), explain why. Do not leave this section blank.</p>
+</section>
+<section id="section-h-conclusion">
+<span id="task3-h"></span><h2>Section H: Conclusion<a class="headerlink" href="#section-h-conclusion" title="Permalink to this heading">#</a></h2>
+<p>Summarize the results and potential effects of your completed project compared to the expected outcomes outlined in <a class="reference internal" href="task2.html#task2-h"><span class="std std-ref">task 2 section H</span></a>.</p>
+</section>
+<section id="deliverables">
+<span id="task3-i"></span><h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this heading">#</a></h2>
+<section id="appendices">
+<h3>Appendices<a class="headerlink" href="#appendices" title="Permalink to this heading">#</a></h3>
+<p>In the appendices you must include at least <strong>two</strong> things you created that demonstrate the project’s completion. The included items need only be <em>examples</em> of actual deliverables. They can be fabricated entirely, examples, or parts of actual deliverables. This section should be included at the end of the document.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If reusing materials from an open source or actual project, mask any identifying information.</p>
+<img src="https://github.com/ashejim/C769/blob/main/url_images/edit_deliverable.gif?raw=true" height="175px" alt= "An animated GIF showing how to modify images."/>
+</div>
+<p>Accepted items include the following:</p>
+<ul class="simple">
+<li><p>Code or script samples</p></li>
+<li><p>Screenshots of deliverable</p></li>
+<li><p>Process diagrams such as flowcharts or UMLs</p></li>
+<li><p>Visualizations such as charts, tables, or graphs</p></li>
+<li><p>Network diagrams</p></li>
+<li><p>Training certificates/questions</p></li>
+<li><p>The technical IT product</p></li>
+</ul>
+</section>
+<section id="section-i-project-deliverables">
+<h3>Section I: Project deliverables<a class="headerlink" href="#section-i-project-deliverables" title="Permalink to this heading">#</a></h3>
+<p>Describe each deliverable in the appendices and how it demonstrates evidence of project completion. Refer directly to the corresponding items by its appendix, e.g., “under Appendix A”, so readers can easily identify which appendix is being described.</p>
+</section>
+</section>
+<section id="grammar-sources-and-apa">
+<span id="task2-grammar"></span><h2>Grammar, Sources, and APA<a class="headerlink" href="#grammar-sources-and-apa" title="Permalink to this heading">#</a></h2>
+<p>It’s easy to overlook them when focusing on content, but grammar, sources, and APA formatting are the most common reasons for rejected submissions!
+Check your grammar using <a class="reference external" href="https://www.grammarly.com/">Grammarly.com</a> <img alt="grammarly_icon" src="https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon" /> (it’s what the evaluators use). Style is not assessed (Grammarly marks these in blue, green, or purple), but even a few grammar errors (marked in red) will prevent competency in <em>Professional Communication</em>. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version compatible with MS Word.</p>
+</div>
+<p>Sources and format should follow <a class="reference external" href="https://apastyle.apa.org">APA <span class="math notranslate nohighlight">\(7^{\text{th}}\)</span> edition guidelines</a>. Outside of grammar mistakes, most APA errors involve formatting of the sources or in-text citations. In-text citations should be of the form, <code class="docutils literal notranslate"><span class="pre">(Author,</span> <span class="pre">year)</span></code>. For more details, see <a class="reference external" href="https://apastyle.apa.org/style-grammar-guidelines/citations">APA guidelines for citations</a>.</p>
+<p>Avoid reference errors by using a <a class="reference internal" href="resources.html#resources-general-grammar-sources"><span class="std std-ref">referencing tool</span></a>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5">MS Word Reference Tool</a> <span class="math notranslate nohighlight">\(\leftarrow\)</span> desktop version only.</p></li>
+<li><p><a class="reference external" href="https://www.jabref.org">JabRef</a> <span class="math notranslate nohighlight">\(\leftarrow\)</span> free and works on most platforms.</p></li>
+<li><p><a class="reference external" href="https://www.ubuntubuzz.com/2015/07/how-to-create-apa-style-bibliography-in-libreoffice.html#google_vignette">LibreOffice Reference Tool</a>. - <a class="reference external" href="https://www.libreoffice.org/download">Download LibreOffice</a> for free.</p></li>
+</ul>
+<p>Get the best help from the <a class="reference internal" href="resources.html#resources-general-grammar-writing-center"><span class="std std-ref">WGU Academic Coaching Center</span></a>.</p>
+</section>
+<section id="faq">
+<span id="task3-faq"></span><h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this heading">#</a></h2>
+<section id="what-are-the-most-common-reasons-task-3-does-not-pass">
+<h3>What are the most common reasons task 3 does not pass?<a class="headerlink" href="#what-are-the-most-common-reasons-task-3-does-not-pass" title="Permalink to this heading">#</a></h3>
+<p>The most common reasons for returned task 3’s:</p>
+<ol class="arabic simple">
+<li><p>Grammar</p></li>
+<li><p>Sources</p></li>
+<li><p>No narrative for <a class="reference internal" href="#task3-f"><span class="std std-ref">part F, Project Timeline</span></a>.</p></li>
+<li><p>Insufficient details for section X.</p></li>
+</ol>
+<p>1-3 is easily avoidable. Being cited for “insufficient details” is a matter of subjectivity, but it is also easy to fix -just add more details. Since task 3 mostly implements the already passed plan of task 2 -it is mostly already passed.</p>
+</section>
+<section id="how-long-should-task-3-be">
+<h3>How long should task 3 be?<a class="headerlink" href="#how-long-should-task-3-be" title="Permalink to this heading">#</a></h3>
+<p>Review the <a class="reference internal" href="resources.html#resources-examples"><span class="std std-ref">task 3 examples</span></a>. As task 3 mainly rewrites task, task 3 is typically similar in length. They will assess task 3 independently of task 2. Don’t assume they’ll compare the two.</p>
+</section>
+<section id="my-capstone-is-not-a-real-project-what-do-i-do-for-the-deliverables">
+<h3>My capstone is not a real project. What do I do for the deliverables?<a class="headerlink" href="#my-capstone-is-not-a-real-project-what-do-i-do-for-the-deliverables" title="Permalink to this heading">#</a></h3>
+<p>See <a class="reference internal" href="#task3-i"><span class="std std-ref">section I</span></a>. You only need to provide <em>examples</em> of actual deliverables you might provide to clients demonstrating a project’s completion.</p>
+</section>
+<section id="my-task-2-timeline-has-projected-end-dates-of-6-months-since-this-is-what-it-would-take-but-i-just-submitted-task-2-and-need-to-complete-task-3-now-what-should-i-do">
+<span id="task3-faq-timeline"></span><h3>My task 2 timeline has projected end dates of 6 months (since this is what it would take), but I just submitted task 2 and need to complete task 3 now. What should I do?<a class="headerlink" href="#my-task-2-timeline-has-projected-end-dates-of-6-months-since-this-is-what-it-would-take-but-i-just-submitted-task-2-and-need-to-complete-task-3-now-what-should-i-do" title="Permalink to this heading">#</a></h3>
+<p>Evaluators understand this is a written exercise, and academic timelines rarely sync with real-world timelines. <em>Write as if you recently completed the project</em> -dates do not need to align with those in task 2, but the task 3 start and end dates <em>must be in the past.</em> For example, if task 2 had the following:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Milestone or Deliverable</p></th>
+<th class="head"><p>Duration</p></th>
+<th class="head"><p>Projected Start Date</p></th>
+<th class="head"><p>Projected End date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Some milestones</p></td>
+<td><p>7 days</p></td>
+<td><p><span style="color:red"><strong>7/23/2023</strong></span></p></td>
+<td><p><span style="color:red"><strong>7/30/2023</strong></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Some deliverables</p></td>
+<td><p>14 days</p></td>
+<td><p><span style="color:red"><strong>7/16/2023</strong></span></p></td>
+<td><p><span style="color:red"><strong>7/30/2023</strong></span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>But task 3 was submitted on 4/28/2023, it might be adjusted by moving back dates such that the timeframes are preserved as follows:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Milestone or Deliverable</p></th>
+<th class="head"><p>Planned Duration</p></th>
+<th class="head"><p>Actual Duration</p></th>
+<th class="head"><p>Actual Start Date</p></th>
+<th class="head"><p>Actual End date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Some milestones</p></td>
+<td><p>7 days</p></td>
+<td><p>7 days</p></td>
+<td><p><span style="color:green"><strong>4/21/2023</strong></span></p></td>
+<td><p><span style="color:green"><strong>4/28/2023</strong></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Some deliverables</p></td>
+<td><p>14 days</p></td>
+<td><p>14 days</p></td>
+<td><p><span style="color:green"><strong>4/14/2023</strong></span></p></td>
+<td><p><span style="color:green"><strong>4/28/2023</strong></span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>The narrative following the timeline can then explain that the project started earlier than expected (even if these dates preceded task 2’s submission).</p>
+</section>
+<section id="i-ve-completed-task-3-but-task-2-is-still-in-the-assessment-queue-should-i-wait-until-task-2-passes-submitting-task-3">
+<h3>I’ve completed task 3, but task 2 is still in the assessment queue. Should I wait until task 2 passes submitting task 3?<a class="headerlink" href="#i-ve-completed-task-3-but-task-2-is-still-in-the-assessment-queue-should-i-wait-until-task-2-passes-submitting-task-3" title="Permalink to this heading">#</a></h3>
+<p>If you’re nearing the end of your term, you should submit task 3 as soon as it’s ready. If task 2 gets returned, task 3 will also automatically be returned. However, if it passes, task 3 will keep its place in the assessment queue.</p>
+</section>
+<section id="my-task-was-returned-for-in-text-citations-could-not-be-found">
+<h3>My task was returned for “In-text citations could not be found…”<a class="headerlink" href="#my-task-was-returned-for-in-text-citations-could-not-be-found" title="Permalink to this heading">#</a></h3>
+<p><strong>My task two was returned for <em>sources</em> stating:</strong></p>
+<blockquote>
+<div><p>“In-text citations could not be found for portions of the task that have been quoted or paraphrased… “
+<strong>What does this comment mean?</strong></p>
+</div></blockquote>
+<p>This comment indicates they could not find a matching in-text citation for every source on your reference list. Check that each reference has a match following APA style, e.g., (Author, year), and remove any references without matches. Use a <a class="reference internal" href="resources.html#resources-general-grammar-sources"><span class="std std-ref">referencing tool</span></a> to create, manage references, and avoid such errors. Follow the in-text citations and the reference page format of the <a class="reference internal" href="resources.html#resources-examples"><span class="std std-ref">tasks 2 and 3 examples</span></a>.</p>
+</section>
+</section>
+<section id="questions-comments-or-suggestions">
+<h2>Questions, comments, or suggestions?<a class="headerlink" href="#questions-comments-or-suggestions" title="Permalink to this heading">#</a></h2>
+<script
+   type="text/javascript"
+   src="https://utteranc.es/client.js"
+   async="async"
+   repo="ashejim/C769"
+   issue-term="pathname"
+   theme="github-light"
+   label="💬 comment"
+   crossorigin="anonymous"
+/>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="task2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Task 2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="resources.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">C769 Resources</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-task-3">Writing Task 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-a-overview">Section A: Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-b-other-works">Section B: Other Works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-c-changes-to-project-environment">Section C: Changes to Project Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-d-methodology">Section D: Methodology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-e-project-goals-and-objectives">Section E: Project Goals and Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-f-project-timeline">Section F: Project Timeline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-g-unanticipated-requirements">Section G: Unanticipated Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-h-conclusion">Section H: Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendices">Appendices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#section-i-project-deliverables">Section I: Project deliverables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grammar-sources-and-apa">Grammar, Sources, and APA</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-most-common-reasons-task-3-does-not-pass">What are the most common reasons task 3 does not pass?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-long-should-task-3-be">How long should task 3 be?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-capstone-is-not-a-real-project-what-do-i-do-for-the-deliverables">My capstone is not a real project. What do I do for the deliverables?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-task-2-timeline-has-projected-end-dates-of-6-months-since-this-is-what-it-would-take-but-i-just-submitted-task-2-and-need-to-complete-task-3-now-what-should-i-do">My task 2 timeline has projected end dates of 6 months (since this is what it would take), but I just submitted task 2 and need to complete task 3 now. What should I do?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-ve-completed-task-3-but-task-2-is-still-in-the-assessment-queue-should-i-wait-until-task-2-passes-submitting-task-3">I’ve completed task 3, but task 2 is still in the assessment queue. Should I wait until task 2 passes submitting task 3?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#my-task-was-returned-for-in-text-citations-could-not-be-found">My task was returned for “In-text citations could not be found…”</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-comments-or-suggestions">Questions, comments, or suggestions?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Jim Ashe
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
