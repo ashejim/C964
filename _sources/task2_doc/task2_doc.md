@@ -16,8 +16,8 @@ The content here for parts A, B, and D aligns with the latest version of the [Ta
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
 > [Task 2 documentation template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
 
-:::{warning}
-*The rubric is currently under development.* If you find the rubric difficult to understand, we recommend first referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
+:::{tip}
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
 :::
 
 To gauge the level of detail evaluators typically expect, review these examples:
@@ -84,7 +84,7 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 </div>
 
 :::{tip}
-Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. You can reuse content from other sections within the document or C951 task 3 as needed. It's not about writing something fun to read -it's about demonstrating that the requirements are met.
+When evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. It's not about writing something fun to read -it's about demonstrating that the requirements are met.
 
 1. Follow the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
 2. Submit parts A, B, and D as a *single* .pdf file.
@@ -147,14 +147,6 @@ Here are some points to consider:
 - Trying to comprehend two projects at once is just more difficult. 
 
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be a good option.
-
-(task1:faq:confusingrubric)=
-
-## The rubric is confusing
-
-*We do not advise directly following the official rubric for C964.* Follow the guidelines found on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Because of the ambiguity of the official rubric, following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while following the template format is not technically required, it is highly recommended.
-
-Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
 
 ## Questions, comments, or suggestions?
 

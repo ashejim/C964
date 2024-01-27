@@ -11,6 +11,10 @@
 4. Export parts A, B, and D as a *single* .pdf file.
 5. *Always upload the document* separately from the code. It should be easily, identified.
 
+:::{tip}
+Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+:::
+
 (task2_doc_finish:how_to_submit_code)=
 
 ## Submitting Task 2, the code (part C)
