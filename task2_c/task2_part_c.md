@@ -381,6 +381,12 @@ Measuring accuracy (or a plan to do so) will be discussed in detail in the [Accu
 
 ## FAQ
 
+### Help! I've never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?
+
+ Maybe the **fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html).** Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data. If you have time, Udemy offers some [ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview).
+
+ WGU provides access to a very good [AI textbook which includes a Machine Learning](https://lrps.wgu.edu/provision/386121824) section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU's BSCS curriculum.
+
 ### What are the most common reasons for task 2 part C (the app/code) being returned?
 
 1. Evaluators cannot get the code to run as intended. This usually happens because of an incomplete or incorrect [User Guide](task2_doc_d:user_guide) or because evaluators can't access shared links (check the permissions!).
@@ -518,37 +524,28 @@ Here are some points to consider:
 
 Whatever you do for C964 can meet the requirements of C951 task 3. If you have plenty of time, completing C964 first might be the best option.
 
-### The rubric is vague and refers to the task directions which seem to require many redundant or unnecessary items. What do I actually need to do?
+### The rubric and task directions has items not explained on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
 
-Your C964 course instructor team has collaborated with evaluators (thank you evaluator team!) to ensure the explanations on this webpage align with how the assessment's requirements are interpreted by the evaluators. So if you find the official directions unclear, we advise following the directions on this webpage for both the application (part C) and the documentation (parts A, B, and D). 
-
-The official rubric and directions were written to map the project's elements to specific competencies, and following the official directions will meet all the requirements. However, be aware that many items are redundant or inherently met by other items. For example, in part C:
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
 
 - The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
 - Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
-- As any ML method is an algorithm, the requirements to implement both is redundant.
-- Etc., etc.
+- A solution using a mathematically based algorithm to data both suffices as ML and provides a "non-descriptive" method.
 
-Furthermore, some terminology is open to interpretation and nowhere rigorously defined. The official directions potentially have similar issues. So following the official directions without further guidance could result in overworking some requirements or misinterpreting others. For a more succinct outline of the Task 2 requirements see:
+<!-- Furthermore, some terminology is open to interpretation and nowhere rigorously defined. The official directions potentially have similar issues.  -->
+The guidance on this website serves to provide some specificity to help students overworking or misinterpreting requirements. For more details of the Task 2 requirements see:
 
 - [**Part C requirements**](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do)
 - [**Parts A, B, and D requirements**](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation)
 
-For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
+For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format. Your C964 course instructor team has collaborated with evaluators (thank you) to ensure the explanations on this webpage align with how the assessment's requirements are assessed. If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
 
-If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
-
-### The official learning resource seems to include documentation items not included on this webpage. Which should I follow?
+<!-- ### The official learning resource seems to include documentation items not included on this webpage. Which should I follow?
 
 Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators (thank you evaluator team!) to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
 
-The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
+The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine. -->
 
-### Help! I've never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?
-
-WGU provides access to a very good [AI textbook which includes a Machine Learning](https://lrps.wgu.edu/provision/386121824) section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU's BSCS curriculum.
-
-If you have time, Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
 
 ## Questions, comments, or suggestions?
 

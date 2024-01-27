@@ -1,3 +1,4 @@
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QItemize estimated environment costs of the application, e.g., deployment, hosting, maintenance, etc.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QItemize all estimated application costs, e.g., deployment, hosting, maintenance, etc.\\E$"}
 {"rule":"DT_RB_IN","sentence":"^\\QFor example, a robot needs to navigate a never before seen maze.\\E$"}
+{"rule":"EN_UNPAIRED_BRACKETS","sentence":"^\\QThe rubric and task directions has items not explained on this website, e.g., \"security features,\" \"interactive queries,\" \"monitoring tools,\" etc.\\E$"}
