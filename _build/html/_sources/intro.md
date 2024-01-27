@@ -4,13 +4,13 @@
 </head> -->
 
 :::{warning}
-🚧 This site is under construction! Apologies in advance for typos, broken links, etc. Feel free to make recommendations and become a contributor! 👷🏽‍♀️
+**Nothing on this website is an official WGU resource developed by the WGU product development team.** See your COS page to review the official resources.
 
-**Nothing on this website is an official WGU resource developed by the WGU product development.** See their COS page to review the official resources. To make comments or suggestions regarding those resources use your COS page ['Course Feedback'](https://ashejim.github.io/C964/support_this_page.html#help-support-this-website) link.
+🚧 This site is under construction! Apologies in advance for typos, broken links, etc. Feel free to make recommendations and become a contributor! 👷🏽‍♀️
 :::
 
 :::{warning}
-On 9/25/2023, C964 was updated to a new version, (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.**
+On 9/25/2023, C964 was updated to a new version, (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** The guidance and templates on this website apply to both versions.
 :::
 
 <!-- :::{warning}
