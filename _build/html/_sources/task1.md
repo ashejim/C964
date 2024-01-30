@@ -260,7 +260,7 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 (task1:faq:the_rubric_is_confusing)=
 
-### The rubric and task directions has items not explained on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
+### The rubric and task directions cover items not on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
 
 The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
 
@@ -274,11 +274,11 @@ The guidance on this website serves to provide some specificity to help students
 - [**Part C requirements**](https://ashejim.github.io/C964/task2_c/task2_part_c.html#what-does-the-application-need-to-do)
 - [**Parts A, B, and D requirements**](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation)
 
-For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format. Your C964 course instructor team has collaborated with evaluators (thank you) to ensure the explanations on this webpage align with how the assessment's requirements are assessed. If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
+For the documentation, preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format. Your C964 course instructor team has collaborated with evaluators to ensure the explanations on this webpage align with how the assessment's requirements are assessed. If anything needs further explanation, please ask us! [Contact your C964 course instructor](https://ashejim.github.io/C964/ci_c964.html#c964-course-faculty).
 
 ### The official learning resource seems to include documentation items not included on this webpage. Which should I follow?
 
-Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators (thank you evaluator team!) to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
+Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
 
 The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
 
