@@ -21,6 +21,8 @@ It's a new field, and answers vary depending on who you ask. But for the purpose
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project, not a business or software project.  
 
+(task1:data)=
+
 ### Data
 
 ML applies an algorithm to data, and you can't apply an algorithm to data -without data. So finding data should be an early step.
