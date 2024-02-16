@@ -97,8 +97,6 @@ You do not need special permission to use any open-source dataset (see our [list
 - You *can* use simulated data.
 - You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
 
-See more on the data requirements and data sources [here](task1:data).
-
 (task2_part_c:mlreqs)=
 
 ### Machine Learning requirements
@@ -510,7 +508,7 @@ So only the three images will need to be added. Furthermore, you are free to adj
 
 ### Can I use my C951 task 1 or 2 for C964?
 
-Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). However, C951 Tasks 1 (chatbot) and 2 (rescue robot) can be passed withFout applying a mathematically based algorithm which is necessary to pass C964 (no C951 task requires AI). While chatbots are often trained and improved with ML/AI methods, it's difficult to acquire sufficient user data within students' typical timeframe. An algorithm is easier to employ in C951 Task 2, but the application would be limited to the [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim) simulation software which may make meeting the user application requirements of C964 difficult. Furthermore, [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim)'s dependency on Lua makes the application of ML libraries problematic. For these reasons and others, we do not recommend using either of these projects for C964 -unless the C951 projects far exceed their requirements and meet the C964 requirements as is.
+Yes. You can use any of your own academic or professional work for C964 including the C950 project (Data Structures & Algorithms II). However, C951 Tasks 1 (chatbot) and 2 (rescue robot) can be passed without applying a mathematically based algorithm which is necessary to pass C964 (no C951 task requires AI). While chatbots are often trained and improved with ML/AI methods, it's difficult to acquire sufficient user data within students' typical timeframe. An algorithm is easier to employ in C951 Task 2, but the application would be limited to the [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim) simulation software which may make meeting the user application requirements of C964 difficult. Furthermore, [CoppeliaSim](https://www.coppeliarobotics.com/coppeliaSim)'s dependency on Lua makes the application of ML libraries problematic. For these reasons and others, we do not recommend using either of these projects for C964 -unless the C951 projects far exceed their requirements and meet the C964 requirements as is.
 
 ### Can I use my C951 task 3? Should I use it?
 
