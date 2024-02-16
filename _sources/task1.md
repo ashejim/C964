@@ -30,6 +30,10 @@ A machine learning application is the hard requirement of the capstone, but you 
 - [**Kaggle.com**](https://www.kaggle.com/datasets)
 - [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Data.gov](https://data.gov/)
+- [sklearn.datasets](https://scikit-learn.org/stable/datasets.html) package from scikit-learn includes toy, real-world, generated, and other datasets that can be imported directly into code.
+- [torchvision.datasets](https://pytorch.org/vision/stable/datasets.html#) pytorch module with built-in image datasets and dataloader. The module also includes
+- [dataloaders](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html#) for importeding directly into code.
+- [tensorflow_datasets](https://www.tensorflow.org/datasets) collection of image datasets ready to use with TensorFlow or other Python ML frameworks.
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - Simulated data
 
