@@ -5,7 +5,7 @@ This website is a collaborative work in progress by the C964 course faculty. We 
 - Leave a  and/or our 
 - For corrections or suggestions to THIS webpage:
   - Open an issue on the [⭐ repo](https://github.com/ashejim/C964) (upper right-corner).
-    > <img src="https://github.com/ashejim/C769/blob/main/url_images/github-open-issue?raw=true" height="75px" />
+    > <img src="https://github.com/ashejim/C964/blob/main/url_images/github-open-issue.png?raw=true" height="75px" />
   - Leave a [comment below](support:comments)
   - contact [jim.ashe@wgu.edu](mailto:ugcapstoneit@wgu.edu&subject=C964%20website%20feedback&body=Your%20feedback%20here.%20Thank%20you!)
 - Go to your C964 COS page and click 'Course Feedback.'
