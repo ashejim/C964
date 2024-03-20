@@ -14,6 +14,7 @@ This website is a collaborative work in progress by the C964 course faculty. We 
     This creates a ticket for our product development team, and is appropriate for giving feedback on the official rubric or learning resource.
 =
 (support:comments)=
+
 ## Questions, comments, or suggestions?
 
 <script
