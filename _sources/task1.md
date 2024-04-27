@@ -32,6 +32,10 @@ A machine learning application is the hard requirement of the capstone, but you 
 - [Data.gov](https://data.gov/)
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - Simulated data
+- Python library built-in datasets:  
+  - [sklearn's data sets](https://scikit-learn.org/stable/datasets.html) (these can be imported directly into your code)
+  - PyTorch's built-in datasets: [images](https://pytorch.org/vision/stable/datasets.html), [texts](https://pytorch.org/text/stable/datasets.html), and [audio](https://pytorch.org/audio/stable/datasets.html)
+  - [Tensorflow datasets](https://www.tensorflow.org/datasets)
 
 ```{note}
 *No minimal data complexity or processing is required.* Choosing data which needs less processing or simplifying a dataset (you don't have to use it all) can make the project technically more accessible.  
