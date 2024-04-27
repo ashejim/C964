@@ -97,6 +97,8 @@ You do not need special permission to use any open-source dataset (see our [list
 - You *can* use simulated data.
 - You only need to apply for [IRB review](https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002) if you are *collecting* data involving human participants (this is very rare). Otherwise, your project is in IRB compliance.  
 
+See a list of openly available data [here](resources:task1:data).
+
 (task2_part_c:mlreqs)=
 
 ### Machine Learning requirements
