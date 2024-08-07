@@ -21,8 +21,6 @@ It's a new field, and answers vary depending on who you ask. But for the purpose
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project, not a business or software project.  
 
-(task1:data)=
-
 ### Data
 
 ML applies an algorithm to data, and you can't apply an algorithm to data -without data. So finding data should be an early step.
@@ -32,12 +30,12 @@ A machine learning application is the hard requirement of the capstone, but you 
 - [**Kaggle.com**](https://www.kaggle.com/datasets)
 - [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Data.gov](https://data.gov/)
-- [sklearn.datasets](https://scikit-learn.org/stable/datasets.html) package from scikit-learn includes toy, real-world, generated, and other datasets that can be imported directly into code.
-- [torchvision.datasets](https://pytorch.org/vision/stable/datasets.html#) pytorch module with built-in image datasets and dataloader. The module also includes
-- [dataloaders](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html#) for importeding directly into code.
-- [tensorflow_datasets](https://www.tensorflow.org/datasets) collection of image datasets ready to use with TensorFlow or other Python ML frameworks.
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - Simulated data
+- Python library built-in datasets:  
+  - [sklearn's data sets](https://scikit-learn.org/stable/datasets.html) (these can be imported directly into your code)
+  - PyTorch's built-in datasets: [images](https://pytorch.org/vision/stable/datasets.html), [texts](https://pytorch.org/text/stable/datasets.html), and [audio](https://pytorch.org/audio/stable/datasets.html)
+  - [Tensorflow datasets](https://www.tensorflow.org/datasets)
 
 ```{note}
 *No minimal data complexity or processing is required.* Choosing data which needs less processing or simplifying a dataset (you don't have to use it all) can make the project technically more accessible.  
@@ -167,7 +165,7 @@ Once you've decided on a topic, complete the approval form following the templat
 <!-- old way with thumbnail 
 > [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe) -->
 
-> [Topic Approval Form Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+> [Topic Approval Form Template](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Topic_Approval_Form.docx)
 
 ```{note}
 The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
@@ -205,7 +203,7 @@ the waiver form is **only** required if your project is based upon or includes r
 
 In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with a waiver form to Assessments.
 
-> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
+> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Release_Form.docx)
 
 (task1:faq)=
 
@@ -268,7 +266,7 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 ### The rubric and task directions cover items not on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
 
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
 
 - The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
 - Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.

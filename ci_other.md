@@ -98,7 +98,7 @@ Dr. James Ashe is a dedicated maths, computer science, and statistics teacher wi
 
 Amy has been with WGU since January of 2015.  Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that.  She has a BS from Penn State University in Computer Science, and two Masters's Degrees, both in Computer Science. She also has a Ph.D. in Information Systems from Nova Southeastern University. She is currently working on an MS in Cybersecurity and Information Assurance from WGU. Her interests include Norway and its culture and language, reading fantasy and science fiction, playing board games, and loving her dog and cats.
 
-## Mark Denchy, PhD
+## Mark Denchy, MBA
 
 :::{margin} Contact Info
 📧 [mark.denchy@wgu.edu](mailto:mark.denchy@wgu.edu?subject=C964%20capstone%20related%20question) </br>

@@ -3,7 +3,7 @@
 
 # Task 2 parts A and B
 
-The purpose of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
+The purpose of parts A and B is to demonstrate competency in communicating your technical solution to different less technical audiences. Follow the [Task 2 Template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx).
 
 - Part A - Convince senior leadership to approve your project.
 - Part B - Implementation plan for IT leadership (but not CS experts) or middle management.
