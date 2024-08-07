@@ -4,7 +4,6 @@
 <head>
     <base target="_blank">
 </head>
-(resources)=
 
 (resources:examples)=
 
