@@ -43,7 +43,7 @@ Currently, most of these examples (including those in the archives) follow the o
 
 ### Topic Approval Form Template
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe)
+> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Topic_Approval_Form.docx)
 
 (resources:task1:excellence)=
 
@@ -53,11 +53,12 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 
 ### Topic Approval Form Example
 
-> [![Image of the first page of the topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_example.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:b:/g/personal/jim_ashe_wgu_edu/ESVtyYRIzQhNoLL37S7prkQB9uGuuljjUbCoKaVe0h47Xg?e=dHkn6n)
+- [task 1 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
+- [task 1 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
 
 ### Waiver Form
 
-> [![Image of the first page of the waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ESLuMNRuDjpCrKvqWaC6cywB4I97WEPdk5MRZRq4LfmFhQ) 
+> [![Image of the first page of the waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Release_Form.docx)
 
 (resources:task1:data)=
 
@@ -153,7 +154,7 @@ Part C is your submitted application. See all our available resources here: [tas
 
 Write your proposal following **C964 Task 2 documentation template**:
 
-> [![Image of the first page of the Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg)
+> [![Image of the first page of the Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx)
 
 <!-- Contrasting the recommended approach to most WGU projects you've passed, e.g., C950 and C951, *we do not advise completing your application (part C) OR writing your document (parts A) following the specific items listed in the official rubric _or task directions.*  Written holistically, many find it difficult to align the task directions (A-D) to the rubric outcomes (1-6). Please refer to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while not technically required, it is highly recommended. -->
 

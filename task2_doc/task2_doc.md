@@ -6,7 +6,7 @@ On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubric and ta
 :::
 
 :::{note}
-The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w) is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
+The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the previous Task 2 template is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
 :::
 
 (task2_doc)=
@@ -17,7 +17,7 @@ After completing the application (part C), write your documentation (parts A, B,
 > [Task 2 documentation template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx)
 
 :::{tip}
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg).
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx).
 :::
 
 To gauge the level of detail evaluators typically expect, review these examples:
@@ -28,7 +28,7 @@ To gauge the level of detail evaluators typically expect, review these examples:
 
 The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the [excellence archives]((resources:examples:archive) to review better projects.
 
-These examples (and most of those in archives) were written using the [previous Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EcklZjLXTB5EpDS4BVYc8SEBhT3VHy3s_9lZSIZ5aH6Q5w). In the coming months, we will add more recent examples following the new template.
+These examples (and most of those in archives) were written using the previous Task 2 template. In the coming months, we will add more recent examples following the new template.
 
 `````{tab-set}
 ````{tab-item} Task 2 documentation example A
@@ -86,7 +86,7 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 :::{tip}
 When evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. It's not about writing something fun to read -it's about demonstrating that the requirements are met.
 
-1. Follow the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg)
+1. Follow the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx)
 2. Submit parts A, B, and D as a *single* .pdf file.
 3. Part D is what matters -particularly the *Machine Learning*, *Validation*, and *User Guide* sections. Parts A and B need to be completed but have few qualitative requirements.
 :::
@@ -100,7 +100,7 @@ When evaluating a section, the evaluator will check for the fulfillment of the r
 To see which version you are enrolled, go to the 'Assessments' section of your C964 COS page:
 ![An image showing 'Performance Assessment:Computer Science Capstone (SIM3)' as can be found in the Assessment section on your C964 COS page. 'SIM3' is higlighted.](./../url_images/C964_sim3-1.png)
 
-For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) and following the advice on this webpage.
+For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx) and following the advice on this webpage.
 
 ### Are there length requirements for the documentation?
 
