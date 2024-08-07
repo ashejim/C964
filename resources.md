@@ -32,7 +32,7 @@ These examples (and most of those in archives) were written using an old Task 2 
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 :::{tip}
-Currently, most of these examples (including those in the archives) follow the old template. However, the advice on this site aligns with the latest version of the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx) as the new template meets all the documentation requirements while being more succinct and clear. We recommend using the new template for both SIM2 and SIM3.
+Currently, most of these examples (including those in the archives) follow the old template. However, the advice on this site aligns with the latest version of the [Task 2 template](./resources/C964_task_2_template.docx) as the new template meets all the documentation requirements while being more succinct and clear. We recommend using the new template for both SIM2 and SIM3.
 :::
 
 (resources:task1)=
@@ -43,7 +43,7 @@ Currently, most of these examples (including those in the archives) follow the o
 
 ### Topic Approval Form Template
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Topic_Approval_Form.docx)
+> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](./resources/C964_Capstone_Topic_Approval_Form.docx)
 
 (resources:task1:excellence)=
 
