@@ -51,6 +51,10 @@ Currently, most of these examples (including those in the archives) follow the o
 
 ### Excellence Archive
 
+>[test](./resources/C964_Capstone_Topic_Approval_Form.docx)
+
+[test](./resources/C964_Capstone_Topic_Approval_Form.docx)
+
 The Capstone Excellence Archive includes a wide range of completed projects. When reviewing archived capstones, keep in mind that they all are, by definition, above and beyond the requirements. Therefore, do not use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the [examples](resources:examples) above.
 
 ### Topic Approval Form Example
