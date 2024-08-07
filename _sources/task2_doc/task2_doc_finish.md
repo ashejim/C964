@@ -5,7 +5,7 @@
 
 ## Submitting Task 2, the document (parts A, B, and D)
 
-1. Use the [Task 2 Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
+1. Use the [Task 2 Template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx).
 2. Check Grammar!!
 3. Check adherence to APA formatting, particularly citations. Preserve the formatting of the template and use the MS reference tool, and this shouldn't be a problem.
 4. Export parts A, B, and D as a *single* .pdf file.

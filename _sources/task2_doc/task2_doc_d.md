@@ -2,7 +2,7 @@
 
 (task2_doc_d)=
 
-Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [User Guide](task2d:userguide), [Machine Learning](task2d:ml), and [Validation](task2d:validation) sections are the most important. As such, we recommend completing these sections first. Follow the [Task 2 Template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg).
+Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [User Guide](task2d:userguide), [Machine Learning](task2d:ml), and [Validation](task2d:validation) sections are the most important. As such, we recommend completing these sections first. Follow the [Task 2 Template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx).
 
 (task2_doc_d:user_guide)=
 
