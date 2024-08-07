@@ -104,7 +104,6 @@ First, understand the project's requirements. What they are -and what they aren'
     allowfullscreen allow="autoplay"
 >
 </iframe>
-
-And review the [What does the application need to do?](task2_part_c:what_does_the_application_need_to_do) section and part C of the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx).
+And review the [What does the application need to do?](task2_part_c:what_does_the_application_need_to_do) section and part C of the [Task 2 template](./resources/C964_task_2_template.docx).
 
 Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and [*C951 -Intro to AI*](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c951-task-1-or-2-for-c964) tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by your assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
