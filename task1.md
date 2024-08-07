@@ -266,7 +266,7 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 ### The rubric and task directions cover items not on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
 
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
 
 - The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
 - Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
