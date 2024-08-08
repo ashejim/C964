@@ -165,7 +165,7 @@ Once you've decided on a topic, complete the approval form following the templat
 <!-- old way with thumbnail 
 > [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe) -->
 
-> [Topic Approval Form Template](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Topic_Approval_Form.docx)
+> [Topic Approval Form Template](./resources/C964_Capstone_Topic_Approval_Form.docx)
 
 ```{note}
 The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
@@ -203,7 +203,7 @@ the waiver form is **only** required if your project is based upon or includes r
 
 In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with a waiver form to Assessments.
 
-> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/C964_Capstone_Release_Form.docx)
+> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](./resources/C964_Capstone_Release_Form.docx)
 
 (task1:faq)=
 
@@ -266,7 +266,7 @@ Whatever you do for C964 can meet the requirements of C951 task 3. If you have p
 
 ### The rubric and task directions cover items not on this website, e.g., "security features," "interactive queries," "monitoring tools," etc. Do these need to be included?
 
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](https://github.com/ashejim/C964/blob/main/resources/C964_task_2_template.docx). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](./resources/C964_task_2_template.docx). Following the official directions *will* meet all the requirements, but be aware that some items might not be applicable to your project or be inherently met by other items. For example, in part C:
 
 - The descriptive and nondescriptive requirement is met by the visualization and decision support functionality respectively.
 - Visualization functionality and monitoring tools are inherently part of tools used to create visualizations and code.
@@ -284,7 +284,7 @@ For the documentation, preserve the template's section titles, and order, and su
 
 Either will meet the requirements. However, the [template on this webpage](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-the-documentation), is more succinct and was developed in collaboration with the capstone evaluators to specifically align with versions SIM3 and SIM2. Hence, you can be ensured that following this website's template will meet all the requirements.
 
-The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the [previous template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg) written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
+The content for the official learning resource (LR) was largely copied from an older version of this website which aligned to the previous template written for SIM2. When C964 was updated to SIM3, we updated this website and the template accordingly. Hence, the discrepancy. As the actual requirements for SIM2 and SIM3 are the same, following the official LR or this website should be fine.
 
 ### Help! I've never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?
 
