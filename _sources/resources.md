@@ -66,6 +66,7 @@ The Capstone Excellence Archive includes a wide range of completed projects. Whe
 Any open source data set is freely available for use.
 
 - [Kaggle.com](https://www.kaggle.com/datasets)
+- [OpenML](https://openml.org/search?type=data&sort=runs&status=active). [Importing OpenML data](https://www.openml.org/apis)
 - [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Data.gov](https://data.gov/)
 - More [here](https://careerfoundry.com/en/blog/data-analytics/where-to-find-free-datasets/) and [here](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
