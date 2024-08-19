@@ -6,7 +6,7 @@ On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubric and ta
 :::
 
 :::{note}
-The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](./resources/C964_task_2_template.docx). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the previous Task 2 template is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
+The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](../resources/C964_task_2_template.docx). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the previous Task 2 template is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
 :::
 
 (task2_doc)=
@@ -14,10 +14,10 @@ The content here for parts A, B, and D aligns with the latest version of the [Ta
 ## Task 2 Documentation Template
 
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
-> [Task 2 documentation template](./resources/C964_task_2_template.docx) (parts A, B, and D)
+> [Task 2 documentation template](../resources/C964_task_2_template.docx) (parts A, B, and D)
 
 :::{tip}
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](./resources/C964_task_2_template.docx).
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](../resources/C964_task_2_template.docx).
 :::
 
 To gauge the level of detail evaluators typically expect, review these examples:
@@ -86,7 +86,7 @@ Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources
 :::{tip}
 When evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. It's not about writing something fun to read -it's about demonstrating that the requirements are met.
 
-1. Follow the [Task 2 template](./resources/C964_task_2_template.docx)
+1. Follow the [Task 2 template](../resources/C964_task_2_template.docx)
 2. Submit parts A, B, and D as a *single* .pdf file.
 3. Part D is what matters -particularly the *Machine Learning*, *Validation*, and *User Guide* sections. Parts A and B need to be completed but have few qualitative requirements.
 :::
@@ -100,7 +100,7 @@ When evaluating a section, the evaluator will check for the fulfillment of the r
 To see which version you are enrolled, go to the 'Assessments' section of your C964 COS page:
 ![An image showing 'Performance Assessment:Computer Science Capstone (SIM3)' as can be found in the Assessment section on your C964 COS page. 'SIM3' is higlighted.](./../url_images/C964_sim3-1.png)
 
-For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](./resources/C964_task_2_template.docx) and following the advice on this webpage.
+For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](../resources/C964_task_2_template.docx) and following the advice on this webpage.
 
 ### Are there length requirements for the documentation?
 
