@@ -9,7 +9,7 @@ An application (app) is simply software that performs specific tasks.
 ```
 
 :::{tip}
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](./resources/C964_task_2_template.docx).
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](../resources/C964_task_2_template.docx).
 :::
 
 (task2_part_c:what_does_the_application_need_to_do)=
