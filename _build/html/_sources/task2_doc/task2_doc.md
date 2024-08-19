@@ -14,7 +14,7 @@ The content here for parts A, B, and D aligns with the latest version of the [Ta
 ## Task 2 Documentation Template
 
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
-> [Task 2 documentation template](./resources/C964_task_2_template.docx)
+> [Task 2 documentation template](./resources/C964_task_2_template.docx) (parts A, B, and D)
 
 :::{tip}
 The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](./resources/C964_task_2_template.docx).
