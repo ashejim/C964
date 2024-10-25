@@ -223,7 +223,23 @@ You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library)
 <img src="./_images/google_scholar_demo.gif" height="200px" alt = "short moive demonstraiting how to use google.scholar.com." />
 :::
 
-### Bibliography
+### Welcome Email
+
+```{admonition} A Welcome Email
+Welcome to C964! See the [C964 website](https://ashejim.github.io/C964/intro.html) for almost everything you need (videos, coding examples, doc examples, templates, etc.).To allow for a broad range of projects, the rubric’s language is necessarily broad but lacks specificity, and the specifics in the task directions contain items not necessarily required. You can ignore the official rubric and directions, the website and the [Task 2 template](https://ashejim.github.io/C964/task2_doc/task2_doc.html#task-2-documentation-template), best outline what's requried.
+
+Your project must apply machine learning (ML) to solve a problem. Using ML requires data, and fortunately, open, machine-readable datasets are readily available, e.g., [Kaggle, Github, etc](https://ashejim.github.io/C964/task1.html#data). Using a dataset, find a question to answer or problem to solve, and then choose that as your "business" problem to solve. Here are some points to consider as you begin to think of a topic for task 1:
+
+- The “app” (part C of Task 2 ) is most commonly passed by submitting a Jupyer notebook (.ipynb) and data file (.csv). But you can use whatever tools you like.
+- Students typically apply ML tools from a Python library to the non-descriptive method and then use whatever is most appropriate for the descriptive method ([coding examples](https://ashejim.github.io/C964/task2_c/task2_part_c.html#task-2-part-c-the-application)) 
+- There is no accuracy or complexity requirement for your models other than it applies some machine learning. 
+- Your submitted project must have a []"user-friendly" interface](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex-ui.html), but a GUI is not required. This is a CS project (not a software project); evaluators deal with a wide array of technical projects and need a way to review your work.
+- Task 1 is a preliminary exercise ensuring students begin in the right direction. Changing details from task 1 to task 2 is allowed and typical.
+
+To get some ideas, watch this [video](https://ashejim.github.io/C964/intro.html#start-here) and review these [examples](https://ashejim.github.io/C964/task1.html#topic-summary-examples). Next, complete the topic approval form and email it to me to be signed for approval. Set up an appointment if you have questions, but topic approval does not require an appointment. Following approval, see the  C964 Task 2 webpage and get started on Task 2. If you have any questions about a topic, schedule email (fastest) or set an appointment (bst for general discussion) -it's why we're here!
+```
+
+## Bibliography
 
 ```{bibliography}
 ```
