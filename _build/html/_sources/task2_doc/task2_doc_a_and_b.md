@@ -83,6 +83,7 @@ Include the following:
 
 Include an itemized list of all resources and costs:
 
-- Itemize hardware and software costs.
+- Itemize hardware costs.
+- Itemize software costs and include relevant version or licensing information.
 - Itemize estimated labor time and costs.
 - Itemize all estimated application costs, e.g., deployment, hosting, maintenance, etc.
