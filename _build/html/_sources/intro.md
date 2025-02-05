@@ -9,9 +9,9 @@
 🚧 This site is under construction! Apologies in advance for typos, broken links, etc. Feel free to make recommendations and become a contributor! 👷🏽‍♀️
 :::
 
-:::{warning}
+<!-- :::{warning}
 On 9/25/2023, C964 was updated to a new version, (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** The guidance and templates on this website apply to both versions.
-:::
+::: -->
 
 <!-- :::{warning}
 When opening the official C964 COS page you may see pop-up message below. *Please ignore the text in bold.* While C964 will be updated on 9/25, you CAN stay in the current version. Those who have started the course (i.e., have an assigned CI) will NOT automatically be moved to the new one -unless they request it. Furthermore, the update will not change the project requirements. Therefore, your best option for success is to move forward, follow the advice of your program mentor, and refer to this website.
@@ -104,6 +104,7 @@ First, understand the project's requirements. What they are -and what they aren'
     allowfullscreen allow="autoplay"
 >
 </iframe>
+
 And review the [What does the application need to do?](task2_part_c:what_does_the_application_need_to_do) section and part C of the [Task 2 template](./resources/C964_task_2_template.docx).
 
 Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and [*C951 -Intro to AI*](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c951-task-1-or-2-for-c964) tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by your assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
