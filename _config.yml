@@ -65,3 +65,10 @@ html:
 #   config:
 #     bibtex_reference_style: author_year
 #     bibtex_bibfiles: references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    html_baseurl: https://ashejim.github.io/C964
+  extra_extensions:
+    - sphinx_sitemap
