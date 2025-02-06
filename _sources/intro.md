@@ -9,8 +9,6 @@
 🚧 This site is under construction! Apologies in advance for typos, broken links, etc. Feel free to make recommendations and become a contributor! 👷🏽‍♀️
 :::
 
-TEST
-
 <!-- :::{warning}
 On 9/25/2023, C964 was updated to a new version, (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.** The guidance and templates on this website apply to both versions.
 ::: -->
