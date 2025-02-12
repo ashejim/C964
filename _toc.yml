@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 
 parts:
--capstion:
+-caption:
   chapters:
   - file: task1
   - file: task2_c/task2_part_c
