@@ -12,7 +12,7 @@ This website is a collaborative work in progress by the C964 course faculty. We 
 - For the official rubric and resoruces, you can leave feedback via the 'Course Feedback' button.
     > <img src="https://github.com/ashejim/C769/blob/main/url_images/course_feedback_link.png?raw=true" height="125px" />
     This creates a ticket for our product development team, and is appropriate for giving feedback on the official rubric or learning resource.
-=
+
 (support:comments)=
 
 ## Questions, comments, or suggestions?

@@ -98,21 +98,25 @@ Dr. James Ashe is a dedicated maths, computer science, and statistics teacher wi
 
 Amy has been with WGU since January of 2015.  Before joining WGU, she worked as an adjunct college instructor for 10 years teaching computer science classes, and as a programmer for 10 years before that.  She has a BS from Penn State University in Computer Science, and two Masters's Degrees, both in Computer Science. She also has a Ph.D. in Information Systems from Nova Southeastern University. She is currently working on an MS in Cybersecurity and Information Assurance from WGU. Her interests include Norway and its culture and language, reading fantasy and science fiction, playing board games, and loving her dog and cats.
 
-## Mark Denchy, MBA
-
+<!-- ## Mark Denchy, MBA -->
+<!-- 
 :::{margin} Contact Info
 📧 [mark.denchy@wgu.edu](mailto:mark.denchy@wgu.edu?subject=C964%20capstone%20related%20question) </br>
 📅 [Schedule an Appointment](https://scheduling.wgu.edu/wgu-mentoring/workflows/WGU100/schedule/?locationId=course_mentoring&appointmentTypeGroupId=CM&resourceId=0053x00000FoVG6AAN&ch=emailsignature&questionId__course_code=C964) </br>
-<table _ngcontent-xlb-c382="" class="margin--bottom--10"><caption _ngcontent-xlb-c382="" class="visually-hidden"> Office hours for Mark Denchy </caption><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">SUN</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">7:00 AM</span> to <span _ngcontent-xlb-c382="">3:00 PM </span></div><!----></td></tr><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">WED</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">3:00 PM</span> to <span _ngcontent-xlb-c382="">7:00 PM </span></div><!----></td></tr><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">SAT</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">7:00 AM</span> to <span _ngcontent-xlb-c382="">3:00 PM </span></div><!----></td></tr><!----></table>
-:::
+<table _ngcontent-xlb-c382="" class="margin--bottom--10"><caption _ngcontent-xlb-c382="" class="visually-hidden"> Office hours for Mark Denchy </caption><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">SUN</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">7:00 AM</span> to <span _ngcontent-xlb-c382="">3:00 PM </span></div><!---->
+<!-- </td></tr><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">WED</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">3:00 PM</span> to <span _ngcontent-xlb-c382="">7:00 PM </span></div><!---->
+<!-- </td></tr><tr _ngcontent-xlb-c382="" class="ng-star-inserted"><th _ngcontent-xlb-c382="" class="text--right"><span _ngcontent-xlb-c382="" class="table-row"><b _ngcontent-xlb-c382="">SAT</b></span></th><td _ngcontent-xlb-c382=""><div _ngcontent-xlb-c382="" class="margin--left ng-star-inserted"><span _ngcontent-xlb-c382="">7:00 AM</span> to <span _ngcontent-xlb-c382="">3:00 PM </span></div><!---->
+<!-- </td></tr></table> -->
+<!-- ::: --> --> --> -->
 
-```{image} ./url_images/superman1.jpg
+<!-- ```{image} ./url_images/superman1.jpg
 :alt: A picture of Superman flying.
 :height: 200px
 :align: center
 :target: https://scheduling.wgu.edu/wgu-mentoring/workflows/WGU100/schedule/?locationId=course_mentoring&appointmentTypeGroupId=CM&resourceId=0053x00000FoVG6AAN&ch=emailsignature&questionId__course_code=C964
-```
+``` -->
 
+<!-- 
 - Debugging Java and Python
 - Data Analytics
 
@@ -120,4 +124,4 @@ Holding bachelor's and master’s degrees in Business Administration and Economi
 
 Mark comes to WGU with a global background spanning thirty years in commercial software engineering and currently leading the Software Modernization efforts for the top Pharmaceutical Automation company worldwide. He is also a certified ScrumMaster.
 
-On teaching, Mark cites he “…fiercely believes that everyone deserves the opportunity of advancing their education, in a supportive and nurturing environment. This approach sets the stage for the success of the next generation of students.”
+On teaching, Mark cites he “…fiercely believes that everyone deserves the opportunity of advancing their education, in a supportive and nurturing environment. This approach sets the stage for the success of the next generation of students.” -->
