@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Accuracy Analysis &#8212; Computer Science Capstone</title>
   
@@ -15,45 +14,47 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css?v=af7b8336" />
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -89,7 +90,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -97,12 +98,16 @@ commentsRunWhenDOMLoaded(addUtterances);
                 gtag('js', new Date());
                 gtag('config', 'G-H4N36TZQ78');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-H4N36TZQ78');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'task2_c/example_sup_reg/sup_reg_ex_accuracy';</script>
@@ -113,6 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Regression Model Development (part 2)" href="sup_reg_ex_develop-2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -120,23 +126,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -144,7 +143,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -152,16 +150,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -174,9 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -186,12 +197,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/3d_regression.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
+    <img src="../../_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -203,34 +221,34 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../task1.html">Task 1: Topic Approval</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../task2_part_c.html">Task 2: Part C -the application</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../task2_part_c.html">Task 2: Part C -the application</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-process.html">Data Exploring and Processing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-develop.html">Model Development</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-accuracy.html">Accuracy Analysis (for classification)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_class/sup_class_ex-ui.html">User Interface</a></li>
 </ul>
-</li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_reg_ex.html">Example: Supervised Regression App</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_reg_ex.html">Example: Supervised Regression App</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Accuracy Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_d.html">Task 2 Part D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_finish.html">Task 2 final touches</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources.html">C964 Resources</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_c964.html">C964 Course Faculty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_other.html">BSCS, Software, and other Course Faculty</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../support_this_page.html">Help Support this Website</a></li>
 </ul>
 
@@ -240,14 +258,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -256,14 +279,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -288,14 +311,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/ashejim/C964/main?urlpath=tree/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -306,14 +329,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/ashejim/C964/blob/main/task2_c/example_sup_reg/sup_reg_ex_accuracy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -469,26 +492,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -528,7 +545,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -540,10 +557,10 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Note: we only repeat this step from before, because this is a new .ipyb page.</span>
 <span class="c1">#it only needs to be executed once per file.</span>
 <span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is the best practice</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
 
 <span class="c1"># Reloading the dataset</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
@@ -570,13 +587,13 @@ document.write(`
 </details>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="accuracy-analysis">
-<span id="sup-reg-ex-develop-accuracy"></span><h1>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Permalink to this heading">#</a></h1>
-<p>In the <span class="xref myst">Accuracy Analysis section of part D</span> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.</p>
+<span id="sup-reg-ex-develop-accuracy"></span><h1>Accuracy Analysis<a class="headerlink" href="#accuracy-analysis" title="Link to this heading">#</a></h1>
+<p>In the <a class="reference internal" href="#task2_doc_d:accuracy_analysis"><span class="xref myst">Accuracy Analysis section of part D</span></a> of your project’s documentation, you will need to define and discuss how the metric for measuring the success of your application’s algorithm.</p>
 <p>As we are trying to predict a continuous number, even the very best model will have errors in almost every prediction (if not, it’s almost certainly <a class="reference external" href="https://en.wikipedia.org/wiki/Overfitting">overfitted</a>). Whereas measuring the success of our classification model was a simple ratio, here we need a way to measure how much those predictions deviate from actual values. See sklearn’s list of <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">metrics and scoring</a> for regression. Which metric is best depends on the needs of your project. However, any accuracy metric appropriate to your model will be accepted.</p>
 <p>To get some examples started, we’ll use the data (with <code class="docutils literal notranslate"><span class="pre">type</span></code> and model from the previous sections. Recall, the model predicts a number for <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span> 
 
 <span class="n">linear_reg_model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
 <span class="n">linear_reg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
@@ -586,7 +603,7 @@ document.write(`
 </div>
 </div>
 <section id="mean-squared-error">
-<span id="sup-reg-ex-develop-accuracy-mse"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this heading">#</a></h2>
+<span id="sup-reg-ex-develop-accuracy-mse"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Link to this heading">#</a></h2>
 <p>The mean square error (MSE) measures the average of the squares of errors (difference between predicted and actual values).</p>
 <div class="math notranslate nohighlight">
 \[\text{MSE} = \frac{1}{n} \sum^{n}_{i=1} (Y_i - \hat{Y}_i)^{2}\]</div>
@@ -595,7 +612,7 @@ document.write(`
 <p>Applying the MSE to the <em>test</em> data, we have:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">mean_squared_error</span>
 
 <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 </pre></div>
@@ -608,7 +625,7 @@ document.write(`
 </div>
 </div>
 <section id="mse-explanation-and-example-in-2d">
-<span id="sup-reg-ex-develop-accuracy-mse-example"></span><h3>MSE explanation and example in 2D<a class="headerlink" href="#mse-explanation-and-example-in-2d" title="Permalink to this heading">#</a></h3>
+<span id="sup-reg-ex-develop-accuracy-mse-example"></span><h3>MSE explanation and example in 2D<a class="headerlink" href="#mse-explanation-and-example-in-2d" title="Link to this heading">#</a></h3>
 <p>For illustration purposes, we’ll use just the <em>petal-length</em> to predict the <em>sepal-length</em> with linear regression on 15 random values. For a multi-variable case, see the [example below](sup_reg_ex: develop: accuracy: MSE_2).</p>
 <p>The regression line looks like this:</p>
 <div class="cell tag_hide-input tag_remove-output docutils container">
@@ -618,7 +635,7 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[[</span><span class="s1">&#39;petal-length&#39;</span><span class="p">]]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">:]</span>
@@ -656,7 +673,7 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Rectangle</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.patches</span><span class="w"> </span><span class="kn">import</span> <span class="n">Rectangle</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
@@ -690,7 +707,7 @@ document.write(`
 </div>
 <p>Increasing the number of variables uses the same concept only the regression line becomes multi-dimensional. For example, additionally, including ‘sepal-length’ and ‘petal-length’ creates a <em>4-dimensional</em> line. So it’s a little hard to visualize. Using the squares of the errors is standard but ME is sometimes easier for non-technical audiences to understand.</p>
 <section id="mse-for-multivariable-regression">
-<span id="sup-reg-ex-develop-accuracy-mse-2"></span><h4>MSE for Multivariable Regression<a class="headerlink" href="#mse-for-multivariable-regression" title="Permalink to this heading">#</a></h4>
+<span id="sup-reg-ex-develop-accuracy-mse-2"></span><h4>MSE for Multivariable Regression<a class="headerlink" href="#mse-for-multivariable-regression" title="Link to this heading">#</a></h4>
 <p>The case above presents Regression as most people are introduced to the concept -with two variables. Adding more variables does not change how MSE is computed, and the predicted values are still one-dimensional. However, visualizing the regression line can be <a class="reference external" href="https://stats.stackexchange.com/questions/73320/how-to-visualize-a-fitted-multiple-regression-model">interesting</a> when there are more than two independent variables. One approach is to simply plot predicted and true values as paired data points. While some information about the model and relationship is lost, it does clearly show the model’s accuracy.</p>
 <div class="cell tag_remove-output tag_hide-input docutils container">
 <details class="hide above-input">
@@ -719,7 +736,7 @@ document.write(`
 </div>
 </section>
 <section id="r-2-r-2-r-and-r">
-<span id="sup-reg-ex-develop-accuracy-r"></span><h4><span class="math notranslate nohighlight">\(R^{2}\)</span>, <span class="math notranslate nohighlight">\(r^{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(r\)</span><a class="headerlink" href="#r-2-r-2-r-and-r" title="Permalink to this heading">#</a></h4>
+<span id="sup-reg-ex-develop-accuracy-r"></span><h4><span class="math notranslate nohighlight">\(R^{2}\)</span>, <span class="math notranslate nohighlight">\(r^{2}\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(r\)</span><a class="headerlink" href="#r-2-r-2-r-and-r" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>These metrics are for <em>linear</em> models only! While they can be computed for any model, the results are not necessarily valid and can be misleading. For more details see <a class="reference external" href="https://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/"><span class="math notranslate nohighlight">\(R^{2}\)</span> is Not Valid for Nonlinear Regression</a> and this <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2892436/">paper</a>.</p>
@@ -735,7 +752,7 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(R^{2}\)</span> and <span class="math notranslate nohighlight">\(r\)</span> have can be more intuitively understood compared to the <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> and similar metrics, e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_absolute_error">MAE</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Mean_absolute_percentage_error">MAPE</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Root-mean-square_deviation">RMSE</a> which have arbitrary. <span class="math notranslate nohighlight">\(r\)</span> determines if variables are related, but since ML is more often concerned with how well a model predicts, <span class="math notranslate nohighlight">\(R^{2}\)</span> is more frequently used.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">r2_score</span>
 <span class="c1"># https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score</span>
 
 <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -749,7 +766,7 @@ document.write(`
 </div>
 </div>
 <p><span class="math notranslate nohighlight">\(76.2\%\)</span>. Is that good? Here, as with most ML models, our goal is predicting the dependent variable. To demonstrate how well our model fits to actual results (it’s <em>goodness of fit</em>), the closer to <span class="math notranslate nohighlight">\(1\)</span> the better. But what’s close enough? That depends on how precise you need to be. Some fields demand a standard as high as <span class="math notranslate nohighlight">\(95\%\)</span>. However, as a percentage of the dependent variable variation explained by the independent variables, <code class="docutils literal notranslate"><span class="pre">0.76202</span></code> is a big chunk. Here’s a rough, totally unofficial guideline:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong><span class="math notranslate nohighlight">\(R^{2}\)</span></strong></p></th>
 <th class="head"><p>Interpetaion</p></th>
@@ -773,8 +790,9 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>Conveniently, I’ve defined my model’s performance as a great success 😃. But in reality this very subjective and depends on the situation, field, and data. See this discussion, <a class="reference external" href="https://stats.stackexchange.com/questions/154755/is-there-any-rule-of-thumb-to-classify-r2-as-small-medium-or-large-effect-si">is there any rule of thumb for classifying <span class="math notranslate nohighlight">\(R^2\)</span></a>. Modeling complex and interesting situations will naturally be more difficult and should be held to different standard. In the behavioral sciences, the following guidelines for measuring the effect size are popular (as found <span id="id1">[<a class="reference internal" href="../../resources.html#id5" title="Jacob Cohen. Statistical power analysis for the behavioral sciences. Academic press, 2013.">Cohen, 2013</a>]</span>):</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong><span class="math notranslate nohighlight">\(R^{2}\)</span></strong></p></th>
 <th class="head"><p>Effect</p></th>
@@ -792,10 +810,11 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>As any <span class="math notranslate nohighlight">\(R^{2} &gt; 0\)</span> provides a predictive value better than the mean, any positive <span class="math notranslate nohighlight">\(R^{2}\)</span> can be argued to have value.</p>
 </section>
 <section id="margin-of-error">
-<h4>Margin of Error<a class="headerlink" href="#margin-of-error" title="Permalink to this heading">#</a></h4>
+<h4>Margin of Error<a class="headerlink" href="#margin-of-error" title="Link to this heading">#</a></h4>
 <p>The best way to measure your model’s success depends on what you’re trying to do. Say my flower customers want to predict <code class="docutils literal notranslate"><span class="pre">sepal-length</span></code> (I have no idea why), but any prediction within <code class="docutils literal notranslate"><span class="pre">0.5</span></code> of an inch would be acceptable. That is a “good” prediction, would be any falling with the dashed lines:</p>
 <div class="cell tag_hide-input tag_remove-output docutils container">
 <details class="hide above-input">
@@ -832,7 +851,7 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">percent_within_moe</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">margin</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">percent_within_moe</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">margin</span><span class="p">):</span>
     <span class="n">total_correct</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">predict</span> <span class="o">=</span> <span class="n">predict</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span> 
     <span class="n">actual</span> <span class="o">=</span> <span class="n">actual</span><span class="p">[</span><span class="s1">&#39;sepal-length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
@@ -869,7 +888,7 @@ document.write(`
 </section>
 </section>
 <section id="train-and-test-other-models">
-<h2>Train and test other models<a class="headerlink" href="#train-and-test-other-models" title="Permalink to this heading">#</a></h2>
+<h2>Train and test other models<a class="headerlink" href="#train-and-test-other-models" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>See <a class="reference external" href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning">sklearn’s regression library</a></p></li>
 <li><p>See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metrics</a></p></li>
@@ -902,11 +921,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="sup_reg_ex_develop-2.html"
@@ -926,17 +944,16 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -975,9 +992,10 @@ By Dr. Jim Ashe
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1001,8 +1019,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

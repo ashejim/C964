@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Model Development &#8212; Computer Science Capstone</title>
   
@@ -15,45 +14,47 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css?v=af7b8336" />
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/my_css.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -89,7 +90,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -97,12 +98,16 @@ commentsRunWhenDOMLoaded(addUtterances);
                 gtag('js', new Date());
                 gtag('config', 'G-H4N36TZQ78');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-H4N36TZQ78');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'task2_c/example_sup_class/sup_class_ex-develop';</script>
@@ -113,6 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Data Exploring and Processing" href="sup_class_ex-process.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -120,23 +126,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -144,7 +143,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -152,16 +150,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -174,9 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -186,12 +197,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/3d_regression.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
+    <img src="../../_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -203,34 +221,34 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../task1.html">Task 1: Topic Approval</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../task2_part_c.html">Task 2: Part C -the application</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_class_ex.html">Example: Supervised Classification App</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../task2_part_c.html">Task 2: Part C -the application</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="sup_class_ex.html">Example: Supervised Classification App</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-process.html">Data Exploring and Processing</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Model Development</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-accuracy.html">Accuracy Analysis (for classification)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sup_class_ex-ui.html">User Interface</a></li>
 </ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../example_sup_reg/sup_reg_ex_accuracy.html">Accuracy Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../task2_doc/task2_doc.html">Task 2: The Documentation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_d.html">Task 2 Part D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../task2_doc/task2_doc_finish.html">Task 2 final touches</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources.html">C964 Resources</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ci_page.html">Course Faculty</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_c964.html">C964 Course Faculty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ci_other.html">BSCS, Software, and other Course Faculty</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../support_this_page.html">Help Support this Website</a></li>
 </ul>
 
@@ -240,14 +258,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -256,14 +279,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -288,14 +311,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/ashejim/C964/main?urlpath=tree/task2_c/example_sup_class/sup_class_ex-develop.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -306,14 +329,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/ashejim/C964/blob/main/task2_c/example_sup_class/sup_class_ex-develop.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -469,26 +492,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -520,10 +537,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="model-development">
-<span id="sup-class-ex-develop"></span><h1>Model Development<a class="headerlink" href="#model-development" title="Permalink to this heading">#</a></h1>
+<span id="sup-class-ex-develop"></span><h1>Model Development<a class="headerlink" href="#model-development" title="Link to this heading">#</a></h1>
 <p>Supervised algorithms use inputs (independent variables) and labeled outputs (dependent variable -the “answers”) to create a model that can measure its performance and learn over time. Splitting the data into independent and dependent variables, we have the following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -531,7 +548,7 @@ document.write(`
 <span class="c1">#   it only needs to be executed once per file. </span>
   
 <span class="c1">#We&#39;ll import libraries as needed, but when submitting, having them all at the top is best practice</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Reloading the dataset</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;</span>
@@ -546,10 +563,10 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The focus of <span class="xref myst">Task 2 part D <em>Data Product</em></span> will be the what, how, and why of your model’s development.</p>
+<p>The focus of <a class="reference internal" href="#task2d:dataproduct"><span class="xref myst">Task 2 part D <em>Data Product</em></span></a> will be the what, how, and why of your model’s development.</p>
 </div>
 <section id="training-the-model">
-<span id="sup-class-ex-develop-train"></span><h2>Training the Model<a class="headerlink" href="#training-the-model" title="Permalink to this heading">#</a></h2>
+<span id="sup-class-ex-develop-train"></span><h2>Training the Model<a class="headerlink" href="#training-the-model" title="Link to this heading">#</a></h2>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>A model can learn the details and noise particular to the training data so well that it doesn’t perform well on new data. This is called <a class="reference external" href="https://en.wikipedia.org/wiki/Overfitting"><em>overfitting</em></a>. Overcomplicated non-linear and nonparametric models are more susceptible to this. The term <em>overtraining</em> can be used synonymously or to mean too much training causing overfitting.</p>
@@ -558,8 +575,8 @@ document.write(`
 <p>Fortunately, most libraries have built-in functions for this. Here we’ll stick with <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">scikit-learn aka sklearn</a> validation processes We’ll need to randomly split the data into independent (input values) and dependent (output, i.e., the answers) variables. For now, we’ll keep things as DataFrames, but later convert them to 2-d arrays</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
 
 <span class="c1">#split the variable sets into training and testing subsets</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.333</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">41</span><span class="p">)</span>
@@ -575,7 +592,7 @@ document.write(`
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Nice displays are nice but not required. </span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span> 
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display_html</span> 
 <span class="n">X_train_styler</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Independents variables&#39;</span><span class="p">)</span>
 <span class="n">y_train_styler</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_attributes</span><span class="p">(</span><span class="s2">&quot;style=&#39;display:inline&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Dependents variables&#39;</span><span class="p">)</span>
 <span class="n">space</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\xa0</span><span class="s2">&quot;</span> <span class="o">*</span> <span class="mi">10</span> <span class="c1">#space between columns</span>
@@ -587,95 +604,95 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
 </style>
-<table id="T_46cc0" style='display:inline'>
+<table id="T_5881d" style='display:inline'>
   <caption>Independents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_46cc0_level0_col0" class="col_heading level0 col0" >sepal-length</th>
-      <th id="T_46cc0_level0_col1" class="col_heading level0 col1" >sepal-width</th>
-      <th id="T_46cc0_level0_col2" class="col_heading level0 col2" >petal-length</th>
-      <th id="T_46cc0_level0_col3" class="col_heading level0 col3" >petal-width</th>
+      <th id="T_5881d_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_5881d_level0_col1" class="col_heading level0 col1" >sepal-width</th>
+      <th id="T_5881d_level0_col2" class="col_heading level0 col2" >petal-length</th>
+      <th id="T_5881d_level0_col3" class="col_heading level0 col3" >petal-width</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_46cc0_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_46cc0_row0_col0" class="data row0 col0" >6.400000</td>
-      <td id="T_46cc0_row0_col1" class="data row0 col1" >2.700000</td>
-      <td id="T_46cc0_row0_col2" class="data row0 col2" >5.300000</td>
-      <td id="T_46cc0_row0_col3" class="data row0 col3" >1.900000</td>
+      <th id="T_5881d_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_5881d_row0_col0" class="data row0 col0" >6.400000</td>
+      <td id="T_5881d_row0_col1" class="data row0 col1" >2.700000</td>
+      <td id="T_5881d_row0_col2" class="data row0 col2" >5.300000</td>
+      <td id="T_5881d_row0_col3" class="data row0 col3" >1.900000</td>
     </tr>
     <tr>
-      <th id="T_46cc0_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_46cc0_row1_col0" class="data row1 col0" >5.800000</td>
-      <td id="T_46cc0_row1_col1" class="data row1 col1" >2.700000</td>
-      <td id="T_46cc0_row1_col2" class="data row1 col2" >3.900000</td>
-      <td id="T_46cc0_row1_col3" class="data row1 col3" >1.200000</td>
+      <th id="T_5881d_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_5881d_row1_col0" class="data row1 col0" >5.800000</td>
+      <td id="T_5881d_row1_col1" class="data row1 col1" >2.700000</td>
+      <td id="T_5881d_row1_col2" class="data row1 col2" >3.900000</td>
+      <td id="T_5881d_row1_col3" class="data row1 col3" >1.200000</td>
     </tr>
     <tr>
-      <th id="T_46cc0_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_46cc0_row2_col0" class="data row2 col0" >7.400000</td>
-      <td id="T_46cc0_row2_col1" class="data row2 col1" >2.800000</td>
-      <td id="T_46cc0_row2_col2" class="data row2 col2" >6.100000</td>
-      <td id="T_46cc0_row2_col3" class="data row2 col3" >1.900000</td>
+      <th id="T_5881d_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_5881d_row2_col0" class="data row2 col0" >7.400000</td>
+      <td id="T_5881d_row2_col1" class="data row2 col1" >2.800000</td>
+      <td id="T_5881d_row2_col2" class="data row2 col2" >6.100000</td>
+      <td id="T_5881d_row2_col3" class="data row2 col3" >1.900000</td>
     </tr>
     <tr>
-      <th id="T_46cc0_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_46cc0_row3_col0" class="data row3 col0" >5.200000</td>
-      <td id="T_46cc0_row3_col1" class="data row3 col1" >3.500000</td>
-      <td id="T_46cc0_row3_col2" class="data row3 col2" >1.500000</td>
-      <td id="T_46cc0_row3_col3" class="data row3 col3" >0.200000</td>
+      <th id="T_5881d_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_5881d_row3_col0" class="data row3 col0" >5.200000</td>
+      <td id="T_5881d_row3_col1" class="data row3 col1" >3.500000</td>
+      <td id="T_5881d_row3_col2" class="data row3 col2" >1.500000</td>
+      <td id="T_5881d_row3_col3" class="data row3 col3" >0.200000</td>
     </tr>
     <tr>
-      <th id="T_46cc0_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_46cc0_row4_col0" class="data row4 col0" >5.500000</td>
-      <td id="T_46cc0_row4_col1" class="data row4 col1" >4.200000</td>
-      <td id="T_46cc0_row4_col2" class="data row4 col2" >1.400000</td>
-      <td id="T_46cc0_row4_col3" class="data row4 col3" >0.200000</td>
+      <th id="T_5881d_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_5881d_row4_col0" class="data row4 col0" >5.500000</td>
+      <td id="T_5881d_row4_col1" class="data row4 col1" >4.200000</td>
+      <td id="T_5881d_row4_col2" class="data row4 col2" >1.400000</td>
+      <td id="T_5881d_row4_col3" class="data row4 col3" >0.200000</td>
     </tr>
   </tbody>
 </table>
           <style type="text/css">
 </style>
-<table id="T_df8e8" style='display:inline'>
+<table id="T_31c18" style='display:inline'>
   <caption>Dependents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_df8e8_level0_col0" class="col_heading level0 col0" >type</th>
+      <th id="T_31c18_level0_col0" class="col_heading level0 col0" >type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_df8e8_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_df8e8_row0_col0" class="data row0 col0" >Iris-virginica</td>
+      <th id="T_31c18_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_31c18_row0_col0" class="data row0 col0" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_df8e8_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_df8e8_row1_col0" class="data row1 col0" >Iris-versicolor</td>
+      <th id="T_31c18_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_31c18_row1_col0" class="data row1 col0" >Iris-versicolor</td>
     </tr>
     <tr>
-      <th id="T_df8e8_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_df8e8_row2_col0" class="data row2 col0" >Iris-virginica</td>
+      <th id="T_31c18_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_31c18_row2_col0" class="data row2 col0" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_df8e8_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_df8e8_row3_col0" class="data row3 col0" >Iris-setosa</td>
+      <th id="T_31c18_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_31c18_row3_col0" class="data row3 col0" >Iris-setosa</td>
     </tr>
     <tr>
-      <th id="T_df8e8_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_df8e8_row4_col0" class="data row4 col0" >Iris-setosa</td>
+      <th id="T_31c18_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_31c18_row4_col0" class="data row4 col0" >Iris-setosa</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 </div>
-<p>Read the <span class="xref myst">docs</span>! By default <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, <a class="reference external" href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/">“randomly”</a> splits the sets. Setting the seed (or state) with <code class="docutils literal notranslate"><span class="pre">random_state</span></code> controls the experiments. See <a class="reference external" href="https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models">should you use a random seed?</a>.</p>
+<p>Read the <a class="reference internal" href="#sklearn_link"><span class="xref myst">docs</span></a>! By default <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, <a class="reference external" href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/">“randomly”</a> splits the sets. Setting the seed (or state) with <code class="docutils literal notranslate"><span class="pre">random_state</span></code> controls the experiments. See <a class="reference external" href="https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models">should you use a random seed?</a>.</p>
 <p>We can now train a model using the independent (usually denoted <code class="docutils literal notranslate"><span class="pre">X</span></code>) and dependent variables (usually denoted <code class="docutils literal notranslate"><span class="pre">y</span></code>) from the training data. Sklearn has a deep <a class="reference external" href="https://scikit-learn.org/stable/supervised_learning.html">supervised learning library</a>. Note that many of these models (including SVM) have both classification and regression extensions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn</span><span class="w"> </span><span class="kn">import</span> <span class="n">svm</span>
 
 <span class="n">svm_model</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="s1">&#39;scale&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#Creates a svm model object. Mote, &#39;scale&#39; and 1.0 are gamma and C&#39;s respective defaults </span>
 <span class="n">svm_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
@@ -708,7 +725,7 @@ document.write(`
 </div>
 </section>
 <section id="applying-the-model">
-<h2>Applying the Model<a class="headerlink" href="#applying-the-model" title="Permalink to this heading">#</a></h2>
+<h2>Applying the Model<a class="headerlink" href="#applying-the-model" title="Link to this heading">#</a></h2>
 <p>Now we’ve trained the model (without warnings)! What does that mean? Sklearn’s SVM algorithm creates an equation representing the relationship between the variables.</p>
 <div class="math notranslate nohighlight">
 \[F_{\text{predict}}(X)=\text{prediction(s)}\]</div>
@@ -907,11 +924,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="sup_class_ex-process.html"
@@ -931,17 +947,16 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -972,9 +987,10 @@ By Dr. Jim Ashe
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -998,8 +1014,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

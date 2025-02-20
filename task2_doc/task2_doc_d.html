@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Task 2 Part D &#8212; Computer Science Capstone</title>
   
@@ -15,45 +14,47 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/my_css.css?v=af7b8336" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/my_css.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -89,7 +90,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -97,12 +98,16 @@ commentsRunWhenDOMLoaded(addUtterances);
                 gtag('js', new Date());
                 gtag('config', 'G-H4N36TZQ78');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-H4N36TZQ78');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'task2_doc/task2_doc_d';</script>
@@ -113,6 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Task 2: The Documentation" href="task2_doc.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -120,23 +126,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+  <div id="pst-scroll-pixel-helper"></div>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -144,7 +143,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -152,16 +150,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -174,9 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -186,12 +197,19 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/3d_regression.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/3d_regression.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
+    <img src="../_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -203,34 +221,34 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../task1.html">Task 1: Topic Approval</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../task2_c/task2_part_c.html">Task 2: Part C -the application</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../task2_c/task2_part_c.html">Task 2: Part C -the application</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-process.html">Data Exploring and Processing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-develop.html">Model Development</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-accuracy.html">Accuracy Analysis (for classification)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_class/sup_class_ex-ui.html">User Interface</a></li>
 </ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../task2_c/example_sup_reg/sup_reg_ex_accuracy.html">Accuracy Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="task2_doc.html">Task 2: The Documentation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="task2_doc.html">Task 2: The Documentation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Task 2 Part D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="task2_doc_finish.html">Task 2 final touches</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources.html">C964 Resources</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ci_page.html">Course Faculty</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ci_page.html">Course Faculty</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ci_c964.html">C964 Course Faculty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ci_other.html">BSCS, Software, and other Course Faculty</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../support_this_page.html">Help Support this Website</a></li>
 </ul>
 
@@ -240,14 +258,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -256,14 +279,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -402,26 +425,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -463,13 +480,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="task-2-part-d">
-<h1>Task 2 Part D<a class="headerlink" href="#task-2-part-d" title="Permalink to this heading">#</a></h1>
-<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <span class="xref myst">User Guide</span>, <span class="xref myst">Machine Learning</span>, and <span class="xref myst">Validation</span> sections are the most important. As such, we recommend completing these sections first. Follow the <a class="reference download internal" download="" href="../_downloads/afd7e46ca89b2f62fdca1f03463bc722/C964_task_2_template.docx"><span class="xref download myst">Task 2 Template</span></a>.</p>
+<h1>Task 2 Part D<a class="headerlink" href="#task-2-part-d" title="Link to this heading">#</a></h1>
+<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <a class="reference internal" href="#task2d:userguide"><span class="xref myst">User Guide</span></a>, <a class="reference internal" href="#task2d:ml"><span class="xref myst">Machine Learning</span></a>, and <a class="reference internal" href="#task2d:validation"><span class="xref myst">Validation</span></a> sections are the most important. As such, we recommend completing these sections first. Follow the <a class="reference download internal" download="" href="../_downloads/afd7e46ca89b2f62fdca1f03463bc722/C964_task_2_template.docx"><span class="xref download myst">Task 2 Template</span></a>.</p>
 <section id="user-guide">
-<span id="task2-doc-d-user-guide"></span><h2>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this heading">#</a></h2>
+<span id="task2-doc-d-user-guide"></span><h2>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h2>
 <p>The evaluator might go here first. Following your instructions, they will verify your app functions as intended and simultaneously gain context of its purpose through demonstration.</p>
 <p>Include an enumerated (steps 1, 2, 3, etc.) guide on how to execute and use your application. The evaluator will play the “client” role and follow your instructions as provided. So you should include instructions for downloading and installing any necessary software or libraries (they’ll have most of these installed anyway). Your application will be considered “user-friendly” if the evaluator successfully executes and uses your application on a Windows 10 machine following your instructions.</p>
 <ul class="simple">
@@ -479,7 +496,7 @@ document.write(`
 </ul>
 <aside class="margin sidebar">
 <p class="sidebar-title">No Windows machine?</p>
-<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <span class="xref myst">User Guide</span> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <span class="xref myst">Task 2 part C FAQ</span> for more details.</p>
+<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <a class="reference internal" href="#task2_doc:userguide"><span class="xref myst">User Guide</span></a> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <a class="reference internal" href="#task2c:faq:linux"><span class="xref myst">Task 2 part C FAQ</span></a> for more details.</p>
 </aside>
 <div class="sd-sphinx-override sd-cards-carousel sd-card-cols-4 docutils" id="task2-doc-d-user-guide-examples">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -510,7 +527,7 @@ document.write(`
 </div>
 </section>
 <section id="machine-learning">
-<span id="task2-doc-d-ml"></span><h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this heading">#</a></h2>
+<span id="task2-doc-d-ml"></span><h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading">#</a></h2>
 <p>This section should describe the development of your ML application justifying and explaining decisions made in the process. Explain the <em>what</em>, <em>how</em>, and <em>why</em> of the machine learning model and its application.</p>
 <ul class="simple">
 <li><p><em>What?</em> Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.</p></li>
@@ -519,42 +536,42 @@ document.write(`
 </ul>
 </section>
 <section id="validation">
-<span id="task2-doc-d-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Permalink to this heading">#</a></h2>
+<span id="task2-doc-d-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Link to this heading">#</a></h2>
 <p>In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate <em>metric</em> for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There is <strong>no</strong> minimal accuracy requirement. At most, evaluators will assess the appropriateness of the metric (or planned metric).</p>
 </div>
 <section id="for-supervised-classification-methods">
-<span id="task2d-accuracy-super"></span><h3>For Supervised Classification Methods<a class="headerlink" href="#for-supervised-classification-methods" title="Permalink to this heading">#</a></h3>
+<span id="task2d-accuracy-super"></span><h3>For Supervised Classification Methods<a class="headerlink" href="#for-supervised-classification-methods" title="Link to this heading">#</a></h3>
 <p>The metric for measuring a supervised classification model’s accuracy is straightforward. We use <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">the ratio of correct to total predictions</a>:</p>
 <div class="math notranslate nohighlight">
 \[\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}\]</div>
 <p>Though no minimal accuracy is required, your model should perform better than randomly selecting categories, e.g., the model predicting 1 of 3 flower types should perform better than <span class="math notranslate nohighlight">\(\frac{1}{3} = 33.3\bar{3}\%\)</span>.</p>
 </section>
 <section id="for-supervised-regression-methods">
-<h3>For Supervised Regression Methods<a class="headerlink" href="#for-supervised-regression-methods" title="Permalink to this heading">#</a></h3>
+<h3>For Supervised Regression Methods<a class="headerlink" href="#for-supervised-regression-methods" title="Link to this heading">#</a></h3>
 <p>As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, <span class="math notranslate nohighlight">\(R^{2}\)</span>, can be used. See <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics">sklearn’s regression metric documentation</a>. As above there is no performance benchmark, but the model should at predict at least as well as thaking the mean.</p>
 </section>
 <section id="for-unsupervised-methods">
-<h3>For Unsupervised Methods<a class="headerlink" href="#for-unsupervised-methods" title="Permalink to this heading">#</a></h3>
+<h3>For Unsupervised Methods<a class="headerlink" href="#for-unsupervised-methods" title="Link to this heading">#</a></h3>
 <p>Depending on the method, metrics might similarly be used for <em>unsupervised models</em>, such as <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html">Silhouette coefficients</a> for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.</p>
 </section>
 <section id="for-reinforced-learning-methods">
-<h3>For Reinforced Learning Methods<a class="headerlink" href="#for-reinforced-learning-methods" title="Permalink to this heading">#</a></h3>
+<h3>For Reinforced Learning Methods<a class="headerlink" href="#for-reinforced-learning-methods" title="Link to this heading">#</a></h3>
 <p>Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.</p>
 </section>
 </section>
 <section id="solution-summary">
-<h2>Solution Summary<a class="headerlink" href="#solution-summary" title="Permalink to this heading">#</a></h2>
+<h2>Solution Summary<a class="headerlink" href="#solution-summary" title="Link to this heading">#</a></h2>
 <p>Summarize the problem and solution. Describe how the application (Part C) supports a solution to the problem presented in parts A and B.</p>
 </section>
 <section id="data-summary">
-<h2>Data Summary<a class="headerlink" href="#data-summary" title="Permalink to this heading">#</a></h2>
+<h2>Data Summary<a class="headerlink" href="#data-summary" title="Link to this heading">#</a></h2>
 <p>Provide the source of the rwa data, how the data was collected, or how it was simulated. Include a description of how data was processed and managed throughtout the application development life cycle: design, development, maintenance, or others.</p>
 </section>
 <section id="visualizations">
-<h2>Visualizations<a class="headerlink" href="#visualizations" title="Permalink to this heading">#</a></h2>
+<h2>Visualizations<a class="headerlink" href="#visualizations" title="Link to this heading">#</a></h2>
 <p>Identify the location of at least three unique imgaes in part C. Part or all of those images can also be included in this section. Tehcnically, the visualizations are required to be part of the application. However, often this is not desirable, say when the app is intended to customer facing. So it is allowable to submit the code provindg the visualization separate from the main application code. Recall, images can be generated by the code or inserted as static images.</p>
 </section>
 </section>
@@ -584,11 +601,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="task2_doc.html"
@@ -608,17 +624,16 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -659,9 +674,10 @@ By Dr. Jim Ashe
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -685,8 +701,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
