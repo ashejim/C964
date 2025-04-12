@@ -56,6 +56,7 @@ Include the following:
 
 ### Timeline
 
+**The requirements for the timeline has recently been updated. See the template for details.**
 Provide a projected timeline, including projected start dates and end dates for each milestone. Though not strictly required, a table is encouraged:
 
 |Milestone or Deliverable  |Duration  | Projected Start Date| Projected End date
@@ -81,9 +82,9 @@ Include the following:
 
 ### Resources and Costs
 
-Include an itemized list of all resources and costs:
+Include an itemized list of all resources and costs. Where possible, provide specific on the items, e.g., ‘PyCharm Professional Ed.  2024.3.5.’
 
 - Itemize hardware costs.
 - Itemize software costs and include relevant version or licensing information.
 - Itemize estimated labor time and costs.
-- Itemize all estimated application costs, e.g., deployment, hosting, maintenance, etc.
+- Itemize all estimated application costs including the specific environment, e.g., deployment, hosting, maintenance, etc.

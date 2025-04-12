@@ -74,7 +74,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide on how to execute and use your
 
 This section should describe the development of your ML application justifying and explaining decisions made in the process. Explain the *what*, *how*, and *why* of the machine learning model and its application.
 
-- *What?* Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model.
+- *What?* Outline what your product does and then explain in detail what machine learning does in solving the proposed problem. Describe the algorithms, libraries, and other tools used to develop the machine learning model. Consider including an example of your model's output.
 
 - *How?* Outline your application's implementation plan and then explain in detail how the machine learning portion was developed (or trained) and improved. 
 
@@ -84,6 +84,7 @@ This section should describe the development of your ML application justifying a
 
 ## Validation
 
+**The requirements for unsupervised models has recently been updated. See the template for details.**
 In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate *metric* for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html).
 
 :::{Note}
