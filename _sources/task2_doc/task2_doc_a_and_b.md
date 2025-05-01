@@ -56,14 +56,14 @@ Include the following:
 
 ### Timeline
 
-**The requirements for the timeline has recently been updated. See the template for details.**
-Provide a projected timeline, including projected start dates and end dates for each milestone. Though not strictly required, a table is encouraged:
+Provide a projected timeline. Include each milestone and deliverable, its (project) dependencies, resources, start and end dates, and duration. (a table is not required but encouraged).
 
-|Milestone or Deliverable  |Duration  | Projected Start Date| Projected End date
---- | --- | ---| ---|
-|Some milestones |7 days|7/23/2022|7/30/2022|
-|Some deliverables |14 days|7/16/2022|7/30/2022|
-|$\vdots$ |$\vdots$ |$\vdots$ |$\vdots$ |
+| Milestone or Deliverable  | Resources | Dependencies |  Projected Start & End Dates | Duration  |
+| --- | --- | --- | --- | --- |
+| Item 1 | Resources A, B | None | 4/28/2025 – 4/28/2025 | 1 day |
+| Item 2 | Resource C | Item 1 | 4/29/2025 – 4/29/2025 | 1 day |
+| Item 3 | Resources A, C | Items 1, 2 | 4/30/2025 – 5/01/2025 | 2 days |
+|$\vdots$ |$\vdots$ |$\vdots$ |$\vdots$ |$\vdots$ |
 
 ```{note}
 *All* dates must be in the future. Part B is a proposal.
@@ -76,9 +76,19 @@ Include the following:
 - A description of the verification method(s) to be used at each stage of development.
 - A description of the validation method to be used upon completion.
 
-**Verification** is testing that your product meets its specifications and requirements. This can include tests, inspections, or methods applying to the code or model. For the latter approaches to avoid overfitting could be included. Verification checks that the product is built correctly.
+#### Verification
 
-**Validation** is testing how well the machine learning model performs.
+*Verification* is testing that your product meets its specifications and requirements. This can include tests, inspections, or methods applying to the code or model. For the latter approaches to avoid overfitting could be included. Verification checks that the product is built correctly.
+
+#### Validation
+
+*Validation* is testing how well the machine learning model performs. The appropiate validation method depends on your ML application and your project's purpose.
+
+- For *supervised learning* describe an appropriate metric(s) for testing the model’s performance, e.g., accuracy or mean sqaured error.
+
+- For *unsupervised learning* describe an appropriate method(s) for testing the model’s performance. The method should provide an appropriate example of the model’s output and how the output is relevant, or a metric measuring the model’s performance, e.g., the Rand index, collaborative filtering accuracy, or Silhouette Coefficient
+
+- For *Reinforcement learning* describe what will be optimized and how it will be measured.
 
 ### Resources and Costs
 

@@ -84,8 +84,9 @@ This section should describe the development of your ML application justifying a
 
 ## Validation
 
-**The requirements for unsupervised models has recently been updated. See the template for details.**
-In this section, discuss how you assessed the accuracy or success of the ML application(s). In most cases, this means providing an appropriate *metric* for assessing accuracy OR providing a development plan for obtaining such a metric in the future. Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html).
+In this section, discuss how you assessed the success of the ML application(s). Identify the model’s machine learning category, e.g., supervised, unsupervised, or reinforced. For blended approaches, identify the category most relevant to the model’s application, and describe an appropriate validation method for the model’s performance
+
+In most cases, this means providing an appropriate *metric*. Most libraries have builtins for this; see [sklearn metrics](https://scikit-learn.org/stable/modules/model_evaluation.html). When no such metric is available or appropiate successful examples of the model's output should be provided.
 
 :::{Note}
 There is **no** minimal accuracy requirement. At most, evaluators will assess the appropriateness of the metric (or planned metric).
@@ -93,7 +94,12 @@ There is **no** minimal accuracy requirement. At most, evaluators will assess th
 
 (task2d:accuracy:super)=
 
-### For Supervised Classification Methods
+### For Supervised Methods
+
+- Describe an appropriate metric(s) for testing the model’s performance.
+- Provide results of testing using the described metric.
+
+#### Classification
 
 The metric for measuring a supervised classification model's accuracy is straightforward. We use [the ratio of correct to total predictions](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score):
 
@@ -101,17 +107,23 @@ $$\text{Accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}$$
 
 Though no minimal accuracy is required, your model should perform better than randomly selecting categories, e.g., the model predicting 1 of 3 flower types should perform better than $\frac{1}{3} = 33.3\bar{3}\%$.
 
-### For Supervised Regression Methods
+#### Regression Methods
 
 As regression models estimate continuous values, they rarely exactly match actual values. Thus success of the model is measured by how closely the model fits the data. Common metrics include mean square error (MSE), mean absolute error (MAE), and mean absolute percentage error (MAPE). Statistical metrics such as the correlation coefficient or (more commonly) the coefficient of determination, $R^{2}$, can be used. See [sklearn's regression metric documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics). As above there is no performance benchmark, but the model should at predict at least as well as thaking the mean.
 
 ### For Unsupervised Methods
 
-Depending on the method, metrics might similarly be used for *unsupervised models*, such as [Silhouette coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering. Alternatively (and typically), a future development plan for measuring the accuracy of your unsupervised method can be used.
+Depending on the method, metrics might similarly be used for *unsupervised models*, such as [Silhouette coefficients](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html) for KMeans clustering or collabartoive filtering accuracy score.
+
+- Describe an appropriate method(s) for testing the model’s performance. 
+- Provide the results of testing using the above method, providing an appropriate example of the model’s output, or a metric measuring the model’s performance, e.g., the Rand index, collaborative filtering accuracy, or Silhouette Coefficient
 
 ### For Reinforced Learning Methods
 
 Reinforced learning methods seek to optimize an outcome, e.g., the C950 delivery app seeks to minimize miles driven. The better this outcome, the better your algorithm.
+
+- Describe what is being optimized and how it is measured.
+- Provide the results of the agent interacting with the environment. Describe or provide examples of the actions, environment, and states when appropriate.
 
 ## Solution Summary
 
