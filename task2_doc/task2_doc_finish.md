@@ -31,6 +31,8 @@ The second requirement is to ensure there is a static record for the Evaluation 
 You may receive a warning when submitting .ipynb (Jupyter), Python, or other source files. Submitting these files is permitted, and the warning can be ignored.
 :::
 
+<!-- FROM AN EVAL 4/17/25. To fully comply with WGU requirements, the code should be provided in one of the following ways: (1) uploaded directly to EMA, or (2) uploaded to a GitLab repo that is created in the WGU environment. If neither one of these is possible, a Panopto video or screenshots of the functioning application should be provided. The video or screenshots should clearly show the output of the application and the three visualizations. -->
+
 ### What if all or part of the application is online?
 
 If some or all of your application is online, then you should submit the necessary link(s) AND the minimal source files needed to recreate the project locally. For example,
