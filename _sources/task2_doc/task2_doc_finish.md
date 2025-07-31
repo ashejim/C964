@@ -84,4 +84,4 @@ For sources, you should follow [APA guidelines](https://apastyle.apa.org/style-g
 
 - No references are required.
 - All sources on the reference page must have a matching in-text citation, e.g., (Author, year)
-- To cite sources used for code, you should include the referfences as code comments within the source code.
+- To cite sources used for code, you should include the references as code comments within the source code.

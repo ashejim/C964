@@ -62,7 +62,7 @@ Your app must help the user solve the organizational problem from [task 1](task1
 **The App:** A web app (developed with [Juptyer, voila, and deployed on Heroku](https://pythonforundergradengineers.com/deploy-jupyter-notebook-voila-heroku.html) recommending movies.
 > **Data → ML model:** Using movie data, data is [vectorized](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) so that [Cosine similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) can provide similarity scores between any two movies. 
 >
-> **Accuracy Metric:** [Cosine simliarity score](https://scikit-learn.org/stable/modules/metrics.html#cosine-similarity) on test data, or a plan to measure the app's acccuracy based on future user feedback,
+> **Accuracy Metric:** [Cosine similarity score](https://scikit-learn.org/stable/modules/metrics.html#cosine-similarity) on test data, or a plan to measure the app's accuracy based on future user feedback,
 >
 > **Visualizations:** Histograms showing distributions of movie features and samples of Cosine Similarity matrices.  
 > 
@@ -445,7 +445,7 @@ Yes! Unlike C950 (Data Structures & Algorithms II), you are allowed and encourag
 
 ### What language, libraries, and platforms should I use?
 
-You can use whatever you like. However, we strongly recommend Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook (a browser-based IDE designed for this type of project) is a great place to start for the app's development and front end. Passing applications are often submitted as the Notebook (.ipynb) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Jave because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.
+You can use whatever you like. However, we strongly recommend Python and the [scikit-learn](https://scikit-learn.org/stable/) (aka sklearn) library. In addition to having an extensive collection of ML-specific tools and tutorials, WGU has better faculty support for these. Jupyter Notebook (a browser-based IDE designed for this type of project) is a great place to start for the app's development and front end. Passing applications are often submitted as the Notebook (.ipynb) and data files. Jupyter Notebooks are a great way to present code and information together, but they can also progressively be developed into a more polished product. Students are often tempted to use Java because of their JavaFX experience in software II, but a GUI is not required, and Python is better suited.
 
 A development path might look like the following:
 
@@ -514,7 +514,7 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 ### Can I use my C951 task 3? Should I use it?
 
-You can reuse anything you've of your own academic or professional work, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic. If you have time, consider completing C964 first, as parts A and B of task 2 can always be used verbatim for task 3 of C951.
+You can reuse anything you've done of your own academic or professional work, including copying verbatim from C951 task 3. If it's convenient, feel free to do it. But at best, the time saved is little. At worst, you might get bogged down trying to work on two projects simultaneously and going with an unnecessarily complex C964 topic. If you have time, consider completing C964 first, as parts A and B of task 2 can always be used verbatim for task 3 of C951.
 
 Here are some points to consider:
 

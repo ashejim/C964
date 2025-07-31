@@ -144,7 +144,7 @@ CNNs Coding Tutorials:
 
 (resources:task2doc)=
 
-## Task 2 Parts A, B, & C (the documetation) Resources
+## Task 2 Parts A, B, & C (the documentation) Resources
 
 Part C is your submitted application. See all our available resources here: [task 2 part C](task2_part_c)
 
@@ -220,7 +220,7 @@ Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Cente
 :::{tip}
 You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library) and other open-source libraries using [google.scholar.com](https://scholar.google.com/) Go to >'Google.scholar>setting>libraires>' and then add WGU and other libraries.
 
-<img src="./_images/google_scholar_demo.gif" height="200px" alt = "short moive demonstraiting how to use google.scholar.com." />
+<img src="./_images/google_scholar_demo.gif" height="200px" alt = "short movie demonstrating how to use google.scholar.com." />
 :::
 
 ### Welcome Email
@@ -236,7 +236,7 @@ Your project must apply machine learning (ML) to solve a problem. Using ML requi
 - Your submitted project must have a []"user-friendly" interface](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex-ui.html), but a GUI is not required. This is a CS project (not a software project); evaluators deal with a wide array of technical projects and need a way to review your work.
 - Task 1 is a preliminary exercise ensuring students begin in the right direction. Changing details from task 1 to task 2 is allowed and typical.
 
-To get some ideas, watch this [video](https://ashejim.github.io/C964/intro.html#start-here) and review these [examples](https://ashejim.github.io/C964/task1.html#topic-summary-examples). Next, complete the topic approval form and email it to me to be signed for approval. Set up an appointment if you have questions, but topic approval does not require an appointment. Following approval, see the  C964 Task 2 webpage and get started on Task 2. If you have any questions about a topic, schedule email (fastest) or set an appointment (bst for general discussion) -it's why we're here!
+To get some ideas, watch this [video](https://ashejim.github.io/C964/intro.html#start-here) and review these [examples](https://ashejim.github.io/C964/task1.html#topic-summary-examples). Next, complete the topic approval form and email it to me to be signed for approval. Set up an appointment if you have questions, but topic approval does not require an appointment. Following approval, see the  C964 Task 2 webpage and get started on Task 2. If you have any questions about a topic, schedule email (fastest) or set an appointment (best for general discussion) -it's why we're here!
 ```
 
 ## Bibliography

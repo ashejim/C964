@@ -61,7 +61,7 @@ If the answers for what you are trying to predict (the dependent variable; also 
 
 (task1:choosing_topic:logistic)=
 
-```{margin} Logisitc regression: regression or classification?
+```{margin} Logistic regression: regression or classification?
 Really both, but most often, it's used for classification. Logistic regression uses input variables to predict the *probability* of an outcome, a number between 0.0 and 1.0 -hence "regression." However, using that probability to predict whether an outcome occurs (yes/no) is classification.     
 ```
 
@@ -99,11 +99,11 @@ Look for data which has mutually exclusive categories which can used as a depend
 ````{tab-item} Example 1
 > **Data:** Petal dimensions and species of [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
 >
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression](sup_class_ex).
+> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
 >
 > **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
-> **Organizational Need:** *Grow Fast Ferilizer Inc.* needs to help customers identify their flowers. 
+> **Organizational Need:** *Grow Fast Fertilizer Inc.* needs to help customers identify their flowers. 
 ````
 ````{tab-item} Example 2
 > **Data:** Housing data
@@ -245,7 +245,7 @@ Yes. You can use any of your own academic or professional work for C964 includin
 
 So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) such as [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing).
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstrating simulated annealing applied to a two dimensional traveling salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm iteratively finds shorter paths. Each iteration improves less, until the algorithm stops at a final path." />
 
 {cite}`WikiTSPimage`
 
@@ -291,7 +291,7 @@ The content for the official learning resource (LR) was largely copied from an o
 
 WGU provides access to a very good [AI textbook which includes a Machine Learning](https://lrps.wgu.edu/provision/386121824) section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU's BSCS curriculum.
 
-If you have time, Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
+If you have time, [Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
 
 ### Do I need an "electronic signature?"
 

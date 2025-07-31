@@ -26,7 +26,7 @@ Welcome! For the Computer Science capstone project, you'll develop and present a
 
 The capstone includes three parts:
 
-1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you starts in the right direction.
+1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you start in the right direction.
 2. **Task 2 part C:** The "app." Develop a working application of machine learning (ML).
 3. **Task 2 parts D, A, & B:** Documentation communicating your product's value and development process to audiences of varying technical understanding.
 
