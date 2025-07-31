@@ -22,7 +22,7 @@ adv of choosing one to start that's flexible. Rec sklearn or tensorflows.
 ### Accuracy Metric
 
 You'll need one etc. 
-- classificaiton. Simple example with code?
+- Classification. Simple example with code?
 - Regression. Simple 2d linear example with code?
 
 ### Simple
@@ -32,11 +32,11 @@ You'll need one etc.
 
 ### Validation Process 2?
 
-- split data: train, validate (practice; pre-assement), test (final; objective assessment)
+- split data: train, validate (practice; pre-assessment), test (final; objective assessment)
 
 ### Cross Validation
 
-- image exmplanation
+- image explanation
 - process exp
 - simple code example
 
@@ -44,4 +44,4 @@ You'll need one etc.
 
 - link to [Train](supervised_methods:train)
 - Train, test, improve, train, test, ...
-- Mix of understaind data, the algorithms, and intuition. 
+- Mix of understand data, the algorithms, and intuition. 

@@ -19,7 +19,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 <!-- FIX THIS FAQ link: [Task 2 part C FAQ](task2c:FAQ) -->
 
 :::{margin} No Windows machine?
-*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsysem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2c:faq:linux) for more details.
+*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2c:faq:linux) for more details.
 
 (task2_doc_d:user_guide:examples)=
 
@@ -30,7 +30,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ../url_images/user_guide/user_guide1.png
 :height: 100
-:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
+:alt: Screenshot of a user guide from a sample task 2 documentation.
 ```
 
 :::
@@ -38,7 +38,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ../url_images/user_guide/user_guide2.png
 :height: 100
-:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
+:alt: Screenshot of a user guide from a sample task 2 documentation.
 ```
 
 :::
@@ -46,7 +46,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ../url_images/user_guide/user_guide3.png
 :height: 100
-:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
+:alt: Screenshot of a user guide from a sample task 2 documentation.
 ```
 
 :::
@@ -54,7 +54,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ../url_images/user_guide/user_guide4.png
 :height: 100
-:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
+:alt: Screenshot of a user guide from a sample task 2 documentation.
 ```
 
 :::
@@ -62,7 +62,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide to execute and use your applic
 
 ```{image} ../url_images/user_guide/user_guide5.png
 :height: 100
-:alt: Screenshot of a user guide from a sample task 2 dcoumentation.
+:alt: Screenshot of a user guide from a sample task 2 documentation.
 ```
 :::
 
