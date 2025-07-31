@@ -9,7 +9,7 @@ This website is a collaborative work in progress by the C964 course faculty. We 
   - Leave a [comment below](support:comments)
   - 📧 Email [people who value your input](mailto:ugcapstoneit@wgu.edu?cc=dana.cobbs@wgu.edu;dave.huff@wgu.edu;michael.peterson@wgu.edu&subject=C964%20website%20feedback&body=Your%20feedback%20here.%20Thank%20you!)
   - contact [jim.ashe@wgu.edu](mailto:ugcapstoneit@wgu.edu&subject=C964%20website%20feedback&body=Your%20feedback%20here.%20Thank%20you!)
-- For the official rubric and resoruces, you can leave feedback via the 'Course Feedback' button.
+- For the official rubric and resources, you can leave feedback via the 'Course Feedback' button.
     > <img src="https://github.com/ashejim/C769/blob/main/url_images/course_feedback_link.png?raw=true" height="125px" />
     This creates a ticket for our product development team, and is appropriate for giving feedback on the official rubric or learning resource.
 

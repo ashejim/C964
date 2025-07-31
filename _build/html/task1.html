@@ -16,22 +16,20 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
@@ -39,17 +37,16 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/my_css.css?v=af7b8336" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/copybutton.js?v=5eb1bb1e"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
@@ -116,7 +113,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="prev" title="Welcome to C964!" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -132,8 +128,19 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -141,6 +148,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -148,8 +156,8 @@ commentsRunWhenDOMLoaded(addUtterances);
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -165,8 +173,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -196,17 +203,21 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     
     <img src="_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
-    <img src="_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
+    <script>document.write(`<img src="_static/3d_regression.png" class="logo__image only-dark" alt="Computer Science Capstone - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -219,33 +230,33 @@ commentsRunWhenDOMLoaded(addUtterances);
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Task 1: Topic Approval</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="task2_c/task2_part_c.html">Task 2: Part C -the application</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="task2_c/task2_part_c.html">Task 2: Part C -the application</a><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html">Example: Supervised Classification App</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex-process.html">Data Exploring and Processing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex-develop.html">Model Development</a></li>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex-accuracy.html">Accuracy Analysis (for classification)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_class/sup_class_ex-ui.html">User Interface</a></li>
-</ul>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="task2_c/example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="task2_c/example_sup_reg/sup_reg_ex.html">Example: Supervised Regression App</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_reg/sup_reg_ex_develop.html">Regression Model Development (part 1)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_reg/sup_reg_ex_develop-2.html">Regression Model Development (part 2)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="task2_c/example_sup_reg/sup_reg_ex_accuracy.html">Accuracy Analysis</a></li>
-</ul>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary>
 </details></li>
-</ul>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="task2_doc/task2_doc.html">Task 2: The Documentation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="task2_doc/task2_doc.html">Task 2: The Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="task2_doc/task2_doc_d.html">Task 2 Part D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="task2_doc/task2_doc_a_and_b.html">Task 2 parts A and B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="task2_doc/task2_doc_finish.html">Task 2 final touches</a></li>
-</ul>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">C964 Resources</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="ci_page.html">Course Faculty</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ci_page.html">Course Faculty</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="ci_c964.html">C964 Course Faculty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci_other.html">BSCS, Software, and other Course Faculty</a></li>
-</ul>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="support_this_page.html">Help Support this Website</a></li>
 </ul>
@@ -256,14 +267,9 @@ commentsRunWhenDOMLoaded(addUtterances);
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -424,16 +430,24 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -578,7 +592,7 @@ src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-40
 <li><p><em>Classification</em> algorithms predict categories. Examples include logistic regression (see the margin), naive Bayes, support vector machine, decision tree, and many others.</p></li>
 </ul>
 <aside class="margin sidebar" id="task1-choosing-topic-logistic">
-<p class="sidebar-title">Logisitc regression: regression or classification?</p>
+<p class="sidebar-title">Logistic regression: regression or classification?</p>
 <p>Really both, but most often, it’s used for classification. Logistic regression uses input variables to predict the <em>probability</em> of an outcome, a number between 0.0 and 1.0 -hence “regression.” However, using that probability to predict whether an outcome occurs (yes/no) is classification.</p>
 </aside>
 </section>
@@ -618,9 +632,9 @@ src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-40
 Example 1</label><div class="sd-tab-content docutils">
 <blockquote>
 <div><p><strong>Data:</strong> Petal dimensions and species of <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
-<p><strong>ML application (non-descriptive method):</strong> <a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html#sup-class-ex"><span class="std std-ref">Classify an Iris’s species using its petal dimensions to train a supervised calssification model, say SVN or Logistic regression</span></a>.</p>
+<p><strong>ML application (non-descriptive method):</strong> <a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html#sup-class-ex"><span class="std std-ref">Classify an Iris’s species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression</span></a>.</p>
 <p><strong>Descriptive method:</strong> <a class="reference internal" href="#sup_class_ex:descriptive_methods_and_visualization"><span class="xref myst">Histograms and barplots</span></a> showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.</p>
-<p><strong>Organizational Need:</strong> <em>Grow Fast Ferilizer Inc.</em> needs to help customers identify their flowers.</p>
+<p><strong>Organizational Need:</strong> <em>Grow Fast Fertilizer Inc.</em> needs to help customers identify their flowers.</p>
 </div></blockquote>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -754,7 +768,7 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <li><p><strong>User Application:</strong> The console user interface required for C950 allows the user to provide input and apply the algorithm toward solving the problem.</p></li>
 </ol>
 <p>So only the three images will need to be added. Furthermore, you are free to adjust the distance and package data as desired. For example, dropping some delivery restrictions requiring different trucks or certain packages to be delivered together, and will be easier to apply a more sophisticated algorithm. Say a <a class="reference external" href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo method</a> such as <a class="reference external" href="https://en.wikipedia.org/wiki/Simulated_annealing">Simulated Annealing</a>.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstraiting simulated annealing applied to a two dimensional travleing salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm interatively finds shorter paths. Each iteration improves less, until the algorihtm stops at a final path." />
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Travelling_salesman_problem_solved_with_simulated_annealing.gif" height="150px" alt = "A short animated image demonstrating simulated annealing applied to a two dimensional traveling salesperson problem. Points on a plane are connected via lines creating a circular path. The movie shows the algorithm iteratively finds shorter paths. Each iteration improves less, until the algorithm stops at a final path." />
 <p><span id="id1">[<a class="reference internal" href="resources.html#id2" title="Wikipedia. Travelling salesman problem solved with simulated annealing. 2018. [Online; accessed August 4, 2023]. URL: https://commons.wikimedia.org/wiki/File:Travelling_salesman_problem_solved_with_simulated_annealing.gif.">Wikipedia, 2018</a>]</span></p>
 </section>
 <section id="can-i-use-my-c951-task-3-should-i-use-it">
@@ -794,7 +808,7 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 <section id="help-i-ve-never-coded-a-machine-learning-project-for-c951-task-3-i-only-had-to-write-about-machine-learning-where-do-i-learn-this">
 <h3>Help! I’ve never coded a machine learning project. For C951 task 3, I only had to write about Machine Learning. Where do I learn this?<a class="headerlink" href="#help-i-ve-never-coded-a-machine-learning-project-for-c951-task-3-i-only-had-to-write-about-machine-learning-where-do-i-learn-this" title="Link to this heading">#</a></h3>
 <p>WGU provides access to a very good <a class="reference external" href="https://lrps.wgu.edu/provision/386121824">AI textbook which includes a Machine Learning</a> section. However, it is conceptually focused and includes very little application or practical examples. Furthermore, reading this text might require mathematics not provided in WGU’s BSCS curriculum.</p>
-<p>If you have time, Udemy offers some ML courses](<a class="reference external" href="https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview">https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview</a>). Maybe the fastest way to get started is with the <a class="reference external" href="https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html">video and examples included on this website</a>. Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.</p>
+<p>If you have time, <a class="reference external" href="https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview">Udemy offers some ML courses</a>. Maybe the fastest way to get started is with the <a class="reference external" href="https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html">video and examples included on this website</a>. Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.</p>
 </section>
 <section id="do-i-need-an-electronic-signature">
 <h3>Do I need an “electronic signature?”<a class="headerlink" href="#do-i-need-an-electronic-signature" title="Link to this heading">#</a></h3>
@@ -942,8 +956,7 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1048,8 +1061,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
