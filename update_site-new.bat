@@ -1,15 +1,14 @@
 @echo off
 cd D:\OneDrive - Western Governors University\jupyter-books\C964
 FOR /d /r . %%d IN (.history) DO @IF EXIST "%%d" rd /s /q "%%d"
-@REM DEL /S /Q "D:\OneDrive - Western Governors University\jupyter-books\C964\output_plot*.png"
-DEL /S /Q "output_plot*.png"
+DEL /S /Q "D:\OneDrive - Western Governors University\jupyter-books\C964\output_plot*.png"
 SET /P Message=Enter git C964 commit comment: 
 title compile html, save to repo folder, update GitHub repo and website
-jupyter-book build --all "..\C964"
-echo "Compiling local ..\C964 ..."
-xcopy /s /e /h /i /y "..\C964" "..\github_book_repo\C964"
-echo "Copied local book to ..\github_book_repo\C964 ..."
-cd "..\github_book_repo\C964" 
+jupyter-book build --all "D:\OneDrive - Western Governors University\jupyter-books\C964"
+echo "Compiling local D:\OneDrive - Western Governors University\jupyter-books\C964 ..."
+xcopy /s /e /h /i /y "D:\OneDrive - Western Governors University\jupyter-books\C964" "D:\OneDrive - Western Governors University\jupyter-books\github_book_repo\C964"
+echo "Copied local book to D:\... \jupyter-books\github_book_repo\C964 ..."
+cd "D:\OneDrive - Western Governors University\jupyter-books\github_book_repo\C964" 
 git add ./*
 git commit -m "%Message%"
 echo "Commited..."
