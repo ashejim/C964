@@ -11,7 +11,7 @@
 
 These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
 
-`````{tab-set}
+<!-- `````{tab-set}
 ````{tab-item} Task 1 Examples
 **Topic:** Modern Security Information and Event Management (SIEM) Systems
 > Task 1: [Topic approval form example 1](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf)
@@ -25,8 +25,28 @@ These passing examples have been provided by the evalaution team to help student
 > Task 2: [Task 2 Documentation](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
 :::{note}
 The security upgrades, not the evalaution, is what's necessary to meet the requriements. 
+::: -->
+<!-- ```` -->
+
+::::{tab-set}
+
+:::{tab-item} Task 1 Examples
+
+- [Example 1](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf)
+- [Example 2](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example2.pdf)
+- [Example 3](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example3.pdf)
+
 :::
-````
+
+:::{tab-item} Task 2 Examples
+
+- [Example A](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
+- [Example B](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
+- [Example C](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
+
+:::
+
+::::
 
 (resources:examples:archive)=
 **WGU Capstone Excellence Archive**
