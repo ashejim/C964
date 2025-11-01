@@ -21,6 +21,39 @@ It's a new field, and answers vary depending on who you ask. But for the purpose
 
 The "organizational need" requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project's profitability or practical impact. Such criteria are *not* assessed. This is a computer science project, not a business or software project.  
 
+## Examples
+
+These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.
+
+::::{tab-set}
+
+:::{tab-item} Task 1 Examples
+
+- [Example 1](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf)
+- [Example 2](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example2.pdf)
+- [Example 3](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example3.pdf)
+
+:::
+
+:::{tab-item} Task 2 Examples
+
+- [Example A](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
+- [Example B](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
+- [Example C](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
+
+:::
+
+::::
+
+(resources:examples:archive)=
+**WGU Capstone Excellence Archive**
+
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
+
+:::{warning}
+Some examples in the archives may follow the old template. Please follow the templates found on this website.
+:::
+
 ### Data
 
 ML applies an algorithm to data, and you can't apply an algorithm to data -without data. So finding data should be an early step.
@@ -133,29 +166,6 @@ Look for data which has mutually exclusive categories which can used as a depend
 > **Organizational Need:** *We Love Pets Inc.* wants to use customer-uploaded images to market the correct type of pet food. 
 ````
 `````
-
-#### Completed Examples
-
-(task1:examples:completed_examples)=
-
-These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.
-
-`````{tab-set}
-````{tab-item} Completed Task 1 Ex. A
-> [![Thumbnail of the first page of a topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
-
-Also see: [task 2 document examples](task2_doc:examples)
-````
-````{tab-item} Completed Task 1 Ex. B
->[![Thumbnail of the first page of another topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
-
-Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
-````
-`````
-
-##### WGU Capstone Excellence Archive
-
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepen understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
 
 (task1:approval)=
 

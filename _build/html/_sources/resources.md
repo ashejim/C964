@@ -37,7 +37,7 @@ These passing examples have been provided by the evalaution team to help student
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 :::{warning}
-Some examples in the archives may follow the old template. Please follow templates found on this website.
+Some examples in the archives may follow the old template. Please follow the templates found on this website.
 :::
 
 (resources:task1)=
