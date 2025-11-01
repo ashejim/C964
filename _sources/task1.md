@@ -134,28 +134,36 @@ Look for data which has mutually exclusive categories which can used as a depend
 ````
 `````
 
-#### Completed Examples
+#### Completed Document Examples
 
-(task1:examples:completed_examples)=
+::::{tab-set}
 
-These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.
+:::{tab-item} Task 1 Examples
 
-`````{tab-set}
-````{tab-item} Completed Task 1 Ex. A
-> [![Thumbnail of the first page of a topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
+- [Example 1](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf)
+- [Example 2](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example2.pdf)
+- [Example 3](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example3.pdf)
 
-Also see: [task 2 document examples](task2_doc:examples)
-````
-````{tab-item} Completed Task 1 Ex. B
->[![Thumbnail of the first page of another topic approval example. The word "Example" is stamped on it diagonally in red.](https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
+:::
 
-Also see: [task 2 example B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf)
-````
-`````
+:::{tab-item} Task 2 Examples
 
-##### WGU Capstone Excellence Archive
+- [Example A](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
+- [Example B](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
+- [Example C](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepen understanding of the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For more down-to-earth examples of what's required, see the [examples](task1:examples:completed_examples) above.
+:::
+
+::::
+
+(resources:examples:archive)=
+**WGU Capstone Excellence Archive**
+
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the examples above.
+
+:::{tip}
+Some examples in the archives may follow the old template. However, the advice on this site aligns with the latest version of the [Task 2 template](./resources/C964_task_2_template.docx) as the new template meets all the documentation requirements while being more succinct and clear. Though not technically requried, evaluators expect the new template to be followed.
+:::
 
 (task1:approval)=
 
