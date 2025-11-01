@@ -471,7 +471,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-topic">Choosing a Topic</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-topic">Choosing a Topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-summary-examples">Topic Summary Examples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-1-2-examples">Tasks 1 &amp; 2 Examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-algorithms">Machine Learning Algorithms</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">Supervised Learning</a></li>
@@ -480,14 +483,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-start-data-or-the-ml-algorithm">Where to start? Data or the ML algorithm?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-summary-examples">Topic Summary Examples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#completed-examples">Completed Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wgu-capstone-excellence-archive">WGU Capstone Excellence Archive</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-approval">Topic Approval</a></li>
@@ -549,6 +544,84 @@ document.write(`
 <p>It’s a new field, and answers vary depending on who you ask. But for the purposes of this project, ML is the application of an algorithm to data. Also see <a class="reference internal" href="task2_c/task2_part_c.html#task1-faq-what-is-machine-learning"><span class="std std-ref">FAQ: What is ML?</span></a>.</p>
 </aside>
 <p>The “organizational need” requirement gives your project a purpose and audience. From an assessment perspective, it has little other value, so you need not worry about your project’s profitability or practical impact. Such criteria are <em>not</em> assessed. This is a computer science project, not a business or software project.</p>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<section id="topic-summary-examples">
+<h3>Topic Summary Examples<a class="headerlink" href="#topic-summary-examples" title="Link to this heading">#</a></h3>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Example 1</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Petal dimensions and species of <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
+<p><strong>ML application (non-descriptive method):</strong> <a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html#sup-class-ex"><span class="std std-ref">Classify an Iris’s species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression</span></a>.</p>
+<p><strong>Descriptive method:</strong> <a class="reference internal" href="#sup_class_ex:descriptive_methods_and_visualization"><span class="xref myst">Histograms and barplots</span></a> showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.</p>
+<p><strong>Organizational Need:</strong> <em>Grow Fast Fertilizer Inc.</em> needs to help customers identify their flowers.</p>
+</div></blockquote>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Example 2</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Housing data</p>
+<p><strong>ML application (non-descriptive method):</strong> Predict the selling price of a house using a supervised regression model, say random forest or linear regression.</p>
+<p><strong>Descriptive method:</strong> Histograms showing distributions of data features and scatterplots exploring possible data correlations.</p>
+<p><strong>Organizational Need:</strong> The realty firm, <em>We Sell em Fast!</em>, needs a tool to estimate housing prices.</p>
+</div></blockquote>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Example 3</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Movies, e.g., budget, genre, starring actors, etc.</p>
+<p><strong>ML application (descriptive method):</strong> Use unsupervised clustering, say K-means, to identify groups of similar movies.</p>
+<p><strong>Non-descriptive method:</strong> Using the clusters and user input, recommend a movie.</p>
+<p><strong>Organizational Need:</strong> The streaming service, <em>InterWebFlixs</em>, needs to help users pick a movie.</p>
+</div></blockquote>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Example 4</label><div class="sd-tab-content docutils">
+<blockquote>
+<div><p><strong>Data:</strong> Images of dogs and cats.</p>
+<p><strong>ML application</strong> (non-descriptive): Classify an image as a dog or cat using a supervised neural network (classification model), say CNN.</p>
+<p><strong>Descriptive method:</strong> Histograms showing distributions of image features and a confusion matrix illustrating the accuracy of the classification model.</p>
+<p><strong>Organizational Need:</strong> <em>We Love Pets Inc.</em> wants to use customer-uploaded images to market the correct type of pet food.</p>
+</div></blockquote>
+</div>
+</div>
+</section>
+<section id="tasks-1-2-examples">
+<span id="task1-examples"></span><h3>Tasks 1 &amp; 2 Examples<a class="headerlink" href="#tasks-1-2-examples" title="Link to this heading">#</a></h3>
+<p>These passing examples have been provided by the evalaution team to help students better understand what’s expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Task 1 Examples</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf">Example 1</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example2.pdf">Example 2</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example3.pdf">Example 3</a></p></li>
+</ul>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Task 2 Examples</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf">Example A</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf">Example B</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf">Example C</a></p></li>
+</ul>
+</div>
+</div>
+<p id="task1-examples-archive"><strong>WGU Capstone Excellence Archive</strong></p>
+<p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. So don’t use these as examples of what’s needed to meet the requirements. For a more down-to-earth example of what’s required, see the <a class="reference internal" href="resources.html#resources-examples"><span class="std std-ref">examples</span></a> above.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some examples in the archives may follow the old template. Please follow the templates found on this website.</p>
+</div>
+</section>
 <section id="data">
 <h3>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
 <p>ML applies an algorithm to data, and you can’t apply an algorithm to data -without data. So finding data should be an early step.</p>
@@ -621,80 +694,6 @@ src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-40
 <p class="sidebar-title">Unsure about which ML method to use?</p>
 <p>Look for data which has mutually exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our <a class="reference internal" href="#(sup_class_ex)"><span class="xref myst">supervised classification example</span></a>, uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubric requirements.</p>
 </aside>
-</section>
-<section id="examples">
-<span id="task1-examples"></span><h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h3>
-<section id="topic-summary-examples">
-<h4>Topic Summary Examples<a class="headerlink" href="#topic-summary-examples" title="Link to this heading">#</a></h4>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-0">
-Example 1</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><strong>Data:</strong> Petal dimensions and species of <a class="reference external" href="https://www.kaggle.com/datasets/uciml/iris">Iris Samples</a>.</p>
-<p><strong>ML application (non-descriptive method):</strong> <a class="reference internal" href="task2_c/example_sup_class/sup_class_ex.html#sup-class-ex"><span class="std std-ref">Classify an Iris’s species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression</span></a>.</p>
-<p><strong>Descriptive method:</strong> <a class="reference internal" href="#sup_class_ex:descriptive_methods_and_visualization"><span class="xref myst">Histograms and barplots</span></a> showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.</p>
-<p><strong>Organizational Need:</strong> <em>Grow Fast Fertilizer Inc.</em> needs to help customers identify their flowers.</p>
-</div></blockquote>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
-Example 2</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><strong>Data:</strong> Housing data</p>
-<p><strong>ML application (non-descriptive method):</strong> Predict the selling price of a house using a supervised regression model, say random forest or linear regression.</p>
-<p><strong>Descriptive method:</strong> Histograms showing distributions of data features and scatterplots exploring possible data correlations.</p>
-<p><strong>Organizational Need:</strong> The realty firm, <em>We Sell em Fast!</em>, needs a tool to estimate housing prices.</p>
-</div></blockquote>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
-Example 3</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><strong>Data:</strong> Movies, e.g., budget, genre, starring actors, etc.</p>
-<p><strong>ML application (descriptive method):</strong> Use unsupervised clustering, say K-means, to identify groups of similar movies.</p>
-<p><strong>Non-descriptive method:</strong> Using the clusters and user input, recommend a movie.</p>
-<p><strong>Organizational Need:</strong> The streaming service, <em>InterWebFlixs</em>, needs to help users pick a movie.</p>
-</div></blockquote>
-</div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
-Example 4</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><strong>Data:</strong> Images of dogs and cats.</p>
-<p><strong>ML application</strong> (non-descriptive): Classify an image as a dog or cat using a supervised neural network (classification model), say CNN.</p>
-<p><strong>Descriptive method:</strong> Histograms showing distributions of image features and a confusion matrix illustrating the accuracy of the classification model.</p>
-<p><strong>Organizational Need:</strong> <em>We Love Pets Inc.</em> wants to use customer-uploaded images to market the correct type of pet food.</p>
-</div></blockquote>
-</div>
-</div>
-</section>
-<section id="completed-examples">
-<h4>Completed Examples<a class="headerlink" href="#completed-examples" title="Link to this heading">#</a></h4>
-<p id="task1-examples-completed-examples">These are (slightly modified) examples of approved topics. All of which went on to become passing capstone projects.</p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Completed Task 1 Ex. A</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf"><img alt="Thumbnail of the first page of a topic approval example. The word &quot;Example&quot; is stamped on it diagonally in red." src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-a.png?raw=true#image-thumb" /></a></p>
-</div></blockquote>
-<p>Also see: <a class="reference internal" href="task2_doc/task2_doc.html#task2-doc-examples"><span class="std std-ref">task 2 document examples</span></a></p>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
-<blockquote>
-<div><p><a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf"><img alt="Thumbnail of the first page of another topic approval example. The word &quot;Example&quot; is stamped on it diagonally in red." src="https://github.com/ashejim/C964/blob/main/url_images/example_task1-b.png?raw=true#image-thumb" /></a></p>
-</div></blockquote>
-<p>Also see: <a class="reference external" href="https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf">task 2 example B</a></p>
-</div>
-</div>
-<section id="wgu-capstone-excellence-archive">
-<h5>WGU Capstone Excellence Archive<a class="headerlink" href="#wgu-capstone-excellence-archive" title="Link to this heading">#</a></h5>
-<p>The <a class="reference external" href="https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx">Capstone Excellence Archive</a> includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and deepen understanding of the requirements. However, keep in mind that they all are <em>above and beyond</em> the requirements. Therefore, don’t use these as examples of what’s needed to meet the requirements. For more down-to-earth examples of what’s required, see the <a class="reference internal" href="#task1-examples-completed-examples"><span class="std std-ref">examples</span></a> above.</p>
-</section>
-</section>
 </section>
 </section>
 <section id="topic-approval">
@@ -964,7 +963,10 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-topic">Choosing a Topic</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-topic">Choosing a Topic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-summary-examples">Topic Summary Examples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks-1-2-examples">Tasks 1 &amp; 2 Examples</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning-algorithms">Machine Learning Algorithms</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-learning">Supervised Learning</a></li>
@@ -973,14 +975,6 @@ Completed Task 1 Ex. B</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-start-data-or-the-ml-algorithm">Where to start? Data or the ML algorithm?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-summary-examples">Topic Summary Examples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#completed-examples">Completed Examples</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wgu-capstone-excellence-archive">WGU Capstone Excellence Archive</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topic-approval">Topic Approval</a></li>

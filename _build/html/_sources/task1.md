@@ -23,6 +23,51 @@ The "organizational need" requirement gives your project a purpose and audience.
 
 ## Examples
 
+### Topic Summary Examples
+
+`````{tab-set}
+````{tab-item} Example 1
+> **Data:** Petal dimensions and species of [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
+>
+> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
+>
+> **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
+>  
+> **Organizational Need:** *Grow Fast Fertilizer Inc.* needs to help customers identify their flowers. 
+````
+````{tab-item} Example 2
+> **Data:** Housing data
+>
+> **ML application (non-descriptive method):** Predict the selling price of a house using a supervised regression model, say random forest or linear regression.      
+>
+> **Descriptive method:** Histograms showing distributions of data features and scatterplots exploring possible data correlations.  
+>
+> **Organizational Need:** The realty firm, *We Sell em Fast!*, needs a tool to estimate housing prices.
+````
+````{tab-item} Example 3
+>**Data:** Movies, e.g., budget, genre, starring actors, etc.
+>
+>**ML application (descriptive method):** Use unsupervised clustering, say K-means, to identify groups of similar movies.
+>
+>**Non-descriptive method:** Using the clusters and user input, recommend a movie.
+>
+>**Organizational Need:** The streaming service, *InterWebFlixs*, needs to help users pick a movie.
+````
+````{tab-item} Example 4
+> **Data:** Images of dogs and cats.
+>
+> **ML application** (non-descriptive): Classify an image as a dog or cat using a supervised neural network (classification model), say CNN.
+>
+> **Descriptive method:** Histograms showing distributions of image features and a confusion matrix illustrating the accuracy of the classification model.
+>
+> **Organizational Need:** *We Love Pets Inc.* wants to use customer-uploaded images to market the correct type of pet food. 
+````
+`````
+
+(task1:examples)=
+
+### Tasks 1 & 2 Examples
+
 These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.
 
 ::::{tab-set}
@@ -45,7 +90,7 @@ These passing examples have been provided by the evalaution team to help student
 
 ::::
 
-(resources:examples:archive)=
+(task1:examples:archive)=
 **WGU Capstone Excellence Archive**
 
 The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
@@ -121,51 +166,6 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 ```{margin} Unsure about which ML method to use?
 Look for data which has mutually exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example]((sup_class_ex)), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubric requirements.  
 ```
-
-(task1:examples)=
-
-### Examples
-
-#### Topic Summary Examples
-
-`````{tab-set}
-````{tab-item} Example 1
-> **Data:** Petal dimensions and species of [Iris Samples](https://www.kaggle.com/datasets/uciml/iris).
->
-> **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
->
-> **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
->  
-> **Organizational Need:** *Grow Fast Fertilizer Inc.* needs to help customers identify their flowers. 
-````
-````{tab-item} Example 2
-> **Data:** Housing data
->
-> **ML application (non-descriptive method):** Predict the selling price of a house using a supervised regression model, say random forest or linear regression.      
->
-> **Descriptive method:** Histograms showing distributions of data features and scatterplots exploring possible data correlations.  
->
-> **Organizational Need:** The realty firm, *We Sell em Fast!*, needs a tool to estimate housing prices.
-````
-````{tab-item} Example 3
->**Data:** Movies, e.g., budget, genre, starring actors, etc.
->
->**ML application (descriptive method):** Use unsupervised clustering, say K-means, to identify groups of similar movies.
->
->**Non-descriptive method:** Using the clusters and user input, recommend a movie.
->
->**Organizational Need:** The streaming service, *InterWebFlixs*, needs to help users pick a movie.
-````
-````{tab-item} Example 4
-> **Data:** Images of dogs and cats.
->
-> **ML application** (non-descriptive): Classify an image as a dog or cat using a supervised neural network (classification model), say CNN.
->
-> **Descriptive method:** Histograms showing distributions of image features and a confusion matrix illustrating the accuracy of the classification model.
->
-> **Organizational Need:** *We Love Pets Inc.* wants to use customer-uploaded images to market the correct type of pet food. 
-````
-`````
 
 (task1:approval)=
 
