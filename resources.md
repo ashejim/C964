@@ -9,24 +9,7 @@
 
 ## Examples
 
-These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
-
-<!-- `````{tab-set}
-````{tab-item} Task 1 Examples
-**Topic:** Modern Security Information and Event Management (SIEM) Systems
-> Task 1: [Topic approval form example 1](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example1.pdf)
-> Task 1: [Topic approval form example 2](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example2.pdf)
-> Task 1: [Topic approval form example 3](https://github.com/ashejim/C964/blob/main/resources/examples/C964_T1_Example3.pdf)
-````
-````{tab-item} Task 2 Examples (parts A, B, and D)
-**Topic:** Security Evaluation and Upgrade
-> Task 2: [Task 2 Documentation](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
-> Task 2: [Task 2 Documentation](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
-> Task 2: [Task 2 Documentation](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
-:::{note}
-The security upgrades, not the evalaution, is what's necessary to meet the requriements. 
-::: -->
-<!-- ```` -->
+These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.
 
 ::::{tab-set}
 
@@ -51,10 +34,10 @@ The security upgrades, not the evalaution, is what's necessary to meet the requr
 (resources:examples:archive)=
 **WGU Capstone Excellence Archive**
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
-:::{tip}
-Currently, most of these examples (including those in the archives) follow the old template. However, the advice on this site aligns with the latest version of the [Task 2 template](./resources/C964_task_2_template.docx) as the new template meets all the documentation requirements while being more succinct and clear. We recommend using the new template for both SIM2 and SIM3.
+:::{warning}
+Some examples in the archives may follow the old template. Please follow templates found on this website.
 :::
 
 (resources:task1)=

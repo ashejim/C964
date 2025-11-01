@@ -165,46 +165,6 @@ CNNs Coding Tutorials:
 - [GeeksforGeeks](https://www.geeksforgeeks.org/convolutional-neural-network-cnn-in-tensorflow/)
 - [DataCamp](https://www.datacamp.com/tutorial/tensorflow-tutorial)
 
-(resources:task2doc)=
-
-## Task 2 Parts A, B, & C (the documentation) Resources
-
-Part C is your submitted application. See all our available resources here: [task 2 part C](task2_part_c)
-
-(resources:task2doc:doctemplate)=
-
-### Task 2 Parts A, B, and D Template & Part C Guide
-
-Write your proposal following **C964 Task 2 documentation template**:
-
-> [![Image of the first page of the Task 2 documentation template](https://github.com/ashejim/C964/blob/main/url_images/template_task2.png?raw=true#image-thumb)](./resources/C964_task_2_template.docx)
-
-<!-- Contrasting the recommended approach to most WGU projects you've passed, e.g., C950 and C951, *we do not advise completing your application (part C) OR writing your document (parts A) following the specific items listed in the official rubric _or task directions.*  Written holistically, many find it difficult to align the task directions (A-D) to the rubric outcomes (1-6). Please refer to the guidelines on this webpage and the [Task 2 template](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/ERGxhsNfkbhEutlkXVFITMQBPOmWlkVx1p5H0UisvnBesg?rtime=3q_Efs-u2kg). Following this template is helpful (almost necessary) in aligning your documentation with the rubric outcomes. So while not technically required, it is highly recommended. -->
-
-Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a pdf). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
-
-(resources:task2doc:docexample)= 
-
-### Task 2 Parts A, B, and D Examples
-
-**Example A:**
-
-- [task 2 ex. A](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf) (part C not available)
-
-**Example B:**
-
-- [task 2 ex. B](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf) (part C not available)
-
-```{note}
-The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the excellence archives to review better projects.
-```
-
-(resources:examples:excellent_archives)=
-
-#### WGU Capstone Excellence Archives
-
-The [Capstone Excellence Archives](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) include a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. Therefore, don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
-
 ## General Resources
 
 (resources:gen:student_resources)=  
