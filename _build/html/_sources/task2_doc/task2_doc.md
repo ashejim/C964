@@ -1,14 +1,6 @@
 
 # Task 2: The Documentation
 
-:::{warning}
-On 9/25/2023, C964 was updated to a new version (SIM3). Though the rubric and task directions were reworded, **the actual requirements and their assessment criteria are unchanged.**
-:::
-
-:::{note}
-The content here for parts A, B, and D aligns with the latest version of the [Task 2 template](../resources/C964_task_2_template.docx). Following the new template meets all the documentation requirements while being more succinct and clear. We recommend using the template for both SIM2 and SIM3. However, using the previous Task 2 template is still acceptable. Currently, the examples (including most of in the archives) follow the old template.
-:::
-
 (task2_doc)=
 
 ## Task 2 Documentation Template
@@ -16,37 +8,26 @@ The content here for parts A, B, and D aligns with the latest version of the [Ta
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
 > [Task 2 documentation template](../resources/C964_task_2_template.docx) (parts A, B, and D)
 
-```{admonition} Do NOT write an outline!
-:class: error
-Most sections must be written in a narrative style with complete sentences and paragraphs. Tables and bullet points are acceptable for sections F1, F2, and G. 
-```
-
 :::{tip}
 The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](../resources/C964_task_2_template.docx).
 :::
+
+```{admonition} Do NOT write an outline!
+:class: error
+Most sections must be written in a narrative style with complete sentences and paragraphs. Tables and bullet points are only acceptable for limited sections such as the timeline and budget. 
+```
 
 To gauge the level of detail evaluators typically expect, review these examples:
 
 (task2_doc:examples)=
 
-## Example Documents
+## Task 2 Document Examples
 
-The examples found here are of actual passing tasks 1 and 2, *flaws and all*. To best represent what might be accepted, we’ve made no corrections. See the [excellence archives]((resources:examples:archive) to review better projects.
+These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.
 
-These examples (and most of those in archives) were written using the previous Task 2 template. In the coming months, we will add more recent examples following the new template.
-
-`````{tab-set}
-````{tab-item} Task 2 documentation example A
-> [![Task 2 example-a](https://github.com/ashejim/C964/blob/main/url_images/example_task2-a.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task2-a.pdf)
-
-Also see: [Task 1 example A](https://github.com/ashejim/C964/blob/main/resources/example_task1-a.pdf)
-````
-````{tab-item} Task 2 documentation example B
->[![Task 2 example-b](https://github.com/ashejim/C964/blob/main/url_images/example_task2-b.png?raw=true#image-thumb)](https://github.com/ashejim/C964/blob/main/resources/example_task2-b.pdf?raw=true)
-
-Also see: [Task 1 example B](https://github.com/ashejim/C964/blob/main/resources/example_task1-b.pdf)
-````
-`````
+- [Example A](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
+- [Example B](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
+- [Example C](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
 
 <div class = "tasklist">
 
