@@ -25,9 +25,18 @@ To gauge the level of detail evaluators typically expect, review these examples:
 
 These passing examples have been provided by the evalaution team to help students better understand what's expected. They are on-par with average passing tasks. Use them as a guideline for what evaluators accept in fulfillment of the requirements. To best represent what might be accepted, we’ve made no corrections.
 
+::::{tab-set}
+
+:::{tab-item} Task 2 Examples
+
 - [Example A](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-A.pdf)  
 - [Example B](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-B.pdf)  
 - [Example C](https://github.com/ashejim/C964/blob/main/resources/examples/C964_Task_2_example-from-evaluations-C.pdf)
+
+:::
+
+::::
+
 
 <div class = "tasklist">
 
