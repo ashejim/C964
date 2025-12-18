@@ -163,6 +163,12 @@ Students have reported missed mistakes when using the Google doc Grammarly exten
 
 (resources:gen:apa)=
 
+### WGU AI Policies
+
+-[AI Student Policy & Responsible Use Hub](https://westerngovernorsuniversity.sharepoint.com/sites/CredentialIntegrity/SitePages/AI-Policy.aspx?csf=1&web=1&e=7gLO85)
+-[Student Guide ro Using AI at WGU](https://cm.wgu.edu/t5/Frequently-Asked-Questions/Student-Guide-to-Using-AI-at-Western-Governors-University/ta-p/67810)
+-[Use of Artificial Intelligence (AI) Tools](https://cm.wgu.edu/t5/WGU-Student-Policy-Handbook/Use-of-Artificial-Intelligence-AI-Tools/ta-p/67811)
+
 ### APA
 
 Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524). Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
