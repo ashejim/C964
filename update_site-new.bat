@@ -5,7 +5,7 @@ FOR /d /r . %%d IN (.history) DO @IF EXIST "%%d" rd /s /q "%%d"
 DEL /S /Q "output_plot*.png"
 SET /P Message=Enter git C964 commit comment: 
 title compile html, save to repo folder, update GitHub repo and website
-jupyter-book build --all "..\C964"
+jupyter-book build --all "C964"
 echo "Compiling local ..\C964 ..."
 xcopy /s /e /h /i /y "..\C964" "..\github_book_repo\C964"
 echo "Copied local book to ..\github_book_repo\C964 ..."
