@@ -1,5 +1,5 @@
 @echo off
-cd D:\OneDrive - Western Governors University\jupyter-books\C964
+@REM cd D:\OneDrive - Western Governors University\jupyter-books\C964
 FOR /d /r . %%d IN (.history) DO @IF EXIST "%%d" rd /s /q "%%d"
 @REM DEL /S /Q "D:\OneDrive - Western Governors University\jupyter-books\C964\output_plot*.png"
 DEL /S /Q "output_plot*.png"
