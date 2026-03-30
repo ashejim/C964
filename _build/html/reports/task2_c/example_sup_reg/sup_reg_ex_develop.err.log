@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
     executenb(
     ~~~~~~~~~^
         nb,
@@ -9,22 +9,22 @@ Traceback (most recent call last):
         ^^^^^^^^^
     )
     ^
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\nbclient\client.py", line 1319, in execute
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\nbclient\client.py", line 1319, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
     return loop.run_until_complete(inner)
            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
   File "C:\Users\ashej\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 719, in run_until_complete
     return future.result()
            ~~~~~~~~~~~~~^^
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\nbclient\client.py", line 709, in async_execute
     await self.async_execute_cell(
         cell, index, execution_count=self.code_cells_executed + 1
     )
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "C:\Users\ashej\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+  File "C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
@@ -35,18 +35,18 @@ linear_reg_model.fit(X_train,y_train)
 
 [31m---------------------------------------------------------------------------[39m
 [31mValueError[39m                                Traceback (most recent call last)
-[32m~\AppData\Local\Temp\ipykernel_38284\759662275.py[39m in [36m?[39m[34m()[39m
+[32m~\AppData\Local\Temp\ipykernel_10216\759662275.py[39m in [36m?[39m[34m()[39m
 [32m      1[39m linear_reg_model = LinearRegression()
 [32m----> [39m[32m2[39m linear_reg_model.fit(X_train,y_train)
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\base.py[39m in [36m?[39m[34m(estimator, *args, **kwargs)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\base.py[39m in [36m?[39m[34m(estimator, *args, **kwargs)[39m
 [32m   1361[39m                 skip_parameter_validation=(
 [32m   1362[39m                     prefer_skip_nested_validation [38;5;28;01mor[39;00m global_skip_validation
 [32m   1363[39m                 )
 [32m   1364[39m             ):
 [32m-> [39m[32m1365[39m                 [38;5;28;01mreturn[39;00m fit_method(estimator, *args, **kwargs)
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\linear_model\_base.py[39m in [36m?[39m[34m(self, X, y, sample_weight)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\linear_model\_base.py[39m in [36m?[39m[34m(self, X, y, sample_weight)[39m
 [32m    614[39m         n_jobs_ = self.n_jobs
 [32m    615[39m 
 [32m    616[39m         accept_sparse = [38;5;28;01mFalse[39;00m [38;5;28;01mif[39;00m self.positive [38;5;28;01melse[39;00m [[33m"csr"[39m, [33m"csc"[39m, [33m"coo"[39m]
@@ -56,7 +56,7 @@ linear_reg_model.fit(X_train,y_train)
 [32m    620[39m             X,
 [32m    621[39m             y,
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(_estimator, X, y, reset, validate_separately, skip_check_array, **check_params)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(_estimator, X, y, reset, validate_separately, skip_check_array, **check_params)[39m
 [32m   2967[39m             [38;5;28;01mif[39;00m [33m"estimator"[39m [38;5;28;01mnot[39;00m [38;5;28;01min[39;00m check_y_params:
 [32m   2968[39m                 check_y_params = {**default_check_params, **check_y_params}
 [32m   2969[39m             y = check_array(y, input_name=[33m"y"[39m, **check_y_params)
@@ -66,7 +66,7 @@ linear_reg_model.fit(X_train,y_train)
 [32m   2973[39m 
 [32m   2974[39m     [38;5;28;01mif[39;00m [38;5;28;01mnot[39;00m no_val_X [38;5;28;01mand[39;00m check_params.get([33m"ensure_2d"[39m, [38;5;28;01mTrue[39;00m):
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, force_all_finite, ensure_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, force_all_finite, ensure_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)[39m
 [32m   1364[39m         )
 [32m   1365[39m 
 [32m   1366[39m     ensure_all_finite = _deprecate_force_all_finite(force_all_finite, ensure_all_finite)
@@ -76,7 +76,7 @@ linear_reg_model.fit(X_train,y_train)
 [32m   1370[39m         accept_sparse=accept_sparse,
 [32m   1371[39m         accept_large_sparse=accept_large_sparse,
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, force_all_finite, ensure_all_finite, ensure_non_negative, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\utils\validation.py[39m in [36m?[39m[34m(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, force_all_finite, ensure_all_finite, ensure_non_negative, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)[39m
 [32m   1050[39m                         )
 [32m   1051[39m                     array = xp.astype(array, dtype, copy=[38;5;28;01mFalse[39;00m)
 [32m   1052[39m                 [38;5;28;01melse[39;00m:
@@ -86,7 +86,7 @@ linear_reg_model.fit(X_train,y_train)
 [32m   1056[39m                     [33m"Complex data not supported\n{}\n"[39m.format(array)
 [32m   1057[39m                 ) [38;5;28;01mfrom[39;00m complex_warning
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\sklearn\utils\_array_api.py[39m in [36m?[39m[34m(array, dtype, order, copy, xp, device)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\utils\_array_api.py[39m in [36m?[39m[34m(array, dtype, order, copy, xp, device)[39m
 [32m    753[39m         [38;5;66;03m# Use NumPy API to support order[39;00m
 [32m    754[39m         [38;5;28;01mif[39;00m copy [38;5;28;01mis[39;00m [38;5;28;01mTrue[39;00m:
 [32m    755[39m             array = numpy.array(array, order=order, dtype=dtype)
@@ -96,7 +96,7 @@ linear_reg_model.fit(X_train,y_train)
 [32m    759[39m         [38;5;66;03m# At this point array is a NumPy ndarray. We convert it to an array[39;00m
 [32m    760[39m         [38;5;66;03m# container that is consistent with the input's namespace.[39;00m
 
-[32m~\.virtualenvs\course_webpages-XzxJp38R\Lib\site-packages\pandas\core\generic.py[39m in [36m?[39m[34m(self, dtype, copy)[39m
+[32m~\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\pandas\core\generic.py[39m in [36m?[39m[34m(self, dtype, copy)[39m
 [32m   2167[39m             )
 [32m   2168[39m         values = self._values
 [32m   2169[39m         [38;5;28;01mif[39;00m copy [38;5;28;01mis[39;00m [38;5;28;01mNone[39;00m:
