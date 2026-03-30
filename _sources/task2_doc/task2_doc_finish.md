@@ -1,5 +1,5 @@
 
-# Task 2 final touches
+# Submitting Task 2
 
 (task2_doc_finish:how_to_submit)=
 
@@ -9,7 +9,7 @@
 2. Check Grammar!!
 3. Check adherence to APA formatting, particularly citations. Preserve the formatting of the template and use the MS reference tool, and this shouldn't be a problem.
 4. Export parts A, B, and D as a *single* .pdf file.
-5. *Always upload the document* separately from the code. It should be easily, identified.
+5. *Always upload the document* separately from the code. It should be easily identified as the documentation.
 
 :::{tip}
 Preserve the template's section titles, and order, and submit all four parts as a single document (preferably a `.pdf`). With a long, complicated document, aligning content to competencies presents a challenge. Don't make things difficult for the evaluator by spreading the content over several documents in an unfamiliar format.
@@ -41,7 +41,7 @@ If some or all of your application is online, then you should submit the necessa
 - If the application is a webpage, submit the web link AND the necessary .html files.
 - If the trained model is stored in a cloud drive, provide the link AND the source code needed to train the model.
 
-It is acceptable to have code import data or submit links provide the source can't be modified, such as links from Kaggle.com. Never use Google Drive, as WGU policy forbids WGU employees from using it. Use of Google Colab is acceptable, but upload the source code as directed above.
+It is acceptable to have code import data or submit links provide the source can't be modified, such as links from Kaggle.com or Google Colab. Upload the source code as directed above and check the *share permisisons* (use a browser's incognito mode).
 
 ### What if the project files exceed 200 MB?
 
