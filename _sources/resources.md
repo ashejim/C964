@@ -34,7 +34,7 @@ These passing examples have been provided by the evalaution team to help student
 (resources:examples:archive)=
 **WGU Capstone Excellence Archive**
 
-The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
+The {{ excellence_archive }} includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the [examples](resources:examples) above.
 
 :::{warning}
 Some examples in the archives may follow the old template. Please follow the templates found on this website.
@@ -48,13 +48,17 @@ Some examples in the archives may follow the old template. Please follow the tem
 
 ### Topic Approval Form Template
 
-> [![Topic Approval Form](https://github.com/ashejim/C964/blob/main/url_images/C964_t1_approval.png?raw=true#image-thumb)](./resources/C964_Capstone_Topic_Approval_Form.docx)
+> {{ task1_temp }}
+>
+> {{ task1_temp_odt }}
 
 (resources:task1:excellence)=
 
-### Waiver Form
+### Restricted Information Authorization Form
 
-> [![Image of the first page of the waiver Form](https://github.com/ashejim/C964/blob/main/url_images/C964_waiver.png?raw=true#image-thumb)](./resources/C964_Capstone_Release_Form.docx)
+> {{ waiver_form }}
+>
+> {{ waiver_form_odt }}
 
 (resources:task1:data)=
 
@@ -80,7 +84,7 @@ Any open source data set is freely available for use.
 ### Coding
 
 - [CS and C964 faculty](ci_other) available for math, data analytics, and coding-related questions.
-- [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.
+- {{ programming_center }} provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python.
 
 (resources:task2:videos)=
 
@@ -90,33 +94,21 @@ Any open source data set is freely available for use.
 
 #### Getting Started on the Capstone
 
-<iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
->
-</iframe>
+{{ overview_video }}
 
 #### ML Supervised Classification & Regression Overview
 
-<iframe
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
->
-</iframe>
+{{ ml_overview_video }}
 
 (resources:task2c:videos:ml-sup-class-code)=
 
 #### ML Supervised Learning Classification Coding Example
 
-<iframe
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"
->
-</iframe>
+{{ ml_class_code_video }}
 
 #### Student Presentation
 
-<iframe 
-    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=aafbc992-f4ab-46dd-bf3c-aca1010efef6" title="C964 Overview" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" alt ="Video title screen."
->
-</iframe>
+{{ student_presentation_video }}
 
 This presentation was intended for a general audience.
 
@@ -145,17 +137,17 @@ CNNs Coding Tutorials:
 
 ### Student Resources
 
-- [Student Resource Hub](https://resource-hub.wgu.edu/)
-- [Writing Center](https://my.wgu.edu/success-centers/writing-center)
-- [Writing Center Knowledge Base](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/tkb-p/C770_kb)
-- [WGU Math Center](https://my.wgu.edu/success-centers/math-center). The Math Center is [$e^{2\pi i}$](https://www.wolframalpha.com/input/?i=e%5E%282*pi*i%29)!
-- [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter)
+- {{ student_resource_hub }}
+- {{ writing_center }}
+- {{ writing_center_kb }}
+- {{ math_center }}. The Math Center is [$e^{2\pi i}$](https://www.wolframalpha.com/input/?i=e%5E%282*pi*i%29)!
+- {{ programming_center }}
 
 (resources:gen:grammarly)=
 
 ### Grammarly.com
 
-Check your grammar using [Grammarly.com](https://www.grammarly.com/) ![grammarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.
+Check your grammar using the {{ grammarly_edu }} ![grammarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon); this grammar checker is the preferred tool. Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.
 
 :::{warning}
 Students have reported missed mistakes when using the Google doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version and checking grammar in MS Word. 
@@ -165,23 +157,23 @@ Students have reported missed mistakes when using the Google doc Grammarly exten
 
 ### WGU AI Policies
 
-- [AI Student Policy & Responsible Use Hub](https://westerngovernorsuniversity.sharepoint.com/sites/CredentialIntegrity/SitePages/AI-Policy.aspx?csf=1&web=1&e=7gLO85)
-- [Student Guide ro Using AI at WGU](https://cm.wgu.edu/t5/Frequently-Asked-Questions/Student-Guide-to-Using-AI-at-Western-Governors-University/ta-p/67810)
-- [Use of Artificial Intelligence (AI) Tools](https://cm.wgu.edu/t5/WGU-Student-Policy-Handbook/Use-of-Artificial-Intelligence-AI-Tools/ta-p/67811)
+- {{ ai_policy_hub }}
+- {{ ai_student_guide }}
+- {{ ai_use_policy }}
 
 ### APA
 
-Your paper should adhere to [APA guidelines](https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524). Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
+Your paper should adhere to APA guidelines; see {{ apa_help }}. Avoid reference errors by using the [MS Word Reference Tool](https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5) to create and manage references.
 
 (resources:gen:libraries)=
 
 ### Libraries
 
-- [WGU's library](https://wgu.libguides.com/friendly.php?s=library)
+- {{ wgu_library }}
 - [google.scholar.com](https://scholar.google.com/)
 
 :::{tip}
-You can search [WGU's library](https://wgu.libguides.com/friendly.php?s=library) and other open-source libraries using [google.scholar.com](https://scholar.google.com/) Go to >'Google.scholar>setting>libraires>' and then add WGU and other libraries.
+You can search {{ wgu_library }} and other open-source libraries using [google.scholar.com](https://scholar.google.com/) Go to >'Google.scholar>setting>libraires>' and then add WGU and other libraries.
 
 <img src="./_images/google_scholar_demo.gif" height="200px" alt = "short movie demonstrating how to use google.scholar.com." />
 :::
@@ -199,7 +191,7 @@ Your project must apply machine learning (ML) to solve a problem. Using ML requi
 - Your submitted project must have a []"user-friendly" interface](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex-ui.html), but a GUI is not required. This is a CS project (not a software project); evaluators deal with a wide array of technical projects and need a way to review your work.
 - Task 1 is a preliminary exercise ensuring students begin in the right direction. Changing details from task 1 to task 2 is allowed and typical.
 
-To get some ideas, watch this [video](https://ashejim.github.io/C964/intro.html#start-here) and review these [examples](https://ashejim.github.io/C964/task1.html#topic-summary-examples). Next, complete the topic approval form and email it to me to be signed for approval. Set up an appointment if you have questions, but topic approval does not require an appointment. Following approval, see the  C964 Task 2 webpage and get started on Task 2. If you have any questions about a topic, schedule email (fastest) or set an appointment (best for general discussion) -it's why we're here!
+To get some ideas, watch this [video](https://ashejim.github.io/C964/intro.html#start-here) and review these [examples](https://ashejim.github.io/C964/task1.html#topic-summary-examples). Next, complete the topic approval form and submit it directly to Assessments as your Task 1. I'll either pass it or return it with comments for revision — there's no longer an email-and-sign step. Topic approval does not require an appointment, but set one up if you have questions. After your Task 1 passes, see the C964 Task 2 webpage and get started on Task 2. If you have any questions about a topic, email (fastest) or set an appointment (best for general discussion) -it's why we're here!
 ```
 
 ## Bibliography

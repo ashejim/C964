@@ -16,42 +16,45 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/my_css.css?v=af7b8336" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -72,7 +75,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "github-org/github-repo");
+    script.setAttribute("repo", "ashejim/C964");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -87,7 +90,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -115,6 +118,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="prev" title="Task 2: The Documentation" href="task2_doc.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -130,19 +134,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -150,7 +143,6 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -158,8 +150,8 @@ commentsRunWhenDOMLoaded(addUtterances);
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -175,7 +167,8 @@ commentsRunWhenDOMLoaded(addUtterances);
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -205,21 +198,17 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     
     <img src="../_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
-    <script>document.write(`<img src="../_static/3d_regression.png" class="logo__image only-dark" alt="Computer Science Capstone - Home"/>`);</script>
+    <img src="../_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -269,9 +258,14 @@ commentsRunWhenDOMLoaded(addUtterances);
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -418,7 +412,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -432,25 +426,17 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -501,7 +487,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="task-2-part-d">
 <h1>Task 2 Part D<a class="headerlink" href="#task-2-part-d" title="Link to this heading">#</a></h1>
-<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <a class="reference internal" href="#task2d:userguide"><span class="xref myst">User Guide</span></a>, <a class="reference internal" href="#task2d:ml"><span class="xref myst">Machine Learning</span></a>, and <a class="reference internal" href="#task2d:validation"><span class="xref myst">Validation</span></a> sections are the most important. As such, we recommend completing these sections first. Follow the <a class="reference download internal" download="" href="../_downloads/afd7e46ca89b2f62fdca1f03463bc722/C964_task_2_template.docx"><span class="xref download myst">Task 2 Template</span></a>.</p>
+<p id="task2-doc-d">Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the <a class="reference internal" href="#task2-doc-d-user-guide"><span class="std std-ref">User Guide</span></a>, <a class="reference internal" href="#task2-doc-d-ml"><span class="std std-ref">Machine Learning</span></a>, and <a class="reference internal" href="#task2-doc-d-validation"><span class="std std-ref">Validation</span></a> sections are the most important. As such, we recommend completing these sections first. Follow the <a class="reference download internal" download="" href="../_downloads/afd7e46ca89b2f62fdca1f03463bc722/C964_task_2_template.docx"><span class="xref download myst">Task 2 Template</span></a>.</p>
 <section id="user-guide">
 <span id="task2-doc-d-user-guide"></span><h2>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h2>
 <p>The evaluator might go here first. Following your instructions, they will verify your app functions as intended and simultaneously gain context of its purpose through demonstration.</p>
@@ -513,7 +499,7 @@ document.write(`
 </ul>
 <aside class="margin sidebar">
 <p class="sidebar-title">No Windows machine?</p>
-<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <a class="reference internal" href="#task2_doc:userguide"><span class="xref myst">User Guide</span></a> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <a class="reference internal" href="#task2c:faq:linux"><span class="xref myst">Task 2 part C FAQ</span></a> for more details.</p>
+<p><em>Nowhere is Windows specifically required</em> in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the <a class="reference internal" href="#task2-doc-d-user-guide"><span class="std std-ref">User Guide</span></a> provide explicit instructions for a Windows 10 user to run your code, such as using a <a class="reference external" href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview">virtual machine</a>, remote machine, or using a <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview">Linux subsystem</a>. You should also provide a note when submitting to Assessments and alerting your course instructor. See the <a class="reference internal" href="../task2_c/task2_part_c.html#task2-part-c-faq-i-only-have-a-linux-or-mac-machine"><span class="std std-ref">Task 2 part C FAQ</span></a> for more details.</p>
 </aside>
 <div class="sd-sphinx-override sd-cards-carousel sd-card-cols-4 docutils" id="task2-doc-d-user-guide-examples">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -558,7 +544,7 @@ document.write(`
 </ul>
 </section>
 <section id="validation">
-<span id="task2-doc-d-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Link to this heading">#</a></h2>
+<span id="task2-doc-d-accuracy-analysis"></span><span id="task2-doc-d-validation"></span><h2>Validation<a class="headerlink" href="#validation" title="Link to this heading">#</a></h2>
 <p>In this section, discuss how you assessed the success of the ML application(s). Identify the model’s machine learning category, e.g., supervised, unsupervised, or reinforced. For blended approaches, identify the category most relevant to the model’s application, and describe an appropriate validation method for the model’s performance</p>
 <p>In most cases, this means providing an appropriate <em>metric</em>. Most libraries have builtins for this; see <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html">sklearn metrics</a>. When no such metric is available or appropiate successful examples of the model’s output should be provided.</p>
 <div class="admonition note">
@@ -669,14 +655,16 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-guide">User Guide</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#machine-learning">Machine Learning</a></li>
@@ -741,8 +729,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

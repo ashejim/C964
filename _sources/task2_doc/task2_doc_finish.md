@@ -69,7 +69,7 @@ If none of the above work, please contact your course instructor so they can hel
 Grammar and sources are the *most common* reason for returned submissions! Even minor grammatical errors can prevent a submission from passing.
 :::
 
-After focusing on the content, check your grammar using [Grammarly.com](https://www.grammarly.com/) ![grmmarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon) (it's what the evaluators use). Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
+After focusing on the content, check your grammar using the {{ grammarly_edu }} ![grmmarly](https://github.com/ashejim/C769/blob/main/url_images/icon-grammarly.png?raw=true#icon); this grammar checker is the preferred tool. Style is not assessed (blue and green), but even a few grammar mistakes will prevent competency in *Professional Communication*. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught. 
 
 
 :::{warning}

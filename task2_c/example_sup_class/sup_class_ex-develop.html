@@ -16,42 +16,45 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/my_css.css?v=af7b8336" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -72,7 +75,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "github-org/github-repo");
+    script.setAttribute("repo", "ashejim/C964");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -87,7 +90,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-H4N36TZQ78"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -115,6 +118,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="prev" title="Data Exploring and Processing" href="sup_class_ex-process.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -130,19 +134,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -150,7 +143,6 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -158,8 +150,8 @@ commentsRunWhenDOMLoaded(addUtterances);
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -175,7 +167,8 @@ commentsRunWhenDOMLoaded(addUtterances);
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -205,21 +198,17 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     
     <img src="../../_static/3d_regression.png" class="logo__image only-light" alt="Computer Science Capstone - Home"/>
-    <script>document.write(`<img src="../../_static/3d_regression.png" class="logo__image only-dark" alt="Computer Science Capstone - Home"/>`);</script>
+    <img src="../../_static/3d_regression.png" class="logo__image only-dark pst-js-only" alt="Computer Science Capstone - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -269,9 +258,14 @@ commentsRunWhenDOMLoaded(addUtterances);
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -485,7 +479,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -499,25 +493,17 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -577,7 +563,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The focus of <a class="reference internal" href="#task2d:dataproduct"><span class="xref myst">Task 2 part D <em>Data Product</em></span></a> will be the what, how, and why of your model’s development.</p>
+<p>The focus of <a class="reference internal" href="../../task2_doc/task2_doc_d.html#task2-doc-d"><span class="std std-ref">Task 2 part D <em>Data Product</em></span></a> will be the what, how, and why of your model’s development.</p>
 </div>
 <section id="training-the-model">
 <span id="sup-class-ex-develop-train"></span><h2>Training the Model<a class="headerlink" href="#training-the-model" title="Link to this heading">#</a></h2>
@@ -618,91 +604,91 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
 </style>
-<table id="T_6013e" style='display:inline'>
+<table id="T_a9a4f" style='display:inline'>
   <caption>Independents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_6013e_level0_col0" class="col_heading level0 col0" >sepal-length</th>
-      <th id="T_6013e_level0_col1" class="col_heading level0 col1" >sepal-width</th>
-      <th id="T_6013e_level0_col2" class="col_heading level0 col2" >petal-length</th>
-      <th id="T_6013e_level0_col3" class="col_heading level0 col3" >petal-width</th>
+      <th id="T_a9a4f_level0_col0" class="col_heading level0 col0" >sepal-length</th>
+      <th id="T_a9a4f_level0_col1" class="col_heading level0 col1" >sepal-width</th>
+      <th id="T_a9a4f_level0_col2" class="col_heading level0 col2" >petal-length</th>
+      <th id="T_a9a4f_level0_col3" class="col_heading level0 col3" >petal-width</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_6013e_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_6013e_row0_col0" class="data row0 col0" >6.400000</td>
-      <td id="T_6013e_row0_col1" class="data row0 col1" >2.700000</td>
-      <td id="T_6013e_row0_col2" class="data row0 col2" >5.300000</td>
-      <td id="T_6013e_row0_col3" class="data row0 col3" >1.900000</td>
+      <th id="T_a9a4f_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_a9a4f_row0_col0" class="data row0 col0" >6.400000</td>
+      <td id="T_a9a4f_row0_col1" class="data row0 col1" >2.700000</td>
+      <td id="T_a9a4f_row0_col2" class="data row0 col2" >5.300000</td>
+      <td id="T_a9a4f_row0_col3" class="data row0 col3" >1.900000</td>
     </tr>
     <tr>
-      <th id="T_6013e_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_6013e_row1_col0" class="data row1 col0" >5.800000</td>
-      <td id="T_6013e_row1_col1" class="data row1 col1" >2.700000</td>
-      <td id="T_6013e_row1_col2" class="data row1 col2" >3.900000</td>
-      <td id="T_6013e_row1_col3" class="data row1 col3" >1.200000</td>
+      <th id="T_a9a4f_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_a9a4f_row1_col0" class="data row1 col0" >5.800000</td>
+      <td id="T_a9a4f_row1_col1" class="data row1 col1" >2.700000</td>
+      <td id="T_a9a4f_row1_col2" class="data row1 col2" >3.900000</td>
+      <td id="T_a9a4f_row1_col3" class="data row1 col3" >1.200000</td>
     </tr>
     <tr>
-      <th id="T_6013e_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_6013e_row2_col0" class="data row2 col0" >7.400000</td>
-      <td id="T_6013e_row2_col1" class="data row2 col1" >2.800000</td>
-      <td id="T_6013e_row2_col2" class="data row2 col2" >6.100000</td>
-      <td id="T_6013e_row2_col3" class="data row2 col3" >1.900000</td>
+      <th id="T_a9a4f_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_a9a4f_row2_col0" class="data row2 col0" >7.400000</td>
+      <td id="T_a9a4f_row2_col1" class="data row2 col1" >2.800000</td>
+      <td id="T_a9a4f_row2_col2" class="data row2 col2" >6.100000</td>
+      <td id="T_a9a4f_row2_col3" class="data row2 col3" >1.900000</td>
     </tr>
     <tr>
-      <th id="T_6013e_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_6013e_row3_col0" class="data row3 col0" >5.200000</td>
-      <td id="T_6013e_row3_col1" class="data row3 col1" >3.500000</td>
-      <td id="T_6013e_row3_col2" class="data row3 col2" >1.500000</td>
-      <td id="T_6013e_row3_col3" class="data row3 col3" >0.200000</td>
+      <th id="T_a9a4f_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_a9a4f_row3_col0" class="data row3 col0" >5.200000</td>
+      <td id="T_a9a4f_row3_col1" class="data row3 col1" >3.500000</td>
+      <td id="T_a9a4f_row3_col2" class="data row3 col2" >1.500000</td>
+      <td id="T_a9a4f_row3_col3" class="data row3 col3" >0.200000</td>
     </tr>
     <tr>
-      <th id="T_6013e_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_6013e_row4_col0" class="data row4 col0" >5.500000</td>
-      <td id="T_6013e_row4_col1" class="data row4 col1" >4.200000</td>
-      <td id="T_6013e_row4_col2" class="data row4 col2" >1.400000</td>
-      <td id="T_6013e_row4_col3" class="data row4 col3" >0.200000</td>
+      <th id="T_a9a4f_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_a9a4f_row4_col0" class="data row4 col0" >5.500000</td>
+      <td id="T_a9a4f_row4_col1" class="data row4 col1" >4.200000</td>
+      <td id="T_a9a4f_row4_col2" class="data row4 col2" >1.400000</td>
+      <td id="T_a9a4f_row4_col3" class="data row4 col3" >0.200000</td>
     </tr>
   </tbody>
 </table>
           <style type="text/css">
 </style>
-<table id="T_21d47" style='display:inline'>
+<table id="T_c1809" style='display:inline'>
   <caption>Dependents variables</caption>
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_21d47_level0_col0" class="col_heading level0 col0" >type</th>
+      <th id="T_c1809_level0_col0" class="col_heading level0 col0" >type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_21d47_level0_row0" class="row_heading level0 row0" >111</th>
-      <td id="T_21d47_row0_col0" class="data row0 col0" >Iris-virginica</td>
+      <th id="T_c1809_level0_row0" class="row_heading level0 row0" >111</th>
+      <td id="T_c1809_row0_col0" class="data row0 col0" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_21d47_level0_row1" class="row_heading level0 row1" >82</th>
-      <td id="T_21d47_row1_col0" class="data row1 col0" >Iris-versicolor</td>
+      <th id="T_c1809_level0_row1" class="row_heading level0 row1" >82</th>
+      <td id="T_c1809_row1_col0" class="data row1 col0" >Iris-versicolor</td>
     </tr>
     <tr>
-      <th id="T_21d47_level0_row2" class="row_heading level0 row2" >130</th>
-      <td id="T_21d47_row2_col0" class="data row2 col0" >Iris-virginica</td>
+      <th id="T_c1809_level0_row2" class="row_heading level0 row2" >130</th>
+      <td id="T_c1809_row2_col0" class="data row2 col0" >Iris-virginica</td>
     </tr>
     <tr>
-      <th id="T_21d47_level0_row3" class="row_heading level0 row3" >27</th>
-      <td id="T_21d47_row3_col0" class="data row3 col0" >Iris-setosa</td>
+      <th id="T_c1809_level0_row3" class="row_heading level0 row3" >27</th>
+      <td id="T_c1809_row3_col0" class="data row3 col0" >Iris-setosa</td>
     </tr>
     <tr>
-      <th id="T_21d47_level0_row4" class="row_heading level0 row4" >33</th>
-      <td id="T_21d47_row4_col0" class="data row4 col0" >Iris-setosa</td>
+      <th id="T_c1809_level0_row4" class="row_heading level0 row4" >33</th>
+      <td id="T_c1809_row4_col0" class="data row4 col0" >Iris-setosa</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 </div>
-<p>Read the <a class="reference internal" href="#sklearn_link"><span class="xref myst">docs</span></a>! By default <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, <a class="reference external" href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/">“randomly”</a> splits the sets. Setting the seed (or state) with <code class="docutils literal notranslate"><span class="pre">random_state</span></code> controls the experiments. See <a class="reference external" href="https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models">should you use a random seed?</a>.</p>
+<p>Read the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">docs</a>! By default <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, <a class="reference external" href="https://engineering.mit.edu/engage/ask-an-engineer/can-a-computer-generate-a-truly-random-number/">“randomly”</a> splits the sets. Setting the seed (or state) with <code class="docutils literal notranslate"><span class="pre">random_state</span></code> controls the experiments. See <a class="reference external" href="https://datascience.stackexchange.com/questions/78109/should-you-use-random-state-or-random-seed-in-machine-learning-models">should you use a random seed?</a>.</p>
 <p>We can now train a model using the independent (usually denoted <code class="docutils literal notranslate"><span class="pre">X</span></code>) and dependent variables (usually denoted <code class="docutils literal notranslate"><span class="pre">y</span></code>) from the training data. Sklearn has a deep <a class="reference external" href="https://scikit-learn.org/stable/supervised_learning.html">supervised learning library</a>. Note that many of these models (including SVM) have both classification and regression extensions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -714,11 +700,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\ashej\.virtualenvs\myGitRepos-pZoOKfjD\Lib\site-packages\sklearn\utils\validation.py:1406: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>D:\Task_1_updates\course_webpages\C964\.venv\Lib\site-packages\sklearn\utils\validation.py:1365: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   y = column_or_1d(y, warn=True)
 </pre></div>
 </div>
-<div class="output text_html"><style>#sk-container-id-1 {
+<div class="output text_html"><style>.sk-global {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
   --sklearn-color-text-muted: #666;
@@ -733,34 +719,34 @@ document.write(`
   --sklearn-color-fitted-level-1: #d4ebff;
   --sklearn-color-fitted-level-2: #b3dbfd;
   --sklearn-color-fitted-level-3: cornflowerblue;
-
-  /* Specific color for light theme */
-  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
-  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-icon: #696969;
-
-  @media (prefers-color-scheme: dark) {
-    /* Redefinition of color scheme for dark theme */
-    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
-    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-icon: #878787;
-  }
 }
 
-#sk-container-id-1 {
+.sk-global.light {
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: black;
+  --sklearn-color-background: white;
+  --sklearn-color-border-box: black;
+  --sklearn-color-icon: #696969;
+}
+
+.sk-global.dark {
+  --sklearn-color-text-on-default-background: white;
+  --sklearn-color-background: #111;
+  --sklearn-color-border-box: white;
+  --sklearn-color-icon: #878787;
+}
+
+.sk-global {
   color: var(--sklearn-color-text);
 }
 
-#sk-container-id-1 pre {
+.sk-global pre {
   padding: 0;
 }
 
-#sk-container-id-1 input.sk-hidden--visually {
+.sk-global input.sk-hidden--visually {
   border: 0;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -769,7 +755,7 @@ document.write(`
   width: 1px;
 }
 
-#sk-container-id-1 div.sk-dashed-wrapped {
+.sk-global div.sk-dashed-wrapped {
   border: 1px dashed var(--sklearn-color-line);
   margin: 0 0.4em 0.5em 0.4em;
   box-sizing: border-box;
@@ -777,7 +763,7 @@ document.write(`
   background-color: var(--sklearn-color-background);
 }
 
-#sk-container-id-1 div.sk-container {
+.sk-global div.sk-container {
   /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
      but bootstrap.min.css set `[hidden] { display: none !important; }`
      so we also need the `!important` here to be able to override the
@@ -787,7 +773,7 @@ document.write(`
   position: relative;
 }
 
-#sk-container-id-1 div.sk-text-repr-fallback {
+.sk-global div.sk-text-repr-fallback {
   display: none;
 }
 
@@ -803,14 +789,14 @@ div.sk-item {
 
 /* Parallel-specific style estimator block */
 
-#sk-container-id-1 div.sk-parallel-item::after {
+.sk-global div.sk-parallel-item::after {
   content: "";
   width: 100%;
   border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
   flex-grow: 1;
 }
 
-#sk-container-id-1 div.sk-parallel {
+.sk-global div.sk-parallel {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -818,28 +804,28 @@ div.sk-item {
   position: relative;
 }
 
-#sk-container-id-1 div.sk-parallel-item {
+.sk-global div.sk-parallel-item {
   display: flex;
   flex-direction: column;
 }
 
-#sk-container-id-1 div.sk-parallel-item:first-child::after {
+.sk-global div.sk-parallel-item:first-child::after {
   align-self: flex-end;
   width: 50%;
 }
 
-#sk-container-id-1 div.sk-parallel-item:last-child::after {
+.sk-global div.sk-parallel-item:last-child::after {
   align-self: flex-start;
   width: 50%;
 }
 
-#sk-container-id-1 div.sk-parallel-item:only-child::after {
+.sk-global div.sk-parallel-item:only-child::after {
   width: 0;
 }
 
 /* Serial-specific style estimator block */
 
-#sk-container-id-1 div.sk-serial {
+.sk-global div.sk-serial {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -857,14 +843,14 @@ clickable and can be expanded/collapsed.
 
 /* Pipeline and ColumnTransformer style (default) */
 
-#sk-container-id-1 div.sk-toggleable {
+.sk-global div.sk-toggleable {
   /* Default theme specific background. It is overwritten whether we have a
   specific estimator or a Pipeline/ColumnTransformer */
   background-color: var(--sklearn-color-background);
 }
 
 /* Toggleable label */
-#sk-container-id-1 label.sk-toggleable__label {
+.sk-global label.sk-toggleable__label {
   cursor: pointer;
   display: flex;
   width: 100%;
@@ -872,18 +858,18 @@ clickable and can be expanded/collapsed.
   padding: 0.5em;
   box-sizing: border-box;
   text-align: center;
-  align-items: start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 0.5em;
 }
 
-#sk-container-id-1 label.sk-toggleable__label .caption {
+.sk-global label.sk-toggleable__label .caption {
   font-size: 0.6rem;
   font-weight: lighter;
   color: var(--sklearn-color-text-muted);
 }
 
-#sk-container-id-1 label.sk-toggleable__label-arrow:before {
+.sk-global label.sk-toggleable__label-arrow:before {
   /* Arrow on the left of the label */
   content: "▸";
   float: left;
@@ -891,25 +877,25 @@ clickable and can be expanded/collapsed.
   color: var(--sklearn-color-icon);
 }
 
-#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
+.sk-global label.sk-toggleable__label-arrow:hover:before {
   color: var(--sklearn-color-text);
 }
 
 /* Toggleable content - dropdown */
 
-#sk-container-id-1 div.sk-toggleable__content {
+.sk-global div.sk-toggleable__content {
   display: none;
   text-align: left;
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-1 div.sk-toggleable__content.fitted {
+.sk-global div.sk-toggleable__content.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-1 div.sk-toggleable__content pre {
+.sk-global div.sk-toggleable__content pre {
   margin: 0.2em;
   border-radius: 0.25em;
   color: var(--sklearn-color-text);
@@ -917,79 +903,78 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-1 div.sk-toggleable__content.fitted pre {
+.sk-global div.sk-toggleable__content.fitted pre {
   /* unfitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+.sk-global input.sk-toggleable__control:checked~div.sk-toggleable__content {
   /* Expand drop-down */
   display: block;
   width: 100%;
   overflow: visible;
 }
 
-#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+.sk-global input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
   content: "▾";
 }
 
 /* Pipeline/ColumnTransformer-specific style */
 
-#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator-specific style */
 
 /* Colorize estimator box */
-#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
-#sk-container-id-1 div.sk-label label.sk-toggleable__label,
-#sk-container-id-1 div.sk-label label {
+.sk-global div.sk-label label.sk-toggleable__label,
+.sk-global div.sk-label label {
   /* The background is the default theme color */
   color: var(--sklearn-color-text-on-default-background);
 }
 
 /* On hover, darken the color of the background */
-#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
+.sk-global div.sk-label:hover label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
 /* Label box, darken color on hover, fitted */
-#sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+.sk-global div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator label */
 
-#sk-container-id-1 div.sk-label label {
+.sk-global div.sk-label label {
   font-family: monospace;
   font-weight: bold;
-  display: inline-block;
   line-height: 1.2em;
 }
 
-#sk-container-id-1 div.sk-label-container {
+.sk-global div.sk-label-container {
   text-align: center;
 }
 
 /* Estimator-specific */
-#sk-container-id-1 div.sk-estimator {
+.sk-global div.sk-estimator {
   font-family: monospace;
   border: 1px dotted var(--sklearn-color-border-box);
   border-radius: 0.25em;
@@ -999,18 +984,18 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-1 div.sk-estimator.fitted {
+.sk-global div.sk-estimator.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
 /* on hover */
-#sk-container-id-1 div.sk-estimator:hover {
+.sk-global div.sk-estimator:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-1 div.sk-estimator.fitted:hover {
+.sk-global div.sk-estimator.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
@@ -1026,7 +1011,7 @@ a:visited.sk-estimator-doc-link {
   font-size: smaller;
   line-height: 1em;
   font-family: monospace;
-  background-color: var(--sklearn-color-background);
+  background-color: var(--sklearn-color-unfitted-level-0);
   border-radius: 1em;
   height: 1em;
   width: 1em;
@@ -1034,16 +1019,17 @@ a:visited.sk-estimator-doc-link {
   margin-left: 0.5em;
   text-align: center;
   /* unfitted */
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-3) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-3);
 }
 
 .sk-estimator-doc-link.fitted,
 a:link.sk-estimator-doc-link.fitted,
 a:visited.sk-estimator-doc-link.fitted {
   /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
+  background-color: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3) 1pt solid;
+  color: var(--sklearn-color-fitted-level-3);
 }
 
 /* On hover */
@@ -1053,7 +1039,8 @@ div.sk-label-container:hover .sk-estimator-doc-link:hover,
 .sk-estimator-doc-link:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
+  border: var(--sklearn-color-fitted-level-0) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-0);
   text-decoration: none;
 }
 
@@ -1063,7 +1050,8 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 .sk-estimator-doc-link.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
-  color: var(--sklearn-color-background);
+  border: var(--sklearn-color-fitted-level-0) 1pt solid;
+  color: var(--sklearn-color-fitted-level-0);
   text-decoration: none;
 }
 
@@ -1098,12 +1086,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 
 /* "?"-specific style due to the `<a>` HTML tag */
 
-#sk-container-id-1 a.estimator_doc_link {
+.sk-global a.estimator_doc_link {
   float: right;
   font-size: 1rem;
   line-height: 1em;
   font-family: monospace;
-  background-color: var(--sklearn-color-background);
+  background-color: var(--sklearn-color-unfitted-level-0);
   border-radius: 1rem;
   height: 1rem;
   width: 1rem;
@@ -1113,29 +1101,45 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   border: var(--sklearn-color-unfitted-level-1) 1pt solid;
 }
 
-#sk-container-id-1 a.estimator_doc_link.fitted {
+.sk-global a.estimator_doc_link.fitted {
   /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
   border: var(--sklearn-color-fitted-level-1) 1pt solid;
   color: var(--sklearn-color-fitted-level-1);
 }
 
 /* On hover */
-#sk-container-id-1 a.estimator_doc_link:hover {
+.sk-global a.estimator_doc_link:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-3);
   color: var(--sklearn-color-background);
   text-decoration: none;
 }
 
-#sk-container-id-1 a.estimator_doc_link.fitted:hover {
+.sk-global a.estimator_doc_link.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
 
+.sk-top-container.sk-global {
+  /* pydata-sphinx-theme hides overflow, so scrolling is disabled.
+   We need to set it to !important and add tabindex="0" in the HTML
+   to allow keyboard-only users to navigate the display. */
+  overflow-x: scroll !important;
+  max-width: 100%;
+}
+
+.estimator-table {
+    font-family: monospace;
+}
+
 .estimator-table summary {
     padding: .5rem;
-    font-family: monospace;
     cursor: pointer;
+}
+
+.estimator-table summary::marker {
+    font-size: 0.7rem;
 }
 
 .estimator-table details[open] {
@@ -1147,6 +1151,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 .estimator-table .parameters-table {
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 0;
 }
 
 .estimator-table .parameters-table tr:nth-child(odd) {
@@ -1157,32 +1162,113 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     background-color: #f6f6f6;
 }
 
-.estimator-table .parameters-table tr:hover {
+.estimator-table .parameters-table tr:hover td {
     background-color: #e0e0e0;
 }
 
-.estimator-table table td {
+.estimator-table table :is(td, th) {
     border: 1px solid rgba(106, 105, 104, 0.232);
+}
+
+/*
+    `table td`is set in notebook with right text-align.
+    We need to overwrite it.
+*/
+.estimator-table table td.param {
+    text-align: left;
+    position: relative;
+    padding: 0;
 }
 
 .user-set td {
     color:rgb(255, 94, 0);
-    text-align: left;
+    text-align: left !important;
 }
 
-.user-set td.value pre {
-    color:rgb(255, 94, 0) !important;
-    background-color: transparent !important;
+.user-set td.value {
+    color:rgb(255, 94, 0);
+    background-color: transparent;
 }
 
-.default td {
+.default td, .estimator-table th {
     color: black;
-    text-align: left;
+    text-align: left !important;
 }
 
 .user-set td i,
 .default td i {
     color: black;
+}
+
+td.fitted-att-type {
+    white-space: preserve nowrap;
+}
+
+/*
+    Styles for parameter documentation links
+    We need styling for visited so jupyter doesn't overwrite it
+*/
+a.param-doc-link,
+a.param-doc-link:link,
+a.param-doc-link:visited {
+    text-decoration: underline dashed;
+    text-underline-offset: .3em;
+    color: inherit;
+    display: block;
+    padding: .5em;
+}
+
+@supports(anchor-name: --doc-link) {
+    a.param-doc-link,
+    a.param-doc-link:link,
+    a.param-doc-link:visited {
+    anchor-name: --doc-link;
+    }
+}
+
+/* "hack" to make the entire area of the cell containing the link clickable */
+a.param-doc-link::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+}
+
+.param-doc-description {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    padding: .5ex;
+    margin-left: 1.5em;
+    color: var(--sklearn-color-text);
+    box-shadow: .3em .3em .4em #999;
+    width: max-content;
+    text-align: left;
+    max-height: 10em;
+    overflow-y: auto;
+
+    /* unfitted */
+    background: var(--sklearn-color-unfitted-level-0);
+    border: thin solid var(--sklearn-color-unfitted-level-3);
+}
+
+@supports(position-area: center right) {
+    .param-doc-description {
+    position-area: center right;
+    position: fixed;
+    margin-left: 0;
+    }
+}
+
+/* Fitted state for parameter tooltips */
+.fitted .param-doc-description {
+    /* fitted */
+    background: var(--sklearn-color-fitted-level-0);
+    border: thin solid var(--sklearn-color-fitted-level-3);
+}
+
+.param-doc-link:hover .param-doc-description {
+    display: block;
 }
 
 .copy-paste-icon {
@@ -1195,7 +1281,128 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     height: 14px;
     cursor: pointer;
 }
-</style><body><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>SVC(C=1)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>SVC</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.svm.SVC.html">?<span>Documentation for SVC</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted" data-param-prefix="">
+
+.features {
+  font-family: monospace;
+  cursor: pointer;
+  background-color: var(--sklearn-color-unfitted-level-0);
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: .20em;
+  margin-bottom: 0.5em;
+  font-size: inherit; /* Needed for jupyter */
+}
+
+.features.fitted {
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+.features summary {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: .25em;
+}
+
+.features details[open] > summary {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+  border-radius: .20em 0 0 0;
+}
+
+.features.fitted details[open] > summary {
+  background-color: var(--sklearn-color-fitted-level-2);
+  border-radius: .20em 0 0 0;
+}
+
+.features details > summary .arrow::before {
+  content: "▸";
+  color: grey;
+}
+
+.features details[open] > summary .arrow::before {
+  content: "▾";
+}
+
+.features details:hover > summary {
+  margin: 0;
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+.features.fitted details:hover > summary {
+  margin: 0;
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+.features .features-container {
+  max-width: 15em;
+  max-height: 10em;
+  overflow: auto;
+  scrollbar-width: thin;
+  padding: .25em 0.1rem;
+  background-color: var(--sklearn-color-unfitted-level-0);
+  border-radius: 0 0 .5em .5em;
+}
+
+.features.fitted .features-container {
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+.features .image-container {
+  block-size: 1em;
+  inline-size: 1em;
+  padding: 0;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .copy-paste-icon {
+  background-size: 1em 1em;
+  width: 1em;
+  height: 1em;
+  filter: grayscale(100%) opacity(60%);
+}
+
+.features .features-container table {
+  width: 100%;
+  margin: 0.01em;
+}
+
+.features .features-container table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.features .features-container table tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.features .features-container table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.features .features-container table {
+  table-layout: inherit;
+}
+
+.features .features-container table td {
+  text-align: left;
+  padding: 0 0.5em;
+  border: 1px solid rgba(106, 105, 104, 0.232);
+  white-space: nowrap;
+  color: var(--sklearn-color-text);
+}
+
+.total_features {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+</style><body><div id="sk-container-id-1" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>SVC(C=1)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually sk-global" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>SVC</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html">?<span>Documentation for SVC</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted" data-param-prefix="">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -1207,7 +1414,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('C',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">C&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-C;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=C,-float%2C%20default%3D1.0">
+            C
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-C;">
+            C: float, default=1.0<br><br>Regularization parameter. The strength of the regularization is<br>inversely proportional to C. Must be strictly positive. The penalty<br>is a squared l2 penalty. For an intuitive visualization of the effects<br>of scaling the regularization parameter C, see<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_scale_c.py`.</span>
+        </a>
+    </td>
             <td class="value">1</td>
         </tr>
     
@@ -1217,7 +1433,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('kernel',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">kernel&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-kernel;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=kernel,-%7B%27linear%27%2C%20%27poly%27%2C%20%27rbf%27%2C%20%27sigmoid%27%2C%20%27precomputed%27%7D%20or%20callable%2C%20%20%20%20%20%20%20%20%20%20default%3D%27rbf%27">
+            kernel
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-kernel;">
+            kernel: {&#x27;linear&#x27;, &#x27;poly&#x27;, &#x27;rbf&#x27;, &#x27;sigmoid&#x27;, &#x27;precomputed&#x27;} or callable,          default=&#x27;rbf&#x27;<br><br>Specifies the kernel type to be used in the algorithm. If<br>none is given, &#x27;rbf&#x27; will be used. If a callable is given it is used to<br>pre-compute the kernel matrix from data matrices; that matrix should be<br>an array of shape ``(n_samples, n_samples)``. For an intuitive<br>visualization of different kernel types see<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_kernels.py`.</span>
+        </a>
+    </td>
             <td class="value">&#x27;rbf&#x27;</td>
         </tr>
     
@@ -1227,7 +1452,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('degree',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">degree&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-degree;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=degree,-int%2C%20default%3D3">
+            degree
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-degree;">
+            degree: int, default=3<br><br>Degree of the polynomial kernel function (&#x27;poly&#x27;).<br>Must be non-negative. Ignored by all other kernels.</span>
+        </a>
+    </td>
             <td class="value">3</td>
         </tr>
     
@@ -1237,7 +1471,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('gamma',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">gamma&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-gamma;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=gamma,-%7B%27scale%27%2C%20%27auto%27%7D%20or%20float%2C%20default%3D%27scale%27">
+            gamma
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-gamma;">
+            gamma: {&#x27;scale&#x27;, &#x27;auto&#x27;} or float, default=&#x27;scale&#x27;<br><br>Kernel coefficient for &#x27;rbf&#x27;, &#x27;poly&#x27; and &#x27;sigmoid&#x27;.<br><br>- if ``gamma=&#x27;scale&#x27;`` (default) is passed then it uses<br>  1 / (n_features * X.var()) as value of gamma,<br>- if &#x27;auto&#x27;, uses 1 / n_features<br>- if float, must be non-negative.<br><br>.. versionchanged:: 0.22<br>   The default value of ``gamma`` changed from &#x27;auto&#x27; to &#x27;scale&#x27;.</span>
+        </a>
+    </td>
             <td class="value">&#x27;scale&#x27;</td>
         </tr>
     
@@ -1247,7 +1490,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('coef0',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">coef0&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-coef0;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=coef0,-float%2C%20default%3D0.0">
+            coef0
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-coef0;">
+            coef0: float, default=0.0<br><br>Independent term in kernel function.<br>It is only significant in &#x27;poly&#x27; and &#x27;sigmoid&#x27;.</span>
+        </a>
+    </td>
             <td class="value">0.0</td>
         </tr>
     
@@ -1257,7 +1509,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('shrinking',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">shrinking&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-shrinking;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=shrinking,-bool%2C%20default%3DTrue">
+            shrinking
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-shrinking;">
+            shrinking: bool, default=True<br><br>Whether to use the shrinking heuristic.<br>See the :ref:`User Guide &lt;shrinking_svm&gt;`.</span>
+        </a>
+    </td>
             <td class="value">True</td>
         </tr>
     
@@ -1267,8 +1528,17 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('probability',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">probability&nbsp;</td>
-            <td class="value">False</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probability;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probability,-bool%2C%20default%3DFalse">
+            probability
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probability;">
+            probability: bool, default=False<br><br>Whether to enable probability estimates. This must be enabled prior<br>to calling `fit`, will slow down that method as it internally uses<br>5-fold cross-validation, and `predict_proba` may be inconsistent with<br>`predict`. Read more in the :ref:`User Guide &lt;scores_probabilities&gt;`.<br><br>..deprecated:: 1.9<br>  The `probability` parameter is deprecated and will be removed in 1.11.<br>  Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of<br>  `SVC(probability=True)`.</span>
+        </a>
+    </td>
+            <td class="value">&#x27;deprecated&#x27;</td>
         </tr>
     
 
@@ -1277,7 +1547,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('tol',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">tol&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-tol;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=tol,-float%2C%20default%3D1e-3">
+            tol
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-tol;">
+            tol: float, default=1e-3<br><br>Tolerance for stopping criterion.</span>
+        </a>
+    </td>
             <td class="value">0.001</td>
         </tr>
     
@@ -1287,7 +1566,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('cache_size',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">cache_size&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-cache_size;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=cache_size,-float%2C%20default%3D200">
+            cache_size
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-cache_size;">
+            cache_size: float, default=200<br><br>Specify the size of the kernel cache (in MB).</span>
+        </a>
+    </td>
             <td class="value">200</td>
         </tr>
     
@@ -1297,7 +1585,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('class_weight',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">class_weight&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-class_weight;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=class_weight,-dict%20or%20%27balanced%27%2C%20default%3DNone">
+            class_weight
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-class_weight;">
+            class_weight: dict or &#x27;balanced&#x27;, default=None<br><br>Set the parameter C of class i to class_weight[i]*C for<br>SVC. If not given, all classes are supposed to have<br>weight one.<br>The &quot;balanced&quot; mode uses the values of y to automatically adjust<br>weights inversely proportional to class frequencies in the input data<br>as ``n_samples / (n_classes * np.bincount(y))``.</span>
+        </a>
+    </td>
             <td class="value">None</td>
         </tr>
     
@@ -1307,7 +1604,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('verbose',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">verbose&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-verbose;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=verbose,-bool%2C%20default%3DFalse">
+            verbose
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-verbose;">
+            verbose: bool, default=False<br><br>Enable verbose output. Note that this setting takes advantage of a<br>per-process runtime setting in libsvm that, if enabled, may not work<br>properly in a multithreaded context.</span>
+        </a>
+    </td>
             <td class="value">False</td>
         </tr>
     
@@ -1317,7 +1623,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('max_iter',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">max_iter&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-max_iter;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=max_iter,-int%2C%20default%3D-1">
+            max_iter
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-max_iter;">
+            max_iter: int, default=-1<br><br>Hard limit on iterations within solver, or -1 for no limit.</span>
+        </a>
+    </td>
             <td class="value">-1</td>
         </tr>
     
@@ -1327,7 +1642,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('decision_function_shape',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">decision_function_shape&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-decision_function_shape;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=decision_function_shape,-%7B%27ovo%27%2C%20%27ovr%27%7D%2C%20default%3D%27ovr%27">
+            decision_function_shape
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-decision_function_shape;">
+            decision_function_shape: {&#x27;ovo&#x27;, &#x27;ovr&#x27;}, default=&#x27;ovr&#x27;<br><br>Whether to return a one-vs-rest (&#x27;ovr&#x27;) decision function of shape<br>(n_samples, n_classes) as all other classifiers, or the original<br>one-vs-one (&#x27;ovo&#x27;) decision function of libsvm which has shape<br>(n_samples, n_classes * (n_classes - 1) / 2). However, note that<br>internally, one-vs-one (&#x27;ovo&#x27;) is always used as a multi-class strategy<br>to train models; an ovr matrix is only constructed from the ovo matrix.<br>The parameter is ignored for binary classification.<br><br>.. versionchanged:: 0.19<br>    decision_function_shape is &#x27;ovr&#x27; by default.<br><br>.. versionadded:: 0.17<br>   *decision_function_shape=&#x27;ovr&#x27;* is recommended.<br><br>.. versionchanged:: 0.17<br>   Deprecated *decision_function_shape=&#x27;ovo&#x27; and None*.</span>
+        </a>
+    </td>
             <td class="value">&#x27;ovr&#x27;</td>
         </tr>
     
@@ -1337,7 +1661,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('break_ties',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">break_ties&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-break_ties;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=break_ties,-bool%2C%20default%3DFalse">
+            break_ties
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-break_ties;">
+            break_ties: bool, default=False<br><br>If true, ``decision_function_shape=&#x27;ovr&#x27;``, and number of classes &gt; 2,<br>:term:`predict` will break ties according to the confidence values of<br>:term:`decision_function`; otherwise the first class among the tied<br>classes is returned. Please note that breaking ties comes at a<br>relatively high computational cost compared to a simple predict. See<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_tie_breaking.py` for an<br>example of its usage with ``decision_function_shape=&#x27;ovr&#x27;``.<br><br>.. versionadded:: 0.22</span>
+        </a>
+    </td>
             <td class="value">False</td>
         </tr>
     
@@ -1347,7 +1680,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('random_state',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">random_state&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-random_state;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=random_state,-int%2C%20RandomState%20instance%20or%20None%2C%20default%3DNone">
+            random_state
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-random_state;">
+            random_state: int, RandomState instance or None, default=None<br><br>Controls the pseudo random number generation for shuffling the data for<br>probability estimates. Ignored when `probability` is False.<br>Pass an int for reproducible output across multiple function calls.<br>See :term:`Glossary &lt;random_state&gt;`.</span>
+        </a>
+    </td>
             <td class="value">None</td>
         </tr>
     
@@ -1355,7 +1697,285 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                 </table>
             </details>
         </div>
-    </div></div></div></div></div><script>function copyToClipboard(text, element) {
+    
+        <div class="estimator-table">
+            <details>
+                <summary>Fitted attributes</summary>
+                <table class="parameters-table">
+                    <tbody>
+                        <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Value</th>
+                        </tr>
+                        
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-class_weight_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=class_weight_,-ndarray%20of%20shape%20%28n_classes%2C%29">
+            class_weight_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-class_weight_;">
+            class_weight_: ndarray of shape (n_classes,)<br><br>Multipliers of parameter C for each class.<br>Computed based on the ``class_weight`` parameter.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](3,)</td>
+           <td>[1.,1.,1.]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-classes_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=classes_,-ndarray%20of%20shape%20%28n_classes%2C%29">
+            classes_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-classes_;">
+            classes_: ndarray of shape (n_classes,)<br><br>The classes labels.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[object](3,)</td>
+           <td>[&#x27;Iris-setosa&#x27;,&#x27;Iris-versicolor&#x27;,&#x27;Iris-virginica&#x27;]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-dual_coef_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=dual_coef_,-ndarray%20or%20sparse%20array/matrix%20of%20shape%20%28n_classes%20-1%2C%20n_SV%29">
+            dual_coef_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-dual_coef_;">
+            dual_coef_: ndarray or sparse array/matrix of shape (n_classes -1, n_SV)<br><br>Dual coefficients of the support vector in the decision<br>function (see :ref:`sgd_mathematical_formulation`), multiplied by<br>their targets.<br>For multiclass, coefficient for all 1-vs-1 classifiers.<br>The layout of the coefficients in the multiclass case is somewhat<br>non-trivial. See the :ref:`multi-class section of the User Guide<br>&lt;svm_multi_class&gt;` for details.<br>If `X` is sparse, these will also be sparse.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](2, 45)</td>
+           <td>[[ 1.  , 1.  , 0.  ,...,-0.  ,-0.  ,-0.13],
+ [ 0.  , 0.61, 0.01,...,-1.  ,-1.  ,-0.  ]]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-feature_names_in_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=feature_names_in_,-ndarray%20of%20shape%20%28n_features_in_%2C%29">
+            feature_names_in_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-feature_names_in_;">
+            feature_names_in_: ndarray of shape (`n_features_in_`,)<br><br>Names of features seen during :term:`fit`. Defined only when `X`<br>has feature names that are all strings.<br><br>.. versionadded:: 1.0</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[object](4,)</td>
+           <td>[&#x27;sepal-length&#x27;,&#x27;sepal-width&#x27;,&#x27;petal-length&#x27;,&#x27;petal-width&#x27;]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-fit_status_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=fit_status_,-int">
+            fit_status_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-fit_status_;">
+            fit_status_: int<br><br>0 if correctly fitted, 1 otherwise (will raise warning)</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">int</td>
+           <td>0</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-intercept_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=intercept_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%2C%29">
+            intercept_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-intercept_;">
+            intercept_: ndarray of shape (n_classes * (n_classes - 1) / 2,)<br><br>Constants in decision function.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](3,)</td>
+           <td>[ 0.02,-0.04, 0.04]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_features_in_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_features_in_,-int">
+            n_features_in_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_features_in_;">
+            n_features_in_: int<br><br>Number of features seen during :term:`fit`.<br><br>.. versionadded:: 0.24</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">int</td>
+           <td>4</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_iter_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_iter_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20//%202%2C%29">
+            n_iter_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_iter_;">
+            n_iter_: ndarray of shape (n_classes * (n_classes - 1) // 2,)<br><br>Number of iterations run by the optimization routine to fit the model.<br>The shape of this attribute depends on the number of models optimized<br>which in turn depends on the number of classes.<br><br>.. versionadded:: 1.1</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](3,)</td>
+           <td>[11,15,18]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_support_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_support_,-ndarray%20of%20shape%20%28n_classes%2C%29%2C%20dtype%3Dint32">
+            n_support_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_support_;">
+            n_support_: ndarray of shape (n_classes,), dtype=int32<br><br>Number of support vectors for each class.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](3,)</td>
+           <td>[ 5,22,18]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probA_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probA_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%29">
+            probA_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probA_;">
+            probA_: ndarray of shape (n_classes * (n_classes - 1) / 2)<br><br>If `probability=True`, it corresponds to the parameters learned in<br>Platt scaling to produce probability estimates from decision values.<br>If `probability=False`, it&#x27;s an empty array. Platt scaling uses the<br>logistic function</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](0,)</td>
+           <td>[]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probB_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probB_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%29">
+            probB_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probB_;">
+            probB_: ndarray of shape (n_classes * (n_classes - 1) / 2)<br><br>If `probability=True`, it corresponds to the parameters learned in<br>Platt scaling. Platt scaling uses the logistic function<br>``1 / (1 + exp(decision_value * probA_ + probB_))``<br>where ``probA_`` and ``probB_`` are learned from the dataset [2]_. For<br>more information on the multiclass case and training procedure see<br>section 8 of [1]_.<br><br>.. deprecated:: 1.9<br>    The attributes `probA_` and `probB_` are deprecated in version 1.9 and will<br>    be removed in 1.11.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](0,)</td>
+           <td>[]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-shape_fit_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=shape_fit_,-tuple%20of%20int%20of%20shape%20%28n_dimensions_of_X%2C%29">
+            shape_fit_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-shape_fit_;">
+            shape_fit_: tuple of int of shape (n_dimensions_of_X,)<br><br>Array dimensions of training vector ``X``.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">tuple</td>
+           <td>(100, 4)</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-support_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=support_,-ndarray%20of%20shape%20%28n_SV%29">
+            support_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-support_;">
+            support_: ndarray of shape (n_SV)<br><br>Indices of support vectors.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](45,)</td>
+           <td>[15,22,45,...,80,83,93]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-support_vectors_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=support_vectors_,-ndarray%20or%20sparse%20array/matrix%20of%20shape%20%28n_SV%2C%20n_features%29">
+            support_vectors_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-support_vectors_;">
+            support_vectors_: ndarray or sparse array/matrix of shape (n_SV, n_features)<br><br>Support vectors. An empty array if kernel is precomputed.<br>If `X` is sparse, these will also be sparse.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](45, 4)</td>
+           <td>[[5. ,3. ,1.6,0.2],
+ [4.8,3.4,1.9,0.2],
+ [5.7,4.4,1.5,0.4],
+ ...,
+ [7.2,3. ,5.8,1.6],
+ [6.4,3.1,5.5,1.8],
+ [7.9,3.8,6.4,2. ]]</td>
+
+
+       </tr>
+    
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </div></div></div></div></div><script>/*  Authors: The scikit-learn developers
+ SPDX-License-Identifier: BSD-3-Clause
+*/
+
+function copyToClipboard(text, element) {
     // Get the parameter prefix from the closest toggleable content
     const toggleableContent = element.closest('.sk-toggleable__content');
     const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
@@ -1389,15 +2009,139 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     return false;
 }
 
-document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
+document.querySelectorAll('.copy-paste-icon').forEach(function(element) {
     const toggleableContent = element.closest('.sk-toggleable__content');
     const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
-    const paramName = element.parentElement.nextElementSibling.textContent.trim();
+
+    const parent = element.parentElement;
+    if (!parent || !parent.nextElementSibling) {
+        console.warn('Expected copy-paste icon is missing from the DOM structure');
+        return;
+    }
+
+    const paramName = element.parentElement.nextElementSibling
+        .textContent.trim().split(' ')[0];
     const fullParamName = paramPrefix ? `${paramPrefix}${paramName}` : paramName;
 
     element.setAttribute('title', fullParamName);
 });
-</script></body></div></div>
+
+/**
+ * Copy the list of feature names formatted as a Python list.
+ *
+ * @param {HTMLElement} element - The copy button inside a `.features` block; its siblings
+ *   contain a `details` element and a table containing feature named.
+ * @returns {boolean} Always returns `false` so callers can prevent the default click behavior.
+ */
+function copyFeatureNamesToClipboard(element) {
+    var detailsElem = element.closest('.features').querySelector('details');
+    var wasOpen = detailsElem.open;
+    detailsElem.open = true;
+    var content = element.closest('.features').querySelector('tbody')
+                  .innerText.trim();
+    if (!wasOpen) detailsElem.open = false;
+    const rows = content.split('\n').map(row => `    "${row}"`);
+    const formattedText = `[\n${rows.join(',\n')},\n]`;
+    const originalHTML = element.innerHTML.replace('âœ”', '');
+    const originalStyle = element.style;
+    const copyMark = document.createElement('span');
+    copyMark.innerHTML = 'âœ”';
+    copyMark.style.color = 'blue';
+    copyMark.style.fontSize = '1em';
+
+    navigator.clipboard.writeText(formattedText)
+        .then(() => {
+            element.style.display = 'none';
+            element.parentElement.appendChild(copyMark);
+
+            setTimeout(() => {
+                copyMark.remove();
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 1000);
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            element.style.color = 'orange';
+            element.innerHTML = "Failed!";
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 1000);
+        });
+    return false;
+}
+/**
+ * Adapted from Skrub
+ * https://github.com/skrub-data/skrub/blob/403466d1d5d4dc76a7ef569b3f8228db59a31dc3/skrub/_reporting/_data/templates/report.js#L789
+ * @returns "light" or "dark"
+ */
+function detectTheme(element) {
+    const body = document.querySelector('body');
+
+    // Check VSCode theme
+    const themeKindAttr = body.getAttribute('data-vscode-theme-kind');
+    const themeNameAttr = body.getAttribute('data-vscode-theme-name');
+
+    if (themeKindAttr && themeNameAttr) {
+        const themeKind = themeKindAttr.toLowerCase();
+        const themeName = themeNameAttr.toLowerCase();
+
+        if (themeKind.includes("dark") || themeName.includes("dark")) {
+            return "dark";
+        }
+        if (themeKind.includes("light") || themeName.includes("light")) {
+            return "light";
+        }
+    }
+
+    // Check Jupyter theme
+    if (body.getAttribute('data-jp-theme-light') === 'false') {
+        return 'dark';
+    } else if (body.getAttribute('data-jp-theme-light') === 'true') {
+        return 'light';
+    }
+
+    // Guess based on a parent element's color
+    const color = window.getComputedStyle(element.parentNode, null).getPropertyValue('color');
+    const match = color.match(/^rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)\s*$/i);
+    if (match) {
+        const [r, g, b] = [
+            parseFloat(match[1]),
+            parseFloat(match[2]),
+            parseFloat(match[3])
+        ];
+
+        // https://en.wikipedia.org/wiki/HSL_and_HSV#Lightness
+        const luma = 0.299 * r + 0.587 * g + 0.114 * b;
+
+        if (luma > 180) {
+            // If the text is very bright we have a dark theme
+            return 'dark';
+        }
+        if (luma < 75) {
+            // If the text is very dark we have a light theme
+            return 'light';
+        }
+        // Otherwise fall back to the next heuristic.
+    }
+
+    // Fallback to system preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+
+function forceTheme(elementId) {
+    const estimatorElement = document.querySelector(`#${elementId}`);
+    if (estimatorElement === null) {
+        console.error(`Element with id ${elementId} not found.`);
+    } else {
+        const theme = detectTheme(estimatorElement);
+        estimatorElement.classList.add(theme);
+    }
+}
+
+forceTheme('sk-container-id-1');</script></body></div></div>
 </div>
 <p>What’s with the warning? <code class="docutils literal notranslate"><span class="pre">DataConversionWarning:</span> <span class="pre">A</span> <span class="pre">column-vector</span> <span class="pre">y</span> <span class="pre">was</span> <span class="pre">passed</span> <span class="pre">when</span> <span class="pre">a</span> <span class="pre">1d</span> <span class="pre">array</span> <span class="pre">was</span> <span class="pre">expected.</span></code></p>
 <p>Looking at the <code class="docutils literal notranslate"><span class="pre">sklearn.svm.SVC</span></code> <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC.fit">docs for the <code class="docutils literal notranslate"><span class="pre">fit</span></code> function</a>, a 1d array was expected for the <code class="docutils literal notranslate"><span class="pre">y</span></code>, but we gave it a DataFrame. This is a warning -not an error, and the model appears to work. However, it’s best practice to clean warnings up when possible, and in this case, it’s an easy fix.</p>
@@ -1414,7 +2158,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-2 {
+<div class="output text_html"><style>.sk-global {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
   --sklearn-color-text-muted: #666;
@@ -1429,34 +2173,34 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
   --sklearn-color-fitted-level-1: #d4ebff;
   --sklearn-color-fitted-level-2: #b3dbfd;
   --sklearn-color-fitted-level-3: cornflowerblue;
-
-  /* Specific color for light theme */
-  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
-  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-icon: #696969;
-
-  @media (prefers-color-scheme: dark) {
-    /* Redefinition of color scheme for dark theme */
-    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
-    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-icon: #878787;
-  }
 }
 
-#sk-container-id-2 {
+.sk-global.light {
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: black;
+  --sklearn-color-background: white;
+  --sklearn-color-border-box: black;
+  --sklearn-color-icon: #696969;
+}
+
+.sk-global.dark {
+  --sklearn-color-text-on-default-background: white;
+  --sklearn-color-background: #111;
+  --sklearn-color-border-box: white;
+  --sklearn-color-icon: #878787;
+}
+
+.sk-global {
   color: var(--sklearn-color-text);
 }
 
-#sk-container-id-2 pre {
+.sk-global pre {
   padding: 0;
 }
 
-#sk-container-id-2 input.sk-hidden--visually {
+.sk-global input.sk-hidden--visually {
   border: 0;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(100%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -1465,7 +2209,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
   width: 1px;
 }
 
-#sk-container-id-2 div.sk-dashed-wrapped {
+.sk-global div.sk-dashed-wrapped {
   border: 1px dashed var(--sklearn-color-line);
   margin: 0 0.4em 0.5em 0.4em;
   box-sizing: border-box;
@@ -1473,7 +2217,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
   background-color: var(--sklearn-color-background);
 }
 
-#sk-container-id-2 div.sk-container {
+.sk-global div.sk-container {
   /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
      but bootstrap.min.css set `[hidden] { display: none !important; }`
      so we also need the `!important` here to be able to override the
@@ -1483,7 +2227,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
   position: relative;
 }
 
-#sk-container-id-2 div.sk-text-repr-fallback {
+.sk-global div.sk-text-repr-fallback {
   display: none;
 }
 
@@ -1499,14 +2243,14 @@ div.sk-item {
 
 /* Parallel-specific style estimator block */
 
-#sk-container-id-2 div.sk-parallel-item::after {
+.sk-global div.sk-parallel-item::after {
   content: "";
   width: 100%;
   border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
   flex-grow: 1;
 }
 
-#sk-container-id-2 div.sk-parallel {
+.sk-global div.sk-parallel {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -1514,28 +2258,28 @@ div.sk-item {
   position: relative;
 }
 
-#sk-container-id-2 div.sk-parallel-item {
+.sk-global div.sk-parallel-item {
   display: flex;
   flex-direction: column;
 }
 
-#sk-container-id-2 div.sk-parallel-item:first-child::after {
+.sk-global div.sk-parallel-item:first-child::after {
   align-self: flex-end;
   width: 50%;
 }
 
-#sk-container-id-2 div.sk-parallel-item:last-child::after {
+.sk-global div.sk-parallel-item:last-child::after {
   align-self: flex-start;
   width: 50%;
 }
 
-#sk-container-id-2 div.sk-parallel-item:only-child::after {
+.sk-global div.sk-parallel-item:only-child::after {
   width: 0;
 }
 
 /* Serial-specific style estimator block */
 
-#sk-container-id-2 div.sk-serial {
+.sk-global div.sk-serial {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1553,14 +2297,14 @@ clickable and can be expanded/collapsed.
 
 /* Pipeline and ColumnTransformer style (default) */
 
-#sk-container-id-2 div.sk-toggleable {
+.sk-global div.sk-toggleable {
   /* Default theme specific background. It is overwritten whether we have a
   specific estimator or a Pipeline/ColumnTransformer */
   background-color: var(--sklearn-color-background);
 }
 
 /* Toggleable label */
-#sk-container-id-2 label.sk-toggleable__label {
+.sk-global label.sk-toggleable__label {
   cursor: pointer;
   display: flex;
   width: 100%;
@@ -1568,18 +2312,18 @@ clickable and can be expanded/collapsed.
   padding: 0.5em;
   box-sizing: border-box;
   text-align: center;
-  align-items: start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 0.5em;
 }
 
-#sk-container-id-2 label.sk-toggleable__label .caption {
+.sk-global label.sk-toggleable__label .caption {
   font-size: 0.6rem;
   font-weight: lighter;
   color: var(--sklearn-color-text-muted);
 }
 
-#sk-container-id-2 label.sk-toggleable__label-arrow:before {
+.sk-global label.sk-toggleable__label-arrow:before {
   /* Arrow on the left of the label */
   content: "▸";
   float: left;
@@ -1587,25 +2331,25 @@ clickable and can be expanded/collapsed.
   color: var(--sklearn-color-icon);
 }
 
-#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {
+.sk-global label.sk-toggleable__label-arrow:hover:before {
   color: var(--sklearn-color-text);
 }
 
 /* Toggleable content - dropdown */
 
-#sk-container-id-2 div.sk-toggleable__content {
+.sk-global div.sk-toggleable__content {
   display: none;
   text-align: left;
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-2 div.sk-toggleable__content.fitted {
+.sk-global div.sk-toggleable__content.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-2 div.sk-toggleable__content pre {
+.sk-global div.sk-toggleable__content pre {
   margin: 0.2em;
   border-radius: 0.25em;
   color: var(--sklearn-color-text);
@@ -1613,79 +2357,78 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-2 div.sk-toggleable__content.fitted pre {
+.sk-global div.sk-toggleable__content.fitted pre {
   /* unfitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+.sk-global input.sk-toggleable__control:checked~div.sk-toggleable__content {
   /* Expand drop-down */
   display: block;
   width: 100%;
   overflow: visible;
 }
 
-#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+.sk-global input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
   content: "▾";
 }
 
 /* Pipeline/ColumnTransformer-specific style */
 
-#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-2 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator-specific style */
 
 /* Colorize estimator box */
-#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-2 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+.sk-global div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
-#sk-container-id-2 div.sk-label label.sk-toggleable__label,
-#sk-container-id-2 div.sk-label label {
+.sk-global div.sk-label label.sk-toggleable__label,
+.sk-global div.sk-label label {
   /* The background is the default theme color */
   color: var(--sklearn-color-text-on-default-background);
 }
 
 /* On hover, darken the color of the background */
-#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {
+.sk-global div.sk-label:hover label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
 /* Label box, darken color on hover, fitted */
-#sk-container-id-2 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+.sk-global div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator label */
 
-#sk-container-id-2 div.sk-label label {
+.sk-global div.sk-label label {
   font-family: monospace;
   font-weight: bold;
-  display: inline-block;
   line-height: 1.2em;
 }
 
-#sk-container-id-2 div.sk-label-container {
+.sk-global div.sk-label-container {
   text-align: center;
 }
 
 /* Estimator-specific */
-#sk-container-id-2 div.sk-estimator {
+.sk-global div.sk-estimator {
   font-family: monospace;
   border: 1px dotted var(--sklearn-color-border-box);
   border-radius: 0.25em;
@@ -1695,18 +2438,18 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-2 div.sk-estimator.fitted {
+.sk-global div.sk-estimator.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
 /* on hover */
-#sk-container-id-2 div.sk-estimator:hover {
+.sk-global div.sk-estimator:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-2 div.sk-estimator.fitted:hover {
+.sk-global div.sk-estimator.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
@@ -1722,7 +2465,7 @@ a:visited.sk-estimator-doc-link {
   font-size: smaller;
   line-height: 1em;
   font-family: monospace;
-  background-color: var(--sklearn-color-background);
+  background-color: var(--sklearn-color-unfitted-level-0);
   border-radius: 1em;
   height: 1em;
   width: 1em;
@@ -1730,16 +2473,17 @@ a:visited.sk-estimator-doc-link {
   margin-left: 0.5em;
   text-align: center;
   /* unfitted */
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-3) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-3);
 }
 
 .sk-estimator-doc-link.fitted,
 a:link.sk-estimator-doc-link.fitted,
 a:visited.sk-estimator-doc-link.fitted {
   /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
+  background-color: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3) 1pt solid;
+  color: var(--sklearn-color-fitted-level-3);
 }
 
 /* On hover */
@@ -1749,7 +2493,8 @@ div.sk-label-container:hover .sk-estimator-doc-link:hover,
 .sk-estimator-doc-link:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
+  border: var(--sklearn-color-fitted-level-0) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-0);
   text-decoration: none;
 }
 
@@ -1759,7 +2504,8 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 .sk-estimator-doc-link.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
-  color: var(--sklearn-color-background);
+  border: var(--sklearn-color-fitted-level-0) 1pt solid;
+  color: var(--sklearn-color-fitted-level-0);
   text-decoration: none;
 }
 
@@ -1794,12 +2540,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 
 /* "?"-specific style due to the `<a>` HTML tag */
 
-#sk-container-id-2 a.estimator_doc_link {
+.sk-global a.estimator_doc_link {
   float: right;
   font-size: 1rem;
   line-height: 1em;
   font-family: monospace;
-  background-color: var(--sklearn-color-background);
+  background-color: var(--sklearn-color-unfitted-level-0);
   border-radius: 1rem;
   height: 1rem;
   width: 1rem;
@@ -1809,29 +2555,45 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   border: var(--sklearn-color-unfitted-level-1) 1pt solid;
 }
 
-#sk-container-id-2 a.estimator_doc_link.fitted {
+.sk-global a.estimator_doc_link.fitted {
   /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
   border: var(--sklearn-color-fitted-level-1) 1pt solid;
   color: var(--sklearn-color-fitted-level-1);
 }
 
 /* On hover */
-#sk-container-id-2 a.estimator_doc_link:hover {
+.sk-global a.estimator_doc_link:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-3);
   color: var(--sklearn-color-background);
   text-decoration: none;
 }
 
-#sk-container-id-2 a.estimator_doc_link.fitted:hover {
+.sk-global a.estimator_doc_link.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
 
+.sk-top-container.sk-global {
+  /* pydata-sphinx-theme hides overflow, so scrolling is disabled.
+   We need to set it to !important and add tabindex="0" in the HTML
+   to allow keyboard-only users to navigate the display. */
+  overflow-x: scroll !important;
+  max-width: 100%;
+}
+
+.estimator-table {
+    font-family: monospace;
+}
+
 .estimator-table summary {
     padding: .5rem;
-    font-family: monospace;
     cursor: pointer;
+}
+
+.estimator-table summary::marker {
+    font-size: 0.7rem;
 }
 
 .estimator-table details[open] {
@@ -1843,6 +2605,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 .estimator-table .parameters-table {
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 0;
 }
 
 .estimator-table .parameters-table tr:nth-child(odd) {
@@ -1853,32 +2616,113 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     background-color: #f6f6f6;
 }
 
-.estimator-table .parameters-table tr:hover {
+.estimator-table .parameters-table tr:hover td {
     background-color: #e0e0e0;
 }
 
-.estimator-table table td {
+.estimator-table table :is(td, th) {
     border: 1px solid rgba(106, 105, 104, 0.232);
+}
+
+/*
+    `table td`is set in notebook with right text-align.
+    We need to overwrite it.
+*/
+.estimator-table table td.param {
+    text-align: left;
+    position: relative;
+    padding: 0;
 }
 
 .user-set td {
     color:rgb(255, 94, 0);
-    text-align: left;
+    text-align: left !important;
 }
 
-.user-set td.value pre {
-    color:rgb(255, 94, 0) !important;
-    background-color: transparent !important;
+.user-set td.value {
+    color:rgb(255, 94, 0);
+    background-color: transparent;
 }
 
-.default td {
+.default td, .estimator-table th {
     color: black;
-    text-align: left;
+    text-align: left !important;
 }
 
 .user-set td i,
 .default td i {
     color: black;
+}
+
+td.fitted-att-type {
+    white-space: preserve nowrap;
+}
+
+/*
+    Styles for parameter documentation links
+    We need styling for visited so jupyter doesn't overwrite it
+*/
+a.param-doc-link,
+a.param-doc-link:link,
+a.param-doc-link:visited {
+    text-decoration: underline dashed;
+    text-underline-offset: .3em;
+    color: inherit;
+    display: block;
+    padding: .5em;
+}
+
+@supports(anchor-name: --doc-link) {
+    a.param-doc-link,
+    a.param-doc-link:link,
+    a.param-doc-link:visited {
+    anchor-name: --doc-link;
+    }
+}
+
+/* "hack" to make the entire area of the cell containing the link clickable */
+a.param-doc-link::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+}
+
+.param-doc-description {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    padding: .5ex;
+    margin-left: 1.5em;
+    color: var(--sklearn-color-text);
+    box-shadow: .3em .3em .4em #999;
+    width: max-content;
+    text-align: left;
+    max-height: 10em;
+    overflow-y: auto;
+
+    /* unfitted */
+    background: var(--sklearn-color-unfitted-level-0);
+    border: thin solid var(--sklearn-color-unfitted-level-3);
+}
+
+@supports(position-area: center right) {
+    .param-doc-description {
+    position-area: center right;
+    position: fixed;
+    margin-left: 0;
+    }
+}
+
+/* Fitted state for parameter tooltips */
+.fitted .param-doc-description {
+    /* fitted */
+    background: var(--sklearn-color-fitted-level-0);
+    border: thin solid var(--sklearn-color-fitted-level-3);
+}
+
+.param-doc-link:hover .param-doc-description {
+    display: block;
 }
 
 .copy-paste-icon {
@@ -1891,7 +2735,128 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     height: 14px;
     cursor: pointer;
 }
-</style><body><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>SVC(C=1)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>SVC</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.svm.SVC.html">?<span>Documentation for SVC</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted" data-param-prefix="">
+
+.features {
+  font-family: monospace;
+  cursor: pointer;
+  background-color: var(--sklearn-color-unfitted-level-0);
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: .20em;
+  margin-bottom: 0.5em;
+  font-size: inherit; /* Needed for jupyter */
+}
+
+.features.fitted {
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+.features summary {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: .25em;
+}
+
+.features details[open] > summary {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+  border-radius: .20em 0 0 0;
+}
+
+.features.fitted details[open] > summary {
+  background-color: var(--sklearn-color-fitted-level-2);
+  border-radius: .20em 0 0 0;
+}
+
+.features details > summary .arrow::before {
+  content: "▸";
+  color: grey;
+}
+
+.features details[open] > summary .arrow::before {
+  content: "▾";
+}
+
+.features details:hover > summary {
+  margin: 0;
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+.features.fitted details:hover > summary {
+  margin: 0;
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+.features .features-container {
+  max-width: 15em;
+  max-height: 10em;
+  overflow: auto;
+  scrollbar-width: thin;
+  padding: .25em 0.1rem;
+  background-color: var(--sklearn-color-unfitted-level-0);
+  border-radius: 0 0 .5em .5em;
+}
+
+.features.fitted .features-container {
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+.features .image-container {
+  block-size: 1em;
+  inline-size: 1em;
+  padding: 0;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .copy-paste-icon {
+  background-size: 1em 1em;
+  width: 1em;
+  height: 1em;
+  filter: grayscale(100%) opacity(60%);
+}
+
+.features .features-container table {
+  width: 100%;
+  margin: 0.01em;
+}
+
+.features .features-container table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.features .features-container table tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.features .features-container table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.features .features-container table {
+  table-layout: inherit;
+}
+
+.features .features-container table td {
+  text-align: left;
+  padding: 0 0.5em;
+  border: 1px solid rgba(106, 105, 104, 0.232);
+  white-space: nowrap;
+  color: var(--sklearn-color-text);
+}
+
+.total_features {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+</style><body><div id="sk-container-id-2" tabindex="0" class="sk-top-container sk-global"><div class="sk-text-repr-fallback"><pre>SVC(C=1)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually sk-global" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>SVC</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html">?<span>Documentation for SVC</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted" data-param-prefix="">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -1903,7 +2868,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('C',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">C&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-C;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=C,-float%2C%20default%3D1.0">
+            C
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-C;">
+            C: float, default=1.0<br><br>Regularization parameter. The strength of the regularization is<br>inversely proportional to C. Must be strictly positive. The penalty<br>is a squared l2 penalty. For an intuitive visualization of the effects<br>of scaling the regularization parameter C, see<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_scale_c.py`.</span>
+        </a>
+    </td>
             <td class="value">1</td>
         </tr>
     
@@ -1913,7 +2887,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('kernel',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">kernel&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-kernel;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=kernel,-%7B%27linear%27%2C%20%27poly%27%2C%20%27rbf%27%2C%20%27sigmoid%27%2C%20%27precomputed%27%7D%20or%20callable%2C%20%20%20%20%20%20%20%20%20%20default%3D%27rbf%27">
+            kernel
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-kernel;">
+            kernel: {&#x27;linear&#x27;, &#x27;poly&#x27;, &#x27;rbf&#x27;, &#x27;sigmoid&#x27;, &#x27;precomputed&#x27;} or callable,          default=&#x27;rbf&#x27;<br><br>Specifies the kernel type to be used in the algorithm. If<br>none is given, &#x27;rbf&#x27; will be used. If a callable is given it is used to<br>pre-compute the kernel matrix from data matrices; that matrix should be<br>an array of shape ``(n_samples, n_samples)``. For an intuitive<br>visualization of different kernel types see<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_kernels.py`.</span>
+        </a>
+    </td>
             <td class="value">&#x27;rbf&#x27;</td>
         </tr>
     
@@ -1923,7 +2906,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('degree',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">degree&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-degree;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=degree,-int%2C%20default%3D3">
+            degree
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-degree;">
+            degree: int, default=3<br><br>Degree of the polynomial kernel function (&#x27;poly&#x27;).<br>Must be non-negative. Ignored by all other kernels.</span>
+        </a>
+    </td>
             <td class="value">3</td>
         </tr>
     
@@ -1933,7 +2925,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('gamma',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">gamma&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-gamma;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=gamma,-%7B%27scale%27%2C%20%27auto%27%7D%20or%20float%2C%20default%3D%27scale%27">
+            gamma
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-gamma;">
+            gamma: {&#x27;scale&#x27;, &#x27;auto&#x27;} or float, default=&#x27;scale&#x27;<br><br>Kernel coefficient for &#x27;rbf&#x27;, &#x27;poly&#x27; and &#x27;sigmoid&#x27;.<br><br>- if ``gamma=&#x27;scale&#x27;`` (default) is passed then it uses<br>  1 / (n_features * X.var()) as value of gamma,<br>- if &#x27;auto&#x27;, uses 1 / n_features<br>- if float, must be non-negative.<br><br>.. versionchanged:: 0.22<br>   The default value of ``gamma`` changed from &#x27;auto&#x27; to &#x27;scale&#x27;.</span>
+        </a>
+    </td>
             <td class="value">&#x27;scale&#x27;</td>
         </tr>
     
@@ -1943,7 +2944,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('coef0',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">coef0&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-coef0;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=coef0,-float%2C%20default%3D0.0">
+            coef0
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-coef0;">
+            coef0: float, default=0.0<br><br>Independent term in kernel function.<br>It is only significant in &#x27;poly&#x27; and &#x27;sigmoid&#x27;.</span>
+        </a>
+    </td>
             <td class="value">0.0</td>
         </tr>
     
@@ -1953,7 +2963,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('shrinking',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">shrinking&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-shrinking;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=shrinking,-bool%2C%20default%3DTrue">
+            shrinking
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-shrinking;">
+            shrinking: bool, default=True<br><br>Whether to use the shrinking heuristic.<br>See the :ref:`User Guide &lt;shrinking_svm&gt;`.</span>
+        </a>
+    </td>
             <td class="value">True</td>
         </tr>
     
@@ -1963,8 +2982,17 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('probability',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">probability&nbsp;</td>
-            <td class="value">False</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probability;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probability,-bool%2C%20default%3DFalse">
+            probability
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probability;">
+            probability: bool, default=False<br><br>Whether to enable probability estimates. This must be enabled prior<br>to calling `fit`, will slow down that method as it internally uses<br>5-fold cross-validation, and `predict_proba` may be inconsistent with<br>`predict`. Read more in the :ref:`User Guide &lt;scores_probabilities&gt;`.<br><br>..deprecated:: 1.9<br>  The `probability` parameter is deprecated and will be removed in 1.11.<br>  Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of<br>  `SVC(probability=True)`.</span>
+        </a>
+    </td>
+            <td class="value">&#x27;deprecated&#x27;</td>
         </tr>
     
 
@@ -1973,7 +3001,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('tol',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">tol&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-tol;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=tol,-float%2C%20default%3D1e-3">
+            tol
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-tol;">
+            tol: float, default=1e-3<br><br>Tolerance for stopping criterion.</span>
+        </a>
+    </td>
             <td class="value">0.001</td>
         </tr>
     
@@ -1983,7 +3020,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('cache_size',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">cache_size&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-cache_size;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=cache_size,-float%2C%20default%3D200">
+            cache_size
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-cache_size;">
+            cache_size: float, default=200<br><br>Specify the size of the kernel cache (in MB).</span>
+        </a>
+    </td>
             <td class="value">200</td>
         </tr>
     
@@ -1993,7 +3039,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('class_weight',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">class_weight&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-class_weight;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=class_weight,-dict%20or%20%27balanced%27%2C%20default%3DNone">
+            class_weight
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-class_weight;">
+            class_weight: dict or &#x27;balanced&#x27;, default=None<br><br>Set the parameter C of class i to class_weight[i]*C for<br>SVC. If not given, all classes are supposed to have<br>weight one.<br>The &quot;balanced&quot; mode uses the values of y to automatically adjust<br>weights inversely proportional to class frequencies in the input data<br>as ``n_samples / (n_classes * np.bincount(y))``.</span>
+        </a>
+    </td>
             <td class="value">None</td>
         </tr>
     
@@ -2003,7 +3058,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('verbose',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">verbose&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-verbose;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=verbose,-bool%2C%20default%3DFalse">
+            verbose
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-verbose;">
+            verbose: bool, default=False<br><br>Enable verbose output. Note that this setting takes advantage of a<br>per-process runtime setting in libsvm that, if enabled, may not work<br>properly in a multithreaded context.</span>
+        </a>
+    </td>
             <td class="value">False</td>
         </tr>
     
@@ -2013,7 +3077,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('max_iter',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">max_iter&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-max_iter;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=max_iter,-int%2C%20default%3D-1">
+            max_iter
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-max_iter;">
+            max_iter: int, default=-1<br><br>Hard limit on iterations within solver, or -1 for no limit.</span>
+        </a>
+    </td>
             <td class="value">-1</td>
         </tr>
     
@@ -2023,7 +3096,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('decision_function_shape',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">decision_function_shape&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-decision_function_shape;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=decision_function_shape,-%7B%27ovo%27%2C%20%27ovr%27%7D%2C%20default%3D%27ovr%27">
+            decision_function_shape
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-decision_function_shape;">
+            decision_function_shape: {&#x27;ovo&#x27;, &#x27;ovr&#x27;}, default=&#x27;ovr&#x27;<br><br>Whether to return a one-vs-rest (&#x27;ovr&#x27;) decision function of shape<br>(n_samples, n_classes) as all other classifiers, or the original<br>one-vs-one (&#x27;ovo&#x27;) decision function of libsvm which has shape<br>(n_samples, n_classes * (n_classes - 1) / 2). However, note that<br>internally, one-vs-one (&#x27;ovo&#x27;) is always used as a multi-class strategy<br>to train models; an ovr matrix is only constructed from the ovo matrix.<br>The parameter is ignored for binary classification.<br><br>.. versionchanged:: 0.19<br>    decision_function_shape is &#x27;ovr&#x27; by default.<br><br>.. versionadded:: 0.17<br>   *decision_function_shape=&#x27;ovr&#x27;* is recommended.<br><br>.. versionchanged:: 0.17<br>   Deprecated *decision_function_shape=&#x27;ovo&#x27; and None*.</span>
+        </a>
+    </td>
             <td class="value">&#x27;ovr&#x27;</td>
         </tr>
     
@@ -2033,7 +3115,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('break_ties',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">break_ties&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-break_ties;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=break_ties,-bool%2C%20default%3DFalse">
+            break_ties
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-break_ties;">
+            break_ties: bool, default=False<br><br>If true, ``decision_function_shape=&#x27;ovr&#x27;``, and number of classes &gt; 2,<br>:term:`predict` will break ties according to the confidence values of<br>:term:`decision_function`; otherwise the first class among the tied<br>classes is returned. Please note that breaking ties comes at a<br>relatively high computational cost compared to a simple predict. See<br>:ref:`sphx_glr_auto_examples_svm_plot_svm_tie_breaking.py` for an<br>example of its usage with ``decision_function_shape=&#x27;ovr&#x27;``.<br><br>.. versionadded:: 0.22</span>
+        </a>
+    </td>
             <td class="value">False</td>
         </tr>
     
@@ -2043,7 +3134,16 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                  onclick="copyToClipboard('random_state',
                           this.parentElement.nextElementSibling)"
             ></i></td>
-            <td class="param">random_state&nbsp;</td>
+            <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-random_state;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=random_state,-int%2C%20RandomState%20instance%20or%20None%2C%20default%3DNone">
+            random_state
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-random_state;">
+            random_state: int, RandomState instance or None, default=None<br><br>Controls the pseudo random number generation for shuffling the data for<br>probability estimates. Ignored when `probability` is False.<br>Pass an int for reproducible output across multiple function calls.<br>See :term:`Glossary &lt;random_state&gt;`.</span>
+        </a>
+    </td>
             <td class="value">None</td>
         </tr>
     
@@ -2051,7 +3151,285 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                 </table>
             </details>
         </div>
-    </div></div></div></div></div><script>function copyToClipboard(text, element) {
+    
+        <div class="estimator-table">
+            <details>
+                <summary>Fitted attributes</summary>
+                <table class="parameters-table">
+                    <tbody>
+                        <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Value</th>
+                        </tr>
+                        
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-class_weight_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=class_weight_,-ndarray%20of%20shape%20%28n_classes%2C%29">
+            class_weight_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-class_weight_;">
+            class_weight_: ndarray of shape (n_classes,)<br><br>Multipliers of parameter C for each class.<br>Computed based on the ``class_weight`` parameter.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](3,)</td>
+           <td>[1.,1.,1.]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-classes_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=classes_,-ndarray%20of%20shape%20%28n_classes%2C%29">
+            classes_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-classes_;">
+            classes_: ndarray of shape (n_classes,)<br><br>The classes labels.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[object](3,)</td>
+           <td>[&#x27;Iris-setosa&#x27;,&#x27;Iris-versicolor&#x27;,&#x27;Iris-virginica&#x27;]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-dual_coef_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=dual_coef_,-ndarray%20or%20sparse%20array/matrix%20of%20shape%20%28n_classes%20-1%2C%20n_SV%29">
+            dual_coef_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-dual_coef_;">
+            dual_coef_: ndarray or sparse array/matrix of shape (n_classes -1, n_SV)<br><br>Dual coefficients of the support vector in the decision<br>function (see :ref:`sgd_mathematical_formulation`), multiplied by<br>their targets.<br>For multiclass, coefficient for all 1-vs-1 classifiers.<br>The layout of the coefficients in the multiclass case is somewhat<br>non-trivial. See the :ref:`multi-class section of the User Guide<br>&lt;svm_multi_class&gt;` for details.<br>If `X` is sparse, these will also be sparse.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](2, 45)</td>
+           <td>[[ 1.  , 1.  , 0.  ,...,-0.  ,-0.  ,-0.13],
+ [ 0.  , 0.61, 0.01,...,-1.  ,-1.  ,-0.  ]]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-feature_names_in_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=feature_names_in_,-ndarray%20of%20shape%20%28n_features_in_%2C%29">
+            feature_names_in_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-feature_names_in_;">
+            feature_names_in_: ndarray of shape (`n_features_in_`,)<br><br>Names of features seen during :term:`fit`. Defined only when `X`<br>has feature names that are all strings.<br><br>.. versionadded:: 1.0</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[object](4,)</td>
+           <td>[&#x27;sepal-length&#x27;,&#x27;sepal-width&#x27;,&#x27;petal-length&#x27;,&#x27;petal-width&#x27;]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-fit_status_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=fit_status_,-int">
+            fit_status_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-fit_status_;">
+            fit_status_: int<br><br>0 if correctly fitted, 1 otherwise (will raise warning)</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">int</td>
+           <td>0</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-intercept_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=intercept_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%2C%29">
+            intercept_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-intercept_;">
+            intercept_: ndarray of shape (n_classes * (n_classes - 1) / 2,)<br><br>Constants in decision function.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](3,)</td>
+           <td>[ 0.02,-0.04, 0.04]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_features_in_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_features_in_,-int">
+            n_features_in_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_features_in_;">
+            n_features_in_: int<br><br>Number of features seen during :term:`fit`.<br><br>.. versionadded:: 0.24</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">int</td>
+           <td>4</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_iter_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_iter_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20//%202%2C%29">
+            n_iter_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_iter_;">
+            n_iter_: ndarray of shape (n_classes * (n_classes - 1) // 2,)<br><br>Number of iterations run by the optimization routine to fit the model.<br>The shape of this attribute depends on the number of models optimized<br>which in turn depends on the number of classes.<br><br>.. versionadded:: 1.1</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](3,)</td>
+           <td>[11,15,18]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-n_support_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=n_support_,-ndarray%20of%20shape%20%28n_classes%2C%29%2C%20dtype%3Dint32">
+            n_support_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-n_support_;">
+            n_support_: ndarray of shape (n_classes,), dtype=int32<br><br>Number of support vectors for each class.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](3,)</td>
+           <td>[ 5,22,18]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probA_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probA_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%29">
+            probA_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probA_;">
+            probA_: ndarray of shape (n_classes * (n_classes - 1) / 2)<br><br>If `probability=True`, it corresponds to the parameters learned in<br>Platt scaling to produce probability estimates from decision values.<br>If `probability=False`, it&#x27;s an empty array. Platt scaling uses the<br>logistic function</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](0,)</td>
+           <td>[]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-probB_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=probB_,-ndarray%20of%20shape%20%28n_classes%20%2A%20%28n_classes%20-%201%29%20/%202%29">
+            probB_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-probB_;">
+            probB_: ndarray of shape (n_classes * (n_classes - 1) / 2)<br><br>If `probability=True`, it corresponds to the parameters learned in<br>Platt scaling. Platt scaling uses the logistic function<br>``1 / (1 + exp(decision_value * probA_ + probB_))``<br>where ``probA_`` and ``probB_`` are learned from the dataset [2]_. For<br>more information on the multiclass case and training procedure see<br>section 8 of [1]_.<br><br>.. deprecated:: 1.9<br>    The attributes `probA_` and `probB_` are deprecated in version 1.9 and will<br>    be removed in 1.11.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](0,)</td>
+           <td>[]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-shape_fit_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=shape_fit_,-tuple%20of%20int%20of%20shape%20%28n_dimensions_of_X%2C%29">
+            shape_fit_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-shape_fit_;">
+            shape_fit_: tuple of int of shape (n_dimensions_of_X,)<br><br>Array dimensions of training vector ``X``.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">tuple</td>
+           <td>(100, 4)</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-support_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=support_,-ndarray%20of%20shape%20%28n_SV%29">
+            support_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-support_;">
+            support_: ndarray of shape (n_SV)<br><br>Indices of support vectors.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[int32](45,)</td>
+           <td>[15,22,45,...,80,83,93]</td>
+
+
+       </tr>
+    
+
+       <tr class="default">
+           <td class="param">
+        <a class="param-doc-link"
+            style="anchor-name: --doc-link-support_vectors_;"
+            rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.9/modules/generated/sklearn.svm.SVC.html#:~:text=support_vectors_,-ndarray%20or%20sparse%20array/matrix%20of%20shape%20%28n_SV%2C%20n_features%29">
+            support_vectors_
+            <span class="param-doc-description"
+            style="position-anchor: --doc-link-support_vectors_;">
+            support_vectors_: ndarray or sparse array/matrix of shape (n_SV, n_features)<br><br>Support vectors. An empty array if kernel is precomputed.<br>If `X` is sparse, these will also be sparse.</span>
+        </a>
+    </td>
+           <td class="fitted-att-type">ndarray[float64](45, 4)</td>
+           <td>[[5. ,3. ,1.6,0.2],
+ [4.8,3.4,1.9,0.2],
+ [5.7,4.4,1.5,0.4],
+ ...,
+ [7.2,3. ,5.8,1.6],
+ [6.4,3.1,5.5,1.8],
+ [7.9,3.8,6.4,2. ]]</td>
+
+
+       </tr>
+    
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </div></div></div></div></div><script>/*  Authors: The scikit-learn developers
+ SPDX-License-Identifier: BSD-3-Clause
+*/
+
+function copyToClipboard(text, element) {
     // Get the parameter prefix from the closest toggleable content
     const toggleableContent = element.closest('.sk-toggleable__content');
     const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
@@ -2085,15 +3463,139 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     return false;
 }
 
-document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
+document.querySelectorAll('.copy-paste-icon').forEach(function(element) {
     const toggleableContent = element.closest('.sk-toggleable__content');
     const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
-    const paramName = element.parentElement.nextElementSibling.textContent.trim();
+
+    const parent = element.parentElement;
+    if (!parent || !parent.nextElementSibling) {
+        console.warn('Expected copy-paste icon is missing from the DOM structure');
+        return;
+    }
+
+    const paramName = element.parentElement.nextElementSibling
+        .textContent.trim().split(' ')[0];
     const fullParamName = paramPrefix ? `${paramPrefix}${paramName}` : paramName;
 
     element.setAttribute('title', fullParamName);
 });
-</script></body></div></div>
+
+/**
+ * Copy the list of feature names formatted as a Python list.
+ *
+ * @param {HTMLElement} element - The copy button inside a `.features` block; its siblings
+ *   contain a `details` element and a table containing feature named.
+ * @returns {boolean} Always returns `false` so callers can prevent the default click behavior.
+ */
+function copyFeatureNamesToClipboard(element) {
+    var detailsElem = element.closest('.features').querySelector('details');
+    var wasOpen = detailsElem.open;
+    detailsElem.open = true;
+    var content = element.closest('.features').querySelector('tbody')
+                  .innerText.trim();
+    if (!wasOpen) detailsElem.open = false;
+    const rows = content.split('\n').map(row => `    "${row}"`);
+    const formattedText = `[\n${rows.join(',\n')},\n]`;
+    const originalHTML = element.innerHTML.replace('âœ”', '');
+    const originalStyle = element.style;
+    const copyMark = document.createElement('span');
+    copyMark.innerHTML = 'âœ”';
+    copyMark.style.color = 'blue';
+    copyMark.style.fontSize = '1em';
+
+    navigator.clipboard.writeText(formattedText)
+        .then(() => {
+            element.style.display = 'none';
+            element.parentElement.appendChild(copyMark);
+
+            setTimeout(() => {
+                copyMark.remove();
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 1000);
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            element.style.color = 'orange';
+            element.innerHTML = "Failed!";
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 1000);
+        });
+    return false;
+}
+/**
+ * Adapted from Skrub
+ * https://github.com/skrub-data/skrub/blob/403466d1d5d4dc76a7ef569b3f8228db59a31dc3/skrub/_reporting/_data/templates/report.js#L789
+ * @returns "light" or "dark"
+ */
+function detectTheme(element) {
+    const body = document.querySelector('body');
+
+    // Check VSCode theme
+    const themeKindAttr = body.getAttribute('data-vscode-theme-kind');
+    const themeNameAttr = body.getAttribute('data-vscode-theme-name');
+
+    if (themeKindAttr && themeNameAttr) {
+        const themeKind = themeKindAttr.toLowerCase();
+        const themeName = themeNameAttr.toLowerCase();
+
+        if (themeKind.includes("dark") || themeName.includes("dark")) {
+            return "dark";
+        }
+        if (themeKind.includes("light") || themeName.includes("light")) {
+            return "light";
+        }
+    }
+
+    // Check Jupyter theme
+    if (body.getAttribute('data-jp-theme-light') === 'false') {
+        return 'dark';
+    } else if (body.getAttribute('data-jp-theme-light') === 'true') {
+        return 'light';
+    }
+
+    // Guess based on a parent element's color
+    const color = window.getComputedStyle(element.parentNode, null).getPropertyValue('color');
+    const match = color.match(/^rgb\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)\s*$/i);
+    if (match) {
+        const [r, g, b] = [
+            parseFloat(match[1]),
+            parseFloat(match[2]),
+            parseFloat(match[3])
+        ];
+
+        // https://en.wikipedia.org/wiki/HSL_and_HSV#Lightness
+        const luma = 0.299 * r + 0.587 * g + 0.114 * b;
+
+        if (luma > 180) {
+            // If the text is very bright we have a dark theme
+            return 'dark';
+        }
+        if (luma < 75) {
+            // If the text is very dark we have a light theme
+            return 'light';
+        }
+        // Otherwise fall back to the next heuristic.
+    }
+
+    // Fallback to system preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+
+function forceTheme(elementId) {
+    const estimatorElement = document.querySelector(`#${elementId}`);
+    if (estimatorElement === null) {
+        console.error(`Element with id ${elementId} not found.`);
+    } else {
+        const theme = detectTheme(estimatorElement);
+        estimatorElement.classList.add(theme);
+    }
+}
+
+forceTheme('sk-container-id-2');</script></body></div></div>
 </div>
 </section>
 <section id="applying-the-model">
@@ -2283,13 +3785,13 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
             mode: "python"
         },
         kernelOptions: {
-            name: "python",
+            name: "python3",
             path: "./task2_c\example_sup_class"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -2326,14 +3828,16 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-the-model">Training the Model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-the-model">Applying the Model</a></li>
@@ -2385,8 +3889,8 @@ By Dr. Jim Ashe
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
