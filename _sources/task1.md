@@ -6,14 +6,10 @@
     <base target="_blank">
 </head>
 
-```{warning}
-**Submission process update.** Task 1 is no longer signed and returned by your course instructor. **Fill out the approval form and submit it directly to Assessments** as your Task 1. Your course instructor (or, in the future, an evaluator) will either pass your submission or return it with comments for revision. This mirrors how you submit Tasks 2 and 3.
-```
-
 ## Choosing a Topic
 
 (task1:choosing-a-topic)=
-The approval form confirms a viable topic before you invest time and effort into [task 2](task2_part_c). A topic is approved when it has the following:
+The approval form ensures you start in the right direction before investing time and effort into [task 2](task2_part_c). Evaluators look for our (instructors') signature, and we look for the following:
 
 1. An application of machine learning (ML).
 2. An organizational need for your ML application to help solve.
@@ -35,7 +31,7 @@ The "organizational need" requirement gives your project a purpose and audience.
 >
 > **ML application (non-descriptive method):** [Classify an Iris's species using its petal dimensions to train a supervised classification model, say SVN or Logistic regression](sup_class_ex).
 >
-> **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualizations) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
+> **Descriptive method:** [Histograms and barplots](sup_class_ex:descriptive_methods_and_visualization) showing distributions of different flower features and confusion matrix illustrating the accuracy of the classification model.
 >  
 > **Organizational Need:** *Grow Fast Fertilizer Inc.* needs to help customers identify their flowers. 
 ````
@@ -98,7 +94,7 @@ These passing examples have been provided by the evalaution team to help student
 
 #### WGU Capstone Excellence Archive
 
-The {{ excellence_archive }} includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the examples above.
+The [Capstone Excellence Archive](https://westerngovernorsuniversity.sharepoint.com/sites/capstonearchives/excellence/Pages/UndergraduateInformation.aspx) includes a wide range of completed projects. Reviewing them may help get ideas, provide inspiration, and understand the requirements. However, keep in mind that they all are *above and beyond* the requirements. So don't use these as examples of what's needed to meet the requirements. For a more down-to-earth example of what's required, see the examples above.
 
 :::{warning}
 Some examples in the archives may follow the old template. Please follow the templates found on this website.
@@ -128,7 +124,9 @@ A machine learning application is the hard requirement of the capstone, but you 
 ### Machine Learning Algorithms
 
 :::{sidebar} **Classification & Regression Overview**
-{{ ml_overview_video }}
+<iframe
+src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b3a9a4e9-c126-407d-a6b2-ae0100fde1ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" style="border: 1px solid #464646" allowfullscreen allow="autoplay" alt ="Intro screen of classification and regression overview video by Dr. Ashe. A scatterplot with a shaded area distinguishing two groups of blue and red data points is shown overlaying a flowchart of the machine learning development process."
+> </iframe>
 :::
 
 #### Supervised Learning
@@ -167,66 +165,65 @@ It's best to consider both. In a "real-world" scenario, you would likely be give
 3. Formulate an "organizational need" helped by that application.
 
 ```{margin} Unsure about which ML method to use?
-Look for data which has mutually exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example](sup_class_ex), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubric requirements.  
+Look for data which has mutually exclusive categories which can used as a dependent variables,e.g., yes/no, alive/dead, blue/red/yellow, etc. Our [supervised classification example]((sup_class_ex)), uses mutually exclusive flower types. This type of supervised classification method most easily fits all the rubric requirements.  
 ```
 
 (task1:approval)=
 
-## Submitting the Approval Form
+## Topic Approval
 
-Once you've decided on a topic, complete the approval form and submit it directly to Assessments as your Task 1. The form has four short sections:
+Once you've decided on a topic, complete the approval form following the template below and *email it to your [C964 assigned instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) for approval.*
 
-1. **Data.** Name the data source — a short description is enough, and a URL is accepted but not required (e.g., "Kaggle Titanic dataset," "NYC open-data taxi trips 2023," "employer dataset (authorization attached)").
-2. **Model.** Identify the model name or type and how it will be applied to the data (e.g., "random forest classifier to predict customer churn," "prompt-engineered LLM call to summarize support tickets," "unsupervised clustering on user activity logs").
-3. **Organization and Application.** Describe who will use the model and how, in 2–4 sentences. The user and their need may be fabricated.
-4. **Student Certification.** Three Yes/No questions that must all be answered:
-   - Whether you understand the project develops and applies a model to data, with a user interface for interacting with the model.
-   - Whether your project involves human-subject research. If **Yes**, [contact your course instructor](ci_c964) before submitting.
-   - Whether your project uses restricted or proprietary information from an employer or third party. If **Yes**, also submit the [Restricted Information Authorization Form](task1:waiver_form).
+<!-- old way with thumbnail 
+> [![Thumbnail of the topic approval form template. The word "Template" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/template_task1.png?raw=true#image-thumb)](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EaH8yexFJjhDp5hnrcAZeKoB6XxU9r8Z5IH1QqVLmVu87w?e=OwRtpe) -->
 
-> {{ task1_temp }}
->
-> {{ task1_temp_odt }}
+> [Topic Approval Form Template](./resources/C964_Capstone_Topic_Approval_Form.docx)
 
 ```{note}
 The approval form only needs to be a *rough* outline of a passing project. **Changes from task 1 to task 2 are allowed and expected.** Determining the finer details of a complex project takes time and effort, which you won't invest until task 2.  
 ```
 
+**Project topic and purpose:** Describe the problem (the "organizational need") your project will solve.
+
+**Non-descriptive method(s):**  These methods infer from the data, i.e., make predictions or prescriptions. Examples include classification models, regression, image recognition, etc. Typically, but not necessarily, this is where ML is applied.
+
+**Descriptive methods:** These methods describe and help understand the data, e.g., mean, median, bar plot, scatterplot, k-means clustering, etc. Three visualizations are required. The visualizations are typically descriptive and can count as your descriptive method.
+
 ```{note}
-You **submit the completed form directly to Assessments** as your Task 1. There is no email-to-instructor or signature step. Your course instructor (or, in the future, an evaluator) will pass your submission or return it with comments for revision. This mirrors how Tasks 2 and 3 are submitted.
+You must identify a machine learning application in either the descriptive or non-descriptive section. Most often, the non-descriptive method uses ML, e.g., a classification model allowing the user to provide input to an app that returns a prediction.
 ```
 
-```{tip}
-If you have questions about your topic *before* submitting, you can still email [your assigned course instructor](ci_c964) or the team inbox [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20question). When you do, always practice professional communication:
+Directly emailing your [assigned course instructor](mailto:myC964capstoneinstructor@wgu.edu?cc=my%20program%20mentor&subject=C964:%20capstone%20topic%20approval) (identified on your C964 COS page; or find them [here](ci_c964)) is typically the fastest and best way to get a signature. Whether emailing [ugcapstoneit@wgu.edu](mailto:ugcapstoneit@wgu.edu?cc=my%20course%20instructor&subject=C964:%20capstone%20topic%20approval) or your CI directly, always practice professional communication:
 
 - Use your WGU email (non-WGU emails may be categorized as spam).
 - Provide a subject, your capstone course (we support all IT college capstones), and your program mentor's name (if not in your signature).
-- Clearly state your questions or requests.
+- Clearly state your questions or requests. 
+
+```{warning}
+The submitted topic approval form must be *signed by a [C964 course instructor](ci_c964)*. Forms without a signature are automatically returned without further review.  
 ```
 
 (task1:waiver_form)=
 
-## Restricted Information Authorization Form
+## Waiver Form
 
 <!-- Everyone must submit a waiver form stating either no restricted information was used OR the use of any restricted information is authorized. -->
 
 ```{note}
-This form is **only** required if you answered **Yes** to Student Certification question 3 (your project uses restricted or proprietary information from an employer or third party). If your project does not use restricted information, you do not need this form, and Task 1 *B: Restricted Information Authorization Form* passes automatically.
+the waiver form is **only** required if your project is based upon or includes restricted information. If no waiver form is submitted, Task 1 *B: Capstone Release Form*, passes automatically.
 ```
 
-In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with this form to Assessments.
+In most cases, obtaining authorization can be avoided by fabricating or masking identifying information. But if you choose to move forward using restricted information, you must obtain documented permissions and submit them along with a waiver form to Assessments.
 
-> {{ waiver_form }}
->
-> {{ waiver_form_odt }}
+> [![Thumbnail of the waiver form. The word "Waiver" is stamped on it diagonally in green.](https://github.com/ashejim/C964/blob/main/url_images/waiver.png?raw=true#image-thumb)](./resources/C964_Capstone_Release_Form.docx)
 
 (task1:faq)=
 
 ## FAQ
 
-### Do I need to set up an appointment before submitting?
+### Do I need to set up an appointment to get approval?
 
-No. Most students fill out the approval form and submit it directly to Assessments — there's no instructor review step in advance. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns *before* you submit.
+No. Usually, students email the approval form to their [assigned instructor](ci_c964). We then sign it or follow up with questions. However, if you have questions about the requirements or need help choosing a topic, you are encouraged to set up an appointment. A 15-30 minute phone call can address most questions or concerns.
 
 ### I have questions. Should I email the question or set up an appointment?
 
@@ -307,13 +304,16 @@ WGU provides access to a very good [AI textbook which includes a Machine Learnin
 
 If you have time, [Udemy offers some ML courses](https://wgu.udemy.com/course/machinelearning/learn/lecture/14473662#overview). Maybe the fastest way to get started is with the [video and examples included on this website](https://ashejim.github.io/C964/task2_c/example_sup_class/sup_class_ex.html). Though a minimally passing C950 project (applying a greedy algorithm to hand-picked truckloads) would not be consider ML by many, it meets the criteria for this project as it is an algorithm applied to data.
 
+### Do I need an "electronic signature?"
+
+No, you can type in your name, use a "fancy" font, or insert an image of your signature.  
+
 ### What are the common reasons for task 1 being returned?
 
-1. **No real data source.** The Data box must name actual data you can use and share with evaluators.
-2. **No model.** The Model box must name a model (or ML method) applied to your data — descriptive analysis or visualizations alone aren't enough.
-3. **No organization or application.** Box 3 must describe who uses the model and how (this may be fabricated).
-4. **Student Certification questions left blank.** All three Yes/No questions must be answered before submission.
-5. **Restricted information without the form.** If you answered **Yes** to Student Certification question 3, you must also submit the [Restricted Information Authorization Form](task1:waiver_form).
+1. No instructor signature on the approval form. You need to send it to us and get a signature *before* submitting it to Assessments.
+2. Both or neither box is marked on the waiver form. Mark one and only one box. See the [waiver form instructions](task1:waiver_form)
+
+Note, the waiver form is **only** required if your project is based upon or included restricted information. Task 1 *B: Capstone Release Form*, passes automatically if no waiver form is submitted, i.e., the waiver only needs to be submitted if it's needed for permissions.
 
 ### How many attempts are allowed for each task?
 
@@ -349,13 +349,13 @@ A development path might look like the following:
 
 > Python IDE &rarr; Jupyter notebook &rarr; notebook with widgets &rarr; hosted notebook with widgets &rarr; web app.
 
-Provided the [minimal app criteria](task2_part_c:what_does_the_application_need_to_do) are met, submitting at any point along this path will pass part C.
+Provided the [minimal app criteria](task2c:appreqs) are met, submitting at any point along this path will pass part C.
 
 (task1:faq:gui)=
 
 ### What sort of user interface do I need? Do I need a GUI?
 
-No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc_d:user_guide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.  
+No, a GUI is *not* required. Your app must be usable by the "client" to solve the proposed problem. If the evaluators can run your app as intended, playing the role of the "client," following your [user guide](task2_doc:userguide), then your app will be considered to have a user-friendly interface. This can be done through a GUI and widgets, but using the command line or reading user data from a local directory will also suffice.  
 
 ### Are there length requirements for the documentation?
 
@@ -377,7 +377,7 @@ It must be complex enough to meet the needs of your project. There is no explici
 
 ### Are there any restrictions on which datasets I can choose?
 
-Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting the [Restricted Information Authorization Form](task1:waiver_form).
+Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
 
 - You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
 - You *can* use simulated data.

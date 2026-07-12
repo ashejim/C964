@@ -1,0 +1,115 @@
+Traceback (most recent call last):
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 1323, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+linear_reg_model = LinearRegression()
+linear_reg_model.fit(X_train,y_train)
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mValueError[39m                                Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 2[39m
+[32m      1[39m linear_reg_model = LinearRegression()
+[32m----> [39m[32m2[39m linear_reg_model.fit(X_train,y_train)
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\base.py:1403[39m, in [36m_fit_context.<locals>.decorator.<locals>.wrapper[39m[34m(estimator, *args, **kwargs)[39m
+[32m   1393[39m     estimator._validate_params()
+[32m   1395[39m [38;5;28;01mwith[39;00m (
+[32m   1396[39m     config_context(
+[32m   1397[39m         skip_parameter_validation=(
+[32m   (...)[39m[32m   1401[39m     callback_management_context(estimator),
+[32m   1402[39m ):
+[32m-> [39m[32m1403[39m     [38;5;28;01mreturn[39;00m [30;43mfit_method[39;49m[30;43m([39;49m[30;43mestimator[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43margs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\linear_model\_base.py:681[39m, in [36mLinearRegression.fit[39m[34m(self, X, y, sample_weight)[39m
+[32m    677[39m n_jobs_ = [38;5;28mself[39m.n_jobs
+[32m    679[39m accept_sparse = [38;5;28;01mFalse[39;00m [38;5;28;01mif[39;00m [38;5;28mself[39m.positive [38;5;28;01melse[39;00m [[33m"[39m[33mcsr[39m[33m"[39m, [33m"[39m[33mcsc[39m[33m"[39m, [33m"[39m[33mcoo[39m[33m"[39m]
+[32m--> [39m[32m681[39m X, y = [30;43mvalidate_data[39;49m[30;43m([39;49m
+[32m    682[39m [30;43m    [39;49m[30;43mself[39;49m[30;43m,[39;49m
+[32m    683[39m [30;43m    [39;49m[30;43mX[39;49m[30;43m,[39;49m
+[32m    684[39m [30;43m    [39;49m[30;43my[39;49m[30;43m,[39;49m
+[32m    685[39m [30;43m    [39;49m[30;43maccept_sparse[39;49m[30;43m=[39;49m[30;43maccept_sparse[39;49m[30;43m,[39;49m
+[32m    686[39m [30;43m    [39;49m[30;43my_numeric[39;49m[30;43m=[39;49m[30;43;01mTrue[39;49;00m[30;43m,[39;49m
+[32m    687[39m [30;43m    [39;49m[30;43mmulti_output[39;49m[30;43m=[39;49m[30;43;01mTrue[39;49;00m[30;43m,[39;49m
+[32m    688[39m [30;43m    [39;49m[30;43mforce_writeable[39;49m[30;43m=[39;49m[30;43;01mTrue[39;49;00m[30;43m,[39;49m
+[32m    689[39m [30;43m[39;49m[30;43m)[39;49m
+[32m    691[39m has_sw = sample_weight [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m
+[32m    692[39m [38;5;28;01mif[39;00m has_sw:
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\utils\validation.py:3055[39m, in [36mvalidate_data[39m[34m(_estimator, X, y, reset, validate_separately, skip_check_array, **check_params)[39m
+[32m   3053[39m         y = check_array(y, input_name=[33m"[39m[33my[39m[33m"[39m, **check_y_params)
+[32m   3054[39m     [38;5;28;01melse[39;00m:
+[32m-> [39m[32m3055[39m         X, y = [30;43mcheck_X_y[39;49m[30;43m([39;49m[30;43mX[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43my[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mcheck_params[39;49m[30;43m)[39;49m
+[32m   3056[39m     out = X, y
+[32m   3058[39m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m no_val_X [38;5;129;01mand[39;00m check_params.get([33m"[39m[33mensure_2d[39m[33m"[39m, [38;5;28;01mTrue[39;00m):
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\utils\validation.py:1327[39m, in [36mcheck_X_y[39m[34m(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, ensure_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)[39m
+[32m   1322[39m         estimator_name = _check_estimator_name(estimator)
+[32m   1323[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[32m   1324[39m         [33mf[39m[33m"[39m[38;5;132;01m{[39;00mestimator_name[38;5;132;01m}[39;00m[33m requires y to be passed, but the target y is None[39m[33m"[39m
+[32m   1325[39m     )
+[32m-> [39m[32m1327[39m X = [30;43mcheck_array[39;49m[30;43m([39;49m
+[32m   1328[39m [30;43m    [39;49m[30;43mX[39;49m[30;43m,[39;49m
+[32m   1329[39m [30;43m    [39;49m[30;43maccept_sparse[39;49m[30;43m=[39;49m[30;43maccept_sparse[39;49m[30;43m,[39;49m
+[32m   1330[39m [30;43m    [39;49m[30;43maccept_large_sparse[39;49m[30;43m=[39;49m[30;43maccept_large_sparse[39;49m[30;43m,[39;49m
+[32m   1331[39m [30;43m    [39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m,[39;49m
+[32m   1332[39m [30;43m    [39;49m[30;43morder[39;49m[30;43m=[39;49m[30;43morder[39;49m[30;43m,[39;49m
+[32m   1333[39m [30;43m    [39;49m[30;43mcopy[39;49m[30;43m=[39;49m[30;43mcopy[39;49m[30;43m,[39;49m
+[32m   1334[39m [30;43m    [39;49m[30;43mforce_writeable[39;49m[30;43m=[39;49m[30;43mforce_writeable[39;49m[30;43m,[39;49m
+[32m   1335[39m [30;43m    [39;49m[30;43mensure_all_finite[39;49m[30;43m=[39;49m[30;43mensure_all_finite[39;49m[30;43m,[39;49m
+[32m   1336[39m [30;43m    [39;49m[30;43mensure_2d[39;49m[30;43m=[39;49m[30;43mensure_2d[39;49m[30;43m,[39;49m
+[32m   1337[39m [30;43m    [39;49m[30;43mallow_nd[39;49m[30;43m=[39;49m[30;43mallow_nd[39;49m[30;43m,[39;49m
+[32m   1338[39m [30;43m    [39;49m[30;43mensure_min_samples[39;49m[30;43m=[39;49m[30;43mensure_min_samples[39;49m[30;43m,[39;49m
+[32m   1339[39m [30;43m    [39;49m[30;43mensure_min_features[39;49m[30;43m=[39;49m[30;43mensure_min_features[39;49m[30;43m,[39;49m
+[32m   1340[39m [30;43m    [39;49m[30;43mestimator[39;49m[30;43m=[39;49m[30;43mestimator[39;49m[30;43m,[39;49m
+[32m   1341[39m [30;43m    [39;49m[30;43minput_name[39;49m[30;43m=[39;49m[30;43m"[39;49m[30;43mX[39;49m[30;43m"[39;49m[30;43m,[39;49m
+[32m   1342[39m [30;43m[39;49m[30;43m)[39;49m
+[32m   1344[39m y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+[32m   1346[39m check_consistent_length(X, y)
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\utils\validation.py:1035[39m, in [36mcheck_array[39m[34m(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, ensure_all_finite, ensure_non_negative, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)[39m
+[32m   1033[39m         array = xp.astype(array, dtype, copy=[38;5;28;01mFalse[39;00m)
+[32m   1034[39m     [38;5;28;01melse[39;00m:
+[32m-> [39m[32m1035[39m         array = [30;43m_asarray_with_order[39;49m[30;43m([39;49m[30;43marray[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43morder[39;49m[30;43m=[39;49m[30;43morder[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mxp[39;49m[30;43m=[39;49m[30;43mxp[39;49m[30;43m)[39;49m
+[32m   1036[39m [38;5;28;01mexcept[39;00m ComplexWarning [38;5;28;01mas[39;00m complex_warning:
+[32m   1037[39m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[32m   1038[39m         [33m"[39m[33mComplex data not supported[39m[38;5;130;01m\n[39;00m[38;5;132;01m{}[39;00m[38;5;130;01m\n[39;00m[33m"[39m.format(array)
+[32m   1039[39m     ) [38;5;28;01mfrom[39;00m[38;5;250m [39m[34;01mcomplex_warning[39;00m
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\sklearn\utils\_array_api.py:976[39m, in [36m_asarray_with_order[39m[34m(array, dtype, order, copy, xp, device)[39m
+[32m    974[39m     array = numpy.array(array, order=order, dtype=dtype)
+[32m    975[39m [38;5;28;01melse[39;00m:
+[32m--> [39m[32m976[39m     array = [30;43mnumpy[39;49m[30;43m.[39;49m[30;43masarray[39;49m[30;43m([39;49m[30;43marray[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43morder[39;49m[30;43m=[39;49m[30;43morder[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m)[39;49m
+[32m    978[39m [38;5;66;03m# At this point array is a NumPy ndarray. We convert it to an array[39;00m
+[32m    979[39m [38;5;66;03m# container that is consistent with the input's namespace.[39;00m
+[32m    980[39m [38;5;28;01mreturn[39;00m xp.asarray(array)
+
+[36mFile [39m[32mD:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\pandas\core\generic.py:2039[39m, in [36mNDFrame.__array__[39m[34m(self, dtype, copy)[39m
+[32m   2035[39m             )
+[32m   2036[39m         values = self._values
+[32m   2037[39m         [38;5;28;01mif[39;00m copy [38;5;28;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m   2038[39m             [38;5;66;03m# Note: branch avoids `copy=None` for NumPy 1.x support[39;00m
+[32m-> [39m[32m2039[39m             arr = np.asarray(values, dtype=dtype)
+[32m   2040[39m         [38;5;28;01melse[39;00m:
+[32m   2041[39m             arr = np.array(values, dtype=dtype, copy=copy)
+[32m   2042[39m 
+
+[31mValueError[39m: could not convert string to float: 'Iris-virginica'
+

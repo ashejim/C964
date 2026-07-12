@@ -21,6 +21,8 @@ This is [choosing a topic test](../task1.html#choosing-a-topic)
 However, link mapping seems inconsistent for ipynb. It looks to map below, not at, the md cell. 
 -->
 
+(task2_part_c:what_does_the_application_need_to_do)=
+
 Your app must help the user solve the organizational problem from [task 1](task1) by doing the following:  
 
 1. **Data → ML model:** Use data to develop a machine learning model.
@@ -34,7 +36,7 @@ Your app must help the user solve the organizational problem from [task 1](task1
 <!--tab-item examples -->
 `````{tab-set}
 ````{tab-item} Example 1
-**The App:** A standalone [Jupyter Notebook](https://jupyter.org) file (.ipynb) which can predict Iris types (see the [example](sup_class_ex)).
+**The App:** A standalone [Jupyter Notebook](https://jupyter.org) file (.ipynb) which can predict Iris types (see the [example](./example_sup_class/sup_class_ex.html#example-supervised-classification-app)).
 >**Data → ML model:** Labeled [Iris petal dimensions](https://www.kaggle.com/datasets/uciml/iris) train an [SVM classification model](sup_class_ex:develop).
 >
 > **Accuracy Metric:** Percent of correct predictions on [testing data](sup_class_ex:accuracy).   
@@ -88,7 +90,7 @@ Your app must help the user solve the organizational problem from [task 1](task1
 
 There are no specific requirements regarding the complexity or nature of your data. However, your application must work and fulfill the organizational need you'll outline in the [task 2 documentation](task2_doc). Therefore, when choosing your raw data, consider carefully any additional time and effort necessary to prepare that data for use. As these extra steps are only needed in so far as the chosen problem and algorithm need them, you may wish to adjust your project or choose a different data set accordingly.
 
-You do not need special permission to use any open-source dataset (see our [list](resources:task1:data)). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). It's only required that the data meet the needs of your project and be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiver_form).
+You do not need special permission to use any open-source dataset (see our [list](resources:task1:data)). Furthermore, data sets used in previous C964 projects are available for reuse (no list of previously used datasets exists). It's only required that the data meet the needs of your project and be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
 
 - You *can* use data used for previous projects (submitted by you or others) including any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
 - You do *not* have to use all the data. Removing columns or rows is permissible. 
@@ -330,7 +332,15 @@ Start *slow*. You must learn and incorporate many small but probably new skills 
 ### Start small and build up
 
 :::{sidebar} Watch
-{{ ml_class_code_video }}
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ae4e4987-3196-4b67-9752-ae010137b64c&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all"
+    title="Simple ML supervised classification example "
+    alt= "Simple ML supervised classification coding python example by Dr. Jim Ashe."
+    style="border: 1px solid #464646;"
+    class="center"
+    allowfullscreen allow="autoplay"
+>
+</iframe>
 :::
 
 A suggested path:
@@ -473,7 +483,7 @@ It must be complex enough to meet the needs of your project. There is no explici
 
 ### Are there any restrictions on which datasets I can choose?
 
-Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiver_form).
+Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a [waiver form](task1:waiverform).
 
 - You *can* use any dataset found on [kaggle.com](https://www.kaggle.com/datasets).
 - You *can* use simulated data.

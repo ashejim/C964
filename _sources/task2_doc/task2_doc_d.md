@@ -2,7 +2,7 @@
 
 (task2_doc_d)=
 
-Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [User Guide](task2_doc_d:user_guide), [Machine Learning](task2_doc_d:ml), and [Validation](task2_doc_d:validation) sections are the most important. As such, we recommend completing these sections first. Follow the [Task 2 Template](../resources/C964_task_2_template.docx).
+Part D of the documentation explains the technical details of your project and should target the computer science subject matter experts. Hence, of the documentation, part D is most valued and scrutinized by the evaluators. Of part D, the [User Guide](task2d:userguide), [Machine Learning](task2d:ml), and [Validation](task2d:validation) sections are the most important. As such, we recommend completing these sections first. Follow the [Task 2 Template](../resources/C964_task_2_template.docx).
 
 (task2_doc_d:user_guide)=
 
@@ -19,7 +19,7 @@ Include an enumerated (steps 1, 2, 3, etc.) guide on how to execute and use your
 - **Test.** Create a new environment or borrow a friend's computer, follow your instructions verbatim, and verify that everything works as expected. It's easy to overlook small details.
 
 :::{margin} No Windows machine?
-*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [User Guide](task2_doc_d:user_guide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2_part_c:faq:i_only_have_a_linux_or_mac_machine) for more details.
+*Nowhere is Windows specifically required* in the C964 rubric. However, WGU evaluators are issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, we recommend that the [User Guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview). You should also provide a note when submitting to Assessments and alerting your course instructor. See the [Task 2 part C FAQ](task2c:faq:linux) for more details.
 
 (task2_doc_d:user_guide:examples)=
 
@@ -81,7 +81,6 @@ This section should describe the development of your ML application justifying a
 - *Why?* Thoroughly justify development decisions. Address your algorithm(s) as a  good choice, why your training process was appropriate, etc.  
 
 (task2_doc_d:validation)=
-(task2_doc_d:accuracy_analysis)=
 
 ## Validation
 

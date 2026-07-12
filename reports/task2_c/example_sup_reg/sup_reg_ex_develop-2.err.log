@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 1323, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashej\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "D:\myGitRepos\course_webpages\C964_canonical\.venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+df_sample = df.sample(n=10, random_state = 152)
+# df_sample_highlight = pd.concat([df_sample.iloc[:5,:], df_sample.iloc[-5:,:]]).style.format().set_properties(subset=['type'], **{'background-color': 'yellow'})
+
+# function definition
+def highlight_cols(s):
+    color = 'null'
+    if s == 'Iris-virginica': color = 'limegreen'
+    elif s == 'Iris-setosa': color = 'lightblue'
+    elif s == 'Iris-versicolor': color = 'orange'
+    # color = 'red' if s == 'Iris-virginica' or 'blue' if s == 'Iris-setosa'
+    return 'background-color: % s' % color
+  
+# highlighting the cells
+df_sample.style.applymap(highlight_cols)
+
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mAttributeError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[2][39m[32m, line 14[39m
+[32m     10[39m     [38;5;66;03m# color = 'red' if s == 'Iris-virginica' or 'blue' if s == 'Iris-setosa'[39;00m
+[32m     11[39m     [38;5;28;01mreturn[39;00m [33m'background-color: % s'[39m % color
+[32m     12[39m 
+[32m     13[39m [38;5;66;03m# highlighting the cells[39;00m
+[32m---> [39m[32m14[39m df_sample.style.applymap(highlight_cols)
+
+[31mAttributeError[39m: 'Styler' object has no attribute 'applymap'
+

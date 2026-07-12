@@ -26,7 +26,7 @@ Welcome! For the Computer Science capstone project, you'll develop and present a
 
 The capstone includes three parts:
 
-1. **Task 1:** Submit a short topic approval form to Assessments -a preliminary step to ensure you start in the right direction. Your course instructor will pass it or return it with comments.
+1. **Task 1:** Get course instructor topic approval -a preliminary step to ensure you start in the right direction.
 2. **Task 2 part C:** The "app." Develop a working application of machine learning (ML).
 3. **Task 2 parts D, A, & B:** Documentation communicating your product's value and development process to audiences of varying technical understanding.
 
@@ -94,8 +94,17 @@ Task 3 details {fas}`arrow-right`
 
 First, understand the project's requirements. What they are -and what they aren't. Watch the following video:
 
-{{ overview_video }}
+<iframe 
+    src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8bb97182-1e41-4b6f-9218-ad9201579ada&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all"
+    title="C964 Overview"
+    alt= "Getting Started on the Capstone by Dr. Jim Ashe video title page."
+    width="640px"
+    height="360px"
+    style="border: 1px solid #464646;"
+    allowfullscreen allow="autoplay"
+>
+</iframe>
 
-And review the [What does the application need to do?](task2_part_c:what_does_the_application_need_to_do) section and part C of the {{ task2_temp }}.
+And review the [What does the application need to do?](task2_part_c:what_does_the_application_need_to_do) section and part C of the [Task 2 template](./resources/C964_task_2_template.docx).
 
 Like the [*C950 -Data Structures and Algorithms II* task](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c950-project-for-c964) and [*C951 -Intro to AI*](https://ashejim.github.io/C964/task2_c/task2_part_c.html#can-i-use-my-c951-task-1-or-2-for-c964) tasks 1 and 2, this project consists of a working application, ([Task 2 part C](task2_part_c)), and accompanying documentation, [Task 2 parts A, B, & D](task2_doc). But because of the breadth of allowable topics, we want to ensure you start working in the right direction, and thus require all topics to be approved by your assigned course instructor, [Task 1](task1). So your next step is choosing a topic and having it approved.
