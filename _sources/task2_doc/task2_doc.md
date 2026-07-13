@@ -6,10 +6,12 @@
 ## Task 2 Documentation Template
 
 After completing the application (part C), write your documentation (parts A, B, and D) following the **C964 Task 2 documentation template**:
-> [Task 2 documentation template](../resources/C964_task_2_template.docx) (parts A, B, and D)
+> {{ task2_temp }} (parts A, B, and D)
+>
+> {{ task2_temp_odt }}
 
 :::{tip}
-The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the [Task 2 template](../resources/C964_task_2_template.docx).
+The official rubric and directions were written to map the project’s elements to specific competencies. However, to allow for a broad range of projects its language is necessarily also broad. For more specifics, we recommend referring to the guidelines on this webpage and the {{ task2_temp }}.
 :::
 
 ```{admonition} Do NOT write an outline!
@@ -42,7 +44,7 @@ These passing examples have been provided by the evalaution team to help student
 
    <input type="checkbox"> Pass [Task 1](task1).
    
-   <input type="checkbox"> Finish [Task 2 part C](task2c).
+   <input type="checkbox"> Finish [Task 2 part C](task2_part_c).
 
    <div class = "tasklist2">
 
@@ -60,13 +62,13 @@ These passing examples have been provided by the evalaution team to help student
 
    <div class = "tasklist2">
 
-   <input type="checkbox"> Write the [User Guide](task2d:userguide).
+   <input type="checkbox"> Write the [User Guide](task2_doc_d:user_guide).
 
-   <input type="checkbox"> Write the [machine Learning](task2d:ml) section.
+   <input type="checkbox"> Write the [machine Learning](task2_doc_d:ml) section.
    
-   <input type="checkbox"> Write the [Validation](task2d:validation)
+   <input type="checkbox"> Write the [Validation](task2_doc_d:validation)
 
-   <input type="checkbox"> Write the remaining [part D](task2d) sections,
+   <input type="checkbox"> Write the remaining [part D](task2_doc_d) sections,
 
    </div>
 
@@ -74,14 +76,14 @@ These passing examples have been provided by the evalaution team to help student
  
    <input type="checkbox"> Write part A.
 
-   <input type="checkbox"> Following APA guidelines, [check grammar and sources](task2:sources), export as a *single* pdf, and submit.
+   <input type="checkbox"> Following APA guidelines, [check grammar and sources](task2_doc_finish:sources), export as a *single* pdf, and submit.
 
 </div>
 
 :::{tip}
 When evaluating a section, the evaluator will check for the fulfillment of the requirements within that section. They *don't* assess writing style. It's not about writing something fun to read -it's about demonstrating that the requirements are met.
 
-1. Follow the [Task 2 template](../resources/C964_task_2_template.docx)
+1. Follow the {{ task2_temp }}
 2. Submit parts A, B, and D as a *single* .pdf file.
 3. Part D is what matters -particularly the *Machine Learning*, *Validation*, and *User Guide* sections. Parts A and B need to be completed but have few qualitative requirements.
 :::
@@ -95,7 +97,7 @@ When evaluating a section, the evaluator will check for the fulfillment of the r
 To see which version you are enrolled, go to the 'Assessments' section of your C964 COS page:
 ![An image showing 'Performance Assessment:Computer Science Capstone (SIM3)' as can be found in the Assessment section on your C964 COS page. 'SIM3' is higlighted.](./../url_images/C964_sim3-1.png)
 
-For both versions, SIM2 and SIM3, we recommend using the most recent version of the [Task 2 template](../resources/C964_task_2_template.docx) and following the advice on this webpage.
+For both versions, SIM2 and SIM3, we recommend using the most recent version of the {{ task2_temp }} and following the advice on this webpage.
 
 ### Are there length requirements for the documentation?
 
@@ -111,7 +113,7 @@ You have *unlimited* submissions but limited time. And, typically this is the be
 
 It is preferable to submit an app which can run on both on Windows and Mac, e.g., Jupyter Notebook, Python project, webpage, etc. The 'User Guide' in part D only needs to have instructions for Windows as technically (and unfortunately), we are a "Windows" university,
 
-However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, for projects that must be run from a non-Windows machine, we recommend that the [user guide](task2_doc:userguide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual [machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).
+However, being Windows-compatible is *nowhere specifically required* in the C964 rubric, and doing so would be a little silly for a computer science program. That said, WGU evaluators are only issued Windows 10 machines, and they may have difficulty running a Linux or Mac app without special instructions. Therefore, for projects that must be run from a non-Windows machine, we recommend that the [user guide](task2_doc_d:user_guide) provide explicit instructions for a Windows 10 user to run your code, such as using a [virtual [machine](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview), a remote machine, or using a [Linux subsystem](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview).
 
 ### How many submission attempts am I allowed?
 

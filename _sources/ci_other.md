@@ -32,7 +32,7 @@ The fix might need an understanding of several intertwined layers, of your code 
 
 ## WGU Programming Center
 
-The [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/sites/ProgrammingCenter) provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python. 
+The {{ programming_center }} provides support to all WGU students in learning basic programming concepts, R, JavaScript, and Python. 
 
 ```{image} ./url_images/WGU_programming_center_python.png
 :alt: WGU programming center logo. The word "Python' is superimposed over a blurry photo of a magnifying glass reviewing code.  
@@ -43,7 +43,7 @@ The [WGU Programming Center](https://westerngovernorsuniversity.sharepoint.com/s
 
 ## WGU Math Center
 
-The [Math Center](https://my.wgu.edu/success-centers/math-center) provides a supportive environment to help you improve your mathematical skills and achieve your academic goals.
+The {{ math_center }} provides a supportive environment to help you improve your mathematical skills and achieve your academic goals.
 
 ```{image} ./url_images/math-center.svg
 :alt: WGU programming center logo. The word "Python' is superimposed over a blurry photo of a magnifying glass reviewing code.  
@@ -58,7 +58,7 @@ The [Math Center](https://my.wgu.edu/success-centers/math-center) provides a sup
 :::{margin} Contact Info
 📞 <a href="tel:+13854284209"> (385) 428-4209</a> </br>
 📧 [jim.ashe@wgu.edu](mailto:jim.ashe@wgu.edu?subject=C964%20capstone%) </br>
-📅 [Schedule an Appointment](https://westerngovernorsuniversity-my.sharepoint.com/:w:/g/personal/jim_ashe_wgu_edu/EW-0zAhi6epJkFrkSz5f8AkBi-6DEVVh5KwbSSMypgaSkg?e=1ieWkm) </br>
+📅 {{ schedule_appointment }} </br>
 <table _ngcontent-stv-c382="" class="margin--bottom--10"><caption _ngcontent-stv-c382="" class="visually-hidden"> Office hours for Jim Ashe </caption><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">MON</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">TUE</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">5:00 PM</span> to <span _ngcontent-stv-c382="">8:30 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">WED</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">THU</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">FRI</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">7:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><tr _ngcontent-stv-c382="" class="ng-star-inserted"><th _ngcontent-stv-c382="" class="text--right"><span _ngcontent-stv-c382="" class="table-row"><b _ngcontent-stv-c382="">SAT</b></span></th><td _ngcontent-stv-c382=""><div _ngcontent-stv-c382="" class="margin--left ng-star-inserted"><span _ngcontent-stv-c382="">9:30 AM</span> to <span _ngcontent-stv-c382="">4:00 PM </span></div><!----></td></tr><!----></table>
 :::
 
