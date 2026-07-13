@@ -323,13 +323,13 @@ You have *unlimited* attempts for both tasks 1 and 2. However, incomplete submis
 
 Anything that describes the data. Histograms, scatter plots, pie charts -all the familiar descriptive statistics techniques are included. ML methods such as k-means clustering can also be descriptive. Whether a method is descriptive or non-descriptive is determined by its use. For example, using a regression line to describe the relationship between variables is descriptive, but using the line to predict a variable or claim a correlation between the variables exist is inferential (non-descriptive).
 
-Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form so we can easily identify where and how ML will be applied.  
+Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. On the approval form, the **Model** box is where you identify your ML model and how it's applied.  
 
 ### What is a non-descriptive method?
 
 Anything that infers from the data, e.g., making predictions, recommendations, identifying correlations, inferring from correlations, etc. Also, see the comments above.
 
-Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. The distinction is only made in the approval form, so we can easily identify where and how ML will be applied.
+Descriptive and non-descriptive methods do not need to be explicitly identified in task 2. The visualizations and requirements of the user application will satisfy these parts respectively. On the approval form, the **Model** box is where you identify your ML model and how it's applied.
 
 ### What is machine learning (ML)?
 
