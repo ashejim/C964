@@ -1,15 +1,13 @@
-#Hi
+# C964 — Computer Science Capstone (course site)
 
-To compile this locally, you'll need jupyter-books
-'pip install jupyter-books <2'
-This is version 1.0. The latest version uses myst.  
+**Live site:** https://ashejim.github.io/C964/intro.html
 
-You will also need to install most of the packages included in 'requirements.txt'
-run:
-'pip install -r requirments.txt'
+A Jupyter Book course site I author and maintain for WGU's Computer Science capstone (C964). It walks students task-by-task through their final project: topic approval (Task 1), building a machine-learning application (Task 2 Part C) with complete worked examples for supervised classification and regression, and the accompanying documentation and presentation (Tasks 2 A, B, and D).
 
-Run
-'jb build ./repo_directory'
+Created and maintained by course faculty as a supplementary resource — not an official WGU page. The stars and forks here are largely capstone students using the material.
 
-If you get an error about missing kernels, it's because VS code creates unique kernel names in the ipynb's metadata. This is really dumb and prevents it from running on other machines. To fix this, you can relabel the kernel names (VS code doesn't nativel;y allow this) using the included py script:
-'python .\update_kernels.py' 
+## Building locally
+
+This book targets Jupyter Book 1.x (pre-MyST): `pip install "jupyter-book<2"`, then `pip install -r requirements.txt`, then `jb build .` from the repo root.
+
+If the build errors on missing kernels: VS Code writes machine-specific kernel names into notebook metadata. Run `python update_kernels.py` to normalize them.
